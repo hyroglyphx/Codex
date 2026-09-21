@@ -1,0 +1,46 @@
+registry: cross-corpus-permutation-inquiry
+version: 1.0.0
+updated: 2026-09-21
+status: ACTIVE
+
+lesson_axes:
+  L1: WORK_NOT_FIXED_TEXT
+  L2: NAME_IDENTITY_ROLE_SEPARATION
+  L3: NATIVE_FORM_ACCOMMODATION
+  L4: RECENSION_PRESERVE_REWRITE
+  L5: PERIPHERAL_WITNESS
+  L6: WITNESS_VS_NARRATIVE_CLOCK
+  L7: VORLAGE_BEFORE_TRANSLATOR_FREEDOM
+  L8: LANGUAGE_SPECIFIC_PACE
+  L9: MULTILINGUAL_NEXUS_PRIORITY
+  L10: NEGATIVE_CONTROL
+
+dimensions:
+  A: narrative_architecture
+  D: discourse_formula
+  P: pace_prosody
+  N: names_onomastics
+  I: institutional_vocabulary
+  R: ideological_recoding
+
+permutations:
+  - {id: PERM-GX, source: Gilgamesh, target: Cyropaedia, lessons: [L1,L2,L3,L4,L5,L6,L8,L9,L10], priority: highest}
+  - {id: PERM-XG, source: Cyropaedia, target: Gilgamesh, lessons: [L2,L6,L8,L10], priority: high}
+  - {id: PERM-GH, source: Gilgamesh, target: Homer, lessons: [L1,L3,L4,L5,L8,L9], priority: high}
+  - {id: PERM-HG, source: Homer, target: Gilgamesh, lessons: [L1,L4,L8], priority: high}
+  - {id: PERM-TG, source: Torah-Jubilees-Deuteronomy, target: Gilgamesh, lessons: [L4,L6,L7,L8], priority: high}
+  - {id: PERM-GT, source: Gilgamesh-Hattusa, target: Biblical-translation-spine, lessons: [L3,L4,L7,L8,L9], priority: high}
+  - {id: PERM-AX, source: Amenemope-Proverbs-and-Esarhaddon-Deuteronomy, target: Cyropaedia, lessons: [L3,L4,L6], priority: high}
+  - {id: PERM-LF, source: Ahiqar-Enoch-Jubilees, target: Fragmentary-ancient-corpora, lessons: [L4,L5,L6,L7], priority: medium}
+
+benchmark:
+  id: PERM-01
+  objects:
+    - Gilgamesh_flood
+    - Huwawa_Humbaba
+    - Cyrus_Gobryas
+    - Homeric_death_fame
+    - Genesis_Jubilees_recapitulation
+    - Deuteronomic_treaty_curse
+  directed_pairs: 30
+  rule: "lesson export creates an inquiry, never automatic historical promotion"
