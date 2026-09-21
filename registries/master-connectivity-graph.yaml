@@ -196,6 +196,12 @@ operator_overlays:
   O_PROJECT:
     corpora: [Plato-Cave-control, textual-transmission, astronomical-analogy]
     rule: "infer constraints on hidden states from convergent projections while keeping substrate claims explicitly bounded"
+  O_CONCORDANT_REDUNDANCY:
+    corpora: [Egyptian-phonetic-complements, Egyptian-determinatives, cuneiform-logogram-complements, Books-of-Jeu]
+    rule: "multiple partially independent channels constrain one admissible readout or state; structural error-correction analogy only"
+  O_COVARIANCE:
+    corpora: [Ebla-crosswalks, Ugaritic-Akkadian-crosswalks, Rosetta, Behistun, Tell-Fekheriye, Karatepe-Cinekoy, Letoon]
+    rule: "prefer relations whose transformation law remains stable across independent representations; test alternate paths for cycle consistency and prospective divergence"
 
 social_transmission_modes:
   - ORGANIC
@@ -225,3 +231,11 @@ invariant:
     an untyped resemblance. It must connect by translation, parallel witness,
     recomposition, readout/script change, borrowing, operator transposition, custody,
     substrate, genealogy, creolization/shift, or explicit structural control.
+
+
+crosswise_benchmarks:
+  - id: Crosswise-Resolution-Covariance
+    study: studies/crosswise-resolution-covariance-benchmark.md
+    status: active
+    calibration: [Ebla-sign-reading-glosses, Ugaritic-Akkadian-pronunciation-crosswalk, Rosetta, Behistun, Tell-Fekheriye, Karatepe-Cinekoy, Letoon]
+    tests: [material-vs-encoding-separation, spectral-vs-chronological-order, root-arity-independence, concordant-redundancy, transformation-covariance, cycle-consistency, divergence-gradient]
