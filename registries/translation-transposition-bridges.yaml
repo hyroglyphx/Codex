@@ -153,6 +153,17 @@ edges:
   - {id: E149, source: Iranian-satrapal-office, target: Greek-satrapes-satrapeia, type: B15, class: C1, status: connected_title_translation}
   - {id: E150, source: Iranian-decimal-command, target: Greek-chiliarchos, type: B15, class: C2, status: connected_title_equivalence}
 
+  # Homeric transmission and translation layer
+  - {id: E160, source: Mycenaean-Arcado-Cypriot-residuals, target: Homeric-poetic-Greek, type: B10, class: C2, status: connected_dialectal_layer, note: "residual archaic/dialectal forms inside a composite poetic language; not a direct document-to-document translation"}
+  - {id: E161, source: Aeolic-poetic-layer, target: Homeric-poetic-Greek, type: B10, class: C2, status: connected_dialectal_layer}
+  - {id: E162, source: Ionic-poetic-layer, target: Homeric-poetic-Greek, type: B10, class: C1, status: connected_dominant_layer}
+  - {id: E163, source: early-Homeric-performance-tradition, target: Hellenistic-papyrus-witnesses, type: B3, class: C2, status: connected_multiform}
+  - {id: E164, source: Hellenistic-Homeric-variants, target: Alexandrian-editions, type: B3, class: C1, status: connected_editorial_standardization}
+  - {id: E165, source: Alexandrian-Homeric-scholarship, target: Venetus-A-scholia, type: B8, class: C1, status: connected_scholarly_custody}
+  - {id: E166, source: Odyssey-Greek, target: Livius-Andronicus-Odusia-Latin, type: B1, class: C1, status: connected_early_translation}
+  - {id: E167, source: Iliad-Greek, target: Ilias-Latina, type: B3, class: C1, status: connected_epitome, note: "Latin epitome/adaptation, not line-for-line translation"}
+  - {id: E168, source: Homeric-Trojan-cycle, target: Cypria-Aethiopis-Little-Iliad-Iliou-Persis-Nostoi-Telegony, type: B3, class: C2, status: connected_parallel_epic, note: "parallel/adjacent Greek epic traditions; most survive fragmentarily"}
+  - {id: E169, source: Hittite-Wilusa-Ahhiyawa-Alaksandu-records, target: Homeric-Troy-Achaean-Alexandros-field, type: B11, class: C3, status: connected_historical_matrix, note: "historical/onomastic comparison; not textual dependence"}
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
