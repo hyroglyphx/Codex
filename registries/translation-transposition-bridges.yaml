@@ -118,20 +118,40 @@ edges:
   - {id: E110, source: local-vernacular, target: institutional-prestige-language, type: B13, class: C2, status: generic_operator, note: "used only when a specific historical case documents imposed/imported shift"}
   - {id: E111, source: dominant-language-contact, target: substrate-residue, type: B9, class: C2, status: generic_operator}
 
+  # Closure edges for previously queued ancient/boundary nodes
+  - {id: E120, source: Old-North-Arabian, target: Semitic-Arabian-lane, type: B10, class: C1, status: connected_family, note: "exact witness packs still required per corpus"}
+  - {id: E121, source: Ancient-South-Arabian, target: Semitic-Arabian-lane, type: B10, class: C1, status: connected_family}
+  - {id: E122, source: Palaic, target: Anatolian-IE-lane, type: B10, class: C1, status: connected_family}
+  - {id: E123, source: Sidetic, target: Anatolian-contact-field, type: B11, class: C4, status: connected_boundary, note: "contact/structural connection only until classification/witness detail is expanded"}
+  - {id: E124, source: Lydian, target: Anatolian-IE-lane, type: B10, class: C1, status: connected_family}
+  - {id: E125, source: Carian, target: Anatolian-IE-lane, type: B10, class: C1, status: connected_family}
+  - {id: E126, source: Phrygian, target: Indo-European-Greek-Anatolian-contact-field, type: B10, class: C1, status: connected_family}
+  - {id: E127, source: Meroitic, target: Egyptian-Nile-contact-field, type: B11, class: C4, status: connected_boundary}
+  - {id: E128, source: Eteocypriot, target: Cyprus-Greek-bilingual-field, type: B2, class: C2, status: connected_boundary}
+  - {id: E129, source: Iberian, target: Western-Mediterranean-Phoenician-Greek-Latin-contact, type: B6, class: C2, status: connected_contact}
+  - {id: E130, source: Proto-Kartvelian-Georgian, target: Caucasus-external-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E131, source: Proto-Uralic-Finnic, target: distant-genealogical-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E132, source: Tamil-Dravidian, target: deep-typological-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E133, source: Suebi-Suebian, target: Latin-Roman-administrative-field, type: B8, class: C1, status: connected_historical}
+  - {id: E134, source: later-European-vernaculars, target: Latin-Greek-scriptural-relay, type: B1, class: C1, status: connected_translation_halo}
+  - {id: E135, source: Libyco-Berber, target: Berber-Afroasiatic-lane, type: B10, class: C1, status: connected_family}
+  - {id: E136, source: Thracian-Dacian-Paeonian, target: Balkan-IE-contact-control, type: B11, class: C4, status: connected_control, note: "grouped only as a control field; no shared close subgroup implied"}
+  - {id: E137, source: Proto-Northeast-Caucasian-hypothesis, target: Hurro-Urartian-deep-relation-test, type: B11, class: C5, status: connected_candidate, note: "hypothesis edge only; not family promotion"}
+
 completion_queue:
-  - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: needs_witness_pack}
-  - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: needs_witness_pack}
-  - {node: Palaic, target_bridge: "Hittite/Luwian Anatolian comparison", preferred_types: [B10], status: needs_morphology_pack}
-  - {node: Sidetic, target_bridge: "Greek/Anatolian contact inscriptions", preferred_types: [B2,B6], status: needs_witness_pack}
-  - {node: Lydian, target_bridge: "Anatolian + Greek contact", preferred_types: [B10,B6], status: partial}
-  - {node: Carian, target_bridge: "Greek/Anatolian bilingual-decipherment history", preferred_types: [B2,B5], status: partial}
-  - {node: Phrygian, target_bridge: "Greek/Anatolian/Balkan contact", preferred_types: [B6,B10], status: partial}
-  - {node: Meroitic, target_bridge: "Egyptian/Nile script-contact field", preferred_types: [B5,B11], status: boundary}
-  - {node: Eteocypriot, target_bridge: "Greek/Cypriot bilingual environment", preferred_types: [B2,B5,B11], status: boundary}
-  - {node: Iberian, target_bridge: "Phoenician/Greek/Latin western contact", preferred_types: [B2,B6,B11], status: boundary}
-  - {node: Kartvelian, target_bridge: "Caucasian external-control and contact field", preferred_types: [B10,B11], status: external_control}
-  - {node: Proto-Uralic-Finnic, target_bridge: "genealogical/distant numeral control", preferred_types: [B10,B11], status: external_control}
-  - {node: Tamil-Dravidian, target_bridge: "deep typological/ritual-language control", preferred_types: [B11], status: external_control}
-  - {node: Suebi-Suebian, target_bridge: "Latin + later Germanic/Romance textual and onomastic evidence", preferred_types: [B6,B8,B9,B10], status: needs_linguistic_witnesses}
-  - {node: later-European-vernaculars, target_bridge: "Vulgate/Greek/scriptural translation halo", preferred_types: [B1,B8,B9,B10,B12,B13], status: expand_per_language}
+  - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
+  - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
+  - {node: Palaic, target_bridge: "Hittite/Luwian Anatolian comparison", preferred_types: [B10], status: connected_needs_morphology_pack}
+  - {node: Sidetic, target_bridge: "Greek/Anatolian contact inscriptions", preferred_types: [B2,B6], status: connected_needs_witness_pack}
+  - {node: Lydian, target_bridge: "Anatolian + Greek contact", preferred_types: [B10,B6], status: connected_partial}
+  - {node: Carian, target_bridge: "Greek/Anatolian bilingual-decipherment history", preferred_types: [B2,B5], status: connected_partial}
+  - {node: Phrygian, target_bridge: "Greek/Anatolian/Balkan contact", preferred_types: [B6,B10], status: connected_partial}
+  - {node: Meroitic, target_bridge: "Egyptian/Nile script-contact field", preferred_types: [B5,B11], status: connected_boundary}
+  - {node: Eteocypriot, target_bridge: "Greek/Cypriot bilingual environment", preferred_types: [B2,B5,B11], status: connected_boundary}
+  - {node: Iberian, target_bridge: "Phoenician/Greek/Latin western contact", preferred_types: [B2,B6,B11], status: connected_boundary}
+  - {node: Kartvelian, target_bridge: "Caucasian external-control and contact field", preferred_types: [B10,B11], status: connected_control}
+  - {node: Proto-Uralic-Finnic, target_bridge: "genealogical/distant numeral control", preferred_types: [B10,B11], status: connected_control}
+  - {node: Tamil-Dravidian, target_bridge: "deep typological/ritual-language control", preferred_types: [B11], status: connected_control}
+  - {node: Suebi-Suebian, target_bridge: "Latin + later Germanic/Romance textual and onomastic evidence", preferred_types: [B6,B8,B9,B10], status: connected_needs_linguistic_witnesses}
+  - {node: later-European-vernaculars, target_bridge: "Vulgate/Greek/scriptural translation halo", preferred_types: [B1,B8,B9,B10,B12,B13], status: connected_expand_per_language}
   - {node: LinguaDanka, target_bridge: "exact recovered dictionary only", preferred_types: [B14], status: blocked_missing_source}
