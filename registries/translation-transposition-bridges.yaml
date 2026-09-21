@@ -198,6 +198,13 @@ edges:
   - {id: E217, source: Aramaic-Enoch, target: Greek-Ethiopic-Enoch, type: B1, class: C1, status: anchor_translation_chain}
   - {id: E218, source: Elephantine-Aramaic-Ahiqar, target: later-Syriac-Armenian-Arabic-Ahiqar, type: B3, class: C2, status: anchor_long_recension_chain}
   - {id: E219, source: Sumerian-Ballad-of-Early-Rulers, target: Emar-Ugarit-Sumerian-Akkadian-recensions, type: B1, class: C1, status: anchor_bilingual_wisdom_transmission}
+  # Referential stratification / representative compression
+  - {id: E220, source: Xenophon-Tigranes, target: Xenophon-Armenians, type: B20, class: C0, status: anchor_internal_stratification, note: "named prince → Tigranes and his men → Armenians within the same narrative sequence"}
+  - {id: E221, source: Jacob-Israel-person, target: Israel-people-polity, type: B20, class: C0, status: anchor_eponymic_stratification}
+  - {id: E222, source: Esau, target: Edom-people-land, type: B20, class: C0, status: anchor_eponymic_stratification}
+  - {id: E223, source: Judah-person, target: Judah-tribe-kingdom, type: B20, class: C0, status: anchor_eponymic_stratification}
+  - {id: E224, source: Homeric-leaders, target: Homeric-contingents-ethnonyms, type: B20, class: C1, status: anchor_epic_representative_shift}
+  - {id: E225, source: Achaemenid-ruler-country-address, target: Xenophon-ruler-people-address, type: B20, class: C2, status: comparative_stratification_test}
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
