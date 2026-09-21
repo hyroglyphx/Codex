@@ -57,6 +57,7 @@ These form the present high-density backbone.
 
 ## Strong D3 active-study band
 
+- Urartian
 - Eblaite
 - Arabic
 - Sumerian Emesal
@@ -79,7 +80,6 @@ These form the present high-density backbone.
 
 - Soqotri / Modern South Arabian
 - Ge'ez / Tigrinya
-- Urartian
 - Hattic
 - Lydian
 - Carian
@@ -149,7 +149,7 @@ The clearest weak seams are:
 - **Old North Arabian / Ancient South Arabian:** incorporated but not yet witness-populated.
 - **Palaic / Sidetic / Lydian / Carian / Phrygian:** present as Anatolian controls, but uneven in operator-level treatment.
 - **Meroitic / Eteocypriot / Iberian:** useful boundary nodes; need exact-sign/witness datasets rather than broader semantic speculation.
-- **Urartian:** structurally positioned but still much thinner than Hurrian.
+- **Urartian:** promoted to D3 after consolidating Hurro-Urartian relationship, ergative/agglutinative morphology, Assyrian-to-Urartian scribal transition, and Armenian contact/substrate work; exact witness population remains thinner than Hurrian.
 - **Kartvelian / Uralic / Tamil:** important external controls, but mostly invoked at the family/control level.
 - **Balkan minor languages:** registered but not yet meaningfully instrumented.
 
@@ -168,3 +168,8 @@ new witness / new transformation / new control / new benchmark
 ```
 
 This keeps the map synchronized with actual research rather than accumulated mentions.
+
+
+## Hurro-Urartian focused update — 2026-09-20
+
+Urartian is now **D3 active study**. The secure Hurrian–Urartian relationship, Old-Hurrian proximity, morphology/alignment, Assyrian scribal adoption, and Armenian contact layer are now consolidated as one study lane. Proto-Northeast-Caucasian/Nakh-Daghestanian is newly registered at **D1** as an external relation hypothesis, not an accepted family connection. Kura-Araxes remains an archaeological-correlation research question rather than a language-family node. Proposed Sumerian, Kartvelian, and Tyrsenian/Etruscan genetic links remain untested candidate lanes and do not inherit the evidence status of the secure Hurrian–Urartian relationship.
