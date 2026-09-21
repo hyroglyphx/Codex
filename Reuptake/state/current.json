@@ -6,8 +6,8 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
+    "numeral-seven hierarchical dependency modeling",
     "source-strengthened HSS and QBL candidate resolution",
-    "genealogy-aware numeral-seven null testing",
     "calibrated candidate lattice"
   ],
   "active_invariants": [
@@ -30,12 +30,12 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Recover CAD/AHw or equivalent specialist etymological treatment for Akkadian qablu battle and middle lexemes",
-    "Search Old Babylonian lexical lists for MURUB4 bilingual/readout behavior",
-    "Extend numeral matrix from 3-10 to 1-10 and add source-locked Proto-Kartvelian, Proto-Uralic, Hurrian, Etruscan, Basque and Iberian nodes",
-    "Replace uniform digit null with hierarchical genealogy/contact/phonotactic null",
-    "Run matched alternative feature carriers to estimate feature-selection bias",
-    "Proceed to RN04 Karatepe/Cinekoy after the hierarchy/null schema is frozen"
+    "Build generative historical null with genealogy tree, contact edges, borrowing, phonotactics and reconstruction uncertainty",
+    "Run leave-one-cluster-out and contact-edge ablation for numeral seven",
+    "Add phonotactic base-rate estimation for each language node",
+    "Run matched alternative feature families with preregistered classes",
+    "Recover CAD/AHw-level treatment for Akkadian qablu battle and middle lexemes",
+    "Proceed to RN04 Karatepe/Cinekoy after generative-null schema is frozen"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -81,6 +81,20 @@
     },
     "simple_prespecified_p": 0.0078125,
     "simple_look_elsewhere_p": 0.0625,
-    "significance_claim": false
+    "significance_claim": false,
+    "numeral_v0_2": "1-10 source-locked matrix complete",
+    "root_normalized_core_counts": {
+      "6": 1,
+      "7": 5
+    },
+    "extended_candidate_counts": {
+      "6": 1,
+      "7": 7
+    },
+    "dependency_sensitivity": {
+      "moderate_cluster_look_elsewhere_p": 0.002,
+      "conservative_mediterranean_p": 0.02,
+      "maximal_areal_collapse_p": 0.2
+    }
   }
 }
