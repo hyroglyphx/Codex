@@ -63,22 +63,24 @@ relations:
   - relation_id: HSS02
     label: "Ebla geštu3 = ha-zi-zu-um -> later Akkadian hasisu semantic lane"
     relation_type: ancient_lexical_crosswalk_plus_historical_candidate
-    alignment_score: 0.90
-    raw_historical_relation_score: 0.73
-    historical_relation_score: 0.73
+    alignment_score: 0.95
+    raw_historical_relation_score: 0.87
+    historical_relation_score: 0.87
     hard_ceiling_applied: none
     evidence_class: C1_C2
-    status: supported_candidate
+    status: strongly_supported_candidate
     historical_components:
-      phonological_admissibility: 0.65
-      morphological_admissibility: 0.45
-      chronology: 0.90
-      contact_or_genealogical_path: 0.90
+      phonological_admissibility: 0.90
+      morphological_admissibility: 0.70
+      chronology: 0.95
+      contact_or_genealogical_path: 0.95
       semantic_continuity: 1.00
-      independent_witness_support: 0.80
-      negative_control_survival: 0.70
+      independent_witness_support: 0.90
+      negative_control_survival: 0.80
     strongest_support:
       - "Ebla supplies an ancient Sumerian-to-Semitic lexical equation in the ear/intelligence semantic field."
+      - "Specialist Semitic literature explicitly compares Ebla ha-zi-zu-um with Akkadian hasisu."
+      - "Ebla ZV orthography can represent multiple Proto-Semitic sibilants, reducing the apparent z/s obstacle."
       - "Later Mesopotamian lexical traditions independently align Sumerian ear/hearing terms with Akkadian hasisu."
     strongest_counterweight:
       - "Ebla ha-zi-zu-um and Akkadian hasisu should not be collapsed without a dedicated phonological/morphological derivation."
@@ -87,27 +89,28 @@ relations:
 
   - relation_id: HSS03
     label: "Akkadian hasis/hasisu <-> Ugaritic hss in Kothar-wa-Hasis"
-    relation_type: contact_lexical_candidate
-    alignment_score: 0.71
-    raw_historical_relation_score: 0.74
-    historical_relation_score: 0.74
+    relation_type: semitic_lexical_historical_candidate
+    alignment_score: 0.86
+    raw_historical_relation_score: 0.84
+    historical_relation_score: 0.84
     hard_ceiling_applied: none
-    evidence_class: C2
-    status: supported_candidate
+    evidence_class: C1_C2
+    status: strongly_supported_candidate
     historical_components:
-      phonological_admissibility: 0.80
-      morphological_admissibility: 0.50
-      chronology: 0.80
-      contact_or_genealogical_path: 0.90
-      semantic_continuity: 0.90
-      independent_witness_support: 0.70
-      negative_control_survival: 0.70
+      phonological_admissibility: 0.95
+      morphological_admissibility: 0.60
+      chronology: 0.85
+      contact_or_genealogical_path: 0.95
+      semantic_continuity: 1.00
+      independent_witness_support: 0.85
+      negative_control_survival: 0.80
     strongest_support:
-      - "Ugaritic hss occurs in a 'wise/intelligent' epithet and Ugarit is an Akkadian-contact nexus."
-      - "Akkadian hasisu/hasis carries hearing/comprehension/wisdom senses."
+      - "Ugaritic kṯr w ḫss is directly treated in specialist Ugaritic scholarship as 'Skillful and Wise'."
+      - "Scholarly Ugaritic grammar explicitly vocalizes ḫss with a hasisu/hasisu-type form and compares the wisdom sense."
+      - "Akkadian hasisu/hasis carries ear/hearing/comprehension/wisdom senses."
     strongest_counterweight:
-      - "Direct borrowing versus cognacy versus learned/theonymic adaptation remains unresolved."
-      - "The current Ugaritic source in this pass is secondary; primary lexical/grammar citation should replace it."
+      - "Inherited cognacy versus borrowing versus learned/theonymic reinforcement remains unresolved."
+      - "Morphological classification still needs a dedicated comparative-Semitic treatment."
     next_discriminating_test:
       - "Recover primary Ugaritic lexical discussion and syllabic spellings, then test regular correspondence and morphology."
 
@@ -148,14 +151,16 @@ relations:
   - relation_id: QBL02
     label: "West-Semitic QBL face/confront -> Akkadian qablu battle"
     relation_type: historical_semantic_candidate
-    alignment_score: 0.67
-    raw_historical_relation_score: 0.66
-    historical_relation_score: 0.66
+    alignment_score: 0.76
+    raw_historical_relation_score: 0.72
+    historical_relation_score: 0.72
     hard_ceiling_applied: none
-    evidence_class: C2
-    status: supported_boundary
+    evidence_class: C1_C2
+    status: supported_candidate
     strongest_support:
-      - "The semantic path FACE/CONFRONT -> BATTLE is coherent."
+      - "Aramaic qbl directly includes confront/encounter, receive/accept, and be opposite/face in its attested root orbit."
+      - "Arabic Q-B-L independently preserves before/front, face/opposite, approach, and receive/accept senses."
+      - "The semantic path FACE/CONFRONT -> BATTLE is therefore historically anchored inside Semitic, not merely constructed."
       - "Akkadian qablu BATTLE is a distinct, well-attested lemma."
     strongest_counterweight:
       - "This pass has not yet supplied a full Proto-Semitic correspondence/morphology proof."
@@ -164,15 +169,16 @@ relations:
 
   - relation_id: QBL03
     label: "Akkadian qablu middle/hips/waist <-> West-Semitic QBL receive/face"
-    relation_type: unresolved_formal_carrier_overlap
-    alignment_score: 0.43
-    raw_historical_relation_score: 0.40
-    historical_relation_score: 0.40
+    relation_type: unresolved_formal_and_scribal_overlap
+    alignment_score: 0.58
+    raw_historical_relation_score: 0.43
+    historical_relation_score: 0.43
     hard_ceiling_applied: none
     evidence_class: C4
     status: weak_unresolved
     strongest_support:
       - "The Q-B-L consonantal carrier is real."
+      - "Ancient Akkadian scribal practice uses the same Sumerographic carrier MURUB4 for both qablu BATTLE and qablu MIDDLE/HIPS in ORACC corpora."
       - "The middle/waist lexeme occupies a CENTER/MEDIAN semantic field that can be tested against an older interface/meeting-zone hypothesis."
     strongest_counterweight:
       - "Current dictionaries separate the middle/hips and battle lexemes, and no independent morphology or sound-history bridge has yet been established."
@@ -262,8 +268,8 @@ relations:
   - relation_id: C7_01
     label: "Numeral seven strict/broad carrier enrichment"
     relation_type: cross_family_feature_enrichment
-    alignment_score: 0.61
-    raw_historical_relation_score: 0.52
+    alignment_score: 0.68
+    raw_historical_relation_score: 0.58
     historical_relation_score: 0.49
     hard_ceiling_applied: HC5
     evidence_class: C4
@@ -272,18 +278,21 @@ relations:
       - "Recovered project matrix records repeated sibilant/coronal + labial structure at ancestral nodes and preserves Sumerian imin as a failure."
       - "The hypothesis was already formulated as a feature carrier rather than a universal etymology."
     strongest_counterweight:
-      - "The 1-10 ancestral-node matrix, genealogy collapse, contact model and frozen null distribution are not yet complete."
-      - "The observed seven > six > three ordering cannot yet be treated as statistical significance."
+      - "A first source-locked 3-10 pilot now gives strict-hit counts seven=3, six=2, all other tested digits=0 across Proto-Semitic, Egyptian, PIE and Sumerian."
+      - "The simple conditional permutation gives p=0.0078125 for a pre-specified digit reaching three hits, but p=0.0625 when any of eight tested digits is allowed to be the maximum."
+      - "These are exploratory null values, not publishable significance: genealogy, contact, feature-selection history, reconstruction uncertainty and phonotactic base rates remain incompletely modeled."
+      - "Proto-Berber seven is reconstruction-sensitive and is therefore not counted in the base pilot."
     next_discriminating_test:
-      - "Freeze the ancestral-node 1-10 numeral matrix and run frequency/contact/genealogy-corrected enrichment against matched random feature carriers."
+      - "Extend the source-locked matrix to 1-10 and additional ancestral nodes, then run a hierarchical genealogy/contact/phonotactic null with matched alternative features."
 
 summary:
   promoted_or_anchored:
     - HSS01
     - QBL01
-  supported_candidates:
+  strongly_supported_candidates:
     - HSS02
     - HSS03
+  supported_candidates:
     - QBL02
   live_but_ceiling_limited:
     - HSS04
