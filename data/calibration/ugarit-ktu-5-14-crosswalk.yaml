@@ -1,0 +1,172 @@
+dataset: ugarit-ktu-5-14-crosswalk
+version: 0.1.0
+updated: 2026-09-21
+status: ACTIVE_CALIBRATION
+nexus_id: RN08
+object: KTU-5.14
+cdli_id: P500178
+period: "Middle Babylonian / Late Bronze Age, ca. 1400-1100 BCE"
+provenience: Ugarit-Ras-Shamra
+carrier: clay-tablet
+genre: lexical-abecedary
+languages: [Ugaritic, Akkadian]
+scripts: [Ugaritic-alphabetic-cuneiform, Akkadian-syllabic-cuneiform]
+parallax_levels: [PX5]
+
+sources:
+  - id: CDLI_P500178
+    type: artifact_catalogue
+    url: https://cdli.earth/artifacts/500178
+    note: "Clay lexical abecedary from Ugarit, Middle Babylonian period, National Museum of Syria."
+  - id: MNAMON_UGARITIC
+    type: scholarly_writing_system_reference
+    url: https://mnamon.sns.it/index.php?id=30&lang=en&page=Scrittura
+    note: >
+      Ugaritic is a 30-sign consonantal cuneiform alphabet/abjad; KTU 5.14
+      maps each preserved Ugaritic consonant to an Akkadian syllabic sign
+      intended to render its pronunciation.
+  - id: SBL_GRAMMAR_UGARITIC
+    type: scholarly_grammar
+    url: https://www.sbl-site.org/wp-content/uploads/2024/11/9781628374513_txt.pdf
+    note: >
+      Confirms that KTU 5.14 preserves syllabic transcriptions such as
+      A, BE, GA, HA/ḪA etc.; only first ten and last ten letters survive.
+  - id: CROSS_LAMBDIN_1960
+    type: peer_reviewed_article
+    url: https://www.journals.uchicago.edu/doi/10.2307/1355644
+    note: "Classic study of the abecedary and its significance for West Semitic alphabet history."
+  - id: ISAC_SCRIBAL_EDUCATION
+    type: scholarly_volume
+    url: https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/saoc62.pdf
+    note: >
+      Cautions that Akkadian syllabary is poorly suited to precise Ugaritic
+      consonantal distinctions; the right-hand column should be treated as an
+      approximate cross-system rendering rather than a perfect phonetic transcript.
+
+witness_geometry:
+  object_count: 1
+  material_substrate: clay
+  layout: synoptic_table
+  crosswalk_explicitness: maximal
+  alignment_granularity: [G0, G1]
+  preservation:
+    total_ugaritic_inventory: 30
+    preserved_letters: 20
+    missing_letters: 10
+    pattern: "first ten and last ten preserved; middle ten lost"
+  material_vs_encoding_control:
+    value: true
+    note: >
+      Same cuneiform wedge technology carries an alphabetic consonant system
+      on the left and syllabic cuneiform values on the right.
+
+crosswalk_rows:
+  - id: KTU514_01
+    ugaritic_letter: "ʾa"
+    ugaritic_role: consonantal_alphabetic_sign
+    akkadian_rendering: "A"
+    granularity: G1
+    mapping_type: pronunciation_or_letter_name_onset
+    evidence_class: C0
+    calibration_weight: maximal
+    note: "Scholarly grammars use A as the preserved syllabic counterpart."
+
+  - id: KTU514_02
+    ugaritic_letter: "b"
+    ugaritic_role: consonantal_alphabetic_sign
+    akkadian_rendering: "BE"
+    granularity: G1
+    mapping_type: pronunciation_or_letter_name_onset
+    evidence_class: C0
+    calibration_weight: maximal
+    note: "Often discussed in relation to the initial syllable of the West Semitic letter-name bet/bayt."
+
+  - id: KTU514_03
+    ugaritic_letter: "g"
+    ugaritic_role: consonantal_alphabetic_sign
+    akkadian_rendering: "GA"
+    granularity: G1
+    mapping_type: pronunciation_or_letter_name_onset
+    evidence_class: C0
+    calibration_weight: maximal
+    note: "Often discussed in relation to the initial syllable of the reconstructed letter-name gaml/gimel tradition."
+
+  - id: KTU514_04
+    ugaritic_letter: "ḫ"
+    ugaritic_role: consonantal_alphabetic_sign
+    akkadian_rendering: "ḪA / HA-type syllabic approximation"
+    granularity: G1
+    mapping_type: phonetic_approximation
+    evidence_class: C1
+    calibration_weight: high
+    note: >
+      Store as approximation, not identity; Akkadian syllabic inventory
+      does not reproduce all Ugaritic consonantal distinctions exactly.
+
+  - id: KTU514_05
+    ugaritic_letter: "q"
+    ugaritic_role: consonantal_alphabetic_sign
+    akkadian_rendering: "QU-type syllabic sign"
+    granularity: G1
+    mapping_type: phonetic_approximation
+    evidence_class: C1
+    calibration_weight: high
+    note: >
+      Sivan discusses the q-row specifically as a syllabic rendering that
+      may bear on the vocalization/letter-name problem; do not hard-code a
+      full historical letter-name from this one syllable.
+
+preservation_rows:
+  - id: KTU514_P1
+    region: first_decad
+    status: preserved
+    role: high_confidence_order_and_crosswalk
+  - id: KTU514_P2
+    region: middle_decad
+    status: lost
+    role: damage_gap
+  - id: KTU514_P3
+    region: final_decad
+    status: preserved
+    role: high_confidence_order_and_crosswalk
+
+derived_observations:
+  - id: KTU_D1
+    status: attested_and_derived
+    statement: "The tablet is an explicit ancient script-to-script crosswalk at sign/syllable resolution."
+  - id: KTU_D2
+    status: derived
+    statement: "Crosswalk explicitness can be maximal while phonetic precision remains imperfect."
+  - id: KTU_D3
+    status: derived
+    statement: "The same cuneiform material technology can carry two distinct encoding logics."
+  - id: KTU_D4
+    status: derived
+    statement: "Damage gaps must be represented as missing intervals, not reconstructed rows."
+  - id: KTU_D5
+    status: derived
+    statement: "An explicit ancient approximation is stronger calibration evidence than a modern resemblance, even when it is coarse."
+
+new_sieve_variables_triggered:
+  - crosswalk_precision
+  - source_script_inventory_limits
+  - target_script_inventory_limits
+  - approximation_cost
+  - preserved_interval
+  - missing_interval
+  - letter_order_position
+  - syllabic_vowel
+  - phoneme_feature_loss
+  - medium_constant_encoding_variable
+
+calibration_rules:
+  - "Explicit scribal mapping outranks retrospective phonetic resemblance."
+  - "Akkadian syllabic rendering is not assumed to be IPA-like phonetic transcription."
+  - "One-to-one row alignment does not imply one-to-one phonological feature preservation."
+  - "Letter-name reconstruction is a separate inference from the observed syllabic crosswalk."
+
+next_pass:
+  - "Ingest the complete 20 preserved row values from a critical edition/manual."
+  - "Encode distinctive phonological features for each Ugaritic consonant and measure what the Akkadian syllabic system preserves or collapses."
+  - "Compute an approximation/confusion matrix for Ugaritic consonant -> Akkadian syllabic rendering."
+  - "Compare KTU 5.14 with syllabically written Ugaritic words as an external validation set."
