@@ -164,6 +164,17 @@ edges:
   - {id: E167, source: Iliad-Greek, target: Ilias-Latina, type: B3, class: C1, status: connected_epitome, note: "Latin epitome/adaptation, not line-for-line translation"}
   - {id: E168, source: Homeric-Trojan-cycle, target: Cypria-Aethiopis-Little-Iliad-Iliou-Persis-Nostoi-Telegony, type: B3, class: C2, status: connected_parallel_epic, note: "parallel/adjacent Greek epic traditions; most survive fragmentarily"}
   - {id: E169, source: Hittite-Wilusa-Ahhiyawa-Alaksandu-records, target: Homeric-Troy-Achaean-Alexandros-field, type: B11, class: C3, status: connected_historical_matrix, note: "historical/onomastic comparison; not textual dependence"}
+  # Meter / cadence / recursive-rewrite layer
+  - {id: E180, source: Homeric-dactylic-hexameter, target: Latin-Odusia-meter, type: B18, class: C1, status: connected_meter_shift, note: "quantitative Greek hexameter transposed into Latin Saturnian; semantic and rhythmic preservation must be scored separately"}
+  - {id: E181, source: Homeric-dactylic-hexameter, target: later-Latin-hexameter-Homeric-reception, type: B18, class: C1, status: connected_meter_retention}
+  - {id: E182, source: Hebrew-biblical-poetic-cadence, target: Septuagint-Greek, type: B18, class: C2, status: connected_prosodic_test, note: "test cadence/parallelism preservation without presuming Hebrew quantitative meter"}
+  - {id: E183, source: Hebrew-biblical-poetic-cadence, target: Targumic-Aramaic, type: B18, class: C2, status: connected_prosodic_test}
+  - {id: E184, source: Hebrew-biblical-poetic-cadence, target: Vulgate-Latin, type: B18, class: C2, status: connected_prosodic_test}
+  - {id: E185, source: Genesis-Exodus-base-narrative, target: Jubilees-Little-Genesis, type: B19, class: C1, status: connected_rewritten_scripture, note: "rewritten/expanded narrative with calendrical and legal reorganization"}
+  - {id: E186, source: Pentateuchal-narrative-law, target: Deuteronomy-recapitulation, type: B19, class: C1, status: connected_recovenant_recapitulation, note: "recapitulation/renewal, not literal restart of Genesis"}
+  - {id: E187, source: Genesis-genealogical-and-creation-resets, target: scriptural-recurrence-operator, type: B19, class: C3, status: connected_structural_recurrence}
+  - {id: E188, source: Homeric-formulaic-repetition, target: scriptural-formulaic-recurrence, type: B11, class: C4, status: connected_structural_control, note: "compare pacing/formula recurrence without asserting common metrical system"}
+
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
