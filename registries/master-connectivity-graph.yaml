@@ -1,6 +1,6 @@
 registry: master-connectivity-graph
 version: 1.0.0
-updated: 2026-09-20
+updated: 2026-09-21
 status: CONNECTED_WITH_TYPED_UNCERTAINTY
 
 sources_of_truth:
@@ -136,6 +136,10 @@ textual_corpora:
     route: "prior Pentateuchal narrative/law --B19/C1--> covenant-renewal recapitulation; retelling for a new generation"
   - id: TXT_HOMERIC_METER
     route: "Homeric quantitative hexameter --B18--> translation/adaptation witnesses; pace residual tracked separately from semantic residual"
+  - id: TXT_BOOKS_OF_JEU
+    route: "Coptic ritual-ascent corpus --B27/C4--> Chaldaean/Hekhalot/Egyptian threshold controls; structural credential comparison, no direct genealogy asserted"
+  - id: TXT_CHALDAEAN_ORACLES
+    route: "Greek late-antique theurgic fragments --B27/C4--> Books-of-Jeu/Hekhalot multimodal credential controls; provenance and transmission remain separately typed"
 
 multilingual_nexus_nodes:
   - {name: Uruk-Nippur-Babylon, links: [Sumerian, Akkadian, Aramaic, Greek], function: lexical_list_and_scribal_continuity}
@@ -183,6 +187,15 @@ operator_overlays:
   O_RECAPITULATE:
     corpora: [Genesis, Deuteronomy, Jubilees, covenant-renewal-texts, Homeric-recensional-parallels]
     rule: "prior state -> retelling/reindexing -> renewed audience/state; distinguish literal repetition from functional restart"
+  O_ARITY:
+    corpora: [Egyptian-sign-role-spectrum, Sumerian-logographic-carriers, Akkadian-readouts, Ugaritic, Hebrew, Sanskrit, Avestan]
+    rule: "index graphic arity, phonological load, root arity, morphology and semantic compression as separate coordinates; spectral order does not imply chronology"
+  O_SYNCHRONIZE:
+    corpora: [Books-of-Jeu, Chaldaean-Oracles, Hekhalot-controls, Egyptian-gate-text-controls]
+    rule: "test whether independent modalities converge on one state address through name, sign/seal, number, gesture, sequence and spatial threshold"
+  O_PROJECT:
+    corpora: [Plato-Cave-control, textual-transmission, astronomical-analogy]
+    rule: "infer constraints on hidden states from convergent projections while keeping substrate claims explicitly bounded"
 
 social_transmission_modes:
   - ORGANIC
