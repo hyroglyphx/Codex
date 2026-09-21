@@ -44,3 +44,10 @@ benchmark:
     - Deuteronomic_treaty_curse
   directed_pairs: 30
   rule: "lesson export creates an inquiry, never automatic historical promotion"
+
+  - {id: PERM-GP, source: Gilgamesh, target: Philosophumena, lessons: [L1,L2,L4,L5,L6,L10], priority: highest}
+  - {id: PERM-XP, source: Cyropaedia, target: Philosophumena, lessons: [L2,L3,L6,L8,L10], priority: highest}
+  - {id: PERM-TP, source: Biblical-textual-plurality, target: Philosophumena, lessons: [L4,L5,L6,L7,L10], priority: high}
+  - {id: PERM-HP, source: Homeric-transmission, target: Philosophumena, lessons: [L1,L4,L5,L8], priority: medium}
+  - {id: PERM-PX, source: Philosophumena, target: Cyropaedia, lessons: [L2,L6,L10], priority: high}
+  - {id: PERM-PF, source: Philosophumena, target: Fragmentary-ancient-corpora, lessons: [L4,L5,L6,L10], priority: high}
