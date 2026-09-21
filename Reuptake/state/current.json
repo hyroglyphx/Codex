@@ -6,6 +6,7 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
+    "crosswise resolution/covariance benchmarking",
     "arity-compression spectral language indexing",
     "multimodal synchronous-state harmonics",
     "typed historical transformation and projection-bounded inference"
@@ -15,20 +16,24 @@
     "Carrier is not reading; reading is not language; language is not semantic address.",
     "Sign arity, phonological load, root arity, morphology and semantic compression are independent coordinates.",
     "Spectral precedence is not chronological precedence without independent evidence.",
-    "Convergent projections can constrain a hidden state without identifying the hidden substrate."
+    "Convergent projections can constrain a hidden state without identifying the hidden substrate.",
+    "Material medium is not encoding granularity.",
+    "Prefer homology of transformation over identity of surface form."
   ],
   "active_packet": "Reuptake/packets/2026-09-21-arity-compression-synchronous-state.json",
   "primary_studies": [
+    "studies/crosswise-resolution-covariance-benchmark.md",
     "studies/arity-compression-spectral-language-sieve.md",
     "studies/multimodal-synchronous-state-harmonics.md",
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Egyptian uniliteral/biliteral/triliteral/logogram matrix",
-    "Sumerian logogram to Akkadian readout matrix",
-    "Ugaritic/Semitic root-arity benchmark including HSS",
-    "Vedic/Avestan root-enlargement controls",
-    "Books of Jeu / Chaldaean / Hekhalot credential matrix",
-    "cycle-consistency and divergence-rate scoring prototypes"
+    "Build Egyptian internal sign-role matrix with compression/redundancy/root-visibility columns",
+    "Run Ugarit dual-script control: alphabetic cuneiform vs Akkadian logo-syllabic cuneiform",
+    "Calibrate transformation weights on Ebla, Ugaritic-Akkadian, Rosetta, Behistun, Tell Fekheriye, Karatepe/Cinekoy and Letoon",
+    "Run HSS and broader Semitic root-kernel tests against frequency-matched negative controls",
+    "Run Vedic/Avestan root-enlargement controls",
+    "Build Books of Jeu / Chaldaean / Hekhalot multimodal credential matrix",
+    "Prototype cycle-consistency and prospective-divergence scoring"
   ]
 }
