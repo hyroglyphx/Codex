@@ -281,3 +281,25 @@ calibrated_scoring:
     - "native morphology may veto stripped-form resemblance"
     - "hard ceilings apply to arbitrary normalization and untested cross-family enrichment"
     - "failed edges remain available as adversarial controls"
+
+
+source_strengthened_candidate_packs:
+  hss:
+    study: studies/hss-ebla-ugaritic-evidence-pack.md
+    status: source_strengthened
+    key_edges:
+      - "Ebla geštu3 = ha-zi-zu-um"
+      - "Ebla ha-zi-zu-um ~ Akkadian hasisu"
+      - "Akkadian hasisu ~ Ugaritic hss"
+  qbl:
+    study: studies/qbl-center-interface-evidence-pack.md
+    status: source_strengthened_open
+    key_edges:
+      - "Aramaic qbl: confront/encounter; receive/accept; opposite/face"
+      - "Arabic QBL: before/front; face/opposite; approach; receive/accept"
+      - "Akkadian qablu BATTLE and qablu MIDDLE/HIPS share ancient MURUB4 scribal carrier"
+  numeral_seven:
+    pilot: data/calibration/numeral-3-10-null-pilot-v0.1.yaml
+    status: exploratory_null_complete
+    key_result: "strict hits: seven=3, six=2, all other tested digits 3-10=0 in Proto-Semitic/Egyptian/PIE/Sumerian pilot"
+    caution: "look-elsewhere pilot p=0.0625; no significance claim until genealogy/contact/phonotactic hierarchy is modeled"
