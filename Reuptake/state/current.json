@@ -6,10 +6,9 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "Tell Fekheriye / KTU 5.14 / Ebla calibration complete",
-    "crosswise resolution/covariance benchmarking",
-    "Rosetta Nexus parallax calibration",
-    "arity-compression spectral language indexing"
+    "calibrated candidate testing",
+    "HSS / QBL / ASIS / numeral-seven crosswise analysis",
+    "Rosetta Nexus transform-weight calibration"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -31,18 +30,45 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Quantify Tell Fekheriye phrase-alignment density and local translation direction by section",
-    "Ingest all preserved KTU 5.14 rows from a critical edition and compute consonant-to-syllabic approximation costs",
-    "Expand Ebla lexical calibration into a larger stratified sample and compute copy-to-copy covariance",
-    "Run Ebla geštu3 = ḫa-zi-zu-um through the HSS/ear-understanding lane without assuming whole-word descent",
-    "Feed calibrated transformation weights into HSS, QBL, ASIS and numeral-carrier tests",
-    "Begin RN04 Karatepe/Cinekoy after calibration scoring is frozen"
+    "Trace Ebla hazizu to Akkadian hasisu with explicit phonological and morphological witnesses",
+    "Replace secondary Ugaritic HSS evidence with primary lexicon/grammar or direct text edition",
+    "Build QBL CENTER/MEDIAN vs FACE/INTERFACE comparative evidence pack",
+    "Freeze ancestral-node 1-10 numeral matrix and run genealogy/contact/frequency-corrected null test",
+    "Use ASIS controls to test normalization false-positive rates",
+    "Proceed to RN04 Karatepe/Cinekoy after candidate-weight validation"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
     "RN02 Behistun": "first_alignment_complete",
     "RN03 Tell-Fekheriye": "first_alignment_complete",
     "RN08 Ugarit-KTU-5-14": "first_alignment_complete",
-    "RN07 Ebla-sign-and-lexical-lists": "first_alignment_complete"
+    "RN07 Ebla-sign-and-lexical-lists": "first_alignment_complete",
+    "transform-weights-v0.1": "frozen",
+    "calibrator-scorecard-v0.1": "complete",
+    "candidate-pass-v0.1": "complete"
+  },
+  "active_candidate_results": {
+    "anchored": [
+      "HSS01 Sumerian ear-field <-> Akkadian hasisu alignment",
+      "QBL01 receive -> qabbalah"
+    ],
+    "supported_candidates": [
+      "HSS02 Ebla hazizu -> Akkadian hasisu lane",
+      "HSS03 Akkadian hasis/hasisu <-> Ugaritic hss",
+      "QBL02 face/confront -> battle"
+    ],
+    "weak_unresolved": [
+      "QBL03 qablu middle/waist deeper interface hypothesis"
+    ],
+    "ceiling_limited": [
+      "HSS04 deeper H-S kernel",
+      "C7_01 numeral-seven enrichment"
+    ],
+    "adversarial_controls": [
+      "ASIS Greek asis",
+      "ASIS Greek basis onset-strip",
+      "ASIS Hebrew asis",
+      "Avestan/Sanskrit ASIS-like surface comparison"
+    ]
   }
 }
