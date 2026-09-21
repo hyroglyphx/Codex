@@ -6,8 +6,8 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "numeral-seven hierarchical dependency modeling",
-    "source-strengthened HSS and QBL candidate resolution",
+    "generative genealogy-contact numeral null",
+    "source-locked 1-10 numeral matrix",
     "calibrated candidate lattice"
   ],
   "active_invariants": [
@@ -30,12 +30,13 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Build generative historical null with genealogy tree, contact edges, borrowing, phonotactics and reconstruction uncertainty",
-    "Run leave-one-cluster-out and contact-edge ablation for numeral seven",
-    "Add phonotactic base-rate estimation for each language node",
-    "Run matched alternative feature families with preregistered classes",
-    "Recover CAD/AHw-level treatment for Akkadian qablu battle and middle lexemes",
-    "Proceed to RN04 Karatepe/Cinekoy after generative-null schema is frozen"
+    "Estimate node-specific phonotactic carrier base rates rather than sweep shared q",
+    "Replace shared contact parameter with dated edge-specific priors",
+    "Sample reconstruction uncertainty and disputed numeral assignments",
+    "Freeze an executable deterministic simulation with seed and versioned inputs",
+    "Run leave-one-node and leave-one-cluster-out diagnostics",
+    "Preregister matched alternative carrier families before next significance pass",
+    "Proceed to RN04 Karatepe/Cinekoy after null-model v0.2 schema is frozen"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -95,6 +96,40 @@
       "moderate_cluster_look_elsewhere_p": 0.002,
       "conservative_mediterranean_p": 0.02,
       "maximal_areal_collapse_p": 0.2
+    },
+    "generative_null_v0_1": "complete",
+    "core_parameter_sweep": {
+      "q": [
+        0.05,
+        0.1,
+        0.15,
+        0.2
+      ],
+      "contact": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "p_any_digit_ge5_range": [
+        0.00046,
+        0.14168
+      ]
+    },
+    "extended_parameter_sweep": {
+      "q": [
+        0.05,
+        0.1,
+        0.15
+      ],
+      "contact": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "p_any_digit_ge7_range": [
+        0.00002,
+        0.02038
+      ]
     }
   }
 }
