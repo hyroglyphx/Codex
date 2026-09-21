@@ -1,0 +1,34 @@
+{
+  "relay": "Codex Reuptake",
+  "updated_at": "2026-09-21",
+  "repository": "hyroglyphx/Codex",
+  "branch": "research/reconcile-state-2026-09-20",
+  "pull_request": 1,
+  "status": "ACTIVE_RECONCILIATION",
+  "current_focus": [
+    "arity-compression spectral language indexing",
+    "multimodal synchronous-state harmonics",
+    "typed historical transformation and projection-bounded inference"
+  ],
+  "active_invariants": [
+    "Do not compare naked strings; compare typed transformations.",
+    "Carrier is not reading; reading is not language; language is not semantic address.",
+    "Sign arity, phonological load, root arity, morphology and semantic compression are independent coordinates.",
+    "Spectral precedence is not chronological precedence without independent evidence.",
+    "Convergent projections can constrain a hidden state without identifying the hidden substrate."
+  ],
+  "active_packet": "Reuptake/packets/2026-09-21-arity-compression-synchronous-state.json",
+  "primary_studies": [
+    "studies/arity-compression-spectral-language-sieve.md",
+    "studies/multimodal-synchronous-state-harmonics.md",
+    "studies/qbl-carrier-reception-confrontation.md"
+  ],
+  "next_actions": [
+    "Egyptian uniliteral/biliteral/triliteral/logogram matrix",
+    "Sumerian logogram to Akkadian readout matrix",
+    "Ugaritic/Semitic root-arity benchmark including HSS",
+    "Vedic/Avestan root-enlargement controls",
+    "Books of Jeu / Chaldaean / Hekhalot credential matrix",
+    "cycle-consistency and divergence-rate scoring prototypes"
+  ]
+}
