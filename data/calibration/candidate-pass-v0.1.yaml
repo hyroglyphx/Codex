@@ -1,0 +1,297 @@
+dataset: calibrated-candidate-pass
+version: 0.1.0
+updated: 2026-09-21
+status: FROZEN_FIRST_PASS
+weights: registries/calibrated-transform-weights-v0.1.yaml
+
+score_note: >
+  A and H are normalized bookkeeping scores, not probabilities. A measures declared
+  representation/alignment support. H measures support for a historical lexical relation.
+  Hard ceilings override raw H where the calibration rules require it.
+
+sources:
+  ORACC_EPSD_EAR:
+    url: https://oracc.museum.upenn.edu/epsd2/sux/o0029793
+    note: "Sumerian ear/hearing/wisdom lexical field and Akkadian hasisu associations."
+  ORACC_ADAD_GUPPI_HASISU:
+    url: https://oracc.museum.upenn.edu/ribo/babylon7/Q005471/html
+    note: "hasisu can mean hearing or wisdom/comprehension."
+  EBLA_CALIBRATION:
+    path: data/calibration/ebla-sign-lexical-first-alignment.yaml
+  UGARIT_HSS_SECONDARY:
+    url: https://open.bu.edu/bitstream/2144/41974/7/Kim_bu_0017E_15989.pdf
+    note: "Secondary scholarly discussion of Kothar-wa-Hasis 'skillful and wise'; underlying literature includes Olmo Lete and Smith."
+  ORACC_QABLU:
+    url: https://oracc.museum.upenn.edu/dcclt/cbd/akk-x-stdbab/Q.html
+    note: "Separates qablu BATTLE from qablu HIPS/MIDDLE and related central forms."
+  SEFARIA_AVOT:
+    url: https://www.sefaria.org/Pirkei_Avot.1.1
+    note: "qibbel 'received' and transmitted in Avot 1:1."
+  LSJ_ASIS:
+    url: https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Alsj-n16212/
+    note: "Greek asis = slime/mud."
+  LSJ_BASIS:
+    url: https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionaries.v1%3Alsj-n19563/
+    note: "Greek basis from baino; stepping/step/base."
+  IRANICA_ASI:
+    url: https://www.iranicaonline.org/articles/asi-avestan-reward-share-portion/
+    note: "Avestan Asi means reward/share/recompense; specialist entry states no Old Indian equivalent."
+  BDB_HEBREW_ASIS:
+    url: https://biblehub.com/bdb/6071.htm
+    note: "BDB entry for Hebrew asis, sweet wine/pressed juice."
+  NUMERAL_SEVEN_PROJECT_SOURCE:
+    source: "Recovered Nexus_Transposition_Engine_Expanded_Language_Comparisons"
+    note: "Strict C7 feature = sibilant onset followed by labial; ancestral-node and null-model corrections explicitly pending."
+
+relations:
+  - relation_id: HSS01
+    label: "Sumerian ear/hearing/wisdom address <-> Akkadian hasisu"
+    relation_type: lexical_equation_and_semantic_address
+    alignment_score: 0.95
+    historical_relation_score: null
+    hard_ceiling_applied: HC6
+    evidence_class: C0_C1
+    status: anchored_alignment
+    strongest_support:
+      - "ORACC ePSD directly lists Akkadian hasisu equivalents for Sumerian ear/hearing entries."
+      - "ORACC lexical semantics include ear, hearing, wisdom and understanding."
+    strongest_counterweight:
+      - "This is cross-language lexical equivalence; it is not evidence that Sumerian and Akkadian forms are cognate."
+    next_discriminating_test:
+      - "Align multiple Sumerian ear/wisdom lexemes to Akkadian equivalents across periods and quantify gloss stability."
+
+  - relation_id: HSS02
+    label: "Ebla geštu3 = ha-zi-zu-um -> later Akkadian hasisu semantic lane"
+    relation_type: ancient_lexical_crosswalk_plus_historical_candidate
+    alignment_score: 0.90
+    raw_historical_relation_score: 0.73
+    historical_relation_score: 0.73
+    hard_ceiling_applied: none
+    evidence_class: C1_C2
+    status: supported_candidate
+    historical_components:
+      phonological_admissibility: 0.65
+      morphological_admissibility: 0.45
+      chronology: 0.90
+      contact_or_genealogical_path: 0.90
+      semantic_continuity: 1.00
+      independent_witness_support: 0.80
+      negative_control_survival: 0.70
+    strongest_support:
+      - "Ebla supplies an ancient Sumerian-to-Semitic lexical equation in the ear/intelligence semantic field."
+      - "Later Mesopotamian lexical traditions independently align Sumerian ear/hearing terms with Akkadian hasisu."
+    strongest_counterweight:
+      - "Ebla ha-zi-zu-um and Akkadian hasisu should not be collapsed without a dedicated phonological/morphological derivation."
+    next_discriminating_test:
+      - "Trace z/sibilant behavior, morphology and lexical attestations between Eblaite and Akkadian witnesses."
+
+  - relation_id: HSS03
+    label: "Akkadian hasis/hasisu <-> Ugaritic hss in Kothar-wa-Hasis"
+    relation_type: contact_lexical_candidate
+    alignment_score: 0.71
+    raw_historical_relation_score: 0.74
+    historical_relation_score: 0.74
+    hard_ceiling_applied: none
+    evidence_class: C2
+    status: supported_candidate
+    historical_components:
+      phonological_admissibility: 0.80
+      morphological_admissibility: 0.50
+      chronology: 0.80
+      contact_or_genealogical_path: 0.90
+      semantic_continuity: 0.90
+      independent_witness_support: 0.70
+      negative_control_survival: 0.70
+    strongest_support:
+      - "Ugaritic hss occurs in a 'wise/intelligent' epithet and Ugarit is an Akkadian-contact nexus."
+      - "Akkadian hasisu/hasis carries hearing/comprehension/wisdom senses."
+    strongest_counterweight:
+      - "Direct borrowing versus cognacy versus learned/theonymic adaptation remains unresolved."
+      - "The current Ugaritic source in this pass is secondary; primary lexical/grammar citation should replace it."
+    next_discriminating_test:
+      - "Recover primary Ugaritic lexical discussion and syllabic spellings, then test regular correspondence and morphology."
+
+  - relation_id: HSS04
+    label: "Deeper H-S kernel beneath H-S-S forms"
+    relation_type: biradical_kernel_hypothesis
+    alignment_score: 0.58
+    raw_historical_relation_score: 0.54
+    historical_relation_score: 0.49
+    hard_ceiling_applied: HC4
+    evidence_class: C4
+    status: candidate_not_promoted
+    strongest_support:
+      - "Repeated H-S-S forms cluster in the wisdom/hearing lane."
+      - "Independent language families demonstrate that consonantal root enlargement is a real linguistic mechanism."
+    strongest_counterweight:
+      - "No attested native morphology yet licenses stripping the final s in this specific family."
+    next_discriminating_test:
+      - "Search for attested H-S / H-S-S alternation, productive extension, or older lower-arity witnesses."
+
+  - relation_id: QBL01
+    label: "Hebrew qbl receive -> qabbalah reception/received tradition"
+    relation_type: native_lexical_derivation
+    alignment_score: 0.94
+    raw_historical_relation_score: 0.98
+    historical_relation_score: 0.98
+    hard_ceiling_applied: none
+    evidence_class: C0
+    status: anchored
+    strongest_support:
+      - "Avot 1:1 directly uses qibbel 'received' in a receive -> transmit chain."
+      - "The later noun qabbalah belongs to the reception/received-tradition branch."
+    strongest_counterweight:
+      - "This secure lexical relation does not date the later technical mystical system itself."
+    next_discriminating_test:
+      - "Keep lexical history and historical stratification of mystical corpora on separate clocks."
+
+  - relation_id: QBL02
+    label: "West-Semitic QBL face/confront -> Akkadian qablu battle"
+    relation_type: historical_semantic_candidate
+    alignment_score: 0.67
+    raw_historical_relation_score: 0.66
+    historical_relation_score: 0.66
+    hard_ceiling_applied: none
+    evidence_class: C2
+    status: supported_boundary
+    strongest_support:
+      - "The semantic path FACE/CONFRONT -> BATTLE is coherent."
+      - "Akkadian qablu BATTLE is a distinct, well-attested lemma."
+    strongest_counterweight:
+      - "This pass has not yet supplied a full Proto-Semitic correspondence/morphology proof."
+    next_discriminating_test:
+      - "Add comparative Semitic dictionary evidence and verbal derivatives such as combat/confrontation forms."
+
+  - relation_id: QBL03
+    label: "Akkadian qablu middle/hips/waist <-> West-Semitic QBL receive/face"
+    relation_type: formal_carrier_overlap
+    alignment_score: 0.43
+    raw_historical_relation_score: 0.40
+    historical_relation_score: 0.29
+    hard_ceiling_applied: HC3
+    evidence_class: C4
+    status: control_formal_overlap
+    strongest_support:
+      - "The Q-B-L consonantal carrier is real."
+      - "ORACC shows middle/hips and battle as separate Akkadian dictionary entries."
+    strongest_counterweight:
+      - "Semantic continuity is weak and dictionary evidence separates the middle/hips lexeme from battle."
+    next_discriminating_test:
+      - "Only reopen if independent proto-root morphology, sound history, or an ancient lexical equation bridges CENTER/MIDDLE to FACE/RECEIVE."
+
+  - relation_id: ASIS01
+    label: "Greek asis 'slime/mud' <-> onset-stripped Akkadian hasis"
+    relation_type: surface_projection_control
+    alignment_score: 0.41
+    raw_historical_relation_score: 0.18
+    historical_relation_score: 0.18
+    hard_ceiling_applied: HC1_HC2
+    evidence_class: C4_CONTROL
+    status: negative_control
+    strongest_support:
+      - "After onset stripping, the Latin transliteration string can converge on ASIS."
+    strongest_counterweight:
+      - "Greek asis has an independently attested meaning 'slime/mud'; no morphology or historical path licenses stripping Akkadian h."
+    next_discriminating_test:
+      - "Retain as a collision control for normalization pipelines."
+
+  - relation_id: ASIS02
+    label: "Greek basis -> ASIS after stripping initial b"
+    relation_type: surface_projection_control
+    alignment_score: 0.35
+    raw_historical_relation_score: 0.15
+    historical_relation_score: 0.15
+    hard_ceiling_applied: HC1_HC3
+    evidence_class: C4_CONTROL
+    status: negative_control
+    strongest_support:
+      - "The normalized substring ASIS is visually available."
+    strongest_counterweight:
+      - "LSJ explicitly derives basis from baino; b is native to the Greek formation and cannot be discarded to manufacture a carrier."
+    next_discriminating_test:
+      - "Use basis as the canonical onset-stripping false-positive."
+
+  - relation_id: ASIS03
+    label: "Hebrew asis 'pressed juice/sweet wine' <-> Akkadian hasis"
+    relation_type: surface_projection_control
+    alignment_score: 0.38
+    raw_historical_relation_score: 0.22
+    historical_relation_score: 0.22
+    hard_ceiling_applied: HC1
+    evidence_class: C4_CONTROL
+    status: negative_control
+    strongest_support:
+      - "Both can be romanized with an ASIS-like surface after suppressing initial consonantal differences."
+    strongest_counterweight:
+      - "Hebrew begins with ayin and belongs to a pressed-juice lexeme; semantics and morphology do not align with Akkadian hearing/wisdom."
+    next_discriminating_test:
+      - "Preserve the ayin and native root in every future comparison."
+
+  - relation_id: ASIS04
+    label: "Avestan Asi/Ashish <-> Sanskrit asis/ashis surface comparison"
+    relation_type: cross_indic_iranian_surface_control
+    alignment_score: 0.50
+    raw_historical_relation_score: 0.37
+    historical_relation_score: 0.29
+    hard_ceiling_applied: HC3
+    evidence_class: C4_CONTROL
+    status: direct_cognacy_not_supported
+    strongest_support:
+      - "The surface forms invite comparison inside an Indo-Iranian context."
+    strongest_counterweight:
+      - "Encyclopaedia Iranica explicitly states that Avestan Asi has no Old Indian equivalent and derives it from an Iranian root meaning grant/allot."
+    next_discriminating_test:
+      - "Treat Sanskrit blessing forms and Avestan reward/recompense forms independently unless a newer specialist derivation overturns the Iranica analysis."
+
+  - relation_id: ASIS05
+    label: "ASIS normalized carrier as cross-language discovery window"
+    relation_type: heuristic_carrier
+    alignment_score: 0.45
+    historical_relation_score: null
+    hard_ceiling_applied: none
+    evidence_class: HEUR
+    status: retain_as_discovery_operator
+    strongest_support:
+      - "The projection reliably surfaces otherwise hidden segmentation/collision cases."
+    strongest_counterweight:
+      - "Its best current outputs are mostly negative controls once native morphology is restored."
+    next_discriminating_test:
+      - "Use ASIS to discover candidates, but require each candidate to re-enter with full native onset, morphology and source history."
+
+  - relation_id: C7_01
+    label: "Numeral seven strict/broad carrier enrichment"
+    relation_type: cross_family_feature_enrichment
+    alignment_score: 0.61
+    raw_historical_relation_score: 0.52
+    historical_relation_score: 0.49
+    hard_ceiling_applied: HC5
+    evidence_class: C4
+    status: candidate_enrichment_not_promoted
+    strongest_support:
+      - "Recovered project matrix records repeated sibilant/coronal + labial structure at ancestral nodes and preserves Sumerian imin as a failure."
+      - "The hypothesis was already formulated as a feature carrier rather than a universal etymology."
+    strongest_counterweight:
+      - "The 1-10 ancestral-node matrix, genealogy collapse, contact model and frozen null distribution are not yet complete."
+      - "The observed seven > six > three ordering cannot yet be treated as statistical significance."
+    next_discriminating_test:
+      - "Freeze the ancestral-node 1-10 numeral matrix and run frequency/contact/genealogy-corrected enrichment against matched random feature carriers."
+
+summary:
+  promoted_or_anchored:
+    - HSS01
+    - QBL01
+  supported_candidates:
+    - HSS02
+    - HSS03
+    - QBL02
+  live_but_ceiling_limited:
+    - HSS04
+    - C7_01
+  negative_controls:
+    - QBL03
+    - ASIS01
+    - ASIS02
+    - ASIS03
+    - ASIS04
+  retained_heuristics:
+    - ASIS05
