@@ -65,6 +65,14 @@ path_density:
     path: Scriptural-textual-transmission-spine
     level: D4
     note: Hebrew/Aramaic/Greek/Syriac/Latin witness chains provide a dense calibration field for translation, preservation, suppression, import, semantic drift, and liturgical/administrative standardization.
+  - id: P13
+    path: World-language-recovery-and-later-controls
+    level: D2
+    note: Four 64-term teaching modules plus compact multilingual controls; translation data are explicitly unreviewed and remain separate from historical/genealogical claims.
+  - id: P14
+    path: Constructed-and-symbolic-transposition-controls
+    level: D2
+    note: Yijing, Elder Futhark, symbolic concept cards, Esperanto/Esoperanto and ECVR experiments serve structural/control roles rather than historical ancestry claims.
 
 core_matrix:
   - {row: 1, tradition: Sumerian, path: P01, coverage: D4, role: "carrier/readout anchor; classify/build/give/return"}
@@ -134,6 +142,37 @@ incorporated_beyond_core_matrix:
   - {tradition: Proto-Northeast-Caucasian-Nakh-Daghestanian, path: P10, coverage: D1, status: candidate_external_relation, note: "Hurro-Urartian genetic-link hypothesis registered as unproven; requires correspondence/morphology testing"}
   - {tradition: Raetic, path: P07, coverage: D2, status: structured, note: "Tyrsenian comparison lane; morphology/phonology/syntax relation to Etruscan and Lemnian; corpus remains limited"}
   - {tradition: Suebi-Suebian-Elbe-Germanic, path: P11, coverage: D2, status: structured_historical_contact, note: "Roman-mediated ethnographic/migration/state-formation lane; no early native written corpus, so linguistic claims remain low-density"}
+
+outer_ring_recovered:
+  - {tradition: Tagalog, path: P13, coverage: D2, status: recovered_module, note: "64-term module; English glosses unreviewed; Austronesian bridge"}
+  - {tradition: Farsi-Persian, path: P13, coverage: D2, status: recovered_module, note: "64 transliterated terms; Persian script/romanization review pending; Iranian bridge"}
+  - {tradition: Yoruba, path: P13, coverage: D2, status: recovered_module, note: "64-term module; tone marks/pronunciation review pending"}
+  - {tradition: Hindi, path: P13, coverage: D1, status: compact_control, note: "nine control roles; Indo-Aryan/Sanskrit bridge"}
+  - {tradition: Turkish, path: P13, coverage: D1, status: compact_control, note: "nine control roles; contact/transposition lane"}
+  - {tradition: Japanese, path: P13, coverage: D1, status: compact_control}
+  - {tradition: Korean, path: P13, coverage: D1, status: compact_control}
+  - {tradition: Chinese, path: P13, coverage: D1, status: compact_control}
+  - {tradition: Vietnamese, path: P13, coverage: D1, status: compact_control}
+  - {tradition: Indonesian, path: P13, coverage: D1, status: compact_control, note: "Austronesian family bridge"}
+  - {tradition: Swahili, path: P13, coverage: D1, status: compact_control}
+  - {tradition: Zulu, path: P13, coverage: D1, status: compact_control}
+  - {tradition: Haitian-Creole, path: P13, coverage: D1, status: compact_control, note: "distinct creole lane; borrowing does not erase grammatical identity"}
+  - {tradition: Irish, path: P13, coverage: D1, status: compact_control, note: "Goidelic Celtic bridge"}
+  - {tradition: Welsh, path: P13, coverage: D1, status: compact_control, note: "Brittonic Celtic bridge"}
+  - {tradition: Scottish-Gaelic, path: P13, coverage: D1, status: compact_control, note: "source label provisionally repaired from 'Scottish'"}
+  - {tradition: Romanian, path: P13, coverage: D1, status: compact_control, note: "Romance/Latin bridge"}
+  - {tradition: Yiddish, path: P13, coverage: D1, status: compact_control, note: "Germanic language in Hebrew-derived script; script != language"}
+  - {tradition: Esperanto, path: P14, coverage: D1, status: constructed_control}
+  - {tradition: Hawaiian, path: P13, coverage: D1, status: compact_control, note: "Austronesian bridge"}
+  - {tradition: Navajo, path: P13, coverage: D1, status: compact_control, note: "orthography/gloss review pending"}
+  - {tradition: Nahuatl, path: P14, coverage: D1, status: symbolic_operator_only, note: "Nepantla card; not a language profile"}
+  - {tradition: Quechua, path: P14, coverage: D1, status: symbolic_operator_only, note: "Yanantin card; not a language profile"}
+  - {tradition: German, path: P14, coverage: D1, status: symbolic_operator_only, note: "Sehnsucht card; Germanic bridge"}
+  - {tradition: Old-English, path: P14, coverage: D1, status: symbolic_operator_only, note: "Wyrd card; Germanic bridge"}
+  - {tradition: Yijing-Chinese-structural-system, path: P14, coverage: D2, status: structural_control}
+  - {tradition: Elder-Futhark, path: P14, coverage: D2, status: script_control}
+  - {tradition: Esoperanto, path: P14, coverage: D2, status: constructed_experiment}
+  - {tradition: LinguaDanka, path: P14, coverage: D0, status: named_gap, note: "exact dictionary not recovered; no records admitted"}
 
 crosscutting_paths:
   - id: X01
