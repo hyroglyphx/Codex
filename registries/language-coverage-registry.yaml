@@ -1,6 +1,6 @@
 registry: language-coverage
 version: 0.1.0
-updated: 2026-09-20
+updated: 2026-09-21
 status: GENERATED_LIVING_REGISTRY
 
 coverage_scale:
@@ -224,3 +224,14 @@ crosscutting_paths:
     density: D4
     primary: [Sumerian, Akkadian, Hebrew, Aramaic-Syriac, Classical-Greek, Latin, Hittite, Luwian, Egyptian-Coptic, Old-Persian, Elamite, Phoenician-Punic, Etruscan, Lemnian, Sanskrit]
     note: "Living graph of direct translations, parallel multilingual witnesses, recompositions, readout/script changes, borrowing, operator transposition, custody, substrate and genealogical transformation. Remaining nodes enter through a typed completion queue."
+
+  - id: X12
+    name: arity-compression-spectral-index
+    density: D4
+    primary: [Egyptian-Coptic, Sumerian, Akkadian, Ugaritic, Hebrew, Aramaic-Syriac, Phoenician-Punic, Sanskrit, Avestan-Old-Iranian]
+    note: "Indexes graphic arity, phonological load, root/radical arity, morphological expansion, semantic compression and classifier/context load separately. Spectral order is not automatically historical order."
+  - id: X13
+    name: synchronous-state-harmonics
+    density: D2
+    primary: [Egyptian-Coptic, Hebrew, Aramaic-Syriac, Classical-Greek]
+    note: "Cross-modal structural lane for name/sign/number/gesture/sequence convergence. Corpus-level evidence lives in the master graph; no direct genealogy is implied."
