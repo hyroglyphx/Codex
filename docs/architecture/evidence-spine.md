@@ -222,3 +222,46 @@ The first end-to-end test must take **one complete witness** through:
 8. provenance reconstruction.
 
 This becomes the product-facing counterpart of Δ-001.
+
+
+## Arity, compression, and multimodal synchronization
+
+The evidence spine now treats representational resolution as a first-class coordinate.
+
+For linguistic/script witnesses, keep separate:
+
+```text
+graphic arity
+phonological load
+root/radical arity
+morphological complexity
+semantic compression
+classifier/context load
+```
+
+A one-sign carrier may encode a logogram, one consonant, multiple consonants, a syllable, or another active role. The system must not infer root structure from sign count.
+
+New rule:
+
+```text
+spectral order != chronological order
+unless independently demonstrated
+```
+
+The relay also supports multimodal state records in which sound, sign/seal, number, gesture, sequence and spatial address can converge on one state target.
+
+```text
+multimodal agreement -> stronger state constraint
+multimodal agreement != proof of hidden substrate
+```
+
+Validation can therefore include:
+- cross-modal agreement/conflict,
+- transformation covariance,
+- cycle consistency,
+- divergence rate,
+- ontology-claim ceiling.
+
+See:
+- `studies/arity-compression-spectral-language-sieve.md`
+- `studies/multimodal-synchronous-state-harmonics.md`
