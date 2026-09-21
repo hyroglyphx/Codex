@@ -235,3 +235,9 @@ crosscutting_paths:
     density: D2
     primary: [Egyptian-Coptic, Hebrew, Aramaic-Syriac, Classical-Greek]
     note: "Cross-modal structural lane for name/sign/number/gesture/sequence convergence. Corpus-level evidence lives in the master graph; no direct genealogy is implied."
+
+  - id: X14
+    name: ancient-crosswalk-calibration
+    density: D4
+    primary: [Sumerian, Akkadian, Eblaite-Semitic, Ugaritic, Egyptian-Coptic, Demotic-Egyptian, Old-Persian, Elamite, Classical-Greek, Aramaic-Syriac, Phoenician-Punic, Luwian, Lycian]
+    note: "High-confidence calibration lane built from ancient sign lists, reading glosses, bilinguals and trilinguals. Used to learn transformation behavior before projecting into uncertain corpora."
