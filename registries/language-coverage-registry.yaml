@@ -72,7 +72,7 @@ core_matrix:
   - {row: 11, tradition: Berber, path: P08, coverage: D3, role: "Afroasiatic branch control; numeral carrier"}
   - {row: 12, tradition: Sumerian-Emesal, path: P01, coverage: D3, role: "register/dialect orbit and readout control"}
   - {row: 13, tradition: Hurrian, path: P02, coverage: D3, role: "agglutinative non-Semitic control; numeral partial carrier"}
-  - {row: 14, tradition: Urartian, path: P02, coverage: D2, role: "later Hurro-Urartian branch control"}
+  - {row: 14, tradition: Urartian, path: P02, coverage: D3, role: "active Hurro-Urartian branch study; Old-Hurrian proximity; ergative/agglutinative morphology; Assyrian-to-Urartian scribal transition; Armenian contact"}
   - {row: 15, tradition: Elamite, path: P06, coverage: D3, role: "non-Semitic nexus and Achaemenid adversarial control"}
   - {row: 16, tradition: Hattic, path: P02, coverage: D2, role: "substrate/ritual carrier-custody control"}
   - {row: 17, tradition: Hittite, path: P03, coverage: D4, role: "old IE morphology; nested Sumerogram/Akkadogram/Hittite readout"}
@@ -123,6 +123,7 @@ incorporated_beyond_core_matrix:
   - {tradition: Paeonian, path: P10, coverage: D1, status: registered, note: "Balkan substrate/branch control"}
   - {tradition: Indo-Aryan-Mitanni-register, path: P05, coverage: D2, status: structured, note: "embedded donor-register versus matrix-language control"}
   - {tradition: Iranian-umbrella, path: P06, coverage: D2, status: structured, note: "macro-zone support for Old Persian/Avestan lane"}
+  - {tradition: Proto-Northeast-Caucasian-Nakh-Daghestanian, path: P10, coverage: D1, status: candidate_external_relation, note: "Hurro-Urartian genetic-link hypothesis registered as unproven; requires correspondence/morphology testing"}
 
 crosscutting_paths:
   - id: X01
@@ -149,3 +150,8 @@ crosscutting_paths:
     name: numeric-transposition-sign-value
     density: D3
     primary: [Classical-Greek, Hebrew, Aramaic-Syriac, Arabic, Phoenician-Punic, Akkadian]
+  - id: X07
+    name: hurro-urartian-deep-relations
+    density: D2
+    primary: [Hurrian, Urartian, Proto-Northeast-Caucasian-Nakh-Daghestanian, Proto-Kartvelian-Georgian, Etruscan, Sumerian]
+    note: "Only Hurrian-Urartian is secure; all external genetic links remain candidate/adversarial lanes. Kura-Araxes is tracked separately as an archaeological correlate hypothesis."
