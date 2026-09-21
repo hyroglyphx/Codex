@@ -57,6 +57,10 @@ path_density:
     path: Distant-external-controls
     level: D2
     note: Kartvelian, Uralic, Tamil, Baltic and related controls exist mainly to stress-test broad invariants.
+  - id: P11
+    path: Roman-Germanic-migration-and-custody
+    level: D2
+    note: Suebi/Suebian lane registered from Roman-mediated historical evidence; linguistic reconstruction remains thin because no native early written corpus is present.
 
 core_matrix:
   - {row: 1, tradition: Sumerian, path: P01, coverage: D4, role: "carrier/readout anchor; classify/build/give/return"}
@@ -91,7 +95,7 @@ core_matrix:
   - {row: 30, tradition: Albanian, path: P05, coverage: D3, role: "surface-collision and IE branch control"}
   - {row: 31, tradition: Lithuanian, path: P10, coverage: D2, role: "conservative Baltic/IE external control"}
   - {row: 32, tradition: Etruscan, path: P07, coverage: D3, role: "Pyrgi bilingual; numeral carrier; non-IE western control"}
-  - {row: 33, tradition: Lemnian, path: P07, coverage: D2, role: "Tyrsenian relation control"}
+  - {row: 33, tradition: Lemnian, path: P07, coverage: D3, role: "Tyrsenian morphology/script study; Kaminia stele; Etruscan relationship control"}
   - {row: 34, tradition: Iberian, path: P07, coverage: D2, role: "semi-syllabic western contact and numeral candidate control"}
   - {row: 35, tradition: Basque, path: P07, coverage: D2, role: "western non-IE external control"}
   - {row: 36, tradition: Proto-Kartvelian-Georgian, path: P10, coverage: D2, role: "consonant-rich external control"}
@@ -124,6 +128,8 @@ incorporated_beyond_core_matrix:
   - {tradition: Indo-Aryan-Mitanni-register, path: P05, coverage: D2, status: structured, note: "embedded donor-register versus matrix-language control"}
   - {tradition: Iranian-umbrella, path: P06, coverage: D2, status: structured, note: "macro-zone support for Old Persian/Avestan lane"}
   - {tradition: Proto-Northeast-Caucasian-Nakh-Daghestanian, path: P10, coverage: D1, status: candidate_external_relation, note: "Hurro-Urartian genetic-link hypothesis registered as unproven; requires correspondence/morphology testing"}
+  - {tradition: Raetic, path: P07, coverage: D2, status: structured, note: "Tyrsenian comparison lane; morphology/phonology/syntax relation to Etruscan and Lemnian; corpus remains limited"}
+  - {tradition: Suebi-Suebian-Elbe-Germanic, path: P11, coverage: D2, status: structured_historical_contact, note: "Roman-mediated ethnographic/migration/state-formation lane; no early native written corpus, so linguistic claims remain low-density"}
 
 crosscutting_paths:
   - id: X01
@@ -155,3 +161,13 @@ crosscutting_paths:
     density: D2
     primary: [Hurrian, Urartian, Proto-Northeast-Caucasian-Nakh-Daghestanian, Proto-Kartvelian-Georgian, Etruscan, Sumerian]
     note: "Only Hurrian-Urartian is secure; all external genetic links remain candidate/adversarial lanes. Kura-Araxes is tracked separately as an archaeological correlate hypothesis."
+  - id: X08
+    name: tyrsenian-internal-comparison
+    density: D3
+    primary: [Etruscan, Lemnian, Raetic]
+    note: "Morphology, script adaptation, chronology and migration models are tracked separately; Lemnian now has explicit dative/genitive/past-tense and inscriptional evidence."
+  - id: X09
+    name: roman-mediated-germanic-custody
+    density: D2
+    primary: [Suebi-Suebian-Elbe-Germanic, Latin, Celtic]
+    note: "Tests source filtering, ethnonym persistence, migration, administrative inheritance and assimilation; not yet a Germanic linguistic reconstruction lane."
