@@ -1,0 +1,188 @@
+dataset: numeral-3-10-null-pilot
+version: 0.1.0
+updated: 2026-09-21
+status: PILOT_NOT_SIGNIFICANCE_CLAIM
+target: strict-C7-feature-enrichment
+
+feature_definition:
+  strict:
+    onset: "sibilant / affricated-sibilant class"
+    later_segment: "[p,b,f,β,w]"
+  broad:
+    onset: "sibilant / coronal-sibilant class"
+    later_segment: "[p,b,f,β,w,m]"
+  frozen_before_counting: true
+  note: >
+    This pilot uses the previously frozen project feature. It does not modify the
+    feature after seeing the matrix.
+
+scope:
+  digits: [3,4,5,6,7,8,9,10]
+  reason_for_3_to_10: >
+    These are the digits currently covered by directly recoverable comparable
+    source tables across the pilot nodes. One and two are excluded from this
+    first statistical pass rather than filled from memory.
+  nodes:
+    - Proto-Semitic
+    - Egyptian
+    - Proto-Indo-European
+    - Sumerian
+  nested_control:
+    Proto-Berber: "recorded separately because its reconstruction of seven is disputed and because Afroasiatic branch non-independence must be modeled."
+
+sources:
+  proto_semitic:
+    url: https://onlinelibrary.wiley.com/doi/full/10.1111/1467-968x.70003
+    note: "Suchard 2026, Table 1 cardinal stems one-ten in Proto-Semitic."
+  afroasiatic_comparison:
+    url: https://www.scribd.com/document/862200899/Dispersals-and-Diversification-Linguistic-and-Serangeli-Matilde-Olander-Thomas-Eds-10-1163-9789004416192-2020-Jan-01-Koninklijke-Brill
+    note: "Bjørn chapter, table of Northern Afro-Asiatic numerals and sections on PIE six/seven."
+  pie_seven:
+    url: https://lrc.la.utexas.edu/lex/master/1698
+    note: "UT Austin Indo-European Lexicon, PIE septm 'seven'."
+  sumerian:
+    url: https://oracc.museum.upenn.edu/dcclt/signlists/Q000154.193.3
+    note: "ORACC Ea sign list entries for Sumerian numeral readings four-ten."
+  proto_berber_control:
+    url: https://www.scribd.com/document/1004497639/Korangy-Alireza-Bensoukas-Karim-Eds-the-Handbook-of-Berber-l
+    note: "Handbook of Berber chapter reports Prasse/Blažek reconstruction; five-nine may represent early Semitic loan stratum."
+
+matrix:
+  Proto-Semitic:
+    family: Afroasiatic-Semitic
+    forms:
+      3: "*ɬalāθ-"
+      4: "*ʔarbaʕ-"
+      5: "*χam(i)s-"
+      6: "*sidθ-"
+      7: "*t͡sabʕ- / *sabʕ-"
+      8: "*θamāniy-"
+      9: "*tisʕ-"
+      10: "*ʕaɬar-"
+    strict_hits: [7]
+    broad_hits: [7]
+
+  Egyptian:
+    family: Afroasiatic-Egyptian
+    forms:
+      3: "ḫmt-w"
+      4: "fd-w"
+      5: "diw"
+      6: "śrś-w / śiś-w"
+      7: "śfḫ-w"
+      8: "ḫmn-w"
+      9: "pśḏ-w"
+      10: "mḏ-w"
+    strict_hits: [6,7]
+    broad_hits: [6,7]
+    note: >
+      Egyptian six is an important positive control against cherry-picking seven:
+      it also satisfies the frozen strict feature.
+
+  Proto-Indo-European:
+    family: Indo-European
+    forms:
+      3: "*tréyes"
+      4: "*kʷetwóres"
+      5: "*pénkʷe"
+      6: "*(s)weḱs"
+      7: "*septḿ̥"
+      8: "*(H)oḱtoH"
+      9: "*(h₁en)néwn̥"
+      10: "*déḱm̥"
+    strict_hits: [6,7]
+    broad_hits: [6,7]
+
+  Sumerian:
+    family: isolate
+    forms:
+      3: "eš / eš₅"
+      4: "limmu"
+      5: "ia"
+      6: "aš"
+      7: "imin / umun"
+      8: "ussu"
+      9: "ilimmu"
+      10: "u / gešu-type decade notation"
+    strict_hits: []
+    broad_hits: []
+    note: "Sumerian remains a failure/control node for the seven carrier."
+
+nested_proto_berber_control:
+  forms:
+    3: "*karaḍ"
+    4: "*hakkuẓ"
+    5: "*sammu:s"
+    6: "*saḍīs"
+    7: "*(his)sa:h in one reconstruction; *ăssaβ proposed in another literature stream"
+    8: "*(hit)ta:m"
+    9: "*tiẓẓa:h"
+    10: "*mara:w"
+  strict_count_policy: "do not count seven in base pilot"
+  broad_hits_if_handbook_reconstruction_used: [5]
+  note: >
+    The older project had treated Proto-Berber seven as a strict labial carrier.
+    Current source review shows the reconstruction is not stable enough for that
+    to be a base-matrix datum. Keep alternative *ssaβ as a sensitivity analysis,
+    not as a silently fixed form.
+
+strict_hit_counts:
+  3: 0
+  4: 0
+  5: 0
+  6: 2
+  7: 3
+  8: 0
+  9: 0
+  10: 0
+
+null_model:
+  description: >
+    Conditional permutation pilot. Preserve each node's observed number of strict
+    hits across digits 3-10, then distribute those hits uniformly over the eight
+    digit positions. Row hit counts are [1,2,2,0].
+  total_equally_weighted_configurations: 6272
+  pre_specified_digit_probability_of_3_or_more_hits: 0.0078125
+  probability_any_of_8_digits_has_3_or_more_hits: 0.0625
+  interpretation: >
+    The pre-specified-seven value is suggestive under this deliberately simple
+    null. The look-elsewhere-corrected pilot is not conventionally significant,
+    and neither number is a publishable p-value because genealogy, contact,
+    reconstruction uncertainty, feature-selection history, and phonotactic base
+    rates are not yet fully modeled.
+
+sensitivity:
+  feature_selection: >
+    The strict carrier was defined in the project before this matrix was frozen,
+    but its historical development was data-informed. Treat the null as exploratory,
+    not a clean preregistered test.
+  genealogy: >
+    Proto-Semitic and Egyptian are separate branch nodes here but share deeper
+    Afroasiatic ancestry. A hierarchical null must model that dependence.
+  contact: >
+    PIE seven has long been discussed as a possible borrowing from Semitic;
+    a diffusion model therefore predicts non-independence rather than independent hits.
+  numeral_six: >
+    Six hits both Egyptian and PIE, making it the nearest within-matrix competitor.
+    Any seven-enrichment claim must explain why seven gains the additional Semitic hit.
+  berber: >
+    Competing reconstructions of Proto-Berber seven materially affect the count.
+    Do not count it until the reconstruction lane is frozen from specialist sources.
+
+current_result:
+  seven_rank: highest_strict_hit_count
+  six_rank: second
+  status: suggestive_not_promoted
+  conclusion: >
+    The first genealogy-aware pilot preserves the earlier observation that seven
+    is enriched relative to most digits, but it also exposes six as a substantial
+    comparator and Proto-Berber seven as reconstruction-sensitive. The correct next
+    step is a hierarchical/contact-aware null rather than adding more daughter languages.
+
+next_tests:
+  - "Extend the matrix to digits 1-10 with source-locked forms for every node."
+  - "Add Proto-Kartvelian, Proto-Uralic, Hurrian, Etruscan, Basque and Iberian only after source-locking each full 1-10 series."
+  - "Build a hierarchical genealogy model: Afroasiatic branches are not fully independent."
+  - "Add contact edges, especially Semitic <-> PIE and possible Berber borrowing."
+  - "Estimate feature base rates from each phonological inventory rather than uniform digit placement."
+  - "Run matched alternative features to quantify feature-selection bias."
