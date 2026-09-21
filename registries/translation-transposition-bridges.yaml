@@ -18,6 +18,8 @@ bridge_types:
   B12: CONTACT_RESTRUCTURING_CREOLIZATION
   B13: SUPPRESSIVE_IMPORTED_LANGUAGE_SHIFT
   B14: GLOSS_TRANSLATION_SCAFFOLD
+  B15: EXONYM_ONOMASTIC_TRANSPOSITION
+  B16: HISTORIOGRAPHIC_RETROJECTION
 
 edges:
   # Mesopotamian foundations
@@ -137,6 +139,19 @@ edges:
   - {id: E135, source: Libyco-Berber, target: Berber-Afroasiatic-lane, type: B10, class: C1, status: connected_family}
   - {id: E136, source: Thracian-Dacian-Paeonian, target: Balkan-IE-contact-control, type: B11, class: C4, status: connected_control, note: "grouped only as a control field; no shared close subgroup implied"}
   - {id: E137, source: Proto-Northeast-Caucasian-hypothesis, target: Hurro-Urartian-deep-relation-test, type: B11, class: C5, status: connected_candidate, note: "hypothesis edge only; not family promotion"}
+
+  # Xenophon / Cyropaedia Greek transposition layer
+  - {id: E140, source: Old-Persian-Kurus, target: Greek-Kyros, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E141, source: Old-Persian-Kambujiya, target: Greek-Kambyses, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E142, source: Babylonian-Ishtumegu, target: Greek-Astyages, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E143, source: Old-Iranian-Huvaxshtra, target: Greek-Cyaxares, type: B15, class: C1, status: connected_name_orbit, note: "name equivalence secure; Xenophon's post-Astyages person identification is not"}
+  - {id: E144, source: Old-Persian-Bardiya, target: Xenophon-Tanaoxares, type: B15, class: C2, status: connected_identity_variant}
+  - {id: E145, source: Old-Persian-Gaubaruva, target: Greek-Gobryas, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E146, source: Old-Persian-Vishtaspa, target: Greek-Hystaspes, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E147, source: Persian-ethnonym, target: Perseus-genealogy-in-Cyropaedia, type: B16, class: C4, status: connected_mythic_recode, note: "Greek etiological naturalization, not etymology"}
+  - {id: E148, source: late-Achaemenid-observed-practice, target: Cyrus-era-narrative, type: B16, class: C3, status: connected_retrojection, note: "applies to 'even to this day' institutional/cultural descriptions"}
+  - {id: E149, source: Iranian-satrapal-office, target: Greek-satrapes-satrapeia, type: B15, class: C1, status: connected_title_translation}
+  - {id: E150, source: Iranian-decimal-command, target: Greek-chiliarchos, type: B15, class: C2, status: connected_title_equivalence}
 
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
