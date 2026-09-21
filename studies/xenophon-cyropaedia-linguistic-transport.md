@@ -332,3 +332,47 @@ The consolidation process often preserves local identity while altering allegian
 ### Historical caution
 
 Treat this as a Xenophontic model of Cyrus' rule unless independently corroborated by Achaemenid, Babylonian, Elamite, Aramaic, or other contemporary evidence.
+
+
+## Translator-overlay control: “jot and tittle”
+
+Cyropaedia 3.1.21 is a critical control for target-language literary coloring.
+
+Greek:
+```text
+εἰδὼς ὅτι ἡμεῖς οὐδ’ ὁτιοῦν ὧν Ἀστυάγης συνέθετο παραβαίνομεν;
+```
+
+Sense:
+```text
+knowing that we transgress / violate nothing at all
+of what Astyages agreed
+```
+
+Dakyns/Stawell renders the clause with the English biblical idiom:
+```text
+"we had faithfully observed every jot and tittle of the compact Astyages made"
+```
+
+The source does NOT contain Greek ἰῶτα ("iota/jot") or κεραία ("stroke/tittle"), the terms familiar from Matthew 5:18.
+
+Therefore classify:
+```text
+SOURCE SEMANTICS:
+total observance / no violation
+
+TARGET RHETORIC:
+biblical-English "jot and tittle"
+
+TRANSFORM:
+TARGET-CULTURE IDIOMATIC RECODING
+```
+
+Research consequence:
+An English translation can create an apparent biblical or scriptural intertext that does not exist lexically in the Greek source.
+
+For every cross-corpus phrase match:
+1. verify exact source-language wording;
+2. distinguish source metaphor from translator metaphor;
+3. tag translator/editor biblicalizing, archaizing, classical, or occult technical vocabulary;
+4. never promote an English phrase-match into an ancient intertext without source-language support.
