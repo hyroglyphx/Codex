@@ -61,6 +61,10 @@ path_density:
     path: Roman-Germanic-migration-and-custody
     level: D2
     note: Suebi/Suebian lane registered from Roman-mediated historical evidence; linguistic reconstruction remains thin because no native early written corpus is present.
+  - id: P12
+    path: Scriptural-textual-transmission-spine
+    level: D4
+    note: Hebrew/Aramaic/Greek/Syriac/Latin witness chains provide a dense calibration field for translation, preservation, suppression, import, semantic drift, and liturgical/administrative standardization.
 
 core_matrix:
   - {row: 1, tradition: Sumerian, path: P01, coverage: D4, role: "carrier/readout anchor; classify/build/give/return"}
@@ -171,3 +175,8 @@ crosscutting_paths:
     density: D2
     primary: [Suebi-Suebian-Elbe-Germanic, Latin, Celtic]
     note: "Tests source filtering, ethnonym persistence, migration, administrative inheritance and assimilation; not yet a Germanic linguistic reconstruction lane."
+  - id: X10
+    name: scriptural-textual-relay
+    density: D4
+    primary: [Hebrew, Aramaic-Syriac, Classical-Greek, Latin, Akkadian, Sumerian, Sanskrit]
+    note: "Calibrates textual continuity across Masoretic Hebrew, Septuagint, Targumic Aramaic, Peshitta/Syriac, Vulgate/Latin and older/adjacent operator corpora. Direct transmission and structural/operator correspondence are always separately typed."
