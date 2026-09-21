@@ -301,6 +301,7 @@ source_strengthened_candidate_packs:
   numeral_seven:
     source_locked_matrix: data/calibration/numeral-1-10-source-locked-v0.2.yaml
     hierarchical_null: data/calibration/numeral-hierarchical-null-v0.2.yaml
+    generative_null: data/calibration/numeral-generative-null-v0.1.yaml
     study: studies/numeral-seven-hierarchical-enrichment-v0.2.md
     status: source_strengthened_dependency_sensitive
     key_result: "root-normalized core matrix: seven=5 strict hits, six=1, all other digits=0; extended candidate matrix reaches seven=7"
