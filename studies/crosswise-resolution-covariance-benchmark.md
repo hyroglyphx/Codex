@@ -559,3 +559,123 @@ and promote a historical relation only when crosswise transformation remains sta
   https://era.ed.ac.uk/handle/1842/9438
 - Schmidt / MacDermot, *The Books of Jeu and the Untitled Text in the Bruce Codex*, Brill:
   https://brill.com/display/title/7045
+
+
+---
+
+## 16. Rosetta Nexus / Parallax Levels
+
+The calibration family is now formalized in:
+
+`registries/rosetta-nexus-calibration.yaml`
+
+The useful analogy to the Parallax cave model is not a ladder of certainty but a ladder of **representation distance**.
+
+```text
+PX0  same occurrence, multiple roles
+PX1  same object, script/register shift
+PX2  same object, cross-language
+PX3  co-located object set, parallel/near-parallel
+PX4  same text/event, distributed objects
+PX5  explicit scribal crosswalk
+PX6  archival / recensional relay
+PX7  structural control only
+```
+
+A PX level never substitutes for evidence class.
+
+The crosswise engine therefore records two independent coordinates:
+
+```text
+PARALLAX DISTANCE
+x
+ALIGNMENT GRANULARITY
+```
+
+Alignment granularity ranges from:
+
+```text
+sign
+-> phoneme/syllable
+-> lexeme/name
+-> phrase/formula
+-> clause/sentence
+-> proposition
+-> section
+-> document/event
+```
+
+This lets a Rosetta-like witness be used at several scales at once.
+
+### Required Rosetta Nexus variables
+
+Every calibration witness should now record:
+
+```text
+NEXUS_ID
+OBJECT_ID
+CARRIER_CLASS
+MATERIAL_SUBSTRATE
+OBJECT_COUNT
+COLOCATION
+SPATIAL_LAYOUT
+LANGUAGES
+SCRIPTS
+REGISTERS
+PARALLAX_LEVEL
+ALIGNMENT_GRANULARITY
+CROSSWALK_EXPLICITNESS
+PARALLELISM_TYPE
+SAME_REFERENT
+SAME_PROPOSITION
+SAME_LEXICALIZATION
+TRANSLATION_DIRECTION_KNOWN
+ANCHOR_TYPES
+OMISSION_EXPANSION_REORDERING
+DAMAGE_PROFILE
+TRANSFORM_VECTOR
+COVARIANCE
+CYCLE_CONSISTENCY
+DIVERGENCE_RATE
+RESIDUE
+EVIDENCE_CLASS
+CALIBRATION_WEIGHT
+ONTOLOGY_CLAIM_CEILING
+```
+
+### Why this matters
+
+A monument or tablet can be treated as a multi-angle observation of one institutional, linguistic, or semantic state.
+
+The correct operation is not to flatten the versions into one "translation."
+
+It is:
+
+```text
+VIEW_1
+VIEW_2
+VIEW_3
+   ↓
+ALIGN BY ANCHOR AND GRANULARITY
+   ↓
+MEASURE PRESERVATION / DIVERGENCE
+   ↓
+RECONSTRUCT THE CONSTRAINED SHARED STATE
+```
+
+This is the historical-linguistic analogue of using several projections to constrain a hidden geometry.
+
+### Primary Rosetta Nexus set
+
+- Memphis / Rosetta
+- Behistun
+- Tell Fekheriye
+- Karatepe / Cinekoy
+- Letoon
+- Pyrgi
+- Ebla sign and lexical lists
+- Ugarit KTU 5.14
+- Sumerian–Akkadian lexical traditions
+- Egyptian–Hittite treaty tradition
+
+The set deliberately mixes stelae, rock inscriptions, statues, tablet corpora, gold tablets, and distributed diplomatic copies so that material carrier and encoding behavior can be separated.
