@@ -144,6 +144,7 @@ parallelism_types:
 calibration_objects:
   - id: RN01
     name: Memphis-Rosetta
+    data_path: data/calibration/rosetta-memphis-first-alignment.yaml
     carrier_class: stele_fragment
     parallax_levels: [PX1, PX2]
     languages: [Egyptian, Greek]
@@ -155,6 +156,7 @@ calibration_objects:
 
   - id: RN02
     name: Behistun
+    data_path: data/calibration/behistun-first-alignment.yaml
     carrier_class: monumental-rock-inscription
     parallax_levels: [PX2, PX6]
     languages: [Old-Persian, Elamite, Babylonian-Akkadian]
@@ -276,3 +278,16 @@ governing_invariants:
   - "co-location strengthens historical linkage but does not erase divergence"
   - "explicit ancient crosswalk outranks retrospective resemblance for calibration"
   - "parallax depth is not confidence"
+
+
+calibration_status:
+  RN01: first_alignment_complete
+  RN02: first_alignment_complete
+  RN03: queued
+  RN04: queued
+  RN05: queued
+  RN06: queued
+  RN07: queued
+  RN08: queued
+  RN09: queued
+  RN10: queued
