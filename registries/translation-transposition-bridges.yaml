@@ -213,6 +213,12 @@ edges:
   - {id: E234, source: Greek-philosophical-schools, target: Refutation-heresy-genealogies, type: B22, class: C4, status: authorial_derivation_claim, note: "historical dependence requires independent support"}
   - {id: E235, source: founder-teacher, target: later-school-heresiological-category, type: B20, class: C2, status: intellectual_scope_shift, note: "founder doctrine must not be inferred automatically from later followers"}
   - {id: E236, source: Greek-Hebrew-ritual-registers, target: Refutation-Book-IV-magical-report, type: B21, class: C3, status: multilingual_ritual_witness, note: "author's 'as if Hebrew' label is not proof of valid Hebrew"}
+  # Q-B-L carrier orbit
+  - {id: E250, source: Proto-West-Semitic-qbl-face, target: West-Semitic-qbl-receive, type: B25, class: C1, status: semantic_derivation_anchor}
+  - {id: E251, source: West-Semitic-qbl-receive, target: Hebrew-qabbalah-reception-tradition, type: B25, class: C0, status: lexical_semantic_anchor}
+  - {id: E252, source: Proto-Semitic-qbl-face, target: Akkadian-qablu-battle, type: B25, class: C2, status: marginal_East-Semitic_survival, note: "plausible face-to-face → confrontation → battle"}
+  - {id: E253, source: Akkadian-qablu-middle-waist, target: West-Semitic-qbl-receive, type: B25, class: C4, status: formal_carrier_only, note: "homonym/phonological overlap; direct etymological identity unestablished"}
+  - {id: E254, source: Arabic-qbl-face-before-qibla, target: Arabic-qbl-receive-accept, type: B25, class: C0, status: internal_semantic_orbit}
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
