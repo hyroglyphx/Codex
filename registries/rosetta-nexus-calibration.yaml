@@ -168,6 +168,7 @@ calibration_objects:
 
   - id: RN03
     name: Tell-Fekheriye
+    data_path: data/calibration/tell-fekheriye-first-alignment.yaml
     carrier_class: inscribed-statue
     parallax_levels: [PX2]
     languages: [Akkadian, Aramaic]
@@ -213,6 +214,7 @@ calibration_objects:
 
   - id: RN07
     name: Ebla-sign-and-lexical-lists
+    data_path: data/calibration/ebla-sign-lexical-first-alignment.yaml
     carrier_class: clay-tablets
     parallax_levels: [PX5]
     languages: [Sumerian, Eblaite-Semitic]
@@ -224,6 +226,7 @@ calibration_objects:
 
   - id: RN08
     name: Ugarit-KTU-5-14
+    data_path: data/calibration/ugarit-ktu-5-14-crosswalk.yaml
     carrier_class: clay-tablet
     parallax_levels: [PX5]
     languages: [Ugaritic, Akkadian]
@@ -283,11 +286,11 @@ governing_invariants:
 calibration_status:
   RN01: first_alignment_complete
   RN02: first_alignment_complete
-  RN03: queued
+  RN03: first_alignment_complete
   RN04: queued
   RN05: queued
   RN06: queued
-  RN07: queued
-  RN08: queued
+  RN07: first_alignment_complete
+  RN08: first_alignment_complete
   RN09: queued
   RN10: queued
