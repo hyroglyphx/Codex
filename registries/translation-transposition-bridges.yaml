@@ -1,6 +1,6 @@
 registry: translation-transposition-bridges
 version: 0.1.0
-updated: 2026-09-20
+updated: 2026-09-21
 status: LIVING
 
 bridge_types:
@@ -20,6 +20,17 @@ bridge_types:
   B14: GLOSS_TRANSLATION_SCAFFOLD
   B15: EXONYM_ONOMASTIC_TRANSPOSITION
   B16: HISTORIOGRAPHIC_RETROJECTION
+  B17: ORAL_FORMULAIC_MULTIFORM
+  B18: PROSODIC_METRICAL_TRANSPOSITION
+  B19: RECAPITULATIVE_REWRITE
+  B20: REFERENTIAL_STRATIFICATION_TRANSPOSITION
+  B21: DOXOGRAPHIC_SOURCE_RELAY
+  B22: POLEMICAL_GENEALOGY_RECODING
+  B23: CROSS_LANGUAGE_ETYMOLOGICAL_REANALYSIS
+  B24: EMBODIED_IDIOM_TRANSPOSITION
+  B25: SEMITIC_ROOT_OPERATOR_ORBIT
+  B26: ARITY_COMPRESSION_TRANSPOSITION
+  B27: MULTIMODAL_STATE_SYNCHRONIZATION
 
 edges:
   # Mesopotamian foundations
@@ -219,6 +230,15 @@ edges:
   - {id: E252, source: Proto-Semitic-qbl-face, target: Akkadian-qablu-battle, type: B25, class: C2, status: marginal_East-Semitic_survival, note: "plausible face-to-face → confrontation → battle"}
   - {id: E253, source: Akkadian-qablu-middle-waist, target: West-Semitic-qbl-receive, type: B25, class: C4, status: formal_carrier_only, note: "homonym/phonological overlap; direct etymological identity unestablished"}
   - {id: E254, source: Arabic-qbl-face-before-qibla, target: Arabic-qbl-receive-accept, type: B25, class: C0, status: internal_semantic_orbit}
+  # Arity / compression and multimodal synchronization
+  - {id: E260, source: Egyptian-sign-role-spectrum, target: arity-compression-sieve, type: B26, class: C0, status: internal_script_calibration, note: "logographic/uniliteral/biliteral/triliteral roles are indexed separately from root genealogy"}
+  - {id: E261, source: Sumerian-logographic-carriers, target: Akkadian-language-readouts, type: B26, class: C0, status: representational_decompression_anchor, note: "carrier/readout relation; not a claim of lexical ancestry"}
+  - {id: E262, source: Semitic-biradical-candidate-kernels, target: Semitic-triradical-expansions, type: B26, class: C4, status: candidate_root_enlargement, note: "test lexeme-by-lexeme; no universal biradical stage assumed"}
+  - {id: E263, source: Indo-Iranian-root-enlargement-controls, target: arity-compression-sieve, type: B11, class: C2, status: comparative_mechanism_control, note: "independent control for compact-root plus consonantal-extension mechanisms"}
+  - {id: E270, source: Books-of-Jeu-credential-system, target: Chaldaean-symbola-synthemata, type: B27, class: C4, status: structural_control, note: "name/seal/token/ascent architecture compared without asserting direct genealogy"}
+  - {id: E271, source: Hekhalot-gate-credentials, target: Books-of-Jeu-credential-system, type: B27, class: C4, status: structural_control, note: "gatekeeper/name/seal comparison; transmission path remains open"}
+  - {id: E272, source: Egyptian-gate-name-knowledge, target: late-antique-ascent-credential-systems, type: B27, class: C4, status: structural_control, note: "multimodal threshold architecture only; direct descent not encoded"}
+
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
