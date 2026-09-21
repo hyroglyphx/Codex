@@ -130,6 +130,12 @@ textual_corpora:
     route: "Hebrew/Greek biblical traditions --B1/C0--> Latin --B1/C1--> vernacular translation halo"
   - id: TXT_VEDIC
     route: "Vedic corpus --B11/C4--> creation/order/ritual operator control; no direct Near-Eastern transmission asserted"
+  - id: TXT_JUBILEES
+    route: "Genesis + early Exodus --B19/C1--> Jubilees rewritten scripture; chronological/calendar reindexing and expansion"
+  - id: TXT_DEUTERONOMY
+    route: "prior Pentateuchal narrative/law --B19/C1--> covenant-renewal recapitulation; retelling for a new generation"
+  - id: TXT_HOMERIC_METER
+    route: "Homeric quantitative hexameter --B18--> translation/adaptation witnesses; pace residual tracked separately from semantic residual"
 
 multilingual_nexus_nodes:
   - {name: Uruk-Nippur-Babylon, links: [Sumerian, Akkadian, Aramaic, Greek], function: lexical_list_and_scribal_continuity}
@@ -171,6 +177,12 @@ operator_overlays:
   O_TRANSLATION:
     corpora: [Septuagint, Targum, Peshitta, Vulgate, Letoon, Behistun, Rosetta, Karatepe, Pyrgi]
     rule: "proposition persists while lexical/syntactic carrier changes"
+  O_PACE:
+    corpora: [Homeric-hexameter, Hebrew-poetic-cadence, Septuagint, Targum, Vulgate, Jubilees, Deuteronomy]
+    rule: "measure whether meter, cadence, cola, formula density, clause timing, and recurrence survive translation or rewriting"
+  O_RECAPITULATE:
+    corpora: [Genesis, Deuteronomy, Jubilees, covenant-renewal-texts, Homeric-recensional-parallels]
+    rule: "prior state -> retelling/reindexing -> renewed audience/state; distinguish literal repetition from functional restart"
 
 social_transmission_modes:
   - ORGANIC
