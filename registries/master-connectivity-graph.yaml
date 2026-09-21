@@ -239,3 +239,32 @@ crosswise_benchmarks:
     status: active
     calibration: [Ebla-sign-reading-glosses, Ugaritic-Akkadian-pronunciation-crosswalk, Rosetta, Behistun, Tell-Fekheriye, Karatepe-Cinekoy, Letoon]
     tests: [material-vs-encoding-separation, spectral-vs-chronological-order, root-arity-independence, concordant-redundancy, transformation-covariance, cycle-consistency, divergence-gradient]
+
+
+rosetta_nexus_calibration:
+  registry: registries/rosetta-nexus-calibration.yaml
+  purpose: "Ancient multilingual/multiscript calibration objects for crosswise transformation learning."
+  primary_objects:
+    - Memphis-Rosetta
+    - Behistun
+    - Tell-Fekheriye
+    - Karatepe-Cinekoy
+    - Letoon
+    - Pyrgi
+    - Ebla-sign-and-lexical-lists
+    - Ugarit-KTU-5-14
+    - Sumerian-Akkadian-lexical-traditions
+    - Egyptian-Hittite-treaty-tradition
+  sieve_axes:
+    - parallax_level
+    - alignment_granularity
+    - carrier_geometry
+    - crosswalk_explicitness
+    - anchor_density
+    - transform_vector
+    - covariance
+    - cycle_consistency
+    - divergence_rate
+    - residue
+    - calibration_weight
+  invariant: "Parallax depth describes representation distance, not evidentiary confidence."
