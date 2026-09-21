@@ -36,6 +36,7 @@ Beyond that core matrix, the living registry now includes adjacent languages and
 | Nile/Northeast Africa | **D3** | Egyptian/Coptic dense; Demotic active; Berber and Meroitic controlled adjacent lanes |
 | Arabia | **D2** | Arabic/MSA structured; Old Arabic/ONA/ASA newly incorporated and under-populated |
 | Distant controls | **D2** | Kartvelian, Uralic, Tamil, Baltic and Balkan nodes mainly serve adversarial calibration |
+| Roman-Germanic migration/custody | **D2** | Suebi/Suebian history is now structured as a Roman-mediated identity, migration, administrative-custody and assimilation lane; direct language evidence remains thin |
 
 ## Highest-density languages/traditions now
 
@@ -57,6 +58,7 @@ These form the present high-density backbone.
 
 ## Strong D3 active-study band
 
+- Lemnian
 - Urartian
 - Eblaite
 - Arabic
@@ -78,6 +80,8 @@ These form the present high-density backbone.
 
 ## Structured / control band (D2)
 
+- Raetic
+- Suebi / Suebian / Elbe Germanic (historical-contact lane)
 - Soqotri / Modern South Arabian
 - Ge'ez / Tigrinya
 - Hattic
@@ -85,7 +89,6 @@ These form the present high-density backbone.
 - Carian
 - Phrygian
 - Lithuanian
-- Lemnian
 - Iberian
 - Basque
 - Proto-Kartvelian / Georgian
@@ -173,3 +176,10 @@ This keeps the map synchronized with actual research rather than accumulated men
 ## Hurro-Urartian focused update — 2026-09-20
 
 Urartian is now **D3 active study**. The secure Hurrian–Urartian relationship, Old-Hurrian proximity, morphology/alignment, Assyrian scribal adoption, and Armenian contact layer are now consolidated as one study lane. Proto-Northeast-Caucasian/Nakh-Daghestanian is newly registered at **D1** as an external relation hypothesis, not an accepted family connection. Kura-Araxes remains an archaeological-correlation research question rather than a language-family node. Proposed Sumerian, Kartvelian, and Tyrsenian/Etruscan genetic links remain untested candidate lanes and do not inherit the evidence status of the secure Hurrian–Urartian relationship.
+
+
+## Lemnian / Suebi update — 2026-09-20
+
+The Lemnian source promotes Lemnian to **D3** because the project now has explicit Tyrsenian morphological correspondences, inscriptional/script questions, and a defined internal Etruscan–Lemnian–Raetic benchmark. Raetic is added at **D2**.
+
+The Suebi source creates a separate **P11 Roman-Germanic migration/custody** lane at **D2**. It is intentionally not scored as dense linguistic coverage: the source itself emphasizes that early Suebian society lacks a native written record, so Roman and later external witnesses must be filtered before linguistic claims are promoted.
