@@ -1,8 +1,11 @@
 dataset: numeral-3-10-null-pilot
 version: 0.1.0
 updated: 2026-09-21
-status: PILOT_NOT_SIGNIFICANCE_CLAIM
+status: SUPERSEDED_BY_V0_2
 target: strict-C7-feature-enrichment
+superseded_by:
+  - data/calibration/numeral-1-10-source-locked-v0.2.yaml
+  - data/calibration/numeral-hierarchical-null-v0.2.yaml
 
 feature_definition:
   strict:
