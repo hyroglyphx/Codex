@@ -299,7 +299,10 @@ source_strengthened_candidate_packs:
       - "Arabic QBL: before/front; face/opposite; approach; receive/accept"
       - "Akkadian qablu BATTLE and qablu MIDDLE/HIPS share ancient MURUB4 scribal carrier"
   numeral_seven:
-    pilot: data/calibration/numeral-3-10-null-pilot-v0.1.yaml
-    status: exploratory_null_complete
-    key_result: "strict hits: seven=3, six=2, all other tested digits 3-10=0 in Proto-Semitic/Egyptian/PIE/Sumerian pilot"
-    caution: "look-elsewhere pilot p=0.0625; no significance claim until genealogy/contact/phonotactic hierarchy is modeled"
+    source_locked_matrix: data/calibration/numeral-1-10-source-locked-v0.2.yaml
+    hierarchical_null: data/calibration/numeral-hierarchical-null-v0.2.yaml
+    study: studies/numeral-seven-hierarchical-enrichment-v0.2.md
+    status: source_strengthened_dependency_sensitive
+    key_result: "root-normalized core matrix: seven=5 strict hits, six=1, all other digits=0; extended candidate matrix reaches seven=7"
+    dependency_result: "look-elsewhere sensitivity ranges from 0.002 under moderate dependency clustering to 0.20 under maximal western-areal collapse"
+    caution: "no common-origin or significance claim; next step is a generative genealogy/contact/phonotactic model"
