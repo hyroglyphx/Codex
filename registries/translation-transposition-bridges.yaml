@@ -15,6 +15,9 @@ bridge_types:
   B9: SUBSTRATE_RESIDUE
   B10: DIALECT_GENEALOGICAL_TRANSPOSITION
   B11: STRUCTURAL_CONTROL
+  B12: CONTACT_RESTRUCTURING_CREOLIZATION
+  B13: SUPPRESSIVE_IMPORTED_LANGUAGE_SHIFT
+  B14: GLOSS_TRANSLATION_SCAFFOLD
 
 edges:
   # Mesopotamian foundations
@@ -72,6 +75,49 @@ edges:
   - {id: E061, source: Vedic-ritual-transformation, target: Near-Eastern-ritual-operator-field, type: B11, class: C4, status: structural_control}
   - {id: E062, source: Sumerian-EGAL, target: Egyptian-great-house, type: B11, class: C4, status: structural_control, note: "independent semantic construction control"}
 
+  # World-language / later-language closure
+  - {id: E070, source: Tagalog-module, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed, note: "64 recovered forms; glosses remain unreviewed translation records"}
+  - {id: E071, source: Tagalog, target: Austronesian-family-lane, type: B10, class: C1, status: connected_family}
+  - {id: E072, source: Farsi-Persian-module, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E073, source: Farsi-Persian, target: Iranian-umbrella, type: B10, class: C1, status: connected_family}
+  - {id: E074, source: Tamil-module, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E075, source: Tamil, target: Dravidian-control-lane, type: B10, class: C1, status: connected_family}
+  - {id: E076, source: Yoruba-module, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E077, source: Swahili-controls, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E078, source: Zulu-controls, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E079, source: Haitian-Creole-controls, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E080, source: French-contact-field, target: Haitian-Creole, type: B12, class: C2, status: connected_contact, note: "creole identity remains distinct; lexical ancestry does not collapse grammar"}
+  - {id: E081, source: Hindi-controls, target: Sanskrit-Indo-Aryan-lane, type: B10, class: C1, status: connected_family}
+  - {id: E082, source: Turkish-controls, target: Persian-Arabic-contact-field, type: B6, class: C2, status: connected_contact}
+  - {id: E083, source: Japanese-controls, target: world-structural-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E084, source: Korean-controls, target: world-structural-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E085, source: Chinese-controls, target: Yijing-Chinese-symbolic-lane, type: B11, class: C4, status: connected_control}
+  - {id: E086, source: Vietnamese-controls, target: world-structural-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E087, source: Indonesian-controls, target: Austronesian-family-lane, type: B10, class: C1, status: connected_family}
+  - {id: E088, source: Irish-controls, target: Celtic-lane, type: B10, class: C1, status: connected_family}
+  - {id: E089, source: Welsh-controls, target: Brittonic-Celtic-lane, type: B10, class: C1, status: connected_family}
+  - {id: E090, source: Scottish-Gaelic-controls, target: Goidelic-Celtic-lane, type: B10, class: C1, status: connected_family, note: "source label repaired provisionally from 'Scottish'"}
+  - {id: E091, source: Romanian-controls, target: Latin-Romance-lane, type: B10, class: C1, status: connected_family}
+  - {id: E092, source: Yiddish-controls, target: Germanic-language-lane, type: B10, class: C1, status: connected_family}
+  - {id: E093, source: Hebrew-derived-script, target: Yiddish-writing, type: B5, class: C1, status: connected_script, note: "script continuity does not imply Hebrew language identity"}
+  - {id: E094, source: Esperanto-controls, target: constructed-language-ring, type: B11, class: C4, status: connected_constructed}
+  - {id: E095, source: Hawaiian-controls, target: Austronesian-family-lane, type: B10, class: C1, status: connected_family}
+  - {id: E096, source: Navajo-controls, target: world-structural-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E097, source: Old-English-Wyrd-card, target: Germanic-language-lane, type: B10, class: C1, status: connected_family}
+  - {id: E098, source: German-Sehnsucht-card, target: Germanic-language-lane, type: B10, class: C1, status: connected_family}
+  - {id: E099, source: Nahuatl-Nepantla-card, target: operator-atlas, type: B11, class: C4, status: connected_operator}
+  - {id: E100, source: Quechua-Yanantin-card, target: operator-atlas, type: B11, class: C4, status: connected_operator}
+  - {id: E101, source: Hawaiian-Kuleana-card, target: operator-atlas, type: B11, class: C4, status: connected_operator}
+  - {id: E102, source: Swahili-Harambee-card, target: operator-atlas, type: B11, class: C4, status: connected_operator}
+  - {id: E103, source: Yijing-state-graph, target: combinatorial-control-ring, type: B11, class: C4, status: connected_structural}
+  - {id: E104, source: Elder-Futhark-inventory, target: Germanic-script-control, type: B5, class: C2, status: connected_script_control}
+  - {id: E105, source: Esoperanto, target: ECVR-transposition-experiment, type: B11, class: C4, status: connected_constructed}
+  - {id: E106, source: LinguaDanka, target: recovery-queue, type: B14, class: C5, status: named_gap, note: "no records admitted until exact dictionary is recovered"}
+
+  # Social language-shift / suppression / import model
+  - {id: E110, source: local-vernacular, target: institutional-prestige-language, type: B13, class: C2, status: generic_operator, note: "used only when a specific historical case documents imposed/imported shift"}
+  - {id: E111, source: dominant-language-contact, target: substrate-residue, type: B9, class: C2, status: generic_operator}
+
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: needs_witness_pack}
@@ -87,4 +133,5 @@ completion_queue:
   - {node: Proto-Uralic-Finnic, target_bridge: "genealogical/distant numeral control", preferred_types: [B10,B11], status: external_control}
   - {node: Tamil-Dravidian, target_bridge: "deep typological/ritual-language control", preferred_types: [B11], status: external_control}
   - {node: Suebi-Suebian, target_bridge: "Latin + later Germanic/Romance textual and onomastic evidence", preferred_types: [B6,B8,B9,B10], status: needs_linguistic_witnesses}
-  - {node: later-European-vernaculars, target_bridge: "Vulgate/Greek/scriptural translation halo", preferred_types: [B1,B8,B9,B10], status: expand_per_language}
+  - {node: later-European-vernaculars, target_bridge: "Vulgate/Greek/scriptural translation halo", preferred_types: [B1,B8,B9,B10,B12,B13], status: expand_per_language}
+  - {node: LinguaDanka, target_bridge: "exact recovered dictionary only", preferred_types: [B14], status: blocked_missing_source}
