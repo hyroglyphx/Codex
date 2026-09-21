@@ -6,9 +6,9 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "calibrated candidate testing",
-    "HSS / QBL / ASIS / numeral-seven crosswise analysis",
-    "Rosetta Nexus transform-weight calibration"
+    "source-strengthened HSS and QBL candidate resolution",
+    "genealogy-aware numeral-seven null testing",
+    "calibrated candidate lattice"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -30,12 +30,12 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Trace Ebla hazizu to Akkadian hasisu with explicit phonological and morphological witnesses",
-    "Replace secondary Ugaritic HSS evidence with primary lexicon/grammar or direct text edition",
-    "Build QBL CENTER/MEDIAN vs FACE/INTERFACE comparative evidence pack",
-    "Freeze ancestral-node 1-10 numeral matrix and run genealogy/contact/frequency-corrected null test",
-    "Use ASIS controls to test normalization false-positive rates",
-    "Proceed to RN04 Karatepe/Cinekoy after candidate-weight validation"
+    "Recover CAD/AHw or equivalent specialist etymological treatment for Akkadian qablu battle and middle lexemes",
+    "Search Old Babylonian lexical lists for MURUB4 bilingual/readout behavior",
+    "Extend numeral matrix from 3-10 to 1-10 and add source-locked Proto-Kartvelian, Proto-Uralic, Hurrian, Etruscan, Basque and Iberian nodes",
+    "Replace uniform digit null with hierarchical genealogy/contact/phonotactic null",
+    "Run matched alternative feature carriers to estimate feature-selection bias",
+    "Proceed to RN04 Karatepe/Cinekoy after the hierarchy/null schema is frozen"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -52,9 +52,11 @@
       "HSS01 Sumerian ear-field <-> Akkadian hasisu alignment",
       "QBL01 receive -> qabbalah"
     ],
-    "supported_candidates": [
+    "strongly_supported_candidates": [
       "HSS02 Ebla hazizu -> Akkadian hasisu lane",
-      "HSS03 Akkadian hasis/hasisu <-> Ugaritic hss",
+      "HSS03 Akkadian hasis/hasisu <-> Ugaritic hss"
+    ],
+    "supported_candidates": [
       "QBL02 face/confront -> battle"
     ],
     "weak_unresolved": [
@@ -70,5 +72,15 @@
       "ASIS Hebrew asis",
       "Avestan/Sanskrit ASIS-like surface comparison"
     ]
+  },
+  "quantitative_progress": {
+    "numeral_pilot": "3-10 matrix complete for Proto-Semitic, Egyptian, PIE and Sumerian",
+    "strict_hits": {
+      "6": 2,
+      "7": 3
+    },
+    "simple_prespecified_p": 0.0078125,
+    "simple_look_elsewhere_p": 0.0625,
+    "significance_claim": false
   }
 }
