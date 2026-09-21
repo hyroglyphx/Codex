@@ -534,3 +534,42 @@ compare what can be said securely when lexical decipherment is incomplete.
 8. **Material trade lexicon** — connects language, object, geography, and operator in one transport dataset.
 
 These lanes should enter the shared HistoricalRecord schema and be exposed as typed relations in the Atlas rather than as free-standing comparative notes.
+
+
+---
+
+## Arity–Compression Spectral Lane
+
+This lane increases indexing resolution across hieroglyphic, cuneiform, logographic, syllabic, consonantal and alphabetic systems.
+
+### Required coordinates
+
+```text
+SIGN_ROLE
+GRAPHIC_ARITY
+PHONETIC_LOAD
+ROOT_ARITY
+MORPHOLOGICAL_EXPANSION
+SEMANTIC_ADDRESS
+CLASSIFIER_CONTEXT
+CHRONOLOGY
+CONTACT_PATH
+```
+
+### Primary controls
+
+- Egyptian: one sign can operate logographically or encode one, two or three consonants; phonetic complements and determinatives remain separate channels.
+- Sumerian/Akkadian: logographic carrier and language-specific readout remain distinct.
+- Ugaritic/Hebrew/Aramaic/Arabic: consonantal-root visibility is compared without assuming that all triliterals descend from biradicals.
+- Sanskrit/Avestan: root-extension/enlargement mechanisms act as an independent comparative control.
+- Multilingual nexus texts are used to test whether changes are representational, phonological, morphological, semantic or several at once.
+
+### Governing rule
+
+```text
+compressed representation -> decomposed representation
+```
+
+is a spectral relation.
+
+It becomes a historical-development claim only when chronology, morphology, sound law and witnesses independently support the path.
