@@ -276,3 +276,59 @@ Research consequence:
 - do not use absence of the personal name to infer absence of the represented group;
 - do not use later collective reference to prove that every Armenian action is personally directed by Tigranes;
 - track person, contingent, ethnonym, and political role as separate but linkable state variables.
+
+
+## Cyrus consolidation operator: Gobryas as microcosm
+
+Within Xenophon's narrative, Gobryas is an individual-scale model of Cyrus' broader coalition-building method.
+
+### Gobryas sequence
+```text
+local grievance / dynastic injury
+→ approach to Cyrus
+→ recognition of grievance
+→ reciprocal oath / handclasp
+→ retention of castle, province, and prior authority
+→ tribute redirected to Cyrus
+→ local military force incorporated
+→ local geographic/intelligence assets opened to coalition
+→ loyalty deepens through fulfilled obligation
+→ former subject becomes active stakeholder in Cyrus' expansion
+```
+
+This is not simple conquest or replacement. Cyrus often preserves the local node while changing the node's superior political attachment.
+
+### Scale variants
+
+- **Gobryas** — individual/local elite scale.
+- **Gadatas** — court/administrative defector scale.
+- **Tigranes / Armenians** — dynastic and ethnopolitical scale.
+- **Hyrcanians** — collective subject-people defection scale.
+- **Medes** — core allied/kin coalition scale.
+
+The repeated pattern is:
+```text
+DISAFFECTION
+→ RECOGNITION
+→ ASSURANCE
+→ PRESERVATION OF LOCAL CAPACITY
+→ RECIPROCAL SERVICE
+→ MATERIAL/POLITICAL REWARD
+→ INCORPORATION
+→ EXPANSION THROUGH THE NEW NODE
+```
+
+### Linguistic consequence
+
+Track how the discourse shifts across:
+- named individual,
+- household/retinue,
+- local domain,
+- ethnic collective,
+- political territory.
+
+The consolidation process often preserves local identity while altering allegiance. This makes leader→people and land→people referential shifts part of the political mechanism rather than mere stylistic variation.
+
+### Historical caution
+
+Treat this as a Xenophontic model of Cyrus' rule unless independently corroborated by Achaemenid, Babylonian, Elamite, Aramaic, or other contemporary evidence.
