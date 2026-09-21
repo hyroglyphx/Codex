@@ -1,0 +1,202 @@
+registry: master-connectivity-graph
+version: 1.0.0
+updated: 2026-09-20
+status: CONNECTED_WITH_TYPED_UNCERTAINTY
+
+sources_of_truth:
+  language_nodes: registries/language-coverage-registry.yaml
+  bridge_edges: registries/translation-transposition-bridges.yaml
+  bridge_protocol: docs/architecture/bridge-completion-protocol.md
+  evidence_contract: docs/architecture/evidence-spine.md
+  scriptural_spine: docs/architecture/scriptural-textual-transmission-spine.md
+
+connectivity_rule: >
+  Every incorporated node must have at least one typed route to a spine hub.
+  A structural-control or candidate route counts as graph connectivity but never
+  as proof of historical transmission. Edge evidence class carries the burden.
+
+spine_hubs:
+  H01:
+    name: Mesopotamian_Scribal
+    anchors: [Sumerian, Akkadian]
+    primary_mechanisms: [B3, B4, B8]
+  H02:
+    name: Levantine_Semitic
+    anchors: [Eblaite, Ugaritic, Phoenician-Punic, Hebrew, Aramaic-Syriac]
+    primary_mechanisms: [B2, B6, B10]
+  H03:
+    name: Scriptural_Relay
+    anchors: [Hebrew-biblical-traditions, Septuagint-Greek, Targumic-Aramaic, Peshitta-Syriac, Vulgate-Latin, Aquila-Greek]
+    primary_mechanisms: [B1, B8]
+  H04:
+    name: Anatolian_Hattusa
+    anchors: [Hattic, Hittite, Luwian, Hurrian]
+    primary_mechanisms: [B2, B4, B5, B8, B10]
+  H05:
+    name: Iranian_Achaemenid
+    anchors: [Old-Persian, Elamite, Babylonian, Aramaic-transmission]
+    primary_mechanisms: [B2, B8, B10]
+  H06:
+    name: Nile_Egyptian
+    anchors: [Egyptian-Coptic, Demotic-Egyptian, Classical-Greek]
+    primary_mechanisms: [B2, B5, B10]
+  H07:
+    name: Aegean_Greek
+    anchors: [Mycenaean-Greek, Arcadocypriot, Classical-Greek]
+    primary_mechanisms: [B5, B10]
+  H08:
+    name: Western_Mediterranean
+    anchors: [Phoenician-Punic, Etruscan, Lemnian, Raetic, Latin]
+    primary_mechanisms: [B2, B5, B6, B10]
+  H09:
+    name: Indo_European_Depth
+    anchors: [Sanskrit, Avestan-Old-Iranian, Old-Persian, Classical-Greek, Latin, Armenian, Albanian, Lithuanian]
+    primary_mechanisms: [B10, B11]
+  H10:
+    name: Arabian_Red_Sea
+    anchors: [Arabic, Old-Arabic, Old-North-Arabian, Ancient-South-Arabian, Soqotri-MSA, Geez-Tigrinya]
+    primary_mechanisms: [B6, B10]
+  H11:
+    name: Roman_Germanic_Celtic
+    anchors: [Latin, Suebi-Suebian-Elbe-Germanic, Celtic, Old-English, German, Irish, Welsh, Scottish-Gaelic, Romanian, Yiddish]
+    primary_mechanisms: [B1, B6, B8, B9, B10, B13]
+  H12:
+    name: World_Language_Translation_Scaffold
+    anchors: [Tagalog, Farsi-Persian, Tamil, Yoruba, Hindi, Turkish, Japanese, Korean, Chinese, Vietnamese, Indonesian, Swahili, Zulu, Haitian-Creole, Hawaiian, Navajo]
+    primary_mechanisms: [B10, B11, B12, B14]
+  H13:
+    name: Structural_Operator_Control
+    anchors: [Vedic-corpus, Yijing-state-graph, Elder-Futhark, Esperanto, Esoperanto, Nahuatl, Quechua, Proto-Kartvelian-Georgian, Proto-Uralic-Finnic]
+    primary_mechanisms: [B5, B11, B14]
+
+path_to_hub:
+  P01: H01
+  P02: H04
+  P03: H04
+  P04: H07
+  P05: H09
+  P06: H05
+  P07: H08
+  P08: H06
+  P09: H10
+  P10: H13
+  P11: H11
+  P12: H03
+  P13: H12
+  P14: H13
+
+hub_connections:
+  - {source: H01, target: H02, mechanism: "Ebla/Mari/Ugarit/Byblos contact + scribal transport", evidence: "C0-C1"}
+  - {source: H02, target: H03, mechanism: "Hebrew/Aramaic textual relay", evidence: "C0-C1"}
+  - {source: H01, target: H04, mechanism: "Hattusa multilingual scribal field", evidence: "C0-C1"}
+  - {source: H04, target: H02, mechanism: "Karatepe/Cinekoy + Anatolian/Levantine contact", evidence: "C0-C2"}
+  - {source: H04, target: H05, mechanism: "Anatolia-Iran imperial/contact continuum", evidence: "C1-C3"}
+  - {source: H05, target: H03, mechanism: "Achaemenid Aramaic + scriptural-period contact/custody", evidence: "C1-C3"}
+  - {source: H06, target: H02, mechanism: "Byblos/Amarna/Egypt-Levant contact", evidence: "C0-C1"}
+  - {source: H06, target: H03, mechanism: "Septuagint/Greek-Egyptian environment + later textual relay", evidence: "C1"}
+  - {source: H07, target: H03, mechanism: "Greek scriptural translation", evidence: "C0"}
+  - {source: H07, target: H08, mechanism: "Greek/Phoenician/Etruscan alphabetic and contact lanes", evidence: "C1-C2"}
+  - {source: H08, target: H03, mechanism: "Latin/Vulgate relay", evidence: "C0-C1"}
+  - {source: H09, target: H07, mechanism: "secure Indo-European genealogical comparison", evidence: "C1"}
+  - {source: H09, target: H05, mechanism: "Indo-Iranian/Old Persian lane", evidence: "C1"}
+  - {source: H10, target: H02, mechanism: "Semitic genealogical/contact continuum", evidence: "C1-C2"}
+  - {source: H10, target: H03, mechanism: "Arabic/Aramaic/Hebrew comparative-scriptural field", evidence: "C2-C4"}
+  - {source: H11, target: H03, mechanism: "Latin/Vulgate and later European translation/custody", evidence: "C0-C1"}
+  - {source: H11, target: H09, mechanism: "Germanic/Celtic/Romance Indo-European genealogy", evidence: "C1"}
+  - {source: H12, target: H13, mechanism: "unreviewed translation scaffold + controlled structural comparison", evidence: "C4-C5"}
+  - {source: H12, target: H09, mechanism: "family-specific links where secure: Farsi/Hindi/Tamil not conflated", evidence: "C1-C4"}
+  - {source: H13, target: H03, mechanism: "operator/control comparison only", evidence: "C4-C5"}
+
+textual_corpora:
+  - id: TXT_SUMERIAN_GILGAMESH
+    route: "Sumerian narratives --B3/C1--> Akkadian Gilgamesh tradition"
+  - id: TXT_GILGAMESH_OB_SB
+    route: "Old Babylonian --B3/C1--> later/Standard Babylonian"
+  - id: TXT_ATRAHASIS
+    route: "Atrahasis --B3/C1--> Akkadian flood reuse; --B7/C3--> Genesis flood comparison"
+  - id: TXT_ENUMA_ELISH
+    route: "Enuma Elish --B7/C3--> Genesis creation/order comparison"
+  - id: TXT_NINKASI
+    route: "Ninkasi procedural chain --B7/C4--> boundary/receptacle/transformation operator registry"
+  - id: TXT_TORAH_TANAKH
+    route: "Hebrew/Aramaic witnesses --B1/C0--> Greek/Aramaic/Syriac/Latin relay"
+  - id: TXT_SEPTUAGINT
+    route: "Hebrew textual traditions --B1/C0--> Greek"
+  - id: TXT_TARGUM
+    route: "Hebrew textual traditions --B1/C0--> interpretive Aramaic"
+  - id: TXT_PESHITTA
+    route: "Hebrew/Aramaic biblical traditions --B1/C0--> Syriac"
+  - id: TXT_VULGATE
+    route: "Hebrew/Greek biblical traditions --B1/C0--> Latin --B1/C1--> vernacular translation halo"
+  - id: TXT_VEDIC
+    route: "Vedic corpus --B11/C4--> creation/order/ritual operator control; no direct Near-Eastern transmission asserted"
+
+multilingual_nexus_nodes:
+  - {name: Uruk-Nippur-Babylon, links: [Sumerian, Akkadian, Aramaic, Greek], function: lexical_list_and_scribal_continuity}
+  - {name: Ebla, links: [Sumerian, Eblaite], function: early_bilingual_calibration}
+  - {name: Mari, links: [Akkadian, Amorite, Hurrian], function: contact_onomastic_calibration}
+  - {name: Ugarit, links: [Ugaritic, Akkadian, Sumerian, Hurrian], function: multilingual_lexical_nexus}
+  - {name: Amarna, links: [Egyptian, Akkadian, Levantine], function: diplomatic_readout_contact}
+  - {name: Hattusa, links: [Hittite, Luwian, Hurrian, Akkadian, Sumerian], function: heterogram_translation_nexus}
+  - {name: Byblos, links: [Akkadian, Phoenician, Egyptian], function: title_name_institution_transport}
+  - {name: Susa, links: [Elamite, Old-Persian, Babylonian, Egyptian], function: imperial_multilingual_control}
+  - {name: Behistun, links: [Old-Persian, Elamite, Babylonian, Aramaic], function: translation_and_custody}
+  - {name: Memphis-Rosetta, links: [Egyptian-hieroglyphic, Demotic, Greek], function: register_script_translation}
+  - {name: Karatepe-Cinekoy, links: [Phoenician, Luwian], function: cross_family_bilingual}
+  - {name: Pyrgi, links: [Phoenician, Etruscan], function: western_bilingual_control}
+  - {name: Letoon, links: [Lycian, Greek, Aramaic], function: trilingual_institutional_control}
+  - {name: Lemnos, links: [Lemnian, Greek-contact, Tyrsenian-comparison], function: language_script_migration_separation}
+  - {name: Urartu, links: [Urartian, Assyrian-Akkadian, Hurrian, Armenian-contact], function: language_shift_and_scribal_transition}
+  - {name: Gallaecia, links: [Latin, Suebi-Suebian, Celtic-Romance-contact], function: administrative_custody_and_assimilation}
+
+operator_overlays:
+  O_BOUNDARY:
+    corpora: [Atrahasis, Gilgamesh, Genesis, Ninkasi, material_semantic_bitumen]
+    rule: "contain / separate / preserve / control permeability"
+  O_ORDER:
+    corpora: [Enuma-Elish, Genesis-1, Vedic-creation-controls, Maat]
+    rule: "differentiate / classify / assign / stabilize"
+  O_CROSS:
+    corpora: [Semitic_EBR_family, travel_route_material, ARGO]
+    rule: "boundary / passage / transit / beyond"
+  O_GENERATE:
+    corpora: [Semitic_BN, Akkadian_aplu, Egyptian_ms, IE_gen_jan]
+    rule: "source / birth / offspring / succession"
+  O_CUSTODY:
+    corpora: [Sumerian-in-Akkadian, Hattic-in-Hittite, scriptural-liturgical-languages, Roman-administration-in-successor-polities]
+    rule: "carrier survives change of speaker/institution"
+  O_RETURN:
+    corpora: [Gilgamesh, ARGO, scriptural_repetition, Relay_Kernel]
+    rule: "transform / preserve identity / return with residue"
+  O_TRANSLATION:
+    corpora: [Septuagint, Targum, Peshitta, Vulgate, Letoon, Behistun, Rosetta, Karatepe, Pyrgi]
+    rule: "proposition persists while lexical/syntactic carrier changes"
+
+social_transmission_modes:
+  - ORGANIC
+  - SYNTHETIC
+  - SUPPRESSIVE
+  - IMPORTED
+  - CONTACT_RESTRUCTURING_CREOLIZATION
+  - ARCHIVAL_LITURGICAL
+  - MIXED
+
+connectivity_status:
+  historically_connected: >
+    Nodes with C0/C1 routes through translations, bilinguals, genealogy, borrowing,
+    recension, script/readout continuity, or institutional custody.
+  structurally_connected: >
+    Nodes with C4 control routes. They are in the graph for comparison, not because
+    historical transmission is asserted.
+  candidate_connected: >
+    C5 nodes/hypotheses remain visible but unpromoted.
+  named_gap:
+    - LinguaDanka
+    note: "Connected only to the recovery queue because the exact dictionary is missing."
+
+invariant:
+  statement: >
+    No incorporated language, text, script, nexus, or operator is allowed to float as
+    an untyped resemblance. It must connect by translation, parallel witness,
+    recomposition, readout/script change, borrowing, operator transposition, custody,
+    substrate, genealogy, creolization/shift, or explicit structural control.
