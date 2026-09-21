@@ -205,6 +205,14 @@ edges:
   - {id: E223, source: Judah-person, target: Judah-tribe-kingdom, type: B20, class: C0, status: anchor_eponymic_stratification}
   - {id: E224, source: Homeric-leaders, target: Homeric-contingents-ethnonyms, type: B20, class: C1, status: anchor_epic_representative_shift}
   - {id: E225, source: Achaemenid-ruler-country-address, target: Xenophon-ruler-people-address, type: B20, class: C2, status: comparative_stratification_test}
+  # Philosophumena / heresiological relay
+  - {id: E230, source: Hebrew-nahash-serpent, target: Greek-Naas-Naasseni, type: B23, class: C2, status: contact_reanalysis_anchor, note: "Greek-mediated group-name explanation; freeze Hebrew and Greek forms separately"}
+  - {id: E231, source: Greek-Naas, target: Greek-naos-temple, type: B23, class: C4, status: false_etymology_anchor, note: "ancient phono-semantic/theological reanalysis, not historical Greek etymology"}
+  - {id: E232, source: Naassene-source-material, target: Refutation-Book-V-report, type: B21, class: C2, status: embedded_source_relay, note: "quotation/paraphrase and polemical frame must be separated"}
+  - {id: E233, source: Presocratic-source-traditions, target: Refutation-doxography, type: B21, class: C1, status: doxographic_relay}
+  - {id: E234, source: Greek-philosophical-schools, target: Refutation-heresy-genealogies, type: B22, class: C4, status: authorial_derivation_claim, note: "historical dependence requires independent support"}
+  - {id: E235, source: founder-teacher, target: later-school-heresiological-category, type: B20, class: C2, status: intellectual_scope_shift, note: "founder doctrine must not be inferred automatically from later followers"}
+  - {id: E236, source: Greek-Hebrew-ritual-registers, target: Refutation-Book-IV-magical-report, type: B21, class: C3, status: multilingual_ritual_witness, note: "author's 'as if Hebrew' label is not proof of valid Hebrew"}
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
