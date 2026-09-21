@@ -250,3 +250,29 @@ For each:
 13. notes on Greek semantic or mythic recoding.
 
 The goal is not to "correct Xenophon" but to turn the *Cyropaedia* into a measured Greek transposition layer.
+
+
+## Leader-to-contingent compression: Tigranes → Armenians
+
+Tigranes does not vanish immediately after the Armenian episode. He remains individually visible:
+- Book V: he speaks in Cyrus' coalition council.
+- Book VII: he is named among Cyrus' honored companions.
+- Book VIII: he wins the Armenian horse race.
+
+However, once his personal reconciliation/mediation role has been established, Xenophon often refers simply to **the Armenians** as a military or political contingent.
+
+Model this as:
+```text
+Tigranes (named representative / prince)
+        ↓
+Tigranes + Armenian contingent
+        ↓
+Armenians (collective political-military address)
+```
+
+This is a form of **leader-to-contingent metonymic compression**, not evidence by itself that Tigranes has left the narrative or died.
+
+Research consequence:
+- do not use absence of the personal name to infer absence of the represented group;
+- do not use later collective reference to prove that every Armenian action is personally directed by Tigranes;
+- track person, contingent, ethnonym, and political role as separate but linkable state variables.
