@@ -6,6 +6,7 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
+    "Rosetta nexus parallax calibration",
     "crosswise resolution/covariance benchmarking",
     "arity-compression spectral language indexing",
     "multimodal synchronous-state harmonics",
@@ -18,22 +19,26 @@
     "Spectral precedence is not chronological precedence without independent evidence.",
     "Convergent projections can constrain a hidden state without identifying the hidden substrate.",
     "Material medium is not encoding granularity.",
-    "Prefer homology of transformation over identity of surface form."
+    "Prefer homology of transformation over identity of surface form.",
+    "Parallax depth describes representation distance, not confidence.",
+    "Explicit ancient crosswalks outrank retrospective resemblance for calibration."
   ],
   "active_packet": "Reuptake/packets/2026-09-21-arity-compression-synchronous-state.json",
   "primary_studies": [
+    "registries/rosetta-nexus-calibration.yaml",
     "studies/crosswise-resolution-covariance-benchmark.md",
     "studies/arity-compression-spectral-language-sieve.md",
     "studies/multimodal-synchronous-state-harmonics.md",
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Build Egyptian internal sign-role matrix with compression/redundancy/root-visibility columns",
-    "Run Ugarit dual-script control: alphabetic cuneiform vs Akkadian logo-syllabic cuneiform",
-    "Calibrate transformation weights on Ebla, Ugaritic-Akkadian, Rosetta, Behistun, Tell Fekheriye, Karatepe/Cinekoy and Letoon",
-    "Run HSS and broader Semitic root-kernel tests against frequency-matched negative controls",
-    "Run Vedic/Avestan root-enlargement controls",
-    "Build Books of Jeu / Chaldaean / Hekhalot multimodal credential matrix",
+    "Populate Rosetta Nexus records with actual aligned segments and anchor counts",
+    "Build Memphis/Rosetta multi-granularity alignment from names/titles/formulae through propositions",
+    "Build Behistun Old Persian/Elamite/Babylonian transformation matrix",
+    "Build Tell Fekheriye Akkadian/Aramaic morphology-syntax transport matrix",
+    "Build Ugarit KTU 5.14 sign-to-syllabic crosswalk calibration",
+    "Build Ebla sign/readout and lexical-equation calibration set",
+    "Feed calibrated transform weights into HSS, QBL, ASIS and numeral-carrier tests",
     "Prototype cycle-consistency and prospective-divergence scoring"
   ]
 }
