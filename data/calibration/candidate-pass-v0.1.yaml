@@ -164,20 +164,21 @@ relations:
 
   - relation_id: QBL03
     label: "Akkadian qablu middle/hips/waist <-> West-Semitic QBL receive/face"
-    relation_type: formal_carrier_overlap
+    relation_type: unresolved_formal_carrier_overlap
     alignment_score: 0.43
     raw_historical_relation_score: 0.40
-    historical_relation_score: 0.29
-    hard_ceiling_applied: HC3
+    historical_relation_score: 0.40
+    hard_ceiling_applied: none
     evidence_class: C4
-    status: control_formal_overlap
+    status: weak_unresolved
     strongest_support:
       - "The Q-B-L consonantal carrier is real."
-      - "ORACC shows middle/hips and battle as separate Akkadian dictionary entries."
+      - "The middle/waist lexeme occupies a CENTER/MEDIAN semantic field that can be tested against an older interface/meeting-zone hypothesis."
     strongest_counterweight:
-      - "Semantic continuity is weak and dictionary evidence separates the middle/hips lexeme from battle."
+      - "Current dictionaries separate the middle/hips and battle lexemes, and no independent morphology or sound-history bridge has yet been established."
+      - "Lemma separation is evidence for lexical distinction in the documented language state, not proof that deeper convergence or common history is impossible."
     next_discriminating_test:
-      - "Only reopen if independent proto-root morphology, sound history, or an ancient lexical equation bridges CENTER/MIDDLE to FACE/RECEIVE."
+      - "Test CENTER/MEDIAN versus FACE/INTERFACE semantics through older lexical witnesses, derivational morphology, Sumerographic readouts, and comparative Semitic reconstruction."
 
   - relation_id: ASIS01
     label: "Greek asis 'slime/mud' <-> onset-stripped Akkadian hasis"
@@ -287,8 +288,9 @@ summary:
   live_but_ceiling_limited:
     - HSS04
     - C7_01
-  negative_controls:
+  weak_unresolved:
     - QBL03
+  negative_controls:
     - ASIS01
     - ASIS02
     - ASIS03
