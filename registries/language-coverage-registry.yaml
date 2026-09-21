@@ -180,3 +180,8 @@ crosscutting_paths:
     density: D4
     primary: [Hebrew, Aramaic-Syriac, Classical-Greek, Latin, Akkadian, Sumerian, Sanskrit]
     note: "Calibrates textual continuity across Masoretic Hebrew, Septuagint, Targumic Aramaic, Peshitta/Syriac, Vulgate/Latin and older/adjacent operator corpora. Direct transmission and structural/operator correspondence are always separately typed."
+  - id: X11
+    name: translation-transposition-bridge-graph
+    density: D4
+    primary: [Sumerian, Akkadian, Hebrew, Aramaic-Syriac, Classical-Greek, Latin, Hittite, Luwian, Egyptian-Coptic, Old-Persian, Elamite, Phoenician-Punic, Etruscan, Lemnian, Sanskrit]
+    note: "Living graph of direct translations, parallel multilingual witnesses, recompositions, readout/script changes, borrowing, operator transposition, custody, substrate and genealogical transformation. Remaining nodes enter through a typed completion queue."
