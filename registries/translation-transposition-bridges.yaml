@@ -187,6 +187,17 @@ edges:
   - {id: E198, source: Mesopotamian-flood-tradition, target: Genesis-6-9, type: B7, class: C3, status: connected_shared_historical_matrix}
   - {id: E199, source: Ziusudra-Utnapishtim-flood-tradition, target: Berossus-Xisouthros, type: B15, class: C2, status: connected_Greek_recasting}
   - {id: E200, source: Gilgamesh-operator-field, target: Homeric-operator-field, type: B11, class: C4, status: connected_structural_control, note: "individual parallels debated; no blanket direct-translation claim"}
+  # Transform anchor matrix
+  - {id: E210, source: Sumerian-Gilgamesh-Enkidu-Netherworld, target: Akkadian-Gilgamesh-Tablet-XII, type: B1, class: C0, status: anchor_A2_translation, note: "translation/adaptation of latter part; strongest Sumerian→Akkadian Gilgamesh anchor"}
+  - {id: E211, source: Hurrian-Song-of-Release, target: Hittite-Song-of-Release, type: B1, class: C0, status: anchor_A1_bilingual, note: "side-by-side bilingual; translation strategies directly measurable"}
+  - {id: E212, source: Hurrian-Song-of-Emergence, target: Hittite-Kumarbi-Song-of-Emergence, type: B1, class: C1, status: anchor_A2_adaptation}
+  - {id: E213, source: Hurro-Hittite-Succession-Myth, target: Hesiod-Theogony, type: B7, class: C3, status: anchor_A4_historical_matrix}
+  - {id: E214, source: Instruction-of-Amenemope, target: Proverbs-22-17-24-22, type: B7, class: C2, status: anchor_A4_wisdom_dependence}
+  - {id: E215, source: Esarhaddon-Succession-Treaty, target: Deuteronomy-28, type: B7, class: C2, status: anchor_A4_treaty_curse_transposition}
+  - {id: E216, source: Hebrew-Jubilees, target: Greek-Jubilees-to-Ethiopic-Jubilees, type: B1, class: C1, status: anchor_translation_chain}
+  - {id: E217, source: Aramaic-Enoch, target: Greek-Ethiopic-Enoch, type: B1, class: C1, status: anchor_translation_chain}
+  - {id: E218, source: Elephantine-Aramaic-Ahiqar, target: later-Syriac-Armenian-Arabic-Ahiqar, type: B3, class: C2, status: anchor_long_recension_chain}
+  - {id: E219, source: Sumerian-Ballad-of-Early-Rulers, target: Emar-Ugarit-Sumerian-Akkadian-recensions, type: B1, class: C1, status: anchor_bilingual_wisdom_transmission}
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
