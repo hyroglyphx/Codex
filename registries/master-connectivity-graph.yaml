@@ -268,3 +268,16 @@ rosetta_nexus_calibration:
     - residue
     - calibration_weight
   invariant: "Parallax depth describes representation distance, not evidentiary confidence."
+
+
+calibrated_scoring:
+  weights: registries/calibrated-transform-weights-v0.1.yaml
+  calibrator_scorecard: data/calibration/calibrator-scorecard-v0.1.yaml
+  first_candidate_pass: data/calibration/candidate-pass-v0.1.yaml
+  study: studies/calibrated-candidate-pass-hss-qbl-asis-seven.md
+  rules:
+    - "alignment support and historical-relation support are separate"
+    - "weights are frozen per version and cannot be tuned retroactively to rescue favored candidates"
+    - "native morphology may veto stripped-form resemblance"
+    - "hard ceilings apply to arbitrary normalization and untested cross-family enrichment"
+    - "failed edges remain available as adversarial controls"
