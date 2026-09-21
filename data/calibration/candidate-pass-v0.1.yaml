@@ -268,22 +268,24 @@ relations:
   - relation_id: C7_01
     label: "Numeral seven strict/broad carrier enrichment"
     relation_type: cross_family_feature_enrichment
-    alignment_score: 0.68
-    raw_historical_relation_score: 0.58
+    alignment_score: 0.78
+    raw_historical_relation_score: 0.64
     historical_relation_score: 0.49
     hard_ceiling_applied: HC5
-    evidence_class: C4
-    status: candidate_enrichment_not_promoted
+    evidence_class: C3_C4
+    status: source_strengthened_dependency_sensitive
     strongest_support:
       - "Recovered project matrix records repeated sibilant/coronal + labial structure at ancestral nodes and preserves Sumerian imin as a failure."
       - "The hypothesis was already formulated as a feature carrier rather than a universal etymology."
     strongest_counterweight:
-      - "A first source-locked 3-10 pilot now gives strict-hit counts seven=3, six=2, all other tested digits=0 across Proto-Semitic, Egyptian, PIE and Sumerian."
-      - "The simple conditional permutation gives p=0.0078125 for a pre-specified digit reaching three hits, but p=0.0625 when any of eight tested digits is allowed to be the maximum."
-      - "These are exploratory null values, not publishable significance: genealogy, contact, feature-selection history, reconstruction uncertainty and phonotactic base rates remain incompletely modeled."
-      - "Proto-Berber seven is reconstruction-sensitive and is therefore not counted in the base pilot."
+      - "Version 0.2 extends the source-locked matrix to digits 1-10 and separates root/stem-normalized from inflected surface forms."
+      - "Core root-normalized strict counts are seven=5, six=1, all other digits=0 across Proto-Semitic, Egyptian, PIE, Sumerian, Proto-Kartvelian, Hurrian and Basque."
+      - "Adding Etruscan and Iberian candidate rows yields seven=7, six=1, but these rows are retained in a lower-confidence sensitivity layer."
+      - "The naive row-independent look-elsewhere null is very small, but hierarchical/contact collapse changes the result materially: scenario values range from 0.002 to 0.20 depending on dependency assumptions."
+      - "Proto-Uralic seven is no longer counted as a whole-family hit; Finno-Permic and Ugric controls are separated, with Ugric seven treated as Iranian-contact evidence."
+      - "These are exploratory sensitivity results, not a common-origin or significance claim."
     next_discriminating_test:
-      - "Extend the source-locked matrix to 1-10 and additional ancestral nodes, then run a hierarchical genealogy/contact/phonotactic null with matched alternative features."
+      - "Replace the conditional position-randomization null with a generative historical model containing genealogy, contact edges, borrowing, phonotactics, reconstruction uncertainty, missingness and feature-selection priors."
 
 summary:
   promoted_or_anchored:
