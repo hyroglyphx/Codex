@@ -265,3 +265,82 @@ Validation can therefore include:
 See:
 - `studies/arity-compression-spectral-language-sieve.md`
 - `studies/multimodal-synchronous-state-harmonics.md`
+
+
+## Rosetta Nexus calibration objects
+
+Multilingual stelae, tablets, statues, monumental inscriptions, lexical lists, and distributed parallel texts are treated as **calibration objects** rather than merely as examples.
+
+The dedicated registry is:
+
+`registries/rosetta-nexus-calibration.yaml`
+
+### Parallax coordinate
+
+Each witness receives a representation-distance class independent of confidence:
+
+```text
+PX0 same occurrence / multiple roles
+PX1 same object / script-register shift
+PX2 same object / cross-language
+PX3 co-located parallel object set
+PX4 same text-event / distributed objects
+PX5 explicit scribal crosswalk
+PX6 archival or recensional relay
+PX7 structural control only
+```
+
+### Alignment coordinate
+
+Each relation also records the scale at which correspondence is being tested:
+
+```text
+G0 sign/grapheme
+G1 phoneme/syllable
+G2 lexeme/name
+G3 phrase/formula
+G4 clause/sentence
+G5 proposition
+G6 section
+G7 document/event
+```
+
+### Required sieve variables
+
+The shared record may now include:
+
+- nexus ID and object ID,
+- carrier class and material substrate,
+- object count and co-location,
+- spatial layout and reading direction,
+- languages, scripts, and registers,
+- parallax level,
+- alignment granularity,
+- crosswalk explicitness,
+- parallelism type,
+- same-referent / same-proposition / same-lexicalization flags,
+- translation-direction status,
+- anchor classes such as names, titles, dates, numerals, divine names, legal formulae, repeated formulae, and rare lexemes,
+- omission / expansion / reordering,
+- damage and completeness,
+- transform vectors across script, phonology, morphology, syntax, semantics, register, and institution,
+- covariance,
+- cycle/path consistency,
+- divergence rate,
+- residue and conflict,
+- negative controls,
+- evidence class,
+- calibration weight,
+- ontology-claim ceiling.
+
+### Calibration rule
+
+```text
+explicit ancient crosswalk
+>
+retrospective resemblance
+```
+
+for learning transformation behavior.
+
+A same-object or same-event witness is never flattened automatically into literal translation. The engine preserves divergence at the finest defensible alignment granularity.
