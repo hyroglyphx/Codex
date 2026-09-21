@@ -175,6 +175,18 @@ edges:
   - {id: E187, source: Genesis-genealogical-and-creation-resets, target: scriptural-recurrence-operator, type: B19, class: C3, status: connected_structural_recurrence}
   - {id: E188, source: Homeric-formulaic-repetition, target: scriptural-formulaic-recurrence, type: B11, class: C4, status: connected_structural_control, note: "compare pacing/formula recurrence without asserting common metrical system"}
 
+  # Gilgamesh multilingual nexus
+  - {id: E190, source: Sumerian-Gilgamesh-compositions, target: Old-Babylonian-Akkadian-Gilgamesh, type: B3, class: C1, status: connected_recomposition}
+  - {id: E191, source: Old-Babylonian-Gilgamesh, target: Standard-Babylonian-Gilgamesh, type: B3, class: C1, status: connected_recension}
+  - {id: E192, source: Akkadian-Gilgamesh, target: Hittite-Gilgamesh, type: B1, class: C1, status: connected_adaptation, note: "target-language version is adaptive; exact source-state may vary"}
+  - {id: E193, source: Akkadian-Hurrian-Gilgamesh-traditions, target: Hurrian-Gilgamesh-fragments, type: B1, class: C2, status: connected_fragmentary_rendering}
+  - {id: E194, source: Akkadian-Gilgamesh, target: Ugarit-Emar-Megiddo-Hattusa-Akkadian-witnesses, type: B8, class: C1, status: connected_scribal_circulation}
+  - {id: E195, source: Sumerian-Huwawa, target: Akkadian-Humbaba, type: B15, class: C1, status: connected_name_episode_orbit}
+  - {id: E196, source: Sumerian-Ziusudra, target: Akkadian-Utnapishtim, type: B15, class: C1, status: connected_flood_hero_equivalence}
+  - {id: E197, source: Atrahasis-flood, target: Gilgamesh-XI-flood, type: B3, class: C1, status: connected_literary_reuse}
+  - {id: E198, source: Mesopotamian-flood-tradition, target: Genesis-6-9, type: B7, class: C3, status: connected_shared_historical_matrix}
+  - {id: E199, source: Ziusudra-Utnapishtim-flood-tradition, target: Berossus-Xisouthros, type: B15, class: C2, status: connected_Greek_recasting}
+  - {id: E200, source: Gilgamesh-operator-field, target: Homeric-operator-field, type: B11, class: C4, status: connected_structural_control, note: "individual parallels debated; no blanket direct-translation claim"}
 completion_queue:
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
