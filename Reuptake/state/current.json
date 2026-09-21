@@ -6,11 +6,10 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "Rosetta nexus parallax calibration",
+    "Rosetta/Behistun aligned calibration",
     "crosswise resolution/covariance benchmarking",
     "arity-compression spectral language indexing",
-    "multimodal synchronous-state harmonics",
-    "typed historical transformation and projection-bounded inference"
+    "multimodal synchronous-state harmonics"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -32,13 +31,19 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Populate Rosetta Nexus records with actual aligned segments and anchor counts",
-    "Build Memphis/Rosetta multi-granularity alignment from names/titles/formulae through propositions",
-    "Build Behistun Old Persian/Elamite/Babylonian transformation matrix",
+    "Quantify Rosetta anchor density, omission/expansion/reordering and damage-aware alignment",
+    "Extend Behistun through province list and Gaumata narrative; add formula-frequency counts",
+    "Add Elephantine Aramaic Behistun relay as temporal-parallax PX6",
     "Build Tell Fekheriye Akkadian/Aramaic morphology-syntax transport matrix",
     "Build Ugarit KTU 5.14 sign-to-syllabic crosswalk calibration",
     "Build Ebla sign/readout and lexical-equation calibration set",
-    "Feed calibrated transform weights into HSS, QBL, ASIS and numeral-carrier tests",
-    "Prototype cycle-consistency and prospective-divergence scoring"
-  ]
+    "Feed measured transforms into HSS, QBL, ASIS and numeral-carrier tests"
+  ],
+  "calibration_progress": {
+    "RN01 Memphis-Rosetta": "first_alignment_complete",
+    "RN02 Behistun": "first_alignment_complete",
+    "RN03 Tell-Fekheriye": "queued",
+    "RN08 Ugarit-KTU-5-14": "queued",
+    "RN07 Ebla-sign-and-lexical-lists": "queued"
+  }
 }
