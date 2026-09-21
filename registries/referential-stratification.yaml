@@ -1,0 +1,33 @@
+registry: referential-stratification
+version: 1.0.0
+updated: 2026-09-21
+status: ACTIVE
+
+levels:
+  R0: NAMED_INDIVIDUAL
+  R1: REPRESENTATIVE_OFFICE
+  R2: HOUSE_RETINUE_CONTINGENT
+  R3: ETHNIC_TRIBAL_COLLECTIVE
+  R4: POLITY_TERRITORY
+  R5: DYNASTIC_INSTITUTIONAL_BODY
+
+operators:
+  RS1: {from: [R0,R1], to: [R2], name: LEADER_TO_CONTINGENT}
+  RS2: {from: [R0,R1], to: [R3], name: LEADER_TO_PEOPLE}
+  RS3: {from: [R3], to: [R4], name: PEOPLE_TO_LAND}
+  RS4: {from: [R4], to: [R3], name: LAND_TO_PEOPLE}
+  RS5: {from: [R2,R5], to: [R5], name: HOUSE_TO_DYNASTY}
+  RS6: {from: [R0,R1], to: [R4,R5], name: RULER_TO_POLITY}
+  RS7: {from: [R0], to: [R3], name: EPONYM_TO_DESCENDANTS}
+  RS8: {from: [R3], to: [R4], name: DESCENDANTS_TO_POLITY}
+  RS9: {from: [R2], to: [R3], name: CONTINGENT_TO_ETHNOS_GENERALIZATION}
+  RS10: {from: [R3], to: [R0,R1], name: ETHNOS_TO_REPRESENTATIVE_COMPRESSION}
+
+anchors:
+  - {id: STRAT-XEN-01, sequence: [Tigranes, Tigranes-and-his-men, Armenians], path: [R0_R1,R2,R3], class: C0}
+  - {id: STRAT-BIB-01, sequence: [Jacob-Israel, house-of-Israel, Israel-people, Israel-polity], path: [R0,R2_R3,R3,R4], class: C0}
+  - {id: STRAT-BIB-02, sequence: [Esau, Edom-descendants, Edom-land], path: [R0,R3,R4], class: C0}
+
+benchmark:
+  id: STRAT-01
+  rule: "resolve referential stratum before judging lexical translation mismatch"
