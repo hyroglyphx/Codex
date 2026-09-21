@@ -1,0 +1,90 @@
+registry: translation-transposition-bridges
+version: 0.1.0
+updated: 2026-09-20
+status: LIVING
+
+bridge_types:
+  B1: DIRECT_TRANSLATION
+  B2: PARALLEL_WITNESS
+  B3: RECENSION_RECOMPOSITION
+  B4: READOUT_TRANSPOSITION
+  B5: MODE_SCRIPT_TRANSPOSITION
+  B6: LEXICAL_CALQUE_BORROWING
+  B7: FUNCTION_OPERATOR_TRANSPOSITION
+  B8: INSTITUTIONAL_LITURGICAL_CUSTODY
+  B9: SUBSTRATE_RESIDUE
+  B10: DIALECT_GENEALOGICAL_TRANSPOSITION
+  B11: STRUCTURAL_CONTROL
+
+edges:
+  # Mesopotamian foundations
+  - {id: E001, source: Sumerian, target: Akkadian, type: B4, class: C0, status: connected, note: "documented logographic/readout and scribal custody"}
+  - {id: E002, source: Sumerian-Gilgamesh-stories, target: Akkadian-Gilgamesh-tradition, type: B3, class: C1, status: connected, note: "literary recomposition rather than simple translation"}
+  - {id: E003, source: Old-Babylonian-Gilgamesh, target: Standard-Babylonian-Gilgamesh, type: B3, class: C1, status: connected, note: "recensional/editorial synthesis"}
+  - {id: E004, source: Atrahasis-flood-tradition, target: Gilgamesh-Tablet-XI-flood, type: B3, class: C1, status: connected, note: "related Akkadian flood tradition / literary reuse"}
+  - {id: E005, source: Atrahasis-Gilgamesh-flood-operators, target: Genesis-6-9, type: B7, class: C3, status: connected_shared_matrix, note: "ANE flood operator correspondence; not encoded as direct translation"}
+  - {id: E006, source: Enuma-Elish-ordering-operators, target: Genesis-1, type: B7, class: C3, status: connected_shared_matrix, note: "creation/order comparison; direct dependence not assumed"}
+
+  # Biblical textual relay
+  - {id: E010, source: Hebrew-biblical-traditions, target: Septuagint-Greek, type: B1, class: C0, status: connected, note: "direct ancient translation tradition; source Vorlage may differ by book"}
+  - {id: E011, source: Hebrew-biblical-traditions, target: Targumic-Aramaic, type: B1, class: C0, status: connected, note: "translation plus interpretive expansion"}
+  - {id: E012, source: Hebrew-Aramaic-biblical-traditions, target: Peshitta-Syriac, type: B1, class: C0, status: connected}
+  - {id: E013, source: Hebrew-Greek-biblical-traditions, target: Vulgate-Latin, type: B1, class: C0, status: connected}
+  - {id: E014, source: Hebrew-biblical-traditions, target: Aquila-Greek, type: B1, class: C0, status: connected, note: "revisional/literalizing Greek witness"}
+  - {id: E015, source: Hebrew-scriptural-corpus, target: later-Jewish-liturgical-custody, type: B8, class: C1, status: connected}
+  - {id: E016, source: Greek-scriptural-corpus, target: later-Christian-liturgical-custody, type: B8, class: C1, status: connected}
+  - {id: E017, source: Syriac-scriptural-corpus, target: later-Syriac-liturgical-custody, type: B8, class: C1, status: connected}
+  - {id: E018, source: Latin-Vulgate, target: later-European-vernacular-bible-traditions, type: B1, class: C1, status: expandable, note: "many daughter translation paths; populate per-language rather than flatten"}
+
+  # Historical multilingual anchors
+  - {id: E020, source: Sumerian, target: Eblaite-Semitic, type: B4, class: C0, status: connected, nexus: Ebla}
+  - {id: E021, source: Akkadian, target: Amorite-Hurrian-contact, type: B6, class: C1, status: connected, nexus: Mari}
+  - {id: E022, source: Ugaritic, target: Akkadian-Sumerian-Hurrian, type: B2, class: C0, status: connected, nexus: Ugarit}
+  - {id: E023, source: Egyptian-court, target: Diplomatic-Akkadian-Levantine, type: B2, class: C0, status: connected, nexus: Amarna}
+  - {id: E024, source: Hittite-Luwian-Hurrian, target: Akkadian-Sumerian-scribal-conventions, type: B4, class: C0, status: connected, nexus: Hattusa}
+  - {id: E025, source: Akkadian-Phoenician-Egyptian, target: titles-names-institutions, type: B6, class: C1, status: connected, nexus: Byblos}
+  - {id: E026, source: Old-Persian, target: Elamite-Babylonian, type: B2, class: C0, status: connected, nexus: Behistun}
+  - {id: E027, source: Behistun-imperial-content, target: Aramaic-transmission, type: B8, class: C1, status: connected}
+  - {id: E028, source: Egyptian-hieroglyphic, target: Demotic-Greek, type: B2, class: C0, status: connected, nexus: Rosetta-Memphis}
+  - {id: E029, source: Phoenician, target: Hieroglyphic-Luwian, type: B2, class: C0, status: connected, nexus: Karatepe-Cinekoy}
+  - {id: E030, source: Phoenician, target: Etruscan, type: B2, class: C0, status: connected, nexus: Pyrgi}
+  - {id: E031, source: Lycian, target: Greek-Aramaic, type: B2, class: C0, status: connected, nexus: Letoon}
+
+  # Secure genealogical / script transpositions
+  - {id: E040, source: Hurrian, target: Urartian, type: B10, class: C1, status: connected}
+  - {id: E041, source: Hattic-ritual-material, target: Hittite-archives, type: B8, class: C1, status: connected}
+  - {id: E042, source: Hurrian-ritual-mythic-material, target: Hittite-archives, type: B8, class: C1, status: connected}
+  - {id: E043, source: Luwian-cuneiform, target: Hieroglyphic-Luwian, type: B5, class: C1, status: connected}
+  - {id: E044, source: Mycenaean-Greek, target: later-Greek, type: B10, class: C1, status: connected}
+  - {id: E045, source: Greek-syllabic-carriers, target: alphabetic-Greek, type: B5, class: C1, status: connected}
+  - {id: E046, source: Egyptian, target: Coptic, type: B10, class: C1, status: connected}
+  - {id: E047, source: Etruscan, target: Lemnian, type: B10, class: C1, status: connected}
+  - {id: E048, source: Common-Tyrsenian, target: Raetic, type: B10, class: C1, status: connected}
+
+  # Contact / substrate
+  - {id: E050, source: Hurro-Urartian, target: Armenian, type: B9, class: C2, status: active, note: "loan/substrate candidates must be itemized individually"}
+  - {id: E051, source: Phoenician-alphabetic-tradition, target: Greek-alphabet, type: B5, class: C1, status: connected}
+  - {id: E052, source: Greek-alphabet, target: Etruscan-Italic-alphabetic-traditions, type: B5, class: C1, status: connected}
+  - {id: E053, source: Roman-Latin-administration, target: Suebian-Gallaecian-polity, type: B8, class: C1, status: active, note: "institutional custody; not a direct language descent edge"}
+
+  # Distant operator controls
+  - {id: E060, source: Vedic-creation-order-operators, target: Mesopotamian-Biblical-creation-operators, type: B11, class: C4, status: structural_control, note: "no direct transmission encoded"}
+  - {id: E061, source: Vedic-ritual-transformation, target: Near-Eastern-ritual-operator-field, type: B11, class: C4, status: structural_control}
+  - {id: E062, source: Sumerian-EGAL, target: Egyptian-great-house, type: B11, class: C4, status: structural_control, note: "independent semantic construction control"}
+
+completion_queue:
+  - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: needs_witness_pack}
+  - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: needs_witness_pack}
+  - {node: Palaic, target_bridge: "Hittite/Luwian Anatolian comparison", preferred_types: [B10], status: needs_morphology_pack}
+  - {node: Sidetic, target_bridge: "Greek/Anatolian contact inscriptions", preferred_types: [B2,B6], status: needs_witness_pack}
+  - {node: Lydian, target_bridge: "Anatolian + Greek contact", preferred_types: [B10,B6], status: partial}
+  - {node: Carian, target_bridge: "Greek/Anatolian bilingual-decipherment history", preferred_types: [B2,B5], status: partial}
+  - {node: Phrygian, target_bridge: "Greek/Anatolian/Balkan contact", preferred_types: [B6,B10], status: partial}
+  - {node: Meroitic, target_bridge: "Egyptian/Nile script-contact field", preferred_types: [B5,B11], status: boundary}
+  - {node: Eteocypriot, target_bridge: "Greek/Cypriot bilingual environment", preferred_types: [B2,B5,B11], status: boundary}
+  - {node: Iberian, target_bridge: "Phoenician/Greek/Latin western contact", preferred_types: [B2,B6,B11], status: boundary}
+  - {node: Kartvelian, target_bridge: "Caucasian external-control and contact field", preferred_types: [B10,B11], status: external_control}
+  - {node: Proto-Uralic-Finnic, target_bridge: "genealogical/distant numeral control", preferred_types: [B10,B11], status: external_control}
+  - {node: Tamil-Dravidian, target_bridge: "deep typological/ritual-language control", preferred_types: [B11], status: external_control}
+  - {node: Suebi-Suebian, target_bridge: "Latin + later Germanic/Romance textual and onomastic evidence", preferred_types: [B6,B8,B9,B10], status: needs_linguistic_witnesses}
+  - {node: later-European-vernaculars, target_bridge: "Vulgate/Greek/scriptural translation halo", preferred_types: [B1,B8,B9,B10], status: expand_per_language}
