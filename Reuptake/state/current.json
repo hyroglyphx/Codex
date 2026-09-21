@@ -6,10 +6,10 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "Rosetta/Behistun aligned calibration",
+    "Tell Fekheriye / KTU 5.14 / Ebla calibration complete",
     "crosswise resolution/covariance benchmarking",
-    "arity-compression spectral language indexing",
-    "multimodal synchronous-state harmonics"
+    "Rosetta Nexus parallax calibration",
+    "arity-compression spectral language indexing"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -31,19 +31,18 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Quantify Rosetta anchor density, omission/expansion/reordering and damage-aware alignment",
-    "Extend Behistun through province list and Gaumata narrative; add formula-frequency counts",
-    "Add Elephantine Aramaic Behistun relay as temporal-parallax PX6",
-    "Build Tell Fekheriye Akkadian/Aramaic morphology-syntax transport matrix",
-    "Build Ugarit KTU 5.14 sign-to-syllabic crosswalk calibration",
-    "Build Ebla sign/readout and lexical-equation calibration set",
-    "Feed measured transforms into HSS, QBL, ASIS and numeral-carrier tests"
+    "Quantify Tell Fekheriye phrase-alignment density and local translation direction by section",
+    "Ingest all preserved KTU 5.14 rows from a critical edition and compute consonant-to-syllabic approximation costs",
+    "Expand Ebla lexical calibration into a larger stratified sample and compute copy-to-copy covariance",
+    "Run Ebla geštu3 = ḫa-zi-zu-um through the HSS/ear-understanding lane without assuming whole-word descent",
+    "Feed calibrated transformation weights into HSS, QBL, ASIS and numeral-carrier tests",
+    "Begin RN04 Karatepe/Cinekoy after calibration scoring is frozen"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
     "RN02 Behistun": "first_alignment_complete",
-    "RN03 Tell-Fekheriye": "queued",
-    "RN08 Ugarit-KTU-5-14": "queued",
-    "RN07 Ebla-sign-and-lexical-lists": "queued"
+    "RN03 Tell-Fekheriye": "first_alignment_complete",
+    "RN08 Ugarit-KTU-5-14": "first_alignment_complete",
+    "RN07 Ebla-sign-and-lexical-lists": "first_alignment_complete"
   }
 }
