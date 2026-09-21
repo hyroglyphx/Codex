@@ -1,0 +1,151 @@
+registry: language-coverage
+version: 0.1.0
+updated: 2026-09-20
+status: GENERATED_LIVING_REGISTRY
+
+coverage_scale:
+  D0: absent
+  D1: registered
+  D2: structured
+  D3: active_study
+  D4: dense_crosslinked
+  D5: instrumented_end_to_end
+
+scoring_rule: >
+  Coverage measures density inside this research corpus, not general scholarly
+  knowledge of the language. Raise a level only when new corpus objects,
+  transformations, controls, witnesses, or end-to-end fixtures are actually added.
+
+path_density:
+  - id: P01
+    path: Mesopotamia-Syria-Levant
+    level: D4
+    note: Core carrier/readout, Semitic calibration, operator panels, bilingual and contact work.
+  - id: P02
+    path: Hurro-Urartian-and-Hattic-Hittite
+    level: D3
+    note: Strong control architecture; several explicit mechanisms, fewer filled witness sets.
+  - id: P03
+    path: Anatolian-branch-and-script-mode
+    level: D3
+    note: Hittite/Luwian are developed; western Anatolian languages are unevenly populated.
+  - id: P04
+    path: Aegean-Cyprus
+    level: D3
+    note: Mycenaean-to-alphabetic script-state logic is strong; Eteocypriot remains boundary-status.
+  - id: P05
+    path: Greek-IE-case-and-root-depth
+    level: D4
+    note: Case syncretism, root/stem operators, Sanskrit/Latin/Old Iranian controls are cross-linked.
+  - id: P06
+    path: Iranian-Achaemenid
+    level: D3
+    note: Behistun/Susa multilingual control plus Old Persian/Avestan/Sanskrit depth lane.
+  - id: P07
+    path: Western-Mediterranean
+    level: D3
+    note: Pyrgi, Etruscan/Lemnian, numeral controls, script transport; Iberian/Basque remain lighter.
+  - id: P08
+    path: Nile-Northeast-Africa
+    level: D3
+    note: Egyptian/Coptic is dense; Meroitic and Berber function mainly as controlled adjacent lanes.
+  - id: P09
+    path: Arabia
+    level: D2
+    note: Arabic/MSA are structured; Old North Arabian and Ancient South Arabian are newly incorporated.
+  - id: P10
+    path: Distant-external-controls
+    level: D2
+    note: Kartvelian, Uralic, Tamil, Baltic and related controls exist mainly to stress-test broad invariants.
+
+core_matrix:
+  - {row: 1, tradition: Sumerian, path: P01, coverage: D4, role: "carrier/readout anchor; classify/build/give/return"}
+  - {row: 2, tradition: Akkadian, path: P01, coverage: D5, role: "East-Semitic anchor; morphology; PARALLEL_READOUT; GlyphWalk fixture"}
+  - {row: 3, tradition: Eblaite, path: P01, coverage: D3, role: "early Semitic ancestral-node/bilingual lexical control"}
+  - {row: 4, tradition: Ugaritic, path: P01, coverage: D4, role: "NW-Semitic Bronze Age morphology; alphabetic-cuneiform bridge"}
+  - {row: 5, tradition: Hebrew, path: P01, coverage: D4, role: "consonantal compression; root/operator; numeric traditions"}
+  - {row: 6, tradition: Aramaic-Syriac, path: P01, coverage: D4, role: "imperial transport; translation divergence; later transformation laboratory"}
+  - {row: 7, tradition: Arabic, path: P09, coverage: D3, role: "root/stem comparison; numeral control"}
+  - {row: 8, tradition: Soqotri-MSA, path: P09, coverage: D2, role: "archaic-looking phonology; parallel Semitic control"}
+  - {row: 9, tradition: Geez-Tigrinya, path: P08, coverage: D2, role: "Ethiosemitic replacement and root-morphology control"}
+  - {row: 10, tradition: Egyptian-Coptic, path: P08, coverage: D4, role: "classifier/readout; vowel evidence; deep diachronic numeral lane"}
+  - {row: 11, tradition: Berber, path: P08, coverage: D3, role: "Afroasiatic branch control; numeral carrier"}
+  - {row: 12, tradition: Sumerian-Emesal, path: P01, coverage: D3, role: "register/dialect orbit and readout control"}
+  - {row: 13, tradition: Hurrian, path: P02, coverage: D3, role: "agglutinative non-Semitic control; numeral partial carrier"}
+  - {row: 14, tradition: Urartian, path: P02, coverage: D2, role: "later Hurro-Urartian branch control"}
+  - {row: 15, tradition: Elamite, path: P06, coverage: D3, role: "non-Semitic nexus and Achaemenid adversarial control"}
+  - {row: 16, tradition: Hattic, path: P02, coverage: D2, role: "substrate/ritual carrier-custody control"}
+  - {row: 17, tradition: Hittite, path: P03, coverage: D4, role: "old IE morphology; nested Sumerogram/Akkadogram/Hittite readout"}
+  - {row: 18, tradition: Luwian, path: P03, coverage: D3, role: "cuneiform/hieroglyphic script-mode transposition"}
+  - {row: 19, tradition: Lycian, path: P03, coverage: D3, role: "Letoon translation/institutional invariant control"}
+  - {row: 20, tradition: Lydian, path: P03, coverage: D2, role: "Anatolian divergence control"}
+  - {row: 21, tradition: Carian, path: P03, coverage: D2, role: "grapheme-shape versus phonetic-value caution"}
+  - {row: 22, tradition: Phrygian, path: P03, coverage: D2, role: "Greek-Anatolian contact"}
+  - {row: 23, tradition: Mycenaean-Greek, path: P04, coverage: D3, role: "Linear-B script-state and early Greek control"}
+  - {row: 24, tradition: Classical-Greek, path: P05, coverage: D4, role: "case syncretism; vocalic witness; isopsephy/sign-value studies"}
+  - {row: 25, tradition: Latin, path: P05, coverage: D3, role: "case-collapse and custody/translation control"}
+  - {row: 26, tradition: Sanskrit, path: P05, coverage: D4, role: "morphological-depth and root/stem control"}
+  - {row: 27, tradition: Avestan-Old-Iranian, path: P05, coverage: D3, role: "Indo-Iranian split and inherited-carrier calibration"}
+  - {row: 28, tradition: Old-Persian, path: P06, coverage: D3, role: "imperial multilingual control"}
+  - {row: 29, tradition: Armenian, path: P05, coverage: D3, role: "surface-opacity-under-inheritance control"}
+  - {row: 30, tradition: Albanian, path: P05, coverage: D3, role: "surface-collision and IE branch control"}
+  - {row: 31, tradition: Lithuanian, path: P10, coverage: D2, role: "conservative Baltic/IE external control"}
+  - {row: 32, tradition: Etruscan, path: P07, coverage: D3, role: "Pyrgi bilingual; numeral carrier; non-IE western control"}
+  - {row: 33, tradition: Lemnian, path: P07, coverage: D2, role: "Tyrsenian relation control"}
+  - {row: 34, tradition: Iberian, path: P07, coverage: D2, role: "semi-syllabic western contact and numeral candidate control"}
+  - {row: 35, tradition: Basque, path: P07, coverage: D2, role: "western non-IE external control"}
+  - {row: 36, tradition: Proto-Kartvelian-Georgian, path: P10, coverage: D2, role: "consonant-rich external control"}
+  - {row: 37, tradition: Proto-Uralic-Finnic, path: P10, coverage: D2, role: "distant morphological/numeral control"}
+  - {row: 38, tradition: Tamil, path: P10, coverage: D2, role: "Dravidian agglutinative deep control"}
+  - {row: 39, tradition: Meroitic, path: P08, coverage: D2, role: "Nile script-adaptation and boundary-language control"}
+  - {row: 40, tradition: Phoenician-Punic, path: P01, coverage: D4, role: "Mediterranean alphabetic transport; bilingual bridge"}
+
+incorporated_beyond_core_matrix:
+  - {tradition: Amorite, path: P01, coverage: D2, status: structured, note: "graded Ebla/Mari-Amorite-Ugarit-Canaanite corridor"}
+  - {tradition: Canaanite, path: P01, coverage: D2, status: structured, note: "ancestral/branch envelope; avoid counting as independent witness"}
+  - {tradition: Turoyo, path: P01, coverage: D3, status: active, note: "tre collision control and Aramaic transformation path"}
+  - {tradition: Maltese, path: P09, coverage: D2, status: structured, note: "parallel Semitic numeral lane"}
+  - {tradition: Old-Arabic, path: P09, coverage: D1, status: registered, note: "macro-zone inventory; needs witness set"}
+  - {tradition: Sabaic-Ancient-South-Arabian, path: P09, coverage: D1, status: newly_incorporated, note: "branch-level roots, numerals, trade/institutional vocabulary"}
+  - {tradition: Safaitic, path: P09, coverage: D1, status: newly_incorporated, note: "Old North Arabian witness lane"}
+  - {tradition: Hismaic, path: P09, coverage: D1, status: newly_incorporated, note: "Old North Arabian witness lane"}
+  - {tradition: Dadanitic, path: P09, coverage: D1, status: newly_incorporated, note: "Old North Arabian witness lane"}
+  - {tradition: Taymanitic, path: P09, coverage: D1, status: newly_incorporated, note: "Old North Arabian witness lane"}
+  - {tradition: Palaic, path: P03, coverage: D1, status: registered, note: "early Anatolian branch control"}
+  - {tradition: Sidetic, path: P03, coverage: D1, status: registered, note: "first-millennium Anatolian contact field"}
+  - {tradition: Arcadocypriot, path: P04, coverage: D2, status: structured, note: "conservative Greek + syllabic transition control"}
+  - {tradition: Eteocypriot, path: P04, coverage: D2, status: boundary, note: "exact-sign/bilingual context; phonetic projection ceiling"}
+  - {tradition: Demotic-Egyptian, path: P08, coverage: D3, status: active, note: "Memphis/Rosetta script-register and translation triangulation"}
+  - {tradition: Libyco-Berber, path: P08, coverage: D1, status: newly_incorporated, note: "script/contact extension of Berber control"}
+  - {tradition: Celtic, path: P07, coverage: D1, status: registered, note: "macro-zone IE comparison only"}
+  - {tradition: Thracian, path: P10, coverage: D1, status: registered, note: "Balkan substrate/branch control"}
+  - {tradition: Dacian, path: P10, coverage: D1, status: registered, note: "Balkan substrate/branch control"}
+  - {tradition: Paeonian, path: P10, coverage: D1, status: registered, note: "Balkan substrate/branch control"}
+  - {tradition: Indo-Aryan-Mitanni-register, path: P05, coverage: D2, status: structured, note: "embedded donor-register versus matrix-language control"}
+  - {tradition: Iranian-umbrella, path: P06, coverage: D2, status: structured, note: "macro-zone support for Old Persian/Avestan lane"}
+
+crosscutting_paths:
+  - id: X01
+    name: numeral-seven-carrier
+    density: D4
+    primary: [Egyptian-Coptic, Etruscan, Hurrian, Sumerian, Armenian, Berber, Proto-Uralic-Finnic, Proto-Kartvelian-Georgian]
+  - id: X02
+    name: case-operator-ecology
+    density: D4
+    primary: [Mycenaean-Greek, Classical-Greek, Hittite, Luwian, Latin, Sanskrit, Avestan-Old-Iranian]
+  - id: X03
+    name: rosetta-redundancy
+    density: D3
+    primary: [Akkadian, Aramaic-Syriac, Old-Persian, Elamite, Lycian, Classical-Greek, Phoenician-Punic, Luwian, Etruscan]
+  - id: X04
+    name: script-state-transposition
+    density: D4
+    primary: [Sumerian, Akkadian, Hittite, Luwian, Mycenaean-Greek, Classical-Greek, Egyptian-Coptic, Phoenician-Punic]
+  - id: X05
+    name: boundary-language-discipline
+    density: D2
+    primary: [Eteocypriot, Meroitic, Iberian, Elamite]
+  - id: X06
+    name: numeric-transposition-sign-value
+    density: D3
+    primary: [Classical-Greek, Hebrew, Aramaic-Syriac, Arabic, Phoenician-Punic, Akkadian]
