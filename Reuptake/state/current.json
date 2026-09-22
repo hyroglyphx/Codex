@@ -1,14 +1,14 @@
 {
   "relay": "Codex Reuptake",
-  "updated_at": "2026-09-21",
+  "updated_at": "2026-09-22",
   "repository": "hyroglyphx/Codex",
   "branch": "research/reconcile-state-2026-09-20",
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
+    "Hittite decipherment covariance and Gilgamesh cross-corpus transmission",
     "generative genealogy-contact numeral null",
-    "source-locked 1-10 numeral matrix",
-    "calibrated candidate lattice"
+    "Rosetta Nexus parallax calibration"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -19,10 +19,16 @@
     "Material medium is not encoding granularity.",
     "Prefer homology of transformation over identity of surface form.",
     "Parallax depth describes representation distance, not confidence.",
-    "Explicit ancient crosswalks outrank retrospective resemblance for calibration."
+    "Explicit ancient crosswalks outrank retrospective resemblance for calibration.",
+    "Name continuity does not imply plot continuity.",
+    "Identity carrier, role, episode, and classifier are separate variables.",
+    "Decipherment heuristic does not equal final etymology.",
+    "Known script does not imply known language."
   ],
   "active_packet": "Reuptake/packets/2026-09-21-arity-compression-synchronous-state.json",
   "primary_studies": [
+    "studies/gilgamesh-beyond-cuneiform-transmission-node.md",
+    "studies/hittite-decipherment-crosswise-calibration.md",
     "registries/rosetta-nexus-calibration.yaml",
     "studies/crosswise-resolution-covariance-benchmark.md",
     "studies/arity-compression-spectral-language-sieve.md",
@@ -30,13 +36,11 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Estimate node-specific phonotactic carrier base rates rather than sweep shared q",
-    "Replace shared contact parameter with dated edge-specific priors",
-    "Sample reconstruction uncertainty and disputed numeral assignments",
-    "Freeze an executable deterministic simulation with seed and versioned inputs",
-    "Run leave-one-node and leave-one-cluster-out diagnostics",
-    "Preregister matched alternative carrier families before next significance pass",
-    "Proceed to RN04 Karatepe/Cinekoy after null-model v0.2 schema is frozen"
+    "Build a compact Hittite decipherment benchmark table: logogram anchor, cognate proposal, morphology, syntax, corpus propagation, failed heuristic",
+    "Add Ugaritic/Levantine intermediate witnesses to the Gilgamesh branching transmission graph where source-valid",
+    "Index Aelian/Qumran/cuneiform Gilgamesh projections by name, role, classifier, dream operator, companion network and episode set",
+    "Continue numeral generative-null refinement with node-specific phonotactic base rates",
+    "Proceed to RN04 Karatepe/Cinekoy after the current cross-corpus nodes are fully indexed"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -46,7 +50,8 @@
     "RN07 Ebla-sign-and-lexical-lists": "first_alignment_complete",
     "transform-weights-v0.1": "frozen",
     "calibrator-scorecard-v0.1": "complete",
-    "candidate-pass-v0.1": "complete"
+    "candidate-pass-v0.1": "complete",
+    "RN11 Hittite-Decipherment-Corpus": "first_alignment_complete"
   },
   "active_candidate_results": {
     "anchored": [
