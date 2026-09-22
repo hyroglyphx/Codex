@@ -518,3 +518,24 @@ generative_gate_algebra:
     - Invariant-Forge
   pipeline: "basis -> potential gates -> typed operators -> attested edges -> derived candidates -> preregistered predictions -> holdout/null tests -> invariants -> promotion/rejection/Omega"
   rule: "complete graphs define possibility spaces only; historical activation requires witnesses"
+
+
+structural_continuation_gate_dynamics:
+  protocol: docs/architecture/structural-continuation-gate-dynamics-v0.1.md
+  registry: registries/structural-continuation-gate-dynamics-v0.1.yaml
+  status: active_experimental
+  connects:
+    - generative_gate_algebra
+    - codex_witness_protocol
+    - marduk_identity_laboratory
+    - TCIM
+    - Invariant-Forge
+    - GFSB
+    - Euler-totient-dynamics
+    - Faulhaber-memory
+    - RTC
+    - graph-spectral-Chladni
+    - Voronoi-Delaunay
+    - torus-spinor-lifts
+  pipeline: "witness -> native state -> typed gate/relation -> route -> accumulation -> optional lift -> spectral/geometric test -> basin/return -> invariant extraction -> null/holdout -> promotion/rejection/Omega"
+  governing_rule: "preserve transformation history and information loss; no cross-representation or cross-corpus equivalence is promoted without frozen maps and adversarial controls"
