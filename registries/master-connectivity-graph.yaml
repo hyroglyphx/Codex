@@ -644,3 +644,14 @@ experiment_analysis_harness:
   feeds: [Organon, Adversary, linguistic_core, ancient_script_lattice_uptake, elamite_carrier_pivot, Invariant_Forge]
   first_experiment: ELAM-CP-EXP-001
   promotion_effect: "TESTED and CORROBORATED now require explicit experiment packet fields"
+
+
+asl_w4_3:
+  amendment: docs/state/ASL-W4.3-amendment-2026-09-22.md
+  registry: registries/asl-w4.3-amendments.yaml
+  status: adopted_project_amendment
+  target: ASL-MASTER-1.0
+  governing_vector: "R(A,B)=<F,P,M,S,G,T,X,C,V>"
+  governing_question: "What survives the transformation from X to Y, through which carrier, under which operator, at which phase and position, for which audience, and at what historically calibrated cost?"
+  mandatory_promotion_protocol: [FREEZE,HIDE,PREDICT,REVEAL,SCORE,REGENERATE]
+  feeds: [linguistic_core, experiment_analysis_harness, ancient_script_lattice_uptake, elamite_carrier_pivot, TCIM, ECVR, Organon, Adversary]
