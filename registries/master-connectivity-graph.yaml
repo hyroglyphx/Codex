@@ -539,3 +539,24 @@ structural_continuation_gate_dynamics:
     - torus-spinor-lifts
   pipeline: "witness -> native state -> typed gate/relation -> route -> accumulation -> optional lift -> spectral/geometric test -> basin/return -> invariant extraction -> null/holdout -> promotion/rejection/Omega"
   governing_rule: "preserve transformation history and information loss; no cross-representation or cross-corpus equivalence is promoted without frozen maps and adversarial controls"
+
+
+dual_use_carrier_protective_gloss:
+  protocol: docs/architecture/dual-use-carrier-protective-gloss-v0.1.md
+  registry: registries/dual-use-carrier-protective-gloss-v0.1.yaml
+  status: active_experimental
+  primary_benchmark: John-Dee
+  connects:
+    - codex_witness_protocol
+    - structural_continuation_gate_dynamics
+    - TCIM
+    - Organon
+    - Invariant-Forge
+  operators:
+    - SEMANTIC_OBSCURATION_WITH_STRUCTURAL_PRESERVATION
+    - DUAL_USE_CARRIER
+    - LABEL_CHANGE
+    - OPERATOR_PRESERVATION
+  benchmarks: [DEE-01,DEE-02,DEE-03,DEE-04,DEE-05,DEE-06,DEE-07,DEE-08,DEE-09]
+  governing_rule: "surface classifier != operational substrate; declared function != exhaustive function; recover reproducible operations before assigning concealed intent"
+  label_blind_test: "historical parser vs operational parser -> intersect recovered structure -> adversarial inversion control"
