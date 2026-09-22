@@ -486,3 +486,20 @@ codex_witness_protocol:
     glyphwalk: "complete source -> normalized value -> reading -> literal meaning -> contextual translation -> uncertainty -> provenance -> CodexState"
     organon: "traverse Witness-Transformation Graph and extract candidate invariants"
     tcim_nexus: "compare typed transformations and ask what survives them"
+
+
+marduk_identity_laboratory:
+  study: docs/studies/marduk-identity-laboratory-v0.1.md
+  registry: registries/marduk-identity-laboratory-v0.1.yaml
+  status: active
+  benchmarks:
+    - MDK-01-functional-identification
+    - MDK-02-fifty-names
+    - MDK-03-spatial-instantiation
+    - MDK-04-borsippa-tutu-bridge
+    - MDK-05-contradiction-preservation
+  core_rule: "qualified historical identity must not be flattened into unrestricted equivalence"
+  identity_pipeline: "entity -> name/aspect -> function -> scope -> witness -> phase -> test"
+  spatial_pipeline: "Marduk -> Babylon -> Esagila -> witness -> reconstruction"
+  borsippa_pipeline: "Tutu -> Borsippa -> syncretic relation -> Marduk name-complex"
+  organon_question: "Under what operator, domain, witness, location, and historical phase is identity asserted, distinguished, transferred, or promoted?"
