@@ -413,3 +413,96 @@ A Cyrus↔Jesus parallel can be:
 - HISTORICAL: direct historical relation
 
 Do not promote from one class to another without independent evidence.
+
+
+## Embodied readiness polarity in Isaiah 45
+
+The newer GIRD-LOINS revisit adds a useful internal control to the Cyrus section.
+
+Isaiah 45:1 does not merely name Cyrus as YHWH's anointed.
+It also describes the loosening of kings' loins before him.
+
+Lexicographic treatment of Hebrew `māṯnayim` places this in the same embodied field in which
+girding the loins marks readiness/action and loosening marks loss of strength or disarmament.
+
+Therefore index the Cyrus passage as:
+
+```text
+CYRUS COMMISSIONED
++
+RIVAL KINGS DE-GIRDED / LOOSENED
+→
+TRANSFER OF ACTION-CAPACITY
+```
+
+This creates a reversible embodied operator:
+
+```text
+GIRD
+→ readiness / mobilization / strength
+
+LOOSEN
+→ disable / disarm / loss of action-capacity
+```
+
+The importance is structural, not mystical:
+the same body region carries opposite political-action states.
+
+### New kingship variable
+
+Add:
+
+```text
+EMBODIED_AUTHORITY_STATE
+```
+
+with values such as:
+- girded / mobilized,
+- loosened / disabled,
+- armed,
+- disarmed,
+- enthroned,
+- humbled.
+
+This can be compared across royal texts without assuming direct literary dependence.
+
+## Water-passage link
+
+The separate WATER_YIELDS matrix should remain adjacent to, but not collapsed into, the Isaiah 44–45 Cyrus material.
+
+Track:
+
+```text
+Isaiah:
+drying/deep imagery + Cyrus commission
+
+Xenophon/Herodotus:
+river diversion + passage + Babylonian conquest
+```
+
+Potential resonance is worth testing, but:
+
+```text
+shared water-sovereignty operator
+!=
+proof Isaiah encodes the tactical river-diversion story
+```
+
+Promotion requires historical/textual linkage beyond operator similarity.
+
+## Recursive consequence for inverse kingship
+
+The Cyrus comparison now has at least three independent operator layers:
+
+```text
+TITLE:
+anointed / royal election
+
+BODY:
+rival kings' loins loosened
+
+BOUNDARY:
+doors/gates/water obstacles overcome
+```
+
+Keep these layers separate before comparing them with later messianic or kingship traditions.
