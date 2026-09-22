@@ -1,0 +1,39 @@
+dual_use_carrier_protective_gloss:
+  version: 0.1.0
+  date: 2026-09-22
+  status: ACTIVE_EXPERIMENTAL
+  protocol: docs/architecture/dual-use-carrier-protective-gloss-v0.1.md
+  state: "X=(carrier,surface,operator,state,path,invariant,provenance)"
+  core_rules:
+    - "surface classifier != operational substrate"
+    - "declared function != exhaustive function"
+    - "absence of explicit disclosure is low-weight evidence when concealment is itself under test"
+    - "recover operations before assigning concealed intent"
+  transformation_classes:
+    - SEMANTIC_OBSCURATION_WITH_STRUCTURAL_PRESERVATION
+    - DUAL_USE_CARRIER
+    - LABEL_CHANGE
+    - OPERATOR_PRESERVATION
+  primary_benchmark: John_Dee
+  dee_benchmarks:
+    - DEE-01_Monas_compression
+    - DEE-02_table_combinatorics
+    - DEE-03_directed_reading_reversal
+    - DEE-04_pre_Dee_transformation_graph
+    - DEE-05_Propaedeumata_to_Monas
+    - DEE-06_Euclidean_control
+    - DEE-07_parallax_projection_control
+    - DEE-08_steganographic_control
+    - DEE-09_label_blind_adversarial_test
+  comparison_controls:
+    - Trithemius
+    - Agrippa
+    - Pantheo
+    - explicit_Dee_mathematical_corpus
+  integration:
+    - Codex_Witness_Protocol
+    - Structural_Continuation
+    - TCIM
+    - Organon
+    - Invariant_Forge
+  promotion: "reproducible operator + relevant control + provenance + discriminating prediction/holdout"
