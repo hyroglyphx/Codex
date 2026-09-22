@@ -605,3 +605,12 @@ linguistic_core:
     - registries/decipherment-benchmark-cases-v0.1.yaml
   connects: [Confluence,Relay-Kernel,Nexus,TCIM,Organon,Adversary,Invariant-Forge,structural_continuation_gate_dynamics,dual_use_carrier_protective_gloss,representation_interaction_calibration]
   governing_rule: "Do not compare words. Compare typed historical transformations and ask what survives them."
+
+
+ancient_script_lattice_uptake:
+  state_packet: docs/state/ancient-script-lattice-cross-chat-uptake-2026-09-22.md
+  status: canonical_continuation_packet
+  core_route: linguistic_core
+  priority_queue: [numeral_1_10_null_benchmark,source_lock_reconstructed_nodes,false_equivalence_control_suite]
+  controls: [Carian,Kaminia,Sumerian_Akkadian,QBL,Tyrsenian,Linear_Elamite]
+  governing_question: "Which transformations remain invariant after every plausible competing explanation has been given its strongest test?"
