@@ -315,6 +315,7 @@ calibration_objects:
     name: Byblos-undeciphered-script
     data_path: studies/byblos-script-undeciphered-negative-calibration.md
     sequence_graph: data/calibration/byblos-sequence-graph-v0.1.json
+    tablet_d_validation: data/calibration/byblos-tablet-d-validation-v0.1.json
     chart_observation: data/calibration/byblos-chart-observation-v0.1.yaml
     carrier_class: bronze-and-stone-inscriptions
     parallax_levels: [PX7]
@@ -331,6 +332,7 @@ calibration_objects:
     name: Ugarit-multilingual-archive-hub
     data_path: studies/multilingual-anchor-density-decipherment-entropy.md
     cycle_graph: data/calibration/ugarit-multilingual-cycle-consistency-v0.1.yaml
+    cycle_residuals: data/calibration/ugarit-cycle-residuals-v0.1.yaml
     positive_negative_experiment: studies/byblos-ugarit-positive-negative-decipherment-experiment.md
     carrier_class: multilingual-clay-tablet-archive
     parallax_levels: [PX2, PX5, PX6]
@@ -343,6 +345,7 @@ calibration_objects:
 
   - id: RN14
     name: Aphek-Antipatris-trilingual-lexicon
+    data_path: data/calibration/aphek-trilingual-source-lock-v0.1.yaml
     carrier_class: lexical-tablet
     parallax_levels: [PX5]
     languages: [Sumerian, Akkadian, Canaanite]
@@ -389,6 +392,6 @@ calibration_status:
   RN09: queued
   RN10: first_alignment_complete
   RN11: first_alignment_complete
-  RN12: sequence_graph_frozen_holdout_reserved
-  RN13: first_cycle_graph_complete
-  RN14: queued_for_source_lock
+  RN12: tablet_d_validation_complete_holdout_still_blind
+  RN13: row_residual_pass_complete
+  RN14: bibliographically_source_locked_rows_pending
