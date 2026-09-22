@@ -378,3 +378,29 @@ embodied_readiness_operator:
   study: studies/gird-loins-embodied-operator-retest.md
   polarity: "GIRD -> action capacity up; LOOSEN -> action capacity down"
   linked_corpus: [Isaiah-45-Cyrus, Elijah-1-Kings-18, readiness-translation-lattice]
+
+
+byblos_negative_calibration:
+  study: studies/byblos-script-undeciphered-negative-calibration.md
+  chart_observation: data/calibration/byblos-chart-observation-v0.1.yaml
+  status: active_negative_control
+  invariants:
+    - "surface glyph != normalized grapheme != phonetic value"
+    - "frequency can constrain structure before it can assign readings"
+    - "no explicit crosswalk means language priors must not be promoted into decipherment"
+    - "holdout prediction is mandatory for value assignment"
+
+multilingual_anchor_density:
+  study: studies/multilingual-anchor-density-decipherment-entropy.md
+  status: active
+  variables:
+    - crosswalk_degree
+    - effective_crosswalk_degree
+    - anchor_density
+    - crosswalk_depth
+    - decipherment_entropy
+    - value_assignment_entropy
+  archive_hubs:
+    - RN13_Ugarit_multilingual_archive
+    - RN14_Aphek_trilingual_lexicon
+  governing_rule: "the value of a Rosetta object lies in high-specificity independent crosswalk edges, not language count alone"
