@@ -412,3 +412,18 @@ decipherment_benchmarks:
   hypothesis: "effective crosswalk degree + anchor specificity + corpus covariance predict lower decipherment entropy"
   negative_control: Byblos
   positive_family: [Behistun, Rosetta, Karatepe, Orkhon, Idalion, Cippi-of-Melqart, Punic-Libyan-Dougga, Myazedi, de-Landa-Maya]
+
+
+byblos_ugarit_decipherment_experiment:
+  study: studies/byblos-ugarit-positive-negative-decipherment-experiment.md
+  byblos_graph: data/calibration/byblos-sequence-graph-v0.1.json
+  ugarit_cycle_graph: data/calibration/ugarit-multilingual-cycle-consistency-v0.1.yaml
+  status: first_comparative_pass_complete
+  key_results:
+    - "Byblos tablet-c training graph: 224 coded tokens, 52 observed catalogue nodes, 161 directed bigram edges."
+    - "A 12-sign repeated sequence occurs twice; E22 is strongly line-final in the training witness."
+    - "Spatula i is reserved as the blind holdout before any phonetic values are assigned."
+    - "Ugarit supplies independent sign/pronunciation, same-language cross-script, and quadrilingual lexical paths."
+    - "bnš / bu-nu-šu / Akkadian a-mi-lu forms an anchored lexical-semantic cycle."
+    - "cycle rank is added as a decipherment variable after dependency correction."
+  governing_rule: "prediction + independent cycle closure > post-hoc reading"
