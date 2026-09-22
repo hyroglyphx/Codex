@@ -446,3 +446,43 @@ byblos_validation_failure_rule:
   current_survivors:
     - E7_cross_tablet_high_centrality
     - E23_B8_E10_cross_tablet_recurrence
+
+
+codex_witness_protocol:
+  protocol: docs/architecture/codex-witness-protocol-v0.1.md
+  benchmarks: registries/codex-witness-benchmarks-v0.1.yaml
+  status: active
+  governing_rule: "A codex is a recoverable field of witnesses, relations, transformations, uncertainty, and return paths; carrier, reading, interpretation, claim, and reconstruction remain separately typed."
+  benchmark_fields:
+    - Bruce-Codex
+    - Askew-Codex
+    - Rohonc-Codex
+    - Byblos-script-corpus
+    - Esagila-witness-field
+    - Borsippa-witness-field
+    - Enoch-Seth-Hermes-knowledge-preservation-control
+  operators:
+    - COPY
+    - TRANSLATE
+    - TRANSLITERATE
+    - RECOMPOSE
+    - REDACT
+    - RESTORE
+    - REBUILD
+    - RECONSTRUCT
+    - ARCHAIZE
+    - REUSE
+    - RELOCATE
+    - REINTERPRET
+    - MEASURE
+    - DESCRIBE
+    - PREDICT
+    - UNKNOWN_RELATION
+  pipelines:
+    text_to_geometry: "witness -> claim -> metrological interpretation -> geometric reconstruction"
+    unresolved_script: "glyph -> sequence -> recurrence -> positional role -> graph relation -> Omega"
+    restoration_genealogy: "prior state -> change/damage -> remembered or claimed state -> restoration/rebuild -> later witness -> reconstruction"
+  integration:
+    glyphwalk: "complete source -> normalized value -> reading -> literal meaning -> contextual translation -> uncertainty -> provenance -> CodexState"
+    organon: "traverse Witness-Transformation Graph and extract candidate invariants"
+    tcim_nexus: "compare typed transformations and ask what survives them"
