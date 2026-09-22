@@ -136,6 +136,8 @@ sieve_variables:
     - crosswalk_depth
     - decipherment_entropy
     - value_assignment_entropy
+    - cycle_rank
+    - holdout_prediction_score
     - covariance
     - cycle_consistency
     - divergence_rate
@@ -312,6 +314,8 @@ calibration_objects:
   - id: RN12
     name: Byblos-undeciphered-script
     data_path: studies/byblos-script-undeciphered-negative-calibration.md
+    sequence_graph: data/calibration/byblos-sequence-graph-v0.1.json
+    chart_observation: data/calibration/byblos-chart-observation-v0.1.yaml
     carrier_class: bronze-and-stone-inscriptions
     parallax_levels: [PX7]
     negative_crosswalk_state: [PX-N0]
@@ -326,6 +330,8 @@ calibration_objects:
   - id: RN13
     name: Ugarit-multilingual-archive-hub
     data_path: studies/multilingual-anchor-density-decipherment-entropy.md
+    cycle_graph: data/calibration/ugarit-multilingual-cycle-consistency-v0.1.yaml
+    positive_negative_experiment: studies/byblos-ugarit-positive-negative-decipherment-experiment.md
     carrier_class: multilingual-clay-tablet-archive
     parallax_levels: [PX2, PX5, PX6]
     languages: [Ugaritic, Akkadian, Sumerian, Hurrian, Hittite, Luwian]
@@ -383,6 +389,6 @@ calibration_status:
   RN09: queued
   RN10: first_alignment_complete
   RN11: first_alignment_complete
-  RN12: negative_calibration_active
-  RN13: archive_hub_active
+  RN12: sequence_graph_frozen_holdout_reserved
+  RN13: first_cycle_graph_complete
   RN14: queued_for_source_lock
