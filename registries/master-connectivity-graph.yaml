@@ -343,3 +343,38 @@ hittite_decipherment_calibration:
     - "decipherment heuristic does not equal final etymology"
     - "isolated lexical resemblance must propagate through morphology, syntax and corpus before promotion"
     - "carrier is not readout"
+
+
+recursive_reassessment:
+  registry: registries/recursive-reassessment-v0.1.yaml
+  study: studies/recursive-revisit-calibrated-reclassification-2026-09-22.md
+  status: active
+  current_revisited_nodes:
+    - gilgamesh-beyond-cuneiform
+    - Egyptian-Hittite-treaty-RN10
+    - exposed-royal-infant-operator
+    - WATER_YIELDS
+    - gird-loins-embodied-operator
+    - referential-stratification-classifier-axis
+    - pace-dependency-correction
+    - Cyrus-embodied-authority-polarity
+  governing_rule: "new findings must propagate backward to every older claim that depends on the changed variable"
+
+
+exposed_royal_infant_operator:
+  study: studies/exposed-royal-infant-operator-matrix.md
+  witnesses: [Sargon-birth-legend, Exodus-Moses, Aelian-Gilgamos]
+  operators:
+    - ONOMASTIC_EPISODIC_REBINDING
+    - BOUNDARY_SUBSTITUTION
+  invariant: "episode homology does not imply entity identity or direct textual descent"
+
+water_yields_operator:
+  study: studies/water-yields-passage-sovereignty-matrix.md
+  witnesses: [Xenophon-Cyrus-Babylon, Herodotus-Cyrus-Babylon, Exodus, Joshua, Isaiah-44-45]
+  invariant: "operator match does not imply transmission proof"
+
+embodied_readiness_operator:
+  study: studies/gird-loins-embodied-operator-retest.md
+  polarity: "GIRD -> action capacity up; LOOSEN -> action capacity down"
+  linked_corpus: [Isaiah-45-Cyrus, Elijah-1-Kings-18, readiness-translation-lattice]
