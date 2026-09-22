@@ -43,6 +43,12 @@ parallax_levels:
     definition: "Crosswise comparison without demonstrated historical relay; used only as a null or operator control."
     examples: [independent-multimodal-ritual-control]
 
+negative_crosswalk_state:
+  PX-N0:
+    name: NO_EXPLICIT_CROSSWALK
+    definition: "Target corpus has no secure bilingual, lexical, sign-value, or pronunciation crosswalk; decipherment must begin from internal structure and external priors."
+    examples: [Byblos-pseudo-hieroglyphic]
+
 decipherment_depth:
   PX-D0:
     name: KNOWN_SCRIPT_UNKNOWN_LANGUAGE
@@ -124,6 +130,12 @@ sieve_variables:
     - register_transform
     - institutional_transform
   validation:
+    - crosswalk_degree
+    - effective_crosswalk_degree
+    - anchor_density
+    - crosswalk_depth
+    - decipherment_entropy
+    - value_assignment_entropy
     - covariance
     - cycle_consistency
     - divergence_rate
@@ -143,6 +155,14 @@ alignment_granularity:
   G5: proposition
   G6: section
   G7: document_or_event
+
+crosswalk_depth:
+  X0: no_explicit_crosswalk
+  X1: shared_context_or_proper_name
+  X2: proposition_parallel
+  X3: phrase_or_formula_parallel
+  X4: lexical_equation
+  X5: sign_value_or_pronunciation_equation
 
 parallelism_types:
   - literal_or_near_literal
@@ -289,6 +309,43 @@ calibration_objects:
     anchors: [NINDA-logogram, watar, ed-ezz, verbal-endings, recurring-morphology]
     status: calibration_anchor
 
+  - id: RN12
+    name: Byblos-undeciphered-script
+    data_path: studies/byblos-script-undeciphered-negative-calibration.md
+    carrier_class: bronze-and-stone-inscriptions
+    parallax_levels: [PX7]
+    negative_crosswalk_state: [PX-N0]
+    decipherment_depth: [PX-D0]
+    languages: [unknown]
+    scripts: [Byblos-pseudo-hieroglyphic]
+    alignment_granularity: [G0, G1]
+    primary_use: "negative decipherment control: small corpus, uncertain sign normalization, unknown language, no secure explicit crosswalk"
+    anchors: [sign-frequency, medium-distribution, repeated-sequences, positional-behavior]
+    status: negative_calibration_anchor
+
+  - id: RN13
+    name: Ugarit-multilingual-archive-hub
+    data_path: studies/multilingual-anchor-density-decipherment-entropy.md
+    carrier_class: multilingual-clay-tablet-archive
+    parallax_levels: [PX2, PX5, PX6]
+    languages: [Ugaritic, Akkadian, Sumerian, Hurrian, Hittite, Luwian]
+    scripts: [Ugaritic-alphabetic-cuneiform, logo-syllabic-cuneiform, Hieroglyphic-Luwian]
+    alignment_granularity: [G0, G1, G2, G3, G4, G5]
+    primary_use: "high-degree multilingual crosswalk network and cycle-consistency calibration"
+    anchors: [lexical-equations, sign-readouts, bilingual-tablets, trilingual-dictionaries, quadrilingual-crosswalks]
+    status: calibration_hub
+
+  - id: RN14
+    name: Aphek-Antipatris-trilingual-lexicon
+    carrier_class: lexical-tablet
+    parallax_levels: [PX5]
+    languages: [Sumerian, Akkadian, Canaanite]
+    scripts: [cuneiform]
+    alignment_granularity: [G1, G2]
+    primary_use: "compact lexical crosswalk linking Sumerian, Akkadian and Canaanite"
+    anchors: [lexical-equations, readouts]
+    status: queued_for_source_lock
+
 processing_order:
   - LOCK_WITNESS
   - ASSIGN_PARALLAX_LEVEL
@@ -326,3 +383,6 @@ calibration_status:
   RN09: queued
   RN10: first_alignment_complete
   RN11: first_alignment_complete
+  RN12: negative_calibration_active
+  RN13: archive_hub_active
+  RN14: queued_for_source_lock
