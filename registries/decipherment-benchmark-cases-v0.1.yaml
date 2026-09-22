@@ -1,0 +1,125 @@
+registry: decipherment-benchmark-cases
+version: 0.1.0
+updated: 2026-09-22
+status: SURVEY_DERIVED_PENDING_PRIMARY_SOURCE_LOCK
+
+purpose: >
+  Build a comparative benchmark of decipherment environments. Initial entries are
+  derived from the supplied multilingual-inscription survey and are intentionally
+  marked pending primary/specialist source-lock before quantitative use.
+
+variables:
+  - target_script_or_language
+  - anchor_object
+  - language_count
+  - script_count
+  - crosswalk_depth
+  - anchor_specificity
+  - corpus_size_class
+  - decipherment_outcome
+  - historical_role
+  - source_lock_status
+
+cases:
+  - id: DB01
+    anchor_object: Behistun
+    target_script_or_language: cuneiform_and_Old_Persian_reading
+    languages: [Old_Persian, Elamite, Babylonian]
+    crosswalk_depth: X2_X3
+    decipherment_outcome: major_success
+    historical_role: "survey identifies Behistun as instrumental for cuneiform decipherment"
+    source_lock_status: partially_locked_elsewhere_in_Codex
+
+  - id: DB02
+    anchor_object: Rosetta_Stone
+    target_script_or_language: Egyptian_hieroglyphic
+    languages: [Egyptian, Greek]
+    scripts: [Hieroglyphic, Demotic, Greek]
+    crosswalk_depth: X2_X4
+    decipherment_outcome: major_success
+    historical_role: "survey identifies Rosetta as instrumental for Egyptian hieroglyphic decipherment"
+    source_lock_status: partially_locked_elsewhere_in_Codex
+
+  - id: DB03
+    anchor_object: Karatepe_bilingual
+    target_script_or_language: Hieroglyphic_Luwian
+    languages: [Phoenician, Luwian]
+    crosswalk_depth: X2_X4
+    decipherment_outcome: major_success
+    historical_role: "survey identifies Karatepe as important for Anatolian hieroglyphs"
+    source_lock_status: queued_RN04
+
+  - id: DB04
+    anchor_object: Orkhon_inscriptions
+    target_script_or_language: Old_Turkic_script
+    languages: [Middle_Chinese, Old_Turkic]
+    crosswalk_depth: X2_X3
+    decipherment_outcome: success
+    historical_role: "survey lists Orkhon among decipherment bilinguals"
+    source_lock_status: pending
+
+  - id: DB05
+    anchor_object: Idalion_bilingual
+    target_script_or_language: Cypro_Syllabic
+    languages: [Phoenician_or_local_context, Greek_or_Cypriot_context]
+    crosswalk_depth: X2_X4
+    decipherment_outcome: success
+    historical_role: "survey states it helped decipher the Cypro-Syllabic script"
+    source_lock_status: pending_exact_language_and_witness_verification
+
+  - id: DB06
+    anchor_object: Cippi_of_Melqart
+    target_script_or_language: Phoenician_script
+    languages: [Phoenician, Greek]
+    crosswalk_depth: X2_X4
+    decipherment_outcome: success
+    historical_role: "survey states the cippi enabled Barthelemy's decipherment work"
+    source_lock_status: pending
+
+  - id: DB07
+    anchor_object: Punic_Libyan_inscription_Dougga
+    target_script_or_language: Libyan_script
+    languages: [Punic, Libyan]
+    crosswalk_depth: X2_X4
+    decipherment_outcome: success
+    historical_role: "survey states the bilingual allowed decipherment of Libyan"
+    source_lock_status: pending
+
+  - id: DB08
+    anchor_object: Myazedi_inscription
+    target_script_or_language: Pyu
+    languages: [Burmese, Pyu, Mon, Pali]
+    crosswalk_depth: X2_X3
+    decipherment_outcome: success
+    historical_role: "survey states the quadrilingual allowed decipherment of Pyu"
+    source_lock_status: pending
+
+  - id: DB09
+    anchor_object: de_Landa_alphabet_and_bilingual_list
+    target_script_or_language: Maya_script
+    languages: [Spanish, Mayan]
+    crosswalk_depth: X4_X5
+    decipherment_outcome: later_major_success_with_corrections
+    historical_role: "survey states the material contributed to mid-20th-century Maya decipherment"
+    source_lock_status: pending
+    note: "Important control: imperfect historical crosswalk can still become useful when interpreted correctly."
+
+negative_controls:
+  - id: DBN01
+    anchor_object: Byblos_corpus
+    target_script_or_language: Byblos_script
+    languages: [unknown]
+    crosswalk_depth: X0
+    decipherment_outcome: undeciphered
+    historical_role: "low-crosswalk-degree adversarial control"
+    source_lock_status: specialist_overview_locked
+
+hypothesis_to_test:
+  statement: >
+    Higher effective crosswalk degree and greater anchor specificity should predict
+    lower decipherment entropy and a higher probability of durable decipherment,
+    after controlling for corpus size, damage, language identification, and dependency.
+  current_status: untested
+  next_step: >
+    Primary-source-lock the positive benchmark cases, then assign comparable
+    crosswalk-degree / depth / corpus-size variables before fitting any model.
