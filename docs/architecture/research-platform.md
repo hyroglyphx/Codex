@@ -120,3 +120,18 @@ Every major research object should be expressible simultaneously as:
 4. a **return path** explaining how the result can be traced to its carrier/source,
 5. an **adversarial test plan**, and
 6. a **Builder target** when implementation is appropriate.
+
+
+## Linguistic core constraint
+
+Linguistic transformation is a **core substrate of the platform**, not an example domain downstream of the mathematical/symbolic machinery.
+
+Any object involving language, script, names, numerals, etymology, translation, textual transmission, decipherment, or encoded vocabulary must pass through `docs/architecture/linguistic-core-contract-v0.1.md` before cross-domain promotion.
+
+The Relay Kernel must preserve language/script, phonology/grapheme, stem/ending, morphology, syntax, semantic function, register, chronology, provenance, and inheritance/borrowing distinctions. Nexus may propose bridges only after those coordinates survive normalization. Organon and Adversary inherit the same constraints.
+
+Canonical comparative rule:
+
+> Do not compare words. Compare typed historical transformations and ask what survives them.
+
+The Rosetta/Nexus multilingual witnesses serve as positive controls for real representation change; the language coverage registry and typed bridge registry are therefore sources of truth for the whole research platform.
