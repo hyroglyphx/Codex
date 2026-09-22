@@ -347,10 +347,31 @@ entries:
       Sumerian/Akkadian/Canaanite configuration are source-locked. Exact lexical rows
       remain pending the primary edition; do not infer them from the layout alone.
 
+  - id: RR32
+    topic: Karatepe_Cinekoy_bilingual_network
+    previous_state: "Karatepe/Cinekoy queued as a multilingual calibration pair"
+    new_findings: [RN04-first-alignment]
+    status: promoted
+    update: >
+      Direct bilingual anchors now separate onomastic identity, divine functional
+      equivalence, ethnonym/toponym referential correspondence, same-site copy
+      variance, and regional dynastic continuity.
+    new_rule: "bilingual referential equivalence does not by itself settle etymology"
+
+  - id: RR33
+    topic: copy_variance_vs_translation_variance
+    previous_state: "parallel witnesses treated mainly by cross-language divergence"
+    new_findings: [Karatepe-multiple-exemplars, Ugarit-copy-covariance]
+    status: promoted
+    update: >
+      Measure same-language/same-site recensional variance before attributing every
+      difference between bilingual witnesses to translation. Copy noise and translation
+      transformation are distinct residuals.
+
 next_revisit_queue:
   - Byblos_blind_holdout_spatula_i_after_preregistered_metrics
   - Ugarit_cross_copy_cycle_residuals
   - Aphek_primary_row_ingest
   - older_harmonic_numeric_null_retests
   - flood_name_orbit_plus_identity_tensor
-  - RN04_Karatepe_Cinekoy_alignment
+  - RN04_Karatepe_Cinekoy_clause_level_alignment
