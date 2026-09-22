@@ -219,6 +219,7 @@ calibration_objects:
 
   - id: RN04
     name: Karatepe-Cinekoy
+    data_path: data/calibration/karatepe-cinekoy-first-alignment.yaml
     carrier_class: monumental-inscription-complex
     parallax_levels: [PX2, PX4]
     languages: [Phoenician, Luwian]
@@ -353,7 +354,7 @@ calibration_objects:
     alignment_granularity: [G1, G2]
     primary_use: "compact lexical crosswalk linking Sumerian, Akkadian and Canaanite"
     anchors: [lexical-equations, readouts]
-    status: queued_for_source_lock
+    status: bibliographically_source_locked_rows_pending
 
 processing_order:
   - LOCK_WITNESS
@@ -384,7 +385,7 @@ calibration_status:
   RN01: first_alignment_complete
   RN02: first_alignment_complete
   RN03: first_alignment_complete
-  RN04: queued
+  RN04: first_alignment_complete
   RN05: queued
   RN06: queued
   RN07: first_alignment_complete
