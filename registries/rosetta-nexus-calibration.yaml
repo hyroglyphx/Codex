@@ -43,6 +43,23 @@ parallax_levels:
     definition: "Crosswise comparison without demonstrated historical relay; used only as a null or operator control."
     examples: [independent-multimodal-ritual-control]
 
+decipherment_depth:
+  PX-D0:
+    name: KNOWN_SCRIPT_UNKNOWN_LANGUAGE
+    definition: "Script values are substantially readable, but the encoded language remains unidentified."
+  PX-D1:
+    name: LOGOGRAPHIC_SEMANTIC_ANCHORS
+    definition: "Known logograms or heterograms provide secure semantic anchors inside the unknown language."
+  PX-D2:
+    name: CANDIDATE_COGNATE_NETWORK
+    definition: "Candidate lexical correspondences are proposed across historically relevant languages."
+  PX-D3:
+    name: MORPHOSYNTACTIC_CONFIRMATION
+    definition: "Candidate readings cohere with recurring morphology and syntax."
+  PX-D4:
+    name: CORPUS_COVARIANCE
+    definition: "The hypothesis propagates across the corpus and supports language-family classification."
+
 parallax_rule: >
   PX level is a transformation-distance descriptor, not a confidence ranking.
   Evidence class, witness quality, chronology, and relation type remain separate.
@@ -258,6 +275,19 @@ calibration_objects:
     anchors: [royal_names, divine_names, treaty_formulae, obligations, curses]
     status: calibration_anchor
 
+  - id: RN11
+    name: Hittite-Decipherment-Corpus
+    data_path: studies/hittite-decipherment-crosswise-calibration.md
+    carrier_class: distributed-cuneiform-tablet-archive
+    parallax_levels: [PX6]
+    decipherment_depth: [PX-D0, PX-D1, PX-D2, PX-D3, PX-D4]
+    languages: [Hittite, Sumerian-logograms, Akkadian-heterograms]
+    scripts: [cuneiform]
+    alignment_granularity: [G0, G1, G2, G3, G4, G5]
+    primary_use: "known-script unknown-language decipherment covariance"
+    anchors: [NINDA-logogram, watar, ed-ezz, verbal-endings, recurring-morphology]
+    status: calibration_anchor
+
 processing_order:
   - LOCK_WITNESS
   - ASSIGN_PARALLAX_LEVEL
@@ -294,3 +324,4 @@ calibration_status:
   RN08: first_alignment_complete
   RN09: queued
   RN10: queued
+  RN11: first_alignment_complete
