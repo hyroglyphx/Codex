@@ -404,3 +404,11 @@ multilingual_anchor_density:
     - RN13_Ugarit_multilingual_archive
     - RN14_Aphek_trilingual_lexicon
   governing_rule: "the value of a Rosetta object lies in high-specificity independent crosswalk edges, not language count alone"
+
+
+decipherment_benchmarks:
+  registry: registries/decipherment-benchmark-cases-v0.1.yaml
+  status: survey_derived_pending_primary_source_lock
+  hypothesis: "effective crosswalk degree + anchor specificity + corpus covariance predict lower decipherment entropy"
+  negative_control: Byblos
+  positive_family: [Behistun, Rosetta, Karatepe, Orkhon, Idalion, Cippi-of-Melqart, Punic-Libyan-Dougga, Myazedi, de-Landa-Maya]
