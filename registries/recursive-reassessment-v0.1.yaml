@@ -296,10 +296,61 @@ entries:
       specificity, independence and granularity of the crosswalk edges it contributes.
     new_rule: "crosswalk quality outranks language count"
 
+  - id: RR27
+    topic: Byblos_boundary_hypothesis
+    previous_state: "E22 strongly line-final in tablet c and therefore a boundary candidate"
+    new_findings: [tablet-d-frozen-rule-validation]
+    status: downgraded
+    update: >
+      E22 failed the first external validation: both tablet-d occurrences are internal,
+      not line-final. Do not promote E22 as a general boundary marker; retain only as
+      a tablet-c-local or context-conditioned feature unless later witnesses revive it.
+    new_rule: "failed frozen predictions remain in the evidence record and narrow the model"
+
+  - id: RR28
+    topic: Byblos_formula_recurrence
+    previous_state: "tablet-c 12-sign sequence and G13-B11-A10 trigram treated as candidate reusable formulae"
+    new_findings: [tablet-d-frozen-rule-validation]
+    status: narrowed
+    update: >
+      Neither the 12-sign sequence nor the G13-B11-A10 trigram recurs in tablet d.
+      E23-B8-E10 does recur and becomes the stronger cross-tablet sequence candidate.
+    new_rule: "cross-witness recurrence outranks within-witness repetition"
+
+  - id: RR29
+    topic: Byblos_high_centrality_signs
+    previous_state: "E7 most frequent and broadest local adjacency node in tablet c"
+    new_findings: [tablet-d-frozen-rule-validation]
+    status: strengthened
+    update: >
+      E7 remains the highest-frequency sign in tablet d and expands its distinct
+      successor neighborhood. This supports a corpus-level high-centrality role while
+      leaving phonetic/grammatical function completely open.
+
+  - id: RR30
+    topic: Ugarit_cycle_consistency
+    previous_state: "archive-level cycle consistency proposed from multilingual crosswalk graph"
+    new_findings: [RS20.149-row-residual-pass]
+    status: strengthened
+    update: >
+      Three adjacent rows now close through independently documented Ugaritic
+      alphabetic/syllabic or semantic-equivalence paths, while damaged/unresolved rows
+      remain open. Cycle closure can be information-complementary rather than identical.
+
+  - id: RR31
+    topic: Aphek_trilingual
+    previous_state: "survey-derived trilingual lexical calibration node"
+    new_findings: [Aphek-source-lock]
+    status: strengthened
+    update: >
+      The object-level existence, three-column layout, five preserved lines and
+      Sumerian/Akkadian/Canaanite configuration are source-locked. Exact lexical rows
+      remain pending the primary edition; do not infer them from the layout alone.
+
 next_revisit_queue:
-  - Byblos_sequence_graph_and_holdout_design
-  - Ugarit_multilingual_cycle_consistency
-  - Aphek_trilingual_source_lock
+  - Byblos_blind_holdout_spatula_i_after_preregistered_metrics
+  - Ugarit_cross_copy_cycle_residuals
+  - Aphek_primary_row_ingest
   - older_harmonic_numeric_null_retests
   - flood_name_orbit_plus_identity_tensor
   - RN04_Karatepe_Cinekoy_alignment
