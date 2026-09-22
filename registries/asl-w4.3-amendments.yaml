@@ -1,0 +1,57 @@
+patch: ASL-W4.3
+target: ASL-MASTER-1.0
+workbook_target: ancient_script_lattice_v12_wide_presentable.xlsx
+status: ADOPTED_PROJECT_AMENDMENT
+relation_vector:
+  notation: "R(A,B)=<F,P,M,S,G,T,X,C,V>"
+  dimensions:
+    F: exact_formal_sign
+    P: phonological
+    M: morphological
+    S: semantic
+    G: grammatical_syntactic
+    T: chronological_admissibility
+    X: spatial_contact_admissibility
+    C: carrier_script_compatibility
+    V: provenance_witness_independence
+  compensatory: false
+promotion_paths:
+  etymological_cognacy: [P,M,T,X,V]
+  exact_sign_transmission: [F,C,T,X,V]
+  translation_equivalence: [S,G,T,V]
+  borrowing_contact: ["P/M_and_or_S",T,X,V]
+  graphic_inheritance: [F,C,T,X,V]
+  structural_analogy: [relevant_structural_dimensions,null_control]
+missing_mandatory_dimension: confidence_ceiling
+witness_chain: [WITNESS,EXACT_SOURCE_FORM,NORMALIZED_FORM,READOUT,LANGUAGE,SEMANTIC_ADDRESS,RELATION,HYPOTHESIS]
+source_chain: [artifact,edition,transcription,normalization,analysis]
+carrier_readout_law: "CARRIER != READING != LANGUAGE != SEMANTIC_ADDRESS"
+principal_positive_control: Hittite_heterograms
+comparison_ladder: [exact_sign,allograph,normalized_sign,phonological_realization,historically_relaxed_form,diachronic_reconstruction]
+claim_model: "CLAIM=result+parents+transform+confidence_ceiling"
+multilingual_nodes: [Uruk_Nippur_Babylon,Ebla,Mari,Ugarit,Amarna,Hattusa,Byblos,Susa,Behistun,Memphis_Rosetta,Karatepe_Cinekoy,Pyrgi,Letoon]
+historical_cost: "graph_distance + chronology + nexus + carrier_mode"
+letoon:
+  id: NEX-L04
+  role: adversarial_control
+  languages: [Lycian,Greek,Aramaic]
+  phonology_withheld: true
+false_equivalence_suite: [Hittite_heterograms,Sumerian_Akkadian_lexical_lists,Carian,Kaminia,QBL,Tyrsenian,Linear_Elamite,Turoyo_Albanian_numeral_collision,Sumerian_imin,shuffled_adjacency,genealogically_duplicated_daughters]
+dark_corpus_structural_channels: [exact_sign_recurrence,allography,orientation,chirality,position,numerical_context,layout,cooccurrence,sign_neighborhood,formula_recurrence,spatial_distribution]
+withheld_prediction: [FREEZE,HIDE,PREDICT,REVEAL,SCORE,REGENERATE]
+withheld_prediction_mandatory_for_promotion: true
+statuses:
+  promotional: [OBSERVED,CANDIDATE,TESTED,CORROBORATED,CANONICAL]
+  non_promotional: [FAILED,CONTRADICTED,SUPERSEDED,OMEGA_UNRESOLVED]
+typed_edges: [inheritance,borrowing,translation,transliteration,readout_transposition,semantic_substitution,syncretism,recension,custody,substrate,language_shift,title_transfer,functional_equivalence,graphic_convergence,structural_analogy,population_movement,shared_scribal_matrix]
+historical_object: transportable_state_across_multiple_partially_independent_channels
+governing_question: "What survives the transformation from X to Y, through which carrier, under which operator, at which phase and position, for which audience, and at what historically calibrated cost?"
+queue:
+  P1: numeral_1_10_null_benchmark
+  P2: NEX_L04_Letoon_line_level_packet
+  P3: false_equivalence_executable_suite
+  P4: Rosetta_Nexus_RN03_RN04_RN05
+  P5: dark_corpus_implementation
+  P6: Konar_Sandal_chirality_resolution
+  P7: mandatory_withheld_prediction_trials
+seal: "Witness first. Relation typed. Transformation reversible. Dependency visible. Promotion path-specific."
