@@ -1,0 +1,235 @@
+registry: recursive-reassessment
+version: 0.1.0
+updated: 2026-09-22
+status: ACTIVE_RECURSIVE_REVIEW
+
+purpose: >
+  Revisit earlier Codex insights whenever a newer calibration object, null model,
+  decipherment control, transmission witness, or operator distinction changes the
+  evidentiary geometry. Earlier ideas are not merely kept or discarded; they are
+  retyped as strengthened, narrowed, split, downgraded, retained-as-heuristic, or
+  promoted-to-calibration.
+
+statuses:
+  - strengthened
+  - narrowed
+  - split
+  - promoted
+  - downgraded
+  - retained_heuristic
+  - unresolved
+  - queued_for_retest
+
+review_axes:
+  - witness_provenance
+  - carrier_vs_readout
+  - name_identity_role_classifier_episode
+  - morphology_before_normalization
+  - script_language_separation
+  - explicit_crosswalk
+  - contact_path
+  - genealogy_dependence
+  - transformation_covariance
+  - cycle_consistency
+  - negative_controls
+  - null_model
+  - projection_claim_ceiling
+  - operator_order
+
+entries:
+  - id: RR01
+    topic: projection_bounded_inference
+    previous_state: "infer hidden order from recurrent projections without claiming substrate identity"
+    new_findings: [Rosetta-Nexus, Hittite-decipherment, Behistun-temporal-parallax]
+    status: strengthened
+    update: >
+      Keep the hidden substrate bounded, but require projection independence/dependence
+      to be typed. Several convergent projections that descend from one source do not
+      count as independent constraints.
+    new_rule: "projection convergence must be dependency-corrected"
+
+  - id: RR02
+    topic: VITRIOL_inverse_reconstruction
+    previous_state: "FOCUS -> DECOMPOSE -> RECTIFY -> CROSS-PROJECT -> RECONSTRUCT"
+    new_findings: [Hittite-decipherment, Rosetta-calibration, noncommuting-operator-discipline]
+    status: strengthened
+    update: >
+      VITRIOL is now an ordered inverse pipeline. Operator order matters: morphology,
+      provenance, and carrier/readout separation must occur before normalization or
+      reconstruction.
+    new_rule: "inverse reconstruction is order-sensitive"
+
+  - id: RR03
+    topic: synchronous_state_harmonics
+    previous_state: "multiple modalities converge on one operative state"
+    new_findings: [Egyptian-complementation, KTU-5.14, Tell-Fekheriye, Hittite-NINDA]
+    status: strengthened
+    update: >
+      Recast as concordant redundancy plus dependency weighting. Multiple channels
+      constrain one state, but dependent channels must not be counted as independent votes.
+    new_rule: "synchrony strength = agreement x independence x precision"
+
+  - id: RR04
+    topic: work_not_fixed_text
+    previous_state: "works survive as recension ecologies rather than single fixed texts"
+    new_findings: [Aelian-Gilgamos, Qumran-Book-of-Giants, Behistun-version-sequence]
+    status: strengthened
+    update: >
+      Extend from recension ecology to identity-network ecology: a figure can survive
+      outside the canonical work while plot, classifier, and episode bundle change.
+
+  - id: RR05
+    topic: name_identity_role
+    previous_state: "NAME != IDENTITY != ROLE"
+    new_findings: [Gilgamesh-classifier-transfer, Aelian-narrative-rebinding]
+    status: split
+    update: >
+      Expand the state tensor to NAME, ENTITY, ROLE, CLASSIFIER, EPISODE_SET,
+      COMPANION_NETWORK, and RECEIVING_TRADITION.
+    new_rule: "name continuity does not imply plot or classifier continuity"
+
+  - id: RR06
+    topic: attestation_not_inception
+    previous_state: "surviving witness date is not origin date"
+    new_findings: [Gilgamesh-beyond-cuneiform, Amarna-Arzawa-vs-Hattusa, Qumran-fragments]
+    status: strengthened
+    update: >
+      Add distributed-witness inference: absence from one canonical corpus cannot erase
+      a tradition demonstrably surviving in other languages, regions, or media.
+
+  - id: RR07
+    topic: arity_compression
+    previous_state: "graphic arity, phonological load, root arity, morphology, and semantic compression are separate"
+    new_findings: [Hittite-logograms, numeral-morphology-normalization]
+    status: strengthened
+    update: >
+      Add heterogram/logogram embedding and mandatory morphology normalization before
+      carrier-feature counting. Surface endings may create false arity/carrier signals.
+
+  - id: RR08
+    topic: QBL_orbit
+    previous_state: "FACE/CONFRONT/RECEIVE plus unresolved CENTER/MIDDLE branch"
+    new_findings: [Aramaic-root-orbit, Arabic-root-orbit, MURUB4-scribal-overlap]
+    status: strengthened
+    update: >
+      The semantic operator orbit is historically anchored. Ancient carrier convergence
+      raises the CENTER/INTERFACE question, but common etymology remains unresolved.
+    claim_ceiling: C4_for_center_interface_common_origin
+
+  - id: RR09
+    topic: ASIS_normalization
+    previous_state: "cross-language normalized discovery window with several negative controls"
+    new_findings: [Hittite-decipherment-heuristic-vs-final-etymology]
+    status: retained_heuristic
+    update: >
+      A heuristic can be operationally useful without being historically correct.
+      ASIS is retained to surface candidates, then every candidate must re-enter with
+      native onset, morphology, chronology, and contact path.
+
+  - id: RR10
+    topic: HSS_ear_wisdom
+    previous_state: "Ebla/Akkadian/Ugaritic candidate lane"
+    new_findings: [Ebla-orthography, specialist-Semitic-comparison, Ugaritic-grammar]
+    status: promoted
+    update: >
+      H-S-S lane is strongly supported as a historical-semantic comparison.
+      The deeper H-S biradical kernel is not promoted and is now more tightly constrained
+      because the third radical shows repeated stability.
+
+  - id: RR11
+    topic: numeral_seven_carrier
+    previous_state: "sibilant-plus-labial enrichment candidate"
+    new_findings: [root-normalization, genealogy-collapse, contact-model, generative-null]
+    status: narrowed
+    update: >
+      Seven remains the strongest concentration in the current source-locked matrix,
+      but evidentiary strength depends heavily on historical dependence and node-specific
+      phonotactic base rates.
+    new_rule: "count historical dependency units, not language names"
+
+  - id: RR12
+    topic: exposed_royal_infant_motif
+    previous_state: "Sargon/Moses and related birth-rescue parallels"
+    new_findings: [Aelian-Gilgamos]
+    status: split
+    update: >
+      Separate identity carrier from mobile episode. Exposure, rescue, gardener/adoption,
+      hidden birth, and royal destiny may move as a motif package and be rebound to
+      different named figures.
+    new_operator: ONOMASTIC_EPISODIC_REBINDING
+
+  - id: RR13
+    topic: water_yields_passage_sovereignty_shift
+    previous_state: "Cyrus/Babylon, Exodus, Joshua and related water-passage operators"
+    new_findings: [operator-preservation-calibration, classifier-transfer-discipline]
+    status: narrowed
+    update: >
+      Preserve WATER_YIELDS -> PASSAGE -> SOVEREIGNTY_SHIFT as an operator comparison.
+      Do not promote transmission from operator similarity alone; require route, chronology,
+      and intermediate witness or a historically connected matrix.
+
+  - id: RR14
+    topic: gird_loins_embodied_idiom
+    previous_state: "GATHER -> BOUND -> MOBILE -> READY"
+    new_findings: [Tell-Fekheriye-operator-preservation, Hittite-decipherment-covariance]
+    status: strengthened
+    update: >
+      Embodied operator can remain stable while lexical wording changes. Translation
+      comparison should prioritize body-action sequence, syntax, and usage context over
+      English idiom identity.
+
+  - id: RR15
+    topic: referential_stratification
+    previous_state: "person/office/retinue/people/polity/dynasty levels"
+    new_findings: [classifier-transfer, route-indexed-identity, narrative-rebinding]
+    status: split
+    update: >
+      Add an orthogonal identity axis: ENTITY, ROLE, CLASSIFIER, EPISODE, NETWORK.
+      Referential R-level and identity/classifier state must not be collapsed.
+
+  - id: RR16
+    topic: diachronic_translation_lattice
+    previous_state: "translations form dependent genealogies; count lineages not editions"
+    new_findings: [numeral-dependency-null, Behistun-version-sequence]
+    status: strengthened
+    update: >
+      Translation genealogy and linguistic genealogy now share one dependency principle:
+      correlated descendants cannot be counted as independent confirmations.
+
+  - id: RR17
+    topic: earlier_harmonic_numeric_patterns
+    previous_state: "exploratory modular/residue correspondences across symbolic corpora"
+    new_findings: [numeral-preregistered-feature-discipline, generative-null, negative-controls]
+    status: queued_for_retest
+    update: >
+      Re-run older numerical claims with frozen operators, morphology/representation rules,
+      explicit nulls, and feature-selection correction. Post-hoc residue patterns remain
+      exploratory until they survive the same adversarial standard now used for numeral seven.
+
+  - id: RR18
+    topic: route_indexed_identity_and_admissibility
+    previous_state: "same place/object under different route, phase, boundary, or jurisdiction is a distinct encounter"
+    new_findings: [Rosetta-parallax, Gilgamesh-receiving-traditions, Hittite-distributed-witnesses]
+    status: strengthened
+    update: >
+      Extend route-indexing from spatial encounters to textual identities: the same name,
+      sign, or work reached through a different scribal/ritual/linguistic route may be a
+      distinct historical state rather than a duplicate witness.
+
+  - id: RR19
+    topic: Egyptian_Hittite_treaty
+    previous_state: "distributed bilingual legal kernel / crossed transport control"
+    new_findings: [Hittite-decipherment-node, Rosetta-distributed-parallax]
+    status: promoted
+    update: >
+      Move RN10 upward in the calibration queue. It can test same diplomatic event/text
+      across separate carriers, languages, locations, legal formulae, divine witnesses,
+      and institutional settings.
+
+next_revisit_queue:
+  - RN10_Egyptian_Hittite_treaty_alignment
+  - Gilgamesh_Aelian_Qumran_identity_tensor
+  - Sargon_Moses_Gilgamos_exposed_infant_operator_matrix
+  - WATER_YIELDS_operator_matrix_reclassification
+  - GIRD_LOINS_embodied_operator_retest
+  - older_harmonic_numeric_null_retests
