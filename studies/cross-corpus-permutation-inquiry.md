@@ -96,6 +96,50 @@ Learned from numeral studies and false/withdrawn Gilgamesh identifications.
 Test:
 What evidence would make this proposed relationship fail?
 
+### L11 — DECIPHERMENT HEURISTIC != FINAL ETYMOLOGY
+Learned from Hittite decipherment.
+
+A resemblance can be useful for generating a reading hypothesis without remaining the best final etymology.
+
+Test:
+Did the proposed clue merely open the solution-space, or does it survive modern phonology, morphology, chronology, and comparative reconstruction?
+
+### L12 — NAME CONTINUITY != PLOT OR CLASSIFIER CONTINUITY
+Learned from Aelian's Gilgamos and the Qumran Book of Giants.
+
+Test:
+Separate name carrier, entity, role, classifier, episode set, companion network, and receiving tradition.
+
+### L13 — SAME SCRIPT != SAME LANGUAGE
+Learned from Hittite cuneiform and multilingual cuneiform archives.
+
+Test:
+Before comparing sign strings, identify whether the carrier is phonetic, logographic, heterographic, or borrowed from another writing-language tradition.
+
+### L14 — CALIBRATE ON ANCIENT CROSSWALKS BEFORE REMOTE CANDIDATES
+Learned from Rosetta, Behistun, Tell Fekheriye, KTU 5.14, and Ebla.
+
+Test:
+What documented transformation class is closest to the candidate relation, and what deformation does that anchor actually permit?
+
+### L15 — DEPENDENCE CORRECTION PRECEDES CONVERGENCE COUNTING
+Learned from translation genealogy and numeral-seven null modeling.
+
+Test:
+How many independent generating paths exist after genealogy, borrowing, recension, and shared intermediaries are collapsed?
+
+### L16 — MORPHOLOGY PRECEDES FEATURE EXTRACTION
+Learned from the numeral-seven root/stem normalization pass.
+
+Test:
+Is the apparent feature inside the lexical stem, or introduced by gender, number, case, inflection, complement, or orthographic convention?
+
+### L17 — PREDICTION OUTRANKS RECOGNITION
+Learned from Hittite decipherment covariance.
+
+Test:
+Does the proposed model predict additional forms, endings, syntactic behavior, or aligned witnesses outside the original clue?
+
 ## Permutation 01 — Gilgamesh lessons → Xenophon / Cyropaedia
 
 ### G→X1: Treat Cyropaedia as a textual state, not "Persian history"
