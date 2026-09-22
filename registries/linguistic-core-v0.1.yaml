@@ -31,3 +31,10 @@ linguistic_core:
     - docs/state/ancient-script-lattice-cross-chat-uptake-2026-09-22.md
   adversarial_controls: [Carian,Kaminia,Sumerian_Akkadian,QBL,Tyrsenian,Linear_Elamite]
   immediate_queue: [numeral_1_10_null_benchmark,source_lock_reconstructed_nodes,false_equivalence_control_suite]
+
+  flagship_calibrations:
+    elamite_carrier_pivot:
+      architecture: docs/architecture/elamite-linear-elamite-carrier-pivot-v0.1.md
+      registry: registries/elamite-carrier-pivot-v0.1.yaml
+      role: same_or_continuous_language_across_carrier_change
+      controls: [Sb17_alignment, direction_allography, internal_diachrony, evidential_firewall, Proto_Elamite_omega, Achaemenid_parallel_carriers]
