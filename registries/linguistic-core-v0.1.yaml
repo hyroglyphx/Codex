@@ -26,3 +26,8 @@ linguistic_core:
     - data/calibration/numeral-hierarchical-null-v0.2.yaml
   feeds: [Confluence,Relay_Kernel,Nexus,TCIM,Organon,Adversary,Invariant_Forge,Structural_Continuation]
   promotion_rule: "typed transform + provenance + chronology + relevant linguistic controls + independent witness/null/holdout where available"
+
+  uptake_packets:
+    - docs/state/ancient-script-lattice-cross-chat-uptake-2026-09-22.md
+  adversarial_controls: [Carian,Kaminia,Sumerian_Akkadian,QBL,Tyrsenian,Linear_Elamite]
+  immediate_queue: [numeral_1_10_null_benchmark,source_lock_reconstructed_nodes,false_equivalence_control_suite]
