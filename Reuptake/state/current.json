@@ -6,10 +6,9 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "recursive reassessment of prior corpus nodes",
-    "RN10 Egyptian-Hittite treaty calibration",
-    "Gilgamesh identity parallax",
-    "exposed-infant / WATER_YIELDS / embodied-readiness operator revisits"
+    "Byblos negative decipherment calibration",
+    "multilingual crosswalk-density and decipherment-entropy modeling",
+    "recursive reassessment of prior corpus nodes"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -37,11 +36,12 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Run older harmonic/modular claims through frozen-feature/null/dependency discipline",
-    "Build flood-name orbit with identity/classifier/episode/network tensor",
-    "Revisit route-indexed identity across scripture and myth transmission",
-    "Proceed to RN04 Karatepe/Cinekoy alignment",
-    "Add node-specific phonotactic base rates to numeral generative null"
+    "Source-lock RN14 Aphek trilingual lexicon from specialist publications",
+    "Build Ugarit multilingual cycle-consistency graph across bilingual/trilingual/quadrilingual objects",
+    "Reconstruct Byblos token sequence graph and reserve a holdout inscription before testing any value assignment",
+    "Primary-source-lock decipherment benchmark cases before quantitative fitting",
+    "Proceed with RN04 Karatepe/Cinekoy alignment as both calibration node and decipherment benchmark",
+    "Continue older harmonic/modular null retests"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -55,7 +55,11 @@
     "RN11 Hittite-Decipherment-Corpus": "first_alignment_complete",
     "RN10 Egyptian-Hittite-treaty-tradition": "first_alignment_complete",
     "Gilgamesh identity parallax v0.1": "complete",
-    "recursive reassessment v0.1": "active"
+    "recursive reassessment v0.1": "active",
+    "RN12 Byblos-undeciphered-script": "negative_calibration_active",
+    "RN13 Ugarit-multilingual-archive-hub": "archive_hub_active",
+    "RN14 Aphek-Antipatris-trilingual-lexicon": "queued_for_source_lock",
+    "decipherment-benchmark-cases-v0.1": "survey_derived"
   },
   "active_candidate_results": {
     "anchored": [
