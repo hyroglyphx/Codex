@@ -278,3 +278,149 @@ Hattusa should be treated as the central Gilgamesh nexus:
 Unlike remote motif comparison, this gives us the same heroic tradition inside one multilingual scribal environment.
 
 That makes Gilgamesh an ideal ancient precursor to the later Hebrew/Greek/Aramaic/Latin scriptural relay.
+
+
+## K. Beyond-cuneiform identity network
+
+New calibration from:
+- Qumran *Book of Giants*,
+- Aelian, *De natura animalium* 12.21.
+
+These witnesses require the Gilgamesh graph to extend beyond textual recension.
+
+Earlier model:
+
+```text
+Sumerian compositions
+→ Akkadian recomposition
+→ peripheral Akkadian/Hurrian/Hittite witnesses
+→ Standard Babylonian scholarly custody
+```
+
+Extended model:
+
+```text
+Mesopotamian Gilgamesh traditions
+        │
+        ├── cuneiform recensional/scribal line
+        │
+        ├── Levantine / Aramaic / giant-tradition reception
+        │       └── Qumran Book of Giants
+        │
+        └── Greco-Roman reception
+                └── Aelian Gilgamos
+```
+
+The later branches are not encoded as direct descendants of the Standard Babylonian recension unless specific evidence warrants that edge.
+
+### New identity tensor
+
+For every Gilgamesh witness record:
+
+```text
+I = (
+  name_form,
+  entity_identity,
+  kingship_role,
+  strength_role,
+  dream_role,
+  ontological_classifier,
+  moral_classifier,
+  episode_set,
+  companion_network,
+  receiving_tradition
+)
+```
+
+### Qumran
+
+Preserves:
+- Gilgamesh identity carrier,
+- giant/primordial classifier,
+- dream/vision network,
+- strength/judgment field,
+- possible Humbaba-like relational residue.
+
+### Aelian
+
+Preserves:
+- Gilgamos name,
+- Babylonian kingship,
+- royal destiny.
+
+Rebinds:
+- threatened succession,
+- confined mother,
+- infant exposure from height,
+- eagle rescue,
+- gardener upbringing.
+
+### New rule
+
+```text
+name continuity
+!=
+plot continuity
+!=
+classifier continuity
+```
+
+and:
+
+```text
+relational network survival
+>
+isolated name survival
+```
+
+This extension should be used when testing whether later receptions preserve a text, a character, an episode, or only a smaller identity/operator bundle.
+
+## L. Recursive effect on older Gilgamesh comparisons
+
+### Flood-name orbit
+
+Keep:
+- name equivalence,
+- role equivalence,
+- narrative inheritance,
+- operator equivalence
+
+separate.
+
+Add:
+- classifier continuity,
+- episode-set continuity,
+- receiving-tradition route.
+
+### Homeric comparison
+
+A shared operator or heroic role is no longer sufficient to imply direct text-to-text reception.
+The new preferred test is:
+
+```text
+name/identity residue?
+companion-network residue?
+distinctive episode bundle?
+contact path?
+classifier transformation?
+```
+
+### Sargon/Moses/Gilgamos foundling comparison
+
+Do not compare whole persons first.
+
+Freeze the mobile episode bundle:
+
+```text
+succession threat
+→ constrained/hidden mother
+→ extraordinary birth
+→ exposure
+→ rescue
+→ adoptive/gardener upbringing
+→ royal destiny
+```
+
+Then test which traditions preserve which steps and whether the identity carrier changes.
+
+This is classified as ONOMASTIC_EPISODIC_REBINDING unless a stronger transmission edge is demonstrated.
