@@ -6,9 +6,10 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "Byblos sequence graph with blind holdout",
-    "Ugarit multilingual cycle consistency",
-    "positive-negative decipherment constraint experiment"
+    "Byblos validation with blind holdout preserved",
+    "Ugarit row-level cycle residuals",
+    "Aphek trilingual source lock",
+    "RN04 Karatepe/Cinekoy bilingual calibration"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -36,12 +37,12 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Score tablet d against the frozen Byblos tablet-c graph without changing graph rules",
-    "Keep spatula i blind until the validation step is complete",
-    "Source-lock additional Ugarit quadrilingual lexical rows and compute row-by-row cycle residuals",
-    "Source-lock RN14 Aphek trilingual lexicon",
-    "Proceed with RN04 Karatepe/Cinekoy alignment",
-    "Primary-source-lock remaining decipherment benchmark cases"
+    "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
+    "Run line-preserving shuffled nulls and medium/allograph tests on Byblos without using the holdout",
+    "Add cross-copy residuals for additional Ugarit quadrilingual vocabulary witnesses",
+    "Acquire primary Aphek trilingual row transliteration from Rainey 1976 or later critical edition",
+    "Extend RN04 Karatepe/Cinekoy to clause-level Phoenician-Luwian alignment and specialist Cinekoy edition",
+    "Continue source-locking positive decipherment benchmark cases"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -56,11 +57,13 @@
     "RN10 Egyptian-Hittite-treaty-tradition": "first_alignment_complete",
     "Gilgamesh identity parallax v0.1": "complete",
     "recursive reassessment v0.1": "active",
-    "RN12 Byblos-undeciphered-script": "sequence_graph_frozen_holdout_reserved",
-    "RN13 Ugarit-multilingual-archive-hub": "first_cycle_graph_complete",
-    "RN14 Aphek-Antipatris-trilingual-lexicon": "queued_for_source_lock",
+    "RN12 Byblos-undeciphered-script": "tablet_d_validation_complete_holdout_still_blind",
+    "RN13 Ugarit-multilingual-archive-hub": "row_residual_pass_complete",
+    "RN14 Aphek-Antipatris-trilingual-lexicon": "bibliographically_source_locked_rows_pending",
     "decipherment-benchmark-cases-v0.1": "survey_derived",
-    "Byblos-Ugarit positive-negative experiment": "first_comparative_pass_complete"
+    "Byblos-Ugarit positive-negative experiment": "first_comparative_pass_complete",
+    "RN04 Karatepe-Cinekoy": "first_alignment_complete",
+    "DB03 Karatepe decipherment benchmark": "source_locked_first_alignment"
   },
   "active_candidate_results": {
     "anchored": [
@@ -143,6 +146,35 @@
       "p_any_digit_ge7_range": [
         0.00002,
         0.02038
+      ]
+    }
+  },
+  "decipherment_validation": {
+    "byblos": {
+      "tablet_c_training_tokens": 224,
+      "tablet_d_validation_tokens": 460,
+      "training_node_reappearance": 42,
+      "validation_only_nodes": 24,
+      "token_coverage": 0.758696,
+      "unique_bigram_edge_coverage": 0.155629,
+      "frozen_predictions": {
+        "E22_general_boundary": "failed",
+        "tablet_c_12_sign_formula": "not_supported",
+        "G13_B11_A10_formula": "not_supported",
+        "E23_B8_E10_recurrence": "supported",
+        "E7_high_centrality": "supported"
+      },
+      "blind_holdout": "spatula i"
+    },
+    "ugarit": {
+      "anchored_cycles": [
+        "ʾat ↔ at-ta",
+        "bnš ↔ bu-nu-šu ↔ Akkadian a-mi-lu ↔ MAN",
+        "ʿr ↔ [u?]-ru ↔ Akkadian mašku ↔ SKIN"
+      ],
+      "unresolved_rows": [
+        "RS20.149 ii 2'",
+        "RS20.149 ii 3' semantic/alphabetic closure"
       ]
     }
   }
