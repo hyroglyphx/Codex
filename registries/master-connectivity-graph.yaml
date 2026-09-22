@@ -560,3 +560,32 @@ dual_use_carrier_protective_gloss:
   benchmarks: [DEE-01,DEE-02,DEE-03,DEE-04,DEE-05,DEE-06,DEE-07,DEE-08,DEE-09]
   governing_rule: "surface classifier != operational substrate; declared function != exhaustive function; recover reproducible operations before assigning concealed intent"
   label_blind_test: "historical parser vs operational parser -> intersect recovered structure -> adversarial inversion control"
+
+
+representation_interaction_calibration:
+  protocol: docs/architecture/representation-interaction-calibration-v0.1.md
+  registry: registries/representation-interaction-calibration-v0.1.yaml
+  status: active_experimental
+  controls:
+    mesopotamian_math: [MESO-MATH-01,MESO-MATH-02,MESO-MATH-03,MESO-MATH-04,MESO-MATH-05,MESO-MATH-06]
+    bar_hebraeus_diet: [BH-DIET-01,BH-DIET-02,BH-DIET-03,BH-DIET-04,BH-DIET-05]
+  connects:
+    - dual_use_carrier_protective_gloss
+    - structural_continuation_gate_dynamics
+    - codex_witness_protocol
+    - TCIM
+    - Organon
+    - Invariant-Forge
+  operators:
+    - REPRESENTATION_CHANGE
+    - BASIS_CHANGE
+    - COMPOSITION
+    - INTERACTION_RESIDUAL
+    - PREPARATION_TRANSFORM
+    - TIMING_CONTEXT_TRANSFORM
+    - CLASSIFIER_MIGRATION
+  governing_rules:
+    - "notational alienness != operational alienness"
+    - "representation invariance != composition invariance"
+    - "classifier continuity != provenance proof"
+  calibration_role: "Mesopotamian mathematics is a known-operation positive control for label-blind recovery; Bar-Hebraeus is a prose interaction/composition control; both calibrate DEE-09 before concealed-function inference."
