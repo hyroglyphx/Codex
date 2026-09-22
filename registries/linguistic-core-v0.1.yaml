@@ -38,3 +38,11 @@ linguistic_core:
       registry: registries/elamite-carrier-pivot-v0.1.yaml
       role: same_or_continuous_language_across_carrier_change
       controls: [Sb17_alignment, direction_allography, internal_diachrony, evidential_firewall, Proto_Elamite_omega, Achaemenid_parallel_carriers]
+
+  asl_w4_3:
+    registry: registries/asl-w4.3-amendments.yaml
+    relation_vector: "R(A,B)=<F,P,M,S,G,T,X,C,V>"
+    dimensions_non_compensatory: true
+    carrier_readout_law: "CARRIER != READING != LANGUAGE != SEMANTIC_ADDRESS"
+    relation_not_genealogy: true
+    exact_source_form_immutable: true
