@@ -282,3 +282,107 @@ referential address.
 ```
 
 That distinction should be resolved before declaring semantic expansion, omission, contradiction, or mistranslation.
+
+
+## Orthogonal classifier axis
+
+The Gilgamesh/Qumran/Aelian revisit shows that referential stratum alone is insufficient.
+
+Keep the existing R-axis:
+
+```text
+R0 named individual
+R1 representative office
+R2 household/retinue
+R3 people/ethnos
+R4 polity/territory
+R5 dynasty/institution
+```
+
+and add an orthogonal classifier state:
+
+```text
+K = local ontological / moral / narrative class
+```
+
+Illustrative local states may include:
+
+```text
+K-human
+K-royal
+K-heroic
+K-divine_or_semidivine
+K-giant_primordial
+K-demonized_polemical
+K-symbolic_allegorical
+```
+
+These labels are corpus-local, not universal metaphysical categories.
+
+### Why the axes must stay separate
+
+A name can remain at:
+
+```text
+R0/R1
+```
+
+while its classifier changes radically.
+
+Gilgamesh provides the control:
+
+```text
+named heroic/royal figure
+→ same identity carrier
+→ giant-classified figure in the Book of Giants
+```
+
+So:
+
+```text
+REFERENTIAL CONTINUITY
+!=
+CLASSIFIER CONTINUITY
+```
+
+### Expanded translation record
+
+For every aligned expression, extend:
+
+```text
+Q = (
+  surface_form,
+  language,
+  grammatical_number,
+  referential_stratum,
+  classifier_state,
+  role_state,
+  episode_state,
+  network_state,
+  human_group_scope,
+  political_scope,
+  territorial_scope,
+  agency,
+  representative_link,
+  confidence
+)
+```
+
+### New transforms
+
+```text
+RS11 — CLASSIFIER_TRANSFER
+same identity / changed ontological or moral class
+
+RS12 — EPISODE_REBINDING
+same identity / changed episode bundle
+
+RS13 — NETWORK_REDUCTION
+same identity / companion or institutional network partially lost
+
+RS14 — NETWORK_PRESERVATION
+surface form changes but relational neighborhood survives
+```
+
+This update prevents a translation or reception from being judged only by whether the same noun or
+person-name appears.
