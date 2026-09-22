@@ -634,3 +634,13 @@ elamite_carrier_pivot:
   benchmark_ids: [ELAM-01, ELAM-02, ELAM-03, ELAM-04, ELAM-05, ELAM-06, ELAM-07, ELAM-08, ELAM-09, ELAM-10]
   omega_control: Proto_Elamite
   evidential_firewall: "internal diachronic support does not transfer automatically to an external etymological edge"
+
+
+experiment_analysis_harness:
+  architecture: docs/architecture/experiment-analysis-harness-v0.1.md
+  registry: registries/experiment-analysis-harness-v0.1.yaml
+  status: canonical_research_harness
+  inspired_by: ChatGPT_Experiment_Analysis_skill
+  feeds: [Organon, Adversary, linguistic_core, ancient_script_lattice_uptake, elamite_carrier_pivot, Invariant_Forge]
+  first_experiment: ELAM-CP-EXP-001
+  promotion_effect: "TESTED and CORROBORATED now require explicit experiment packet fields"
