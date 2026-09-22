@@ -6,9 +6,10 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "Hittite decipherment covariance and Gilgamesh cross-corpus transmission",
-    "generative genealogy-contact numeral null",
-    "Rosetta Nexus parallax calibration"
+    "recursive reassessment of prior corpus nodes",
+    "RN10 Egyptian-Hittite treaty calibration",
+    "Gilgamesh identity parallax",
+    "exposed-infant / WATER_YIELDS / embodied-readiness operator revisits"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -36,11 +37,11 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Build a compact Hittite decipherment benchmark table: logogram anchor, cognate proposal, morphology, syntax, corpus propagation, failed heuristic",
-    "Add Ugaritic/Levantine intermediate witnesses to the Gilgamesh branching transmission graph where source-valid",
-    "Index Aelian/Qumran/cuneiform Gilgamesh projections by name, role, classifier, dream operator, companion network and episode set",
-    "Continue numeral generative-null refinement with node-specific phonotactic base rates",
-    "Proceed to RN04 Karatepe/Cinekoy after the current cross-corpus nodes are fully indexed"
+    "Run older harmonic/modular claims through frozen-feature/null/dependency discipline",
+    "Build flood-name orbit with identity/classifier/episode/network tensor",
+    "Revisit route-indexed identity across scripture and myth transmission",
+    "Proceed to RN04 Karatepe/Cinekoy alignment",
+    "Add node-specific phonotactic base rates to numeral generative null"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -51,7 +52,10 @@
     "transform-weights-v0.1": "frozen",
     "calibrator-scorecard-v0.1": "complete",
     "candidate-pass-v0.1": "complete",
-    "RN11 Hittite-Decipherment-Corpus": "first_alignment_complete"
+    "RN11 Hittite-Decipherment-Corpus": "first_alignment_complete",
+    "RN10 Egyptian-Hittite-treaty-tradition": "first_alignment_complete",
+    "Gilgamesh identity parallax v0.1": "complete",
+    "recursive reassessment v0.1": "active"
   },
   "active_candidate_results": {
     "anchored": [
