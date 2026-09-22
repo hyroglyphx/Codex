@@ -305,3 +305,130 @@ For candidate transform U:
 6. promote only the edge supported by the evidence.
 
 A motif can be strongly correlated structurally while its historical route remains unresolved.
+
+
+## Anchor 11 — Rosetta Nexus calibration family
+
+Witnesses:
+- Rosetta / Memphis decree
+- Behistun
+- Tell Fekheriye
+- KTU 5.14
+- Ebla lexical/sign lists
+
+Grade: A0/A1 depending object and alignment scale.
+
+Experimental value:
+- explicit ancient crosswalks,
+- script/register transformation,
+- phonetic approximation,
+- lexical equation,
+- phrase-level operator preservation,
+- editorial/temporal parallax,
+- damage-aware alignment.
+
+Rule:
+```text
+explicit ancient crosswalk
+>
+retrospective resemblance
+```
+
+Use these anchors before assigning a remote candidate transform.
+
+## Anchor 12 — Hittite decipherment
+
+Carrier:
+cuneiform.
+
+Language:
+initially unidentified Hittite.
+
+Key controls:
+- Sumerian-derived logographic anchors such as NINDA,
+- Indo-European lexical hypotheses,
+- recurring morphology,
+- syntax,
+- corpus-wide propagation.
+
+Grade: A0/A1 as decipherment calibration, not as translation.
+
+Experimental value:
+This is the primary positive control for:
+
+```text
+KNOWN SCRIPT
++ UNKNOWN LANGUAGE
++ PARTIAL SEMANTIC ANCHORS
+→ CORPUS-WIDE LINGUISTIC RECONSTRUCTION
+```
+
+It demonstrates:
+- same script != same language,
+- useful clue != final etymology,
+- prediction/covariance outranks isolated resemblance.
+
+## Anchor 13 — Gilgamesh beyond cuneiform
+
+Witnesses:
+- cuneiform Gilgamesh traditions,
+- Qumran Book of Giants,
+- Aelian's Gilgamos.
+
+Grade:
+- name/identity survival = A2/A3 historical reception anchor,
+- exact episode genealogy = A4/CANDIDATE where transmission route is unresolved.
+
+Experimental value:
+- classifier transfer,
+- onomastic-episodic rebinding,
+- name survival without plot survival,
+- relational-network persistence.
+
+Use to calibrate:
+- Sargon/Moses/Gilgamos exposed-child comparisons,
+- mythic figure reclassification,
+- peripheral identity survival outside canonical works.
+
+## Anchor 14 — Dependency-corrected convergence
+
+Controls:
+- translation genealogies,
+- numeral-seven ancestral/contact clusters,
+- recensional families,
+- branch borrowing.
+
+Grade: METHOD ANCHOR.
+
+Experimental value:
+Raw witness count is not an evidence count.
+
+```text
+EFFECTIVE SUPPORT
+=
+historically independent generating paths
+```
+
+Use this before treating multiple daughter languages, translations, manuscripts, or regional variants as independent confirmation.
+
+## Anchor 15 — Morphology-normalized feature extraction
+
+Control:
+numeral-seven v0.2.
+
+Grade: METHOD ANCHOR.
+
+Experimental value:
+A surface feature can be created by inflection rather than the lexical stem.
+
+Required order:
+
+```text
+witness
+→ native morphology
+→ root/stem
+→ feature extraction
+→ comparison
+```
+
+Use this as a mandatory control for phonological carriers, root kernels, acronym-like projections, and normalization experiments.
