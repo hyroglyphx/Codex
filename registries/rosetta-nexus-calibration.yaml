@@ -266,6 +266,7 @@ calibration_objects:
 
   - id: RN10
     name: Egyptian-Hittite-treaty-tradition
+    data_path: data/calibration/egyptian-hittite-treaty-first-alignment.yaml
     carrier_class: distributed-monumental-and-tablet-witnesses
     parallax_levels: [PX4]
     languages: [Egyptian, Akkadian]
@@ -323,5 +324,5 @@ calibration_status:
   RN07: first_alignment_complete
   RN08: first_alignment_complete
   RN09: queued
-  RN10: queued
+  RN10: first_alignment_complete
   RN11: first_alignment_complete
