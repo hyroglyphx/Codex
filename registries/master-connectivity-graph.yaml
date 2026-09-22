@@ -589,3 +589,19 @@ representation_interaction_calibration:
     - "representation invariance != composition invariance"
     - "classifier continuity != provenance proof"
   calibration_role: "Mesopotamian mathematics is a known-operation positive control for label-blind recovery; Bar-Hebraeus is a prose interaction/composition control; both calibrate DEE-09 before concealed-function inference."
+
+
+linguistic_core:
+  protocol: docs/architecture/linguistic-core-contract-v0.1.md
+  registry: registries/linguistic-core-v0.1.yaml
+  status: canonical_architectural_constraint
+  role: "core analytical substrate; required route for historical language, script, name, numeral, translation, etymology, and encoded-text experiments"
+  sources:
+    - registries/language-coverage-registry.yaml
+    - registries/translation-transposition-bridges.yaml
+    - registries/rosetta-nexus-calibration.yaml
+    - registries/adjacent-language-lattice.md
+    - docs/architecture/scriptural-textual-transmission-spine.md
+    - registries/decipherment-benchmark-cases-v0.1.yaml
+  connects: [Confluence,Relay-Kernel,Nexus,TCIM,Organon,Adversary,Invariant-Forge,structural_continuation_gate_dynamics,dual_use_carrier_protective_gloss,representation_interaction_calibration]
+  governing_rule: "Do not compare words. Compare typed historical transformations and ask what survives them."
