@@ -34,3 +34,11 @@ first_experiment:
   goal: test_internal_elamite_carrier_pivot_without_external_edge_laundering
   holdout_required: true
   adversarial_controls: [Proto_Elamite_Omega, Carian, Kaminia, external_Greek_firewall]
+
+asl_w4_3_binding:
+  registry: registries/asl-w4.3-amendments.yaml
+  relation_vector: "R(A,B)=<F,P,M,S,G,T,X,C,V>"
+  promotion_is_path_specific: true
+  withheld_prediction_sequence: [FREEZE,HIDE,PREDICT,REVEAL,SCORE,REGENERATE]
+  mandatory_for_promotable_candidates: true
+  claim_dependency_graph_required: true
