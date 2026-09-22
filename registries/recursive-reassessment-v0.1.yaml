@@ -150,8 +150,8 @@ entries:
   - id: RR12
     topic: exposed_royal_infant_motif
     previous_state: "Sargon/Moses and related birth-rescue parallels"
-    new_findings: [Aelian-Gilgamos]
-    status: split
+    new_findings: [Aelian-Gilgamos, exposed-royal-infant-operator-matrix]
+    status: strengthened
     update: >
       Separate identity carrier from mobile episode. Exposure, rescue, gardener/adoption,
       hidden birth, and royal destiny may move as a motif package and be rebound to
@@ -161,8 +161,8 @@ entries:
   - id: RR13
     topic: water_yields_passage_sovereignty_shift
     previous_state: "Cyrus/Babylon, Exodus, Joshua and related water-passage operators"
-    new_findings: [operator-preservation-calibration, classifier-transfer-discipline]
-    status: narrowed
+    new_findings: [operator-preservation-calibration, classifier-transfer-discipline, water-yields-passage-sovereignty-matrix]
+    status: strengthened
     update: >
       Preserve WATER_YIELDS -> PASSAGE -> SOVEREIGNTY_SHIFT as an operator comparison.
       Do not promote transmission from operator similarity alone; require route, chronology,
@@ -171,7 +171,7 @@ entries:
   - id: RR14
     topic: gird_loins_embodied_idiom
     previous_state: "GATHER -> BOUND -> MOBILE -> READY"
-    new_findings: [Tell-Fekheriye-operator-preservation, Hittite-decipherment-covariance]
+    new_findings: [Tell-Fekheriye-operator-preservation, Hittite-decipherment-covariance, Isaiah-45-inverse-loins-operator, gird-loins-embodied-operator-retest]
     status: strengthened
     update: >
       Embodied operator can remain stable while lexical wording changes. Translation
@@ -219,17 +219,47 @@ entries:
   - id: RR19
     topic: Egyptian_Hittite_treaty
     previous_state: "distributed bilingual legal kernel / crossed transport control"
-    new_findings: [Hittite-decipherment-node, Rosetta-distributed-parallax]
+    new_findings: [Hittite-decipherment-node, Rosetta-distributed-parallax, RN10-first-alignment]
     status: promoted
     update: >
       Move RN10 upward in the calibration queue. It can test same diplomatic event/text
       across separate carriers, languages, locations, legal formulae, divine witnesses,
       and institutional settings.
 
+  - id: RR20
+    topic: embodied_operator_reversibility
+    previous_state: "girding marks readiness"
+    new_findings: [Isaiah-45-loosen-loins-before-Cyrus]
+    status: promoted
+    update: >
+      Readiness imagery is reversible: binding/girding raises action-capacity while
+      loosening can mark disarmament or loss of royal capacity. This supplies a
+      predictive inverse control for embodied-idiom studies.
+
+  - id: RR21
+    topic: boundary_substitution
+    previous_state: "exposure/rescue motifs compared by whole episode"
+    new_findings: [Sargon-river, Moses-Nile, Gilgamos-height-eagle]
+    status: promoted
+    update: >
+      The liminal boundary can change medium while the exposure/rescue function survives.
+      Track WATER, HEIGHT/AIR, WILDERNESS, and other boundary classes separately from
+      the operator EXPOSE -> RESCUE -> DESTINY.
+
+  - id: RR22
+    topic: legal_kernel_vs_prestige_frame
+    previous_state: "distributed treaty witnesses preserve common diplomatic event"
+    new_findings: [RN10-Egyptian-Hittite-treaty-alignment, Behistun-audience-specific-expansion]
+    status: promoted
+    update: >
+      Legal/operator covariance can remain high while local royal-prestige framing diverges.
+      This distinction should be applied to imperial inscriptions, covenant texts, and
+      historiographic retellings.
+
 next_revisit_queue:
-  - RN10_Egyptian_Hittite_treaty_alignment
-  - Gilgamesh_Aelian_Qumran_identity_tensor
-  - Sargon_Moses_Gilgamos_exposed_infant_operator_matrix
-  - WATER_YIELDS_operator_matrix_reclassification
-  - GIRD_LOINS_embodied_operator_retest
   - older_harmonic_numeric_null_retests
+  - referential_stratification_plus_classifier_axis
+  - pace_residual_plus_dependency_correction
+  - Cyrus_inverse_kingship_plus_embodied_readiness_polarity
+  - flood_name_orbit_plus_identity_tensor
+  - RN04_Karatepe_Cinekoy_alignment
