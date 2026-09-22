@@ -57,3 +57,9 @@ next_actions:
   - add An-Anum and commentary parallels as independent witnesses
   - build Tutu-Borsippa and Asalluhi-Marduk phase graphs
   - connect MDK-03 to Esagila metrology/geometry witness pack
+
+
+ingestion:
+  fifty_names: registries/marduk-fifty-names-ingestion-v0.1.yaml
+  status: ACTIVE_PARTIAL_INGESTION
+  rule: "Preserve the literary Fifty rubric, transmitted count problem, line-addressable names, functions/destinies, manuscript witnesses, and parallel god-list evidence without harmonizing discrepancies."
