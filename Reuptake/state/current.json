@@ -6,9 +6,9 @@
   "pull_request": 1,
   "status": "ACTIVE_RECONCILIATION",
   "current_focus": [
-    "Byblos negative decipherment calibration",
-    "multilingual crosswalk-density and decipherment-entropy modeling",
-    "recursive reassessment of prior corpus nodes"
+    "Byblos sequence graph with blind holdout",
+    "Ugarit multilingual cycle consistency",
+    "positive-negative decipherment constraint experiment"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -36,12 +36,12 @@
     "studies/qbl-carrier-reception-confrontation.md"
   ],
   "next_actions": [
-    "Source-lock RN14 Aphek trilingual lexicon from specialist publications",
-    "Build Ugarit multilingual cycle-consistency graph across bilingual/trilingual/quadrilingual objects",
-    "Reconstruct Byblos token sequence graph and reserve a holdout inscription before testing any value assignment",
-    "Primary-source-lock decipherment benchmark cases before quantitative fitting",
-    "Proceed with RN04 Karatepe/Cinekoy alignment as both calibration node and decipherment benchmark",
-    "Continue older harmonic/modular null retests"
+    "Score tablet d against the frozen Byblos tablet-c graph without changing graph rules",
+    "Keep spatula i blind until the validation step is complete",
+    "Source-lock additional Ugarit quadrilingual lexical rows and compute row-by-row cycle residuals",
+    "Source-lock RN14 Aphek trilingual lexicon",
+    "Proceed with RN04 Karatepe/Cinekoy alignment",
+    "Primary-source-lock remaining decipherment benchmark cases"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -56,10 +56,11 @@
     "RN10 Egyptian-Hittite-treaty-tradition": "first_alignment_complete",
     "Gilgamesh identity parallax v0.1": "complete",
     "recursive reassessment v0.1": "active",
-    "RN12 Byblos-undeciphered-script": "negative_calibration_active",
-    "RN13 Ugarit-multilingual-archive-hub": "archive_hub_active",
+    "RN12 Byblos-undeciphered-script": "sequence_graph_frozen_holdout_reserved",
+    "RN13 Ugarit-multilingual-archive-hub": "first_cycle_graph_complete",
     "RN14 Aphek-Antipatris-trilingual-lexicon": "queued_for_source_lock",
-    "decipherment-benchmark-cases-v0.1": "survey_derived"
+    "decipherment-benchmark-cases-v0.1": "survey_derived",
+    "Byblos-Ugarit positive-negative experiment": "first_comparative_pass_complete"
   },
   "active_candidate_results": {
     "anchored": [
