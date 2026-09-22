@@ -37,3 +37,15 @@ queue:
 dependencies:
   - registries/linguistic-core-v0.1.yaml
   - docs/state/ancient-script-lattice-cross-chat-uptake-2026-09-22.md
+
+experiment_harness:
+  registry: registries/experiment-analysis-harness-v0.1.yaml
+  first_experiment: ELAM-CP-EXP-001
+  requirements:
+    - hypothesis_and_competitors
+    - source_locked_witnesses
+    - controls
+    - null_or_holdout
+    - result_interpretation_separation
+    - limitations_and_failures
+    - next_discriminating_test
