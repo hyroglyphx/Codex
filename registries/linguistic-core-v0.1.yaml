@@ -1,0 +1,28 @@
+linguistic_core:
+  version: 0.1.0
+  date: 2026-09-22
+  status: CANONICAL_ARCHITECTURAL_CONSTRAINT
+  protocol: docs/architecture/linguistic-core-contract-v0.1.md
+  kernel_rule: "Do not compare words. Compare typed historical transformations and ask what survives them."
+  typed_state: "L=(carrier,grapheme,phonology,morphology,syntax,semantics,role,location,time,classifier,provenance)"
+  admissibility_channels: [phonology,grapheme,morphology,semantics,location,chronology,script_register,witness_provenance,culture_specific_numeric_value]
+  hard_separations:
+    - language_vs_script
+    - stem_vs_ending
+    - inheritance_vs_borrowing
+    - translation_vs_etymology
+    - syncretism_vs_ancestry
+    - graphic_similarity_vs_historical_linkage
+    - attested_vs_reconstructed
+    - ancestral_node_vs_modern_daughter_count
+  core_dependencies:
+    - registries/language-coverage-registry.yaml
+    - registries/translation-transposition-bridges.yaml
+    - registries/rosetta-nexus-calibration.yaml
+    - registries/adjacent-language-lattice.md
+    - docs/architecture/scriptural-textual-transmission-spine.md
+    - registries/decipherment-benchmark-cases-v0.1.yaml
+    - data/calibration/numeral-1-10-source-locked-v0.2.yaml
+    - data/calibration/numeral-hierarchical-null-v0.2.yaml
+  feeds: [Confluence,Relay_Kernel,Nexus,TCIM,Organon,Adversary,Invariant_Forge,Structural_Continuation]
+  promotion_rule: "typed transform + provenance + chronology + relevant linguistic controls + independent witness/null/holdout where available"
