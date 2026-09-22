@@ -56,3 +56,22 @@ next_actions:
   - build name-function incidence matrix
   - pre-register first cross-witness predictions
   - run geometry null models only after historical graph freeze
+
+
+artifact_adapter:
+  protocol: docs/architecture/gate-algebra-gfsb-faulhaber-rtc-adapter-v0.1.md
+  status: ACTIVE_RECONSTRUCTION
+  recovered:
+    g_of_w_role: "sum under frozen native numeric adapter"
+    fibonacci_map: "pi_F(a,b)=13a+21b"
+    fibonacci_kernel: "(21,-13)"
+    torus_period: 273
+    ordered_phasor: true
+    spectral_operator: "A=I+S; S^4=I"
+    glyphic_carrier: true
+  partial:
+    faulhaber_fibonacci_residue_generator: OMEGA
+    rtc_noniusmulti_exact_definition: OMEGA
+    rtc_octochord_exact_definition: OMEGA
+    rtc_mills_chladni_zhang_exact_coupling: OMEGA
+  added_benchmarks: [GA-11,GA-12,GA-13,GA-14,GA-15,GA-16,GA-17,GA-18]
