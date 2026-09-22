@@ -157,3 +157,82 @@ Store:
 - confidence.
 
 The purpose is not to prove identical meter across traditions. It is to detect which temporal/formulaic constraints survive, disappear, or are regenerated during translation and rewriting.
+
+
+## Dependency-corrected pace evidence
+
+The numeral and translation-genealogy work adds an important correction.
+
+Several translations or manuscripts may preserve the same pacing feature because they descend from one intermediary.
+
+Therefore:
+
+```text
+raw number of pace matches
+!=
+number of independent pace witnesses
+```
+
+Add:
+
+```text
+D_pace = dependency graph among witnesses
+N_eff  = effective independent pace witnesses
+```
+
+For every apparent cross-language cadence survival, ask:
+
+1. direct from source?
+2. mediated through an earlier translation?
+3. copied from a shared recension?
+4. independently regenerated from the same source structure?
+5. target-language formula imposed by convention?
+
+### Revised pace confidence
+
+```text
+PACE_SUPPORT
+=
+pace_similarity
+× witness_independence
+× source_alignment
+× native-meter_or_formula_fit
+```
+
+This prevents ten descendant translations of one Latin rendering from outweighing one genuinely independent Syriac or Greek witness.
+
+## Prediction test
+
+The Hittite decipherment calibration adds:
+
+```text
+prediction > recognition
+```
+
+Apply this to pace.
+
+A proposed pacing rule should predict:
+- formula placement,
+- pause boundaries,
+- recurrence positions,
+- line/colon lengths,
+- or target-language restructuring
+
+outside the passage that generated the hypothesis.
+
+If it only explains one hand-picked passage, retain it as descriptive rather than structural.
+
+## Operator order
+
+For pace comparison, use:
+
+```text
+freeze witness
+→ establish dependency
+→ identify language-native prosody
+→ segment syntax/cola
+→ align semantic operators
+→ calculate pace residual
+```
+
+Do not impose an English stress template before establishing the native prosodic system.
