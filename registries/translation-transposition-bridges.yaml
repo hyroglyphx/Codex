@@ -31,6 +31,9 @@ bridge_types:
   B25: SEMITIC_ROOT_OPERATOR_ORBIT
   B26: ARITY_COMPRESSION_TRANSPOSITION
   B27: MULTIMODAL_STATE_SYNCHRONIZATION
+  B28: CLASSIFIER_TRANSFER
+  B29: ONOMASTIC_EPISODIC_REBINDING
+  B30: DECIPHERMENT_COVARIANCE
 
 edges:
   # Mesopotamian foundations
@@ -239,7 +242,17 @@ edges:
   - {id: E271, source: Hekhalot-gate-credentials, target: Books-of-Jeu-credential-system, type: B27, class: C4, status: structural_control, note: "gatekeeper/name/seal comparison; transmission path remains open"}
   - {id: E272, source: Egyptian-gate-name-knowledge, target: late-antique-ascent-credential-systems, type: B27, class: C4, status: structural_control, note: "multimodal threshold architecture only; direct descent not encoded"}
 
-completion_queue:
+  # Gilgamesh beyond cuneiform / classifier and episode rebinding
+  - {id: E280, source: Mesopotamian-Gilgamesh-identity, target: Qumran-Book-of-Giants-Gilgamesh, type: B28, class: C1, status: connected_classifier_transfer, note: "identity carrier survives while heroic king is reclassified inside the giant/Watchers framework"}
+  - {id: E281, source: Mesopotamian-Gilgamesh-dream-strength-network, target: Qumran-Book-of-Giants-dream-judgment-network, type: B7, class: C2, status: connected_functional_residue, note: "dream/strength/judgment residues; direct dependence on Standard Babylonian recension not required"}
+  - {id: E282, source: Gilgamesh-identity, target: Aelian-Gilgamos-royal-infant-narrative, type: B29, class: C2, status: connected_narrative_rebinding, note: "name and Babylonian kingship survive while exposure/eagle/gardener episode is rebound"}
+  - {id: E283, source: Humbaba-Huwawa-network, target: Qumran-Hobabish-like-network, type: B15, class: C2, status: connected_onomastic_candidate, note: "network-level survival candidate; keep distinct from proven direct textual descent"}
+
+  # Hittite decipherment / known-script unknown-language calibration
+  - {id: E290, source: Sumerian-NINDA-logogram, target: Hittite-sentence-semantic-anchor, type: B30, class: C0, status: decipherment_anchor, note: "known logographic semantic address inside an unknown-language sentence"}
+  - {id: E291, source: Hittite-ed-ezz-watar-forms, target: Indo-European-cognate-network, type: B30, class: C1, status: decipherment_covariance, note: "lexical resemblance becomes admissible only with morphology, syntax, and corpus-wide propagation"}
+  - {id: E292, source: known-cuneiform-script, target: Hittite-language-readout, type: B30, class: C0, status: carrier_readout_separation, note: "script was readable before the language was identified"}
+
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
   - {node: Palaic, target_bridge: "Hittite/Luwian Anatolian comparison", preferred_types: [B10], status: connected_needs_morphology_pack}
