@@ -1,0 +1,34 @@
+representation_interaction_calibration:
+  version: 0.1.0
+  date: 2026-09-22
+  status: ACTIVE_EXPERIMENTAL
+  protocol: docs/architecture/representation-interaction-calibration-v0.1.md
+  core_rules:
+    - "notational alienness != operational alienness"
+    - "representation invariance != composition invariance"
+    - "surface classifier != operational substrate"
+    - "classifier continuity != provenance proof"
+  state_extension: "X=(carrier,surface,operator,state,path,composition,interaction_residual,invariant,provenance)"
+  operators:
+    - REPRESENTATION_CHANGE
+    - BASIS_CHANGE
+    - COMPOSITION
+    - INTERACTION_RESIDUAL
+    - PREPARATION_TRANSFORM
+    - TIMING_CONTEXT_TRANSFORM
+    - CLASSIFIER_MIGRATION
+  positive_controls:
+    mesopotamian_math:
+      benchmarks: [MESO-MATH-01,MESO-MATH-02,MESO-MATH-03,MESO-MATH-04,MESO-MATH-05,MESO-MATH-06]
+      purpose: "recover formal operation/invariant from unfamiliar carrier and notation"
+    bar_hebraeus_diet:
+      benchmarks: [BH-DIET-01,BH-DIET-02,BH-DIET-03,BH-DIET-04,BH-DIET-05]
+      purpose: "recover composition/interaction logic from humorous and medical-dietetic prose"
+  calibrates:
+    - DEE-09_label_blind_adversarial_test
+    - Structural_Continuation
+    - Codex_Witness_Protocol
+    - TCIM
+    - Organon
+    - Invariant_Forge
+  promotion: "declared operator + recoverable invariant/residual + provenance + relevant control/holdout"
