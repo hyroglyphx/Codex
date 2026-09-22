@@ -1,0 +1,2119 @@
+{
+  "dataset": "byblos-sequence-graph",
+  "version": "0.1.0",
+  "updated": "2026-09-22",
+  "status": "LANGUAGE_AGNOSTIC_GRAPH_FROZEN",
+  "script": "Byblos pseudo-hieroglyphic",
+  "claim_ceiling": "No phonetic or language values inferred.",
+  "sources": [
+    {
+      "name": "Mnamon Byblos critical guide",
+      "url": "https://mnamon.sns.it/index.php?id=3&lang=en&page=Scrittura",
+      "role": "corpus/status/sign-inventory control"
+    },
+    {
+      "name": "Dunand-code public transcription of tablet c",
+      "url": "https://wikipedia.bennettdavid.com/content/wikipedia_en_top_maxi_2026-06/Byblos_syllabary",
+      "role": "machine-readable sequence input; trace to Dunand 1945 and later transcription; must be facsimile-checked before publication"
+    }
+  ],
+  "experimental_split": {
+    "training": {
+      "witness": "tablet c",
+      "use": "all graph fitting in v0.1"
+    },
+    "validation": {
+      "witness": "tablet d",
+      "use": "future post-freeze validation; sequence was publicly visible during source reconnaissance, so it is not treated as blind"
+    },
+    "blind_holdout": {
+      "witness": "spatula i",
+      "reported_length": "84 characters",
+      "rule": "do not inspect token sequence or tune variants/values against it before model freeze"
+    }
+  },
+  "transcription_note": "The public tablet-c transcription exposes 224 explicit Dunand-coded tokens plus unresolved gap markers on two lines, while secondary corpus descriptions commonly report 225 characters. v0.1 preserves coded tokens only and does not silently reconcile the discrepancy.",
+  "training_lines": [
+    {
+      "line": 1,
+      "sequence": [
+        "D2",
+        "B8",
+        "E6",
+        "G8",
+        "G8",
+        "E8",
+        "A3",
+        "E14",
+        "E7",
+        "G17",
+        "G13",
+        "G17",
+        "G8",
+        "D3",
+        "E8",
+        "E15",
+        "E22"
+      ]
+    },
+    {
+      "line": 2,
+      "sequence": [
+        "D3",
+        "E14",
+        "E8",
+        "E7",
+        "E18",
+        "E6",
+        "B3",
+        "G8",
+        "G13",
+        "B11",
+        "A10",
+        "G17",
+        "E22"
+      ]
+    },
+    {
+      "line": 3,
+      "sequence": [
+        "E7",
+        "F5",
+        "E7",
+        "E13",
+        "F1",
+        "G8",
+        "E1",
+        "D1",
+        "F5",
+        "A21",
+        "G13",
+        "B11",
+        "A10",
+        "E7"
+      ]
+    },
+    {
+      "line": 4,
+      "sequence": [
+        "D3",
+        "B11",
+        "E5",
+        "D2",
+        "A16",
+        "A16",
+        "E8",
+        "D4",
+        "G13",
+        "B11",
+        "A10",
+        "E7",
+        "D3",
+        "B11",
+        "D4",
+        "D1"
+      ]
+    },
+    {
+      "line": 5,
+      "sequence": [
+        "G4",
+        "E7",
+        "G6",
+        "D3",
+        "E14",
+        "B9",
+        "A18",
+        "E5",
+        "G6",
+        "E8",
+        "E1",
+        "E7",
+        "E5",
+        "D2",
+        "E22"
+      ]
+    },
+    {
+      "line": 6,
+      "sequence": [
+        "F1",
+        "G17",
+        "B3",
+        "A3",
+        "E1",
+        "G8",
+        "D1",
+        "B9",
+        "B3",
+        "D3",
+        "A3",
+        "G13",
+        "B11",
+        "A10",
+        "G17",
+        "E22"
+      ]
+    },
+    {
+      "line": 7,
+      "sequence": [
+        "E23",
+        "B8",
+        "E10",
+        "E20",
+        "E7",
+        "E10",
+        "E19",
+        "E13",
+        "E7",
+        "G3",
+        "D4",
+        "B3",
+        "E23",
+        "B8",
+        "E10",
+        "E7",
+        "G8",
+        "G8"
+      ]
+    },
+    {
+      "line": 8,
+      "sequence": [
+        "G4",
+        "E8",
+        "A3",
+        "G8",
+        "G17",
+        "A14",
+        "A18",
+        "B8",
+        "D3",
+        "D4",
+        "G6",
+        "E23",
+        "B8",
+        "E10",
+        "E7",
+        "E15"
+      ]
+    },
+    {
+      "line": 9,
+      "sequence": [
+        "D3",
+        "E8",
+        "E2",
+        "E7",
+        "D3",
+        "B11",
+        "E8",
+        "D3",
+        "H5",
+        "G8'",
+        "G12",
+        "A3",
+        "E7",
+        "G12",
+        "E5",
+        "G8"
+      ]
+    },
+    {
+      "line": 10,
+      "sequence": [
+        "E7",
+        "G8",
+        "E1",
+        "G8",
+        "D1",
+        "B9",
+        "B3",
+        "D3",
+        "A3",
+        "G13",
+        "B11",
+        "A10",
+        "G17",
+        "E22"
+      ]
+    },
+    {
+      "line": 11,
+      "sequence": [
+        "G4",
+        "D2",
+        "E14",
+        "G8",
+        "E15",
+        "E26",
+        "B8",
+        "E10",
+        "E1",
+        "A21",
+        "D2",
+        "B3",
+        "B3",
+        "A8",
+        "G17",
+        "A21"
+      ]
+    },
+    {
+      "line": 12,
+      "sequence": [
+        "E1",
+        "E7",
+        "A8'",
+        "E7",
+        "A15",
+        "E10",
+        "D5",
+        "A16",
+        "E14",
+        "G6",
+        "F5",
+        "D3",
+        "E5",
+        "E17",
+        "D1"
+      ]
+    },
+    {
+      "line": 13,
+      "sequence": [
+        "F2",
+        "A17",
+        "G17",
+        "E22",
+        "E7",
+        "E23",
+        "G6",
+        "E7",
+        "F5",
+        "E14",
+        "F3",
+        "E8",
+        "E5",
+        "D8",
+        "G4",
+        "E14"
+      ]
+    },
+    {
+      "line": 14,
+      "sequence": [
+        "I3",
+        "E14",
+        "E10",
+        "E14",
+        "D1",
+        "F5",
+        "A21",
+        "D3",
+        "G17",
+        "B9",
+        "A13"
+      ]
+    },
+    {
+      "line": 15,
+      "sequence": [
+        "D3",
+        "E14",
+        "E8",
+        "G17",
+        "E19",
+        "E19",
+        "E19",
+        "E19",
+        "E19",
+        "E19",
+        "E19"
+      ]
+    }
+  ],
+  "graph": {
+    "node_definition": "Dunand catalogue sign code as transcribed; variants such as G8' and A8' remain distinct.",
+    "edge_definition": "directed adjacency within a written line; no edge crosses line boundaries.",
+    "known_token_count": 224,
+    "observed_node_count": 52,
+    "unique_directed_bigram_edges": 161,
+    "unique_trigrams": 168,
+    "sign_entropy_bits": 5.180429,
+    "frequency": [
+      {
+        "sign": "E7",
+        "count": 19
+      },
+      {
+        "sign": "D3",
+        "count": 14
+      },
+      {
+        "sign": "G8",
+        "count": 13
+      },
+      {
+        "sign": "G17",
+        "count": 11
+      },
+      {
+        "sign": "E14",
+        "count": 10
+      },
+      {
+        "sign": "E8",
+        "count": 10
+      },
+      {
+        "sign": "B11",
+        "count": 8
+      },
+      {
+        "sign": "E19",
+        "count": 8
+      },
+      {
+        "sign": "B3",
+        "count": 7
+      },
+      {
+        "sign": "E10",
+        "count": 7
+      },
+      {
+        "sign": "A3",
+        "count": 6
+      },
+      {
+        "sign": "B8",
+        "count": 6
+      },
+      {
+        "sign": "D1",
+        "count": 6
+      },
+      {
+        "sign": "E1",
+        "count": 6
+      },
+      {
+        "sign": "E22",
+        "count": 6
+      },
+      {
+        "sign": "E5",
+        "count": 6
+      },
+      {
+        "sign": "G13",
+        "count": 6
+      },
+      {
+        "sign": "A10",
+        "count": 5
+      },
+      {
+        "sign": "D2",
+        "count": 5
+      },
+      {
+        "sign": "F5",
+        "count": 5
+      },
+      {
+        "sign": "G6",
+        "count": 5
+      },
+      {
+        "sign": "A21",
+        "count": 4
+      },
+      {
+        "sign": "B9",
+        "count": 4
+      },
+      {
+        "sign": "D4",
+        "count": 4
+      },
+      {
+        "sign": "E23",
+        "count": 4
+      },
+      {
+        "sign": "G4",
+        "count": 4
+      },
+      {
+        "sign": "A16",
+        "count": 3
+      },
+      {
+        "sign": "E15",
+        "count": 3
+      },
+      {
+        "sign": "A18",
+        "count": 2
+      },
+      {
+        "sign": "E13",
+        "count": 2
+      },
+      {
+        "sign": "E6",
+        "count": 2
+      },
+      {
+        "sign": "F1",
+        "count": 2
+      },
+      {
+        "sign": "G12",
+        "count": 2
+      },
+      {
+        "sign": "A13",
+        "count": 1
+      },
+      {
+        "sign": "A14",
+        "count": 1
+      },
+      {
+        "sign": "A15",
+        "count": 1
+      },
+      {
+        "sign": "A17",
+        "count": 1
+      },
+      {
+        "sign": "A8",
+        "count": 1
+      },
+      {
+        "sign": "A8'",
+        "count": 1
+      },
+      {
+        "sign": "D5",
+        "count": 1
+      },
+      {
+        "sign": "D8",
+        "count": 1
+      },
+      {
+        "sign": "E17",
+        "count": 1
+      },
+      {
+        "sign": "E18",
+        "count": 1
+      },
+      {
+        "sign": "E2",
+        "count": 1
+      },
+      {
+        "sign": "E20",
+        "count": 1
+      },
+      {
+        "sign": "E26",
+        "count": 1
+      },
+      {
+        "sign": "F2",
+        "count": 1
+      },
+      {
+        "sign": "F3",
+        "count": 1
+      },
+      {
+        "sign": "G3",
+        "count": 1
+      },
+      {
+        "sign": "G8'",
+        "count": 1
+      },
+      {
+        "sign": "H5",
+        "count": 1
+      },
+      {
+        "sign": "I3",
+        "count": 1
+      }
+    ],
+    "edges": [
+      {
+        "source": "E19",
+        "target": "E19",
+        "count": 6
+      },
+      {
+        "source": "B11",
+        "target": "A10",
+        "count": 5
+      },
+      {
+        "source": "G13",
+        "target": "B11",
+        "count": 5
+      },
+      {
+        "source": "B8",
+        "target": "E10",
+        "count": 4
+      },
+      {
+        "source": "G17",
+        "target": "E22",
+        "count": 4
+      },
+      {
+        "source": "A10",
+        "target": "G17",
+        "count": 3
+      },
+      {
+        "source": "D3",
+        "target": "B11",
+        "count": 3
+      },
+      {
+        "source": "D3",
+        "target": "E14",
+        "count": 3
+      },
+      {
+        "source": "E23",
+        "target": "B8",
+        "count": 3
+      },
+      {
+        "source": "A10",
+        "target": "E7",
+        "count": 2
+      },
+      {
+        "source": "A3",
+        "target": "G13",
+        "count": 2
+      },
+      {
+        "source": "B3",
+        "target": "D3",
+        "count": 2
+      },
+      {
+        "source": "B9",
+        "target": "B3",
+        "count": 2
+      },
+      {
+        "source": "D1",
+        "target": "B9",
+        "count": 2
+      },
+      {
+        "source": "D1",
+        "target": "F5",
+        "count": 2
+      },
+      {
+        "source": "D3",
+        "target": "A3",
+        "count": 2
+      },
+      {
+        "source": "D3",
+        "target": "E8",
+        "count": 2
+      },
+      {
+        "source": "E1",
+        "target": "E7",
+        "count": 2
+      },
+      {
+        "source": "E1",
+        "target": "G8",
+        "count": 2
+      },
+      {
+        "source": "E10",
+        "target": "E7",
+        "count": 2
+      },
+      {
+        "source": "E14",
+        "target": "E8",
+        "count": 2
+      },
+      {
+        "source": "E5",
+        "target": "D2",
+        "count": 2
+      },
+      {
+        "source": "E7",
+        "target": "D3",
+        "count": 2
+      },
+      {
+        "source": "E7",
+        "target": "F5",
+        "count": 2
+      },
+      {
+        "source": "E7",
+        "target": "G8",
+        "count": 2
+      },
+      {
+        "source": "E8",
+        "target": "A3",
+        "count": 2
+      },
+      {
+        "source": "F5",
+        "target": "A21",
+        "count": 2
+      },
+      {
+        "source": "G8",
+        "target": "D1",
+        "count": 2
+      },
+      {
+        "source": "G8",
+        "target": "E1",
+        "count": 2
+      },
+      {
+        "source": "G8",
+        "target": "G8",
+        "count": 2
+      },
+      {
+        "source": "A14",
+        "target": "A18",
+        "count": 1
+      },
+      {
+        "source": "A15",
+        "target": "E10",
+        "count": 1
+      },
+      {
+        "source": "A16",
+        "target": "A16",
+        "count": 1
+      },
+      {
+        "source": "A16",
+        "target": "E14",
+        "count": 1
+      },
+      {
+        "source": "A16",
+        "target": "E8",
+        "count": 1
+      },
+      {
+        "source": "A17",
+        "target": "G17",
+        "count": 1
+      },
+      {
+        "source": "A18",
+        "target": "B8",
+        "count": 1
+      },
+      {
+        "source": "A18",
+        "target": "E5",
+        "count": 1
+      },
+      {
+        "source": "A21",
+        "target": "D2",
+        "count": 1
+      },
+      {
+        "source": "A21",
+        "target": "D3",
+        "count": 1
+      },
+      {
+        "source": "A21",
+        "target": "G13",
+        "count": 1
+      },
+      {
+        "source": "A3",
+        "target": "E1",
+        "count": 1
+      },
+      {
+        "source": "A3",
+        "target": "E14",
+        "count": 1
+      },
+      {
+        "source": "A3",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "A3",
+        "target": "G8",
+        "count": 1
+      },
+      {
+        "source": "A8'",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "A8",
+        "target": "G17",
+        "count": 1
+      },
+      {
+        "source": "B11",
+        "target": "D4",
+        "count": 1
+      },
+      {
+        "source": "B11",
+        "target": "E5",
+        "count": 1
+      },
+      {
+        "source": "B11",
+        "target": "E8",
+        "count": 1
+      },
+      {
+        "source": "B3",
+        "target": "A3",
+        "count": 1
+      },
+      {
+        "source": "B3",
+        "target": "A8",
+        "count": 1
+      },
+      {
+        "source": "B3",
+        "target": "B3",
+        "count": 1
+      },
+      {
+        "source": "B3",
+        "target": "E23",
+        "count": 1
+      },
+      {
+        "source": "B3",
+        "target": "G8",
+        "count": 1
+      },
+      {
+        "source": "B8",
+        "target": "D3",
+        "count": 1
+      },
+      {
+        "source": "B8",
+        "target": "E6",
+        "count": 1
+      },
+      {
+        "source": "B9",
+        "target": "A13",
+        "count": 1
+      },
+      {
+        "source": "B9",
+        "target": "A18",
+        "count": 1
+      },
+      {
+        "source": "D2",
+        "target": "A16",
+        "count": 1
+      },
+      {
+        "source": "D2",
+        "target": "B3",
+        "count": 1
+      },
+      {
+        "source": "D2",
+        "target": "B8",
+        "count": 1
+      },
+      {
+        "source": "D2",
+        "target": "E14",
+        "count": 1
+      },
+      {
+        "source": "D2",
+        "target": "E22",
+        "count": 1
+      },
+      {
+        "source": "D3",
+        "target": "D4",
+        "count": 1
+      },
+      {
+        "source": "D3",
+        "target": "E5",
+        "count": 1
+      },
+      {
+        "source": "D3",
+        "target": "G17",
+        "count": 1
+      },
+      {
+        "source": "D3",
+        "target": "H5",
+        "count": 1
+      },
+      {
+        "source": "D4",
+        "target": "B3",
+        "count": 1
+      },
+      {
+        "source": "D4",
+        "target": "D1",
+        "count": 1
+      },
+      {
+        "source": "D4",
+        "target": "G13",
+        "count": 1
+      },
+      {
+        "source": "D4",
+        "target": "G6",
+        "count": 1
+      },
+      {
+        "source": "D5",
+        "target": "A16",
+        "count": 1
+      },
+      {
+        "source": "D8",
+        "target": "G4",
+        "count": 1
+      },
+      {
+        "source": "E1",
+        "target": "A21",
+        "count": 1
+      },
+      {
+        "source": "E1",
+        "target": "D1",
+        "count": 1
+      },
+      {
+        "source": "E10",
+        "target": "D5",
+        "count": 1
+      },
+      {
+        "source": "E10",
+        "target": "E1",
+        "count": 1
+      },
+      {
+        "source": "E10",
+        "target": "E14",
+        "count": 1
+      },
+      {
+        "source": "E10",
+        "target": "E19",
+        "count": 1
+      },
+      {
+        "source": "E10",
+        "target": "E20",
+        "count": 1
+      },
+      {
+        "source": "E13",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "E13",
+        "target": "F1",
+        "count": 1
+      },
+      {
+        "source": "E14",
+        "target": "B9",
+        "count": 1
+      },
+      {
+        "source": "E14",
+        "target": "D1",
+        "count": 1
+      },
+      {
+        "source": "E14",
+        "target": "E10",
+        "count": 1
+      },
+      {
+        "source": "E14",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "E14",
+        "target": "F3",
+        "count": 1
+      },
+      {
+        "source": "E14",
+        "target": "G6",
+        "count": 1
+      },
+      {
+        "source": "E14",
+        "target": "G8",
+        "count": 1
+      },
+      {
+        "source": "E15",
+        "target": "E22",
+        "count": 1
+      },
+      {
+        "source": "E15",
+        "target": "E26",
+        "count": 1
+      },
+      {
+        "source": "E17",
+        "target": "D1",
+        "count": 1
+      },
+      {
+        "source": "E18",
+        "target": "E6",
+        "count": 1
+      },
+      {
+        "source": "E19",
+        "target": "E13",
+        "count": 1
+      },
+      {
+        "source": "E2",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "E20",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "E22",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "E23",
+        "target": "G6",
+        "count": 1
+      },
+      {
+        "source": "E26",
+        "target": "B8",
+        "count": 1
+      },
+      {
+        "source": "E5",
+        "target": "D8",
+        "count": 1
+      },
+      {
+        "source": "E5",
+        "target": "E17",
+        "count": 1
+      },
+      {
+        "source": "E5",
+        "target": "G6",
+        "count": 1
+      },
+      {
+        "source": "E5",
+        "target": "G8",
+        "count": 1
+      },
+      {
+        "source": "E6",
+        "target": "B3",
+        "count": 1
+      },
+      {
+        "source": "E6",
+        "target": "G8",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "A15",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "A8'",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "E10",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "E13",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "E15",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "E18",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "E23",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "E5",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "G12",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "G17",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "G3",
+        "count": 1
+      },
+      {
+        "source": "E7",
+        "target": "G6",
+        "count": 1
+      },
+      {
+        "source": "E8",
+        "target": "D3",
+        "count": 1
+      },
+      {
+        "source": "E8",
+        "target": "D4",
+        "count": 1
+      },
+      {
+        "source": "E8",
+        "target": "E1",
+        "count": 1
+      },
+      {
+        "source": "E8",
+        "target": "E15",
+        "count": 1
+      },
+      {
+        "source": "E8",
+        "target": "E2",
+        "count": 1
+      },
+      {
+        "source": "E8",
+        "target": "E5",
+        "count": 1
+      },
+      {
+        "source": "E8",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "E8",
+        "target": "G17",
+        "count": 1
+      },
+      {
+        "source": "F1",
+        "target": "G17",
+        "count": 1
+      },
+      {
+        "source": "F1",
+        "target": "G8",
+        "count": 1
+      },
+      {
+        "source": "F2",
+        "target": "A17",
+        "count": 1
+      },
+      {
+        "source": "F3",
+        "target": "E8",
+        "count": 1
+      },
+      {
+        "source": "F5",
+        "target": "D3",
+        "count": 1
+      },
+      {
+        "source": "F5",
+        "target": "E14",
+        "count": 1
+      },
+      {
+        "source": "F5",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "G12",
+        "target": "A3",
+        "count": 1
+      },
+      {
+        "source": "G12",
+        "target": "E5",
+        "count": 1
+      },
+      {
+        "source": "G13",
+        "target": "G17",
+        "count": 1
+      },
+      {
+        "source": "G17",
+        "target": "A14",
+        "count": 1
+      },
+      {
+        "source": "G17",
+        "target": "A21",
+        "count": 1
+      },
+      {
+        "source": "G17",
+        "target": "B3",
+        "count": 1
+      },
+      {
+        "source": "G17",
+        "target": "B9",
+        "count": 1
+      },
+      {
+        "source": "G17",
+        "target": "E19",
+        "count": 1
+      },
+      {
+        "source": "G17",
+        "target": "G13",
+        "count": 1
+      },
+      {
+        "source": "G17",
+        "target": "G8",
+        "count": 1
+      },
+      {
+        "source": "G3",
+        "target": "D4",
+        "count": 1
+      },
+      {
+        "source": "G4",
+        "target": "D2",
+        "count": 1
+      },
+      {
+        "source": "G4",
+        "target": "E14",
+        "count": 1
+      },
+      {
+        "source": "G4",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "G4",
+        "target": "E8",
+        "count": 1
+      },
+      {
+        "source": "G6",
+        "target": "D3",
+        "count": 1
+      },
+      {
+        "source": "G6",
+        "target": "E23",
+        "count": 1
+      },
+      {
+        "source": "G6",
+        "target": "E7",
+        "count": 1
+      },
+      {
+        "source": "G6",
+        "target": "E8",
+        "count": 1
+      },
+      {
+        "source": "G6",
+        "target": "F5",
+        "count": 1
+      },
+      {
+        "source": "G8'",
+        "target": "G12",
+        "count": 1
+      },
+      {
+        "source": "G8",
+        "target": "D3",
+        "count": 1
+      },
+      {
+        "source": "G8",
+        "target": "E15",
+        "count": 1
+      },
+      {
+        "source": "G8",
+        "target": "E8",
+        "count": 1
+      },
+      {
+        "source": "G8",
+        "target": "G13",
+        "count": 1
+      },
+      {
+        "source": "G8",
+        "target": "G17",
+        "count": 1
+      },
+      {
+        "source": "H5",
+        "target": "G8'",
+        "count": 1
+      },
+      {
+        "source": "I3",
+        "target": "E14",
+        "count": 1
+      }
+    ],
+    "trigrams": [
+      {
+        "sequence": [
+          "E19",
+          "E19",
+          "E19"
+        ],
+        "count": 5
+      },
+      {
+        "sequence": [
+          "G13",
+          "B11",
+          "A10"
+        ],
+        "count": 5
+      },
+      {
+        "sequence": [
+          "A10",
+          "G17",
+          "E22"
+        ],
+        "count": 3
+      },
+      {
+        "sequence": [
+          "B11",
+          "A10",
+          "G17"
+        ],
+        "count": 3
+      },
+      {
+        "sequence": [
+          "E23",
+          "B8",
+          "E10"
+        ],
+        "count": 3
+      },
+      {
+        "sequence": [
+          "A3",
+          "G13",
+          "B11"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "B11",
+          "A10",
+          "E7"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "B3",
+          "D3",
+          "A3"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "B8",
+          "E10",
+          "E7"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "B9",
+          "B3",
+          "D3"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "D1",
+          "B9",
+          "B3"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "D1",
+          "F5",
+          "A21"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "D3",
+          "A3",
+          "G13"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "D3",
+          "E14",
+          "E8"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "E1",
+          "G8",
+          "D1"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "E7",
+          "D3",
+          "B11"
+        ],
+        "count": 2
+      },
+      {
+        "sequence": [
+          "G8",
+          "D1",
+          "B9"
+        ],
+        "count": 2
+      }
+    ],
+    "line_starts": [
+      {
+        "sign": "D3",
+        "count": 4
+      },
+      {
+        "sign": "G4",
+        "count": 3
+      },
+      {
+        "sign": "E7",
+        "count": 2
+      },
+      {
+        "sign": "D2",
+        "count": 1
+      },
+      {
+        "sign": "E1",
+        "count": 1
+      },
+      {
+        "sign": "E23",
+        "count": 1
+      },
+      {
+        "sign": "F1",
+        "count": 1
+      },
+      {
+        "sign": "F2",
+        "count": 1
+      },
+      {
+        "sign": "I3",
+        "count": 1
+      }
+    ],
+    "line_ends": [
+      {
+        "sign": "E22",
+        "count": 5
+      },
+      {
+        "sign": "D1",
+        "count": 2
+      },
+      {
+        "sign": "G8",
+        "count": 2
+      },
+      {
+        "sign": "A13",
+        "count": 1
+      },
+      {
+        "sign": "A21",
+        "count": 1
+      },
+      {
+        "sign": "E14",
+        "count": 1
+      },
+      {
+        "sign": "E15",
+        "count": 1
+      },
+      {
+        "sign": "E19",
+        "count": 1
+      },
+      {
+        "sign": "E7",
+        "count": 1
+      }
+    ],
+    "repeated_sequences": [
+      {
+        "length": 12,
+        "count": 2,
+        "sequence": [
+          "E1",
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17",
+          "E22"
+        ]
+      },
+      {
+        "length": 11,
+        "count": 2,
+        "sequence": [
+          "E1",
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17"
+        ]
+      },
+      {
+        "length": 11,
+        "count": 2,
+        "sequence": [
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17",
+          "E22"
+        ]
+      },
+      {
+        "length": 10,
+        "count": 2,
+        "sequence": [
+          "E1",
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10"
+        ]
+      },
+      {
+        "length": 10,
+        "count": 2,
+        "sequence": [
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17"
+        ]
+      },
+      {
+        "length": 10,
+        "count": 2,
+        "sequence": [
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17",
+          "E22"
+        ]
+      },
+      {
+        "length": 9,
+        "count": 2,
+        "sequence": [
+          "E1",
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11"
+        ]
+      },
+      {
+        "length": 9,
+        "count": 2,
+        "sequence": [
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10"
+        ]
+      },
+      {
+        "length": 9,
+        "count": 2,
+        "sequence": [
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17"
+        ]
+      },
+      {
+        "length": 9,
+        "count": 2,
+        "sequence": [
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17",
+          "E22"
+        ]
+      },
+      {
+        "length": 8,
+        "count": 2,
+        "sequence": [
+          "E1",
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13"
+        ]
+      },
+      {
+        "length": 8,
+        "count": 2,
+        "sequence": [
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11"
+        ]
+      },
+      {
+        "length": 8,
+        "count": 2,
+        "sequence": [
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10"
+        ]
+      },
+      {
+        "length": 8,
+        "count": 2,
+        "sequence": [
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17"
+        ]
+      },
+      {
+        "length": 8,
+        "count": 2,
+        "sequence": [
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17",
+          "E22"
+        ]
+      },
+      {
+        "length": 7,
+        "count": 2,
+        "sequence": [
+          "E1",
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3"
+        ]
+      },
+      {
+        "length": 7,
+        "count": 2,
+        "sequence": [
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13"
+        ]
+      },
+      {
+        "length": 7,
+        "count": 2,
+        "sequence": [
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11"
+        ]
+      },
+      {
+        "length": 7,
+        "count": 2,
+        "sequence": [
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10"
+        ]
+      },
+      {
+        "length": 7,
+        "count": 2,
+        "sequence": [
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17"
+        ]
+      },
+      {
+        "length": 7,
+        "count": 2,
+        "sequence": [
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17",
+          "E22"
+        ]
+      },
+      {
+        "length": 6,
+        "count": 2,
+        "sequence": [
+          "E1",
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3"
+        ]
+      },
+      {
+        "length": 6,
+        "count": 2,
+        "sequence": [
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3"
+        ]
+      },
+      {
+        "length": 6,
+        "count": 2,
+        "sequence": [
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13"
+        ]
+      },
+      {
+        "length": 6,
+        "count": 2,
+        "sequence": [
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11"
+        ]
+      },
+      {
+        "length": 6,
+        "count": 2,
+        "sequence": [
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10"
+        ]
+      },
+      {
+        "length": 6,
+        "count": 2,
+        "sequence": [
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17"
+        ]
+      },
+      {
+        "length": 6,
+        "count": 2,
+        "sequence": [
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17",
+          "E22"
+        ]
+      },
+      {
+        "length": 6,
+        "count": 2,
+        "sequence": [
+          "E19",
+          "E19",
+          "E19",
+          "E19",
+          "E19",
+          "E19"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 3,
+        "sequence": [
+          "G13",
+          "B11",
+          "A10",
+          "G17",
+          "E22"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 3,
+        "sequence": [
+          "E19",
+          "E19",
+          "E19",
+          "E19",
+          "E19"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 2,
+        "sequence": [
+          "E1",
+          "G8",
+          "D1",
+          "B9",
+          "B3"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 2,
+        "sequence": [
+          "G8",
+          "D1",
+          "B9",
+          "B3",
+          "D3"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 2,
+        "sequence": [
+          "D1",
+          "B9",
+          "B3",
+          "D3",
+          "A3"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 2,
+        "sequence": [
+          "B9",
+          "B3",
+          "D3",
+          "A3",
+          "G13"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 2,
+        "sequence": [
+          "B3",
+          "D3",
+          "A3",
+          "G13",
+          "B11"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 2,
+        "sequence": [
+          "D3",
+          "A3",
+          "G13",
+          "B11",
+          "A10"
+        ]
+      },
+      {
+        "length": 5,
+        "count": 2,
+        "sequence": [
+          "A3",
+          "G13",
+          "B11",
+          "A10",
+          "G17"
+        ]
+      },
+      {
+        "length": 4,
+        "count": 4,
+        "sequence": [
+          "E19",
+          "E19",
+          "E19",
+          "E19"
+        ]
+      },
+      {
+        "length": 4,
+        "count": 3,
+        "sequence": [
+          "G13",
+          "B11",
+          "A10",
+          "G17"
+        ]
+      }
+    ]
+  },
+  "frozen_findings": [
+    "E7 is the most frequent coded sign in tablet c and also has the broadest local adjacency neighborhood in the training graph.",
+    "G13→B11→A10 is a five-occurrence trigram; G13→B11→A10→G17→E22 occurs three times.",
+    "A 12-sign sequence E1-G8-D1-B9-B3-D3-A3-G13-B11-A10-G17-E22 occurs twice.",
+    "E23→B8→E10 occurs three times.",
+    "The final line contains a sevenfold E19 run after G17; this is recorded as repetition only, not interpreted numerically.",
+    "E22 is strongly line-final in tablet c (five line endings), making boundary behavior a testable structural property.",
+    "Variant-coded signs remain separate until complementary-distribution/allograph tests are run."
+  ],
+  "next_tests": [
+    "Freeze allograph candidate clusters using chart medium metadata without phonetic values.",
+    "Score validation tablet d only after the tablet-c graph metrics and variant rules are frozen.",
+    "Keep spatula i blind until the model predicts sequence/boundary properties.",
+    "Compare line-final E22 and repeated formula behavior on validation/holdout witnesses.",
+    "Build first-order and second-order Markov baselines and shuffled-line nulls.",
+    "Test whether high-degree signs behave more like grammatical/syllabic hubs than rare name/logogram-like signs, without assigning readings."
+  ]
+}
