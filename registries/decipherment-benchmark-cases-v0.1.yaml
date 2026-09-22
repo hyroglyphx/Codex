@@ -46,8 +46,11 @@ cases:
     languages: [Phoenician, Luwian]
     crosswalk_depth: X2_X4
     decipherment_outcome: major_success
-    historical_role: "survey identifies Karatepe as important for Anatolian hieroglyphs"
-    source_lock_status: queued_RN04
+    historical_role: "specialist and museum sources identify Karatepe as a major key to Hieroglyphic Luwian/Anatolian hieroglyphic decipherment"
+    source_lock_status: source_locked_first_alignment
+    calibration_path: data/calibration/karatepe-cinekoy-first-alignment.yaml
+    anchors: [Azatiwada_identity, House_of_Mopsos_Muksa, Baal_Tarhunt_functional_equivalence, Adanawa_Danunians_referential_crosswalk]
+    note: "same-site exemplar variance is modeled separately from cross-language translation variance"
 
   - id: DB04
     anchor_object: Orkhon_inscriptions
