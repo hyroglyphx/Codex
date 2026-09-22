@@ -614,3 +614,23 @@ ancient_script_lattice_uptake:
   priority_queue: [numeral_1_10_null_benchmark,source_lock_reconstructed_nodes,false_equivalence_control_suite]
   controls: [Carian,Kaminia,Sumerian_Akkadian,QBL,Tyrsenian,Linear_Elamite]
   governing_question: "Which transformations remain invariant after every plausible competing explanation has been given its strongest test?"
+
+
+elamite_carrier_pivot:
+  architecture: docs/architecture/elamite-linear-elamite-carrier-pivot-v0.1.md
+  registry: registries/elamite-carrier-pivot-v0.1.yaml
+  status: canonical_calibration_protocol
+  flagship_role: same_or_continuous_language_under_carrier_pivot
+  connects:
+    - linguistic_core
+    - ancient_script_lattice_uptake
+    - TCIM
+    - ECVR
+    - Organon
+    - Adversary
+    - Invariant_Forge
+    - Structural_Continuation
+    - representation_interaction_calibration
+  benchmark_ids: [ELAM-01, ELAM-02, ELAM-03, ELAM-04, ELAM-05, ELAM-06, ELAM-07, ELAM-08, ELAM-09, ELAM-10]
+  omega_control: Proto_Elamite
+  evidential_firewall: "internal diachronic support does not transfer automatically to an external etymological edge"
