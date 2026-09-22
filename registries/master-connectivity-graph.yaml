@@ -418,12 +418,31 @@ byblos_ugarit_decipherment_experiment:
   study: studies/byblos-ugarit-positive-negative-decipherment-experiment.md
   byblos_graph: data/calibration/byblos-sequence-graph-v0.1.json
   ugarit_cycle_graph: data/calibration/ugarit-multilingual-cycle-consistency-v0.1.yaml
-  status: first_comparative_pass_complete
+  status: validation_and_residual_pass_complete
+  byblos_validation: data/calibration/byblos-tablet-d-validation-v0.1.json
+  ugarit_cycle_residuals: data/calibration/ugarit-cycle-residuals-v0.1.yaml
+  aphek_source_lock: data/calibration/aphek-trilingual-source-lock-v0.1.yaml
   key_results:
     - "Byblos tablet-c training graph: 224 coded tokens, 52 observed catalogue nodes, 161 directed bigram edges."
-    - "A 12-sign repeated sequence occurs twice; E22 is strongly line-final in the training witness."
-    - "Spatula i is reserved as the blind holdout before any phonetic values are assigned."
-    - "Ugarit supplies independent sign/pronunciation, same-language cross-script, and quadrilingual lexical paths."
-    - "bnš / bu-nu-šu / Akkadian a-mi-lu forms an anchored lexical-semantic cycle."
+    - "Tablet d validation: 460 explicit coded tokens, 66 observed nodes, 42 training nodes reappear, 24 validation-only nodes."
+    - "E22 boundary prediction failed: both tablet-d occurrences are internal, not line-final."
+    - "Tablet-c 12-sign sequence and G13-B11-A10 trigram do not recur in tablet d."
+    - "E23-B8-E10 recurs twice in tablet d and becomes a stronger cross-tablet sequence candidate."
+    - "E7 remains highest-frequency in tablet d and retains broad adjacency, strengthening a corpus-level centrality hypothesis without assigning function."
+    - "Spatula i remains the blind holdout before any phonetic values are assigned."
+    - "Ugarit row-level cycles now anchor ʾat/at-ta, bnš/bu-nu-šu/a-mi-lu, and ʿr/[u?]-ru/mašku while damaged rows remain unresolved."
+    - "Aphek object/layout/language configuration is source-locked; exact lexical rows remain pending primary-edition ingest."
     - "cycle rank is added as a decipherment variable after dependency correction."
-  governing_rule: "prediction + independent cycle closure > post-hoc reading"
+  governing_rule: "prediction + independent cycle closure + preserved failures > post-hoc reading"
+
+
+byblos_validation_failure_rule:
+  source: data/calibration/byblos-tablet-d-validation-v0.1.json
+  rule: "failed frozen predictions are evidence and may narrow/downgrade a hypothesis; they must not be redefined away"
+  current_failures:
+    - E22_general_boundary_marker
+    - tablet_c_12_sign_formula_as_corpus_wide
+    - G13_B11_A10_as_corpus_wide_formula
+  current_survivors:
+    - E7_cross_tablet_high_centrality
+    - E23_B8_E10_cross_tablet_recurrence
