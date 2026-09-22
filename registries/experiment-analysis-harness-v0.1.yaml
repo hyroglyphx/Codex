@@ -1,0 +1,36 @@
+version: "0.1"
+date: "2026-09-22"
+id: EXPERIMENT_ANALYSIS_HARNESS
+status: CANONICAL_RESEARCH_HARNESS
+inspired_by: ChatGPT_Experiment_Analysis_skill
+required_sections:
+  - question
+  - hypothesis
+  - competing_hypotheses
+  - witness_set
+  - method
+  - controls
+  - null_or_holdout
+  - results
+  - interpretation
+  - limitations
+  - evidence_state_changes
+  - next_discriminating_test
+anti_laundering_layers: [input_observation, derived_result, interpretation, promotion_decision]
+promotion:
+  TESTED:
+    - declared_hypothesis
+    - serious_competitor_or_null
+    - source_locked_witnesses
+    - declared_operators
+    - result_separate_from_interpretation
+    - recorded_failures_and_limitations
+    - reproducible_test_procedure
+  CORROBORATED:
+    - independent_witness_or_replication_or_discriminating_holdout
+first_experiment:
+  id: ELAM-CP-EXP-001
+  protocol: registries/elamite-carrier-pivot-v0.1.yaml
+  goal: test_internal_elamite_carrier_pivot_without_external_edge_laundering
+  holdout_required: true
+  adversarial_controls: [Proto_Elamite_Omega, Carian, Kaminia, external_Greek_firewall]
