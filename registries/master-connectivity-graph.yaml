@@ -307,3 +307,39 @@ source_strengthened_candidate_packs:
     key_result: "root-normalized core matrix: seven=5 strict hits, six=1, all other digits=0; extended candidate matrix reaches seven=7"
     dependency_result: "look-elsewhere sensitivity ranges from 0.002 under moderate dependency clustering to 0.20 under maximal western-areal collapse"
     caution: "no common-origin or significance claim; next step is a generative genealogy/contact/phonotactic model"
+
+
+gilgamesh_beyond_cuneiform:
+  study: studies/gilgamesh-beyond-cuneiform-transmission-node.md
+  status: active
+  primary_witnesses:
+    - Standard-Babylonian-and-earlier-cuneiform-Gilgamesh
+    - Qumran-Book-of-Giants
+    - Aelian-De-natura-animalium-12.21
+  operators:
+    - B28_CLASSIFIER_TRANSFER
+    - B29_ONOMASTIC_EPISODIC_REBINDING
+  invariants:
+    - "name continuity does not imply plot continuity"
+    - "relational network survival outweighs isolated name survival"
+    - "identity carrier, role, episode and moral classifier are separate variables"
+  key_transforms:
+    - "heroic king -> giant/primordial transgressor-world participant"
+    - "Gilgamesh identity -> exposed-child/eagle/gardener royal-birth episode in Aelian"
+    - "dream/strength/Humbaba-like residues may survive under new theological framing"
+
+hittite_decipherment_calibration:
+  study: studies/hittite-decipherment-crosswise-calibration.md
+  status: active_positive_control
+  geometry: "known script + unknown language + logographic anchor + cognate hypotheses + morphology/syntax + corpus covariance"
+  primary_anchor: "nu NINDA-an ezzatteni watar=ma ekutteni"
+  provenance:
+    amarna: "early Arzawa-letter clue / external witness"
+    hattusa: "principal archive used for decisive decipherment"
+  operators:
+    - B30_DECIPHERMENT_COVARIANCE
+  invariants:
+    - "same script does not imply same language"
+    - "decipherment heuristic does not equal final etymology"
+    - "isolated lexical resemblance must propagate through morphology, syntax and corpus before promotion"
+    - "carrier is not readout"
