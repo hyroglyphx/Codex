@@ -1,0 +1,59 @@
+registry: marduk-identity-laboratory
+version: 0.1.0
+updated: 2026-09-22
+status: ACTIVE
+protocol: docs/studies/marduk-identity-laboratory-v0.1.md
+parent_protocol: docs/architecture/codex-witness-protocol-v0.1.md
+
+benchmarks:
+  - id: MDK-01
+    name: functional-identification
+    tests: qualified_identity
+    rule: "IDENTIFY_ASPECT(X,Marduk,F) does not imply global identity"
+  - id: MDK-02
+    name: fifty-names
+    tests: name_destiny_function_graph
+    rule: "preserve sequence, witness, name, explanation, function, variants, and numerical/status context"
+  - id: MDK-03
+    name: spatial-instantiation
+    tests: identity_to_place
+    path: "Marduk -> Babylon -> Esagila -> witness"
+  - id: MDK-04
+    name: borsippa-tutu-bridge
+    tests: local_cult_to_syncretic_identity
+    path: "Tutu -> Borsippa -> Marduk-name-complex"
+  - id: MDK-05
+    name: contradiction-preservation
+    tests: diachronic_identity
+    rule: "DISTINGUISH and SYNCRETIZE may coexist when witness/phase differ"
+
+operators:
+  - NAME_AS
+  - EPITHET_OF
+  - IDENTIFY_ASPECT
+  - TRANSFER_FUNCTION
+  - INHERIT_TITLE
+  - SYNCRETIZE
+  - SUBSUME
+  - DISTINGUISH
+  - PROMOTE_STATUS
+  - LOCATE_CULT
+  - UNKNOWN_IDENTITY_RELATION
+
+controls:
+  - id: CTL-ASALLUHI
+    statement: "Old Babylonian evidence includes both syncretism and distinction between Asalluhi and Marduk"
+    status: historical-control
+  - id: CTL-TUTU
+    statement: "Tutu, patron deity of Borsippa, was syncretised with Marduk in the Old Babylonian period"
+    status: historical-control
+  - id: CTL-FIFTY
+    statement: "Enuma Elish presents the Fifty Names as a climactic status-bearing name sequence; scholarship notes a fifty-one-name transmitted count and the traditional association of fifty with Enlil"
+    status: historical-control
+
+next_actions:
+  - ingest a line-addressable Enuma Elish VI-VII witness
+  - create one record per name with sequence and destiny/function
+  - add An-Anum and commentary parallels as independent witnesses
+  - build Tutu-Borsippa and Asalluhi-Marduk phase graphs
+  - connect MDK-03 to Esagila metrology/geometry witness pack
