@@ -256,10 +256,50 @@ entries:
       This distinction should be applied to imperial inscriptions, covenant texts, and
       historiographic retellings.
 
+  - id: RR23
+    topic: decipherment_success_conditions
+    previous_state: "Rosetta-style crosswalks and Hittite covariance treated as separate calibration cases"
+    new_findings: [Byblos-negative-control, Ugarit-multilingual-hub, multilingual-inscription-survey]
+    status: promoted
+    update: >
+      Decipherment should now be modeled through effective crosswalk degree, anchor density,
+      crosswalk depth, corpus covariance, and value-assignment entropy. Byblos becomes the
+      control for a low-degree system with no secure explicit crosswalk.
+    new_rule: "a decipherment model must reduce uncertainty by independent constraints and predict holdout material"
+
+  - id: RR24
+    topic: ancient_script_lattice
+    previous_state: "exact-sign, phonological, cross-script, spatial and diachronic comparison"
+    new_findings: [Byblos-sign-frequency-chart, medium-conditioned-variants]
+    status: strengthened
+    update: >
+      Add token frequency, medium distribution, variant-series testing, value-assignment entropy,
+      and holdout prediction. Surface glyph count must be separated from normalized grapheme count.
+    new_rule: "surface glyph != grapheme != phonetic value"
+
+  - id: RR25
+    topic: Ugarit_crosswalk_density
+    previous_state: "KTU 5.14 treated as a single high-value pronunciation crosswalk"
+    new_findings: [Ugarit-bilingual-trilingual-quadrilingual-survey]
+    status: promoted
+    update: >
+      Recast Ugarit as a multilingual archive hub rather than a single crosswalk object.
+      Intersecting language/script paths create cycle-consistency tests unavailable in isolated bilinguals.
+
+  - id: RR26
+    topic: Rosetta_object_value
+    previous_state: "multilingual objects privileged for calibration"
+    new_findings: [anchor-density-model, Byblos-control]
+    status: narrowed
+    update: >
+      The value of a Rosetta object is not multilinguality by itself, but the number,
+      specificity, independence and granularity of the crosswalk edges it contributes.
+    new_rule: "crosswalk quality outranks language count"
+
 next_revisit_queue:
+  - Byblos_sequence_graph_and_holdout_design
+  - Ugarit_multilingual_cycle_consistency
+  - Aphek_trilingual_source_lock
   - older_harmonic_numeric_null_retests
-  - referential_stratification_plus_classifier_axis
-  - pace_residual_plus_dependency_correction
-  - Cyrus_inverse_kingship_plus_embodied_readiness_polarity
   - flood_name_orbit_plus_identity_tensor
   - RN04_Karatepe_Cinekoy_alignment
