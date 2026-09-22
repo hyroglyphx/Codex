@@ -1,0 +1,80 @@
+dataset: byblos-chart-observation
+version: 0.1.0
+updated: 2026-09-22
+status: IMAGE_DERIVED_OBSERVATION_NOT_DECIPHERMENT
+
+source:
+  type: user_supplied_sign_chart
+  title_visible: "BYBLOS SYLLABARY"
+  note: >
+    The image is treated as a catalogue/frequency visualization, not as an
+    established phonetic decipherment key. Red alphanumeric labels are handled
+    as sign identifiers; no sound values are inferred from them.
+
+cell_schema_observed:
+  graphic_sign: upper_or_central_cell
+  sign_id: red_alphanumeric_label
+  token_frequency: lower_right_x_count
+  medium_distribution:
+    markers: [T, S, M]
+    interpreted_as_chart_metadata:
+      T: tablet
+      S: spatula
+      M: monument
+    confidence: medium_to_high_from_chart_legend_pattern_and_specialist_context
+
+visible_frequency_range:
+  minimum: "1x"
+  maximum: "64x"
+  note: >
+    The chart visibly contains many singleton/low-frequency signs and a smaller
+    number of much more frequent signs, producing a strongly skewed token distribution.
+
+high_frequency_examples_visible:
+  - {sign_id: E7, frequency: "64x", status: visual_read_high_confidence}
+  - {sign_id: E8, frequency: "48x", status: visual_read_high_confidence}
+  - {sign_id: G8, frequency: "41x", status: visual_read_high_confidence}
+  - {sign_id: G17, frequency: "34x", status: visual_read_high_confidence}
+  - {sign_id: G6, frequency: "34x", status: visual_read_high_confidence}
+  - {sign_id: D3, frequency: "32x", status: visual_read_high_confidence}
+  - {sign_id: D4, frequency: "28x", status: visual_read_high_confidence}
+  - {sign_id: E5, frequency: "27x", status: visual_read_high_confidence}
+  - {sign_id: G3, frequency: "26x", status: visual_read_high_confidence}
+  - {sign_id: D2, frequency: "25x", status: visual_read_high_confidence}
+
+variant_series_visible:
+  - [E18, "E18'", "E18''", "E18'''"]
+  - [H8, "H8'"]
+  - [A8, "A8'"]
+  - [E21, "E21'"]
+  - [G2, "G2'"]
+  note: >
+    Prime-marked series are catalogue-level variant groupings in the chart.
+    They must not be automatically collapsed as allographs; distributional tests are required.
+
+derived_observations:
+  - id: BYC_D1
+    statement: "The sign-frequency distribution is highly uneven; frequency can therefore be used as a structural variable before any phonetic reading."
+  - id: BYC_D2
+    statement: "Catalogue variant series provide a ready-made test set for medium-conditioned allography."
+  - id: BYC_D3
+    statement: "T/S/M metadata allow sign-shape hypotheses to be tested against carrier medium."
+  - id: BYC_D4
+    statement: "High-frequency signs are candidates for grammatical/common syllabic functions, but frequency alone cannot assign a value."
+  - id: BYC_D5
+    statement: "Singleton signs may be rare values, names, damaged variants, or over-split graphemes; they require separate treatment."
+
+required_tests:
+  - "Reconstruct token-level corpus positions for the high-frequency signs."
+  - "Compare left/right/initial/final position distributions."
+  - "Test prime-marked variant series for complementary distribution by medium."
+  - "Build bigram/trigram graphs without assigning phonetic values."
+  - "Estimate normalized grapheme inventory after variant clustering."
+  - "Reserve at least one inscription as a holdout before testing any decipherment hypothesis."
+
+claim_ceiling:
+  sign_identity: catalogue_observation
+  frequency: chart_observation
+  phonetic_value: not_inferred
+  language: not_inferred
+  decipherment: not_claimed
