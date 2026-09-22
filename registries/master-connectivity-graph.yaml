@@ -503,3 +503,18 @@ marduk_identity_laboratory:
   spatial_pipeline: "Marduk -> Babylon -> Esagila -> witness -> reconstruction"
   borsippa_pipeline: "Tutu -> Borsippa -> syncretic relation -> Marduk name-complex"
   organon_question: "Under what operator, domain, witness, location, and historical phase is identity asserted, distinguished, transferred, or promoted?"
+
+
+generative_gate_algebra:
+  protocol: docs/architecture/generative-gate-algebra-v0.1.md
+  registry: registries/generative-gate-algebra-v0.1.yaml
+  status: active_experimental
+  inputs:
+    - Sefer-Yetzirah-231-Gates
+    - prior-coherence-gate-work
+    - Marduk-Fifty-Names
+    - TCIM
+    - Nexus
+    - Invariant-Forge
+  pipeline: "basis -> potential gates -> typed operators -> attested edges -> derived candidates -> preregistered predictions -> holdout/null tests -> invariants -> promotion/rejection/Omega"
+  rule: "complete graphs define possibility spaces only; historical activation requires witnesses"
