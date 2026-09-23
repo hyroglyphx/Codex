@@ -2,7 +2,7 @@
 
 Status: ADOPTED_LEGACY_ARCHITECTURE  
 Date: 2026-09-23  
-Recovered source: The Oriented Language Field Volumes I–XV and XVII  
+Recovered source: The Oriented Language Field Volumes I–XVII  
 Scope: Linguistic Core / Experiment Harness / Representation Interaction / Structural Continuation / Learning
 
 ## Purpose
@@ -316,3 +316,27 @@ TYPE
 ## Governing rule
 
 > A transport is not characterized only by its endpoints. Its carrier views, nuisance variables, ordered transforms, loss vector, return defect, and failure state are part of the result.
+
+
+## 19. Distributed holonomy / Volume XVI
+
+Volume XVI extends witness transport to a changing system whose members, capabilities, route graph, information, legitimacy, residue, memory, and mission may all change together.
+
+Canonical distributed state:
+
+```
+E_t=(Carrier,Capability,Graph,Info,Legitimacy,Residue,Memory,Mission)
+```
+
+Key additions:
+- distributed continuity = required relations remain recoverable after change;
+- carrier can be an active coordination operator;
+- handoff has role, tacit-memory, coordination, authority, and observer defects;
+- route topology can change after passage;
+- return is generally non-inverse;
+- mission completion is not world restoration;
+- a certificate is not a remedy;
+- role labels may depend on observer, jurisdiction, time, and relation.
+
+Controlling supplement:
+`docs/architecture/distributed-holonomy-capability-ecology-v0.1.md`.
