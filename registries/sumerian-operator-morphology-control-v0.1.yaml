@@ -1,0 +1,33 @@
+version: "0.1"
+date: "2026-09-23"
+id: SUMERIAN_OPERATOR_MORPHOLOGY_CONTROL
+status: ADOPTED_LEXICAL_CONTROL
+protocol: docs/architecture/sumerian-operator-morphology-control-v0.1.md
+controls:
+  LUGAL:
+    role: holder_king
+  NAM_LUGAL:
+    role: office_state_kingship
+    rule: "HOLDER != OFFICE"
+  NAM:
+    role: abstraction_state_office_operator
+  ME:
+    role: function_office_responsibility_capacity
+    warning: "do not compress to magic_power"
+  ME_NAM_NUN_NA:
+    role: royal_function_authorized_capacity
+  INIM:
+    role: word_statement_matter
+  MU:
+    role: name_word_year_entry_oath
+  LU_INIM_MA:
+    role: witness_statement_bearing_person
+  SI_SA:
+    role: straight_order_correct_legal_fair
+  NI_SI_SA:
+    role: equity_justice
+bindings:
+  - linguistic_core
+  - marduk_identity_laboratory
+  - mythic_genealogical_classifier_transport
+  - nexus_transposition_recovered_operators
