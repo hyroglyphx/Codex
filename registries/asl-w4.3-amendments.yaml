@@ -74,3 +74,23 @@ supplement_w4_3a:
     - POLITICAL_ROLE
     - EMIC_ETIC_STATE
   new_transform_family: MYTHIC_GENEALOGICAL_COMPRESSION
+
+legacy_linguistic_recovery:
+  linguard_registry: registries/linguard-admissibility-recovery-v0.1.yaml
+  oriented_language_field_registry: registries/oriented-language-field-recovery-v0.1.yaml
+  language_lane_registry: registries/legacy-language-lane-recovery-v0.1.yaml
+  additions:
+    - full_form_priority
+    - open_segmentation
+    - semantic_envelope
+    - carrier_loss_record
+    - referent_migration
+    - secondary_convergence
+    - resegmentation_history
+    - nuisance_gate
+    - transport_loss_vector
+    - transport_holonomy
+    - path_divergence
+    - semantic_curvature
+    - Ariadne_trace
+  rule: "historical promotion remains path-specific; discovery windows and structural comparisons do not bypass chronology/provenance gates"
