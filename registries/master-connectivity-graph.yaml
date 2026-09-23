@@ -655,3 +655,32 @@ asl_w4_3:
   governing_question: "What survives the transformation from X to Y, through which carrier, under which operator, at which phase and position, for which audience, and at what historically calibrated cost?"
   mandatory_promotion_protocol: [FREEZE,HIDE,PREDICT,REVEAL,SCORE,REGENERATE]
   feeds: [linguistic_core, experiment_analysis_harness, ancient_script_lattice_uptake, elamite_carrier_pivot, TCIM, ECVR, Organon, Adversary]
+
+
+mythic_genealogical_classifier_transport:
+  protocol: docs/architecture/asl-w4.3a-mythic-genealogical-classifier-transport.md
+  registry: registries/mythic-genealogical-classifier-transport-v0.1.yaml
+  status: adopted_project_supplement
+  source_nodes: [Phoroneus, Pelasgian-classifier-field]
+  operators:
+    - CIVIC_AGGREGATION
+    - SPEECH_FRAGMENTATION_TO_LOCAL_ORDER
+    - GEO_GENEALOGICAL_COMPRESSION
+    - RELATIONAL_ROLE_PERMUTATION
+    - POLITICAL_PARTITION_TO_TERRITORIAL_LINEAGE
+    - AUTHORIAL_CLASSIFIER_LAW
+    - FOLK_ETYMOLOGY_FALSE_POSITIVE
+    - COMPOSITE_ETHNONYM
+    - RETROACTIVE_SPATIAL_UNIFICATION
+  connects:
+    - ancient_script_lattice_uptake
+    - asl_w4_3
+    - TCIM
+    - Nexus
+    - Myth_Logic_Kernel
+    - Structural_Continuation
+    - Organon
+    - Adversary
+  governing_rules:
+    - "mythic genealogy is evidence for a culture's model of relation before literal descent"
+    - "ethnonym recurrence is evidence for classifier continuity before population continuity"
