@@ -241,3 +241,18 @@ crosscutting_paths:
     density: D4
     primary: [Sumerian, Akkadian, Eblaite-Semitic, Ugaritic, Egyptian-Coptic, Demotic-Egyptian, Old-Persian, Elamite, Classical-Greek, Aramaic-Syriac, Phoenician-Punic, Luwian, Lycian]
     note: "High-confidence calibration lane built from ancient sign lists, reading glosses, bilinguals and trilinguals. Used to learn transformation behavior before projecting into uncertain corpora."
+
+
+legacy_language_lane_recovery:
+  registry: registries/legacy-language-lane-recovery-v0.1.yaml
+  nodes:
+    - {tradition: Samaritan-Hebrew, path: P12, coverage: D2, status: structured, note: "independent Pentateuchal text/readout/script custody; consonantal text, community reading, script form, and translation witnesses remain separate; Gerizim/Jerusalem sacred-center divergence is typed"}
+    - {tradition: Samaritan-Aramaic, path: P12, coverage: D1, status: registered, note: "translation/commentary lane attached to Samaritan textual tradition; not identical with Samaritan Hebrew"}
+    - {tradition: Chaldean-Neo-Aramaic, path: P12, coverage: D1, status: registered, note: "modern NENA/Sureth lane; kept separate from ancient Chaldeans, older catalog labels, and modern numerology"}
+  recovered_controls:
+    - Geez_fidal_as_consonant_family_x_vowel_order
+    - Geez_Amharic_same_script_family_different_language_state
+    - Chaldean_overloaded_classifier
+    - Greek_same_alphabet_multiple_functions
+    - Latin_numeric_sparsity
+    - Arabic_numeric_convention_sensitivity
