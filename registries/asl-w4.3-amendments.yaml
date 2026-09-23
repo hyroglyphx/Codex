@@ -55,3 +55,22 @@ queue:
   P6: Konar_Sandal_chirality_resolution
   P7: mandatory_withheld_prediction_trials
 seal: "Witness first. Relation typed. Transformation reversible. Dependency visible. Promotion path-specific."
+
+supplement_w4_3a:
+  protocol: docs/architecture/asl-w4.3a-mythic-genealogical-classifier-transport.md
+  registry: registries/mythic-genealogical-classifier-transport-v0.1.yaml
+  status: adopted
+  classifier_law: "ETHNONYM != EMIC_SELF_IDENTIFICATION"
+  added_false_equivalence_controls:
+    - Pelasgos_pelargos_folk_etymology
+    - Pelasgian_authorial_classifier
+    - retrospective_territorial_unification
+    - mythic_kinship_permutation
+  non_compensatory_metadata:
+    - CLASSIFIER_PROVENANCE
+    - KINSHIP_EDGE_PROVENANCE
+    - NARRATIVE_PHASE
+    - PLACE_ADDRESS
+    - POLITICAL_ROLE
+    - EMIC_ETIC_STATE
+  new_transform_family: MYTHIC_GENEALOGICAL_COMPRESSION
