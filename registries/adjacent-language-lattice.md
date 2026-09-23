@@ -573,3 +573,115 @@ compressed representation -> decomposed representation
 is a spectral relation.
 
 It becomes a historical-development claim only when chronology, morphology, sound law and witnesses independently support the path.
+
+
+---
+
+## P. Mythic Genealogy / Classifier Transport
+
+### P1. Phoroneus civic aggregation
+
+Add Phoroneus as a mythic-state operator node rather than a literal migration/genealogy claim.
+
+```
+DISPERSED HOUSEHOLDS
+-> GATHER
+-> COMMUNITY
+-> LAW
+-> TECHNOLOGY/FIRE
+-> POLITICAL ORDER
+```
+
+Use for controlled comparison of culture-hero bundles where social aggregation, law, technology, and kingship are concentrated in one founder figure.
+
+### P2. Geography compressed into genealogy
+
+Register:
+
+```
+GEOGRAPHIC FEATURE
+-> PERSONIFICATION
+-> KINSHIP
+-> FOUNDER/RULER
+-> TERRITORIAL IDENTITY
+```
+
+The Phoroneus/Inachus/Argia complex is a calibration object for GEO_GENEALOGICAL_COMPRESSION.
+
+### P3. Kinship-edge variance
+
+Competing genealogical witnesses must remain separate.
+
+```
+stable entity node != fixed kinship graph
+```
+
+Treat source-dependent parent/spouse/child relations as RELATIONAL_ROLE_PERMUTATION, with each edge carrying source/date/provenance.
+
+### P4. Phoroneus -> Pelasgus partition lane
+
+Track the mythic-state transform:
+
+```
+PRIOR POLITICAL UNITY
+-> SUCCESSION / PARTITION
+-> GENEALOGICAL BRANCH
+-> TERRITORIALIZATION
+```
+
+This can be compared with other Greek eponymous-founder genealogies without treating the story as direct proof of population descent.
+
+### P5. Pelasgian authorial classifier control
+
+Add the canonical law:
+
+```
+ETHNONYM != EMIC SELF-IDENTIFICATION
+```
+
+Required metadata:
+classifier author, date, audience, purpose, emic/etic status, referent location, referent period, provenance.
+
+### P6. Pelasgos/pelargos false-etymology control
+
+Use as a permanent adversarial example of:
+
+```
+phonetic resemblance
+-> semantic story
+-> migration/history narrative
+```
+
+without sufficient independent historical-linguistic support.
+
+### P7. Composite ethnonym
+
+Treat Tyrsenoi-Pelasgoi as an OBSERVED ancient classifier relation.
+
+Do not automatically promote it to:
+same population, same language, common ancestry, or migration direction.
+
+### P8. Retroactive spatial unification
+
+Register:
+
+```
+SEPARATE PLACE MEMORIES
+-> NARRATIVE AGGREGATION
+-> RETROSPECTIVE TERRITORIAL UNITY
+```
+
+Rule:
+
+```
+place-memory preservation != demonstrated historical polity
+```
+
+### P9. New methodological distinction
+
+```
+GENEALOGY can manufacture territorial continuity
+ETHNOGRAPHY can manufacture population continuity
+```
+
+Both may preserve historical residue, but each requires a typed transformation path before use as historical evidence.
