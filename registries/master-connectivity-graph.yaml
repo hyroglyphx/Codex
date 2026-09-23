@@ -703,3 +703,32 @@ legacy_linguistic_recovery_2026_09_23:
     status: adopted_legacy_recovery
     recovered_nodes: [Samaritan_Hebrew,Ge_ez_fidal,Amharic_bridge,Chaldean_label_disambiguation]
   connects: [linguistic_core,asl_w4_3,experiment_analysis_harness,representation_interaction_calibration,structural_continuation_gate_dynamics,TCIM,Nexus,Organon,Adversary]
+
+
+distributed_holonomy_capability_ecology:
+  protocol: docs/architecture/distributed-holonomy-capability-ecology-v0.1.md
+  registry: registries/distributed-holonomy-capability-ecology-v0.1.yaml
+  status: adopted_legacy_architecture
+  connects: [oriented_language_field_recovery,structural_continuation_gate_dynamics,experiment_analysis_harness,linguistic_core,mythic_genealogical_classifier_transport,representation_interaction_calibration]
+  governing_rule: "required relations may persist through changing membership, capability and route topology; nominal return is not inverse restoration"
+
+nexus_transposition_recovered_operators:
+  protocol: docs/architecture/nexus-transposition-recovered-operators-v0.1.md
+  registry: registries/nexus-transposition-recovered-operators-v0.1.yaml
+  status: adopted_legacy_recovery
+  operators: [CARRIER_ORBIT,CARRIER_OPERATOR_COUPLING,PHASESHIFT,PARALLEL_READOUT,SEMANTIC_BACK_PROJECTION,HONORIFIC_TRANSPOSITION]
+  connects: [linguistic_core,asl_w4_3,elamite_carrier_pivot,rosetta_nexus_calibration,structural_continuation_gate_dynamics]
+
+sumerian_operator_morphology_control:
+  protocol: docs/architecture/sumerian-operator-morphology-control-v0.1.md
+  registry: registries/sumerian-operator-morphology-control-v0.1.yaml
+  status: adopted_lexical_control
+  core_distinctions: [holder_vs_office,entity_vs_function,name_vs_statement,witness_as_statement_role,straightness_order_rightness_semantic_path]
+  connects: [linguistic_core,marduk_identity_laboratory,mythic_genealogical_classifier_transport,nexus_transposition_recovered_operators]
+
+pre_greek_substrate_pelasgian_separation:
+  protocol: docs/architecture/pre-greek-substrate-pelasgian-separation-control-v0.1.md
+  registry: registries/pre-greek-substrate-pelasgian-separation-control-v0.1.yaml
+  status: source_assisted_control
+  firewall: "PRE_GREEK_SUBSTRATE != PELASGIAN_AUTHORIAL_CLASSIFIER != POPULATION_IDENTITY"
+  connects: [mythic_genealogical_classifier_transport,linguistic_core,ancient_script_lattice_uptake]
