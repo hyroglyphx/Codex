@@ -57,3 +57,13 @@ experiments: [MG-01,MG-02,MG-03,MG-04,CL-01,CL-02,CL-03,CL-04]
 governing_rules:
   - "mythic genealogy is evidence for a culture's model of relation before literal descent"
   - "ethnonym recurrence is evidence for classifier continuity before population continuity"
+
+substrate_classifier_extension:
+  PEL-05:
+    name: SUBSTRATE_CLASSIFIER_FIREWALL
+    rule: "PRE_GREEK_SUBSTRATE != PELASGIAN_AUTHORIAL_CLASSIFIER != POPULATION_IDENTITY"
+  PEL-06:
+    name: TOPONYMIC_MORPHOLOGY_SEPARATION
+    rule: "toponymic morphology does not auto-promote ethnonym, population, migration, or single-language identity"
+  control: registries/pre-greek-substrate-pelasgian-separation-control-v0.1.yaml
+  role_metadata: [OBSERVER,JURISDICTION,PHASE,RELATION,PERMISSIONS,DUTIES]
