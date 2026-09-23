@@ -63,3 +63,12 @@ ingestion:
   fifty_names: registries/marduk-fifty-names-ingestion-v0.1.yaml
   status: ACTIVE_PARTIAL_INGESTION
   rule: "Preserve the literary Fifty rubric, transmitted count problem, line-addressable names, functions/destinies, manuscript witnesses, and parallel god-list evidence without harmonizing discrepancies."
+
+office_function_extension:
+  benchmark:
+    id: MDK-06
+    name: office-function-separation
+    tests: holder_office_function_nonidentity
+    rule: "ENTITY != NAME != OFFICE != FUNCTION != AUTHORIZED_CAPACITY"
+  positive_control: registries/sumerian-operator-morphology-control-v0.1.yaml
+  operator_additions: [TRANSFER_OFFICE, ASSIGN_CAPACITY, DISTINGUISH_HOLDER_FROM_OFFICE]
