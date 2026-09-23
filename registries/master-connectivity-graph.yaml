@@ -732,3 +732,15 @@ pre_greek_substrate_pelasgian_separation:
   status: source_assisted_control
   firewall: "PRE_GREEK_SUBSTRATE != PELASGIAN_AUTHORIAL_CLASSIFIER != POPULATION_IDENTITY"
   connects: [mythic_genealogical_classifier_transport,linguistic_core,ancient_script_lattice_uptake]
+
+
+recovered_language_operator_cross_application:
+  study: studies/recovered-language-operator-cross-application-2026-09-23.md
+  status: active_synthesis
+  inputs:
+    - distributed_holonomy_capability_ecology
+    - nexus_transposition_recovered_operators
+    - sumerian_operator_morphology_control
+    - pre_greek_substrate_pelasgian_separation
+  executable_tests: [CROSS-OP-01,CROSS-OP-02,CROSS-OP-03,CROSS-OP-04,CROSS-OP-05,CROSS-OP-06]
+  first_bound_study: studies/qbl-center-interface-evidence-pack.md
