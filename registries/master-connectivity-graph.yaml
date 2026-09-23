@@ -684,3 +684,22 @@ mythic_genealogical_classifier_transport:
   governing_rules:
     - "mythic genealogy is evidence for a culture's model of relation before literal descent"
     - "ethnonym recurrence is evidence for classifier continuity before population continuity"
+
+
+legacy_linguistic_recovery_2026_09_23:
+  linguard:
+    protocol: docs/architecture/linguard-admissibility-recovery-v0.1.md
+    registry: registries/linguard-admissibility-recovery-v0.1.yaml
+    status: adopted_legacy_recovery
+    key_additions: [full_form_priority,open_segmentation,semantic_envelope,carrier_loss,referent_migration,secondary_convergence,resegmentation_history]
+  oriented_language_field:
+    protocol: docs/architecture/oriented-language-field-recovery-v0.1.md
+    registry: registries/oriented-language-field-recovery-v0.1.yaml
+    status: adopted_legacy_architecture
+    key_additions: [nuisance_gate,late_fusion,transport_loss_vector,round_trip_metrics,transport_holonomy,path_divergence,semantic_curvature,admissible_geodesics,Ariadne_trace,prior_gate]
+  language_lanes:
+    protocol: docs/architecture/legacy-language-lane-recovery-v0.1.md
+    registry: registries/legacy-language-lane-recovery-v0.1.yaml
+    status: adopted_legacy_recovery
+    recovered_nodes: [Samaritan_Hebrew,Ge_ez_fidal,Amharic_bridge,Chaldean_label_disambiguation]
+  connects: [linguistic_core,asl_w4_3,experiment_analysis_harness,representation_interaction_calibration,structural_continuation_gate_dynamics,TCIM,Nexus,Organon,Adversary]
