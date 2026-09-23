@@ -60,3 +60,17 @@ linguistic_core:
     resegmentation_history_preserved: true
     transport_loss_vector: [phonetic,morphological,semantic,pragmatic,orientation,provenance]
     ariadne_trace_condition: "reversible claims retain enough ordered path information to reconstruct return"
+
+  recovered_operator_suites:
+    nexus_transposition:
+      registry: registries/nexus-transposition-recovered-operators-v0.1.yaml
+      operators: [CARRIER_ORBIT,PHASESHIFT,PARALLEL_READOUT,SEMANTIC_BACK_PROJECTION,HONORIFIC_TRANSPOSITION]
+    sumerian_operator_morphology:
+      registry: registries/sumerian-operator-morphology-control-v0.1.yaml
+      controls: [LUGAL,NAM_LUGAL,NAM,ME,ME_NAM_NUN_NA,INIM,MU,LU_INIM_MA,SI_SA]
+    pre_greek_firewall:
+      registry: registries/pre-greek-substrate-pelasgian-separation-control-v0.1.yaml
+      rule: "linguistic substrate, authorial ethnonym and population model remain separate evidence lanes"
+    distributed_holonomy:
+      registry: registries/distributed-holonomy-capability-ecology-v0.1.yaml
+      rule: "handoff, capability, route-topology and non-inverse return are tracked when linguistic custody is distributed"
