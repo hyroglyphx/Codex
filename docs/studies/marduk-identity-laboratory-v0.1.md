@@ -228,3 +228,50 @@ Nexus
 ```
 
 This laboratory turns divine names into a rigorous test case for typed historical identity rather than a flattened synonym table.
+
+
+## MDK-06 — Office / Function Separation
+
+The recovered Sumerian control set adds a useful structural distinction:
+
+```
+LUGAL = holder / king
+NAM-LUGAL = kingship / office-state
+ME = function / office / responsibility / capacity
+```
+
+This is a calibration, not a direct etymological claim about Marduk.
+
+The identity graph must therefore preserve:
+
+```
+ENTITY
+!= NAME
+!= OFFICE
+!= FUNCTION
+!= AUTHORIZED_CAPACITY
+```
+
+A transferred function or inherited title does not by itself prove global entity identity.
+
+Required fields:
+
+```yaml
+holder:
+office:
+function:
+authorized_capacity:
+name_or_title:
+source_entity:
+target_entity:
+witness:
+phase:
+scope:
+counter_witnesses: []
+```
+
+Positive control:
+`registries/sumerian-operator-morphology-control-v0.1.yaml`.
+
+Test:
+Can Codex move an office/function through a historical identity graph while preserving holder distinction, phase, and counter-witnesses?
