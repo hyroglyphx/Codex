@@ -1,6 +1,6 @@
 registry: language-coverage
 version: 0.1.0
-updated: 2026-09-21
+updated: 2026-09-23
 status: GENERATED_LIVING_REGISTRY
 
 coverage_scale:
@@ -110,7 +110,7 @@ core_matrix:
   - {row: 33, tradition: Lemnian, path: P07, coverage: D3, role: "Tyrsenian morphology/script study; Kaminia stele; Etruscan relationship control"}
   - {row: 34, tradition: Iberian, path: P07, coverage: D2, role: "semi-syllabic western contact and numeral candidate control"}
   - {row: 35, tradition: Basque, path: P07, coverage: D2, role: "western non-IE external control"}
-  - {row: 36, tradition: Proto-Kartvelian-Georgian, path: P10, coverage: D2, role: "consonant-rich external control"}
+  - {row: 36, tradition: Kartvelian-Colchis, path: P10, coverage: D3, role: "active genealogical + Colchian substrate + Greek/Aramaic epigraphy + Iranian-contact + early Georgian translation study"}
   - {row: 37, tradition: Proto-Uralic-Finnic, path: P10, coverage: D2, role: "distant morphological/numeral control"}
   - {row: 38, tradition: Tamil, path: P10, coverage: D2, role: "Dravidian agglutinative deep control"}
   - {row: 39, tradition: Meroitic, path: P08, coverage: D2, role: "Nile script-adaptation and boundary-language control"}
