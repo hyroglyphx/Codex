@@ -1,6 +1,6 @@
 {
   "relay": "Codex Reuptake",
-  "updated_at": "2026-09-22",
+  "updated_at": "2026-09-23",
   "repository": "hyroglyphx/Codex",
   "branch": "research/reconcile-state-2026-09-20",
   "pull_request": 1,
@@ -9,7 +9,8 @@
     "Byblos validation with blind holdout preserved",
     "Ugarit row-level cycle residuals",
     "Aphek trilingual source lock",
-    "RN04 Karatepe/Cinekoy bilingual calibration"
+    "RN04 Karatepe/Cinekoy bilingual calibration",
+    "Kartvelian/Colchis script-language-substrate separation and translation lattice"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -34,7 +35,8 @@
     "studies/crosswise-resolution-covariance-benchmark.md",
     "studies/arity-compression-spectral-language-sieve.md",
     "studies/multimodal-synchronous-state-harmonics.md",
-    "studies/qbl-carrier-reception-confrontation.md"
+    "studies/qbl-carrier-reception-confrontation.md",
+    "studies/kartvelian-colchis-script-translation-transmission-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -42,7 +44,8 @@
     "Add cross-copy residuals for additional Ugarit quadrilingual vocabulary witnesses",
     "Acquire primary Aphek trilingual row transliteration from Rainey 1976 or later critical edition",
     "Extend RN04 Karatepe/Cinekoy to clause-level Phoenician-Luwian alignment and specialist Cinekoy edition",
-    "Continue source-locking positive decipherment benchmark cases"
+    "Continue source-locking positive decipherment benchmark cases",
+    "Build source-locked Colchian onomastic matrix: Qulha/Kulha, Kolkhis, Aia, Phasis, Kutais/Kutaia, Aeetes, Medea, Absyrtos and regional ethnonyms"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -63,7 +66,8 @@
     "decipherment-benchmark-cases-v0.1": "survey_derived",
     "Byblos-Ugarit positive-negative experiment": "first_comparative_pass_complete",
     "RN04 Karatepe-Cinekoy": "first_alignment_complete",
-    "DB03 Karatepe decipherment benchmark": "source_locked_first_alignment"
+    "DB03 Karatepe decipherment benchmark": "source_locked_first_alignment",
+    "Kartvelian-Colchis-transmission-v0.1": "observed_candidate_packet_added"
   },
   "active_candidate_results": {
     "anchored": [
