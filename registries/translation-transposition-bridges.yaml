@@ -1,6 +1,6 @@
 registry: translation-transposition-bridges
 version: 0.1.0
-updated: 2026-09-21
+updated: 2026-09-23
 status: LIVING
 
 bridge_types:
@@ -253,6 +253,20 @@ edges:
   - {id: E291, source: Hittite-ed-ezz-watar-forms, target: Indo-European-cognate-network, type: B30, class: C1, status: decipherment_covariance, note: "lexical resemblance becomes admissible only with morphology, syntax, and corpus-wide propagation"}
   - {id: E292, source: known-cuneiform-script, target: Hittite-language-readout, type: B30, class: C0, status: carrier_readout_separation, note: "script was readable before the language was identified"}
 
+
+  # Kartvelian / Colchis genealogy, epigraphy and translation expansion
+  - {id: E300, source: Proto-Kartvelian, target: Svan, type: B10, class: C1, status: connected_family, note: "genealogical daughter relation; chronology remains model-dependent"}
+  - {id: E301, source: Proto-Karto-Zan, target: Georgian, type: B10, class: C1, status: connected_family}
+  - {id: E302, source: Proto-Karto-Zan, target: Zan, type: B10, class: C1, status: connected_family}
+  - {id: E303, source: Zan, target: Mingrelian-Laz, type: B10, class: C1, status: connected_family, note: "Mingrelian and Laz are the extant Zan daughters"}
+  - {id: E304, source: probable-Colchian-Kartvelian-Zan-substrate, target: Greek-Colchian-epigraphic-interface, type: B11, class: C3, status: candidate_interface, note: "co-presence model only; Greek inscription language does not identify the local spoken substrate"}
+  - {id: E305, source: Armazi-Greek-text, target: Armazi-Aramaic-Aramaic-derived-text, type: B2, class: C0, status: connected_same_object_parallel, note: "parallel funerary witness with unequal detail; non-Greek language classification disagreement preserved"}
+  - {id: E306, source: Imperial-Aramaic-writing-tradition, target: Armazian-Aramaic-script, type: B5, class: C1, status: connected_script_variant, note: "script genealogy does not by itself settle whether every Armazian text is Aramaic or Iranian in language"}
+  - {id: E307, source: Iranian-administrative-lexical-layer, target: Georgian, type: B6, class: C1, status: connected_contact, note: "direct and Armenian-mediated borrowings must be separated item by item; bidaxsh/pitiakhsh is a calibration orbit"}
+  - {id: E308, source: Syriac-Christian-literary-roots, target: early-Georgian-Christian-literature, type: B8, class: C2, status: connected_mediated, note: "often mediated through Armenian; not a claim that every Georgian text derives from Syriac"}
+  - {id: E309, source: Armenian-Christian-literary-mediation, target: early-Georgian-Christian-literature, type: B1, class: C1, status: connected_translation_mediation, note: "translation base remains text-specific"}
+  - {id: E310, source: Greek-Christian-textual-tradition, target: Georgian-Christian-literature, type: B1, class: C1, status: connected_translation_family, note: "direct Greek influence grows early and becomes increasingly important; evaluate per text/manuscript"}
+
   - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
   - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
   - {node: Palaic, target_bridge: "Hittite/Luwian Anatolian comparison", preferred_types: [B10], status: connected_needs_morphology_pack}
@@ -263,7 +277,7 @@ edges:
   - {node: Meroitic, target_bridge: "Egyptian/Nile script-contact field", preferred_types: [B5,B11], status: connected_boundary}
   - {node: Eteocypriot, target_bridge: "Greek/Cypriot bilingual environment", preferred_types: [B2,B5,B11], status: connected_boundary}
   - {node: Iberian, target_bridge: "Phoenician/Greek/Latin western contact", preferred_types: [B2,B6,B11], status: connected_boundary}
-  - {node: Kartvelian, target_bridge: "Caucasian external-control and contact field", preferred_types: [B10,B11], status: connected_control}
+  - {node: Kartvelian, target_bridge: "Colchis/Iberia genealogical, epigraphic, Iranian-contact and translation field", preferred_types: [B1,B2,B5,B6,B9,B10,B11,B15], status: connected_active_study}
   - {node: Proto-Uralic-Finnic, target_bridge: "genealogical/distant numeral control", preferred_types: [B10,B11], status: connected_control}
   - {node: Tamil-Dravidian, target_bridge: "deep typological/ritual-language control", preferred_types: [B11], status: connected_control}
   - {node: Suebi-Suebian, target_bridge: "Latin + later Germanic/Romance textual and onomastic evidence", preferred_types: [B6,B8,B9,B10], status: connected_needs_linguistic_witnesses}
