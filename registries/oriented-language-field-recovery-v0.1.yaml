@@ -1,0 +1,41 @@
+version: "0.1"
+date: "2026-09-23"
+id: ORIENTED_LANGUAGE_FIELD_RECOVERY
+status: ADOPTED_LEGACY_ARCHITECTURE
+protocol: docs/architecture/oriented-language-field-recovery-v0.1.md
+recovered_series: [I,II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVII]
+carrier_chain: "L=(P,A,C,G,O,Y,M)"
+carrier_coordinates:
+  P: phoneme
+  A: acoustic
+  C: cymatic_apparatus_conditioned
+  G: glyph
+  O: orientation
+  Y: syntax
+  M: meaning
+analysis_object: "R=(witness,views,transforms,nuisance_variables,uncertainty,decision,failure_state)"
+loss_vector: [phonetic,morphological,semantic,pragmatic,orientation,provenance]
+experiment_decisions: [PASS,FAIL,INCONCLUSIVE,REPAIR,QUARANTINE]
+corpus_states: [SEED,REVIEWED,GOLD,REPAIR,INCONCLUSIVE,QUARANTINE]
+metrics:
+  W: within_class_dispersion
+  B: between_class_separation
+  Q: invariance_ratio
+  L_nuisance: nuisance_leakage
+  C_view: cross_view_concordance
+  O_sens: orientation_sensitivity
+  Y_role: role_recovery
+  T_return: round_trip_retention
+holonomy:
+  return_defect: "H_Gamma(W)=Delta(W,Gamma(W))"
+  path_divergence: "P(Gamma1,Gamma2|W)=Delta(Gamma1(W),Gamma2(W))"
+  semantic_curvature: "K(A,B|W)=Delta(B(A(W)),A(B(W)))"
+  shortest_path_rule: "fewest transforms need not equal most faithful path"
+trace_condition: "reach(target) AND recover(exit)"
+prior_gate: [TYPE,OBSERVE,ADMIT,OPERATE,CLOSE,TRANSPORT,RETURN,CERTIFY]
+bindings:
+  - linguistic_core
+  - experiment_analysis_harness
+  - representation_interaction_calibration
+  - structural_continuation_gate_dynamics
+  - asl_w4_3
