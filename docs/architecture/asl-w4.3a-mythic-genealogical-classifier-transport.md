@@ -271,3 +271,51 @@ A transformation-pattern result does not itself promote a historical ancestry or
 > Mythic genealogy is evidence for a historical culture's model of relation before it is evidence for literal descent.
 
 > Ethnonym recurrence is evidence for classifier continuity before it is evidence for population continuity.
+
+
+## Pre-Greek substrate firewall
+
+### PEL-05 — SUBSTRATE_CLASSIFIER_FIREWALL
+
+```
+PRE_GREEK_SUBSTRATE
+!=
+PELASGIAN_AUTHORIAL_CLASSIFIER
+!=
+POPULATION_IDENTITY
+```
+
+An ancient ethnonym cannot supply the missing linguistic reconstruction of a substrate.
+
+Substrate features must be tested through lexical, phonological, morphological, toponymic, chronological, and geographic evidence before they are connected to an ethnonym.
+
+### PEL-06 — TOPONYMIC_MORPHOLOGY_SEPARATION
+
+Toponymic patterns such as proposed `-ssa/-nda` and `-ssos/-nthos` lanes may be studied as morphological/geographic evidence without converting them directly into population identity, migration direction, or a single reconstructed "Pelasgian language."
+
+Required independent layers:
+
+```
+TOPONYMIC_PATTERN
+LINGUISTIC_SUBSTRATE_HYPOTHESIS
+AUTHORIAL_ETHNONYM
+ARCHAEOLOGICAL_POPULATION_MODEL
+```
+
+Controlling supplement:
+`docs/architecture/pre-greek-substrate-pelasgian-separation-control-v0.1.md`.
+
+## Distributed role metadata
+
+Where a classifier activates permissions, liabilities, or social role, add:
+
+```
+OBSERVER
+JURISDICTION
+PHASE
+RELATION
+PERMISSIONS
+DUTIES
+```
+
+A recurring label can therefore preserve a classifier while changing its operative role under another jurisdiction.
