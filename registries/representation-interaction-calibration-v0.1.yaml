@@ -32,3 +32,13 @@ representation_interaction_calibration:
     - Organon
     - Invariant_Forge
   promotion: "declared operator + recoverable invariant/residual + provenance + relevant control/holdout"
+
+  olf_recovery_binding:
+    registry: registries/oriented-language-field-recovery-v0.1.yaml
+    nuisance_gate_before_fusion: true
+    late_fusion_required_for_cross_view_models: true
+    transport_loss_vector: [phonetic,morphological,semantic,pragmatic,orientation,provenance]
+    return_defect: "H_Gamma(W)=Delta(W,Gamma(W))"
+    path_divergence: "P(Gamma1,Gamma2|W)=Delta(Gamma1(W),Gamma2(W))"
+    semantic_curvature: "K(A,B|W)=Delta(B(A(W)),A(B(W)))"
+    bridge_to_interaction_residual: "noncommutativity is a path/order-sensitive interaction residual"
