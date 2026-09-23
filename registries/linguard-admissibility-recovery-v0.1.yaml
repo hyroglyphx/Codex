@@ -1,0 +1,36 @@
+version: "0.1"
+date: "2026-09-23"
+id: LINGUARD_ADMISSIBILITY_RECOVERY
+status: ADOPTED_LEGACY_RECOVERY
+source_family: [Linguard_Admissibility_Corpus, Linguard_Comparative_Vocabulary_Corpus]
+protocol: docs/architecture/linguard-admissibility-recovery-v0.1.md
+rules:
+  full_form_priority: true
+  open_segmentation: true
+  windows_are_search_objects_not_etymologies: true
+  discovery_verification_separated: true
+  chronology_claim_specific: true
+  deed_transfer_model_required: false
+  carrier_loss_is_information: true
+  foreign_phoneme_approximation_receiver_constrained: true
+  semantic_envelope_required: true
+  referent_migration_typed: true
+  secondary_convergence_control: true
+  resegmentation_history_preserved: true
+  operator_persistence_allowed_without_lexical_identity: true
+state_extension:
+  - full_form
+  - vocalization_state
+  - segmentation_state
+  - semantic_envelope
+  - transport_loss
+  - reanalysis_history
+controls:
+  - ABRAM_full_form_vs_windows
+  - Akkadian_weak_root_behavior
+  - AMURRU_deictic_administrative_label
+  - HABIRU_social_classifier
+  - YEHUDAH_YEHUD_IOUDAIA_IUDAEA_JUDEA_referent_migration
+  - GUDEA_JUDEA_secondary_convergence
+  - MARDUK_logogram_vs_spoken_name
+  - SA_GAZ_Habiru_readout_separation
