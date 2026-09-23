@@ -46,3 +46,17 @@ linguistic_core:
     carrier_readout_law: "CARRIER != READING != LANGUAGE != SEMANTIC_ADDRESS"
     relation_not_genealogy: true
     exact_source_form_immutable: true
+
+  legacy_recovery:
+    linguard_registry: registries/linguard-admissibility-recovery-v0.1.yaml
+    oriented_language_field_registry: registries/oriented-language-field-recovery-v0.1.yaml
+    language_lane_registry: registries/legacy-language-lane-recovery-v0.1.yaml
+    full_form_priority: true
+    open_segmentation_windows_are_not_roots: true
+    semantic_envelope_required: true
+    carrier_loss_recorded: true
+    referent_migration_typed: true
+    secondary_convergence_control: true
+    resegmentation_history_preserved: true
+    transport_loss_vector: [phonetic,morphological,semantic,pragmatic,orientation,provenance]
+    ariadne_trace_condition: "reversible claims retain enough ordered path information to reconstruct return"
