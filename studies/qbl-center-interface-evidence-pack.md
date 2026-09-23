@@ -415,3 +415,61 @@ MIDDLE / CENTRE
 
 That is exactly the sort of crosswise evidence the Nexus is designed to preserve without prematurely
 collapsing it into one etymology.
+
+
+---
+
+## 10. Recovered PHASESHIFT / PARALLEL_READOUT overlay
+
+The recovered Nexus operator set sharpens this study without changing its historical confidence states.
+
+### PHASESHIFT
+
+Treat the secure Semitic lane as process positions:
+
+~~~text
+FRONT / BEFORE
+-> ORIENT TOWARD
+-> FACE / OPPOSITE
+-> ENCOUNTER
+-> {
+     RECEIVE / ACCEPT,
+     CONFRONT
+   }
+~~~
+
+This permits semantic process continuity without requiring every lexical node to be the same word.
+
+The CENTER/MIDDLE branch remains a separate test:
+
+~~~text
+INTERFACE?
+-> BETWEEN SIDES
+-> CENTER / MIDDLE
+~~~
+
+The discriminating question is now whether CENTER is another phase/location of an interface process or merely an adjacent homonymous/carrier-convergent node.
+
+### PARALLEL_READOUT
+
+MURUB4 becomes a direct control for:
+
+~~~text
+same graphic carrier
+!=
+same lexical node
+~~~
+
+The ancient carrier overlap between BATTLE and MIDDLE/CENTRE is therefore evidence about scribal/readout topology, not automatic etymological identity.
+
+### New frozen test
+
+QBL04 — phase-position holdout
+
+1. Freeze FRONT/FACE/ENCOUNTER/RECEIVE/CONFRONT labels.
+2. Hide CENTER/MIDDLE witnesses.
+3. Fit the process-position graph only from the secure branches.
+4. Reveal CENTER/MIDDLE.
+5. Test whether the model predicts a coherent interface-position relation better than matched unrelated QBL-shaped controls.
+
+Status remains OPEN until that holdout is run.
