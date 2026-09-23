@@ -42,3 +42,11 @@ asl_w4_3_binding:
   withheld_prediction_sequence: [FREEZE,HIDE,PREDICT,REVEAL,SCORE,REGENERATE]
   mandatory_for_promotable_candidates: true
   claim_dependency_graph_required: true
+
+olf_recovery_binding:
+  registry: registries/oriented-language-field-recovery-v0.1.yaml
+  experiment_decisions: [PASS,FAIL,INCONCLUSIVE,REPAIR,QUARANTINE]
+  nuisance_variables_required_when_applicable: true
+  loss_vector_required_when_transport_is_tested: true
+  prior_gate: [TYPE,OBSERVE,ADMIT,OPERATE,CLOSE,TRANSPORT,RETURN,CERTIFY]
+  ariadne_trace_required_for_reversibility_claims: true
