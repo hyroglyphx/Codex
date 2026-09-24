@@ -16,7 +16,8 @@
     "Older-name carrier rebinding: Cambyses cross-script/local-titulary transforms and Mycenaean Deukalion pre-myth name continuity",
     "SA/SAR liminal carrier cluster: Samothrace, Sardis, Sardinia, Sauromatae/Sarmatia",
     "Solon-Thales-Anacharsis interface: xenia, law, kinship, travel, and persona recoding",
-    "Thelidae-Neleidai cross-language backprojection: local epigraphy versus transmitted phonemic reception"
+    "Thelidae-Neleidai cross-language backprojection: local epigraphy versus transmitted phonemic reception",
+    "Strabo meta-calibration: name adaptation, textual variants, prestige-toponym transfer, macro-classifiers, and title persistence"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -54,7 +55,12 @@
     "Greek Neilos -> Latin Nilus and Greek Kanobos/Kanopos -> Latin Canopus are same-referent carrier controls.",
     "Relocation and renaming can form one ancient identity transform without implying a universal phonological law.",
     "Repeatedly unfinished literary realizations can preserve a tradition when oral, written, genealogical and archival carriers overlap.",
-    "Plato's Critias explicitly distinguishes semantic name translation from phonetic transliteration in the Atlantis transmission."
+    "Plato's Critias explicitly distinguishes semantic name translation from phonetic transliteration in the Atlantis transmission.",
+    "Ancient geographers explicitly recognized substantial receiving-language reshaping of foreign names.",
+    "Textual variants should be tested against related toponyms, hydronyms, geography and independent witnesses.",
+    "Prestige names may migrate to new geographies independently of the original referent.",
+    "Macro-ethnographic labels can cover many mutually unintelligible local groups.",
+    "Titles can persist after the constitution or office structure that produced them has changed."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -70,7 +76,8 @@
     "studies/older-name-carrier-rebinding-v0.1.md",
     "studies/sa-sar-liminal-carrier-cluster-v0.1.md",
     "studies/solon-thales-anacharsis-interface-v0.1.md",
-    "studies/thelidae-neleidai-cross-language-backprojection-v0.1.md"
+    "studies/thelidae-neleidai-cross-language-backprojection-v0.1.md",
+    "studies/strabo-name-geography-transmission-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -114,7 +121,12 @@
     "Backproject Canopus and Nile through Egyptian local names to separate Greek exonymic overlays from local carriers",
     "Build Atlantis name-translation table from Critias 113 onward: Greek names, meanings, and possible Egyptian semantic lanes",
     "Compare Deucalion flood-memory threshold with Egyptian multiple-destruction/archive-loss model",
-    "Map Solon->Critias->Plato relay channels and distinguish oral memory, written notes, poem plan, and dialogue redaction"
+    "Map Solon->Critias->Plato relay channels and distinguish oral memory, written notes, poem plan, and dialogue redaction",
+    "Build full Strabo foreign-name adaptation table from Books I, XI, XIII and XVI",
+    "Compare Helli/Selli against NEL/THEL as controlled textual-backprojection experiment",
+    "Build Strabo fabricated-toponym negative controls around Homeric geography",
+    "Extend western/Caucasian Iberia matrix with Strabo's explicit gold-mines duplicate-name etiology",
+    "Build sceptuchos delegated-authority matrix and Scepsis title-persistence control"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -145,7 +157,8 @@
     "Solon-Thales-Anacharsis-interface-v0.1": "first_source_lock_complete",
     "Thelidae-Neleidai-backprojection-v0.1": "revised_distinct_group_evidence_explore_NEL_THEL",
     "Solon-Nile-Canopus-resettlement-microcalibration": "source_locked",
-    "Atlantis-Solon-incomplete-relay": "source_locked"
+    "Atlantis-Solon-incomplete-relay": "source_locked",
+    "Strabo-name-geography-transmission-v0.1": "first_source_locked_pass_complete"
   },
   "active_candidate_results": {
     "anchored": [
