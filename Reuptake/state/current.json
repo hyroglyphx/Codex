@@ -100,7 +100,11 @@
     "Inspect Diogenes manuscript families for Θηλιδῶν versus possible Neleid variants",
     "Source-lock Phoenician desire/will personal-name elements and compare against THEL carrier",
     "Date and sequence Miletian Neileid epigraphic spellings",
-    "Test Thales/Thelidai for scribal or oral phonemic attraction without assuming corruption"
+    "Test Thales/Thelidai for scribal or oral phonemic attraction without assuming corruption",
+    "Collate Diogenes 1.22 manuscript readings for Θηλιδῶν versus NEL variants",
+    "Build dated Milesian Neileidai/Thelidai social-group witness matrix",
+    "Search Carian, Lydian, Phoenician/Aramaic and Persian same-referent forms before promoting NEL↔THEL",
+    "Test NEL↔THEL as onomastic rebinding/conflation rather than a regular sound law"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -129,7 +133,7 @@
     "Older-name-carrier-rebinding-v0.1": "first_source_lock_complete",
     "SA-SAR-liminal-carrier-v0.1": "first_source_locked_pass_complete",
     "Solon-Thales-Anacharsis-interface-v0.1": "first_source_lock_complete",
-    "Thelidae-Neleidai-backprojection-v0.1": "first_triangulation_complete"
+    "Thelidae-Neleidai-backprojection-v0.1": "revised_distinct_group_evidence_explore_NEL_THEL"
   },
   "active_candidate_results": {
     "anchored": [
