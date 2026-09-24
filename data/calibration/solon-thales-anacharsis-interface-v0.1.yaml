@@ -52,3 +52,32 @@ negative_controls:
   - "later Greek parse of Anacharsis does not establish Scythian etymology"
   - "Phoenician ancestry tradition for Thales is preserved as a tradition, not promoted to uncontested fact"
   - "structural sequence in Plutarch does not by itself prove deliberate authorial architecture"
+  ATLANTIS_UNFINISHED_RELAY:
+    class: C0_C1_ANCIENT_TRANSMISSION_CLAIM
+    sources:
+      - "Plutarch Solon 26, 31-32"
+      - "Plato Timaeus 21c-25e"
+      - "Plato Critias 108e, 113a-b"
+    relay:
+      - Egyptian_priestly_record
+      - Solon_receives
+      - Solon_planned_poem
+      - Solon_poem_unfinished
+      - Critias_family_memory_and_writings
+      - Plato_Timaeus_Critias
+      - Critias_dialogue_unfinished
+    disputed_solon_noncompletion_cause:
+      Plato_Critias_tradition: "Athenian seditions and political troubles"
+      Plutarch: "old age and magnitude of task"
+    semantic_name_translation:
+      path: [source_names,Egyptian_translation,Solon_Greek_semantic_rendering,Platonic_names]
+    operators: [TRN-04,MEM-01]
+
+additional_operators:
+  TRN-04:
+    name: INCOMPLETE_RELAY_PERSISTENCE
+    rule: "a tradition may survive repeated unfinished redactions through overlapping carrier channels"
+  MEM-01:
+    name: EXTERNAL_ARCHIVE_RECOVERY
+    path: [LOCAL_MEMORY_LOSS,EXTERNAL_ARCHIVE,CROSS_CULTURAL_RECOVERY,RETRANSLATION]
+
