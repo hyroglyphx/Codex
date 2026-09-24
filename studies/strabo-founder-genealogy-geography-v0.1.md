@@ -305,3 +305,131 @@ Helen/helene: single lambda
 ```
 
 Do not collapse the carriers solely because both are aspirated EL-forms.
+
+## 13. Semitic ʾEL / Greek EL-ELL carrier lane
+
+The aspiration-stripped Hellen/Hellas experiment warrants an external-language control because Northwest Semitic has an independently meaningful and highly productive `ʾL / EL` carrier.
+
+### A. Semitic control
+
+Across Semitic languages, cognates of `ʾil / ʾel` function as the common noun 'god' and as the divine name El.
+
+Source-locked examples:
+
+```text
+Ugaritic: ʾil / ʾIlu
+Phoenician-Canaanite: ʾl
+Hebrew: ʾēl
+Akkadian: ilu(m)
+```
+
+Phoenician/Canaanite personal names also use `ʾl` productively as a theophoric element.
+
+Thus `EL` is not a retrospective symbolic extraction; it is an ancient Semitic lexical and onomastic carrier.
+
+### B. Greek reception of Phoenician El is explicitly attested
+
+Philo of Byblos, preserved by Eusebius, states that the Phoenicians called Kronos `El / Elus`.
+
+This gives a direct Greek literary crosswalk:
+
+```text
+Phoenician ʾEl
+-> Greek literary El / Elus
+-> functional equation with Kronos
+```
+
+This is highly important for the Codex because it demonstrates that a Semitic `ʾEL` divine carrier could enter Greek discourse in an `EL-` shaped form while retaining semantic identity.
+
+Add:
+
+```text
+TRN-06 = SEMITIC_EL_TO_GREEK_DIVINE_READOUT
+```
+
+### C. Compare with aspiration-stripped Hellen/Hellas
+
+Greek:
+
+```text
+Ἕλλην  = H + ELLĒN
+Ἑλλάς  = H + ELLAS
+Ἑλένη  = H + ELENĒ
+```
+
+where the written Latin H represents rough breathing / aspiration rather than a lexical prefix.
+
+Therefore the exploratory carrier comparison is:
+
+```text
+Semitic ʾEL
+Greek EL / ELUS
+Greek H-EL / H-ELL
+Greek S-ELL? (Dodona Helli/Selli textual lane)
+```
+
+### D. Transform licensing
+
+Already supported:
+
+```text
+Semitic ʾEL -> Greek EL/ELUS
+H-EL -> EL under psilosis / aspiration loss in Greek dialect history
+```
+
+Not yet independently supported:
+
+```text
+EL -> ELL gemination as a cross-language convention
+EL -> HELL as a specific Semitic-to-Greek historical derivation
+SEL -> HELL as a regular sound law
+```
+
+Those remain experiments.
+
+Add:
+
+```text
+NAME-CAND-09 = SEMITIC_EL_GREEK_ELL_ATTRACTION
+STATUS = EXPLORE_ONLY
+```
+
+### E. Why Hellen is now a better test than an isolated resemblance
+
+The candidate now sits inside a real contact architecture:
+
+```text
+Phoenician / West Semitic contact with Greek world
++ direct Greek knowledge of Phoenician El
++ Greek foreign-name adaptation documented by Strabo
++ aspiration as a removable coordinate
++ local Hellas/Hellenes scale expansion
++ Helli/Selli textual/onomastic ambiguity at Dodona
+```
+
+So the correct question is no longer merely:
+
+```text
+Does Hellen look like El?
+```
+
+but:
+
+```text
+Did Greek speakers encounter EL as an independently meaningful divine/onomastic carrier,
+and could an inherited HELL-/EL- name be semantically attracted or reinterpreted through that field?
+```
+
+That is a testable reception/transmission question even if ultimate etymology remains unresolved.
+
+### F. Promotion requirements
+
+Before any historical derivation is promoted, seek:
+
+- Phoenician/Aramaic renderings of Hellen/Hellas or related Greek ethnonyms;
+- Greek bilingual renderings of Semitic `ʾl` in names/titles;
+- archaic Aegean/Levantine divine-name crosswalks;
+- same-referent inscriptions where aspiration or gemination varies;
+- chronological overlap between Phoenician contact zones and expansion of Hellenes as a macro-classifier;
+- evidence distinguishing inherited root from later semantic attraction.
+
