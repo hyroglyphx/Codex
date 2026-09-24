@@ -12,7 +12,8 @@
     "RN04 Karatepe/Cinekoy bilingual calibration",
     "Kartvelian/Colchis script-language-substrate separation and translation lattice",
     "Observer-relative identity tensor: outsider labels, boundary relation, jurisdiction and reference frame",
-    "Delegated-domain authority, speaking names, origin-attribution networks and utility-class capacity transfer"
+    "Delegated-domain authority, speaking names, origin-attribution networks and utility-class capacity transfer",
+    "Older-name carrier rebinding: Cambyses cross-script/local-titulary transforms and Mycenaean Deukalion pre-myth name continuity"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -34,7 +35,10 @@
     "Origin-attribution recurrence does not require literal-person or ancestry continuity.",
     "Carrier-window similarity permits inquiry only under independently licensed transformations.",
     "Ancient office names may be translated by regalia, function, or cult relation while preserving institutional address.",
-    "Divine and human role labels can recurse across authority levels without implying entity identity."
+    "Divine and human role labels can recurse across authority levels without implying entity identity.",
+    "A name may predate the narrative role later concentrated around it.",
+    "Same entity may acquire a new local sacral/royal name under changed jurisdiction while preserving the older personal carrier.",
+    "Strong cross-script name identity does not require secure etymological decomposition."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -46,7 +50,8 @@
     "studies/multimodal-synchronous-state-harmonics.md",
     "studies/qbl-carrier-reception-confrontation.md",
     "studies/kartvelian-colchis-script-translation-transmission-v0.1.md",
-    "studies/outsider-identity-authority-liminality-v0.1.md"
+    "studies/outsider-identity-authority-liminality-v0.1.md",
+    "studies/older-name-carrier-rebinding-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -64,7 +69,10 @@
     "Test OUT-03 distance-resolution compression across Herodotus, Strabo and Dionysius",
     "Separate Samothrace-Troy-Rome carrier graph into people, sacred objects and ritual knowledge",
     "Build western/Caucasian Iberia boundary-function matrix without ancestry assumptions",
-    "Test BR carrier orbit against attested cross-script forms and separately licensed metatheses"
+    "Test BR carrier orbit against attested cross-script forms and separately licensed metatheses",
+    "Extend older-name rebinding queue to Achilles, Hector, Cyrus/Kurush, Dardanus and Hellen",
+    "Build Cambyses multilingual carrier table from Behistun and Egyptian titulary as a same-entity/multiple-readout benchmark",
+    "Build Deukalion timeline from PY An 654 through Homeric bearers to flood/genealogical traditions"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -89,7 +97,8 @@
     "Kartvelian-Colchis-transmission-v0.1": "observed_candidate_packet_added",
     "Outsider-identity-tensor-v0.1": "supplement_added_source_lock_queue",
     "Outsider-identity-source-lock-v0.1": "first_source_lock_complete",
-    "Numa-7-office-translation-cluster": "source_locked"
+    "Numa-7-office-translation-cluster": "source_locked",
+    "Older-name-carrier-rebinding-v0.1": "first_source_lock_complete"
   },
   "active_candidate_results": {
     "anchored": [
