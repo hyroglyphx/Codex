@@ -262,3 +262,57 @@ EARLY-MODERN / MODERN ESOTERIC REBINDING
 ```
 
 A later symbolic convergence can be historically real as reception even when it does not prove ancient continuity.
+
+
+## 11. Diachronic pronunciation firewall: modern French is not the carrier baseline
+
+The Troyes / Élus Coëns comparison exposes a methodological risk: modern French pronunciation can stand far from the older written and phonological stages.
+
+For Troyes, the historically attested naming sequence includes:
+
+```text
+Tricasses / Trecasses
+-> Tricassium / Trecae
+-> medieval French forms
+-> Troyes
+```
+
+Modern French `Troyes` is pronounced through later French sound history, including the long development of written `oi` toward modern /wa/ and loss/non-pronunciation of many final consonants.
+
+Therefore:
+
+```text
+MODERN FRENCH PRONUNCIATION
+!=
+ANCIENT OR MEDIEVAL CARRIER READOUT
+```
+
+Likewise:
+
+```text
+Élus
+Coëns
+Troyes
+```
+
+must each be analyzed by dated stage rather than by present-day pronunciation alone.
+
+Add firewall:
+
+```text
+DIA-01 = STAGE_SPECIFIC_PRONUNCIATION
+```
+
+Rule:
+
+```text
+ORTHOGRAPHIC CONTINUITY
++ MODERN PRONUNCIATION DRIFT
+requires
+DATED INTERMEDIATE FORMS
+before phonemic comparison.
+```
+
+This specifically prevents modern French `/tʁwa/` from being used either to prove or disprove an ancient Troy/Troia comparison. The comparison must be run through the intermediate historical forms.
+
+The same principle applies inversely: a modern spelling that looks ancient may preserve obsolete orthography while its pronunciation has moved substantially.
