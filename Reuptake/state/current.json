@@ -54,13 +54,15 @@
     "Extend RN04 Karatepe/Cinekoy to clause-level Phoenician-Luwian alignment and specialist Cinekoy edition",
     "Continue source-locking positive decipherment benchmark cases",
     "Build source-locked Colchian onomastic matrix: Qulha/Kulha, Kolkhis, Aia, Phasis, Kutais/Kutaia, Aeetes, Medea, Absyrtos and regional ethnonyms",
-    "Source-lock Ebir-nari / Abar-Nahara as observer-relative administrative geography",
     "Build an Ivri speaker-context matrix separating internal and outsider-facing usage",
     "Compare western and Caucasian Iberia as boundary/reference-frame classifiers without ancestry assumptions",
-    "Build Eumaeus domain-control and delegated-authority matrix",
-    "Source-lock Assyrian/Babylonian specialist-deportation and craft-capacity witnesses",
     "Build speaking-name calibration and Samothrace-Troy-Rome origin-attribution graph",
-    "Build BR carrier-window transform table with licensed and rejected permutations"
+    "Build BR carrier-window transform table with licensed and rejected permutations",
+    "Expand Ivri speaker-context matrix to every biblical occurrence and score speaker/reference frame",
+    "Test OUT-03 distance-resolution compression across Herodotus, Strabo and Dionysius",
+    "Separate Samothrace-Troy-Rome carrier graph into people, sacred objects and ritual knowledge",
+    "Build western/Caucasian Iberia boundary-function matrix without ancestry assumptions",
+    "Test BR carrier orbit against attested cross-script forms and separately licensed metatheses"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -83,7 +85,8 @@
     "RN04 Karatepe-Cinekoy": "first_alignment_complete",
     "DB03 Karatepe decipherment benchmark": "source_locked_first_alignment",
     "Kartvelian-Colchis-transmission-v0.1": "observed_candidate_packet_added",
-    "Outsider-identity-tensor-v0.1": "supplement_added_source_lock_queue"
+    "Outsider-identity-tensor-v0.1": "supplement_added_source_lock_queue",
+    "Outsider-identity-source-lock-v0.1": "first_source_lock_complete"
   },
   "active_candidate_results": {
     "anchored": [
