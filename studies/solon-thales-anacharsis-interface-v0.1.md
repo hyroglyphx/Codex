@@ -397,3 +397,64 @@ fixed canonical roster
 > In this cluster, wisdom is carried by travelers, merchants, foreigners, hosts, adopted relations, and role-shifters.
 
 > The sequence repeatedly distinguishes who a person is from the relation under which the person is currently legible.
+
+
+## 13. Thelidae / thelema phonemic-reception note
+
+Diogenes Laertius transmits Thales as belonging to the `Thelidae`; modern critical indexing preserves the Greek form `Θηλίδαι` (Thēlidai), while an older editorial tradition proposed emending this to `Νηλεῖδαι` (Nelidae).
+
+The transmitted `Θηλίδαι` form therefore deserves to remain visible as a reception datum.
+
+Greek already has the ancient will/willing field:
+
+```text
+ἐθέλω / θέλω
+-> be willing / wish
+-> θέλημα
+-> will / purpose / that which is willed
+```
+
+The noun `θέλημα` is attested in classical/early post-classical Greek, while the verbal field is much older and Homeric.
+
+Phonemically:
+
+```text
+Θηλίδαι  Thēlidai
+θέλημα   thelēma
+Θαλῆς    Thalēs
+```
+
+are not identical lexical forms, but they occupy a conspicuous TH-L carrier neighborhood.
+
+Because Diogenes simultaneously gives the Thelidae a Phoenician/Cadmean ancestry tradition, this should be tested under two separate questions:
+
+1. historical/genealogical derivation of the family name;
+2. Greek phonemic reception through the `thel-/thēl-` will/willing field.
+
+Do not let uncertainty in (1) erase a potentially meaningful reception in (2).
+
+Candidate operator:
+
+```text
+NAME-05 = WILL_FIELD_PHONEMIC_ATTRACTION
+```
+
+Possible semantic reception:
+
+```text
+THĒL-/THEL- carrier
+<-> willing / intention / purpose
+<-> sage / deliberative agency
+```
+
+Status: PHONEMIC_RECEPTION_CANDIDATE; historical etymology unresolved.
+
+Textual-control rule:
+
+```text
+transmitted reading
+!=
+later editorial emendation
+```
+
+Both must be tracked separately in the witness graph.
