@@ -15,7 +15,8 @@
     "Delegated-domain authority, speaking names, origin-attribution networks and utility-class capacity transfer",
     "Older-name carrier rebinding: Cambyses cross-script/local-titulary transforms and Mycenaean Deukalion pre-myth name continuity",
     "SA/SAR liminal carrier cluster: Samothrace, Sardis, Sardinia, Sauromatae/Sarmatia",
-    "Solon-Thales-Anacharsis interface: xenia, law, kinship, travel, and persona recoding"
+    "Solon-Thales-Anacharsis interface: xenia, law, kinship, travel, and persona recoding",
+    "Thelidae-Neleidai cross-language backprojection: local epigraphy versus transmitted phonemic reception"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -47,7 +48,9 @@
     "Outsider/guest, friend, citizen and sage can be different relational projections of the same person.",
     "Knowledge authority and decision authority are separable coordinates.",
     "Legal/persona recoding can preserve a message while changing its admissible social channel.",
-    "Foreign names may receive Greek phonemic resegmentation without establishing historical etymology."
+    "Foreign names may receive Greek phonemic resegmentation without establishing historical etymology.",
+    "Same-referent multilingual and local epigraphic evidence should outrank isolated receiving-language resemblance for historical carrier reconstruction.",
+    "A transmitted Greek phonemic reading can remain valuable reception evidence even when historical backprojection favors a different carrier."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -62,7 +65,8 @@
     "studies/outsider-identity-authority-liminality-v0.1.md",
     "studies/older-name-carrier-rebinding-v0.1.md",
     "studies/sa-sar-liminal-carrier-cluster-v0.1.md",
-    "studies/solon-thales-anacharsis-interface-v0.1.md"
+    "studies/solon-thales-anacharsis-interface-v0.1.md",
+    "studies/thelidae-neleidai-cross-language-backprojection-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -92,7 +96,11 @@
     "Build Anacharsis reference-frame matrix across Herodotus, Plutarch, Diogenes and Lucian",
     "Compare Solon and Thales Egypt traditions against Phoenician/Cadmean and priestly transmission lanes",
     "Test Seven Sages membership as a variable ancient classifier",
-    "Compare Solon's Salamis persona recoding with functional office-translation cases"
+    "Compare Solon's Salamis persona recoding with functional office-translation cases",
+    "Inspect Diogenes manuscript families for Θηλιδῶν versus possible Neleid variants",
+    "Source-lock Phoenician desire/will personal-name elements and compare against THEL carrier",
+    "Date and sequence Miletian Neileid epigraphic spellings",
+    "Test Thales/Thelidai for scribal or oral phonemic attraction without assuming corruption"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -120,7 +128,8 @@
     "Numa-7-office-translation-cluster": "source_locked",
     "Older-name-carrier-rebinding-v0.1": "first_source_lock_complete",
     "SA-SAR-liminal-carrier-v0.1": "first_source_locked_pass_complete",
-    "Solon-Thales-Anacharsis-interface-v0.1": "first_source_lock_complete"
+    "Solon-Thales-Anacharsis-interface-v0.1": "first_source_lock_complete",
+    "Thelidae-Neleidai-backprojection-v0.1": "first_triangulation_complete"
   },
   "active_candidate_results": {
     "anchored": [
