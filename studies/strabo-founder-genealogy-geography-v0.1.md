@@ -238,3 +238,70 @@ DID the label expand from local to macro use?
 - Make Ion the canonical person->office->partition->people->territory->colony cascade.
 - Compare Aegialeia->Ionia->Achaea with Solymi->Milyae->Termilae->Lycians.
 - Test Pyrrhaea/Haemonia/Hellas/Thessaly/Nessonis as stacked geographic-memory layers.
+
+
+## 12. Aspiration must be separated from the EL/ELL carrier
+
+Greek `Ἕλλην` and `Ἑλλάς` carry rough breathing. In conventional Latin transliteration, that breathing is rendered as initial `H-`.
+
+So analytically:
+
+```text
+Ἕλλην = aspiration[+] + ELLĒN
+Ἑλλάς = aspiration[+] + ELLAS
+```
+
+The `H` is not a detachable lexical prefix. It is a phonological feature recorded by the rough-breathing tradition.
+
+This matters because Greek dialects underwent psilosis at different times: some dialects lost initial /h/, while Attic retained it longer. Therefore:
+
+```text
+H- / zero
+```
+
+can be a dialectal/readout variable without changing the deeper lexical carrier.
+
+Herodian is especially useful here: in his prosodic rules he treats `Ἕλλην` and `Ἑλλάς` as exceptional rough-breathing forms among epsilon-plus-lambda words, showing that their aspiration was already something ancient grammarians had to mark explicitly.
+
+Strabo's Dodona discussion adds a separate but nearby control:
+
+```text
+Helli
+vs
+Selli
+```
+
+with Hellopia and the river Selleis used to adjudicate the reading.
+
+This does **not** prove:
+
+```text
+Selli -> Helli -> Hellenes
+```
+
+but it makes a controlled `S/H/zero + EL(L)` carrier experiment legitimate.
+
+Add exploratory lane:
+
+```text
+NAME-CAND-08 = ASPIRATION_STRIPPED_EL_ELL_CARRIER
+STATUS = EXPLORE_ONLY
+```
+
+Required comparison layers:
+- rough versus smooth breathing;
+- dialect and date;
+- Helli/Selli textual variants;
+- Hellopia;
+- Hellen/Hellas;
+- `Ἑλένη` / `ἑλένη` torch-name field;
+- external-language renderings that may preserve or omit aspiration.
+
+Important distinction:
+
+```text
+Hellen: double lambda
+Helen/helene: single lambda
+```
+
+Do not collapse the carriers solely because both are aspirated EL-forms.
