@@ -595,3 +595,117 @@ for the same "Across the River" geographic address.
 This directly licenses vowel/readout flexibility within the carrier orbit.
 
 It does not by itself license arbitrary consonant metathesis; that remains transform-specific.
+
+
+## 14. Numa 7 office-translation cluster — Camillus / Hermes / pilamenai / flamines
+
+Plutarch, *Numa* 7 preserves two different translation mechanisms in the same paragraph.
+
+### A. Office-name through ritual regalia
+
+Plutarch says the Roman `flamines` were associated with close-fitting `piloi` (caps) and a longer form he reports as `pilamenai`, adding that Greek words were more intermixed with Latin in that earlier period.
+
+Ancient competing explanations preserve the same semantic neighborhood:
+
+- Plutarch: cap / `pilos` / `pilamenai` -> flamen;
+- Varro: head bound with woolen `filum` -> flamen;
+- Dionysius: renders Roman flamines by Greek `stephanephoroi`, "crown-wearers," while explaining their cap/fillet.
+
+The historical etymologies compete, but the ancient semantic invariant is strong:
+
+```text
+RITUAL HEADGEAR / BINDING
+-> VISIBLE OFFICE MARKER
+-> PRIESTLY TITLE
+```
+
+Add:
+
+```text
+AUTH-03 = REGALIA_TO_OFFICE_CLASSIFIER
+```
+
+This is structurally parallel to sceptre-holder and other offices named through an entrusted or visible instrument.
+
+### B. Camillus as functional translation of Hermes
+
+In the same *Numa* passage, Plutarch says a freeborn boy with both parents living who serves the priest of Jupiter is called `Camillus`, and that some Greeks likewise called Hermes `Camillus` "from the service/attendance" (`apo tes diakonias`).
+
+Macrobius preserves the Etruscan formulation more sharply:
+
+```text
+Camillus = Mercury
+meaning praeminister deorum
+```
+
+and immediately says Roman `camilli/camillae` are attendants of flamines/flaminicae.
+
+Servius likewise glosses:
+
+```text
+Mercury in Etruscan = Camillus
+~ minister deorum
+```
+
+This is not merely phonetic equivalence. It is explicit office/function translation:
+
+```text
+DIVINE ROLE: Hermes/Mercury
+-> messenger / minister / authorized intermediary
+-> Camillus
+
+HUMAN ROLE:
+god
+-> flamen
+-> camillus
+```
+
+Add:
+
+```text
+TRN-01 = FUNCTIONAL_OFFICE_TRANSLATION
+```
+
+### C. Recursive delegated-authority ladder
+
+The same vocabulary yields a nested model:
+
+```text
+DEITY
+-> FLAMEN: dedicated priest / cult representative
+-> CAMILLUS: attendant / praeminister of the priest
+
+DIVINE ANALOG:
+GODS
+-> HERMES/MERCURY = CAMILLUS / PRAEMINISTER
+```
+
+Thus `Camillus` can mark a role of authorized mediation at both divine and human scales.
+
+### D. Romulus/Quirinus classifier shift
+
+Plutarch introduces this vocabulary while saying Numa adds a priest of Romulus, the `Flamen Quirinalis`.
+
+This supplies a compact identity transform:
+
+```text
+ROMULUS named founder/person
+-> QUIRINUS cult/divine classifier
+-> FLAMEN QUIRINALIS dedicated office
+-> CAMILLUS attendant
+```
+
+The passage therefore directly links person, divine classifier, office and subordinate minister without requiring those categories to be identical.
+
+### Control
+
+Do not require Plutarch's `pilamenai -> flamines` etymology to be historically correct for the passage to be useful. The source securely witnesses an ancient explanatory model in which:
+
+```text
+foreign-language mapping
++ ritual regalia
++ office
++ function
+```
+
+can generate alternative names for the same institutional address.
