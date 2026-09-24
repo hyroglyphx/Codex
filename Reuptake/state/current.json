@@ -17,7 +17,8 @@
     "SA/SAR liminal carrier cluster: Samothrace, Sardis, Sardinia, Sauromatae/Sarmatia",
     "Solon-Thales-Anacharsis interface: xenia, law, kinship, travel, and persona recoding",
     "Thelidae-Neleidai cross-language backprojection: local epigraphy versus transmitted phonemic reception",
-    "Strabo meta-calibration: name adaptation, textual variants, prestige-toponym transfer, macro-classifiers, and title persistence"
+    "Strabo meta-calibration: name adaptation, textual variants, prestige-toponym transfer, macro-classifiers, and title persistence",
+    "Founder-name -> people-name -> country-name cascades in Strabo: Hellen, Dorus, Achaeus, Ion, Aetolus, Lycus, Latinus"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -65,7 +66,11 @@
     "A language may survive in a peripheral mixed community after disappearing from its homeland.",
     "Political dominance can capture demonyms and even commodity labels without changing the physical place.",
     "Bidirectional boundary inscriptions demonstrate identity as an observer-side relation.",
-    "Renaming by relocation, conquest, dynastic patronage, and phonemic omen are distinct mechanisms."
+    "Renaming by relocation, conquest, dynastic patronage, and phonemic omen are distinct mechanisms.",
+    "Genealogical eponyms can function as political, ethnic, territorial and colonial classifiers without requiring literal descent.",
+    "The same territory can carry successive population-linked names as dominant classifiers change.",
+    "A local ethnonym can expand to a panethnic label; scale must be tracked separately from name continuity.",
+    "Genealogical branches must not be treated as fixed linguistic branches."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -82,7 +87,8 @@
     "studies/sa-sar-liminal-carrier-cluster-v0.1.md",
     "studies/solon-thales-anacharsis-interface-v0.1.md",
     "studies/thelidae-neleidai-cross-language-backprojection-v0.1.md",
-    "studies/strabo-name-geography-transmission-v0.1.md"
+    "studies/strabo-name-geography-transmission-v0.1.md",
+    "studies/strabo-founder-genealogy-geography-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -137,7 +143,12 @@
     "Add Agylla->Caere to phonemic-construction positive controls",
     "Build serial ethnonym timelines for Solymi/Milyae/Termilae/Lycians and Zancle/Messene/Mamertini",
     "Use Ionia boundary pillar as canonical observer-relative boundary control",
-    "Build Strabo renaming typology: relocation, conquest, patronal, prestige, phonemic, administrative-scale"
+    "Build Strabo renaming typology: relocation, conquest, patronal, prestige, phonemic, administrative-scale",
+    "Build dated Hellen/Hellas/Hellenes/Panhellenes scale-expansion matrix",
+    "Compare Strabo 8.7 with Apollodorus 1.7.3 for Deucalion-Hellen partition",
+    "Use Ion as canonical person->governance->social partition->people->territory->colony cascade",
+    "Compare Aegialeia->Ionia->Achaea with Solymi->Milyae->Termilae->Lycians",
+    "Test Pyrrhaea/Haemonia/Hellas/Thessaly/Nessonis as stacked geographic-memory layers"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -169,7 +180,8 @@
     "Thelidae-Neleidai-backprojection-v0.1": "revised_distinct_group_evidence_explore_NEL_THEL",
     "Solon-Nile-Canopus-resettlement-microcalibration": "source_locked",
     "Atlantis-Solon-incomplete-relay": "source_locked",
-    "Strabo-name-geography-transmission-v0.1": "second_pass_complete"
+    "Strabo-name-geography-transmission-v0.1": "second_pass_complete",
+    "Strabo-founder-genealogy-geography-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
