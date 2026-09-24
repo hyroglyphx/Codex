@@ -19,7 +19,8 @@
     "Thelidae-Neleidai cross-language backprojection: local epigraphy versus transmitted phonemic reception",
     "Strabo meta-calibration: name adaptation, textual variants, prestige-toponym transfer, macro-classifiers, and title persistence",
     "Founder-name -> people-name -> country-name cascades in Strabo: Hellen, Dorus, Achaeus, Ion, Aetolus, Lycus, Latinus",
-    "Semitic ʾEL -> Greek EL/ELL reception and aspiration-stripped Hellen/Hellas carrier experiment"
+    "Semitic ʾEL -> Greek EL/ELL reception and aspiration-stripped Hellen/Hellas carrier experiment",
+    "IL/ELUS Greek name-carrier cluster: Elus/Elioun/Eloim/Belus against Ilus/Ilium, Eleusis, Helios and Selene"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -72,7 +73,9 @@
     "The same territory can carry successive population-linked names as dominant classifiers change.",
     "A local ethnonym can expand to a panethnic label; scale must be tracked separately from name continuity.",
     "Genealogical branches must not be treated as fixed linguistic branches.",
-    "Semitic ʾEL is an independently attested lexical/divine/onomastic carrier; Greek reception of El must be separated from any proposed Hellen etymology."
+    "Semitic ʾEL is an independently attested lexical/divine/onomastic carrier; Greek reception of El must be separated from any proposed Hellen etymology.",
+    "Direct Semitic divine names received into Greek must be separated from native Greek/Anatolian EL/IL carriers.",
+    "Helios and Selene are mandatory negative controls against treating every divine/light EL sequence as Semitic."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -90,7 +93,8 @@
     "studies/solon-thales-anacharsis-interface-v0.1.md",
     "studies/thelidae-neleidai-cross-language-backprojection-v0.1.md",
     "studies/strabo-name-geography-transmission-v0.1.md",
-    "studies/strabo-founder-genealogy-geography-v0.1.md"
+    "studies/strabo-founder-genealogy-geography-v0.1.md",
+    "studies/il-elus-greek-name-carrier-cluster-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -154,7 +158,11 @@
     "Search Phoenician/Aramaic renderings of Hellen/Hellas and early Greek ethnonyms",
     "Collect Greek renderings of Semitic ʾEl in divine and personal names",
     "Test EL->ELL gemination only through same-referent bilingual witnesses",
-    "Compare chronology of Phoenician-Greek contact with local->panethnic Hellenes scale expansion"
+    "Compare chronology of Phoenician-Greek contact with local->panethnic Hellenes scale expansion",
+    "Collect Anatolian/Hittite/Luwian renderings of Wilusa/Ilios and compare to Ilus/Ilion",
+    "Source-lock Greek forms underlying Philo's Elus, Elioun, Eloim and Belus",
+    "Build Eleusis/eleusis arrival-reception matrix",
+    "Search bilingual inscriptions for Greek personal names carrying imported Semitic -el elements"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -188,7 +196,8 @@
     "Atlantis-Solon-incomplete-relay": "source_locked",
     "Strabo-name-geography-transmission-v0.1": "second_pass_complete",
     "Strabo-founder-genealogy-geography-v0.1": "source_locked_first_pass",
-    "EL-ELL-Semitic-Greek-carrier-v0.1": "explore_only_source_locked_controls"
+    "EL-ELL-Semitic-Greek-carrier-v0.1": "explore_only_source_locked_controls",
+    "IL-ELUS-Greek-name-carrier-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
