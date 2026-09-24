@@ -50,7 +50,9 @@
     "Legal/persona recoding can preserve a message while changing its admissible social channel.",
     "Foreign names may receive Greek phonemic resegmentation without establishing historical etymology.",
     "Same-referent multilingual and local epigraphic evidence should outrank isolated receiving-language resemblance for historical carrier reconstruction.",
-    "A transmitted Greek phonemic reading can remain valuable reception evidence even when historical backprojection favors a different carrier."
+    "A transmitted Greek phonemic reading can remain valuable reception evidence even when historical backprojection favors a different carrier.",
+    "Greek Neilos -> Latin Nilus and Greek Kanobos/Kanopos -> Latin Canopus are same-referent carrier controls.",
+    "Relocation and renaming can form one ancient identity transform without implying a universal phonological law."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -104,7 +106,10 @@
     "Collate Diogenes 1.22 manuscript readings for Θηλιδῶν versus NEL variants",
     "Build dated Milesian Neileidai/Thelidai social-group witness matrix",
     "Search Carian, Lydian, Phoenician/Aramaic and Persian same-referent forms before promoting NEL↔THEL",
-    "Test NEL↔THEL as onomastic rebinding/conflation rather than a regular sound law"
+    "Test NEL↔THEL as onomastic rebinding/conflation rather than a regular sound law",
+    "Compare Aipeia->Soli with Briges->Phrygians and other relocation-linked renamings",
+    "Use Neilos->Nilus and Kanobos/Kanopos->Canopus as positive controls when testing NEL/THEL and CA/KA carrier conventions",
+    "Backproject Canopus and Nile through Egyptian local names to separate Greek exonymic overlays from local carriers"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -133,7 +138,8 @@
     "Older-name-carrier-rebinding-v0.1": "first_source_lock_complete",
     "SA-SAR-liminal-carrier-v0.1": "first_source_locked_pass_complete",
     "Solon-Thales-Anacharsis-interface-v0.1": "first_source_lock_complete",
-    "Thelidae-Neleidai-backprojection-v0.1": "revised_distinct_group_evidence_explore_NEL_THEL"
+    "Thelidae-Neleidai-backprojection-v0.1": "revised_distinct_group_evidence_explore_NEL_THEL",
+    "Solon-Nile-Canopus-resettlement-microcalibration": "source_locked"
   },
   "active_candidate_results": {
     "anchored": [
