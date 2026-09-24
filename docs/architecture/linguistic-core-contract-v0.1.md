@@ -233,3 +233,23 @@ General rule:
 PROMOTE A TRANSPOSITION
 ONLY TO THE LEVEL DEMONSTRATED BY SAME-REFERENT WITNESSES
 ```
+
+
+## DIA-01 — Stage-specific pronunciation
+
+For diachronic carrier comparison:
+
+```text
+MODERN PRONUNCIATION != HISTORICAL CARRIER BASELINE
+```
+
+Require, where available:
+
+```text
+SOURCE FORM
+-> INTERMEDIATE ORTHOGRAPHIC FORMS
+-> INTERMEDIATE PHONOLOGICAL STATES
+-> MODERN FORM
+```
+
+Do not use a modern pronunciation either to establish or reject an ancient phonemic relationship when the language has undergone substantial regular sound change. French `oi -> /wa/` and widespread final-consonant loss are canonical controls.
