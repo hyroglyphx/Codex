@@ -132,3 +132,79 @@ The following are core dependencies, not optional side modules:
 - prosodic, referential, root/operator, arity-compression, and multimodal language transforms.
 
 Every future Organon experiment involving historical symbols, names, texts, scripts, etymologies, translations, divine names, numerals, or encoded language must route through this linguistic core before cross-domain promotion.
+
+## Cross-language disambiguation / backprojection
+
+When the same referent is independently attested in multiple contemporary or near-contemporary languages, those external forms should constrain ambiguous readings in the receiving language.
+
+Canonical model:
+
+```text
+REFERENT R
+  -> source-language form L1
+  -> neighboring-language form L2
+  -> imperial/administrative form L3
+  -> Greek form G
+```
+
+Do not evaluate `G` in isolation when `L1/L2/L3` exist.
+
+Instead infer the transformation envelope:
+
+```text
+G ~ T(L1,L2,L3)
+```
+
+where `T` includes only historically observed adaptations:
+- cluster simplification;
+- epenthesis/vowel insertion;
+- consonant substitution within target phonology;
+- loss of sounds unavailable in the receiving language;
+- case/declensional accommodation;
+- metathesis only when independently licensed;
+- scribal/transliteration conventions.
+
+Example positive control:
+
+```text
+Lydian Śfard / Śfarvad
+Old Persian Sparda
+Hebrew/West-Semitic Sepharad
+Greek Sardis
+```
+
+The convergence of independent external forms strongly constrains the Greek reading and shows that Greek `Sar-` can be a receiving-language outcome of a denser `Sf-/Sp-` onset.
+
+Therefore:
+
+```text
+MULTILINGUAL_CONVERGENCE
+> SINGLE-LANGUAGE ETYMOLOGICAL AMBIGUITY
+```
+
+for identifying the historical carrier and admissible transformation class.
+
+This does not mean every external form is equally independent. Genealogy, borrowing, scribal dependence, chronology, and referent identity must still be typed.
+
+### Manuscript-emendation rule
+
+When a Greek manuscript reading is disputed, seek external-language forms of the same person, family, place, title, or office before preferring an editorial emendation.
+
+```text
+TRANSMITTED_GREEK
+vs
+EDITORIAL_EMENDATION
+```
+
+should be tested against:
+
+```text
+external onomastic witnesses
++ local-language inscriptions
++ imperial administrative forms
++ bilingual/trilingual monuments
+```
+
+If these converge on one consonantal/phonological architecture, they materially reduce the ambiguity.
+
+Absence of such external witnesses leaves the ambiguity open; it does not authorize replacing the transmitted form by editorial preference alone.
