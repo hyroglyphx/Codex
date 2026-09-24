@@ -18,7 +18,8 @@
     "Solon-Thales-Anacharsis interface: xenia, law, kinship, travel, and persona recoding",
     "Thelidae-Neleidai cross-language backprojection: local epigraphy versus transmitted phonemic reception",
     "Strabo meta-calibration: name adaptation, textual variants, prestige-toponym transfer, macro-classifiers, and title persistence",
-    "Founder-name -> people-name -> country-name cascades in Strabo: Hellen, Dorus, Achaeus, Ion, Aetolus, Lycus, Latinus"
+    "Founder-name -> people-name -> country-name cascades in Strabo: Hellen, Dorus, Achaeus, Ion, Aetolus, Lycus, Latinus",
+    "Semitic ʾEL -> Greek EL/ELL reception and aspiration-stripped Hellen/Hellas carrier experiment"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -70,7 +71,8 @@
     "Genealogical eponyms can function as political, ethnic, territorial and colonial classifiers without requiring literal descent.",
     "The same territory can carry successive population-linked names as dominant classifiers change.",
     "A local ethnonym can expand to a panethnic label; scale must be tracked separately from name continuity.",
-    "Genealogical branches must not be treated as fixed linguistic branches."
+    "Genealogical branches must not be treated as fixed linguistic branches.",
+    "Semitic ʾEL is an independently attested lexical/divine/onomastic carrier; Greek reception of El must be separated from any proposed Hellen etymology."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -148,7 +150,11 @@
     "Compare Strabo 8.7 with Apollodorus 1.7.3 for Deucalion-Hellen partition",
     "Use Ion as canonical person->governance->social partition->people->territory->colony cascade",
     "Compare Aegialeia->Ionia->Achaea with Solymi->Milyae->Termilae->Lycians",
-    "Test Pyrrhaea/Haemonia/Hellas/Thessaly/Nessonis as stacked geographic-memory layers"
+    "Test Pyrrhaea/Haemonia/Hellas/Thessaly/Nessonis as stacked geographic-memory layers",
+    "Search Phoenician/Aramaic renderings of Hellen/Hellas and early Greek ethnonyms",
+    "Collect Greek renderings of Semitic ʾEl in divine and personal names",
+    "Test EL->ELL gemination only through same-referent bilingual witnesses",
+    "Compare chronology of Phoenician-Greek contact with local->panethnic Hellenes scale expansion"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -181,7 +187,8 @@
     "Solon-Nile-Canopus-resettlement-microcalibration": "source_locked",
     "Atlantis-Solon-incomplete-relay": "source_locked",
     "Strabo-name-geography-transmission-v0.1": "second_pass_complete",
-    "Strabo-founder-genealogy-geography-v0.1": "source_locked_first_pass"
+    "Strabo-founder-genealogy-geography-v0.1": "source_locked_first_pass",
+    "EL-ELL-Semitic-Greek-carrier-v0.1": "explore_only_source_locked_controls"
   },
   "active_candidate_results": {
     "anchored": [
