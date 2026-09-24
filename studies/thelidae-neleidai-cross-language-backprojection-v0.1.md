@@ -95,16 +95,7 @@ Therefore a Greek-looking phonemic interpretation of `Θηλίδαι` should not
 
 ### Historical clan identity
 
-```text
-NEILEIDAI / NELEIDAI
-> THELIDAI
-```
-
-because Neileidai have:
-- local Miletian epigraphic attestation;
-- Miletian founder/genealogical tradition;
-- Thales-specific Callimachean Neleid association;
-- Neileos/Nileos immediately present in Diogenes' narrative environment.
+Earlier first-pass weighting favored Neileidai because of local epigraphy and founder tradition. That weighting is now **downgraded** pending the distinct-group evidence discussed in section 9.
 
 ### Greek phonemic reception
 
@@ -115,12 +106,7 @@ THELIDAI
 
 remains a valid Greek phonemic-reception pathway because the transmitted text actually contains `Θηλίδαι`.
 
-So the two layers are not collapsed:
-
-```text
-HISTORICAL BACKPROJECTION -> bends NELEID
-TEXTUAL/PHONEMIC RECEPTION -> preserves THELID
-```
+The historical relation between Thelidai and Neileidai must remain unresolved until the social-group and external-language witnesses are separated.
 
 ## 7. Additional Greek semantic lane around NEL-/NĒL-
 
@@ -162,3 +148,95 @@ THELIDAI/THEL- = retained
 - source-lock Phoenician personal-name elements in the desire/will semantic field;
 - compare `Thales / Thelidai` for possible scribal or oral attraction without assuming corruption;
 - test whether `Νείλεως` in Diogenes is itself stable across manuscripts.
+
+
+## 9. Revision: explore NEL <-> THEL as a transmission convention, not yet a sound law
+
+New local-Milesian evidence changes the weighting.
+
+Recent epigraphic scholarship distinguishes known Milesian group names rather than collapsing them:
+- `Νειλεΐδαι` / Neileidai are attested as a Milesian `patria`;
+- `Θηλίδαι` / Thelidai are also treated in the Milesian social-group literature as a separate possible phratry/aristocratic clan, with Diogenes Laertius 1.22 as the literary anchor.
+
+Alexander Herda likewise treats the Thelidai as an old Milesian aristocratic family and reads Diogenes' story as a later construction that mixes Thales, the Thelidai, the Phoenician/Cadmean ancestry claim, and Neileos' foundation tradition.
+
+Therefore the earlier simple weighting:
+
+```text
+NEILEIDAI > THELIDAI
+```
+
+is too strong.
+
+Replace it with:
+
+```text
+NEILEIDAI = independently real Milesian lineage/classifier
+THELIDAI  = independently transmitted and plausibly real Milesian lineage/classifier
+RELATION BETWEEN THEM = unresolved
+```
+
+This makes a `NEL <-> THEL` convention worth exploring, but the target mechanism is broader than ordinary phonological substitution.
+
+### Candidate mechanisms
+
+```text
+A. manuscript substitution:
+   NEL -> THEL or THEL -> NEL
+
+B. oral/alliterative attraction:
+   Thales -> Thelidai
+
+C. civic-genealogical rebinding:
+   Thales/Thelidai -> Neileos/Neileidai founder framework
+
+D. narrative conflation:
+   distinct Milesian lineages compressed into one ancestry story
+
+E. receiving-language semantic attraction:
+   THEL- <-> thelo/thelema will/purpose field
+
+F. external-language carrier:
+   an older Anatolian/Phoenician form producing different Greek outputs
+```
+
+Only F would justify a stronger historical transposition claim if independent external witnesses converge.
+
+### Experimental operator
+
+```text
+NAME-CAND-06 = NEL_THEl_ONOMASTIC_REBINDING
+STATUS = EXPLORE_ONLY
+```
+
+Definition:
+
+```text
+A recurrent NEL/THEL alternation may arise through
+scribal substitution, oral attraction, lineage conflation,
+or cross-language adaptation.
+Do not treat N -> TH as a regular Greek sound law.
+```
+
+### Test protocol
+
+1. Collate manuscripts of Diogenes 1.22 for `Θηλιδῶν` and any NEL variants.
+2. Build a dated list of Milesian `Νειλεΐδαι` and `Θηλίδαι` witnesses.
+3. Separate `patria`, `phratry`, `genos`, founder-line and literary ancestry labels.
+4. Search Anatolian, Carian, Lydian, Phoenician/Aramaic and Persian evidence for same-referent clan or founder forms.
+5. Test whether `Thales/Thelidai` and `Neileos/Neileidai` are statistically or narratively co-located more often than expected.
+6. Compare other ancient names where receiving Greek alternates between N- and TH-/T- only after same-referent identity has been established.
+
+### Current stance
+
+```text
+EXPLORE NEL <-> THEL
+YES
+
+ENSHRINE N -> TH CONVENTION
+NO
+
+BEST CURRENT HYPOTHESIS
+distinct real carriers may have been secondarily rebound/conflated
+inside Milesian genealogical tradition
+```
