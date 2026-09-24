@@ -253,3 +253,32 @@ SOURCE FORM
 ```
 
 Do not use a modern pronunciation either to establish or reject an ancient phonemic relationship when the language has undergone substantial regular sound change. French `oi -> /wa/` and widespread final-consonant loss are canonical controls.
+
+
+## DIA-02 — Diachronic phonemic convergence
+
+Different historical carriers may become more similar through independent sound change:
+
+```text
+A_old != B_old
+A_old -> A_late
+B_old -> B_late
+A_late ~ B_late
+```
+
+Therefore:
+
+```text
+LATE PHONEMIC PROXIMITY
+!=
+COMMON ORIGIN
+```
+
+but it is valid evidence for later reception, punning, folk association, or semantic attraction.
+
+Canonical exploratory control:
+
+```text
+Tricasses -> Trecae / Treies / Troyes
+Θρᾴκη -> Thracia / Threcia / Threce
+```
