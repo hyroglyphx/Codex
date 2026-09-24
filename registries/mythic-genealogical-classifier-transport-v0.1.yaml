@@ -67,3 +67,33 @@ substrate_classifier_extension:
     rule: "toponymic morphology does not auto-promote ethnonym, population, migration, or single-language identity"
   control: registries/pre-greek-substrate-pelasgian-separation-control-v0.1.yaml
   role_metadata: [OBSERVER,JURISDICTION,PHASE,RELATION,PERMISSIONS,DUTIES]
+  MG-05:
+    name: EPONYMIC_CLASSIFIER_CASCADE
+    path: [PERSON,POLITICAL_SETTLEMENT_ACT,PEOPLE_OR_TERRITORY_CLASSIFIER,OPTIONAL_COLONIAL_EXPORT]
+    controls: [Dorus_Dorians,Achaeus_Achaeans_Achaea,Ion_Ionians_Ionia,Aetolus_Aetolia,Lycus_Lycians]
+  MG-06:
+    name: TERRITORY_CLASSIFIER_SUCCESSION
+    rule: "same land may carry successive population-linked names"
+    control: [Aegialeia,Ionia,Achaea]
+  MG-07:
+    name: LOCAL_TO_PANETHNIC_SCALE_EXPANSION
+    path: [LOCAL_CLASSIFIER,REGIONAL_CLASSIFIER,PANETHNIC_CLASSIFIER]
+    control: [Hellas_Hellenes,Panhellenes]
+  MG-08:
+    name: SUCCESSIVE_EPONYMIC_OVERWRITE
+    rule: "same geography may accumulate competing eponymic names across narrative or political phases"
+    control: [Pyrrhaea,Haemonia,Hellas,Thessaly,Nessonis]
+  MG-09:
+    name: POLITICAL_ETHNONYM_IMPOSITION
+    path: [AUTHORITY,RENAMING_RULE,NEW_COLLECTIVE_CLASSIFIER]
+    control: Pelasgians_to_Danaans
+  MG-10:
+    name: INHERITED_COMPOSITE_ETHNONYM
+    path: [PREDECESSOR_EPONYM,SUCCESSOR_RULE,MIXED_SUBJECTS,INHERITED_COLLECTIVE_NAME]
+    control: Latinus_Aeneas_Latini
+
+strabo_founder_geography_extension:
+  study: studies/strabo-founder-genealogy-geography-v0.1.md
+  data: data/calibration/strabo-founder-genealogy-geography-v0.1.yaml
+  firewall: "GENEALOGICAL_BRANCH != FIXED_LINGUISTIC_BRANCH"
+
