@@ -319,3 +319,105 @@ DUTIES
 ```
 
 A recurring label can therefore preserve a classifier while changing its operative role under another jurisdiction.
+
+
+## Strabo founder-geography extension — 2026-09-24
+
+Strabo supplies a source-locked expansion of the genealogy/classifier family in which eponymic persons become political, ethnic, territorial, and colonial classifiers.
+
+### MG-05 — EPONYMIC_CLASSIFIER_CASCADE
+
+```text
+PERSON
+-> POLITICAL / SETTLEMENT ACT
+-> PEOPLE OR TERRITORY CLASSIFIER
+-> OPTIONAL COLONIAL EXPORT
+```
+
+Canonical Strabonian controls:
+- Dorus -> Dorians;
+- Achaeus -> Achaeans -> Achaea;
+- Ion -> governance/social partition -> Ionians -> Ionia -> Asian Ionian colony;
+- Aetolus -> Aetolia + metropolitan unification;
+- Lycus -> Lycians, with earlier labels retained as controls.
+
+### MG-06 — TERRITORY_CLASSIFIER_SUCCESSION
+
+```text
+SAME LAND
+-> SUCCESSIVE POPULATION-LINKED NAMES
+```
+
+Canonical control:
+
+```text
+Aegialeia
+-> Ionia
+-> Achaea
+```
+
+### MG-07 — LOCAL_TO_PANETHNIC_SCALE_EXPANSION
+
+```text
+LOCAL CLASSIFIER
+-> REGIONAL CLASSIFIER
+-> PANETHNIC CLASSIFIER
+```
+
+Canonical inquiry:
+
+```text
+local Hellas/Hellenes
+-> broader Hellenes
+-> Panhellenes
+```
+
+The chronology and mechanism of expansion remain source-sensitive.
+
+### MG-08 — SUCCESSIVE_EPONYMIC_OVERWRITE
+
+The same geography may accumulate competing eponymic names across different narrative or political phases.
+
+Canonical Thessalian stack:
+
+```text
+Pyrrhaea <- Pyrrha
+Haemonia <- Haemon
+Hellas <- Hellen
+Thessaly <- Thessalus
+Nessonis <- Nesson
+```
+
+### MG-09 — POLITICAL_ETHNONYM_IMPOSITION
+
+```text
+AUTHORITY
+-> RENAMING RULE
+-> NEW COLLECTIVE CLASSIFIER
+```
+
+Canonical ancient narrative control: Strabo's Euripidean citation that people previously called Pelasgians were ordered to be called Danaans.
+
+### MG-10 — INHERITED_COMPOSITE_ETHNONYM
+
+```text
+PREDECESSOR EPONYM
+-> SUCCESSOR RULE
+-> MIXED / RECOMPOSED SUBJECTS
+-> INHERITED COLLECTIVE NAME
+```
+
+Canonical control: Latinus -> Aeneas as successor ruler -> subjects called Latini.
+
+### Additional firewall
+
+```text
+GENEALOGICAL BRANCH
+!=
+FIXED LINGUISTIC BRANCH
+```
+
+Strabo's own dialect discussion permits isolation, contact, mixture, and later divergence within or across inherited tribal classifications.
+
+Primary study:
+`studies/strabo-founder-genealogy-geography-v0.1.md`
