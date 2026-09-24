@@ -316,3 +316,86 @@ before phonemic comparison.
 This specifically prevents modern French `/tʁwa/` from being used either to prove or disprove an ancient Troy/Troia comparison. The comparison must be run through the intermediate historical forms.
 
 The same principle applies inversely: a modern spelling that looks ancient may preserve obsolete orthography while its pronunciation has moved substantially.
+
+
+## 12. Trecae / Thrace — diachronic convergence candidate
+
+The Troyes line and Thrace line become unexpectedly close at an intermediate Latin stage.
+
+### Troyes carrier
+
+Ancient/late antique evidence gives:
+
+```text
+Tricasses
+-> Tricassium
+-> Trecae
+-> Treies
+-> Troyes
+```
+
+Pliny attests `Tricasses` as a people of Lugdunensis Gaul. Historical-toponymic work explicitly treats `Tricasses -> Treies -> Troyes` as a regular regional development, while local historical documentation preserves `Tricassium -> Trecae -> Troyes`.
+
+### Thrace carrier
+
+Greek and Latin preserve:
+
+```text
+Θρᾴκη / Θρῄκη
+-> Thracia / Threcia
+-> Thrace / Threce / Thraca
+```
+
+Lewis & Short explicitly lists `Thracia, Threcia, Thrace, Threce, Thraca`.
+
+### Surface convergence
+
+The intermediate comparison is therefore not merely modern English/French:
+
+```text
+Trecae
+Thrēcē / Threce
+```
+
+The carrier skeletons are strikingly close:
+
+```text
+T-R-E-C-
+T-H-R-E-C-
+```
+
+with Greek-derived `TH` representing an aspirated consonant in older Greek/Latin reception.
+
+This does **not** establish common ancestry between the Gaulish Tricasses and Thrace. The Troyes line has an independently attested Gaulish ethnonymic history, while Thrace has its own Greek/Thracian geographical tradition.
+
+The important mechanism is different:
+
+```text
+DISTINCT OLDER NAMES
+-> INDEPENDENT SOUND / ORTHOGRAPHIC CHANGE
+-> LATER PHONEMIC CONVERGENCE
+```
+
+Add:
+
+```text
+DIA-02 = DIACHRONIC_PHONEMIC_CONVERGENCE
+```
+
+This is a necessary adversarial control for carrier research: later forms can become **more similar** than their older source forms.
+
+### Experimental comparison
+
+Keep open, but unpromoted:
+
+```text
+TRECAE <-> THRECE / THRĒCĒ
+STATUS = SURFACE-CONVERGENCE CANDIDATE
+```
+
+Before any deeper historical relation is proposed, require:
+- exact dated attestations of Trecae;
+- exact Greek/Latin Thrace variants by date;
+- phonological reconstruction for each stage;
+- contact or transmission pathway between Gaulish/Roman Gaul and Thracian naming traditions;
+- evidence stronger than the late convergence itself.
