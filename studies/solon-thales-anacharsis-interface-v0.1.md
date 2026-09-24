@@ -458,3 +458,136 @@ later editorial emendation
 ```
 
 Both must be tracked separately in the witness graph.
+
+
+## 14. Solon 26: Nile / Canopus micro-calibration and resettlement-renaming
+
+The verse Plutarch attributes to Solon reads:
+
+```text
+Νείλου ἐπὶ προχοῇσι Κανωβίδος ἐγγύθεν ἀκτῆς
+```
+
+This places two useful carrier controls in one ancient line:
+
+```text
+Νεῖλος / Neilos -> Latin Nīlus -> later Nile
+Κάνωβος / Κάνωπος / Kanobos-Kanopos -> Latin Canopus
+```
+
+### A. NEI -> NI receiving-language compression
+
+Latin lexicography explicitly treats `Nīlus` as the Latin form of Greek `Νεῖλος`.
+
+This licenses a same-referent control:
+
+```text
+NEI- -> NI-
+```
+
+across Greek-to-Latin transmission for this name.
+
+It does **not** license N -> TH. It does show that NEL/NEIL/NIL comparisons should preserve vowel/readout mobility instead of treating one romanization as the historical invariant.
+
+### B. KA -> CA is an attested orthographic convention
+
+Greek:
+
+```text
+Κάνωβος / Κάνωπος
+```
+
+becomes Latin/English:
+
+```text
+Canopus
+```
+
+Thus the CA/KA equivalence is not speculative in Greek-to-Latin transmission:
+
+```text
+Greek KAPPA K
+-> Latin C
+```
+
+The Greek name itself also preserves `-bos/-pos` variation, supplying a separate B/P carrier-control.
+
+### C. Egyptian backprojection separates place from Greek mythic name
+
+The Egyptian settlement had a distinct local name, conventionally rendered from Demotic as `pr-gwṱ / Peguat / Pikuat`.
+
+Greek `Kanobos/Kanopos` is therefore a Greek naming layer over the same Egyptian geography; Strabo explains the Greek form through Menelaus' pilot Canobus.
+
+Likewise Egyptian tradition has `ḤaꜢpi/Hapi` for the Nile river/god, whereas Greek uses `Neilos`.
+
+So Solon's line is a compact positive control for:
+
+```text
+SAME GEOGRAPHY
+-> LOCAL EGYPTIAN NAME
+-> GREEK EXONYM / NARRATIVE NAME
+-> LATINIZED READOUT
+```
+
+Add:
+
+```text
+TRN-03 = EXONYMIC_GEOGRAPHIC_OVERLAY
+```
+
+### D. Aipeia -> Soli and Briges -> Phrygians
+
+Plutarch immediately continues with a relocation-and-renaming narrative in Cyprus:
+
+```text
+Aipeia
+-> city physically relocated to lower plain
+-> expanded/reorganized settlement
+-> renamed Soli after Solon
+```
+
+Herodotus 7.73 gives the ethnonymic analogue:
+
+```text
+Briges in Europe
+-> move to Asia
+-> Phrygians
+```
+
+Herodotus explicitly says that when they changed their dwelling-place, they changed their name also.
+
+The two witnesses therefore support an abstract operator:
+
+```text
+RELOCATION
+-> NEW GEOGRAPHIC / POLITICAL STATE
+-> NAME REBINDING
+```
+
+Add:
+
+```text
+NAME-06 = RESETTLEMENT_RENAMING
+```
+
+This does not mean every migration causes a phonological name change. It establishes that ancient authors themselves regarded relocation and renaming as a coherent identity transformation.
+
+### E. Why this matters to the current NEL/THEL and CA/KA experiments
+
+The source sequence supplies three different levels of transformation that must not be conflated:
+
+```text
+NEI -> NI
+same referent, cross-language readout
+
+KA -> CA
+same referent, script/orthographic adaptation
+
+BRIGES -> PHRYGIANS
+same population tradition, relocation-linked ethnonym rebinding
+
+AIPEIA -> SOLI
+same civic community, relocation plus deliberate honorific renaming
+```
+
+This is the correct calibration ladder for exploring stronger transpositional conventions.
