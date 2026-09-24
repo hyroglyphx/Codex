@@ -591,3 +591,139 @@ same civic community, relocation plus deliberate honorific renaming
 ```
 
 This is the correct calibration ladder for exploring stronger transpositional conventions.
+
+
+## 15. Atlantis as an unfinished relay: Egypt -> Solon -> Critias -> Plato
+
+Plutarch's *Solon* 26 and 31-32 preserves a striking transmission chain.
+
+### A. Solon as intended transmitter, not merely hearer
+
+Plutarch says Solon learned the Atlantis account from Egyptian priests at Heliopolis and Sais and:
+
+```text
+tried to introduce it to the Greeks in poetical form
+```
+
+but did not complete the work.
+
+Plato's *Timaeus* 21c-d independently embeds the same premise: Solon brought the story from Egypt and failed to finish the poem after returning to Athenian political troubles.
+
+Plutarch differs on the cause. He argues that Solon abandoned the project because of old age and the magnitude of the task, not because he lacked leisure.
+
+Thus:
+
+```text
+SHARED TRADITION:
+Solon intended an Atlantis poem
+-> poem remained unfinished
+
+DISPUTED CAUSE:
+Plato/Critias tradition -> political sedition / public troubles
+Plutarch -> old age / magnitude of task
+```
+
+### B. Plato's own Atlantis work is also unfinished
+
+Plutarch then makes the parallel explicit: Plato later took up the Atlantis material, intending to elaborate it magnificently because of his kinship/connection with Solon, but died before completing the work.
+
+The extant Platonic `Critias` itself breaks off during the Atlantis narrative.
+
+So the relay has two successive incomplete literary realizations:
+
+```text
+Egyptian record/tradition
+-> Solon receives account
+-> Solon plans Greek poem
+-> UNFINISHED
+
+family/oral/written transmission
+-> Critias tradition
+-> Plato Timaeus/Critias
+-> UNFINISHED
+```
+
+Add:
+
+```text
+TRN-04 = INCOMPLETE_RELAY_PERSISTENCE
+```
+
+Rule:
+
+```text
+A tradition can survive repeated incomplete redactions
+when carrier memory, notes, genealogy, quotation, and later re-performance overlap.
+```
+
+### C. Critias gives an explicit translation chain for Atlantis names
+
+Plato's *Critias* 113a-b states that:
+- Egyptians had translated the names into Egyptian;
+- Solon investigated their meanings;
+- Solon translated those meanings into Greek;
+- Critias possessed Solon's writings.
+
+This is a direct ancient statement of semantic-name translation:
+
+```text
+SOURCE NAME
+-> EGYPTIAN SEMANTIC TRANSLATION
+-> SOLONIC GREEK SEMANTIC BACK-TRANSLATION
+-> PLATONIC NARRATIVE NAME
+```
+
+Therefore Atlantis names in Plato are not presented by the dialogue as simple phonetic transliterations of a foreign original.
+
+This is a first-class control for the Codex distinction:
+
+```text
+NAME CARRIER
+!=
+SEMANTIC TRANSLATION
+!=
+PHONETIC TRANSLITERATION
+```
+
+and strongly supports the existing ECVR rule that foreign names may be functionally or semantically recoded in a receiving language.
+
+### D. Solon tests Greek deep-time memory with Deucalion before receiving Atlantis
+
+*Timaeus* 22a-b has Solon first recite Greek ancient traditions to the Egyptian priests:
+- Phoroneus;
+- Niobe;
+- Deucalion and Pyrrha after the flood;
+- their descendants and chronology.
+
+The priest then replies that the Greeks are "always children" because repeated destructions erase their ancient records.
+
+Thus Deucalion sits directly at the threshold of the Atlantis transmission:
+
+```text
+GREEK FLOOD MEMORY: Deucalion
+-> Egyptian critique of Greek chronological memory
+-> multiple destructions by fire/water
+-> older Athenian/Atlantis account
+```
+
+This makes Deucalion not merely another flood tale but an explicit comparison datum inside Plato's Atlantis framing.
+
+### E. Archive-loss model
+
+The narrative proposes a mechanism:
+
+```text
+DISASTER
+-> archive / literate-class loss
+-> cultural chronological reset
+-> myth survives without full record
+-> external archive restores a deeper chronology
+```
+
+Whether or not one accepts the historical truth of Atlantis, this is an ancient theory of cultural memory loss and cross-civilizational archival recovery.
+
+Add:
+
+```text
+MEM-01 = EXTERNAL_ARCHIVE_RECOVERY
+```
