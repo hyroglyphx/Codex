@@ -1,0 +1,38 @@
+version: "0.1"
+date: "2026-09-24"
+id: THELIDAE_NEILEIDAI_BACKPROJECTION
+status: FIRST_TRIANGULATION_COMPLETE
+
+candidates:
+  THELIDAI:
+    greek_transmitted: true
+    form: "Θηλίδαι / Θηλιδῶν"
+    phonemic_reception:
+      field: "thel- / thelema / will-desire"
+      status: retained_candidate
+    same_referent_external_support: none_located
+    phoenician_semantic_backprojection:
+      result: weak
+      reason: "source-locked desire/request names use other carriers such as ʾrš and ḥpṣ"
+    historical_clan_score: lower
+
+  NEILEIDAI:
+    editorial_emendation: "Bywater Νηλιδῶν"
+    local_milesian_epigraphy:
+      attested: true
+      form: "Νειλεϊδῶν"
+    founder_tradition:
+      Neileus_Neleus: true
+    thales_specific_callimachus_context: true
+    diogenes_same_sentence_Neileos: true
+    historical_clan_score: higher
+
+result:
+  historical_backprojection: "bends toward NEILEIDAI/NELEIDAI"
+  textual_phonemic_reception: "THELIDAI remains real because it is the transmitted Greek reading"
+  rule: "historical carrier and later phonemic reception may point in different directions"
+
+controls:
+  - "do not use unrelated semantic equivalents as same-referent evidence"
+  - "local epigraphy outranks isolated phonemic resemblance for historical clan identity"
+  - "transmitted reading remains valid reception evidence even if an emendation better fits historical backprojection"
