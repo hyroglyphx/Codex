@@ -1,6 +1,6 @@
 {
   "relay": "Codex Reuptake",
-  "updated_at": "2026-09-23",
+  "updated_at": "2026-09-24",
   "repository": "hyroglyphx/Codex",
   "branch": "research/reconcile-state-2026-09-20",
   "pull_request": 1,
@@ -10,7 +10,9 @@
     "Ugarit row-level cycle residuals",
     "Aphek trilingual source lock",
     "RN04 Karatepe/Cinekoy bilingual calibration",
-    "Kartvelian/Colchis script-language-substrate separation and translation lattice"
+    "Kartvelian/Colchis script-language-substrate separation and translation lattice",
+    "Observer-relative identity tensor: outsider labels, boundary relation, jurisdiction and reference frame",
+    "Delegated-domain authority, speaking names, origin-attribution networks and utility-class capacity transfer"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -25,9 +27,14 @@
     "Name continuity does not imply plot continuity.",
     "Identity carrier, role, episode, and classifier are separate variables.",
     "Decipherment heuristic does not equal final etymology.",
-    "Known script does not imply known language."
+    "Known script does not imply known language.",
+    "Externally applied identity may encode observer-relative boundary or jurisdiction rather than ancestry.",
+    "Holder, office, function, managed domain and manual task are separate coordinates.",
+    "Speaking-name semantics do not by themselves establish historical etymology.",
+    "Origin-attribution recurrence does not require literal-person or ancestry continuity.",
+    "Carrier-window similarity permits inquiry only under independently licensed transformations."
   ],
-  "active_packet": "Reuptake/packets/2026-09-21-arity-compression-synchronous-state.json",
+  "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
     "studies/gilgamesh-beyond-cuneiform-transmission-node.md",
     "studies/hittite-decipherment-crosswise-calibration.md",
@@ -36,7 +43,8 @@
     "studies/arity-compression-spectral-language-sieve.md",
     "studies/multimodal-synchronous-state-harmonics.md",
     "studies/qbl-carrier-reception-confrontation.md",
-    "studies/kartvelian-colchis-script-translation-transmission-v0.1.md"
+    "studies/kartvelian-colchis-script-translation-transmission-v0.1.md",
+    "studies/outsider-identity-authority-liminality-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -45,7 +53,14 @@
     "Acquire primary Aphek trilingual row transliteration from Rainey 1976 or later critical edition",
     "Extend RN04 Karatepe/Cinekoy to clause-level Phoenician-Luwian alignment and specialist Cinekoy edition",
     "Continue source-locking positive decipherment benchmark cases",
-    "Build source-locked Colchian onomastic matrix: Qulha/Kulha, Kolkhis, Aia, Phasis, Kutais/Kutaia, Aeetes, Medea, Absyrtos and regional ethnonyms"
+    "Build source-locked Colchian onomastic matrix: Qulha/Kulha, Kolkhis, Aia, Phasis, Kutais/Kutaia, Aeetes, Medea, Absyrtos and regional ethnonyms",
+    "Source-lock Ebir-nari / Abar-Nahara as observer-relative administrative geography",
+    "Build an Ivri speaker-context matrix separating internal and outsider-facing usage",
+    "Compare western and Caucasian Iberia as boundary/reference-frame classifiers without ancestry assumptions",
+    "Build Eumaeus domain-control and delegated-authority matrix",
+    "Source-lock Assyrian/Babylonian specialist-deportation and craft-capacity witnesses",
+    "Build speaking-name calibration and Samothrace-Troy-Rome origin-attribution graph",
+    "Build BR carrier-window transform table with licensed and rejected permutations"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -67,7 +82,8 @@
     "Byblos-Ugarit positive-negative experiment": "first_comparative_pass_complete",
     "RN04 Karatepe-Cinekoy": "first_alignment_complete",
     "DB03 Karatepe decipherment benchmark": "source_locked_first_alignment",
-    "Kartvelian-Colchis-transmission-v0.1": "observed_candidate_packet_added"
+    "Kartvelian-Colchis-transmission-v0.1": "observed_candidate_packet_added",
+    "Outsider-identity-tensor-v0.1": "supplement_added_source_lock_queue"
   },
   "active_candidate_results": {
     "anchored": [
