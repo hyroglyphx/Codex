@@ -75,7 +75,9 @@
     "Genealogical branches must not be treated as fixed linguistic branches.",
     "Semitic ʾEL is an independently attested lexical/divine/onomastic carrier; Greek reception of El must be separated from any proposed Hellen etymology.",
     "Direct Semitic divine names received into Greek must be separated from native Greek/Anatolian EL/IL carriers.",
-    "Helios and Selene are mandatory negative controls against treating every divine/light EL sequence as Semitic."
+    "Helios and Selene are mandatory negative controls against treating every divine/light EL sequence as Semitic.",
+    "Same-author, same-period spellings are high-value controls for historical phonemic proximity.",
+    "Chrétien de Troyes supplies a direct medieval Troies/Trace contrast: proximity is real, identity is not established."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -162,7 +164,10 @@
     "Collect Anatolian/Hittite/Luwian renderings of Wilusa/Ilios and compare to Ilus/Ilion",
     "Source-lock Greek forms underlying Philo's Elus, Elioun, Eloim and Belus",
     "Build Eleusis/eleusis arrival-reception matrix",
-    "Search bilingual inscriptions for Greek personal names carrying imported Semitic -el elements"
+    "Search bilingual inscriptions for Greek personal names carrying imported Semitic -el elements",
+    "Search Chrétien and contemporary Champagne texts for explicit puns or confusions between Troies and Trace",
+    "Collate 12th-13th century Champagne spellings of Troyes against Trace/Trachie/Trasce forms of Thrace",
+    "Reconstruct Troies/Treche/Trace pronunciation by dated Champenois rather than modern French"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -197,7 +202,8 @@
     "Strabo-name-geography-transmission-v0.1": "second_pass_complete",
     "Strabo-founder-genealogy-geography-v0.1": "source_locked_first_pass",
     "EL-ELL-Semitic-Greek-carrier-v0.1": "explore_only_source_locked_controls",
-    "IL-ELUS-Greek-name-carrier-v0.1": "source_locked_first_pass"
+    "IL-ELUS-Greek-name-carrier-v0.1": "source_locked_first_pass",
+    "Trecae-Thrace-diachrony": "same_author_medieval_control_added"
   },
   "active_candidate_results": {
     "anchored": [
