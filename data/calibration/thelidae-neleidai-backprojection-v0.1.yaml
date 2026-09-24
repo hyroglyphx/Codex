@@ -14,7 +14,7 @@ candidates:
     phoenician_semantic_backprojection:
       result: weak
       reason: "source-locked desire/request names use other carriers such as ʾrš and ḥpṣ"
-    historical_clan_score: lower
+    historical_clan_score: unresolved_distinct_group_evidence
 
   NEILEIDAI:
     editorial_emendation: "Bywater Νηλιδῶν"
@@ -25,10 +25,10 @@ candidates:
       Neileus_Neleus: true
     thales_specific_callimachus_context: true
     diogenes_same_sentence_Neileos: true
-    historical_clan_score: higher
+    historical_clan_score: unresolved_distinct_group_evidence
 
 result:
-  historical_backprojection: "bends toward NEILEIDAI/NELEIDAI"
+  historical_backprojection: "UNRESOLVED: Neileidai and Thelidai may be distinct Milesian groups"
   textual_phonemic_reception: "THELIDAI remains real because it is the transmitted Greek reading"
   rule: "historical carrier and later phonemic reception may point in different directions"
 
@@ -36,3 +36,18 @@ controls:
   - "do not use unrelated semantic equivalents as same-referent evidence"
   - "local epigraphy outranks isolated phonemic resemblance for historical clan identity"
   - "transmitted reading remains valid reception evidence even if an emendation better fits historical backprojection"
+
+exploratory_operator:
+  NAME-CAND-06:
+    name: NEL_THEL_ONOMASTIC_REBINDING
+    status: EXPLORE_ONLY
+    candidate_mechanisms:
+      - manuscript_substitution
+      - oral_alliterative_attraction
+      - civic_genealogical_rebinding
+      - narrative_conflation
+      - receiving_language_semantic_attraction
+      - external_language_carrier_split
+    prohibited_promotion:
+      - "do not treat N -> TH as a regular Greek sound law"
+      - "do not collapse Neileidai and Thelidai until same-referent evidence requires it"
