@@ -32,7 +32,9 @@
     "Holder, office, function, managed domain and manual task are separate coordinates.",
     "Speaking-name semantics do not by themselves establish historical etymology.",
     "Origin-attribution recurrence does not require literal-person or ancestry continuity.",
-    "Carrier-window similarity permits inquiry only under independently licensed transformations."
+    "Carrier-window similarity permits inquiry only under independently licensed transformations.",
+    "Ancient office names may be translated by regalia, function, or cult relation while preserving institutional address.",
+    "Divine and human role labels can recurse across authority levels without implying entity identity."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -86,7 +88,8 @@
     "DB03 Karatepe decipherment benchmark": "source_locked_first_alignment",
     "Kartvelian-Colchis-transmission-v0.1": "observed_candidate_packet_added",
     "Outsider-identity-tensor-v0.1": "supplement_added_source_lock_queue",
-    "Outsider-identity-source-lock-v0.1": "first_source_lock_complete"
+    "Outsider-identity-source-lock-v0.1": "first_source_lock_complete",
+    "Numa-7-office-translation-cluster": "source_locked"
   },
   "active_candidate_results": {
     "anchored": [
