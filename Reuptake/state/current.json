@@ -60,7 +60,12 @@
     "Textual variants should be tested against related toponyms, hydronyms, geography and independent witnesses.",
     "Prestige names may migrate to new geographies independently of the original referent.",
     "Macro-ethnographic labels can cover many mutually unintelligible local groups.",
-    "Titles can persist after the constitution or office structure that produced them has changed."
+    "Titles can persist after the constitution or office structure that produced them has changed.",
+    "Local foreign morpheme glosses by ancient authors are high-value controls for toponym segmentation.",
+    "A language may survive in a peripheral mixed community after disappearing from its homeland.",
+    "Political dominance can capture demonyms and even commodity labels without changing the physical place.",
+    "Bidirectional boundary inscriptions demonstrate identity as an observer-side relation.",
+    "Renaming by relocation, conquest, dynastic patronage, and phonemic omen are distinct mechanisms."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -126,7 +131,13 @@
     "Compare Helli/Selli against NEL/THEL as controlled textual-backprojection experiment",
     "Build Strabo fabricated-toponym negative controls around Homeric geography",
     "Extend western/Caucasian Iberia matrix with Strabo's explicit gold-mines duplicate-name etiology",
-    "Build sceptuchos delegated-authority matrix and Scepsis title-persistence control"
+    "Build sceptuchos delegated-authority matrix and Scepsis title-persistence control",
+    "Build explicit foreign-morpheme registry beginning with Thracian -bria",
+    "Compare Cibyra peripheral Lydian retention with other diaspora-language survivals",
+    "Add Agylla->Caere to phonemic-construction positive controls",
+    "Build serial ethnonym timelines for Solymi/Milyae/Termilae/Lycians and Zancle/Messene/Mamertini",
+    "Use Ionia boundary pillar as canonical observer-relative boundary control",
+    "Build Strabo renaming typology: relocation, conquest, patronal, prestige, phonemic, administrative-scale"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -158,7 +169,7 @@
     "Thelidae-Neleidai-backprojection-v0.1": "revised_distinct_group_evidence_explore_NEL_THEL",
     "Solon-Nile-Canopus-resettlement-microcalibration": "source_locked",
     "Atlantis-Solon-incomplete-relay": "source_locked",
-    "Strabo-name-geography-transmission-v0.1": "first_source_locked_pass_complete"
+    "Strabo-name-geography-transmission-v0.1": "second_pass_complete"
   },
   "active_candidate_results": {
     "anchored": [
