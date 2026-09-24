@@ -187,3 +187,78 @@ and which acquired secondary divine/light semantics through phonemic attraction?
 - Build Eleusis / eleusis "arrival" narrative-reception matrix.
 - Add Helios and Selene as negative controls in any Semitic-EL derivation experiment.
 - Search Greek personal names with imported Semitic `-el` elements in bilingual inscriptions.
+
+
+## 10. Later French reception control — Élus Coëns and Troyes
+
+A much later French layer is useful as a **reception control**, not as evidence for ancient derivation.
+
+### Élus Coëns
+
+The eighteenth-century order founded by Martinès de Pasqually is styled:
+
+```text
+Ordre des Chevaliers Maçons Élus Coëns de l'Univers
+```
+
+Modern histories regularly render the system as a form of "Elect Priests" masonry. In that title:
+
+```text
+Élus = French "chosen/elected"
+Coëns = priestly/Cohen-style term
+```
+
+So the compound itself deliberately juxtaposes:
+
+```text
+ELECT / CHOSEN
++
+PRIESTLY IDENTITY
+```
+
+This is not an ancient EL etymology. It is a later European example of Semitic/Jewish priestly vocabulary being re-inscribed inside a French initiatory vocabulary.
+
+Add reception operator:
+
+```text
+REC-01 = LATER_ESOTERIC_SEMITIC_REBINDING
+```
+
+### Troyes as medieval Jewish reception node
+
+Troyes was a major medieval Jewish intellectual center:
+- Rashi was born there and returned there to teach;
+- his school became a major northern-French center of biblical and Talmudic exegesis;
+- later rabbinic synods and scholarly networks linked Troyes with other French and Rhineland communities.
+
+The historical toponym `Troyes` derives from the Gallic `Tricasses / Civitas Tricassium`, not from ancient Troy/Ilium.
+
+Therefore:
+
+```text
+TROY -> TROYES
+```
+
+is **not** a historical etymological line.
+
+But as a reception phenomenon:
+
+```text
+Troyes
++ major Jewish textual culture
++ later French esoteric use of Élus Coëns
+```
+
+creates a geographically and culturally interesting French field in which biblical/Hebrew and classical names coexist and can be re-heard.
+
+### Methodological value
+
+Keep three layers separate:
+
+```text
+ANCIENT CARRIER HISTORY
+MEDIEVAL JEWISH TEXTUAL RECEPTION
+EARLY-MODERN / MODERN ESOTERIC REBINDING
+```
+
+A later symbolic convergence can be historically real as reception even when it does not prove ancient continuity.
