@@ -408,3 +408,190 @@ Permanent controls:
 > A label may encode who names a population, from which side of which boundary, under whose jurisdiction, and in what function.
 
 > Names, offices, domains, peoples, and founder genealogies must remain separate coordinates even when a narrative deliberately makes them rhyme.
+
+
+## 13. First source-lock results — 2026-09-24
+
+### OUT-EXP-01 — Ebir-nari / Abar-Nahara
+
+Observed Mesopotamian carrier variation is itself informative:
+
+```text
+e-ber ID2
+e-bir ID2
+e-bir-ma ID2
+Eber-nari / ebēr nāri
+```
+
+ORACC normalizes these as "Across the River" / Syria west of the Euphrates. In Achaemenid administration, the older Assyrian geographical expression becomes a formal provincial concept. Imperial Aramaic `Abar-Nahara` preserves the same observer-relative geography.
+
+Promotion:
+
+```text
+OUTSIDER_RELATIONAL_CLASSIFIER = SOURCE_LOCKED_POSITIVE_CONTROL
+```
+
+Important consequence: a relational phrase can harden into a territorial-administrative identity without first being an ethnic self-name.
+
+### OUT-EXP-02 — `Ivri` speaker-context pattern
+
+The first pass shows a strong outsider/intergroup concentration, while not making `Ivri` exclusively foreign speech.
+
+Observed contexts include:
+
+- Abram called `ha-Ivri` in a multi-polity war narrative;
+- Joseph described as a "Hebrew man" inside an Egyptian household;
+- Joseph himself speaks of the "land of the Hebrews" to Egyptian royal officials;
+- Pharaoh's daughter identifies the foundling as a "Hebrew child";
+- Moses is instructed to tell Pharaoh that the "God of the Hebrews" appeared;
+- Philistines speak of the "camp of the Hebrews";
+- Jonah answers foreign sailors `Ivri anokhi`.
+
+Working result:
+
+```text
+Ivri has high salience at intergroup boundaries
+!=
+Ivri is only an outsider exonym
+```
+
+This is now an identity-tensor calibration case for `REFERENCE_FRAME` and `BOUNDARY_RELATION`.
+
+### OUT-EXP-03 — ancient explicit classifier-blurring control
+
+Dionysius of Halicarnassus explicitly states that distant peoples were often grouped under broad names because remoteness obscured exact distinctions. He gives:
+
+- Trojans / Phrygians as a frequently conflated pair;
+- Latins, Umbrians, Ausonians and others called Tyrrhenians by Greeks;
+- Rome itself sometimes treated as Tyrrhenian.
+
+This is direct ancient testimony for:
+
+```text
+DISTANCE
+-> LOWER ETHNOGRAPHIC RESOLUTION
+-> MACRO-CLASSIFIER
+```
+
+Add:
+
+```text
+OUT-03 = DISTANCE_RESOLUTION_COMPRESSION
+```
+
+### AUTH-EXP-01 — Eumaeus / Philoetius
+
+Homeric source lock strengthens the domain-holder reading.
+
+Eumaeus:
+
+- "cared for [Odysseus'] substance above all the slaves";
+- independently constructed the large swine enclosure during Odysseus' absence;
+- controlled twelve sties, breeding stock, boars, guard dogs and multiple subordinate herdsmen;
+- dispatched animals to the palace;
+- is repeatedly called "leader of men."
+
+Philoetius:
+
+- was appointed by Odysseus over the cattle while still young;
+- describes the herd as multiplying under his care;
+- remains "in charge of cattle";
+- is also called "leader of men."
+
+Promotion:
+
+```text
+DOMAIN_TITLE_VS_LABOR_TASK = HOMERIC_POSITIVE_CONTROL
+```
+
+The lexical herd-title remains real, but the narrative function includes delegated management of the absent king's productive assets.
+
+### CAP-EXP-01 — technical-capacity extraction
+
+Source-locked positive pair:
+
+1. II Kings 24 explicitly groups commanders, warriors, artisans/craftsmen and smiths in the deportation to Babylon, while saying only the poorest remained.
+2. Neo-Assyrian SAA 15 280 orders carpenters and potters to be collected so they can direct deportees working at Dur-Sharrukin.
+
+Plato, Republic 421d-e supplies the independent craft-capacity mechanism:
+
+```text
+lack of tools / requirements
+-> worse products
+-> worse next-generation craftsmen
+```
+
+Together these support testing:
+
+```text
+SPECIALIST RELOCATION
+<-> CAPACITY TRANSFER
+```
+
+without projecting the mechanism onto every deportation.
+
+### ORIG-EXP-01 — sacred-carrier route into Rome
+
+Dionysius provides a source-indexed chain more precise than generic "Trojan ancestry":
+
+```text
+Samothrace
+-> Dardanus carries Palladia/images of Great Gods into Asia
+-> Dardania
+-> Ilium/Troy
+-> Aeneas removes sacred objects during the fall
+-> Italy
+-> Roman/Vestal custody tradition
+```
+
+This is a continuity claim about sacred objects and rites in addition to human genealogy.
+
+Diodorus independently gives:
+
+```text
+Samothrace
+-> Dardanus/Cybele/Corybas
+-> Asia/Phrygia
+```
+
+and also has the Argonauts invoke and later repay vows to the Great Gods of Samothrace.
+
+Therefore the recurrent origin network has at least three carrier types:
+
+```text
+people
+sacred objects
+ritual knowledge
+```
+
+which must be tracked separately.
+
+### CAM/CABIR source control
+
+Varro explicitly glosses `camilla` as `administra` and says Casmilus at Samothrace is a divine minister to the Great Gods.
+
+Thus the strongest current claim remains:
+
+```text
+Casmilus/Cadmilus <-> ritual minister field
+Camillus/camilla <-> Roman ritual attendant field
+```
+
+Ancient comparison: observed.
+Deep etymological identity: unresolved.
+
+### CAR-EXP-01 — BR carrier observation
+
+ORACC provides a useful non-hypothetical carrier-control:
+
+```text
+e-ber
+e-bir
+e-bir-ma
+```
+
+for the same "Across the River" geographic address.
+
+This directly licenses vowel/readout flexibility within the carrier orbit.
+
+It does not by itself license arbitrary consonant metathesis; that remains transform-specific.
