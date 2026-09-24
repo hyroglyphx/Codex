@@ -399,3 +399,61 @@ Before any deeper historical relation is proposed, require:
 - phonological reconstruction for each stage;
 - contact or transmission pathway between Gaulish/Roman Gaul and Thracian naming traditions;
 - evidence stronger than the late convergence itself.
+
+
+## 12. Trecae / Thrace — diachronic convergence candidate
+
+The Troyes line and the Thrace line become unexpectedly close at an intermediate Latin stage.
+
+Troyes:
+```text
+Tricasses
+-> Tricassium
+-> Trecae
+-> Treies
+-> Troyes
+```
+
+Thrace:
+```text
+Θρᾴκη / Θρῄκη
+-> Thracia / Threcia
+-> Thrace / Threce / Thraca
+```
+
+The intermediate comparison is therefore:
+
+```text
+Trecae
+Thrēcē / Threce
+```
+
+with closely matching carrier skeletons:
+
+```text
+T-R-E-C-
+T-H-R-E-C-
+```
+
+This is not yet evidence of a shared historical source. The useful mechanism is:
+
+```text
+DISTINCT OLDER NAMES
+-> INDEPENDENT SOUND / ORTHOGRAPHIC CHANGE
+-> LATER PHONEMIC CONVERGENCE
+```
+
+Add:
+
+```text
+DIA-02 = DIACHRONIC_PHONEMIC_CONVERGENCE
+STATUS = EXPLORE_ONLY
+```
+
+This is an important control because later forms can become more similar than their older source forms.
+
+Next tests:
+- date the attestations of `Trecae`;
+- collate dated Greek/Latin Thrace variants;
+- reconstruct pronunciation stage by stage;
+- test whether any contact or literary-reception pathway ever brought the two names into the same interpretive field.
