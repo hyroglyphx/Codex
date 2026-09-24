@@ -68,3 +68,26 @@ promotion_notes:
   - "AUTH-02 promoted to Homeric positive control."
   - "CAP-01 has first cross-corpus source-lock pair."
   - "ORIG-01 now separates human, sacred-object, and ritual-knowledge carriers."
+  NUMA_OFFICE_TRANSLATION:
+    class: C0_OBSERVED_ANCIENT_CROSSWALK
+    witness: "Plutarch Numa 7"
+    mappings:
+      - "piloi / reported pilamenai -> flamines (Plutarch's ancient etymological model)"
+      - "Camillus -> Hermes by diakonia/service"
+      - "Romulus -> Quirinus cult classifier -> Flamen Quirinalis office"
+    ancient_parallel:
+      - "Varro: flamen from woolen filum binding the head"
+      - "Dionysius: flamines rendered as stephanephoroi / crown-wearers"
+      - "Macrobius: Etruscans call Mercury Camillus = praeminister deorum"
+      - "Servius: Mercury in Etruscan Camillus ~ minister deorum"
+    result: "same institutional address can be translated by regalia, function, or cult relation"
+    operators: [AUTH-03,TRN-01]
+
+additional_operators:
+  AUTH-03:
+    name: REGALIA_TO_OFFICE_CLASSIFIER
+    path: [RITUAL_REGALIA,VISIBLE_AUTHORITY_MARKER,OFFICE_TITLE]
+  TRN-01:
+    name: FUNCTIONAL_OFFICE_TRANSLATION
+    rule: "cross-language equivalence may preserve office/function while surface name changes"
+
