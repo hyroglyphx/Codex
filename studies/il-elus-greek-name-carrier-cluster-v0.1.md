@@ -457,3 +457,114 @@ Next tests:
 - collate dated Greek/Latin Thrace variants;
 - reconstruct pronunciation stage by stage;
 - test whether any contact or literary-reception pathway ever brought the two names into the same interpretive field.
+
+
+## 13. Direct medieval control: Chrétien de Troies writes Trace for Thrace
+
+The strongest comparison is not reconstructed `Trecae ~ Thrēcē`, but a **same-author vernacular control**.
+
+Chrétien identifies himself in *Erec et Enide*:
+
+```text
+Por ce dist Crestiens de Troies
+```
+
+while in *Cligès* he writes of:
+
+```text
+uns chevaliers de Trace
+```
+
+for a knight of Thrace.
+
+Thus one twelfth-century Champenois author has both forms in his own literary language:
+
+```text
+TROIES = Troyes
+TRACE  = Thrace
+```
+
+This is a high-value same-period/same-author calibration.
+
+### Troyes local chronology
+
+The local naming sequence independently includes:
+
+```text
+Trecassium civitas (637)
+Trecassina / Trecassense (7th c.)
+Treci (890)
+Treche (1218)
+Troies (1230)
+Troys (1370)
+Troyes
+```
+
+### Medieval French Thrace forms
+
+Anglo-Norman witnesses preserve:
+
+```text
+Trace
+Trachie
+Trasce
+Trase
+Trasie
+```
+
+for Thrace from the twelfth through fourteenth centuries.
+
+So the real medieval comparison is a moving pair:
+
+```text
+Troyes line:  Treci -> Treche -> Troies
+Thrace line:  Trace / Trasce / Trachie
+```
+
+### Phonological interpretation
+
+In later twelfth-century Old French:
+- `c` before `e/i` commonly represents an affricate /ts/;
+- `ch` commonly represents /tʃ/;
+- these affricates begin deaffricating during the thirteenth century.
+
+Therefore the 1218 pair is not safely reconstructed as exact homophones:
+
+```text
+Treche ~ /tre-tʃə/ (approx.; local realization uncertain)
+Trace  ~ /tra-tsə/ (approx.; dialect/date dependent)
+```
+
+but they occupy a much closer phonemic neighborhood than modern:
+
+```text
+Troyes /tʁwa/
+Thrace /tʁas/
+```
+
+suggests.
+
+### Revised result
+
+```text
+COMMON ORIGIN: not established
+MEDIEVAL PHONEMIC PROXIMITY: directly evidenced
+SAME-AUTHOR CO-PRESENCE: directly evidenced in Chrétien
+CONSCIOUS WORDPLAY/IDENTIFICATION: not yet found
+```
+
+Add:
+
+```text
+REC-02 = SAME_AUTHOR_PHONEMIC_COPRESENCE
+```
+
+Rule:
+
+```text
+If two candidate carriers occur in one dated author's own orthography,
+their relation can be tested at that author's linguistic stage
+without projecting modern pronunciation backward.
+```
+
+This is stronger than a modern surface comparison and weaker than an explicit ancient/medieval statement equating the names.
