@@ -20,7 +20,8 @@
     "Strabo meta-calibration: name adaptation, textual variants, prestige-toponym transfer, macro-classifiers, and title persistence",
     "Founder-name -> people-name -> country-name cascades in Strabo: Hellen, Dorus, Achaeus, Ion, Aetolus, Lycus, Latinus",
     "Semitic ʾEL -> Greek EL/ELL reception and aspiration-stripped Hellen/Hellas carrier experiment",
-    "IL/ELUS Greek name-carrier cluster: Elus/Elioun/Eloim/Belus against Ilus/Ilium, Eleusis, Helios and Selene"
+    "IL/ELUS Greek name-carrier cluster: Elus/Elioun/Eloim/Belus against Ilus/Ilium, Eleusis, Helios and Selene",
+    "Alashiya/Cyprus: external sovereignty versus internal heterarchy, city/land classifier ambiguity, southern scribal seat, and Alassa/Alašiya carrier test"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -77,7 +78,11 @@
     "Direct Semitic divine names received into Greek must be separated from native Greek/Anatolian EL/IL carriers.",
     "Helios and Selene are mandatory negative controls against treating every divine/light EL sequence as Semitic.",
     "Same-author, same-period spellings are high-value controls for historical phonemic proximity.",
-    "Chrétien de Troyes supplies a direct medieval Troies/Trace contrast: proximity is real, identity is not established."
+    "Chrétien de Troyes supplies a direct medieval Troies/Trace contrast: proximity is real, identity is not established.",
+    "A single external polity name may address city, land, region, island, or diplomatic state at different source scales.",
+    "Petrographic localization of diplomatic tablets identifies a scribal production zone before it identifies the full political capital.",
+    "External great-king diplomacy can compress internally distributed authority into one sovereign persona.",
+    "Hurrian allai 'lady' is a lexical control; deriving Alašiya from it remains a separate historical hypothesis."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -96,7 +101,8 @@
     "studies/thelidae-neleidai-cross-language-backprojection-v0.1.md",
     "studies/strabo-name-geography-transmission-v0.1.md",
     "studies/strabo-founder-genealogy-geography-v0.1.md",
-    "studies/il-elus-greek-name-carrier-cluster-v0.1.md"
+    "studies/il-elus-greek-name-carrier-cluster-v0.1.md",
+    "studies/alashiya-external-classifier-heterarchy-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -167,7 +173,13 @@
     "Search bilingual inscriptions for Greek personal names carrying imported Semitic -el elements",
     "Search Chrétien and contemporary Champagne texts for explicit puns or confusions between Troies and Trace",
     "Collate 12th-13th century Champagne spellings of Troyes against Trace/Trachie/Trasce forms of Thrace",
-    "Reconstruct Troies/Treche/Trace pronunciation by dated Champenois rather than modern French"
+    "Reconstruct Troies/Treche/Trace pronunciation by dated Champenois rather than modern French",
+    "Build Alašiya spelling/determinative matrix across Mari, Amarna, Ugarit, Hittite and Egyptian witnesses",
+    "Build Alashiya king-governor-pidduri authority graph",
+    "Test Alassa-Alašiya carrier with dated local attestations and phonology",
+    "Compare Alassa/Kalavasos/Enkomi archaeology against official-tablet petrography",
+    "Build Alashiyan personal-name matrix with language attribution confidence separated from office/location",
+    "Freeze Hurrian allai morphology before testing Alašiya etymology"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -203,7 +215,8 @@
     "Strabo-founder-genealogy-geography-v0.1": "source_locked_first_pass",
     "EL-ELL-Semitic-Greek-carrier-v0.1": "explore_only_source_locked_controls",
     "IL-ELUS-Greek-name-carrier-v0.1": "source_locked_first_pass",
-    "Trecae-Thrace-diachrony": "same_author_medieval_control_added"
+    "Trecae-Thrace-diachrony": "same_author_medieval_control_added",
+    "Alashiya-external-classifier-heterarchy-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
