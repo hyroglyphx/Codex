@@ -727,3 +727,58 @@ Add:
 ```text
 MEM-01 = EXTERNAL_ARCHIVE_RECOVERY
 ```
+
+
+## 15. Atlantis as an unfinished relay
+
+Plutarch says Solon learned the Atlantis account from Egyptian priests and attempted to introduce it to the Greeks in poetic form, but did not complete the work. Plato's *Timaeus* preserves the same basic premise, while giving Athenian political troubles as the reason; Plutarch instead attributes the abandonment to Solon's age and the scale of the task.
+
+Plutarch then makes the parallel explicit: Plato later took up the same Atlantis material and likewise died before completing it. Thus the literary relay is doubly unfinished:
+
+```text
+Egyptian priestly record
+-> Solon receives account
+-> planned Greek poem
+-> UNFINISHED
+-> Critias family transmission
+-> Plato Timaeus/Critias
+-> UNFINISHED
+```
+
+Add candidate operator:
+
+```text
+TRN-04 = INCOMPLETE_RELAY_PERSISTENCE
+```
+
+The tradition can survive incomplete redactions when oral memory, notes, genealogy, quotation, and later literary reuse overlap.
+
+### Semantic name translation
+
+*Critias* 113a-b explicitly says the Egyptians had translated the foreign names into Egyptian, and that Solon investigated their meanings and rendered those meanings into Greek. This yields:
+
+```text
+SOURCE NAME
+-> EGYPTIAN SEMANTIC TRANSLATION
+-> SOLONIC GREEK SEMANTIC BACK-TRANSLATION
+-> PLATONIC NAME
+```
+
+This is a first-class control for `NAME CARRIER != SEMANTIC TRANSLATION != PHONETIC TRANSLITERATION`.
+
+### Deucalion at the threshold
+
+*Timaeus* 22a-b has Solon first recount Phoroneus, Niobe, and Deucalion/Pyrrha to the Egyptian priests. The priest answers that repeated destructions by fire and water erase Greek deep-time memory. Deucalion therefore functions as an explicit local flood-memory comparator immediately before the Atlantis account.
+
+Add candidate operator:
+
+```text
+MEM-01 = EXTERNAL_ARCHIVE_RECOVERY
+```
+
+```text
+LOCAL MEMORY LOSS
+-> EXTERNAL ARCHIVE
+-> CROSS-CULTURAL RECOVERY
+-> RETRANSLATION
+```
