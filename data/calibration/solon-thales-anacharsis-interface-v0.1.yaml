@@ -1,0 +1,54 @@
+version: "0.1"
+date: "2026-09-24"
+id: SOLON_THALES_ANACHARSIS_INTERFACE
+status: FIRST_SOURCE_LOCK
+
+primary_sequence:
+  source: "Plutarch, Solon 4-8"
+  nodes: [circulating_tripod,Anacharsis_xenia,law_web,assembly_expertise,Thales_kinship_test,Plutarch_nonbiological_attachment,Solon_Salamis_persona_shift]
+
+operators:
+  OUT-04:
+    name: HOST_GUEST_REFERENCE_REVERSAL
+    path: [OUTSIDER,HOST_REFERENCE_FRAME,XENIA,GUEST_FRIEND]
+  AUTH-04:
+    name: EXPERTISE_DECISION_SEPARATION
+    rule: "knowledge holder may differ from decision holder"
+  KIN-01:
+    name: NONBIOLOGICAL_RELATIONAL_KINSHIP
+    states: [biological,legal_adoptive,affectional,household_retainer]
+  AUTH-05:
+    name: LEGAL_PERSONA_RECODING
+    path: [LEGAL_CONSTRAINT,PERSONA_SHIFT,REGISTER_SHIFT,SAME_MESSAGE,NEW_ADMISSIBILITY]
+  OUT-05:
+    name: LIMINAL_OBSERVER_ROLE
+    rule: "traveler/outsider can become a privileged comparator of multiple social systems"
+  NAME-04:
+    name: FOREIGN_NAME_PHONEMIC_RESEGMENTATION
+    rule: "receiving language may impose a semantic parse on an inherited foreign name without proving genetic etymology"
+
+identity_controls:
+  THALES:
+    axes:
+      ancestry_traditions: [Phoenician_Cadmean,distinguished_Milesian]
+      citizenship: Miletus
+      roles: [trader,statesman,sage,natural_philosopher]
+      mobility: [Egypt_tradition,Greek_Asia_network]
+  ANACHARSIS:
+    axes:
+      origin: Scythia
+      royal_kinship: yes_in_Herodotean_tradition
+      Greek_mother_bilinguality: Diogenes_tradition
+      roles: [xenos,guest_friend,sage,critic,ritual_adopter]
+      route: [Scythia,Hellespont,Cyzicus,Athens,Sardis,Scythia]
+  SOLON:
+    axes:
+      city: Athens
+      roles: [merchant,traveler,lawgiver,host,father,poet,herald,city_planner]
+      routes: [Athens,Miletus,Egypt,Cyprus,Salamis]
+
+negative_controls:
+  - "Seven Sages membership is not a fixed ancient roster"
+  - "later Greek parse of Anacharsis does not establish Scythian etymology"
+  - "Phoenician ancestry tradition for Thales is preserved as a tradition, not promoted to uncontested fact"
+  - "structural sequence in Plutarch does not by itself prove deliberate authorial architecture"
