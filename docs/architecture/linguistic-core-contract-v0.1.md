@@ -208,3 +208,28 @@ external onomastic witnesses
 If these converge on one consonantal/phonological architecture, they materially reduce the ambiguity.
 
 Absence of such external witnesses leaves the ambiguity open; it does not authorize replacing the transmitted form by editorial preference alone.
+
+
+## Same-referent micro-calibrations: NEI/NI and KA/CA
+
+Two ancient names in Solon's Egypt verse provide compact controls for cross-script comparison:
+
+```text
+Greek Νεῖλος / Neilos -> Latin Nīlus
+Greek Κάνωβος / Κάνωπος -> Latin Canopus
+```
+
+Use these only at the level they demonstrate:
+
+- `NEI -> NI`: same-referent Greek-to-Latin vowel/readout compression in the Nile name;
+- `K -> C`: ordinary Greek-kappa to Latin-C orthographic adaptation in Canopus;
+- `-b-/-p-`: an internally attested Greek variant in the Canopus carrier.
+
+These controls license carrier flexibility without licensing unrelated consonant substitutions.
+
+General rule:
+
+```text
+PROMOTE A TRANSPOSITION
+ONLY TO THE LEVEL DEMONSTRATED BY SAME-REFERENT WITNESSES
+```
