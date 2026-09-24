@@ -13,7 +13,8 @@
     "Kartvelian/Colchis script-language-substrate separation and translation lattice",
     "Observer-relative identity tensor: outsider labels, boundary relation, jurisdiction and reference frame",
     "Delegated-domain authority, speaking names, origin-attribution networks and utility-class capacity transfer",
-    "Older-name carrier rebinding: Cambyses cross-script/local-titulary transforms and Mycenaean Deukalion pre-myth name continuity"
+    "Older-name carrier rebinding: Cambyses cross-script/local-titulary transforms and Mycenaean Deukalion pre-myth name continuity",
+    "SA/SAR liminal carrier cluster: Samothrace, Sardis, Sardinia, Sauromatae/Sarmatia"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -38,7 +39,10 @@
     "Divine and human role labels can recurse across authority levels without implying entity identity.",
     "A name may predate the narrative role later concentrated around it.",
     "Same entity may acquire a new local sacral/royal name under changed jurisdiction while preserving the older personal carrier.",
-    "Strong cross-script name identity does not require secure etymological decomposition."
+    "Strong cross-script name identity does not require secure etymological decomposition.",
+    "Surface SA/SAR can be a receiving-language output from more complex onsets such as SF-/SP-.",
+    "Same ethnonym can compress diachronically from SAURO- to SAR- without requiring a different population.",
+    "Phonemic carrier enrichment at liminal/crossing nodes is a testable candidate pattern, not a universal prefix claim."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -51,7 +55,8 @@
     "studies/qbl-carrier-reception-confrontation.md",
     "studies/kartvelian-colchis-script-translation-transmission-v0.1.md",
     "studies/outsider-identity-authority-liminality-v0.1.md",
-    "studies/older-name-carrier-rebinding-v0.1.md"
+    "studies/older-name-carrier-rebinding-v0.1.md",
+    "studies/sa-sar-liminal-carrier-cluster-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -72,7 +77,12 @@
     "Test BR carrier orbit against attested cross-script forms and separately licensed metatheses",
     "Extend older-name rebinding queue to Achilles, Hector, Cyrus/Kurush, Dardanus and Hellen",
     "Build Cambyses multilingual carrier table from Behistun and Egyptian titulary as a same-entity/multiple-readout benchmark",
-    "Build Deukalion timeline from PY An 654 through Homeric bearers to flood/genealogical traditions"
+    "Build Deukalion timeline from PY An 654 through Homeric bearers to flood/genealogical traditions",
+    "Build Sepharad-Sfard-Sparda-Sardis cross-script alignment",
+    "Test Samothrace SA cluster: Samos, Saonnesus, Saon, Saos/Saoce, Saii against flood-rescue/height/crossing semantics",
+    "Test Sauromatae-Sarmatae diachronic carrier compression and Tanais boundary function",
+    "Compare Sardus/Sardinia with Shardana only under separate Bronze Age controls",
+    "Extend SA/SAR carrier survey to Sarpedon and Sarapana/Shorapani as route-node controls"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -98,7 +108,8 @@
     "Outsider-identity-tensor-v0.1": "supplement_added_source_lock_queue",
     "Outsider-identity-source-lock-v0.1": "first_source_lock_complete",
     "Numa-7-office-translation-cluster": "source_locked",
-    "Older-name-carrier-rebinding-v0.1": "first_source_lock_complete"
+    "Older-name-carrier-rebinding-v0.1": "first_source_lock_complete",
+    "SA-SAR-liminal-carrier-v0.1": "first_source_locked_pass_complete"
   },
   "active_candidate_results": {
     "anchored": [
