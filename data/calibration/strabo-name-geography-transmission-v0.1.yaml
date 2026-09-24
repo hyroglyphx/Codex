@@ -1,0 +1,79 @@
+version: "0.1"
+date: "2026-09-24"
+id: STRABO_NAME_GEOGRAPHY_TRANSMISSION
+status: FIRST_SOURCE_LOCKED_PASS
+
+anchors:
+  FOREIGN_NAME_ADAPTATION:
+    source: "Strabo 16.4"
+    examples:
+      - [Aramaeans, Arimaeans_Arimi]
+      - [Dareios, Darieces]
+      - [Parysatis, Pharziris]
+      - [Athara, Atargatis_Derceto]
+    operator: TRN-05
+
+  HELLI_SELLI:
+    source: "Strabo 7.7.10"
+    type: textual_variant_backprojection
+    controls: [Hellopia,Selleeis,geography,parallel_witnesses]
+    operator: TXT-01
+
+  FABRICATED_HOMERIC_TOPONYMS:
+    source: "Strabo 13.1.45"
+    examples: [Alizonium,Argyria]
+    operator: ADV-01
+
+  CAUCASUS_TRANSFER:
+    source: "Strabo 11.5.5"
+    path: [Colchian_Caucasus,prestige_myth,Indian_mountains]
+    operator: NAME-07
+
+  DUAL_IBERIA:
+    source: "Strabo 11.2.19"
+    ancient_explanation: "same name perhaps due gold mines in both countries"
+    operator: NAME-CAND-07
+    status: ancient_functional_etiology_not_historical_proof
+
+  DIOSCURIAS:
+    source: "Strabo 11.2.19"
+    tribes: 70
+    languages: many_distinct
+    macro_classifier: Caucasii
+    operator: OUT-06
+
+  SCEPTUCHOI:
+    source: "Strabo 11.2.13"
+    hierarchy: [king_or_tyrant,sceptuchos,people]
+    operator: AUTH-01
+
+  SCEPSIS_KINGS:
+    source: "Strabo 13.1.52"
+    sequence: [kingship,oligarchy,democracy]
+    persistence: [king_title,prerogatives]
+    operator: AUTH-06
+
+  CATAONIA:
+    source: "Strabo 12.1.2"
+    older_state: separate_tribal_classifier
+    strabo_state: no_visible_language_or_usage_difference
+    operator: ID-01
+
+operators:
+  TRN-05:
+    name: FOREIGN_NAME_RECEIVING_LANGUAGE_ADAPTATION
+  TXT-01:
+    name: GEOGRAPHIC_TEXTUAL_BACKPROJECTION
+  ADV-01:
+    name: ETYMOLOGICAL_GEOGRAPHY_FABRICATION_CONTROL
+  NAME-07:
+    name: PRESTIGE_TOPONYM_TRANSFER
+  NAME-CAND-07:
+    name: DUAL_IBERIA_FUNCTIONAL_ETIOLOGY
+    status: candidate
+  OUT-06:
+    name: MULTILINGUAL_MACRO_CLASSIFIER
+  AUTH-06:
+    name: TITLE_PERSISTENCE_AFTER_REGIME_CHANGE
+  ID-01:
+    name: CLASSIFIER_FOSSILIZATION_AFTER_CONVERGENCE
