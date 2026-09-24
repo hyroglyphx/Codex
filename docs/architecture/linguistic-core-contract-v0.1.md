@@ -282,3 +282,28 @@ Canonical exploratory control:
 Tricasses -> Trecae / Treies / Troyes
 Θρᾴκη -> Thracia / Threcia / Threce
 ```
+
+
+## REC-02 — Same-author phonemic co-presence
+
+When two candidate names occur in the same dated author's language:
+
+```text
+SAME AUTHOR
++ SAME PERIOD
++ DISTINCT REFERENTS
++ ATTESTED FORMS
+```
+
+use those forms as a high-value reception control before comparing modern pronunciations.
+
+Canonical control:
+
+```text
+Chrétien de Troies
+writes:
+Troies = Troyes
+Trace = Thrace
+```
+
+This demonstrates medieval phonemic proximity without establishing common etymology or conscious identification.
