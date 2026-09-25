@@ -994,3 +994,26 @@ REC-08 = MONUMENTAL_REIDENTIFICATION_LAYER
 SCR-06 = VISUAL_CULTURAL_CLASSIFIER_VS_INSCRIPTIONAL_IDENTITY
 ```
 
+
+
+## 23. Aithiopes as a multi-regional Greek classifier
+
+Herodotus explicitly distributes Aithiopes across more than one geographic region.
+
+- 3.94: "Paricanians and Ethiopians of Asia" form the seventeenth tribute division.
+- 7.70: "eastern Ethiopians" are marshalled with the Indians and contrasted with the Libyan/African Ethiopians by language and hair.
+
+This joins the Homeric east/west extremity formulation and should be treated as a classifier system rather than a single-territory ethnonym.
+
+~~~
+AITHIOPES
+  +-- LIBYAN / AFRICAN
+  +-- ASIAN / EASTERN
+~~~
+
+Add:
+
+~~~
+ID-07 = AITHIOPES_MULTI_REGIONAL_MACRO_CLASSIFIER
+GEO-09 = EASTERN_AITHIOPES_PERSIAN_IMPERIAL_ADDRESS
+~~~
