@@ -405,3 +405,85 @@ matter
 
 The Horse is therefore structurally an **architektonic simulacrum**:
 its visible form is intentionally sufficient to trigger one classifier ("horse / crafted offering") while its operative state belongs to another ("container / infiltration device / weapon").
+
+## 14. Privileged Timber + Authorized Maker
+
+A wider ancient-text comparison suggests that the stable invariant is not specifically `cedar + famous craftsman`, but:
+
+```text
+PRIVILEGED / CHARGED MATERIAL
++
+AUTHORIZED / SKILLED MAKER
++
+DIVINE / ROYAL DESIGN
+```
+
+### Greek controls
+
+- **Argo:** Argus builds under Athena's direction; Athena inserts a speaking timber from the oak of Dodona into the prow.
+- **Trojan Horse:** Epeios is the architekton; Athena is co-designer/enabler; later tradition has Epeios cutting Ida timber, while Virgil emphasizes fir/pine construction.
+
+### Mesopotamian controls
+
+- **Gudea / E-ninnu:** Ningirsu directs Gudea into the inaccessible cedar mountain; cedar, cypress and other rare timbers are rafted in from distant highlands. Gudea acts as divinely authorized temple-builder under dream/oracular design.
+- **Gilgamesh:** the Cedar Forest supplies incomparable timber; Enkidu explicitly recalls selecting and fashioning a cedar door. Here the heroic actor himself temporarily occupies the craftsman role.
+
+### Hebrew controls
+
+- **Tabernacle:** acacia rather than cedar is the designated timber; Bezalel and Oholiab are called by name and endowed with divine wisdom/understanding/skill for wood, metal, stone and textile work.
+- **Solomonic Temple:** Solomon explicitly asks Hiram for both Lebanon cedar/cypress/algum and a master craftsman; Huram-abi is sent as the exceptional artisan. This is the clearest same-passage pairing of privileged timber and renowned maker.
+
+### Corridor back into Sumerian/Akkadian
+
+The old lexical tradition provides an unusually clean material/craft pair:
+
+```text
+Sumerian eren 'cedar'
+<-> Akkadian erēnu 'cedar'
+
+Sumerian nagar 'carpenter'
+<-> Akkadian nagāru 'joiner/carpenter'
+```
+
+Both are explicit lexical-list correspondences.
+
+This creates a direct bridge between the current Epeios node and the Sumerian-Akkadian transmission corridor:
+
+```text
+SPECIAL TIMBER SLOT
++
+MASTER JOINER / BUILDER SLOT
+```
+
+can be tracked cross-linguistically without claiming common etymology between Greek, Sumerian, Akkadian and Hebrew craft terms.
+
+### Revised operator
+
+```text
+MAT-03 = PRIVILEGED_MATERIAL_PROVENANCE
+CRAFT-05 = AUTHORIZED_MAKER
+BLD-01 = SACRED_CONSTRUCTION_DUAL_KEY
+```
+
+Canonical structure:
+
+```text
+SACRED / REMOTE GEOGRAPHY
+-> SELECTED MATERIAL
+-> AUTHORIZED MAKER
+-> ORDERED FORM
+-> CONSECRATED / LIMINAL OBJECT
+-> STATE OR BOUNDARY TRANSFORMATION
+```
+
+The strongest form of the motif does not require cedar specifically. Cedar dominates many Near Eastern monumental/sacral settings, but Greek and biblical comparanda show the deeper invariant is **material selected by provenance and suitability**: Dodona oak, Ida fir/pine, acacia, Lebanon cedar, inaccessible mountain cedar.
+
+The craftsman also need not always be a separate professional. In some stories the king/hero is temporarily promoted into the authorized maker role. Therefore:
+
+```text
+RENOWNED CRAFTSMAN
+OR
+DIVINELY COMMISSIONED MAKER
+```
+
+is the more stable classifier.
