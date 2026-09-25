@@ -143,7 +143,10 @@
     "The Manes son of Kumlis stele at Sardis is a 394 BCE Lydian-Aramaic legal/funerary bilingual anchored by Artaxerxes II regnal dating.",
     "Xanthus the Lydian preserves an ancient local dialect-continuum claim for Lydian/Torrhebian and a local toponymic memory of Sardis/Xuaris matching epichoric Sfar.",
     "Lydia shows sovereign replacement without full administrative or cultural reset: Sardis remains the center under Persian Sparda and local Lydian personnel persist.",
-    "Lydian script ancestry and language ancestry are separate: Greek-derived alphabet, Anatolian Indo-European language."
+    "Lydian script ancestry and language ancestry are separate: Greek-derived alphabet, Anatolian Indo-European language.",
+    "The ATLANT- name field predates Plato's island narrative: Homer/Hesiod preserve Atlas as western cosmic bearer; Herodotus uses Atlas for a western Libyan mountain, Atlantes for people named from it, and Atlantis for the sea beyond the Pillars.",
+    "Herodotus Atlantis is a sea-classifier; Plato reuses the same ATLANT- carrier with nesos 'island', making Atlantis a canonical classifier-rebinding case.",
+    "Herodotus' Pillars of Heracles function as a navigational threshold into an inhabited/traded Atlantic zone, not a terminal edge."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -170,7 +173,8 @@
     "studies/epeios-wooden-horse-linguistic-craft-node-v0.1.md",
     "studies/troy-wilusa-multilingual-confidence-corridor-v0.1.md",
     "studies/herodotus-linguistic-operators-v0.1.md",
-    "studies/lydia-high-leverage-development-map-v0.1.md"
+    "studies/lydia-high-leverage-development-map-v0.1.md",
+    "studies/atlas-atlantes-atlantis-preplato-carrier-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -313,7 +317,11 @@
     "Build Nannas bilingual full same-artifact name-translation matrix",
     "Build Manes Lydian-Aramaic bilingual clause alignment",
     "Register Xanthus Lydian fragments for dialect and toponym controls",
-    "Expand Sfar/Sparda/Sardis same-referent matrix"
+    "Expand Sfar/Sparda/Sardis same-referent matrix",
+    "Build exact morphological table Atlas/Atlantos/Atlantes/Atlantis/Atlantikos across pre-Platonic and Platonic witnesses",
+    "Source-lock the Atarantes/Atlantes manuscript apparatus before using the pair historically",
+    "Trace Erytheia/Gadeira/Pillars/Atlas/Hesperides as one western-boundary semantic field without collapsing mythic and geographic layers",
+    "Compare Herodotus Atlantis thalassa directly with Plato Atlantis nesos as classifier rebinding"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -364,7 +372,8 @@
     "Herodotus-linguistic-operators-v0.1": "source_locked_first_pass",
     "Herodotus-1.56-ethnonym-rebinding": "source_locked_first_pass",
     "Ancient-Script-Lattice-material-change-2026-09-25": "integrated_with_directionality_conflict_preserved",
-    "Lydia-high-leverage-development-map-v0.1": "source_locked_first_pass"
+    "Lydia-high-leverage-development-map-v0.1": "source_locked_first_pass",
+    "Atlas-Atlantes-Atlantis-prePlato-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
