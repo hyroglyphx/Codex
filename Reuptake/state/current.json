@@ -130,7 +130,10 @@
     "Herodotus explicitly describes Attic/Pelasgian language shift during incorporation into the Hellenes.",
     "Herodotus treats ethnonym unity, language unity and genealogical unity as separable: Ionian identity spans mixed ancestry and multiple dialect groups.",
     "Book 4 is a high-density language-contact corpus: Skolotoi/Scythians/Sacae, Geloni mixed speech, Sauromatian reshaping, Scythian lexical glosses and divine-name crosswalks.",
-    "Herodotus records multilingual infrastructure directly through seven-interpreter trade chains, Egyptian interpreter training and Carian oracle recognition."
+    "Herodotus records multilingual infrastructure directly through seven-interpreter trade chains, Egyptian interpreter training and Carian oracle recognition.",
+    "Herodotus 1.56 presents one migrating Hellenic ethnos under phase-specific labels: Makednon at the Pindus stage and Dorian after movement into the Peloponnese.",
+    "Herodotus 1.56-57 juxtaposes two transformation models: phase-name rebinding without stated language change, and Attic/Pelasgian language change during Hellenic incorporation.",
+    "Thucydides 1.3 independently preserves Hellen/Phthiotis as the nucleus from which the Hellenic name diffused by alliance and association."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -282,7 +285,10 @@
     "Build Herodotus endonym-exonym matrix including Skolotoi/Scythians/Sacae and Syrians/Cappadocians",
     "Build Herodotus language-shift graph across Pelasgians, Geloni, Sauromatae, Scyles and Egyptian interpreters",
     "Build Herodotus divine-equivalence matrix across Egyptian, Scythian, Libyan and Greek names/functions",
-    "Treat Book 4 as priority corpus for ancient contact-language mechanics"
+    "Treat Book 4 as priority corpus for ancient contact-language mechanics",
+    "Build Herodotus 1.56-57 route/name/language tensor with exact Greek morphology",
+    "Compare Herodotus 1.56 and 8.43 uses of Makednon/Makednian",
+    "Compare Herodotus migration-chain naming with Thucydides 1.3 network diffusion of Hellenes"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -330,7 +336,8 @@
     "Hittite-heterogram-replication-v0.1": "source_locked_first_pass",
     "Hittite-screenshot-audit-III": "source_locked_first_pass",
     "Troy-Wilusa-multilingual-confidence-corridor-v0.1": "source_locked_first_pass",
-    "Herodotus-linguistic-operators-v0.1": "source_locked_first_pass"
+    "Herodotus-linguistic-operators-v0.1": "source_locked_first_pass",
+    "Herodotus-1.56-ethnonym-rebinding": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
