@@ -24,7 +24,8 @@
     "Alashiya/Cyprus: external sovereignty versus internal heterarchy, city/land classifier ambiguity, southern scribal seat, and Alassa/Alašiya carrier test",
     "Mycenaean divine-role rebinding: Poseidon local prominence, Potnia title-localization, post-palatial cult reweighting, and Cyprus divine-reception bridge",
     "Confidence-weighted spatial-temporal carrier lattice across ancient languages, with relation-specific weights and dense multilingual nodes",
-    "Recovered Sumerian-Akkadian-Hurro-Urartian cuneiform transmission spine: lexical crosswalks, heterograms, bilinguals and royal formula continuity"
+    "Recovered Sumerian-Akkadian-Hurro-Urartian cuneiform transmission spine: lexical crosswalks, heterograms, bilinguals and royal formula continuity",
+    "Sumerian-Akkadian-Hurrian-Urartian confidence corridor: explicit cuneiform transmission, Assyrian-Urartian handoff, Hurro-Urartian genetics, and candidate lexical residue"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -100,7 +101,11 @@
     "A high-confidence semantic/operator equivalence may coexist with near-zero etymological confidence.",
     "Sumerian->Akkadian and Akkadian->Urartian are high-confidence transmission/carrier relations even though they are not a single genetic lineage.",
     "Hurrian<->Urartian genetic relation must remain distinct from Akkadian/Urartian scribal-carrier transmission.",
-    "Cuneiform transmission density is a separate axis from lexical/onomastic node density."
+    "Cuneiform transmission density is a separate axis from lexical/onomastic node density.",
+    "A confidence corridor is a chain of strong typed edges, not an undifferentiated common-origin claim.",
+    "Sumerian->Akkadian and Akkadian->Urartian carrier transmission can be A-confidence while Sumerian<->Hurro-Urartian ancestry remains low-confidence.",
+    "Akkadian mediation must be tested before proposing direct Sumerian-Hurrian cultural borrowing.",
+    "Sumerian šu / Hurrian šu-ni / Urartian su- 'hand' is the leading triadic lexical probe, not a promoted cognate set."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -122,7 +127,8 @@
     "studies/il-elus-greek-name-carrier-cluster-v0.1.md",
     "studies/alashiya-external-classifier-heterarchy-v0.1.md",
     "studies/mycenaean-divine-role-rebinding-v0.1.md",
-    "studies/dense-ancient-language-nodes-v0.1.md"
+    "studies/dense-ancient-language-nodes-v0.1.md",
+    "studies/sumerian-akkadian-hurro-urartian-confidence-corridor-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -217,7 +223,13 @@
     "Source-lock Kal-e Shin and Topzawa clause-level Assyrian/Urartian alignments",
     "Rebuild the Urartian formula kernel around ereli, ebani, patari, pili and sidist-",
     "Integrate Ebla and Sumerian-Akkadian lexical equations into the same transmission graph",
-    "Keep Hurrian-Urartian genetic edges visually separate from Akkadian-Urartian scribal edges"
+    "Keep Hurrian-Urartian genetic edges visually separate from Akkadian-Urartian scribal edges",
+    "Track LUGAL/KUR/URU/DINGIR/ID from Sumerian lexical value through Akkadian readout into Urartian deployment",
+    "Align Sarduri I Akkadian titulary against Ispuini/Menua and Sarduri II Urartian titulary slot-by-slot",
+    "Build clause-level Kal-e Shin Assyrian-Urartian alignment",
+    "Build secure Hurrian-Urartian cognate/morphology table",
+    "Retest Sumerian šu vs Hurrian/Urartian su hand under preregistered null",
+    "Search Hurrian cultic lexicon for Sumerian-origin terms demonstrably mediated by Akkadian"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -258,7 +270,8 @@
     "Alashiya-spelling-determinative-matrix-v0.1": "source_locked_first_pass",
     "Mycenaean-divine-role-rebinding-v0.1": "source_locked_first_pass",
     "confidence-weighted-carrier-lattice-v0.1": "adopted_experimental_first_weighted_pass",
-    "Sumerian-Akkadian-Urartian-transmission-supernode": "reactivated_top_tier"
+    "Sumerian-Akkadian-Urartian-transmission-supernode": "reactivated_top_tier",
+    "SUM-AKK-HUR-URART-confidence-corridor-v0.1": "edge_typed_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
