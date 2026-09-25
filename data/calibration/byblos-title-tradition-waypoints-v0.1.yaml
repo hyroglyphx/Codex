@@ -1,0 +1,62 @@
+dataset: byblos-title-tradition-waypoints
+version: 0.1.0
+updated: 2026-09-25
+status: ACTIVE_CALIBRATION
+object: OBJ-001
+role: Byblos_Akkadian_to_Phoenician_title_tradition
+
+core_relation:
+  source_lane: "Amarna-era Akkadian: bēltu ša Gubla / Lady-Mistress of Byblos"
+  target_lane: "Phoenician: bʿlt gbl / Baalat Gebal"
+  relation_type: TITLE_FUNCTION_CONTINUITY_CANDIDATE
+  rule: "chronological continuity must be waypointed; do not jump directly across periods"
+
+waypoints:
+  - id: AMARNA_BYBLOS
+    period: "14th century BCE"
+    language: Akkadian
+    form: "bēltu ša Gubla"
+    role: "earlier Byblos divine-title anchor"
+    confidence: A
+
+  - id: YEḤIMILK_KAI4
+    period: "10th century BCE (scholarly classification; some modern summaries give 10th–9th)"
+    place: Byblos
+    language: Phoenician
+    script: Phoenician_alphabetic
+    witness: "Yehimilk inscription / KAI 4 / TSSI III 6"
+    title_form: "bʿlt gbl"
+    context: "invoked with Baal-shamem and the holy gods of Byblos in royal blessing"
+    role: "independently dated Phoenician waypoint in the title tradition"
+    confidence: A
+    note: >
+      Use KAI 4 as a chronological and spatial bridge between the Amarna-period
+      Akkadian title tradition and later Byblian Phoenician royal inscriptions.
+      Exact sign forms and orthography must be compared before promoting any
+      phonological continuity claim.
+
+  - id: LATER_BYBLIAN_ROYAL
+    period: "Iron Age onward"
+    language: Phoenician
+    form: "bʿlt gbl"
+    role: "later dynastic/title continuity lane"
+    confidence: A
+
+admissibility:
+  permitted:
+    - "same-city divine-title functional continuity"
+    - "chronological waypointing"
+    - "title-form comparison after exact orthographic verification"
+  not_automatic:
+    - "phonological identity across every period"
+    - "unbroken institutional continuity without witness-level support"
+    - "etymological inference from title equivalence alone"
+
+operators:
+  CHRON-01: DATED_INTERMEDIATE_WAYPOINT
+  TITLE-01: SAME_CITY_DIVINE_TITLE_CONTINUITY
+
+next_pass:
+  - "Attach exact KAI 4 line numbers and sign sequence for bʿlt gbl."
+  - "Compare Amarna bēltu ša Gubla, KAI 4 bʿlt gbl, and later Byblian witnesses side by side."
+  - "Separate title continuity, cult continuity, lexical cognacy, and orthographic continuity into distinct edges."
