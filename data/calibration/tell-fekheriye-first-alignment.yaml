@@ -29,6 +29,14 @@ sources:
     type: excavation_project_bibliography
     url: https://www.geschkult.fu-berlin.de/e/vaa/forschung/projekte_abgeschlossen/fecheriye/Literatur/index.html
     note: "Research bibliography for the Tell Fekheriye project."
+  - id: SECONDARY_ARAMAIC_PROTOTYPE_2026
+    type: secondary_summary_with_scholarly_citation
+    note: >
+      Project-library witness states that the bilingual text is most likely based on
+      an Aramaic prototype, citing Greenfield and Shaffer (1983). This directionality
+      claim must be checked against the primary article before promotion to canonical.
+      The same witness notes 38 Akkadian lines on the front, 23 Aramaic lines on the
+      back, close correspondence in the opening, and greater divergence in the second half.
 
 witness_geometry:
   cuneiform_lines: 38
@@ -213,19 +221,30 @@ alignment_rows:
     note: "Useful divergence control: same curse logic can be re-expressed with different lexical and numerical detail."
 
 directionality_model:
-  status: scholarly_model_not_frozen_fact
-  model:
-    section_1:
-      likely_source_language: Akkadian
-      target_language: Aramaic
+  status: competing_scholarly_models_not_frozen_fact
+  invariant:
+    - "Akkadian and Aramaic are phrase-level parallel versions on one artifact."
+    - "The opening is more closely corresponding than the second half."
+    - "Translation equivalence must be segmented by section and must not be promoted to etymological equivalence."
+  models:
+    aramaic_prototype:
+      claim: "Aramaic prototype -> Akkadian rendering"
+      support: "secondary project witness citing Greenfield and Shaffer (1983)"
+      confidence: candidate_pending_primary_source_check
+    double_bilingualism:
+      claim:
+        section_1: "Akkadian -> Aramaic"
+        section_2: "Aramaic -> Akkadian"
+      support: "Fales 1983 and existing project model"
       confidence: medium
-    section_2:
-      likely_source_language: Aramaic
-      target_language: Akkadian
-      confidence: low_to_medium
-  note: >
-    Some scholarship treats the inscription as 'double bilingualism', with different
-    compositional directionality by section. Preserve this as a tested model, not a universal fact.
+    assyrian_priority:
+      claim: "Assyrian/Akkadian textual priority -> Aramaic translation"
+      support: "reported in contemporary review literature"
+      confidence: candidate
+  rule: >
+    Do not collapse these models into one object-level arrow. Directionality is a
+    section-level variable until the source-language question is resolved from the
+    primary philological literature.
 
 derived_observations:
   - id: TF_D1
@@ -249,9 +268,14 @@ new_sieve_variables_triggered:
   - operator_preservation
   - phrase_alignment_density
   - internal_recension_boundary
+  - face_language_line_range
+  - directionality_claim_source
 
 next_pass:
   - "Attach exact Akkadian and Aramaic line/phrase numbering from Greenfield-Shaffer or the editio princeps."
   - "Quantify phrase-alignment density by section."
   - "Score lexical narrowing/expansion separately from syntactic reorder."
   - "Run hear/accept, name-preservation and curse operators through Semitic root lanes."
+  - "Build a high-correspondence vs divergent section map before deriving word-level phonological relations."
+  - "Attach face + language + exact line range + reconstruction source to every alignment edge."
+  - "Re-check every OBJ-006 word-level phonological relation for translation-derived false equivalence."
