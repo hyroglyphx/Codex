@@ -1,242 +1,286 @@
-# Drusilla Dunjee Houston — Wonderful Ethiopians Claim Mine v0.1
+# Drusilla Dunjee Houston — *Wonderful Ethiopians* Claim Mine v0.1
 
 **Date:** 2026-09-25  
-**Status:** SOURCE-LOCKED FIRST PASS  
-**Method:** extract Houston's concrete leads, descend to older/primary witnesses, then test each lane independently.
+**Status:** SOURCE-RECOVERY PASS  
+**Method:** Houston claim -> cited/implicit ancient witness -> independent source check -> typed relation.
 
 ## Macro result
 
-Houston is most useful as an index into neglected transmission chains. The strongest recoverable material is not one unitary "Cushite empire" claim but a set of independently testable corridors:
+Houston is most useful where her very broad "Cushite" synthesis accidentally preserves older source junctions that can be decomposed into stronger, narrower historical mechanisms.
 
-~~~
-1. WESTERN ANATOLIA: Karabel -> Egyptian/Ethiopian/Memnon reception -> Mira/Tarkasnawa
-2. RED SEA: Sabaean script/architecture -> northern Ethiopia -> local language adaptation
-3. ARABIA: ʿĀd -> modern epigraphic recovery
-4. ARABIA: Thamūd -> real tribe vs misleading "Thamudic" script label
-5. ZAGROS: Kaššû -> Kossaioi/Cossaei diachronic ethnonym lane
-6. HERODOTUS: Aithiopes explicitly split into African and Asian/eastern groups
-7. MEMNON: Ethiopia + Susa/Persia + Troy + western-Anatolian monument reception
-8. PURANIC RECEPTION: authentic Kushadvipa kernel -> Wilford remapping/contamination -> Houston
-9. ATLAS: Pausanias places an Aithiopian population adjacent to the Atlas/Nasamones-Atlantes zone
-~~~
+Highest-yield seams:
 
-## 1. Karabel — a physical monument crossing four identity systems
+1. Memnon / Susa / Sardis / Phrygia / Troy
+2. Karabel / Tarkasnawa / Alantalli / Greek Ethiopian-Memnon reception
+3. Anshan / Elam / early Achaemenid name substrate
+4. South Arabia <-> northern Ethiopia script-title-contact corridor
+5. Cissian / Cossaean / Kassite ethnonym-transfer problem
+6. Josephus-style genealogy-as-geography
+7. Wilford: Kusa-dvipa vs Atala classifier conflation
 
-Houston repeatedly treats Memnon as an Ethiopia/Asia bridge. Herodotus 2.106 supplies a much stronger object than her synthesis itself.
+---
 
-Herodotus describes two Ionian rock reliefs, including one on the road Sardis -> Smyrna, whose equipment he calls both "Egyptian and Ethiopian"; he reports that some viewers identified the figure as Memnon.
+## 1. MEMNON CORRIDOR — strongest Houston recovery
 
-The surviving Sardis-Smyrna monument is the Karabel relief. J. D. Hawkins' decipherment reads the figure as Tarkasnawa, King of Mira in Hieroglyphic Luwian. Hawkins also reads father and grandfather as kings of Mira, while noting uncertainty in their names. Later syntheses connect Tarkasnawa's father with Alantalli, independently known as a king of Mira in the age of Tudhaliya IV.
+Houston notices an old classical cluster around Memnon, Ethiopia, Susa and Troy. The primary-source network is stronger and more precise than her empire-level inference.
 
-~~~
-BRONZE-AGE OBJECT
-Karabel / Luwian / Tarkasnawa / Mira
-        |
-        v
-GREEK VISUAL CLASSIFICATION
-Egyptian + Ethiopian equipment
-        |
-        v
-GREEK MYTHIC RECLASSIFICATION
-"some say Memnon"
-~~~
+### Ancient witnesses
 
-This is a rare same-object demonstration of foreign-monument mythic reassignment.
+Herodotus 5.53-54:
+- Royal Road runs Sardis -> Susa.
+- Susa royal palace is called "Memnonian."
 
-### Alantalli phoneme probe
+Pausanias 10.31.7:
+- Memnon is king of the Ethiopian nation.
+- He comes to Troy **from Susa in Persia and the Choaspes**, not from Ethiopia.
+- Phrygians still point out his road and halting places.
 
-~~~
-ALANTALLI
-ATLANT-
-ATALANT-
-ATARANT-
-~~~
+Strabo 15.3.2:
+- Susa said to have been founded by Tithonus, father of Memnon.
+- Susa acropolis called Memnonium.
+- Susians also called Cissians.
+- Aeschylus called Memnon's mother Cissia.
 
-Alantalli enters as a western-Anatolian comparison node because the recent ATL/ATAL/ATAR experiment already freezes liquid and medial-vowel slots.
+Diodorus 2.22 (Ctesian tradition):
+- Assyrian king Teutamus sends **10,000 Ethiopians + 10,000 men of Susiana** under Memnon to aid Troy.
 
-**Status:** Karabel reception = ATTESTED; Alantalli comparison = CANDIDATE.
+### Typed network
 
-## 2. Red Sea contact — Houston's Arabia/Ethiopia corridor has a strong inscriptional core
+```
+ETHNONYM / ROYAL ROLE: Ethiopian king
+POLITICAL-GEOGRAPHIC NODE: Susa / Choaspes
+IMPERIAL ROAD: Susa <-> Sardis
+ROUTE MEMORY: Phrygia
+WAR DESTINATION: Troy
+LOCAL CLASSIFIER: Cissian / Susian
+```
 
-Yoichi Tsuge's study of Ethiopian inscriptions written in the South Arabian alphabet confirms two linguistic groups:
+This is a much better identity-tensor object than "Memnon proves one empire."
 
-~~~
-GROUP I  = more-or-less pure Sabaean
-GROUP II = local language with features shared with later Geʿez
-~~~
+```
+SUSA
+ -- Memnonian memory -->
+SARDIS / ROYAL ROAD
+ -- Phrygian route -->
+TROY
+```
 
-Tsuge argues that Group II reflects native everyday speech rather than an artificial inscriptional register, while Sabaean immigrants formed a minority population in a symbiotic environment.
+Operators:
+- MEM-03 = MEMNONIAN_SUSA_TROY_ROUTE_CORRIDOR
+- ID-07 = ETHNONYM_GEOGRAPHIC_ORIGIN_SPLIT
+- GEO-09 = MYTHIC_ROUTE_PRESERVED_AS_HALTING_PLACE_MEMORY
 
-Archaeology at Yeha and Hawelti independently supplies South-Arabian architectural transfer. The Great Temple and other monumental structures show direct similarities with Sabaean construction, including Ṣirwāḥ. Inscriptions preserve the political title "mukarrib of DʿMT and Sabaʾ".
+---
 
-This gives:
+## 2. KARABEL — physical western-Anatolian reception control
 
-~~~
-SOUTH-ARABIAN SCRIPT
-+ SABAIC LANGUAGE
-+ LOCAL ETHIOPIAN SEMITIC LANGUAGE
-+ SABAIC ARCHITECTURAL TECHNIQUE
-+ LOCAL POLITY DʿMT
-+ CROSS-RED-SEA PERSONNEL
-~~~
+Herodotus 2.106 reports a rock relief on the Sardis-Smyrna route whose equipment looked "Egyptian and Ethiopian"; some viewers identified the figure as Memnon.
 
-**Status:** ATTESTED.
+The Karabel relief is now read as a western-Anatolian/Luwian royal monument:
+- Tarkasnawa, king of Mira.
+- [son of] Alantalli, king of Mira (reading of the father in the relief remains uncertain).
+- a king Alantalli of Mira is independently attested in Hittite treaty tradition.
 
-## 3. ʿĀd — one of Houston's "Adites" now has direct epigraphic recovery
+### High-value relation
 
-Houston calls the Adites an ancient Arabian population. Ahmad Al-Jallad's 2025 The Epigraphy of the Tribe of ʿĀd publishes and surveys pre-Islamic inscriptions of ʿĀd. Safaitic inscription BES15 161 contains:
+```
+PHYSICAL ANATOLIAN ROYAL MONUMENT
+-> GREEK VISUAL CLASSIFIER "EGYPTIAN + ETHIOPIAN"
+-> ALTERNATE GREEK IDENTIFICATION "MEMNON"
+```
 
-~~~
-ḏ ʾl ʿd
-= "of the lineage of ʿĀd"
-~~~
+This is a near-perfect visual-reception calibration object.
 
-OCIANA identifies it as the first Safaitic reference to the tribe and notes two additional Hismaic witnesses. The recovered geography runs roughly from Wadi Ram / ancient ʾIram in southern Jordan toward the Harrah around the turn of the Common Era.
+The name **Alantalli** additionally enters the phoneme registry as:
 
-**Status:** ATTESTED ethnonym recovery.
+```
+ALANT-
+```
 
-## 4. Thamūd — exact control for ethnonym versus modern script label
+for comparison against ATLANT-/ATALANT-/ATARANT- without promoting an etymology.
 
-Thamūd the tribe is independently attested. Safaitic texts mention conflict with Thamūd. At Ruwāfa, a second-century CE temple carries Greek and Nabataean inscriptions made by/for a Thamūd group under Roman rule.
+Operators:
+- REC-08 = FOREIGN_MONUMENT_RECLASSIFIED_THROUGH_MYTHIC_ETHNOGRAPHIC_SCHEMA
+- PHON-CAND-09 = ALANT_ATLANT_ATALANT_COMPARISON_NODE
 
-OCIANA explicitly states that "Thamudic" is a nineteenth-century catch-all label for several Ancient North Arabian script groups and does not imply composition by the tribe of Thamūd. Former "Thamudic E," for example, is now classified as Hismaic.
+---
 
-~~~
-THAMŪD = HISTORICAL ETHNONYM
-THAMUDIC = LEGACY EPIGRAPHIC LABEL
-~~~
+## 3. ANSHAN / ELAM / EARLY ACHAEMENID NAMES — stronger than Houston's Kuruš=Kush move
 
-**Status:** ATTESTED.
+Houston correctly points us toward Anzan/Anshan and the older Elamite layer beneath early Persian sovereignty.
 
-## 5. Kassites — Houston noticed a real diachronic name corridor
+Modern Iranological synthesis notes that:
+- Čišpiš,
+- Kuruš / Kuraš,
+- Kambujiya
 
-The high-value kernel in Houston's Kasshu/Cassite discussion is narrower and stronger than her larger genealogy.
+lack obvious Iranian interpretations and **could possibly be Elamite names adopted by rulers of Anshan**, an Elamite territory.
 
-Encyclopaedia Iranica gives:
+Cyrus and Cambyses are explicitly titled kings of Anshan in ancient records.
 
-~~~
-Akkadian: Kaššû
-Nuzi:     Ku-uš-šu(-ḫḫe)
-Greek:    Kossaioi
-Latin:    Coss(a)ei / Cossiaei
-country:  Kissia
-~~~
+### Mechanism
 
-and argues that later Cossaeans of the Zagros were probably descendants/survivors of Kassites.
+```
+ELAMITE TERRITORIAL / ADMINISTRATIVE SUBSTRATE
+-> PERSIAN DYNASTIC TAKEOVER
+-> OLDER TOPONYM + POSSIBLY OLDER NAME CARRIERS PERSIST
+```
 
-~~~
-Kaššû -> Kossaioi / Cossaei
-~~~
+This directly strengthens the project rule:
 
-is therefore a serious diachronic ethnonym lane.
+```
+NEW POLITICAL IDENTITY
+!=
+COMPLETE ONOMASTIC / ADMINISTRATIVE RESET
+```
 
-Kissioi/Cissians also functions in Greek sources as a name for Susians/Elamites around Susa, so retain that as a separate branch.
+Operators:
+- NAME-22 = ELAMITE_SUBSTRATE_IN_EARLY_ACHAEMENID_NAMES
+- AUTH-17 = ANSHAN_TO_PARSA_SOVEREIGN_REBINDING
+- LANG-08 = IMPERIAL_LAYERING_OVER_ELAMITE_SUBSTRATE
 
-**Status:** Kaššû -> Kossaioi/Cossaei = B; Cissian merger = Ω/branch-sensitive.
+---
 
-## 6. Herodotus' Aithiopes are explicitly multi-regional
+## 4. SOUTH ARABIA <-> NORTHERN ETHIOPIA — Houston's Yemen/Abyssinia seam survives as a hard contact corridor
 
-Herodotus 3.94 includes "Paricanians and Ethiopians of Asia" inside Darius' tribute organization.
+Houston says Sabaeans moved to Abyssinia and treats Geʿez as preserving old Yemeni speech.
 
-Herodotus 7.70 distinguishes two Ethiopian contingents in Xerxes' army. The eastern/Asian Ethiopians are marshalled with the Indians; Herodotus distinguishes them from the African/Libyan Ethiopians by language and hair.
+The recoverable hard-evidence structure is richer:
 
-This joins the Homeric Odyssey 1.22-24 formulation in which Ethiopians occupy opposite extremities associated with sunrise and sunset.
+### Archaeology
+Yeha/Hawelti:
+- intense South Arabian <-> Tigray/Eritrea contacts by early first millennium BCE;
+- monumental architecture with direct South Arabian/Sabaean parallels;
+- inscriptions in South Arabian script;
+- mixed indigenous + Sabaean material culture.
 
-~~~
-AITHIOPES
-= GREEK MACRO-CLASSIFIER
-  with geographically distinct subgroups
-~~~
+### Epigraphy
+South Arabian-script inscriptions in Ethiopia split into:
+- a more-or-less **Sabaean** group;
+- a group with distinct local linguistic features, plausibly written by native Ethiopians.
 
-**Status:** ATTESTED.
+### Political titles
+Inscriptions preserve:
+- `mukarrib of DʿMT`
+- `mukarrib of DʿMT and Sabaʾ`
 
-## 7. Memnon — Houston points into a genuine multi-regional identity carrier
+Sabaeans, especially associated with Maʾrib, are epigraphically visible in northern Ethiopia.
 
-Strabo 15.3.2 says Susa was founded by Tithonus, father of Memnon; the acropolis was called Memnonium; Susians were also called Cissians; and Aeschylus called Memnon's mother Cissia.
+### Mechanism
 
-Pausanias 10.31.7 says Memnon was king of the Ethiopian nation but came to Troy from Susa in Persia and the Choaspes, and reports that Phrygians still pointed out his route and halting places.
+```
+SOUTH ARABIAN SCRIPT
++ SABAEAN MIGRANT / TRADING PRESENCE
++ LOCAL ETHIOPIAN LANGUAGE FEATURES
++ SHARED POLITICAL TITLE
+= RED SEA CONTACT LABORATORY
+```
 
-Diodorus 2.22 preserves a Persian/Susian account with Tithonus as governor of Persis and Memnon associated with Susa, while also recording a competing Nile-side Ethiopian localization.
+Operators:
+- SCR-05 = SOUTH_ARABIAN_SCRIPT_LOCAL_LANGUAGE_REBINDING
+- TRN-19 = RED_SEA_BIDIRECTIONAL_CONTACT_CORRIDOR
+- TITLE-02 = MUKARRIB_CROSS_RED_SEA_TITLE_TRANSFER
 
-Herodotus 2.106 adds the Karabel layer: a real Luwian royal relief on the Sardis-Smyrna corridor was being read by some Greeks as Memnon.
+---
 
-~~~
-ETHIOPIAN KING
-   |
-   +-- SUSA / CISSIA / CHOASPES
-   |
-   +-- TROY / PHRYGIAN ROUTE
-   |
-   +-- WESTERN ANATOLIAN MONUMENT RECEPTION
-~~~
+## 5. CISSIANS / COSSAEANS / KASSITES — ethnonym transfer/control
 
-**Status:** ATTESTED as an ancient reception network.
+Houston groups Cossaei/Cissia/Elam inside a Cush frame. The better research object is the ancient **classifier-confusion problem** itself.
 
-## 8. Wilford -> Houston — authentic kernel inside a contaminated provenance chain
+Attested/reported forms:
+- Greek `Kíssioi` = Cissians, a name for Susians/Elamites of Susiana.
+- Greek `Kossaîoi` = Cossaeans, Zagros mountain people.
+- Babylonian `Kaššî` = Kassites.
 
-Houston's Cusha-Dwipa geography comes substantially through Francis Wilford.
+Iranological scholarship notes that Cissians have often been identified with Kassites but that this is difficult; one possibility is **name transfer caused by confusion between neighboring peoples**.
 
-The authentic kernel is that Sanskrit/Puranic cosmography contains Kuśadvīpa / Kusha-dvipa as one of the dvīpas.
+Strabo gives:
+```
+SUSIANS = CISSIANS
+```
+and preserves:
+```
+MEMNON'S MOTHER = CISSIA
+```
 
-The geographic expansion from Kushadvipa into Ethiopia, Arabia, Syria, Armenia, Mesopotamia and Atlantic analogies passes through Wilford's comparative reconstruction. Wilford subsequently discovered that his pandit had altered manuscripts and fabricated large quantities of Sanskrit verse in response to the parallels Wilford was seeking; modern scholarship records one episode at about 12,000 invented ślokas.
+### Mechanism
 
-~~~
-AUTHENTIC TRADITIONAL TERM
-        |
-        v
-INTERPRETIVE GEOGRAPHIC REMAPPING
-        |
-        v
-CONTAMINATED / ALTERED SOURCE MATERIAL
-        |
-        v
-19TH-CENTURY SECONDARY TRADITION
-        |
-        v
-HOUSTON 1926
-~~~
+```
+NEIGHBORING POPULATIONS
++ SIMILAR ETHNONYM CARRIERS
++ GREEK EXONYMIC TRANSMISSION
+-> POSSIBLE CLASSIFIER / NAME TRANSFER
+```
 
-Next action: source-lock Kuśadvīpa from independent Purāṇic witnesses and rerun the geography without Wilford.
+Operator:
+- NAME-23 = NEIGHBOR_ETHNONYM_TRANSFER_OR_CONFLATION
 
-**Status:** authentic lexical/cosmographic kernel + contaminated transmission branch.
+This is a strong control for all later KŠ/KSS/KUSH-style comparisons.
 
-## 9. Pausanias — Ethiopia and Atlas become adjacent in later ancient geography
+---
 
-Pausanias 1.33.4-6 first distinguishes the Ethiopians of Meroë, then says there are other Ethiopians neighboring the Mauri extending as far as the Nasamones. He then identifies those westernmost Libyans near Mount Atlas with the group he understands Herodotus to call Atlantes.
+## 6. GENEALOGY AS GEOGRAPHIC CLASSIFIER
 
-~~~
-OTHER AITHIOPES
--> MAURI
--> NASAMONES / "ATLANTES"
--> MOUNT ATLAS
--> OCEANIC WEST
-~~~
+Houston repeatedly turns biblical/classical genealogies into a single biological-political race model. The underlying source mechanism is more useful than that flattening.
 
-**Status:** ATTESTED as Pausanias' geographic classification.
+Josephan/biblical reception creates a graph in which Cush/Chus branches can classify:
+- Ethiopians / Chusites,
+- Saba/Sabaeans,
+- Nimrod/Babylon.
 
-## 10. Operators
+This belongs with the existing TCIM rule that genealogy can compress geography, polity, cult and origin tradition.
 
-~~~
-REC-08    MONUMENT_RECLASSIFICATION_THROUGH_FOREIGN_MYTH
-SCR-05    SAME_SCRIPT_MULTIPLE_LANGUAGES_ETHIOPIA
-TRN-19    RED_SEA_SCRIPT_ARCHITECTURE_CONTACT_CORRIDOR
-TRAD-01   LATE_TRADITION_EPIGRAPHIC_RECOVERY
-CTRL-04   ETHNONYM_SCRIPT_LABEL_NONIDENTITY
-NAME-22   KASSITE_COSSAEAN_DIACHRONIC_ETHNONYM
-ID-07     AITHIOPES_MULTI_REGIONAL_MACRO_CLASSIFIER
-REC-09    MEMNON_MULTIREGIONAL_IDENTITY_CARRIER
-PROV-02   AUTHENTIC_KERNEL_CONTAMINATED_SOURCE_CHAIN
-GEO-08    AITHIOPES_ATLAS_ADJACENCY_RECEPTION
-PHON-CAND-02 ALANTALLI_ATLANT_LIQUID_CLUSTER_PROBE
-~~~
+Operator:
+- GEN-05 = GENEALOGICAL_ETHNOGRAPHIC_CROSSWALK
 
-## 11. Immediate build order
+---
 
-1. Karabel object matrix: Luwian text -> Tarkasnawa/Mira -> Herodotus Egyptian/Ethiopian -> Memnon reception.
-2. Yeha/Hawelti contact matrix: object -> script -> language group -> title -> architecture -> local/foreign personnel.
-3. ʿĀd inscription set: BES15 161 + two Hismaic witnesses -> Iram/Wadi Ram/Harrah geography.
-4. Thamūd control: tribal attestations -> Ruwāfa bilinguals -> legacy "Thamudic" script taxonomy.
-5. Kaššû/Kossaioi/Cossaei matrix with Cissian branch separation.
-6. Aithiopes classifier matrix: Homer east/west -> Herodotus Asian/African -> Pausanias Meroe/western Aithiopes.
-7. Memnon graph: Susa/Cissia -> Choaspes -> Troy -> Phrygian route -> Karabel reception.
-8. Kuśadvīpa source reset: independent Purāṇic text first; Wilford/Houston as reception branches afterward.
+## 7. WILFORD — KUSA-DVIPA / ATALA classifier control
+
+Houston relies on Francis Wilford for a huge Cusha-Dwipa geography.
+
+Independent Sanskrit cosmography distinguishes:
+
+```
+KUSA-DVIPA
+= one of seven terrestrial dvipas
+```
+
+from:
+
+```
+ATALA
+= one of the lower/subterranean Patala regions
+```
+
+Wilford's Atlantic/Atala comparisons cross those cosmographic object classes.
+
+Research value:
+- real `Kusa-dvipa` exists;
+- real `Atala` exists;
+- their classifiers must remain separate before any geographic rebinding is tested.
+
+Operator:
+- TXT-06 = COSMOGRAPHIC_CLASSIFIER_CONFLATION_CONTROL
+
+---
+
+## Ranked development payoff
+
+```
+A+  MEMNONIAN SUSA <-> SARDIS/PHRYGIA <-> TROY
+A   ANSHAN/ELAM -> EARLY ACHAEMENID REBINDING
+A   SOUTH ARABIA <-> DʿMT / NORTHERN ETHIOPIA
+B+  KARABEL visual-reception + ALANTALLI phoneme node
+B   CISSIAN/COSSAEAN/KASSITE ethnonym-transfer control
+B   GENEALOGICAL ETHNOGRAPHIC CROSSWALK
+C   WILFORD classifier-rebinding history
+```
+
+## Immediate next build
+
+1. Build a full Memnon identity tensor and route graph from Herodotus/Pausanias/Strabo/Diodorus.
+2. Add Karabel as a visual reception object to the Lydia + Troy studies.
+3. Build Anshan/Anzan -> Parsa name/office continuity matrix.
+4. Build DʿMT/Sabaʾ script-language-title matrix from exact inscriptions.
+5. Build Cissian/Kossaioi/Kaššî carrier table with chronology and geography.
