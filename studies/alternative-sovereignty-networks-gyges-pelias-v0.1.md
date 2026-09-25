@@ -189,3 +189,74 @@ not merely:
 ```text
 SOVEREIGNTY = KING
 ```
+
+## 8. Astyages and the Magi — priestly-divinatory power as a succession node
+
+Herodotus makes the Magi more than neutral dream technicians.
+
+First, at 1.101 the Magi are listed as one of the six Median tribes. In the Astyages cycle, a subset of Magi functions as royal dream interpreters.
+
+Sequence:
+
+```text
+Astyages' first dream
+-> Magian interpretation
+-> dynastic marriage strategy altered
+-> Mandane married to Persian Cambyses
+
+second dream
+-> same interpretive class
+-> predicted grandson will replace Astyages
+-> attempted elimination of Cyrus
+
+Cyrus survives and is ritually/socially 'made king' in children's play
+-> Astyages recalls same Magi
+-> Magi reinterpret prophecy as already discharged
+-> Cyrus is released
+
+Cyrus later revolts successfully
+-> Astyages impales the Magian interpreters
+```
+
+The key political admission occurs in Herodotus 1.120: the Magi explicitly tell Astyages that if Cyrus becomes king, rule will pass from the Medes to a Persian, whereas under Astyages, 'our countryman,' they share in power and receive great honor.
+
+This is direct narrative evidence for:
+
+```text
+DIVINATORY AUTHORITY
++ ETHNIC / CORPORATE INTEREST
++ ACCESS TO KING
+-> SUCCESSION POLICY
+```
+
+Add:
+
+```text
+AUTH-14 = PRIESTLY_DIVINATORY_SUCCESSION_NODE
+AUTH-15 = SACRAL_CORPORATE_INTEREST
+```
+
+### 8.1 Parallel-sovereignty triad in the fall of Astyages
+
+Herodotus' Median collapse can be decomposed into three semi-independent power systems:
+
+```text
+ROYAL HOUSE: Astyages / Mandane / Cyrus
+PRIESTLY-DIVINATORY NODE: Magi
+MILITARY-ELITE NODE: Harpagus + chief Medes
+```
+
+The Magi shape the king's succession responses; Harpagus quietly builds the elite-military coalition that finally transfers sovereignty to Cyrus.
+
+Thus:
+
+```text
+ROYAL DECISION
+depends on
+SACRAL INTERPRETATION
+while
+MILITARY/ELITE NETWORK
+can independently reverse the throne
+```
+
+This strongly parallels the Gyges and Pelias stories: sovereignty is distributed across institutions surrounding the crown.
