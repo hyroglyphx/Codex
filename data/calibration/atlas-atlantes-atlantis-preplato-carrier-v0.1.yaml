@@ -1,0 +1,65 @@
+version: "0.1"
+date: "2026-09-25"
+id: ATLAS_ATLANTES_ATLANTIS_PREPLATO
+status: SOURCE_LOCKED_FIRST_PASS
+
+nodes:
+  HOMERIC_ATLAS:
+    source: "Odyssey 1.52-54"
+    roles: [sea_depth_knowledge, cosmic_pillar_holder]
+    chronology: pre_Herodotus
+
+  HESIODIC_ATLAS:
+    source: "Theogony 517-520"
+    roles: [western_edge, heaven_support]
+    chronology: pre_Herodotus
+
+  HERODOTUS_ATLANTIS_SEA:
+    source: "Histories 1.203"
+    greek: "ἡ ἔξω στηλέων θάλασσα ἡ Ἀτλαντὶς καλεομένη"
+    classifier: thalassa
+    referent: sea_beyond_Pillars
+    confidence: A
+
+  HERODOTUS_ATLAS_MOUNTAIN:
+    source: "Histories 4.184"
+    roles: [mountain, pillar_of_heaven]
+    confidence: A
+
+  HERODOTUS_ATLANTES:
+    source: "Histories 4.184"
+    relation: named_from_Mount_Atlas
+    confidence: A
+
+  HERODOTUS_PILLARS_CORRIDOR:
+    sources: ["4.8","4.42","4.43","4.185","4.196"]
+    roles: [western_threshold, maritime_interface, trade_boundary]
+    confidence: A
+
+  PLATO_ATLANTIS_ISLAND:
+    source: "Timaeus 24e-25a"
+    greek: "τῇ Ἀτλαντίδι νήσῳ"
+    classifier: nesos
+    relation: same_Atlant_name_field_new_object_classifier
+    confidence: A
+
+morphology:
+  stem: "ATLANT-"
+  forms:
+    - "Ἄτλας"
+    - "Ἄτλαντος"
+    - "Ἄτλαντες"
+    - "Ἀτλαντίς"
+    - "Ἀτλαντικός"
+
+operators:
+  NAME-21: ATLANT_CLASSIFIER_REBINDING
+  TXT-03: CLASSIFIER_CONTROLS_ATLANTIS_REFERENT
+  TXT-04: MANUSCRIPT_ETHNONYM_CONFLATION_CONTROL
+  GEO-06: WESTERN_PILLAR_BOUNDARY_CORRIDOR
+
+firewalls:
+  - "Atlantes != automatically Plato's Atlanteans"
+  - "Mount Atlas != automatically Plato's island location"
+  - "pre-Platonic Atlant- carrier != pre-Platonic island narrative"
+  - "pillar recurrence != demonstrated identity of cosmic and Heraclean pillars"
