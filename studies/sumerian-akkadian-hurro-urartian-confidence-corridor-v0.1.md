@@ -665,3 +665,126 @@ Hittite and Urartian now form two independent daughter environments of Mesopotam
 ```
 
 This is a high-confidence comparative laboratory because the same scribal technology is being localized by two genetically unrelated non-Semitic languages.
+
+## 15. Screenshot audit II — DEATH / BREAD / WOMAN / MAN / ONE / TWO
+
+This batch is analytically useful because the six rows fall into **different evidence classes**.
+
+### BREAD — strongest direct carrier/readout row
+
+```text
+Sumerian NINDA / ninda = bread
+Akkadian akalu = bread / food
+Hittite zūwaš (acc. zūwan) = bread
+```
+
+The Sumerian-Akkadian lexical equation is explicit. Hittite famously writes the native Hittite word through the Sumerogram `NINDA`, including the canonical `NINDA-an ... ezzatteni` passage used in Hrozný's decipherment.
+
+Classification:
+
+```text
+SAME SIGN CARRIER + DIFFERENT LANGUAGE READOUT + HITTITE INFLECTION = A+
+```
+
+### DEATH — strong semantic slot, less clean as a single-sign chain
+
+```text
+Sumerian nam-uš₂ = death
+Akkadian mūtu = death
+Hittite aggatar / akkatar = death
+```
+
+`nam-uš₂` is a Sumerian compound/abstract expression rather than a simple one-sign lexical carrier. Hittite `aggatar` is securely attested as 'death', but Hittite also uses logographic `UŠ` constructions and another native death noun `hinkan` in some contexts.
+
+Classification:
+
+```text
+SEMANTIC SLOT = A
+DIRECT SAME-SIGN CHAIN = B/C depending witness
+```
+
+### WOMAN — excellent heterogram + reconstructed native-reading case
+
+```text
+Sumerian MUNUS/SAL = woman
+Akkadian sinništu = woman
+Hittite SAL/MUNUS + Hittite endings
+native Hittite reading reconstructed in *kuwanz / *kwen- field
+```
+
+Hittite texts visibly preserve forms such as `SAL-za`, `SAL-nan`, etc.; the native phonological form is inferred from complements and Indo-European comparison.
+
+Classification:
+
+```text
+CARRIER INTEGRATION = A
+EXACT NATIVE VOCALIZATION = B/C
+```
+
+### MAN — another carrier-more-visible-than-word case
+
+```text
+Sumerian LÚ / lu₂ = person/man
+Akkadian awīlu / amēlu = man/person
+Hittite LÚ-aš = man/male
+native Hittite pešna- / pišna- reconstructed from phonetic forms
+```
+
+The nominative is normally written `LÚ-aš`; native `pešna-` is recovered from phonetic spellings such as the genitive.
+
+Do not flatten `pešna-` into generic 'human' in every context; Hittite also has `antuhša-` for human/person.
+
+Classification:
+
+```text
+CARRIER INTEGRATION = A
+LEXICAL SEMANTIC RANGE = B
+```
+
+### ONE / TWO — valuable precisely because Hittite pronunciation is partly hidden
+
+Sumerian and Akkadian are secure:
+
+```text
+diš / aš = one  <-> Akkadian ištēn
+min = two       <-> Akkadian šina
+```
+
+For Hittite, however, numerals were commonly written as numeric ciphers plus grammatical endings. Therefore the screenshot's fully vocalized Hittite `šīš` 'one' and `dāuš` 'two' are too confident.
+
+Modern Hittite grammar generally treats:
+
+```text
+ONE: 1-aš / 1-an; proposed native stem *šia- (still reconstructed)
+TWO: 2-uš / 2-e; native cardinal pronunciation incompletely known
+     dān = 'second / for the second time', not simply a secure cardinal 'two'
+```
+
+This is a **negative calibration gift**:
+
+```text
+WRITTEN VALUE KNOWN
++ GRAMMATICAL ENDING KNOWN
++ SEMANTIC VALUE KNOWN
+!=
+SPOKEN STEM FULLY RECOVERED
+```
+
+Add:
+
+```text
+NUM-CTRL-02 = NUMERAL_CIPHER_READOUT_GAP
+```
+
+## 16. New ranking from screenshot batch II
+
+```text
+BREAD     A+  direct Sumerogram + Hittite morphology/readout
+WOMAN     A   carrier + native morphology; phonology partly reconstructed
+MAN       A   carrier + native morphology; native lexeme recoverable
+DEATH     A semantic / B-C direct carrier chain
+ONE       A semantics/grammar; B-C native Hittite phonology
+TWO       A semantics/grammar; C native Hittite cardinal phonology
+```
+
+The major lesson is that **confidence should be attached to the edge being claimed**. A row can be perfectly secure semantically while its spoken Hittite form remains partially Ω.
