@@ -117,7 +117,10 @@
     "Epeios son of Panopeus must remain distinct from Epeios son of Endymion and the Epeian ethnonymic/eponymic lane.",
     "Hittite independently replicates Urartian heterogram integration: Sumerian-derived cuneiform carriers can encode genetically unrelated native lexemes with local morphology.",
     "LUGAL-uš and DINGIR-uš are canonical cross-family carrier/readout controls in Hittite.",
-    "The LIFE row zi/napištu/ḫuišwātar is semantic-slot continuity, not necessarily a single-sign chain; Hittite conventionally uses TI-tar for ḫuišwātar."
+    "The LIFE row zi/napištu/ḫuišwātar is semantic-slot continuity, not necessarily a single-sign chain; Hittite conventionally uses TI-tar for ḫuišwātar.",
+    "DAY/NIGHT and HAND/FOOT/EYE provide independent A-confidence Hittite replications of Sumerian-derived semantic carriers with native Hittite lexical ancestry.",
+    "Hittite native lexemes may be less visible than their heterograms; eye is a canonical case where the nominative singular is only directly written as IGI or INU.",
+    "The screenshot form treš for Hittite three is overconfident; teri- is supported, while many numeral forms remain cipher-written."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -254,7 +257,10 @@
     "Compare Epeios with Daedalus, Argus builder of Argo, Tecton/Harmon and Athena-Hephaestus craft figures",
     "Build Hittite-vs-Urartian heterogram integration table for LUGAL, DINGIR, KUR, URU, A, TI and GU4",
     "Separate fully phonetic Hittite forms from Sumerogram-plus-Hittite-ending forms",
-    "Use Hittite inherited Indo-European lexemes as negative controls against confusing carrier continuity with lexical ancestry"
+    "Use Hittite inherited Indo-European lexemes as negative controls against confusing carrier continuity with lexical ancestry",
+    "Build body-part heterogram matrix across Hittite and Urartian for hand, foot, eye, head, heart and ear",
+    "Build day-night antonym carrier pair UD versus GE6 across Sumerian, Akkadian, Hittite and Urartian if attested",
+    "Separate directly syllabic Hittite lexical forms from reconstructed forms hidden by heterograms"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -299,7 +305,8 @@
     "SUM-AKK-HUR-URART-confidence-corridor-v0.1": "edge_typed_first_pass",
     "Cuneiform-semantic-slot-corridor-v0.1": "source_locked_first_pass",
     "Epeios-wooden-horse-linguistic-craft-v0.1": "source_locked_first_pass",
-    "Hittite-heterogram-replication-v0.1": "source_locked_first_pass"
+    "Hittite-heterogram-replication-v0.1": "source_locked_first_pass",
+    "Hittite-screenshot-audit-III": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
