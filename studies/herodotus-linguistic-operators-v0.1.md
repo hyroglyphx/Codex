@@ -901,3 +901,51 @@ Add:
 NAME-CAND-21 = AGA_MEMNON_INTERNAL_NAME_CARRIER
 REC-06 = MEMNONIAN_PERSIAN_ROYAL_RECEPTION_CLUSTER
 ```
+
+## 22. Herodotus 1.203 — Atlantis as an oceanic connectivity term
+
+Herodotus explicitly distinguishes the Caspian from the connected world-ocean:
+
+```text
+the sea navigated by the Greeks
++ the sea beyond the Pillars of Heracles, called Atlantis
++ the Erythraean Sea
+= one sea
+
+Caspian Sea
+= separate / self-contained
+```
+
+The Greek is especially important:
+
+`ἡ ἔξω στηλέων θάλασσα ἡ Ἀτλαντὶς καλεομένη καὶ ἡ Ἐρυθρὴ μία ἐοῦσα τυγχάνει`
+
+Here `Ἀτλαντίς` is the name/adjectival designation of the sea beyond the Pillars, i.e. the Atlantic/Atlantean sea. This is not itself Plato's island Atlantis; it is an earlier geographical use of the Atlas/Atlantic name-field.
+
+Herodotus 4.42 supplies the complementary route-model: Necho's Phoenician sailors are said to leave the Red/Erythraean Sea, circumnavigate Libya, pass the Pillars of Heracles, and return to Egypt through the northern/Mediterranean sea.
+
+Thus the two passages together encode:
+
+```text
+ERYTHRAEAN / SOUTHERN SEA
+-> around LIBYA
+-> ATLANTIS beyond the Pillars
+-> MEDITERRANEAN
+= CONTINUOUS WATER BODY
+```
+
+while:
+
+```text
+CASPIAN = CLOSED BASIN
+```
+
+This is a high-value ancient topology statement. It should be kept distinct from later Platonic island geography while remaining relevant to the project's Atlantis carrier study because `Atlantis` is already functioning as a named western-ocean descriptor in Herodotus.
+
+Add:
+
+```text
+GEO-04 = CONNECTED_WORLD_OCEAN_TOPOLOGY
+NAME-20 = ATLANTIS_OCEANIC_NAME_CARRIER
+GEO-05 = CASPIAN_CLOSED_BASIN_CONTROL
+```
