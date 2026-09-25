@@ -1,0 +1,62 @@
+version: "0.1"
+date: "2026-09-25"
+id: TROY_WILUSA_MULTILINGUAL_CONFIDENCE_CORRIDOR
+status: SOURCE_LOCKED_FIRST_PASS
+
+nodes:
+  WILUSA_WILIOS:
+    hittite: [Wilusa,Wilusiya]
+    greek: ["*Wilios","Ilios"]
+    relation: same_referent_toponym_candidate
+    confidence: high
+    operator: TRN-10
+
+  TARUISA_TROIA:
+    hittite: Taruisa
+    greek: [Troia,Troas]
+    relation: dual_toponym_candidate
+    confidence: medium
+    operator: NAME-CAND-17
+
+  ALAKSANDU_ALEXANDROS:
+    hittite: Alaksandu
+    greek: Alexandros
+    mycenaean_family: "a-re-ka-sa-da-ra / Alexandra"
+    relation: personal_name_cross_language
+    confidence: high
+    firewall: "elite personal name != population language"
+
+  APPALIUNA_APOLLON:
+    hittite: Appaliuna
+    greek: [Apollon,Apellon]
+    relation: divine_name_directionality_problem
+    confidence: medium
+    operator: DIV-CAND-07
+
+  LUWIAN_SEAL:
+    script: Hieroglyphic_Luwian
+    encoded_language: undetermined
+    reason: "names uninflected; titles logographic"
+    operator: SCR-02
+
+calibration_controls:
+  - [Millawanda_Milawata,Miletos]
+  - [Apasa,Ephesos]
+  - [Lazpa,Lesbos]
+  - [Ahhiyawa,Achaean_Mycenaean_sphere]
+
+operators:
+  TRN-10: HITTITE_GREEK_TOPONYM_BACKPROJECTION
+  NAME-CAND-17: WILUSA_TARUISA_ILIOS_TROIA_DUAL_CARRIER
+  NAME-13: ELITE_NAME_WITHOUT_POPULATION_LANGUAGE
+  DIV-CAND-07: APPALIUNA_APOLLON_DIRECTIONALITY_TEST
+  SCR-02: SCRIPT_LANGUAGE_NONIDENTITY
+  CAL-01: WEST_ANATOLIAN_HITTITE_GREEK_NAME_ENVELOPE
+
+firewalls:
+  - "Mycenaean pottery != Greek language proof"
+  - "Hittite vassalage != Hittite language proof"
+  - "Hieroglyphic Luwian script != Luwian language proof"
+  - "Greek personal name != Greek-speaking population proof"
+  - "Wilusa/Ilios stronger than Taruisa/Troia"
+  - "Appaliuna/Apollo directionality remains open"
