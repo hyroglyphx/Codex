@@ -1,0 +1,83 @@
+version: "0.1"
+date: "2026-09-25"
+id: ANCIENT_NAME_MICRO_CONVENTIONS
+status: ACTIVE_HEURISTIC_REGISTRY
+
+purpose: >
+  Small, reusable naming and morphological conventions that can constrain
+  segmentation before larger etymological hypotheses are attempted.
+
+rules:
+  - id: ONOM-01
+    label: PERSIAN_NAME_FINAL_SIGMA_HERODOTEAN
+    source: "Herodotus 1.139"
+    observation: >
+      Herodotus claims Persian personal names all terminate in the same Greek
+      letter, called san by Dorians and sigma by Ionians.
+    use: "Greek reception / transcription profile"
+    ceiling: >
+      Do not treat as a universal Persian-language morphological law; Iranological
+      scholarship regards Herodotus' statement as overgeneralized.
+    confidence:
+      herodotean_observation: A
+      historical_universality: D
+
+  - id: ONOM-02
+    label: GREEK_AGA_INTENSIVE
+    form: "ἀγα-"
+    meaning: "intensive: very / exceedingly"
+    control: "ἀγακλεής = very glorious/famous"
+    use: >
+      Test initial aga- as an intensive in transparent Greek compounds before
+      importing an external-language explanation.
+    confidence: A
+
+  - id: ONOM-03
+    label: GREEK_KLES_GLORY_ELEMENT
+    forms: ["-κλῆς","-κλέης"]
+    source_lexeme: "κλέος"
+    meaning: "fame / glory / renown"
+    examples: ["Perikles","Themistokles","Hegesikles/Agasikles"]
+    use: "Recognize a productive personal-name second element."
+    confidence: A
+
+  - id: ONOM-04
+    label: HEGESI_COMMAND_LEAD_ELEMENT
+    forms: ["ἡγησι-","ἡγεσι-"]
+    source_lexeme: "ἡγέομαι / ἥγησις"
+    meaning: "lead / command"
+    example: "Ἡγησικλῆς"
+    use: >
+      For Herodotus 1.65, privilege the transmitted Greek Hegesikles form over
+      an English/Latinized Agasicles surface segmentation.
+    confidence: B
+
+  - id: ONOM-05
+    label: NORMALIZE_SOURCE_FORM_BEFORE_SEGMENTATION
+    rule: >
+      English/Latinized spellings may collapse dialectal or textual variants.
+      Segment the earliest source-language form first, then compare alternate
+      forms as a separate reception/dialect lane.
+    example: >
+      Herodotus 1.65 transmits Hegesikles, while later reference tradition also
+      gives Agasikles/Agesikles/Hegesikles.
+    confidence: A
+
+  - id: ONOM-06
+    label: GREEK_OTIS_POPULATION_REGION
+    forms: ["-ῶτις","-ωτις"]
+    examples: ["Phthiotis","Histiaiotis","Pelasgiotis","Thessaliotis"]
+    function: "people-indexed / demonymic regional naming"
+    confidence: A
+
+  - id: ONOM-07
+    label: GREEK_IDES_IDAI_DESCENT
+    forms: ["-ίδης","-ίδαι"]
+    function: "patronymic / descent-group marker"
+    use: "Do not confuse descent label with language or fixed ethnicity."
+    confidence: A
+
+operators:
+  PHON-03: SOURCE_FORM_BEFORE_LATINIZED_SURFACE
+  MORPH-02: PRODUCTIVE_NAME_ELEMENT_DETECTION
+  REC-07: GREEK_FILTERED_FOREIGN_NAME_PROFILE
