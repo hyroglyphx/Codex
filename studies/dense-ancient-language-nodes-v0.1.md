@@ -523,3 +523,178 @@ KARATEPE/CINEKOY
 ```
 
 This gives broad family coverage without forcing exploratory name relations into the same confidence class as explicit bilingual/trilingual crosswalks.
+
+
+## 13. Recovered older supernode — Sumerian / Akkadian / Hurro-Urartian cuneiform spine
+
+The recent density pass underweighted one of the project's oldest and strongest structures because it is **not primarily a cognate node**. It is a carrier/readout/translation supernode.
+
+### A. Sumerian -> Akkadian is a first-class high-confidence bridge
+
+Core controls already established in the project:
+
+```text
+Sumerian sign/logogram
+-> Akkadian lexical readout
+```
+
+and:
+
+```text
+Sumerian lexical slot
+<-> Akkadian lexical equation
+```
+
+through bilingual lexical traditions, Sumerograms, and translated/adapted literature.
+
+High-confidence examples include:
+- `É.GAL` -> Akkadian `ēkallu`;
+- `LUGAL` as a Sumerian carrier with Akkadian royal readout;
+- `URU`, `KUR`, `DINGIR`, `NINDA`, etc. as inherited heterographic carriers;
+- Sumerian `geštu₃` <-> Ebla/Akkadian ear-understanding lane;
+- Sumerian Gilgamesh compositions -> Akkadian recomposition / translation anchors.
+
+This should be treated as one of the project's strongest demonstrations of:
+
+```text
+CARRIER CONTINUITY
+!=
+LANGUAGE CONTINUITY
+```
+
+### B. Akkadian -> Urartian preserves the carrier while changing the language
+
+The Urartian royal corpus supplies a later controlled transform:
+
+```text
+Neo-Assyrian Akkadian language + Assyrian cuneiform
+-> Urartian language + adapted Neo-Assyrian cuneiform
+```
+
+with bilingual/parallel return paths.
+
+Recovered anchors:
+- Sarduri I: Assyrian/Akkadian royal inscriptional phase;
+- Išpuini: transition into Urartian royal inscription;
+- Menua: mature Urartian formulaic state;
+- Kal-e Šīn: Assyrian/Akkadian <-> Urartian bilingual control;
+- Topzawa and related royal witnesses.
+
+This yields:
+
+```text
+SUMERIAN-derived cuneiform resources
+-> AKKADIAN imperial/scribal readout
+-> URARTIAN local royal readout
+```
+
+without requiring Sumerian, Akkadian, and Urartian to be genetically related.
+
+### C. Hurrian <-> Urartian supplies the genetic lane
+
+Keep the two relation types separate:
+
+```text
+Hurrian <-> Urartian
+= GENETIC / HURRO-URARTIAN
+
+Akkadian -> Urartian
+= CARRIER + SCRIBAL + ADMINISTRATIVE TRANSMISSION
+
+Sumerian -> Akkadian
+= CARRIER + LEXICAL + SCHOLARLY TRANSMISSION
+```
+
+This separation is one of the project's most mature examples of relation-specific confidence.
+
+### D. Urartian formula kernel recovered
+
+The older Urartian verification lane preserved:
+
+```text
+ereli  = king
+ebani  = land
+patari = city
+pili   = canal
+šidišt- = build
+```
+
+alongside heterographic carriers such as:
+
+```text
+É.GAL
+ÍD
+KUR
+LÚ
+```
+
+These are useful because they place native Urartian lexical material and inherited Mesopotamian heterograms in the same inscriptional system.
+
+### E. Menua Canal as operator chain
+
+Recovered older operator sequence:
+
+```text
+DIVINE PROTECTION
+-> ROYAL ACTOR
+-> CANAL CONSTRUCTION
+-> TITULATURE
+-> PRESERVATION
+-> CURSE
+```
+
+This is a strong institutional-semantic control independent of individual word ancestry.
+
+### F. Density classification
+
+This supernode should be restored beside Alašiya and Behistun, but under a different label:
+
+```text
+CUNEIFORM TRANSMISSION SUPERHUB
+```
+
+Coverage:
+- Sumerian
+- Akkadian
+- Eblaite/Semitic lexical bridges
+- Hittite heterograms as comparison
+- Hurrian
+- Urartian
+- Assyrian imperial register
+- later Aramaic/Armenian contact around the Urartian zone
+
+Best use:
+```text
+carrier/readout separation
++ heterogram persistence
++ lexical crosswalks
++ language replacement without script replacement
++ bilingual return paths
++ formula/institution continuity
+```
+
+### G. Revised dense-node judgment
+
+The highest-yield architecture is not only six lexical/name hubs.
+
+It has **two classes of center**:
+
+```text
+LEXICAL / ONOMASTIC HUBS:
+Alašiya
+Sardis
+EL/IL
+ʿBR
+Lady/Mistress
+Numeral Two
+
+TRANSMISSION / CARRIER HUBS:
+Sumerian-Akkadian lexical tradition
+Akkadian-Hurrian-Hittite Hattusa nexus
+Akkadian-Urartian royal/bilingual transition
+Behistun
+Rosetta
+Ugarit KTU 5.14
+```
+
+The Sumerian-Akkadian-Urartian spine is therefore restored as a top-tier **transmission-density node**, even though its edges are not all genetic.
