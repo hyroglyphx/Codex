@@ -27,7 +27,8 @@
     "Recovered Sumerian-Akkadian-Hurro-Urartian cuneiform transmission spine: lexical crosswalks, heterograms, bilinguals and royal formula continuity",
     "Sumerian-Akkadian-Hurrian-Urartian confidence corridor: explicit cuneiform transmission, Assyrian-Urartian handoff, Hurro-Urartian genetics, and candidate lexical residue",
     "Epeios wooden-horse linguistic craft node: kosmos/poiesis wordplay, Bronze Age tekton/horse vocabulary, design-implementation split, ethnonymic rebinding and object-classifier transforms",
-    "Troy/Wilusa multilingual confidence corridor: Wilusa-Wilios, Alaksandu-Alexandros, Appaliuna-Apollo, Taruisa-Troia, and calibrated western-Anatolian Hittite-Greek name transforms"
+    "Troy/Wilusa multilingual confidence corridor: Wilusa-Wilios, Alaksandu-Alexandros, Appaliuna-Apollo, Taruisa-Troia, and calibrated western-Anatolian Hittite-Greek name transforms",
+    "Herodotus linguistic operators: explicit language shift, mixed speech, interpreters, exonyms/endonyms, foreign glosses, script localization and divine-name translation"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -125,7 +126,11 @@
     "Wilusa/*Wilios is a high-value same-referent Hittite-Greek toponym candidate; Taruisa/Troia is weaker and must remain separate.",
     "Alaksandu/Alexandros is a strong personal-name bridge, but elite naming does not determine the population language of Wilusa.",
     "The Hisarlik hieroglyphic seal demonstrates script contact but does not prove Luwian was the local spoken language.",
-    "Millawanda/Miletos, Apasa/Ephesos and Lazpa/Lesbos should calibrate Hittite rendering of Aegean names before testing weaker Trojan equations."
+    "Millawanda/Miletos, Apasa/Ephesos and Lazpa/Lesbos should calibrate Hittite rendering of Aegean names before testing weaker Trojan equations.",
+    "Herodotus explicitly describes Attic/Pelasgian language shift during incorporation into the Hellenes.",
+    "Herodotus treats ethnonym unity, language unity and genealogical unity as separable: Ionian identity spans mixed ancestry and multiple dialect groups.",
+    "Book 4 is a high-density language-contact corpus: Skolotoi/Scythians/Sacae, Geloni mixed speech, Sauromatian reshaping, Scythian lexical glosses and divine-name crosswalks.",
+    "Herodotus records multilingual infrastructure directly through seven-interpreter trade chains, Egyptian interpreter training and Carian oracle recognition."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -150,7 +155,8 @@
     "studies/dense-ancient-language-nodes-v0.1.md",
     "studies/sumerian-akkadian-hurro-urartian-confidence-corridor-v0.1.md",
     "studies/epeios-wooden-horse-linguistic-craft-node-v0.1.md",
-    "studies/troy-wilusa-multilingual-confidence-corridor-v0.1.md"
+    "studies/troy-wilusa-multilingual-confidence-corridor-v0.1.md",
+    "studies/herodotus-linguistic-operators-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -271,7 +277,12 @@
     "Freeze Hittite foreign-name phonological accommodation envelope using Millawanda/Miletos, Apasa/Ephesos and Lazpa/Lesbos",
     "Test Wilusa/*Wilios and Alaksandu/Alexandros only after calibration envelope is frozen",
     "Investigate Appaliuna/Apollon transmission direction using Anatolian and Mycenaean divine-name witnesses",
-    "Build Trojan language-evidence tensor separating script, personal names, material culture, diplomacy and local speech"
+    "Build Trojan language-evidence tensor separating script, personal names, material culture, diplomacy and local speech",
+    "Build complete Herodotean foreign-word glossary and validate each gloss against inscriptions/comparative evidence",
+    "Build Herodotus endonym-exonym matrix including Skolotoi/Scythians/Sacae and Syrians/Cappadocians",
+    "Build Herodotus language-shift graph across Pelasgians, Geloni, Sauromatae, Scyles and Egyptian interpreters",
+    "Build Herodotus divine-equivalence matrix across Egyptian, Scythian, Libyan and Greek names/functions",
+    "Treat Book 4 as priority corpus for ancient contact-language mechanics"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -318,7 +329,8 @@
     "Epeios-wooden-horse-linguistic-craft-v0.1": "source_locked_first_pass",
     "Hittite-heterogram-replication-v0.1": "source_locked_first_pass",
     "Hittite-screenshot-audit-III": "source_locked_first_pass",
-    "Troy-Wilusa-multilingual-confidence-corridor-v0.1": "source_locked_first_pass"
+    "Troy-Wilusa-multilingual-confidence-corridor-v0.1": "source_locked_first_pass",
+    "Herodotus-linguistic-operators-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
