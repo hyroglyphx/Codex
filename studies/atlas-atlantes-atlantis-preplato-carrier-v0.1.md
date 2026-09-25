@@ -561,3 +561,29 @@ It does provide three useful controls:
 2. Roman letters can conceal materially different phoneme structures.
 3. Internal semantic parsing in a receiving language need not establish ultimate origin.
 ```
+
+## 20. Diodorus Book III — Ethiopia / Atlas / Atlantian adjacency
+
+Houston's source trail exposes a major direct ancient control in Diodorus Book III.
+
+Diodorus announces Book III as covering **Ethiopians, Libyans, and the people known as Atlantians**. In the western-Libyan sequence he places Hespera/Tritonis near **Ethiopia**, **Ocean**, and **Mount Atlas**. He then describes the Atlantians as an Ocean-edge people and gives an explicit eponymic sequence:
+
+```
+ATLAS receives Ocean-coast territory
+-> names PEOPLE = ATLANTIANS
+-> names MOUNTAIN = ATLAS
+```
+
+Diodorus 3.60 further says Atlas perfected astronomy / the doctrine of the sphere and that the heaven-bearing image encoded that intellectual achievement.
+
+This adds:
+
+```
+GEO-09  = ETHIOPIA_ATLAS_HESPERA_OCEAN_ADJACENCY
+MEM-03  = MYTH_AS_TECHNICAL_METADATA
+GEN-05  = ATLANTID_DISTRIBUTED_FOUNDERSHIP
+NAME-22 = ATLAS_DOUBLE_EPONYMY_PEOPLE_AND_MOUNTAIN
+```
+
+The Atlantides are then said to become founders of nations/cities and ancestors of many ancient heroes, independently strengthening the Atlas genealogy-as-network model already recovered from Hellanicus.
+
