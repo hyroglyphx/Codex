@@ -619,3 +619,82 @@ PLACE <-> PEOPLE
 rather than a modern fixed-territory model.
 
 This strengthens the reading of Phthiotis / Histiaeotis / Thessaliotis as dynamic ethnogeographic labels rather than merely neutral map coordinates.
+
+## 18. Attic Pelasgian -> Hellespont / Ionian bifurcation
+
+Herodotus preserves a striking bifurcation around the Athenian-Pelasgian nexus.
+
+### 18.1 Hellespontine branch
+
+Herodotus 1.57 identifies Pelasgians at **Plakia** and **Skylake** on the Hellespont/Propontis who had formerly been co-dwellers with the Athenians. He uses them as a live linguistic control because they retained a language distinct from their neighbors and shared with another Pelasgian enclave.
+
+Herodotus 6.137 independently says Pelasgians expelled from Attica took possession of **Lemnos and other places**. The text does not explicitly state that Plakia and Skylake were those 'other places', but the two notices naturally belong in the same diaspora problem and later commentators sometimes connect them.
+
+Thus:
+
+```text
+ATTIC / ATHENIAN PELASGIAN CONTACT ZONE
+-> expulsion / dispersal
+-> LEMNOS + OTHER SITES
+-> PLAKIA / SKYLAKE Hellespontine preservation branch (probable corridor; exact sequence not explicit)
+```
+
+### 18.2 Ionian branch
+
+Herodotus 8.44 gives the Athenian identity sequence:
+
+```text
+Pelasgian Cranai
+-> Cecropidae
+-> Athenians
+-> Ionians under Ion son of Xuthus
+```
+
+Herodotus 7.94-95 then generalizes:
+
+```text
+Aegialian Pelasgians -> Ionians
+Pelasgian islanders -> later Ionian
+twelve-city Ionians -> came from Athens
+Aeolians -> formerly Pelasgian (Greek tradition)
+Hellespontine Greek settlements -> settlers from Ionians and Dorians
+```
+
+This gives a direct Herodotean mechanism for why Pelasgian/Athenian material can appear in later Ionian and Hellespontine contexts without requiring population replacement.
+
+### 18.3 Trojan / Aeolian parallel
+
+Homer's Trojan catalogue includes Pelasgian allies of Troy led by Hippothous and Pylaeus from Larisa. Strabo later places the most plausible Homeric Larisa near Cyme in Aeolis and preserves a tradition that Pelasgians there survived the Trojan War and were later absorbed/displaced during Aeolian settlement.
+
+Strabo also reports a tradition that the present Ionian coast from Mycale and neighboring islands had earlier been Pelasgian, and that Pelasgian power declined particularly during the Aeolian and Ionian migrations.
+
+Thus the broader corridor is:
+
+```text
+THESSALIAN / AEGEAN PELASGIAN TRADITIONS
+-> ATTICA / ATHENIAN CO-RESIDENCE
+-> LEMNOS / Hellespontine enclaves
+-> AEOLIAN / IONIAN coastal overlays
+-> TROJAN-WAR Pelasgian memory in NW Anatolia
+```
+
+This is a transmission-field model, not a claim that all named Pelasgian groups were one continuously traceable biological population.
+
+### 18.4 Plakia and Trojan Plakos: real onomastic recurrence, distinct sites
+
+Herodotean **Plakia** east of Cyzicus is a Pelasgian town in Mysia/Propontis. Separately, Homeric **Thebe Hypoplakia / Placian Thebe**—Andromache's home—lay under Mount **Plakos** near Adramyttium on the Trojan/Mysian fringe.
+
+The repeated `PLAK-` carrier is real and geographically regional, but the two places are distinct. Treat as:
+
+```text
+PLAK- REGIONAL ONOMASTIC RECURRENCE = explore
+SAME SETTLEMENT / DIRECT COLONY = not established
+```
+
+Add:
+
+```text
+ID-06 = ATTIC_PELASGIAN_IONIAN_BIFURCATION
+TRN-15 = ATTIC_TO_LEMNOS_HELLESPONT_DIASPORA_CORRIDOR
+NAME-CAND-19 = PLAK_REGIONAL_ONOMASTIC_RECURRENCE
+```
