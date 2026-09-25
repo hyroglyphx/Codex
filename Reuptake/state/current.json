@@ -82,7 +82,11 @@
     "A single external polity name may address city, land, region, island, or diplomatic state at different source scales.",
     "Petrographic localization of diplomatic tablets identifies a scribal production zone before it identifies the full political capital.",
     "External great-king diplomacy can compress internally distributed authority into one sovereign persona.",
-    "Hurrian allai 'lady' is a lexical control; deriving Alašiya from it remains a separate historical hypothesis."
+    "Hurrian allai 'lady' is a lexical control; deriving Alašiya from it remains a separate historical hypothesis.",
+    "Cuneiform URU, KUR and KUR.URU do not map one-to-one onto political constitution in peripheral scribal traditions.",
+    "EA39 is the strongest Alašiya cross-script anchor because Akkadian Alašiya and Egyptian ʾirs3 are linked on the same artifact.",
+    "Egyptian ʾirs3/Alas(i)a must be separated from the debated ʾisy/Asiya carrier.",
+    "Ugaritic ʾalṯy versus Akkadian/Hittite Alašiya creates a real cross-script medial-coronal mapping problem."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -179,7 +183,11 @@
     "Test Alassa-Alašiya carrier with dated local attestations and phonology",
     "Compare Alassa/Kalavasos/Enkomi archaeology against official-tablet petrography",
     "Build Alashiyan personal-name matrix with language attribution confidence separated from office/location",
-    "Freeze Hurrian allai morphology before testing Alašiya etymology"
+    "Freeze Hurrian allai morphology before testing Alašiya etymology",
+    "Map every Ugaritic Alašiya occurrence to exact tablet, script, and determinative",
+    "Investigate Ugaritic ṯ versus Akkadian/Hittite š as a same-referent phoneme-mapping problem",
+    "Trace Egyptian ʾirs3 separately from ʾisy/Asiya across dynasties",
+    "Test Classical Alasiōtas as a local Cypriot persistence candidate against Alassa and Bronze Age Alašiya"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -216,7 +224,8 @@
     "EL-ELL-Semitic-Greek-carrier-v0.1": "explore_only_source_locked_controls",
     "IL-ELUS-Greek-name-carrier-v0.1": "source_locked_first_pass",
     "Trecae-Thrace-diachrony": "same_author_medieval_control_added",
-    "Alashiya-external-classifier-heterarchy-v0.1": "source_locked_first_pass"
+    "Alashiya-external-classifier-heterarchy-v0.1": "source_locked_first_pass",
+    "Alashiya-spelling-determinative-matrix-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
