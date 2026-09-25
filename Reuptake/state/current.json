@@ -114,7 +114,10 @@
     "Odyssey 8 places Epeios beside epoiēsen and asks the bard to sing the horse's kosmos, creating source-locked craft/composition wordplay without proving name etymology.",
     "Linear B independently attests both te-ko-to-ne 'carpenters' and i-qo 'horse', linking central Epeios craft vocabulary to Bronze Age Mycenaean Greek.",
     "The wooden horse tradition separates design/initiative, master-builder execution, timber acquisition, assembly, hidden payload and boundary penetration.",
-    "Epeios son of Panopeus must remain distinct from Epeios son of Endymion and the Epeian ethnonymic/eponymic lane."
+    "Epeios son of Panopeus must remain distinct from Epeios son of Endymion and the Epeian ethnonymic/eponymic lane.",
+    "Hittite independently replicates Urartian heterogram integration: Sumerian-derived cuneiform carriers can encode genetically unrelated native lexemes with local morphology.",
+    "LUGAL-uš and DINGIR-uš are canonical cross-family carrier/readout controls in Hittite.",
+    "The LIFE row zi/napištu/ḫuišwātar is semantic-slot continuity, not necessarily a single-sign chain; Hittite conventionally uses TI-tar for ḫuišwātar."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -248,7 +251,10 @@
     "Test Epeios epoiēsen against Homeric name-verb paronomasia controls",
     "Trace Linear B te-ko-to-ne and i-qo into Homeric and Classical craft/horse vocabulary",
     "Build Epeios son of Endymion vs Epeios son of Panopeus source matrix",
-    "Compare Epeios with Daedalus, Argus builder of Argo, Tecton/Harmon and Athena-Hephaestus craft figures"
+    "Compare Epeios with Daedalus, Argus builder of Argo, Tecton/Harmon and Athena-Hephaestus craft figures",
+    "Build Hittite-vs-Urartian heterogram integration table for LUGAL, DINGIR, KUR, URU, A, TI and GU4",
+    "Separate fully phonetic Hittite forms from Sumerogram-plus-Hittite-ending forms",
+    "Use Hittite inherited Indo-European lexemes as negative controls against confusing carrier continuity with lexical ancestry"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -292,7 +298,8 @@
     "Sumerian-Akkadian-Urartian-transmission-supernode": "reactivated_top_tier",
     "SUM-AKK-HUR-URART-confidence-corridor-v0.1": "edge_typed_first_pass",
     "Cuneiform-semantic-slot-corridor-v0.1": "source_locked_first_pass",
-    "Epeios-wooden-horse-linguistic-craft-v0.1": "source_locked_first_pass"
+    "Epeios-wooden-horse-linguistic-craft-v0.1": "source_locked_first_pass",
+    "Hittite-heterogram-replication-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
