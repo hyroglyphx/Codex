@@ -236,3 +236,165 @@ Atlantis nesos = Plato's island
 ```
 
 This is a strong example of a durable name-carrier acquiring different object classes while preserving a western/cosmographic semantic envelope.
+
+## 12. Hellanicus — a pre-Platonic *Atlantis / Atlantias* that is genealogical
+
+Hellanicus of Lesbos (5th c. BCE, before Plato) wrote one of his major genealogical/mythographic works under the title **Atlantis / Atlantias**. Modern reference works place it beside his `Phoronis`, `Deukalioneia`, and `Asopis` as lineage-organizing monographs.
+
+LSJ is explicit that feminine `Ἀτλαντίς` functions patronymically ('of Atlas') and is also the title of Hellanicus' work; `Ἀτλαντιάς` is an attested alternate title form.
+
+Therefore the pre-Platonic name field now has an additional object class:
+
+```text
+ἈΤΛΑΝΤΙΣ / ἈΤΛΑΝΤΙΑΣ
+= GENEALOGICAL WORK / ATLAS-LINEAGE CLASSIFIER
+```
+
+not merely sea or later island.
+
+Add:
+
+```text
+TXT-05 = ATLANTIS_AS_GENEALOGICAL_CLASSIFIER
+```
+
+## 13. Hellanicus' Atlas-line explicitly reaches Troy and Sparta
+
+The surviving Hellanican material catalogues unions of Atlas' daughters and their descendants. The secure fragmentary tradition includes:
+
+```text
+Taygete + Zeus   -> Lacedaemon
+Maia + Zeus      -> Hermes
+Electra + Zeus   -> Dardanus
+Alcyone + Poseidon -> Hyrieus
+Sterope + Ares   -> Oenomaus
+Celaeno + Poseidon -> Lycus
+Merope + Sisyphus -> Glaucus
+```
+
+The most important project consequence is:
+
+```text
+ATLAS
+-> ELECTRA
+-> DARDANUS
+-> DARDANIAN / TROJAN LINE
+```
+
+and independently:
+
+```text
+ATLAS
+-> TAYGETE
+-> LACEDAEMON
+-> SPARTAN / LACONIAN LINE
+```
+
+Thus Hellanicus uses an `Atlantias` genealogy to organize lineages that reach both the Trojan and Spartan mythic-historical worlds.
+
+This does **not** make Troy or Sparta 'Atlantis'. It demonstrates that the Atlas/Atlantid carrier was already a pan-regional genealogical organizing frame before Plato.
+
+Add:
+
+```text
+GEN-01 = ATLANTID_GENEALOGICAL_SUPERNODE
+GEN-02 = ATLAS_TO_DARDANUS_TROJAN_BRANCH
+GEN-03 = ATLAS_TO_LACEDAEMON_SPARTAN_BRANCH
+```
+
+## 14. Hellanicus makes Deucalion and Atlas parallel archival frameworks
+
+Hellanicus' mythographic corpus included separate major lineage works:
+
+```text
+Phoronis
+Deukalioneia
+Atlantis / Atlantias
+Asopis
+Troika
+```
+
+Scholarly summaries describe these as efforts to collate disparate mythic corpora into coherent chronological genealogies.
+
+This is highly relevant to the project's reading of genealogy as compressed metadata:
+
+```text
+ANCESTOR-NAME
+-> GENEALOGICAL BRANCH
+-> GEOGRAPHIC / POLITICAL / HEROIC DISTRIBUTION
+-> CHRONOLOGICAL ORDER
+```
+
+Deucalion and Atlas are therefore not merely isolated mythic persons in Hellanicus; they are **indexing heads for large narrative-genealogical archives**.
+
+Add:
+
+```text
+GEN-04 = EPONYMIC_ANCESTOR_AS_ARCHIVAL_INDEX
+```
+
+## 15. Euripides (428 BCE) independently fixes Atlas to the western maritime boundary
+
+`Hippolytus` predates Plato and repeatedly uses Atlas as the far western boundary marker.
+
+At the opening, Aphrodite's sphere covers those living between the sea/Euxine side and the **bounds of Atlas**.
+
+At lines 742-747, the chorus imagines the apple-bearing shore of the Hesperides, where the ruler of the sea no longer grants sailors a path farther and where the sacred limit of the sky is held by Atlas.
+
+At line 1053 Euripides uses `τερμόνων ... Ἀτλαντικῶν` ('Atlantean/Atlas bounds'); LSJ identifies these with the Pillars of Heracles.
+
+Thus before Plato we have:
+
+```text
+HESPERIDES
++ NAVIGATIONAL LIMIT
++ ATLAS
++ ATLANTEAN BOUNDS
++ PILLARS-OF-HERACLES GEOGRAPHIC FUNCTION
+```
+
+Add:
+
+```text
+GEO-07 = ATLANTEAN_BOUNDS_AS_WESTERN_NAVIGATIONAL_LIMIT
+```
+
+## 16. Carrier inventory before Plato
+
+By the late fifth century BCE, before Plato's island narrative, the `ATLANT-` family is already carrying at least five distinct classifiers:
+
+```text
+1. COSMIC PERSON      -> Atlas
+2. MOUNTAIN           -> Atlas
+3. PEOPLE             -> Atlantes
+4. SEA / OCEAN        -> Atlantis thalassa
+5. GENEALOGY / WORK   -> Atlantis / Atlantias
+6. BOUNDARY ADJECTIVE -> Atlantean bounds
+```
+
+Plato adds:
+
+```text
+7. ISLAND             -> Atlantis nesos
+```
+
+The stronger historical formulation is therefore:
+
+```text
+PLATO DOES NOT CREATE THE ATLANT- CARRIER.
+PLATO REBINDS AN OLD, MULTI-CLASSIFIER CARRIER TO A POLITICAL ISLAND.
+```
+
+## 17. New high-value cross-project bridge
+
+Hellanicus' `Atlantias` and `Deukalioneia` now connect two project lines that had been treated separately:
+
+```text
+ATLAS / ATLANTIS CARRIER STUDY
+<-> HELLANICUS GENEALOGICAL INDEXING
+<-> DEUCALION / HELLEN ETHNOGENESIS
+<-> DARDANUS / TROY
+<-> LACEDAEMON / SPARTA
+```
+
+This is a stronger development lead than searching for an island location: it lets us test how archaic/classical genealogists used ancestor names to bind geographically separated lineages into one chronological architecture.
