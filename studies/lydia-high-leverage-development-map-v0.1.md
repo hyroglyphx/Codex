@@ -280,3 +280,29 @@ and should be compared to Herodotus' Briges/Phrygians, Termilae/Lycians, Pelasgi
 ```
 
 The first two have the highest leverage because they are same-object bilingual controls rather than resemblance-based comparisons.
+
+
+## Priority 12 — Karabel as a monument-reception control
+
+Herodotus 2.106 describes a rock relief on the Sardis-Smyrna road whose equipment he calls both Egyptian and Ethiopian and reports that some viewers identified it as Memnon.
+
+The surviving Karabel relief is now read through Hieroglyphic Luwian as Tarkasnawa, King of Mira.
+
+Thus one western-Anatolian object carries:
+
+~~~
+LUWIAN ROYAL MONUMENT
+-> GREEK EGYPTIAN/ETHIOPIAN VISUAL CLASSIFICATION
+-> MEMNON RECEPTION
+~~~
+
+This is a high-value same-object control for how foreign monuments can be reclassified through inherited mythic categories.
+
+The Mira dynastic name Alantalli is added separately as a phoneme probe against the ATL/ATAL/ATAR lattice.
+
+Add:
+
+~~~
+REC-08 = MONUMENT_RECLASSIFICATION_THROUGH_FOREIGN_MYTH
+PHON-CAND-02 = ALANTALLI_ATLANT_LIQUID_CLUSTER_PROBE
+~~~
