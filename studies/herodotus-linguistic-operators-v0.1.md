@@ -451,3 +451,108 @@ TRN-13 = ORAL_METRICAL_WRITTEN_RELAY
 ```
 
 Herodotus 1.55 gives another verse oracle to Croesus, reinforcing that this was not an isolated stylistic accident.
+
+## 16. Herodotus 1.56 — the Hellenic/Dorian migration is an ethnonym-rebinding chain
+
+This passage is substantially stronger than a generic origin myth. Herodotus holds one moving population-line constant while changing its geographic seat and label.
+
+The grammatical subject of the migration sequence is the preceding `τὸ Ἑλληνικὸν ἔθνος` ('the Hellenic ethnos/people'). The chain is:
+
+```text
+under Deucalion:
+HELLENIC ETHNOS -> Phthiotis
+
+under Dorus son of Hellen:
+same moving ethnos -> Histiaiotis (below Ossa and Olympus)
+
+after expulsion by Cadmeans:
+same ethnos -> Pindus -> Μακεδνὸν καλεόμενον
+
+then:
+same ethnos -> Dryopis
+
+finally:
+same ethnos -> Peloponnese -> Δωρικὸν ἐκλήθη
+```
+
+The Greek `Μακεδνὸν καλεόμενον` is neuter singular and naturally tracks the understood neuter `ἔθνος`; `Δωρικὸν ἐκλήθη` does the same at the end. Thus the text itself presents **Makednon** and **Doric** as phase-specific labels of the migrating subject, even though translators and commentators differ on how geographically to construe Pindus/Makednon.
+
+Herodotus 8.43 independently recalls the same genealogy when he calls most Peloponnesian contingents at Salamis `Dorian and Macednian` and traces them back through Erineus, Pindus and the Dryopian region.
+
+Add:
+
+```text
+NAME-16 = PHASE_SPECIFIC_ETHNONYM_REBINDING
+GEO-02 = MIGRATION_STAGE_NAME_REINDEXING
+TXT-02 = GRAMMATICAL_SUBJECT_CONTINUITY
+```
+
+### 16.1 The next chapter supplies the complementary mechanism
+
+Herodotus 1.57 then says the Attic ethnos, originally Pelasgian, changed its language when it became Hellenic.
+
+Placed together, 1.56-57 give two distinct transformation models:
+
+```text
+MODEL A — SAME LANGUAGE/PEOPLE-LINE, CHANGING PHASE NAME
+Hellenic -> Makednon -> Dorian
+
+MODEL B — CONTINUING PEOPLE-LINE, CHANGING LANGUAGE + MACRO-IDENTITY
+Pelasgian Attic -> Hellenic Attic
+```
+
+This contiguous pairing is unusually important for the project because Herodotus explicitly refuses the modern shortcut:
+
+```text
+NAME = PEOPLE = LANGUAGE = PLACE
+```
+
+Instead he narrates each coordinate as independently mutable.
+
+### 16.2 Thucydides preserves an independent Hellen/Phthiotis naming mechanism
+
+Thucydides 1.3 likewise places Hellen son of Deucalion in Phthiotis and says that, as Hellen and his sons became powerful and entered alliances with other cities, the name `Hellenes` spread gradually through association. He appeals to Homer, where `Hellenes` is restricted to Achilles' Phthiotian followers rather than the whole Greek coalition.
+
+Thus two fifth-century historians independently preserve:
+
+```text
+PHIOTHIOTIS / HELLEN
+-> local or restricted Hellenic name
+-> widening social-political adoption
+```
+
+Herodotus emphasizes migration/genealogy; Thucydides emphasizes alliance/network diffusion.
+
+Add:
+
+```text
+NAME-17 = NETWORK_DIFFUSION_OF_MACRO_ETHNONYM
+```
+
+### 16.3 Deucalion now bridges the older-name-carrier study
+
+The project already has Mycenaean `de-u-ka-ri-jo` as a Bronze Age Deukalion name-carrier. Herodotus does not prove that the Pylian bearer is the flood ancestor, but it creates a useful stratified sequence:
+
+```text
+Bronze Age personal-name carrier: de-u-ka-ri-jo
+-> epic/heroic multiple Deukalion bearers
+-> genealogical Deucalion as father-line of Hellen
+-> Herodotean geographic/ethnic time-marker: 'in the reign of Deucalion'
+```
+
+This is a clean example of an older name being reused as a chronological and ethnogenetic anchor without requiring identity of all bearers.
+
+### 16.4 Genealogy is functioning as compressed geography and identity metadata
+
+The passage is almost algorithmic:
+
+```text
+Deucalion = Phthiotis stage
+Dorus son of Hellen = Histiaiotis stage
+Cadmean expulsion = Pindus transition
+Makednon = Pindus phase-label
+Dryopis = intermediate territorial phase
+Dorian = Peloponnesian phase-label
+```
+
+That supports the project's standing hypothesis that mythic genealogy can encode route, political displacement, ethnonym succession and territorial memory simultaneously.
