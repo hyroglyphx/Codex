@@ -1,87 +1,77 @@
 version: "0.1"
 date: "2026-09-25"
 id: HOUSTON_WONDERFUL_ETHIOPIANS_CLAIM_MINE
-status: SOURCE_LOCKED_FIRST_PASS
+status: SOURCE_RECOVERY_PASS
+
+method:
+  - advocacy_claim
+  - source_recovery
+  - independent_witness_check
+  - typed_relation
+  - project_integration
 
 nodes:
-  KARABEL:
-    primary_witness: "Herodotus 2.106"
-    object: "Karabel relief"
-    modern_reading: "Tarkasnawa, King of Mira"
-    script_language: "Hieroglyphic Luwian"
-    ancient_reception: ["Egyptian", "Ethiopian", "Memnon candidate"]
-    status: ATTESTED
+  MEMNON_CORRIDOR:
+    status: ATTESTED_MULTI_SOURCE
+    sources:
+      - "Herodotus 5.53-54: Sardis-Susa royal road; Memnonian palace"
+      - "Pausanias 10.31.7: Ethiopian king, comes from Susa/Choaspes to Troy; Phrygian route memory"
+      - "Strabo 15.3.2: Tithonus/Memnon foundation tradition; Memnonium; Susians=Cissians"
+      - "Diodorus 2.22: Ethiopians + Susianians under Memnon"
+    priority: A_plus
 
-  ALANTALLI:
-    role: "Mira dynastic name; linked to Tarkasnawa in modern synthesis"
-    relation_to_atlant_cluster: PHONEME_PROBE_ONLY
-    status: CANDIDATE
+  KARABEL_RECEPTION:
+    status: ATTESTED_PLUS_IDENTIFICATION
+    sources:
+      - "Herodotus 2.106"
+      - "Hawkins 1998 Karabel/Tarkasnawa"
+    sequence:
+      - "Anatolian royal monument"
+      - "Egyptian/Ethiopian visual classifier"
+      - "Memnon identification by some Greek observers"
+    phoneme_candidate: "Alantalli -> ALANT-"
+    priority: B_plus
 
-  ETHIO_SABAEAN:
-    witnesses: ["Yeha", "Hawelti", "South-Arabian-script inscriptions"]
+  ANSHAN_Achaemenid:
+    status: ATTESTED_WITH_ETYMOLOGICAL_CANDIDATE
+    older_layer: "Elamite Anshan/Anzan"
+    later_layer: "Achaemenid Parsa"
+    candidate_names: [Cispis, Kurus, Kambujiya]
+    priority: A
+
+  RED_SEA_CORRIDOR:
+    status: ARCHAEOLOGICAL_EPIGRAPHIC
+    nodes: [Saba, Marib, Yeha, Hawelti, DMT]
     script: South_Arabian
-    languages:
-      group_I: Sabaean
-      group_II: "local Ethiopian Semitic with later Geʿez features"
-    architecture: "direct South Arabian/Sabaean parallels"
-    status: ATTESTED
+    linguistic_states: [Sabaean, local_Ethiopian_features]
+    titles: ["mukarrib of DMT", "mukarrib of DMT and Saba"]
+    priority: A
 
-  AD:
-    primary_epigraphic: "BES15 161"
-    form: "ḏ ʾl ʿd"
-    gloss: "of the lineage of ʿĀd"
-    other_witnesses: "two Hismaic inscriptions"
-    geography: "Wadi Ram / ancient Iram -> Harrah"
-    date: "around turn of Common Era"
-    status: ATTESTED
+  CISSIAN_COSSAEAN_KASSITE:
+    status: NAME_TRANSFER_PROBLEM
+    forms: [Kissioi, Kossaioi, Kassu]
+    region: [Susiana, Zagros, Babylonia]
+    priority: B
 
-  THAMUD:
-    ethnonym_status: ATTESTED
-    key_object: "Ruwafa temple inscriptions"
-    scripts_languages: ["Greek", "Nabataean"]
-    control: "Thamudic is legacy script label and does not imply Thamud tribal authorship"
-    status: ATTESTED
-
-  KASSITE_COSSAEAN:
-    forms: ["Kaššû", "Ku-uš-šu(-ḫḫe)", "Kossaioi", "Coss(a)ei"]
-    region: Zagros
-    relation: DIACHRONIC_ETHNONYM_CONTINUITY
-    confidence: B
-    cissian_branch: "separate; Greek Kíssioi often designates Susians"
-
-  AITHIOPES:
-    homer: "east/west extremities"
-    herodotus_3_94: "Ethiopians of Asia"
-    herodotus_7_70: "eastern Ethiopians grouped with Indians; contrasted with Libyan Ethiopians"
-    pausanias_1_33: "Meroe Ethiopians plus western Ethiopians near Mauri/Nasamones/Atlas"
-    model: MULTI_REGIONAL_GREEK_CLASSIFIER
-    status: ATTESTED
-
-  MEMNON:
-    nodes: ["Ethiopian kingship", "Susa", "Cissia", "Choaspes", "Troy", "Phrygian route", "Karabel reception"]
-    sources: ["Herodotus 2.106", "Strabo 15.3.2", "Pausanias 10.31.7", "Diodorus 2.22"]
-    status: ATTESTED_RECEPTION_NETWORK
-
-  KUSHADVIPA_WILFORD:
-    authentic_kernel: "Kuśadvīpa in Puranic cosmography"
-    contaminated_branch: "Francis Wilford manuscript alterations/fabrications and geographic remapping"
-    downstream: "Houston"
-    status: PROVENANCE_SPLIT_REQUIRED
-
-  PAUSANIAS_ATLAS:
-    source: "Pausanias 1.33.4-6"
-    chain: ["other Aithiopians", "Mauri", "Nasamones/Atlantes in Pausanias' reading", "Mount Atlas"]
-    status: ATTESTED_RECEPTION
+  WILFORD_KUSA_ATALA:
+    status: SOURCE_HISTORY_CONTROL
+    classifiers:
+      Kusa_dvipa: terrestrial_division
+      Atala: lower_world_region
+    priority: C
 
 operators:
-  REC-08: MONUMENT_RECLASSIFICATION_THROUGH_FOREIGN_MYTH
-  SCR-05: SAME_SCRIPT_MULTIPLE_LANGUAGES_ETHIOPIA
-  TRN-19: RED_SEA_SCRIPT_ARCHITECTURE_CONTACT_CORRIDOR
-  TRAD-01: LATE_TRADITION_EPIGRAPHIC_RECOVERY
-  CTRL-04: ETHNONYM_SCRIPT_LABEL_NONIDENTITY
-  NAME-22: KASSITE_COSSAEAN_DIACHRONIC_ETHNONYM
-  ID-07: AITHIOPES_MULTI_REGIONAL_MACRO_CLASSIFIER
-  REC-09: MEMNON_MULTIREGIONAL_IDENTITY_CARRIER
-  PROV-02: AUTHENTIC_KERNEL_CONTAMINATED_SOURCE_CHAIN
-  GEO-08: AITHIOPES_ATLAS_ADJACENCY_RECEPTION
-  PHON-CAND-02: ALANTALLI_ATLANT_LIQUID_CLUSTER_PROBE
+  MEM-03: MEMNONIAN_SUSA_TROY_ROUTE_CORRIDOR
+  ID-07: ETHNONYM_GEOGRAPHIC_ORIGIN_SPLIT
+  GEO-09: MYTHIC_ROUTE_PRESERVED_AS_HALTING_PLACE_MEMORY
+  REC-08: FOREIGN_MONUMENT_RECLASSIFIED_THROUGH_MYTHIC_ETHNOGRAPHIC_SCHEMA
+  PHON-CAND-09: ALANT_ATLANT_ATALANT_COMPARISON_NODE
+  NAME-22: ELAMITE_SUBSTRATE_IN_EARLY_ACHAEMENID_NAMES
+  AUTH-17: ANSHAN_TO_PARSA_SOVEREIGN_REBINDING
+  LANG-08: IMPERIAL_LAYERING_OVER_ELAMITE_SUBSTRATE
+  SCR-05: SOUTH_ARABIAN_SCRIPT_LOCAL_LANGUAGE_REBINDING
+  TRN-19: RED_SEA_BIDIRECTIONAL_CONTACT_CORRIDOR
+  TITLE-02: MUKARRIB_CROSS_RED_SEA_TITLE_TRANSFER
+  NAME-23: NEIGHBOR_ETHNONYM_TRANSFER_OR_CONFLATION
+  GEN-05: GENEALOGICAL_ETHNOGRAPHIC_CROSSWALK
+  TXT-06: COSMOGRAPHIC_CLASSIFIER_CONFLATION_CONTROL
