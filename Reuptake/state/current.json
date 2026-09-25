@@ -26,7 +26,8 @@
     "Confidence-weighted spatial-temporal carrier lattice across ancient languages, with relation-specific weights and dense multilingual nodes",
     "Recovered Sumerian-Akkadian-Hurro-Urartian cuneiform transmission spine: lexical crosswalks, heterograms, bilinguals and royal formula continuity",
     "Sumerian-Akkadian-Hurrian-Urartian confidence corridor: explicit cuneiform transmission, Assyrian-Urartian handoff, Hurro-Urartian genetics, and candidate lexical residue",
-    "Epeios wooden-horse linguistic craft node: kosmos/poiesis wordplay, Bronze Age tekton/horse vocabulary, design-implementation split, ethnonymic rebinding and object-classifier transforms"
+    "Epeios wooden-horse linguistic craft node: kosmos/poiesis wordplay, Bronze Age tekton/horse vocabulary, design-implementation split, ethnonymic rebinding and object-classifier transforms",
+    "Troy/Wilusa multilingual confidence corridor: Wilusa-Wilios, Alaksandu-Alexandros, Appaliuna-Apollo, Taruisa-Troia, and calibrated western-Anatolian Hittite-Greek name transforms"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -120,7 +121,11 @@
     "The LIFE row zi/napištu/ḫuišwātar is semantic-slot continuity, not necessarily a single-sign chain; Hittite conventionally uses TI-tar for ḫuišwātar.",
     "DAY/NIGHT and HAND/FOOT/EYE provide independent A-confidence Hittite replications of Sumerian-derived semantic carriers with native Hittite lexical ancestry.",
     "Hittite native lexemes may be less visible than their heterograms; eye is a canonical case where the nominative singular is only directly written as IGI or INU.",
-    "The screenshot form treš for Hittite three is overconfident; teri- is supported, while many numeral forms remain cipher-written."
+    "The screenshot form treš for Hittite three is overconfident; teri- is supported, while many numeral forms remain cipher-written.",
+    "Wilusa/*Wilios is a high-value same-referent Hittite-Greek toponym candidate; Taruisa/Troia is weaker and must remain separate.",
+    "Alaksandu/Alexandros is a strong personal-name bridge, but elite naming does not determine the population language of Wilusa.",
+    "The Hisarlik hieroglyphic seal demonstrates script contact but does not prove Luwian was the local spoken language.",
+    "Millawanda/Miletos, Apasa/Ephesos and Lazpa/Lesbos should calibrate Hittite rendering of Aegean names before testing weaker Trojan equations."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -144,7 +149,8 @@
     "studies/mycenaean-divine-role-rebinding-v0.1.md",
     "studies/dense-ancient-language-nodes-v0.1.md",
     "studies/sumerian-akkadian-hurro-urartian-confidence-corridor-v0.1.md",
-    "studies/epeios-wooden-horse-linguistic-craft-node-v0.1.md"
+    "studies/epeios-wooden-horse-linguistic-craft-node-v0.1.md",
+    "studies/troy-wilusa-multilingual-confidence-corridor-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -260,7 +266,12 @@
     "Use Hittite inherited Indo-European lexemes as negative controls against confusing carrier continuity with lexical ancestry",
     "Build body-part heterogram matrix across Hittite and Urartian for hand, foot, eye, head, heart and ear",
     "Build day-night antonym carrier pair UD versus GE6 across Sumerian, Akkadian, Hittite and Urartian if attested",
-    "Separate directly syllabic Hittite lexical forms from reconstructed forms hidden by heterograms"
+    "Separate directly syllabic Hittite lexical forms from reconstructed forms hidden by heterograms",
+    "Build exact-spelling matrix for Wilusa/Wilusiya, Taruisa, Alaksandu, Appaliuna, Ahhiyawa, Millawanda, Apasa and Lazpa",
+    "Freeze Hittite foreign-name phonological accommodation envelope using Millawanda/Miletos, Apasa/Ephesos and Lazpa/Lesbos",
+    "Test Wilusa/*Wilios and Alaksandu/Alexandros only after calibration envelope is frozen",
+    "Investigate Appaliuna/Apollon transmission direction using Anatolian and Mycenaean divine-name witnesses",
+    "Build Trojan language-evidence tensor separating script, personal names, material culture, diplomacy and local speech"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -306,7 +317,8 @@
     "Cuneiform-semantic-slot-corridor-v0.1": "source_locked_first_pass",
     "Epeios-wooden-horse-linguistic-craft-v0.1": "source_locked_first_pass",
     "Hittite-heterogram-replication-v0.1": "source_locked_first_pass",
-    "Hittite-screenshot-audit-III": "source_locked_first_pass"
+    "Hittite-screenshot-audit-III": "source_locked_first_pass",
+    "Troy-Wilusa-multilingual-confidence-corridor-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
