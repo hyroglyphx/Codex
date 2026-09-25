@@ -22,7 +22,8 @@
     "Semitic ʾEL -> Greek EL/ELL reception and aspiration-stripped Hellen/Hellas carrier experiment",
     "IL/ELUS Greek name-carrier cluster: Elus/Elioun/Eloim/Belus against Ilus/Ilium, Eleusis, Helios and Selene",
     "Alashiya/Cyprus: external sovereignty versus internal heterarchy, city/land classifier ambiguity, southern scribal seat, and Alassa/Alašiya carrier test",
-    "Mycenaean divine-role rebinding: Poseidon local prominence, Potnia title-localization, post-palatial cult reweighting, and Cyprus divine-reception bridge"
+    "Mycenaean divine-role rebinding: Poseidon local prominence, Potnia title-localization, post-palatial cult reweighting, and Cyprus divine-reception bridge",
+    "Confidence-weighted spatial-temporal carrier lattice across ancient languages, with relation-specific weights and dense multilingual nodes"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -91,7 +92,11 @@
     "Divine name continuity does not imply fixed divine function or fixed pantheon hierarchy.",
     "Local cultic preeminence must be separated from pan-regional divine kingship.",
     "The disappearance of Linear B palace archives creates a real cult-memory discontinuity without requiring total religious discontinuity.",
-    "Potnia/Lady-type divine titles should be modeled as title-plus-localization systems before etymological fusion with other Lady/Mistress terms."
+    "Potnia/Lady-type divine titles should be modeled as title-plus-localization systems before etymological fusion with other Lady/Mistress terms.",
+    "Confidence must be relation-specific: semantic translation, same-referent mapping, reception, and etymology cannot share one undifferentiated score.",
+    "Unknown confidence channels remain Ω rather than being filled by a neutral midpoint.",
+    "Dense nodes are defined by independent witnesses, script/language diversity, explicit crosswalks, temporal depth, and typed relations rather than raw form-count.",
+    "A high-confidence semantic/operator equivalence may coexist with near-zero etymological confidence."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -112,7 +117,8 @@
     "studies/strabo-founder-genealogy-geography-v0.1.md",
     "studies/il-elus-greek-name-carrier-cluster-v0.1.md",
     "studies/alashiya-external-classifier-heterarchy-v0.1.md",
-    "studies/mycenaean-divine-role-rebinding-v0.1.md"
+    "studies/mycenaean-divine-role-rebinding-v0.1.md",
+    "studies/dense-ancient-language-nodes-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -198,7 +204,11 @@
     "Model Pylos Tn 316 as a divine relation graph with offerings, shrines and title/gender relations",
     "Build Poseidon function matrix across Mycenaean, Homeric and Classical evidence",
     "Compare Potnia title-localization structurally with Hurrian allai/Allani without etymological collapse",
-    "Build Cyprus divine-reception bridge: Astarte, Cypriot Great Goddess, Aphrodite and Alašiya cult geography"
+    "Build Cyprus divine-reception bridge: Astarte, Cypriot Great Goddess, Aphrodite and Alašiya cult geography",
+    "Source-lock and weight Dilmun/Tilmun, Magan/Makkan, Anšan/Anzan, Šušun/Šūšen/Šūšin, and Nina/Ninua",
+    "Render the first 4D carrier graph using Alašiya, EL/IL, ʿBR, LADY/MISTRESS, Sardis, and numeral-two nodes",
+    "Replace provisional scalar weights with edge-level confidence vectors where source data permit",
+    "Use same-artifact and bilingual anchors to calibrate phoneme-mapping distances before exploratory name clusters"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -237,7 +247,8 @@
     "Trecae-Thrace-diachrony": "same_author_medieval_control_added",
     "Alashiya-external-classifier-heterarchy-v0.1": "source_locked_first_pass",
     "Alashiya-spelling-determinative-matrix-v0.1": "source_locked_first_pass",
-    "Mycenaean-divine-role-rebinding-v0.1": "source_locked_first_pass"
+    "Mycenaean-divine-role-rebinding-v0.1": "source_locked_first_pass",
+    "confidence-weighted-carrier-lattice-v0.1": "adopted_experimental_first_weighted_pass"
   },
   "active_candidate_results": {
     "anchored": [
