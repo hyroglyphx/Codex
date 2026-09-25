@@ -788,3 +788,157 @@ TWO       A semantics/grammar; C native Hittite cardinal phonology
 ```
 
 The major lesson is that **confidence should be attached to the edge being claimed**. A row can be perfectly secure semantically while its spoken Hittite form remains partially Ω.
+
+## 17. Screenshot audit III — THREE / DAY / NIGHT / HAND / FOOT / EYE
+
+This final batch is one of the strongest controls yet because DAY/NIGHT and HAND/FOOT/EYE independently show inherited Hittite vocabulary living underneath Sumerian-derived semantic carriers.
+
+### THREE
+
+```text
+Sumerian eš = three
+Akkadian šalāš / šalāšat = three
+Hittite teri- = three
+```
+
+Correction: the screenshot's `treš` is too definite. Hittite normally writes the numeral with the cipher `3`; a syllabic genitive `te-ri-ya-aš` supports a native stem `teri-`, and forms such as `3-e-eš` carry Hittite endings. The exact reading of many numeral forms remains partly hidden.
+
+Classification:
+
+```text
+NUMERAL SEMANTICS = A
+HITTITE NATIVE STEM teri- = A/B
+`treš` AS DIRECTLY ATTESTED FORM = reject
+```
+
+### DAY
+
+```text
+Sumerian UD / u4 / ud = day
+Akkadian ūmu = day
+Hittite šiwatt- = day; nom.sg. šiwaz
+```
+
+Hittite dictionaries explicitly give `UD.(KAM)-att-` as the Sumerographic writing of `šiwatt-`. The Hittite word is inherited within Indo-European from the *dei-/dieu- brightness/day family.
+
+Classification:
+
+```text
+CARRIER/READOUT = A+
+INDEPENDENT HITTITE LEXICAL ANCESTRY = A
+```
+
+### NIGHT
+
+```text
+Sumerian GE6 / ge6 = night/dark
+Akkadian mūšu = night
+Hittite išpant- = night; nom.sg. išpanza
+```
+
+Correction: the screenshot's `išpanz` should be normalized as stem `išpant-`, nominative `išpanza`. Hittite uses the Sumerogram `GE6` for this lexeme. The Hittite word belongs to an Indo-European night-family with Vedic kṣap- and Iranian xšap-/šab-type forms.
+
+Classification:
+
+```text
+CARRIER/READOUT = A+
+INDEPENDENT HITTITE LEXICAL ANCESTRY = A
+```
+
+### HAND
+
+```text
+Sumerian šu = hand
+Akkadian qātu = hand
+Hittite keššar / kiššer- / kišr- = hand
+```
+
+Hittite texts directly use `ŠU` with Hittite endings, e.g. `ŠU-az`. Native `keššar` is an inherited Indo-European hand-word related to Greek cheir, Armenian jeṙn, Tocharian forms, etc.
+
+Classification:
+
+```text
+CARRIER/READOUT = A+
+NATIVE HITTITE INHERITANCE = A
+```
+
+This is an exceptionally strong negative control against mistaking Sumerogram continuity for lexical ancestry.
+
+### FOOT
+
+```text
+Sumerian ŋiri3 / giri3 (GIR3) = foot
+Akkadian šēpu = foot
+Hittite pāt- / pat-, later pata- = foot/leg
+```
+
+Correction: current Sumerological normalization is `ŋiri3/giri3`, not the screenshot's `ĝir2` as a lexical citation. Akkadian frequently writes šēpu with `GIR3`. Hittite normally writes the word with Sumerogram `GÌR`, e.g. `GÌR-aš`; native phonetic forms establish the pāt-/pat-/pata- stem. `pataš` is best treated as an underlying/reconstructed nominative rather than the primary citation form.
+
+The Hittite word is the inherited Indo-European foot word, cognate with Greek pous/podos, Latin pes/pedis, Indo-Iranian pad-, Germanic foot, etc.
+
+Classification:
+
+```text
+CARRIER/READOUT = A+
+NATIVE HITTITE INHERITANCE = A
+SCREENSHOT FORM pataš = B (normalization issue)
+```
+
+### EYE
+
+```text
+Sumerian igi = eye
+Akkadian īnu = eye
+Hittite šākuwa- = eye(s)
+```
+
+This is an especially revealing readout-opacity case. Hittite nominative singular 'eye' is only attested through the Sumerogram `IGI` or Akkadogram `ĪNU`; the native nominative singular `*šākuwan` is reconstructed. The directly syllabic `šākuwa` is nominative-accusative plural.
+
+Classification:
+
+```text
+SEMANTIC/CARRIER VALUE = A+
+NATIVE STEM šākuwa- = A
+NOM.SG *šākuwan = reconstructed, B
+```
+
+### Batch-level result
+
+The body-part triad is a near-ideal calibration:
+
+```text
+ŠU   -> Akkadian qātu  -> Hittite keššar
+GÌR  -> Akkadian šēpu  -> Hittite pāt-/pata-
+IGI  -> Akkadian īnu   -> Hittite šākuwa-
+```
+
+with Hittite morphology attached to the inherited carriers and with native Hittite lexemes that are not descendants of the Sumerian or Akkadian words.
+
+Add:
+
+```text
+HET-04 = HETEROGRAM_OCCLUSION_OF_NATIVE_LEXEME
+```
+
+Definition: the semantic carrier can be more directly visible in the written corpus than the native spoken lexeme, so native pronunciation may require phonetic complements, rare syllabic spellings, paradigm reconstruction, or comparative evidence.
+
+### Final calibration ranking
+
+```text
+DAY    A+
+NIGHT  A+
+HAND   A+
+FOOT   A+
+EYE    A+ semantic/carrier; B reconstructed nom.sg
+THREE  A semantic; A/B native stem; reject screenshot `treš` as direct form
+```
+
+This batch reinforces the corridor's central theorem:
+
+```text
+SAME SEMANTIC SIGN
++ DIFFERENT SPOKEN WORD
++ DIFFERENT LANGUAGE FAMILY
++ LOCAL INFLECTION
+= NORMAL CUNEIFORM MULTILINGUAL PRACTICE
+```
