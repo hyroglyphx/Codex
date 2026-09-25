@@ -25,7 +25,8 @@
     "Mycenaean divine-role rebinding: Poseidon local prominence, Potnia title-localization, post-palatial cult reweighting, and Cyprus divine-reception bridge",
     "Confidence-weighted spatial-temporal carrier lattice across ancient languages, with relation-specific weights and dense multilingual nodes",
     "Recovered Sumerian-Akkadian-Hurro-Urartian cuneiform transmission spine: lexical crosswalks, heterograms, bilinguals and royal formula continuity",
-    "Sumerian-Akkadian-Hurrian-Urartian confidence corridor: explicit cuneiform transmission, Assyrian-Urartian handoff, Hurro-Urartian genetics, and candidate lexical residue"
+    "Sumerian-Akkadian-Hurrian-Urartian confidence corridor: explicit cuneiform transmission, Assyrian-Urartian handoff, Hurro-Urartian genetics, and candidate lexical residue",
+    "Epeios wooden-horse linguistic craft node: kosmos/poiesis wordplay, Bronze Age tekton/horse vocabulary, design-implementation split, ethnonymic rebinding and object-classifier transforms"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -109,7 +110,11 @@
     "Inherited Mesopotamian heterograms taking Urartian suffixes are A-confidence evidence of localized scribal-carrier integration.",
     "KUR+ebani is a canonical classifier-plus-native-lexeme double-encoding control.",
     "Royal titulary slots persist from Sarduri I Akkadian into Urartian royal formulae even when lexical realization changes.",
-    "Sumerian šu / Hurrian šu-ni / Urartian su- hand is the first adversarial lexical probe against the hard carrier backbone."
+    "Sumerian šu / Hurrian šu-ni / Urartian su- hand is the first adversarial lexical probe against the hard carrier backbone.",
+    "Odyssey 8 places Epeios beside epoiēsen and asks the bard to sing the horse's kosmos, creating source-locked craft/composition wordplay without proving name etymology.",
+    "Linear B independently attests both te-ko-to-ne 'carpenters' and i-qo 'horse', linking central Epeios craft vocabulary to Bronze Age Mycenaean Greek.",
+    "The wooden horse tradition separates design/initiative, master-builder execution, timber acquisition, assembly, hidden payload and boundary penetration.",
+    "Epeios son of Panopeus must remain distinct from Epeios son of Endymion and the Epeian ethnonymic/eponymic lane."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -132,7 +137,8 @@
     "studies/alashiya-external-classifier-heterarchy-v0.1.md",
     "studies/mycenaean-divine-role-rebinding-v0.1.md",
     "studies/dense-ancient-language-nodes-v0.1.md",
-    "studies/sumerian-akkadian-hurro-urartian-confidence-corridor-v0.1.md"
+    "studies/sumerian-akkadian-hurro-urartian-confidence-corridor-v0.1.md",
+    "studies/epeios-wooden-horse-linguistic-craft-node-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -237,7 +243,12 @@
     "Expand semantic-slot corridor to LORD, HOUSE/TEMPLE, INSCRIPTION, MAN/PEOPLE and BUILD",
     "Extract every morphologized Urartian heterogram ending for LUGAL, KUR, URU and DINGIR",
     "Align Kelišin bilingual clause-by-clause and score preserved slots versus lexical replacement",
-    "Run preregistered null on Sumerian-Hurro-Urartian HAND using fixed basic-vocabulary inventory"
+    "Run preregistered null on Sumerian-Hurro-Urartian HAND using fixed basic-vocabulary inventory",
+    "Build kosmos-poieo-tekton-architekton-kataskeuazo-harmozo-mechane diachronic craft lexicon",
+    "Test Epeios epoiēsen against Homeric name-verb paronomasia controls",
+    "Trace Linear B te-ko-to-ne and i-qo into Homeric and Classical craft/horse vocabulary",
+    "Build Epeios son of Endymion vs Epeios son of Panopeus source matrix",
+    "Compare Epeios with Daedalus, Argus builder of Argo, Tecton/Harmon and Athena-Hephaestus craft figures"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -280,7 +291,8 @@
     "confidence-weighted-carrier-lattice-v0.1": "adopted_experimental_first_weighted_pass",
     "Sumerian-Akkadian-Urartian-transmission-supernode": "reactivated_top_tier",
     "SUM-AKK-HUR-URART-confidence-corridor-v0.1": "edge_typed_first_pass",
-    "Cuneiform-semantic-slot-corridor-v0.1": "source_locked_first_pass"
+    "Cuneiform-semantic-slot-corridor-v0.1": "source_locked_first_pass",
+    "Epeios-wooden-horse-linguistic-craft-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
