@@ -537,3 +537,131 @@ Sumerian-HU common ancestry D/E
 ```
 
 The corridor is therefore already solid through **carrier, semantic slot, morphology and institution**, while the prehistoric lexical bridge remains the test frontier.
+
+## 14. Hittite parallel corridor — independent replication of heterogram integration
+
+User-supplied screenshots highlight WATER, GOD, KING, BOVINE and LIFE across Sumerian, Akkadian and Hittite. Source checking shows that this is more than a vocabulary list: Hittite independently replicates the same carrier/readout mechanism already isolated in Urartian.
+
+### WATER
+
+```text
+Sumerian a = water
+Akkadian mû = water
+Hittite wātar = water
+```
+
+Hittite lexica explicitly note that `wātar` can be written with the Sumerogram `A`.
+
+Thus:
+
+```text
+A-sign
+-> Sumerian a
+-> Akkadian mû
+-> Hittite wātar
+```
+
+Same semantic carrier; genetically unrelated lexical readouts.
+
+### GOD
+
+```text
+Sumerian diŋir
+Akkadian ilu(m)
+Hittite šiu-/šiuš
+```
+
+Hittite scribes may write the native word phonetically or simply use `DINGIR`; forms such as `DINGIR-uš` combine the old Sumerogram with a Hittite inflectional ending.
+
+This is a canonical HET-02 control.
+
+### KING
+
+```text
+Sumerian lugal
+Akkadian šarru(m)
+Hittite ḫaššu-/ḫaššuš
+```
+
+Old Hittite directly attests `LUGAL-uš`, where `LUGAL` is the Sumerogram and `-uš` is a Hittite nominative ending; the Hittite reading is ḫaššuš.
+
+Thus:
+
+```text
+LUGAL
+-> šarru in Akkadian
+-> ḫaššuš in Hittite
+```
+
+without lexical ancestry between the readouts.
+
+### BOVINE
+
+```text
+Sumerian GUD / gu₄
+Akkadian alpu
+Hittite GU₄-uš / native *kuwāu- (reconstructed reading)
+```
+
+The Hittite native phonological form is partly reconstructed because the texts commonly preserve the Sumerogram `GU₄` plus Hittite endings rather than a fully phonetic spelling.
+
+This is analytically useful: the carrier is more visible than the spoken lexeme.
+
+### LIFE
+
+```text
+Sumerian zi = life / breath
+Akkadian napištu = life / breath
+Hittite ḫuišwātar = life
+```
+
+Important correction: Hittite `ḫuišwātar` is conventionally written with `TI-tar`, not necessarily with the Sumerian `ZI` sign shown in a cross-language semantic comparison.
+
+So the LIFE row is a strong semantic-slot comparison, but not the same direct sign-chain as DINGIR or LUGAL.
+
+### Major consequence
+
+The Hittite material independently validates the project's core rule:
+
+```text
+SAME CUNEIFORM CARRIER
+!=
+SAME SPOKEN WORD
+!=
+SAME LANGUAGE FAMILY
+```
+
+Indeed several Hittite native words in these rows are inherited Indo-European lexemes, while the script carriers are Sumerian-derived and the Akkadian readouts are Semitic.
+
+Therefore the same semantic slot can simultaneously preserve:
+
+```text
+Sumerian graphic ancestry
++ Akkadian scribal mediation
++ Hittite Indo-European lexical ancestry
++ Hittite local morphology
+```
+
+without contradiction.
+
+Add:
+
+```text
+HET-03 = CROSS_FAMILY_HETEROGRAM_REPLICATION
+```
+
+### Urartian comparison
+
+Hittite and Urartian now form two independent daughter environments of Mesopotamian cuneiform practice:
+
+```text
+              SUMERIAN SIGN INVENTORY
+                       |
+                 AKKADIAN MEDIATION
+                  /             \
+          HITTITE READOUT     URARTIAN READOUT
+          IE language         Hurro-Urartian language
+          + local suffixes    + local suffixes
+```
+
+This is a high-confidence comparative laboratory because the same scribal technology is being localized by two genetically unrelated non-Semitic languages.
