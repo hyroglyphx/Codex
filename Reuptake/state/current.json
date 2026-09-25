@@ -174,7 +174,8 @@
     "studies/troy-wilusa-multilingual-confidence-corridor-v0.1.md",
     "studies/herodotus-linguistic-operators-v0.1.md",
     "studies/lydia-high-leverage-development-map-v0.1.md",
-    "studies/atlas-atlantes-atlantis-preplato-carrier-v0.1.md"
+    "studies/atlas-atlantes-atlantis-preplato-carrier-v0.1.md",
+    "studies/houston-wonderful-ethiopians-source-mining-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -321,7 +322,14 @@
     "Build exact morphological table Atlas/Atlantos/Atlantes/Atlantis/Atlantikos across pre-Platonic and Platonic witnesses",
     "Source-lock the Atarantes/Atlantes manuscript apparatus before using the pair historically",
     "Trace Erytheia/Gadeira/Pillars/Atlas/Hesperides as one western-boundary semantic field without collapsing mythic and geographic layers",
-    "Compare Herodotus Atlantis thalassa directly with Plato Atlantis nesos as classifier rebinding"
+    "Compare Herodotus Atlantis thalassa directly with Plato Atlantis nesos as classifier rebinding",
+    "Build Aithiopes classifier matrix across Homer, Herodotus and Diodorus",
+    "Build Karabel multi-identity monument object from Tarkasnawa to Memnon/Sesostris reception",
+    "Build Diodorus Book III Ethiopia-Libya-Atlantians graph",
+    "Build Punt biological geoprovenance calibration from isotope and aDNA evidence",
+    "Build Ethio-Sabaean Red Sea epigraphic corridor",
+    "Source-lock Kasshu/Kaššû vs Kush/Kūš exact forms before phonological testing",
+    "Build Francis Wilford provenance-contamination control packet"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -373,7 +381,8 @@
     "Herodotus-1.56-ethnonym-rebinding": "source_locked_first_pass",
     "Ancient-Script-Lattice-material-change-2026-09-25": "integrated_with_directionality_conflict_preserved",
     "Lydia-high-leverage-development-map-v0.1": "source_locked_first_pass",
-    "Atlas-Atlantes-Atlantis-prePlato-v0.1": "source_locked_first_pass"
+    "Atlas-Atlantes-Atlantis-prePlato-v0.1": "source_locked_first_pass",
+    "Houston-Wonderful-Ethiopians-source-mining-v0.1": "tier_A_source_locked"
   },
   "active_candidate_results": {
     "anchored": [
