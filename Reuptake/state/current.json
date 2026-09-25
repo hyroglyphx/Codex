@@ -105,7 +105,11 @@
     "A confidence corridor is a chain of strong typed edges, not an undifferentiated common-origin claim.",
     "Sumerian->Akkadian and Akkadian->Urartian carrier transmission can be A-confidence while Sumerian<->Hurro-Urartian ancestry remains low-confidence.",
     "Akkadian mediation must be tested before proposing direct Sumerian-Hurrian cultural borrowing.",
-    "Sumerian šu / Hurrian šu-ni / Urartian su- 'hand' is the leading triadic lexical probe, not a promoted cognate set."
+    "Sumerian šu / Hurrian šu-ni / Urartian su- 'hand' is the leading triadic lexical probe, not a promoted cognate set.",
+    "Inherited Mesopotamian heterograms taking Urartian suffixes are A-confidence evidence of localized scribal-carrier integration.",
+    "KUR+ebani is a canonical classifier-plus-native-lexeme double-encoding control.",
+    "Royal titulary slots persist from Sarduri I Akkadian into Urartian royal formulae even when lexical realization changes.",
+    "Sumerian šu / Hurrian šu-ni / Urartian su- hand is the first adversarial lexical probe against the hard carrier backbone."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -229,7 +233,11 @@
     "Build clause-level Kal-e Shin Assyrian-Urartian alignment",
     "Build secure Hurrian-Urartian cognate/morphology table",
     "Retest Sumerian šu vs Hurrian/Urartian su hand under preregistered null",
-    "Search Hurrian cultic lexicon for Sumerian-origin terms demonstrably mediated by Akkadian"
+    "Search Hurrian cultic lexicon for Sumerian-origin terms demonstrably mediated by Akkadian",
+    "Expand semantic-slot corridor to LORD, HOUSE/TEMPLE, INSCRIPTION, MAN/PEOPLE and BUILD",
+    "Extract every morphologized Urartian heterogram ending for LUGAL, KUR, URU and DINGIR",
+    "Align Kelišin bilingual clause-by-clause and score preserved slots versus lexical replacement",
+    "Run preregistered null on Sumerian-Hurro-Urartian HAND using fixed basic-vocabulary inventory"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -271,7 +279,8 @@
     "Mycenaean-divine-role-rebinding-v0.1": "source_locked_first_pass",
     "confidence-weighted-carrier-lattice-v0.1": "adopted_experimental_first_weighted_pass",
     "Sumerian-Akkadian-Urartian-transmission-supernode": "reactivated_top_tier",
-    "SUM-AKK-HUR-URART-confidence-corridor-v0.1": "edge_typed_first_pass"
+    "SUM-AKK-HUR-URART-confidence-corridor-v0.1": "edge_typed_first_pass",
+    "Cuneiform-semantic-slot-corridor-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
