@@ -790,3 +790,41 @@ HERACLID ORACULAR KINGSHIP
 ```
 
 This is a powerful example of genealogy functioning as a temporal accounting system rather than merely biological pedigree.
+
+## 20. Ascalon -> Cyprus / Kythera: cult transmission as a named migration corridor
+
+Herodotus 1.105 gives an explicit Levant-to-Aegean cult genealogy for Aphrodite Ourania.
+
+```text
+Ascalon (Syrian/Palestinian coast) = oldest sanctuary in Herodotus' inquiry
+-> Cyprus sanctuary founded from it, 'as the Cyprians themselves say'
+-> Kythera sanctuary founded by Phoenicians from the same Syrian land
+```
+
+Important correction: the passage does **not** say Phoenicians settled the whole island of Kythera. It says the **sanctuary/cult** there was founded by Phoenicians.
+
+Thus the high-confidence operator is:
+
+```text
+CULT / SANCTUARY FOUNDATION
+!= TOTAL POPULATION SETTLEMENT
+```
+
+But this still establishes a real remembered transmission corridor:
+
+```text
+LEVANTINE GODDESS/CULT COMPLEX
+-> CYPRIOT LOCALIZATION
+-> KYTHERAN LOCALIZATION
+```
+
+Pausanias later independently calls the Kytheran sanctuary of Aphrodite Ourania the most ancient Aphrodite sanctuary among the Greeks, reinforcing Kythera's remembered status as an early western reception node.
+
+Archaeology also shows Kythera had much earlier Minoan settlement/cult activity, so Phoenician cult foundation should be modeled as a later religious-layer insertion into an already occupied island, not island colonization from zero.
+
+Add:
+
+```text
+DIV-08 = LEVANTINE_CULT_TRANSMISSION_CORRIDOR
+TRN-16 = SANCTUARY_FOUNDATION_WITHOUT_POPULATION_REPLACEMENT
+```
