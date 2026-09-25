@@ -1,0 +1,408 @@
+# Herodotus — Linguistic Operators v0.1
+
+**Date:** 2026-09-25  
+**Status:** SOURCE-LOCKED FIRST PASS
+
+## Macro result
+
+Herodotus repeatedly treats language, ethnonym, script, cult-name and political identity as separable variables.
+
+His corpus directly contains:
+
+```text
+language shift
+mixed language
+multilingual trade
+professional interpreters
+bilingual/biliterate elites
+foreign-language lexical glosses
+endonym/exonym divergence
+migration-linked renaming
+script/sound adaptation
+divine-name translation
+dialect differentiation inside one ethnonym
+```
+
+Thus Herodotus is not merely a source of isolated word comparisons. He is a source for the **mechanisms of ancient language contact**.
+
+## 1. Pelasgian -> Hellenic: explicit language shift
+
+Herodotus 1.57 says that if the surviving Pelasgian-speaking communities are a valid guide, the Attic people, being Pelasgian, **changed their language when they became Hellenes**.
+
+Herodotus 1.58 then says the Hellenic group grew from a small beginning by the accession especially of Pelasgians and many other non-Greek peoples while retaining the Hellenic language.
+
+```text
+PEOPLE CONTINUITY
++ POLITICAL/ETHNIC INCORPORATION
+-> LANGUAGE SHIFT
+```
+
+and simultaneously:
+
+```text
+ONE LANGUAGE COMMUNITY
++ MULTIPLE ABSORBED POPULATIONS
+-> EXPANDED ETHNONYM
+```
+
+Add:
+
+```text
+LANG-03 = ETHNIC_INCORPORATION_WITH_LANGUAGE_SHIFT
+ID-04 = LANGUAGE_COMMUNITY_EXPANDS_BY_POPULATION_ACCESSION
+```
+
+This is among the highest-value Herodotean passages for the project's identity tensor.
+
+## 2. Ionian is a macro-name, not a purity label
+
+Herodotus 1.142 says the Ionian cities themselves speak four distinct dialect groups.
+
+Herodotus 1.146 explicitly rejects the idea that the twelve-city Ionians are more truly Ionian or better-born, listing Abantes, Minyans, Cadmeans, Dryopians, Phocians, Molossians, Pelasgian Arcadians, Dorians and others as components.
+
+Therefore:
+
+```text
+ETHNONYM UNITY
+!=
+GENEALOGICAL HOMOGENEITY
+!=
+DIALECT UNIFORMITY
+```
+
+Add:
+
+```text
+ID-05 = COMPOSITE_ETHNONYM_WITH_DIALECT_DIVERSITY
+```
+
+## 3. Scythia is Herodotus' densest language-contact laboratory
+
+### Endonym vs Greek exonym
+
+Herodotus 4.6:
+
+```text
+Skolotoi = collective self-name
+Scythians = Greek name
+```
+
+### Persian macro-exonym
+
+Herodotus 7.64:
+
+```text
+Sacae = Persian name for all Scythians
+```
+
+### Mixed language
+
+Herodotus 4.108 says the Geloni, Greek settlers among the Budini, speak a language:
+
+```text
+half Greek + half Scythian
+```
+
+while Budini themselves speak a different language.
+
+### Contact-induced imperfect acquisition
+
+Herodotus 4.117 says Sauromatian is Scythian 'not in its ancient purity' because the Amazon mothers did not learn Scythian correctly.
+
+### Direct Scythian lexical glosses
+
+Herodotus records:
+
+```text
+arima = one
+spou = eye
+Arimaspi = 'one-eyed'       (4.27)
+
+oior = man
+pata = kill
+Oiorpata = 'man-killers'    (4.110)
+```
+
+### Divine-name crosswalk
+
+Herodotus 4.59 maps:
+
+```text
+Hestia     <-> Tabiti
+Zeus       <-> Papaeus
+Earth      <-> Apia
+Apollo     <-> Goetosyrus
+Aphrodite  <-> Argimpasa/Artimpasa
+Poseidon   <-> Thagimasadas
+```
+
+These are not simple phonetic translations; they are **functional divine-equivalence mappings**.
+
+Add:
+
+```text
+NAME-14 = ENDONYM_EXONYM_SPLIT
+LANG-04 = CONTACT_MIXED_LANGUAGE
+LANG-05 = INTERGENERATIONAL_SECOND_LANGUAGE_RESHAPING
+LEX-01 = HERODOTEAN_FOREIGN_GLOSS
+DIV-07 = CROSS_CULT_DIVINE_EQUIVALENCE
+```
+
+## 4. Multilingual infrastructure is explicit
+
+### Seven interpreters / seven languages
+
+Herodotus 4.24 says Scythians trading toward the northeast conduct business:
+
+```text
+through seven interpreters
+in seven languages
+```
+
+This is direct evidence for chained translation as trade infrastructure.
+
+### Egyptian interpreters as an institution
+
+Herodotus 2.154 says Psammetichus gave Egyptian boys to Ionian and Carian settlers to learn Greek; those boys became the ancestors of the Egyptian interpreter class.
+
+```text
+FOREIGN SETTLERS
+-> LANGUAGE TRAINING
+-> PROFESSIONAL INTERPRETER STRATUM
+```
+
+### Carian oracle recognition
+
+Herodotus 8.135 says the Ptoan oracle unexpectedly spoke a foreign language; Theban scribes could not understand it, but Mys of Europus recognized it as Carian and wrote it down.
+
+```text
+SPEECH EVENT
+-> UNKNOWN TO LOCAL SCRIBES
+-> RECOGNIZED BY BILINGUAL HEARER
+-> WRITTEN RECORD
+```
+
+Add:
+
+```text
+TRN-11 = INTERPRETER_INSTITUTIONALIZATION
+TRN-12 = CHAINED_MULTILINGUAL_TRADE
+REC-03 = FOREIGN_LANGUAGE_EVENT_RECOGNITION
+```
+
+## 5. Scyles proves bilingual elite identity is not hypothetical
+
+Herodotus 4.78 says Scyles, king of Scythia, had a Greek mother who taught him:
+
+```text
+to speak Greek
++ to read Greek
+```
+
+while he remained politically a Scythian king.
+
+He moved between Greek and Scythian clothing, cult practice and social settings.
+
+Thus:
+
+```text
+POLITICAL IDENTITY
+!=
+LANGUAGE REPERTOIRE
+!=
+CULTURAL REGISTER
+```
+
+Add:
+
+```text
+LANG-06 = ELITE_BILINGUAL_REGISTER_SWITCHING
+```
+
+## 6. Phoenician letters: Herodotus explicitly describes script localization
+
+Herodotus 5.58 says Phoenician settlers brought letters to Greece and that over time the Greeks changed:
+
+```text
+the SOUND of the letters
++
+the FORM of the letters
+```
+
+while continuing to call them Phoenician.
+
+This is an unusually direct ancient statement of:
+
+```text
+BORROWED SCRIPT
+-> LOCAL PHONEMIC REMAPPING
++ GRAPHIC MODIFICATION
+-> NEW WRITING SYSTEM
+```
+
+Add:
+
+```text
+SCR-03 = SCRIPT_SOUND_FORM_RELOCALIZATION
+```
+
+This belongs beside the Hittite/Urartian heterogram work but represents a different mechanism: alphabetic refunctionalization rather than cuneiform heterographic readout.
+
+## 7. The Dodona 'doves' story is a language-perception model
+
+Herodotus 2.57 rationalizes the speaking-dove tradition by saying an Egyptian woman initially spoke a foreign language that sounded like bird cries to the locals; once she learned Greek she was said to have acquired 'human speech.'
+
+Structurally:
+
+```text
+UNINTELLIGIBLE HUMAN SPEECH
+-> NONHUMAN-SOUND CLASSIFIER
+-> LANGUAGE ACQUISITION
+-> HUMAN-SPEECH RECLASSIFICATION
+```
+
+Add:
+
+```text
+REC-04 = INTELLIGIBILITY_CLASSIFIER_SHIFT
+```
+
+This is a major ancient example of linguistic incomprehension generating mythic ontology.
+
+## 8. Foreign-word tests and folk-etymology packets
+
+Herodotus repeatedly gives explicit lexical equations:
+
+```text
+bekos = Phrygian 'bread'                  (2.2)
+Asmakh = 'those at the king's left hand' (2.30)
+Battus = Libyan 'king'                    (4.155)
+arima + spou = 'one-eye'                  (4.27)
+oior + pata = 'man-killer'                (4.110)
+```
+
+These should be tested independently against inscriptions and comparative linguistics.
+
+The important methodological point is that Herodotus preserves **claimed ancient cross-language segmentation**, even when a particular etymology later proves doubtful.
+
+Add:
+
+```text
+LEX-02 = ANCIENT_REPORTED_SEGMENTATION
+```
+
+## 9. Names change with migration, ruler, observer and incorporation
+
+High-yield sequences include:
+
+```text
+Briges -> Phrygians after migration Europe -> Asia        (7.73)
+Meiones -> Lydians after Lydus                            (7.74)
+Termilae -> Lycians after Lycus                           (1.173)
+Pelasgian Cranai -> Cecropidae -> Athenians -> Ionians   (8.44)
+Pindus 'Macednian' -> Dryopian -> Dorian                  (1.56)
+Arians -> Medes in their own eponymic account             (7.62)
+Skolotoi -> Greek 'Scythians'                             (4.6)
+Scythians -> Persian 'Sacae'                              (7.64)
+Syrians -> Persian 'Cappadocians'                         (7.72)
+```
+
+Herodotus therefore supplies multiple independent demonstrations that:
+
+```text
+NAME CHANGE
+!=
+POPULATION REPLACEMENT
+```
+
+Add:
+
+```text
+NAME-15 = MIGRATION_RULER_OBSERVER_RENAMING
+```
+
+## 10. Persian name endings: early phonotactic observation
+
+Herodotus 1.139 remarks that Persian names characteristically end in the letter called `san` by Dorians and `sigma` by Ionians.
+
+Whatever the precision of the universal claim, this is an ancient attempt to identify a **language-specific name-shape constraint**.
+
+Add:
+
+```text
+PHON-02 = ETHNONYMIC_ONOMASTIC_PHONOTACTIC_PROFILE
+```
+
+## 11. Divine names are transmitted separately from divine functions
+
+Herodotus 2.52 says Pelasgians first worshipped gods without individual names, later adopted divine names arriving from foreign lands after consulting Dodona, and Greeks then received those names from Pelasgians.
+
+Herodotus 2.53 separately credits Homer and Hesiod with giving gods genealogies, names, honors/functions and forms.
+
+Herodotus elsewhere gives functional equations such as:
+
+```text
+Egyptian Horus   <-> Greek Apollo
+Egyptian Isis    <-> Greek Demeter
+Egyptian Bubastis<-> Greek Artemis
+Egyptian Amon    <-> Greek Zeus
+```
+
+Thus Herodotus himself separates several layers:
+
+```text
+DIVINE ENTITY
+NAME
+FUNCTION
+GENEALOGY
+ICONOGRAPHIC FORM
+```
+
+This aligns directly with the project's divine-role rebinding model.
+
+## 12. Writing systems are treated as cultural variables
+
+Herodotus 2.36 distinguishes Egyptian sacred and common scripts and contrasts Egyptian right-to-left practice with Greek left-to-right writing.
+
+Herodotus 5.58 then describes Phoenician alphabetic import and Greek modification.
+
+Together:
+
+```text
+SCRIPT TYPE
+WRITING DIRECTION
+SIGN FORM
+SIGN SOUND VALUE
+LANGUAGE
+```
+
+are already distinct analytic coordinates in Herodotus.
+
+## 13. Highest-confidence Herodotean linguistic nodes
+
+```text
+A+  1.57-58  Pelasgian/Attic language shift + Hellenic incorporation
+A+  5.58     Phoenician script -> Greek sound/form modification
+A+  2.154    institutional Greek interpreter class in Egypt
+A+  4.24     seven interpreters / seven languages
+A+  4.108    Geloni half-Greek half-Scythian
+A+  4.117    Sauromatian as reshaped Scythian
+A+  4.6      Skolotoi vs Greek Scythians
+A+  7.64     Persian Sacae as macro-exonym
+A+  8.135    Carian oracle recognition
+A   4.59     Scythian<->Greek divine-name/function crosswalk
+A   4.78     Scyles bilingual/biliterate elite
+A   1.142/146 Ionian dialect diversity + composite ethnonym
+A   2.57     foreign speech -> bird/human classifier shift
+B   2.2/2.30/4.27/4.110/4.155 reported foreign lexical glosses
+```
+
+## 14. Best next experiments
+
+1. Build a complete Herodotean foreign-word glossary with passage, language, segmentation and later validation.
+2. Build an endonym/exonym matrix: Skolotoi/Scythians/Sacae; Syrians/Cappadocians; Persians/Artaei/Cephenes; others.
+3. Build a language-shift graph: Pelasgians->Attic Hellenes; Geloni; Sauromatae; Scyles; Egyptian interpreters.
+4. Build a divine-equivalence graph: Egyptian, Scythian, Libyan and Greek deity names/functions.
+5. Build a script-translation graph: Egyptian sacred/common scripts; Phoenician->Greek alphabet; Carian oracle recording.
+6. Compare Herodotus' reported foreign lexical segmentations against inscriptions before using them as phonemic anchors.
+7. Treat Book 4 as a priority corpus because it contains the densest concentration of explicit language-contact mechanics.
