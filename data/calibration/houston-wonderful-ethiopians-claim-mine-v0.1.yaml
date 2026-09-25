@@ -1,0 +1,87 @@
+version: "0.1"
+date: "2026-09-25"
+id: HOUSTON_WONDERFUL_ETHIOPIANS_CLAIM_MINE
+status: SOURCE_LOCKED_FIRST_PASS
+
+nodes:
+  KARABEL:
+    primary_witness: "Herodotus 2.106"
+    object: "Karabel relief"
+    modern_reading: "Tarkasnawa, King of Mira"
+    script_language: "Hieroglyphic Luwian"
+    ancient_reception: ["Egyptian", "Ethiopian", "Memnon candidate"]
+    status: ATTESTED
+
+  ALANTALLI:
+    role: "Mira dynastic name; linked to Tarkasnawa in modern synthesis"
+    relation_to_atlant_cluster: PHONEME_PROBE_ONLY
+    status: CANDIDATE
+
+  ETHIO_SABAEAN:
+    witnesses: ["Yeha", "Hawelti", "South-Arabian-script inscriptions"]
+    script: South_Arabian
+    languages:
+      group_I: Sabaean
+      group_II: "local Ethiopian Semitic with later Geʿez features"
+    architecture: "direct South Arabian/Sabaean parallels"
+    status: ATTESTED
+
+  AD:
+    primary_epigraphic: "BES15 161"
+    form: "ḏ ʾl ʿd"
+    gloss: "of the lineage of ʿĀd"
+    other_witnesses: "two Hismaic inscriptions"
+    geography: "Wadi Ram / ancient Iram -> Harrah"
+    date: "around turn of Common Era"
+    status: ATTESTED
+
+  THAMUD:
+    ethnonym_status: ATTESTED
+    key_object: "Ruwafa temple inscriptions"
+    scripts_languages: ["Greek", "Nabataean"]
+    control: "Thamudic is legacy script label and does not imply Thamud tribal authorship"
+    status: ATTESTED
+
+  KASSITE_COSSAEAN:
+    forms: ["Kaššû", "Ku-uš-šu(-ḫḫe)", "Kossaioi", "Coss(a)ei"]
+    region: Zagros
+    relation: DIACHRONIC_ETHNONYM_CONTINUITY
+    confidence: B
+    cissian_branch: "separate; Greek Kíssioi often designates Susians"
+
+  AITHIOPES:
+    homer: "east/west extremities"
+    herodotus_3_94: "Ethiopians of Asia"
+    herodotus_7_70: "eastern Ethiopians grouped with Indians; contrasted with Libyan Ethiopians"
+    pausanias_1_33: "Meroe Ethiopians plus western Ethiopians near Mauri/Nasamones/Atlas"
+    model: MULTI_REGIONAL_GREEK_CLASSIFIER
+    status: ATTESTED
+
+  MEMNON:
+    nodes: ["Ethiopian kingship", "Susa", "Cissia", "Choaspes", "Troy", "Phrygian route", "Karabel reception"]
+    sources: ["Herodotus 2.106", "Strabo 15.3.2", "Pausanias 10.31.7", "Diodorus 2.22"]
+    status: ATTESTED_RECEPTION_NETWORK
+
+  KUSHADVIPA_WILFORD:
+    authentic_kernel: "Kuśadvīpa in Puranic cosmography"
+    contaminated_branch: "Francis Wilford manuscript alterations/fabrications and geographic remapping"
+    downstream: "Houston"
+    status: PROVENANCE_SPLIT_REQUIRED
+
+  PAUSANIAS_ATLAS:
+    source: "Pausanias 1.33.4-6"
+    chain: ["other Aithiopians", "Mauri", "Nasamones/Atlantes in Pausanias' reading", "Mount Atlas"]
+    status: ATTESTED_RECEPTION
+
+operators:
+  REC-08: MONUMENT_RECLASSIFICATION_THROUGH_FOREIGN_MYTH
+  SCR-05: SAME_SCRIPT_MULTIPLE_LANGUAGES_ETHIOPIA
+  TRN-19: RED_SEA_SCRIPT_ARCHITECTURE_CONTACT_CORRIDOR
+  TRAD-01: LATE_TRADITION_EPIGRAPHIC_RECOVERY
+  CTRL-04: ETHNONYM_SCRIPT_LABEL_NONIDENTITY
+  NAME-22: KASSITE_COSSAEAN_DIACHRONIC_ETHNONYM
+  ID-07: AITHIOPES_MULTI_REGIONAL_MACRO_CLASSIFIER
+  REC-09: MEMNON_MULTIREGIONAL_IDENTITY_CARRIER
+  PROV-02: AUTHENTIC_KERNEL_CONTAMINATED_SOURCE_CHAIN
+  GEO-08: AITHIOPES_ATLAS_ADJACENCY_RECEPTION
+  PHON-CAND-02: ALANTALLI_ATLANT_LIQUID_CLUSTER_PROBE
