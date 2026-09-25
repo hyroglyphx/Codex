@@ -398,3 +398,86 @@ ATLAS / ATLANTIS CARRIER STUDY
 ```
 
 This is a stronger development lead than searching for an island location: it lets us test how archaic/classical genealogists used ancestor names to bind geographically separated lineages into one chronological architecture.
+
+## 18. Leading-phoneme lattice: ATLANT- / ATALANT- / ATARANT-
+
+Normalize endings away first:
+
+```text
+Atlas oblique stem:  ATLANT-   (Ἄτλαντος, Ἄτλαντι, Ἄτλαντα)
+Atlantis:            ATLANT-   + -is
+Atlantes:            ATLANT-   + -es
+Atalanta:            ATALANT-  + -ē
+Atarantes:           ATARANT-  + -es
+```
+
+The striking surface lattice is therefore:
+
+```text
+A T A L A N T
+A T _ L A N T
+A T A R A N T
+```
+
+Only two low-cost operations separate the three visible skeletons:
+
+```text
+ATALANT- -> ATLANT-   = medial-vowel loss / cluster compression
+ATALANT- -> ATARANT-  = L/R liquid substitution
+```
+
+These are **comparison operations**, not established historical derivations.
+
+### 18.1 ATLANT- is the real Atlas stem
+
+Greek nominative `Ἄτλας` can obscure the fact that the inflectional stem is `Ἀτλαντ-`, visible directly in genitive `Ἄτλαντος`, dative `Ἄτλαντι`, and accusative `Ἄτλαντα`. `Ἀτλαντίς`, `Ἄτλαντες`, and `Ἀτλαντικός` therefore belong transparently to that ATLANT- family.
+
+### 18.2 ATALANT- has an independent Greek parse
+
+`Ἀταλάντη` (Atalanta) is traditionally connected with adjective `ἀτάλαντος`, 'equal in weight / equivalent', analyzed as copulative `a-` + `talanton` ('balance, weight'). Therefore:
+
+```text
+ATALANT- ~ ATLANT- surface proximity = real
+historical identity = not established
+```
+
+The forms nevertheless provide an excellent test of whether an unstressed vowel can be inserted/lost around the difficult `tl` cluster in a particular transmission environment.
+
+### 18.3 ATARANT- is the clean L/R control
+
+Herodotus 4.184 places `Ἀτάραντες` immediately before `Ἄτλαντες` geographically. Their normalized stems differ almost exactly at one liquid:
+
+```text
+ATARANT-
+ATALANT-
+```
+
+i.e. `R` versus `L` in the same structural slot.
+
+No source presently establishes Atarantes as a variant of Atlantes/Atalantes; Herodotus treats them as successive peoples. Keep the L/R relation as a local phonological probe until same-referent or manuscript evidence licenses it.
+
+### 18.4 Working phoneme envelope
+
+```text
+A-T-(A)-{L/R}-A-N-T
+```
+
+This envelope is useful because it freezes the shared structure while keeping the uncertain operations typed:
+
+```text
+V = optional medial vowel in comparison
+Q = liquid slot {L,R}
+
+A T V Q A N T
+```
+
+Add:
+
+```text
+PHON-06 = ATLANT_ATALANT_MEDIAL_VOWEL_PROBE
+PHON-07 = ATALANT_ATARANT_LIQUID_SLOT_PROBE
+```
+
+### 18.5 'Atalantis'
+
+`Atalantis` occurs in later/modern English as a variant spelling of Atlantis and in modern Greek place-name forms, but it is not the standard ancient Platonic form. Treat each occurrence as witness-specific rather than inserting it automatically into the ancient Atlas stem family.
