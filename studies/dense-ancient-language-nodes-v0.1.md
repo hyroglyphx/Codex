@@ -304,3 +304,222 @@ NUMERAL-TWO
 ```
 
 These already have enough structure to produce a meaningful graph without pretending the exploratory edges are settled.
+
+
+## 12. Coverage-density synthesis — 2026-09-24
+
+The current corpus should be separated into **calibration supernodes** and **live research supernodes**.
+
+### A. Calibration supernodes
+
+These are the strongest places to learn real transformation behavior before testing exploratory carriers.
+
+| Node | Cross-language breadth | Cross-script breadth | Explicitness | Best use |
+|---|---|---|---|---|
+| Behistun | Old Persian + Elamite + Babylonian | 3 cuneiform systems | same monument, parallel imperial text | name/title/ethnonym morphology across families |
+| Rosetta/Memphis | Egyptian + Greek | hieroglyphic + Demotic + Greek | same decree, same monument tradition | script/register + translation calibration |
+| Letoon | Lycian + Greek + Aramaic | 3 alphabets | same stele, institutional/legal text | cross-family legal/title semantics |
+| Ugarit KTU 5.14 | Ugaritic + Akkadian | alphabetic cuneiform + syllabic cuneiform | explicit scribal/pronunciation crosswalk | phoneme/readout calibration |
+| Sumerian-Akkadian lexical tradition | Sumerian + Akkadian | shared cuneiform carrier | explicit lexical equations/readings | lexical semantics + logogram/readout |
+| Tell Fekheriye | Akkadian + Aramaic | cuneiform + alphabet | same statue, bilingual dedication | morphology/syntax/title translation |
+| Karatepe/Cinekoy | Phoenician + Luwian | alphabet + hieroglyphic Luwian | parallel monumental texts | Semitic/Anatolian name-title transfer |
+| Pyrgi | Etruscan + Phoenician | 2 alphabets | co-deposited near-parallel texts | non-IE/Semitic cult-title calibration |
+
+### B. Live research supernodes
+
+These are the densest current research hubs after calibration.
+
+#### 1. ALAŠIYA — best overall live node
+
+Coverage:
+- Mari Akkadian
+- Amarna Akkadian
+- Egyptian hieratic
+- Ugaritic alphabetic
+- Ugaritic/Akkadian syllabic
+- Hittite
+- possible Linear B reception
+- later Cypriot Alasiōtas
+- Alassa geographic candidate
+
+Strength:
+- one same-artifact Egyptian/Akkadian anchor (EA39);
+- repeated same-referent attestations across archives;
+- several scripts;
+- several source languages;
+- long chronological depth;
+- political, geographic, economic and cultic dimensions.
+
+Best use:
+```text
+cross-script phoneme mapping
++ classifier variation
++ exonym/endonym behavior
++ administrative topology
++ long-duration local persistence
+```
+
+**Current judgment:** highest combined coverage + density among the project's live exploratory nodes.
+
+#### 2. SARDIS / ŚFARD / SPARDA / SEPHARAD — cleanest name-carrier node
+
+Coverage:
+- Lydian
+- Old Persian
+- Hebrew/West-Semitic
+- Greek
+
+Strength:
+- same referent;
+- independent linguistic witnesses;
+- dense onset variation preserved externally;
+- Greek receiving form can be backprojected.
+
+Best use:
+```text
+foreign-name backprojection
++ cluster simplification
++ Greek receiving-language adaptation
+```
+
+**Current judgment:** cleanest compact multilingual proper-name control.
+
+#### 3. EL / IL core — broadest lexical/divine carrier node
+
+High-confidence core:
+- Ugaritic ʾil
+- Phoenician/Canaanite ʾl
+- Hebrew ʾēl
+- Akkadian ilu(m)
+
+Direct Greek reception:
+- El / Elus
+- Bel/Baal -> Belos/Belus
+
+Exploratory outer orbit:
+- Ilus/Ilium/Ilios
+- Hellen/Hellas
+- Helenē
+- Helios
+- Selene
+- Eleusis
+
+Best use:
+```text
+lexical family
++ theophoric morphology
++ divine-name translation/reception
++ semantic attraction
+```
+
+**Current judgment:** widest semantic reach, but the outer Greek orbit must remain relation-typed.
+
+#### 4. LADY / MISTRESS — best semantic/operator node
+
+Coverage:
+- Sumerian NIN
+- Akkadian bēlet
+- Hurrian allai
+- Mycenaean Greek Potnia
+
+Strength:
+- strong functional translation;
+- place/domain localization;
+- cult-title behavior;
+- genetically heterogeneous, which is analytically useful.
+
+Best use:
+```text
+title translation
++ cult localization
++ semantic invariance across unrelated languages
+```
+
+**Current judgment:** strongest semantic-density node without an etymological-unity claim.
+
+#### 5. ʿBR / CROSS-BEYOND — strongest root/operator node
+
+Coverage:
+- Ugaritic
+- Hebrew
+- Akkadian
+- Arabic
+- administrative Eber-Nāri / Abar-Nahara
+
+Strength:
+- stable crossing/beyond semantics;
+- strong Semitic historical family;
+- direct geographic-administrative application.
+
+Best use:
+```text
+root semantics
++ geographic classifiers
++ outsider/boundary language
+```
+
+**Current judgment:** strongest root-to-geographic-operator node.
+
+#### 6. NUMERAL TWO — strongest lawful divergence node
+
+Coverage:
+- Proto-Semitic reconstruction
+- Aramaic/Turoyo
+- Modern South Arabian/Soqotri
+- Arabic/Maltese
+- Ethiosemitic replacement line
+
+Strength:
+- branch-specific sound changes;
+- replacement control;
+- canonical false-friend control: Turoyo tre=2 vs Albanian tre=3.
+
+Best use:
+```text
+sound-law calibration
++ convergence controls
++ replacement vs inheritance
+```
+
+**Current judgment:** strongest compact phonological-calibration node.
+
+### C. Best density by research question
+
+```text
+BEST OVERALL MULTILINGUAL LIVE HUB        -> ALAŠIYA
+BEST COMPACT SAME-REFERENT NAME HUB       -> SARDIS
+BEST EXPLICIT PHONEME CROSSWALK           -> UGARIT KTU 5.14
+BEST IMPERIAL MULTILINGUAL MONUMENT        -> BEHISTUN
+BEST SEMANTIC/TITLE TRANSLATION HUB        -> LADY/MISTRESS
+BEST ROOT-SEMANTIC HUB                     -> ʿBR
+BEST SOUND-LAW / FALSE-FRIEND CONTROL      -> NUMERAL TWO
+BEST DIVINE/LEXICAL RECEPTION HUB          -> EL / IL CORE
+BEST KNOWN-SCRIPT DECIPHERMENT CONTROL     -> HITTITE
+BEST UNKNOWN-SCRIPT NEGATIVE CONTROL       -> BYBLOS
+```
+
+### D. Network-centrality judgment
+
+If the first integrated ancient-language graph is limited to a small number of hubs, the optimal six are:
+
+```text
+1. ALAŠIYA
+2. SARDIS
+3. EL / IL
+4. LADY / MISTRESS
+5. ʿBR
+6. NUMERAL TWO
+```
+
+Then anchor them to the calibration backbone:
+
+```text
+BEHISTUN
+ROSETTA
+UGARIT KTU 5.14
+SUMERIAN-AKKADIAN LEXICAL
+LETOON
+KARATEPE/CINEKOY
+```
+
+This gives broad family coverage without forcing exploratory name relations into the same confidence class as explicit bilingual/trilingual crosswalks.
