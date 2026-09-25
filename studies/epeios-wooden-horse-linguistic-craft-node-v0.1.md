@@ -487,3 +487,57 @@ DIVINELY COMMISSIONED MAKER
 ```
 
 is the more stable classifier.
+
+## 15. Material resilience, preservation, and return
+
+The privileged-timber invariant should not be species-locked to cedar.
+
+Better abstraction:
+
+```text
+SELECTED MATERIAL
+-> RESISTS CORRUPTION / DEFORMATION / ENVIRONMENTAL ATTACK
+-> PRESERVES FUNCTION THROUGH A THRESHOLD
+-> RETURNS / PERSISTS
+```
+
+Cedar is a particularly legible instance because its heartwood extractives confer strong resistance to decay organisms and contribute to insect resistance. But the operative class is broader: naturally durable or otherwise resilient woods selected because they survive moisture, biological attack, compression, weathering, or repeated structural stress.
+
+Engineering analogy:
+
+Historically, wood expansion-joint fillers such as redwood and cedar were chosen not because the species were symbolically privileged, but because the material could combine durability with compressibility and useful recovery. Modern specifications define expansion-joint filler partly by resilience after compression; technical guidance still identifies cedar as useful because it is water-resistant and readily compressible.
+
+That supplies a modern mechanical analogue for the symbolic operator:
+
+```text
+DEFORMATION
+!= DESTRUCTION
+
+COMPRESSION
+-> RECOVERY
+
+EXPOSURE
+-> PERSISTENCE
+```
+
+Within ancient symbolic reading, this can support a resurrection/incorruptibility layer **when the text itself supplies death-return, preservation, ark/vessel, burial, rebirth, or renewed-state cues**. The material property is the physical substrate; the resurrection reading is a higher semantic mapping, not an automatic meaning of every cedar reference.
+
+Revised material operator:
+
+```text
+MAT-03 PRIVILEGED_MATERIAL_PROVENANCE
+        ↓
+MAT-04 FUNCTIONAL_RESILIENCE
+        ↓
+MAT-05 CORRUPTION_RESISTANCE
+        ↓
+SYM-CAND-01 PRESERVATION_TO_RETURN
+```
+
+The deepest invariant is therefore not `CEDAR`, but:
+
+```text
+MATERIAL FIT TO CARRY FORM THROUGH CORRUPTION / STRESS
+```
+
+which explains why different traditions may substitute cedar, cypress, acacia, oak, redwood-like durable timber, resinous wood, or another locally appropriate species while preserving the same operator.
