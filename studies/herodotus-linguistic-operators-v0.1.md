@@ -406,3 +406,48 @@ B   2.2/2.30/4.27/4.110/4.155 reported foreign lexical glosses
 5. Build a script-translation graph: Egyptian sacred/common scripts; Phoenician->Greek alphabet; Carian oracle recording.
 6. Compare Herodotus' reported foreign lexical segmentations against inscriptions before using them as phonemic anchors.
 7. Treat Book 4 as a priority corpus because it contains the densest concentration of explicit language-contact mechanics.
+
+## 15. Croesus' oracle: metrical packaging across a language boundary
+
+Herodotus 1.47 says the Pythia answered the **Lydian envoys** at Delphi `ἐν ἑξαμέτρῳ τόνῳ` — in hexameter mode/measure. The Lydians then wrote the response down and carried it back to Sardis.
+
+The key distinction is:
+
+```text
+ORACLE LANGUAGE = Greek/Delphic
+RECIPIENT NETWORK = Lydian royal court
+```
+
+which makes the episode more useful linguistically, not less.
+
+Transmission chain:
+
+```text
+DIVINE / INSPIRED UTTERANCE
+-> METRICAL GREEK FORM
+-> WRITTEN RECORD
+-> LYDIAN ENVOYS
+-> TRANSPORT TO SARDIS
+-> ROYAL INTERPRETATION
+```
+
+Hexameter therefore functions as a **portable formal carrier**: it stabilizes cadence, segmentation and recall as the oracle crosses institutional and ethnic boundaries.
+
+This need not imply that the Pythia's spontaneous utterance was always already polished verse; ancient and later commentary allows for prophetic personnel shaping inspired speech into regular metrical form. The project should therefore distinguish:
+
+```text
+INSPIRATION EVENT
+!=
+METRICAL REDACTION
+!= 
+WRITTEN TRANSMISSION
+```
+
+Add:
+
+```text
+ORA-01 = METRICAL_AUTHORITY_CARRIER
+TRN-13 = ORAL_METRICAL_WRITTEN_RELAY
+```
+
+Herodotus 1.55 gives another verse oracle to Croesus, reinforcing that this was not an isolated stylistic accident.
