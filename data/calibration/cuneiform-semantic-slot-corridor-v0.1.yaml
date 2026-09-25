@@ -1,0 +1,116 @@
+version: "0.1"
+date: "2026-09-25"
+id: CUNEIFORM_SEMANTIC_SLOT_CORRIDOR
+status: SOURCE_LOCKED_FIRST_PASS
+
+slots:
+  KING:
+    sumerian:
+      form: LUGAL
+      meaning: king
+    akkadian:
+      reading: šarrum
+      relation: explicit_lexical_equation
+    urartian:
+      inherited_carriers: [LUGAL,MAN]
+      count_LUGAL: 21
+      morphologized_examples: [LUGAL-ni,LUGAL-še,LUGAL.MEŠ-di]
+      native_lexemes: [ereli,erili]
+    confidence: A_plus
+
+  LAND:
+    sumerian:
+      form: KUR
+      meanings: [mountain,foreign_land,country]
+    akkadian:
+      reading: mātu
+      relation: explicit_lexical_equation
+    urartian:
+      inherited_carrier: KUR
+      native_lexeme: ebani
+      native_count: 102
+      double_encoding_examples: [KUR.e-ba-ni,KUR.e-ba-ni-e,KUR.e-ba-ni-ú-ki]
+    confidence: A_plus
+    operator: HET-01
+
+  CITY:
+    sumerian:
+      form: IRI_URU
+      meaning: city
+    akkadian:
+      reading: ālu
+    urartian:
+      inherited_carrier: URU
+      carrier_count: 272
+      morphologized_examples: [URU-e,URU-ni,URU-e-i,URU.MEŠ-ú-e]
+      native_lexeme: patari
+      native_count: 9
+    confidence: A_plus
+
+  GOD:
+    sumerian:
+      form: DINGIR
+      meaning: deity
+    akkadian:
+      reading: ilu
+      relation: explicit_lexical_equation
+    urartian:
+      inherited_carrier: DINGIR
+      carrier_count: 159
+      morphologized_examples: [DINGIR-i-e,DINGIR.MEŠ-še,DINGIR.MEŠ-ú-e]
+      divine_determinative_examples: [Haldi,Weather_God,Sun_God]
+    confidence: A_plus
+
+  WATER_RIVER_CANAL:
+    sumerian:
+      water: A
+      river: ID2
+      canal: PA5
+    akkadian:
+      water: mû
+      river: nāru
+      canal: [palgu,pattu]
+    urartian:
+      inherited_water_carrier: A.MEŠ
+      water_count: 19
+      inherited_river_carrier: ID
+      native_canal: pili
+      native_canal_count: 51
+      anchor_text: "A 05-023: esi-ni pi-li a-gu-bi"
+    confidence: A
+
+operators:
+  HET-01:
+    name: CLASSIFIER_PLUS_NATIVE_LEXEME_DOUBLE_ENCODING
+    example: KUR.ebani
+  HET-02:
+    name: HETEROGRAM_MORPHOLOGICAL_INTEGRATION
+    examples: [LUGAL-ni,LUGAL-še,DINGIR.MEŠ-še,URU-ni]
+  INST-01:
+    name: ROYAL_TITULARY_SLOT_CONTINUITY
+    anchors: [Sarduri_I_A01_01,Kelisin_A03_11,Minua_A05_004,Sarduri_II_A09_01]
+
+adversarial_probe:
+  HAND:
+    sumerian: "šu"
+    hurrian: "šu-ni / su-ni"
+    urartian: "su- / šu-"
+    formal_match: strong
+    semantic_match: strong
+    hurrian_urartian_relation: genetic
+    sumerian_hu_relation: unresolved
+    confidence: C
+
+confidence_bands:
+  carrier_semantic_slots: A_plus
+  royal_titulary: A
+  hurrian_urartian_genetic: A
+  akkadian_hurrian_contact: B
+  sumerian_hu_hand: C
+  sumerian_hu_common_ancestry: D_E
+
+firewalls:
+  - "heterogram continuity is not genetic continuity"
+  - "native Urartian lexeme beside a Sumerogram does not imply cognacy"
+  - "royal formula continuity is institutional before lexical"
+  - "HAND probe may be promoted only independently of the carrier backbone"
