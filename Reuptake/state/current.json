@@ -309,7 +309,11 @@
     "Register Xanthus Lydian fragments for dialect, toponym and migration-source conflicts",
     "Expand Sfar/Sparda/Sardis same-referent matrix with exact dated witnesses",
     "Build Baki/Dionysos and Artimu/Artemis cult-name translation graph",
-    "Build Lydo-Milesian to Persian metrological carrier graph"
+    "Build Lydo-Milesian to Persian metrological carrier graph",
+    "Build Nannas bilingual full same-artifact name-translation matrix",
+    "Build Manes Lydian-Aramaic bilingual clause alignment",
+    "Register Xanthus Lydian fragments for dialect and toponym controls",
+    "Expand Sfar/Sparda/Sardis same-referent matrix"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
