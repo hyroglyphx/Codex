@@ -21,7 +21,8 @@
     "Founder-name -> people-name -> country-name cascades in Strabo: Hellen, Dorus, Achaeus, Ion, Aetolus, Lycus, Latinus",
     "Semitic ʾEL -> Greek EL/ELL reception and aspiration-stripped Hellen/Hellas carrier experiment",
     "IL/ELUS Greek name-carrier cluster: Elus/Elioun/Eloim/Belus against Ilus/Ilium, Eleusis, Helios and Selene",
-    "Alashiya/Cyprus: external sovereignty versus internal heterarchy, city/land classifier ambiguity, southern scribal seat, and Alassa/Alašiya carrier test"
+    "Alashiya/Cyprus: external sovereignty versus internal heterarchy, city/land classifier ambiguity, southern scribal seat, and Alassa/Alašiya carrier test",
+    "Mycenaean divine-role rebinding: Poseidon local prominence, Potnia title-localization, post-palatial cult reweighting, and Cyprus divine-reception bridge"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -86,7 +87,11 @@
     "Cuneiform URU, KUR and KUR.URU do not map one-to-one onto political constitution in peripheral scribal traditions.",
     "EA39 is the strongest Alašiya cross-script anchor because Akkadian Alašiya and Egyptian ʾirs3 are linked on the same artifact.",
     "Egyptian ʾirs3/Alas(i)a must be separated from the debated ʾisy/Asiya carrier.",
-    "Ugaritic ʾalṯy versus Akkadian/Hittite Alašiya creates a real cross-script medial-coronal mapping problem."
+    "Ugaritic ʾalṯy versus Akkadian/Hittite Alašiya creates a real cross-script medial-coronal mapping problem.",
+    "Divine name continuity does not imply fixed divine function or fixed pantheon hierarchy.",
+    "Local cultic preeminence must be separated from pan-regional divine kingship.",
+    "The disappearance of Linear B palace archives creates a real cult-memory discontinuity without requiring total religious discontinuity.",
+    "Potnia/Lady-type divine titles should be modeled as title-plus-localization systems before etymological fusion with other Lady/Mistress terms."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -106,7 +111,8 @@
     "studies/strabo-name-geography-transmission-v0.1.md",
     "studies/strabo-founder-genealogy-geography-v0.1.md",
     "studies/il-elus-greek-name-carrier-cluster-v0.1.md",
-    "studies/alashiya-external-classifier-heterarchy-v0.1.md"
+    "studies/alashiya-external-classifier-heterarchy-v0.1.md",
+    "studies/mycenaean-divine-role-rebinding-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -187,7 +193,12 @@
     "Map every Ugaritic Alašiya occurrence to exact tablet, script, and determinative",
     "Investigate Ugaritic ṯ versus Akkadian/Hittite š as a same-referent phoneme-mapping problem",
     "Trace Egyptian ʾirs3 separately from ʾisy/Asiya across dynasties",
-    "Test Classical Alasiōtas as a local Cypriot persistence candidate against Alassa and Bronze Age Alašiya"
+    "Test Classical Alasiōtas as a local Cypriot persistence candidate against Alassa and Bronze Age Alašiya",
+    "Build site-by-site Linear B deity matrix for Pylos, Knossos, Thebes and Mycenae",
+    "Model Pylos Tn 316 as a divine relation graph with offerings, shrines and title/gender relations",
+    "Build Poseidon function matrix across Mycenaean, Homeric and Classical evidence",
+    "Compare Potnia title-localization structurally with Hurrian allai/Allani without etymological collapse",
+    "Build Cyprus divine-reception bridge: Astarte, Cypriot Great Goddess, Aphrodite and Alašiya cult geography"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -225,7 +236,8 @@
     "IL-ELUS-Greek-name-carrier-v0.1": "source_locked_first_pass",
     "Trecae-Thrace-diachrony": "same_author_medieval_control_added",
     "Alashiya-external-classifier-heterarchy-v0.1": "source_locked_first_pass",
-    "Alashiya-spelling-determinative-matrix-v0.1": "source_locked_first_pass"
+    "Alashiya-spelling-determinative-matrix-v0.1": "source_locked_first_pass",
+    "Mycenaean-divine-role-rebinding-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
