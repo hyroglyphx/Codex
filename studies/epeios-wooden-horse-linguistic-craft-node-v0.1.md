@@ -332,3 +332,76 @@ representation
 4. Separate Epeios the Epeian/eponym from Epeios son of Panopeus and map every ancient source using each.
 5. Compare Epeios with Daedalus, Tecton/Harmon, Argus-builder-of-Argo, and Athena/Hephaestus craft figures.
 6. Test whether the hollow horse belongs to a wider ancient `crafted container carrying hidden life/warriors` operator family.
+
+## 13. Hylotomos -> Architekton -> Simulacrum
+
+The Epeios sequence can be compressed as a material-information transform:
+
+```text
+HYLĒ
+raw wood / timber / later "matter"
+   |
+   v
+HYLOTOMIA
+cutting / partitioning the material
+   |
+   v
+TEKTOSYNĒ
+joining / fitting / skilled fabrication
+   |
+   v
+ARCHITEKTŌN
+master-builder / director / contriver
+   |
+   v
+KOSMOS
+ordered arrangement
+   |
+   v
+BRETAS / IMAGE
+a represented outward form
+   |
+   v
+HIDDEN PAYLOAD
+armed men
+```
+
+Strict lexical control:
+- `ὑλοτόμος` means one who cuts/fells wood, from `ὕλη` + the `τέμνω` cutting field.
+- In the Epeios tradition the hero is legitimately reconstructed as an active hylotomos because he personally cuts the timber on Ida before constructing the Horse.
+- `ἀρχιτέκτων` means chief-artificer/master-builder/director of works and can extend to "author/contriver."
+- `simulacrum` is Latin analytical language; Euripides' Trojan Horse is instead described through Greek image/object language including `βρέτας`, while also being an `ἐγκύμων ἵππος`, a pregnant horse carrying hidden warriors.
+
+The user's "one who permutes hylē" is therefore best formalized as a **second-order operator**, not a literal translation:
+
+```text
+HYLOTOMOS:
+HYLĒ -> PARTITION
+
+ARCHITEKTŌN:
+PARTS -> ORDERED RECOMPOSITION
+
+SIMULACRUM:
+ORDERED RECOMPOSITION -> REPRESENTED FORM
+```
+
+Add:
+
+```text
+MAT-01 = HYLE_PARTITION
+MAT-02 = PARTITION_RECOMPOSITION
+SIM-01 = REPRESENTATIONAL_PAYLOAD_OBJECT
+```
+
+Diachronic resonance:
+`ὕλη` begins as wood/timber/material and later becomes Aristotle's technical term for matter. That later philosophical development should not be projected backward as Epeios' historical vocabulary, but it makes the craft sequence an unusually clean concrete precursor to:
+
+```text
+matter
+-> division
+-> form
+-> representation
+```
+
+The Horse is therefore structurally an **architektonic simulacrum**:
+its visible form is intentionally sufficient to trigger one classifier ("horse / crafted offering") while its operative state belongs to another ("container / infiltration device / weapon").
