@@ -556,3 +556,66 @@ Dorian = Peloponnesian phase-label
 ```
 
 That supports the project's standing hypothesis that mythic genealogy can encode route, political displacement, ethnonym succession and territorial memory simultaneously.
+
+## 17. The -ōtis regional names: people-indexed geography
+
+The repeated Thessalian names in Herodotus 1.56-57 are not random opaque toponyms. They belong to a productive regional/demonymic pattern:
+
+```text
+Phthia        -> Phthiōtēs (person) -> Phthiōtis (land/region)
+Histiaia      -> Histiaiōtai        -> Histiaiōtis
+Pelasgoi      -> Pelasgiōtai        -> Pelasgiōtis
+Thessaloi     -> Thessaliōtai       -> Thessaliōtis
+```
+
+In historical Thessaly the four major tetrad/regional names were:
+
+```text
+Phthiotis
+Histiaeotis
+Pelasgiotis
+Thessaliotis
+```
+
+Ancient Greek can use the feminine regional form substantivally, effectively 'the Phthiotian [land]' / 'the Histiaeotian [land]'.
+
+This matters for Herodotus because the geography itself is **population-indexed**: a territory can bear a name derived from the people associated with it, and that name can move or be rebound.
+
+### Histiaeotis gives an explicit migration-name example
+
+Strabo reports that Thessalian Histiaeotis had earlier been called Doris, then received the name Histiaeotis after Histiaeans from Euboea were transferred to the mainland and settled there in numbers.
+
+Whether every detail of that retrospective account is historical or etiological, the naming mechanism is explicit:
+
+```text
+PEOPLE NAME
+-> DEMONYMIC REGIONAL FORM
+-> LAND NAME
+```
+
+and:
+
+```text
+POPULATION TRANSFER
+-> TOPONYM TRANSFER / REBINDING
+```
+
+Add:
+
+```text
+GEO-03 = DEMONYMIC_REGION_FORMATION
+NAME-18 = POPULATION_INDEXED_TOPONYM
+TRN-14 = MIGRANT_ETHNONYM_TO_REGION_REBINDING
+```
+
+### Structural implication
+
+Herodotus 1.56-57 therefore contains not only a migration chain but a series of names whose morphology already encodes:
+
+```text
+PLACE <-> PEOPLE
+```
+
+rather than a modern fixed-territory model.
+
+This strengthens the reading of Phthiotis / Histiaeotis / Thessaliotis as dynamic ethnogeographic labels rather than merely neutral map coordinates.
