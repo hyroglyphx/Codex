@@ -206,3 +206,334 @@ A CONFIDENCE CORRIDOR
 IS A CHAIN OF STRONG TYPED EDGES,
 NOT ONE BIG CLAIM OF COMMON ORIGIN.
 ```
+
+
+## 9. Semantic-slot corridor pass — KING / LAND / CITY / GOD / WATER
+
+The strongest new result is that the corridor can now be demonstrated **slot by slot** rather than only historically.
+
+### KING
+
+Sumerian lexical tradition:
+
+```text
+LUGAL / lugal = Akkadian šarrum "king"
+```
+
+Urartian eCUT preserves `LUGAL` 21 times and also uses `MAN` in royal titulary. Crucially, inherited king-signs can carry Urartian morphology:
+
+```text
+LUGAL-ni
+LUGAL-še
+LUGAL.MEŠ-di
+```
+
+Urartian also has native royal lexemes:
+
+```text
+ereli / erili = king
+```
+
+So the slot has three levels:
+
+```text
+SUMERIAN LUGAL
+-> AKKADIAN šarru readout / Assyrian royal heterogram
+-> URARTIAN LUGAL/MAN embedded in Urartian morphology
++ native Urartian ereli/erili
+```
+
+**Confidence:** A+ for carrier continuity; no genetic inference.
+
+### LAND
+
+Sumerian lexical tradition:
+
+```text
+KUR = Akkadian mātu "land/country"
+```
+
+Urartian keeps `KUR` as a productive geographical carrier, but also has native:
+
+```text
+ebani = land / country / region / territory
+```
+
+eCUT records `ebani` 102 times, often in forms such as:
+
+```text
+KUR.e-ba-ni
+KUR.e-ba-ni-e
+KUR.e-ba-ni-ú-ki
+```
+
+This is especially important because the old classifier and the native lexeme can occur together.
+
+Add:
+
+```text
+HET-01 = CLASSIFIER_PLUS_NATIVE_LEXEME_DOUBLE_ENCODING
+```
+
+Interpretation:
+
+```text
+KUR = inherited scribal semantic frame
+ebani = Urartian lexical realization
+Urartian suffixes = local grammar
+```
+
+### CITY
+
+Sumerian:
+
+```text
+iri / URU = city
+```
+
+Akkadian:
+
+```text
+ālu = city
+```
+
+with `IRI/URU` retained as heterographic writing.
+
+Urartian eCUT records `URU` 272 times with Urartian grammatical endings:
+
+```text
+URU-e
+URU-ni
+URU-e-i
+URU.MEŠ-ú-e
+```
+
+and also preserves a native city term:
+
+```text
+patari = city
+```
+
+attested 9 times.
+
+Thus:
+
+```text
+SUMERIAN IRI/URU
+-> AKKADIAN ālu / URU
+-> URARTIAN URU + Urartian morphology
++ native patari
+```
+
+**Confidence:** A+ as a scribal-semantic corridor.
+
+### GOD
+
+Sumerian lexical equation:
+
+```text
+DINGIR / diŋir = Akkadian ilu "god"
+```
+
+Urartian eCUT records `DINGIR` 159 times, including:
+
+```text
+DINGIR
+DINGIR.MEŠ
+DINGIR.MEŠ-še
+DINGIR-i-e
+```
+
+and divine names receive the inherited divine determinative:
+
+```text
+^dḪaldi
+^dIM
+^dUTU
+```
+
+Again, the inherited carrier can take Urartian grammatical material.
+
+This is an exceptionally clean case of:
+
+```text
+ANCIENT MESOPOTAMIAN SEMANTIC SIGN
+-> AKKADIAN LOGOGRAPHIC READOUT
+-> URARTIAN SEMANTIC CARRIER + LOCAL MORPHOLOGY
+```
+
+### WATER / RIVER / CANAL
+
+Sumerian supplies several explicit hydrological equations:
+
+```text
+A = water
+ID₂ = Akkadian nārum "river"
+PA₅ = Akkadian palgu / pattu "canal"
+```
+
+Urartian preserves:
+- `A.MEŠ` = water, 19 occurrences;
+- `ÍD` before river names, e.g. `ÍD.mu-na-i-di`;
+- native `pili` = canal, 51 occurrences.
+
+Minua A 05-023 is particularly useful because the native canal lexeme appears in a real hydraulic construction context:
+
+```text
+... esi-ni pi-li a-gu-bi
+"I dug a canal ..."
+```
+
+This gives:
+
+```text
+Sumerian hydrological signs
+-> Akkadian hydrological readings
+-> Urartian inherited water/river carriers
++ native Urartian pili
+```
+
+The native word `pili` should not be equated etymologically with Sumerian PA₅ or Akkadian palgu/pattu without separate evidence; this slot demonstrates semantic/institutional continuity first.
+
+## 10. The strongest mechanism: inherited heterograms taking Urartian morphology
+
+The corridor is now stronger than a sign inventory because the Mesopotamian carriers are **grammatically embedded** in Urartian.
+
+Examples:
+
+```text
+LUGAL-ni
+LUGAL-še
+DINGIR.MEŠ-še
+URU-ni
+KUR.e-ba-ni-...
+```
+
+This means:
+
+```text
+BORROWED / INHERITED SCRIBAL CARRIER
++
+URARTIAN INFLECTION
+=
+LOCALIZED WRITING SYSTEM
+```
+
+Add:
+
+```text
+HET-02 = HETEROGRAM_MORPHOLOGICAL_INTEGRATION
+```
+
+This is one of the highest-confidence mechanisms in the entire corridor.
+
+## 11. Royal titulary continuity: Sarduri I -> Išpuini/Minua -> later Urartian kings
+
+Sarduri I's Akkadian inscription A 01-01 has:
+
+```text
+MAN GAL-e
+MAN dan-nu
+MAN ŠÚ
+MAN KUR.na-i-ri
+...
+```
+
+"great king, strong king, king of the world, king of the land Nairi ..."
+
+The Kelišin bilingual, one generation later, gives on its Urartian face:
+
+```text
+MAN DAN-NU
+MAN KUR.šú-ra-a-ú-e
+MAN KUR.bi-a-i-na-ú-e
+a-lu-si URU.ṭu-uš-pa-a URU
+```
+
+while the Assyrian face renders the parallel royal address with:
+
+```text
+MAN GAL-u
+MAN dan-nu
+MAN ŠÚ
+MAN KUR.na-i-ri
+GAR URU.ṭu-uš-pa-an URU
+```
+
+The two are not word-for-word identical, but they preserve the same functional slots:
+
+```text
+ROYAL NAME
+-> PATRONYM
+-> GREAT/STRONG KING
+-> MACRO-REALM
+-> LOCAL REALM
+-> CAPITAL AUTHORITY
+```
+
+This is exactly the kind of corridor we want:
+
+```text
+INSTITUTIONAL FRAME PRESERVED
+while
+LANGUAGE + MORPHOLOGY + LOCAL TITLES CHANGE
+```
+
+Add:
+
+```text
+INST-01 = ROYAL_TITULARY_SLOT_CONTINUITY
+```
+
+## 12. First adversarial lexical probe: HAND
+
+Against this hard carrier backbone, now test the low-level lexical candidate:
+
+```text
+Sumerian šu = hand
+Hurrian šu-ni / su-ni = hand
+Urartian su- / šu- = hand
+```
+
+Kassian treats this as one of the strongest basic-vocabulary matches between Sumerian and Hurro-Urartian.
+
+Current interpretation:
+
+```text
+SEMANTIC MATCH: strong
+FORMAL MATCH: strong
+HURRIAN <-> URARTIAN: supported by family relation
+SUMERIAN <-> HU: unexplained
+DIRECT BORROWING: not established
+COMMON ANCESTRY: not established
+```
+
+So `HAND` becomes the first **adversarial lexical probe** placed beside the A-confidence scribal slots.
+
+### Corridor rule
+
+```text
+If a low-confidence lexical edge survives
+the same chronology/contact/script controls
+that validate the high-confidence carrier edges,
+promote only that lexical relation.
+Do not promote the whole language family.
+```
+
+## 13. Revised confidence bands
+
+```text
+KING carrier corridor       A+
+LAND carrier corridor       A+
+CITY carrier corridor       A+
+GOD carrier corridor        A+
+WATER/RIVER carrier         A
+ROYAL TITULARY slots        A
+Hurrian <-> Urartian gene.  A
+Akkadian -> Hurrian contact B
+Sumerian-HU HAND            C
+Sumerian-HU other matches   C/D
+Sumerian-HU common ancestry D/E
+```
+
+The corridor is therefore already solid through **carrier, semantic slot, morphology and institution**, while the prehistoric lexical bridge remains the test frontier.
