@@ -949,3 +949,48 @@ GEO-04 = CONNECTED_WORLD_OCEAN_TOPOLOGY
 NAME-20 = ATLANTIS_OCEANIC_NAME_CARRIER
 GEO-05 = CASPIAN_CLOSED_BASIN_CONTROL
 ```
+
+## 23. Aithiopes classifier matrix — Homer -> Herodotus -> Diodorus
+
+Houston's broad use of "Ethiopian" points to a more useful ancient linguistic phenomenon.
+
+**Homer, Odyssey 1.22–25** places Aithiopes at the world's extreme and explicitly divides them into two groups, one at sunset and one at sunrise.
+
+**Herodotus 7.69–70** independently distinguishes Ethiopians above Egypt from "Ethiopians of the east / Asia," who serve with Indians, differentiating the populations by speech and hair.
+
+**Diodorus 3.2–3** receives a separate Ethiopian antiquity tradition and uses Homeric divine feasting as part of its explanatory apparatus.
+
+Working model:
+
+```
+AITHIOPES
+= Greek macro-classifier whose geographic/population referent depends on frame
+```
+
+Add:
+
+```
+REF-02 = AITHIOPES_REFERENCE_FRAME_SHIFT
+GEO-08 = BIPOLAR_SOLAR_EDGE_ETHNONYM
+ID-07  = MACRO_ETHNONYM_MULTI_POPULATION_BINDING
+```
+
+### Karabel as a reception-layer control
+
+Herodotus 2.106 personally describes the rock relief on the Sardis-Smyrna road as visually "Egyptian and Ethiopian"; he identifies it as Sesostris while reporting that other viewers called it Memnon. Modern Hieroglyphic-Luwian decipherment identifies the figure as **Tarkasnawa, king of Mira**.
+
+```
+TARKASNAWA / MIRA
+-> ancient visual classifier: Egyptian + Ethiopian
+-> alternate ancient identity: Memnon
+-> Herodotean identity: Sesostris
+-> modern deciphered identity: Tarkasnawa
+```
+
+Add:
+
+```
+REC-08 = MONUMENTAL_REIDENTIFICATION_LAYER
+SCR-06 = VISUAL_CULTURAL_CLASSIFIER_VS_INSCRIPTIONAL_IDENTITY
+```
+
