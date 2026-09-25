@@ -828,3 +828,76 @@ Add:
 DIV-08 = LEVANTINE_CULT_TRANSMISSION_CORRIDOR
 TRN-16 = SANCTUARY_FOUNDATION_WITHOUT_POPULATION_REPLACEMENT
 ```
+
+## 21. Agamemnon / Memnon / Artaxerxes — royal name reception cluster
+
+The user's intuition that **Memnon is audible inside Agamemnon** is philologically real under the traditional Greek analysis.
+
+LSJ gives:
+
+```text
+Μέμνων = 'the Steadfast / Resolute' < μένω 'remain, abide'
+Ἀγαμέμνων = 'the very steadfast'
+ἀγα- = intensive prefix 'very'
+```
+
+So the structural parse is approximately:
+
+```text
+AGA- + MEMNON
+VERY + STEADFAST
+```
+
+Memnon is the second/base element rather than a prefix.
+
+Alternative etymological analyses of Agamemnon exist, but the traditional Greek reception clearly heard the name in this steadfast/resolute field.
+
+### Persian royal comparison
+
+Artaxerxes is not etymologically related. Old Persian `Artaxšaçā` is analyzed as approximately 'whose reign is through truth/order (arta)'.
+
+Yet Herodotus 6.98 explicitly **reinterprets Persian royal names through Greek semantic equivalents**, calling:
+
+```text
+Darius     = 'Doer'
+Xerxes     = 'Warrior'
+Artaxerxes = 'Great Warrior'
+```
+
+The Artaxerxes gloss is historically incorrect as Persian etymology, but it is high-value evidence for **Greek phonosemantic reception of foreign royal names**.
+
+Add:
+
+```text
+REC-05 = FOREIGN_ROYAL_NAME_SEMANTIC_REHEARING
+```
+
+### Memnonian Susa makes the cluster textually denser
+
+Herodotus 5.53-54 calls the Persian royal residence at Susa `Memnonian`, and 7.151 again places Artaxerxes at **Susa called the Memnonian**.
+
+Later Strabo says Susa was traditionally founded by Tithonus, father of Memnon, and that its acropolis was called the Memnonium.
+
+Thus, although there is no Agamemnon-Artaxerxes etymology, the literary geography actually puts:
+
+```text
+ARTAXERXES
+inside
+MEMNONIAN SUSA
+```
+
+while Greek itself parses:
+
+```text
+AGA-MEMNON = 'very steadfast'
+MEMNON = 'steadfast/resolute'
+```
+
+This creates a legitimate **reception cluster** involving royal names, not a common-origin claim.
+
+Add:
+
+```text
+NAME-CAND-21 = AGA_MEMNON_INTERNAL_NAME_CARRIER
+REC-06 = MEMNONIAN_PERSIAN_ROYAL_RECEPTION_CLUSTER
+```
