@@ -587,3 +587,30 @@ NAME-22 = ATLAS_DOUBLE_EPONYMY_PEOPLE_AND_MOUNTAIN
 
 The Atlantides are then said to become founders of nations/cities and ancestors of many ancient heroes, independently strengthening the Atlas genealogy-as-network model already recovered from Hellanicus.
 
+
+
+## 20. Pausanias — Aithiopes reach the Atlas boundary field
+
+Pausanias 1.33.4-6 preserves a later ancient geographic chain relevant to the Atlas carrier.
+
+He first distinguishes the Ethiopians of Meroë, then reports "other Ethiopians" neighboring the Mauri and extending as far as the Nasamones. He identifies the Nasamones, in his reading of Herodotus, with the Atlantes and places them as the westernmost Libyans near Mount Atlas.
+
+~~~
+MEROE AITHIOPES
+        |
+   distinct from
+        |
+OTHER AITHIOPES
+-> MAURI
+-> NASAMONES / "ATLANTES"
+-> MOUNT ATLAS
+-> OCEANIC WEST
+~~~
+
+The value is geographic-classifier continuity: an ancient writer can place an Aithiopian category directly adjacent to the Atlas/Atlantes western field.
+
+Add:
+
+~~~
+GEO-08 = AITHIOPES_ATLAS_ADJACENCY_RECEPTION
+~~~
