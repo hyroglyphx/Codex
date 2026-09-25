@@ -247,3 +247,113 @@ not a guarantee of one invariant constitutional form.
 - Compare tablet petrography with political-center archaeology at Alassa, Kalavasos and Enkomi.
 - Create an Alashiyan personal-name matrix with language attribution confidence separated from office and location.
 - Test `allai -> Alašiya` only after freezing Hurrian morphology and Cypriot toponymic comparanda.
+
+## 11. Second pass — spelling/determinative matrix
+
+Expanded source comparison changes one part of the first-pass interpretation.
+
+### Determinatives do not map cleanly onto political scale
+
+Old Babylonian Mari preserves forms including a-la-si-um, a-la-s[u-u]m, a-la-ši-ia, a-la-šu-ú, a-la-ši-i, and URU.KI a-la-ši-ia. A later Old Babylonian text has a-la-ši-im.
+
+The URU.KI spelling is real, but URU, KUR, and KUR.URU could overlap in peripheral cuneiform practice. Therefore:
+
+```text
+DETERMINATIVE != ONE-TO-ONE POLITICAL ONTOLOGY
+```
+
+Add DET-01 = DETERMINATIVE_NONISOMORPHISM.
+
+### Amarna country-level diplomacy
+
+EA 33 and EA 38 write LUGAL KUR a-la-ši-ia, 'king of the land/country Alašiya'. That is a strong diplomatic country-scale control even if internal administration was distributed.
+
+### EA 39 is the strongest cross-script anchor
+
+EA 39 combines the Akkadian Alašiya context with an Egyptian hieratic docket identifying it as the letter of the ruler/chief of Egyptian ʾirs3, Alas(i)a.
+
+```text
+Akkadian A-la-ši-ia <-> Egyptian ʾirs3 / Alas(i)a
+```
+
+Add TRN-09 = SAME_ARTIFACT_CROSS_SCRIPT_TOPONYM.
+
+This also means Egyptian ʾirs3 is much stronger than Egyptian ʾisy / Asiya as an Alašiya equivalent. The latter remains debated and must be tracked separately.
+
+### Ugarit preserves the richest spelling ecology
+
+ORACC groups thirteen Alašiya place-name instances with written forms:
+
+```text
+ʾalṯy
+a-la-ši-a
+a-la-ši-ia
+IRI a-la-ši-ia
+a-la-ši-ya
+```
+
+That puts alphabetic Ugaritic, syllabic cuneiform, marked-city spelling, and unmarked spellings inside one archive ecology.
+
+The medial consonant is therefore a real cross-script problem:
+
+```text
+Ugaritic Ṯ
+Akkadian/Hittite Š
+Egyptian Alas(a)-type S
+possible Mycenaean Alasios S
+```
+
+Add PHON-CAND-01 = ALASHIYA_MEDIAL_CORONAL_MAPPING, EXPLORE_ONLY.
+
+### Hittite classifier flexibility
+
+Hittite sources attest KUR a-la-ši-ia and KUR.URU A-la-ši-ia, including LUGAL KUR.URU A-la-ši-ia in treaty contexts. KUR.URU should not be mechanically translated as a constitutional 'city-state'.
+
+### Mycenaean a-ra-si-jo
+
+Linear B a-ra-si-jo can be read Alasios because Linear B does not distinguish r/l in the later alphabetic way, but it occurs as a personal/ethnic-type form and its Cyprus connection remains debated. Keep it as candidate, not anchor.
+
+### Classical Cypriot Alasiōtas
+
+Fourth-century BCE Phrangissa/Tamassos bilingual dedications preserve Greek Alasiōtas as an epithet of Apollo/Resheph. Recent work distinguishes Alasiōtas from the separate epithet Helewitas.
+
+That opens a local persistence test:
+
+```text
+Bronze Age Alašiya
+...
+Classical Cypriot Alasiōtas
+```
+
+Add NAME-CAND-14 = ALASHIYA_ALASIOTAS_LOCAL_PERSISTENCE, HIGH_PRIORITY_EXPLORE_ONLY.
+
+### Carrier window
+
+The conservative cross-script carrier is now approximately:
+
+```text
+A-L-A-{Š / Ṯ / S}-I-Y-A
+```
+
+with initial A/ʾ, L, a medial coronal slot, and often a Y/glide coordinate more stable than the full vocalization.
+
+## 12. Revised classifier result
+
+The matrix does not presently support a simple CITY -> LAND -> KINGDOM progression. It better supports:
+
+```text
+one durable carrier
++ different scribal classifier systems
++ changing political contexts
++ different source purposes
+```
+
+so URU/KUR/KUR.URU are metadata, not constitutional verdicts.
+
+## 13. Strongest new leads
+
+1. EA 39 same-artifact crosswalk is the principal Egyptian-Akkadian anchor.
+2. Ugaritic ʾalṯy vs Akkadian/Hittite a-la-ši-ia is a real medial-consonant mapping problem.
+3. Alassa remains important because petrography independently localizes official Alašiyan scribal production to the same southern zone.
+4. Alasiōtas gives a later local Cypriot Alas- persistence candidate.
+5. The video overstates URU/KUR if it treats the determinatives as strict political labels.
