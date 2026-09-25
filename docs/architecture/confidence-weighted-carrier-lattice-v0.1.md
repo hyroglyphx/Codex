@@ -1,149 +1,138 @@
 # Confidence-Weighted Carrier Lattice v0.1
 
-**Date:** 2026-09-24
-**Status:** ACTIVE / ARCHITECTURE
+Status: ADOPTED_EXPERIMENTAL_ARCHITECTURE
+Date: 2026-09-24
 
-## Principle
+## Purpose
 
-The corpus is mature enough to assign confidence, but confidence must attach to a specific claim-layer rather than to a whole term.
+Convert source-locked linguistic correspondences into a spatial-temporal graph without flattening distinct relation types.
+
+Core rule:
 
 ```text
-C = [REF, READ, PHON, SEM, MORPH, TIME, GEO, FUNC, TRNS, ETYM]
+CONFIDENCE IN TRANSLATION / REFERENT / PHONEMIC MAPPING
+!=
+CONFIDENCE IN ETYMOLOGY / ANCESTRY / TRANSMISSION
 ```
 
-- REF: same referent / identity
-- READ: reading / transliteration
-- PHON: phoneme reconstruction
-- SEM: semantic gloss / function
-- MORPH: morphological segmentation
-- TIME: dating
-- GEO: geographic localization
-- FUNC: institutional / ritual / political function
-- TRNS: transmission / borrowing / reception pathway
-- ETYM: historical etymology
+A strong semantic or same-referent edge must not automatically promote a historical ancestry claim.
 
-Use null when a dimension is not being asserted.
+## Typed node
+
+```text
+NODE = {
+  id, language, script, native_form, transliteration,
+  period, location, referent, semantic_facets,
+  classifier, witness, provenance
+}
+```
+
+## Confidence vector
+
+Each edge carries a non-compensatory vector:
+
+```text
+C = <WIT, REF, PHON, GRAPH, MORPH, SEM, CHRON, GEO, TRANS>
+```
+
+where each channel is in [0,1] or Ω when unknown:
+
+- WIT: witness/direct-source confidence
+- REF: same-referent confidence
+- PHON: phonological mapping confidence
+- GRAPH: graphemic/script mapping confidence
+- MORPH: morphological compatibility
+- SEM: semantic/function equivalence
+- CHRON: chronological compatibility
+- GEO: geographic/contact compatibility
+- TRANS: transport/inheritance/borrowing pathway confidence
+
+Ω must remain unknown and must not be silently converted to 0.5.
+
+## Relation-specific aggregation
+
+A single universal score is forbidden. Compute a scalar only after declaring relation type.
+
+Recommended relation profiles:
+
+```text
+SAME_REFERENT_CROSS_SCRIPT:
+  REF .30 + WIT .20 + PHON .20 + GRAPH .10 + CHRON .10 + GEO .10
+
+SEMANTIC_TRANSLATION:
+  SEM .30 + REF .25 + WIT .20 + MORPH .10 + CHRON .05 + GEO .05 + TRANS .05
+
+ETYMOLOGY:
+  PHON .20 + MORPH .20 + WIT .15 + CHRON .15 + GEO .10 + TRANS .20
+
+RECEPTION_ATTRACTION:
+  PHON .20 + SEM .20 + WIT .15 + CHRON .15 + GEO .15 + TRANS .15
+```
+
+Do not compute when a required channel is Ω unless the relation profile explicitly permits partial scoring.
 
 ## Confidence bands
 
 ```text
-A / 0.90-1.00 = direct anchor
-B / 0.75-0.89 = strong
-C / 0.55-0.74 = moderate
-D / 0.30-0.54 = weak-plausible
-E / 0.10-0.29 = exploratory
-F / 0.00-0.09 = unsupported/control
+A  0.90-1.00  source-locked / direct anchor
+B  0.75-0.89  strong
+C  0.55-0.74  supported but incomplete
+D  0.35-0.54  exploratory
+E  <0.35       resemblance / weak transport
+Ω              unresolved
 ```
 
-Prefer intervals/bands to false point precision.
+These are calibration weights, not frequentist or Bayesian probabilities.
 
-## Micro-anchors
+## Spatial-temporal representation
 
-```text
-MICRO_ANCHOR = smallest source-locked correspondence that constrains the larger graph
-```
-
-Examples: one bilingual name equation; one same-artifact docket; one recurring spelling; one ancient gloss; one determinative; one secure clay-source localization; one repeated phoneme correspondence.
-
-Micro-anchors do not prove whole etymologies. They constrain neighboring hypotheses.
-
-## Evidence operators
-
-Positive evidence:
+Recommended visualization:
 
 ```text
-E1 same artifact / bilingual equation
-E2 explicit ancient gloss or translation
-E3 same referent in independent scripts/languages
-E4 repeated internal corpus behavior
-E5 lawful phonological transform
-E6 independently established geographic coincidence
-E7 chronological overlap
-E8 institutional/functional correspondence
-E9 archaeological localization
-E10 later local survival with continuity constraints
-```
-
-Penalties:
-
-```text
-P1 modern spelling resemblance only
-P2 modern pronunciation projected backward
-P3 genealogically dependent evidence double-counted
-P4 circular etymology
-P5 semantic match without carrier evidence
-P6 geography without chronology
-P7 repeated same-source evidence counted as independent
-P8 uncertain reading treated as fixed
-```
-
-## Spatial-temporal lattice
-
-Each attested form becomes a node:
-
-```text
-N = {
- form, normalized_form, language, script, source,
- date_start, date_end, latitude, longitude, polity_or_region,
- semantic_tags, institutional_tags, confidence_vector
-}
-```
-
-Each proposed relation becomes a typed edge:
-
-```text
-E = {
- source_node, target_node, operator, transformation,
- evidence_ids, independence_group, confidence_vector, status
-}
-```
-
-Recommended geometry:
-
-```text
-X,Y = geography
+X/Y = learned phonological + semantic distance
 Z   = time
-node radius = attestation/source confidence
-edge thickness = relation confidence
-edge type = translation / borrowing / phoneme-map / classifier-shift / title-rebinding / local-survival
+color = language/script family
+node shape = person/place/title/deity/common noun/operator
+edge type = relation operator
+edge thickness = relation-specific confidence
+edge opacity = witness independence
 ```
 
-## Local confidence, not global confidence
+Animate or slice by century. A node may move semantically while retaining carrier continuity.
 
-Example:
+## Density
+
+A dense node is not merely one with many forms. It should maximize:
 
 ```text
-Alašiya <-> Egyptian ʾirs3
-REF=A; READ=A; PHON=B; TIME=A; GEO=B; TRNS=A; ETYM=null
+independent witnesses
++ script/language diversity
++ explicit crosswalks
++ semantic recurrence
++ chronological depth
++ geographic/contact coherence
+- genealogical dependence
+- untyped resemblance edges
 ```
 
-while:
+## Promotion rule
+
+Association remains cheap; promotion remains expensive.
+
+Prefer:
 
 ```text
-Alašiya <- Hurrian allai
-READ=A; PHON=C; SEM=B; MORPH=D; TIME=C; GEO=C; TRNS=D; ETYM=E
+SAME ARTIFACT > BILINGUAL/TRILINGUAL > SAME REFERENT MULTILINGUAL > SAME AUTHOR/PERIOD > STRUCTURAL PARALLEL > NAKED RESEMBLANCE
 ```
 
-## Propagation rule
+## Initial graph families
 
-```text
-high-confidence anchor narrows allowable transformations
--> candidate edge is retested
--> candidate confidence updates only if it satisfies those transforms
-```
-
-Confidence does not propagate automatically by association.
-
-## Working rule
-
-```text
-FEW SECURE WORDS
-+ SECURE PHONEME APPROXIMATIONS
-+ DATE
-+ PLACE
-+ TYPED TRANSFORM
-=
-ENOUGH TO BUILD A CONSTRAINED LATTICE
-```
-
-The lattice preserves what is known, exposes where uncertainty lives, and lets new evidence update the correct dimension.
+- ALASHIYA cross-script carrier
+- SEMITIC EL / Greek reception
+- BR / crossing operator
+- LADY/MISTRESS title architecture
+- SARDIS multilingual same-referent cluster
+- Helli/Selli and NEL/THEL textual/onamastic controls
+- SA/SAR receiving-language cluster
+- Semitic numeral-two sound-law calibration
+- topographic orbits queued for source-lock: Dilmun/Tilmun, Magan/Makkan, Anšan/Anzan, Šušun/Šūšen/Šūšin, Nina/Ninua
