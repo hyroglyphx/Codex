@@ -481,3 +481,83 @@ PHON-07 = ATALANT_ATARANT_LIQUID_SLOT_PROBE
 ### 18.5 'Atalantis'
 
 `Atalantis` occurs in later/modern English as a variant spelling of Atlantis and in modern Greek place-name forms, but it is not the standard ancient Platonic form. Treat each occurrence as witness-specific rather than inserting it automatically into the ancient Atlas stem family.
+
+## 19. Cross-linguistic ATL control — Classical Nahuatl
+
+`ATL` is independently a genuine lexical unit in Classical Nahuatl:
+
+```text
+ātl  /aːtɬ/ = water
+ātlah         = place of abundant water
+ātlān         = in / into / under the water
+```
+
+This matters methodologically because it demonstrates that the Roman-letter sequence `ATL` can be an ordinary native carrier in an unrelated linguistic system. It therefore cannot be assumed, merely from shape, that every ATL-like form must have been synthetically generated from Greek morphology.
+
+However, the phonemic structures are not identical:
+
+```text
+Nahuatl ātl   = /aːtɬ/   (lateral affricate /tɬ/)
+Greek Atlas   = /at.las/  (t + l cluster)
+```
+
+So Romanized `ATL` is a **cross-script homograph**, not evidence of common ancestry or contact.
+
+### 19.1 Atlatl is an especially useful negative control
+
+The familiar English spelling `atlatl` is Classical Nahuatl `ahtlatl`, IPA approximately `/aʔtɬatɬ/`. Karttunen analyzes it as `AHTLA-TL` 'spear thrower'. It is not simply `ātl + ātl` ('water-water'): the first vowel and glottal stop differ from `ātl` 'water'.
+
+Thus:
+
+```text
+atlatl (English spelling)
+looks like ATL + ATL
+but
+ahtlatl (Nahuatl phonology)
+!= ātl + ātl
+```
+
+This is an excellent warning for the whole lattice:
+
+```text
+ROMANIZATION RESEMBLANCE
+!=
+PHONEMIC IDENTITY
+```
+
+Add:
+
+```text
+PHON-08 = ROMANIZATION_HOMOGRAPHY_CONTROL
+```
+
+### 19.2 Greek Atlas itself may be non-native
+
+The traditional Greek analysis connects `Ἄτλας` with a Greek 'bear/endure' root. But modern etymological work, notably Beekes, has argued that `Ἄτλας` may instead be **Pre-Greek**, with the Greek endurance interpretation secondary or adaptive.
+
+Therefore keep two lanes:
+
+```text
+GREEK INTERNAL PARSE = reception / morphological accommodation candidate
+PRE-GREEK ATLAS       = origin candidate
+```
+
+These are not mutually exclusive: a borrowed/substrate name can be subsequently re-heard through meaningful Greek morphology.
+
+Add:
+
+```text
+ETYM-01 = SUBSTRATE_ORIGIN_VS_NATIVE_REANALYSIS
+```
+
+### 19.3 What the Nahuatl comparison legitimately contributes
+
+It does **not** provide evidence for an Old World/New World historical connection.
+
+It does provide three useful controls:
+
+```text
+1. ATL can be a stable native lexical carrier in an unrelated language.
+2. Roman letters can conceal materially different phoneme structures.
+3. Internal semantic parsing in a receiving language need not establish ultimate origin.
+```
