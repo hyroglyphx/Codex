@@ -1,0 +1,43 @@
+version: "0.1"
+date: "2026-09-24"
+id: MYCENAEAN_DIVINE_ROLE_REBINDING
+status: SOURCE_LOCKED_FIRST_PASS
+
+anchors:
+  LINEAR_B_LIMIT:
+    rule: "administrative records do not directly encode divine genealogy or pantheon hierarchy"
+  POSEIDON_PYLOS:
+    status: locally_preeminent
+    ceiling: "not proof of king-of-gods status"
+  TN316:
+    nodes: [Potnia,Posidaheia,Poseidon,Diwia,other_local_divinities]
+    operator: DIV-03
+  ZEUS:
+    Linear_B_stem: "Diw-"
+    status: Bronze_Age_attested
+  POTNIA:
+    meaning: Mistress_Lady
+    qualified_forms: [Asian_Potnia,Potnia_of_the_Labyrinth]
+    operator: DIV-05
+
+operators:
+  DIV-01:
+    name: DIVINE_ROLE_REBINDING
+  DIV-02:
+    name: LOCAL_CULTIC_PREEMINENCE_VS_PANTHEON_HIERARCHY
+  DIV-03:
+    name: CULT_GRAPH_BEFORE_PANTHEON_TREE
+  DIV-04:
+    name: DOMAIN_REWEIGHTING_NOT_REPLACEMENT
+  DIV-05:
+    name: LADY_TITLE_LOCALIZATION
+  DIV-06:
+    name: SYNCHRETIC_ATTRIBUTE_TRANSFER
+  MEM-02:
+    name: CULT_ARCHIVE_COLLAPSE_AND_RECOMPOSITION
+
+firewalls:
+  - "Poseidon prominent at Pylos != proven king of all Mycenaean gods"
+  - "earth-role evidence != settled Poseidon etymology"
+  - "Zeus Bronze Age attestation blocks simple later-invention model"
+  - "Ishtar-Astarte-Aphrodite must be modeled as a contact network, not a one-step identity"
