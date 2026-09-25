@@ -28,7 +28,8 @@
     "Sumerian-Akkadian-Hurrian-Urartian confidence corridor: explicit cuneiform transmission, Assyrian-Urartian handoff, Hurro-Urartian genetics, and candidate lexical residue",
     "Epeios wooden-horse linguistic craft node: kosmos/poiesis wordplay, Bronze Age tekton/horse vocabulary, design-implementation split, ethnonymic rebinding and object-classifier transforms",
     "Troy/Wilusa multilingual confidence corridor: Wilusa-Wilios, Alaksandu-Alexandros, Appaliuna-Apollo, Taruisa-Troia, and calibrated western-Anatolian Hittite-Greek name transforms",
-    "Herodotus linguistic operators: explicit language shift, mixed speech, interpreters, exonyms/endonyms, foreign glosses, script localization and divine-name translation"
+    "Herodotus linguistic operators: explicit language shift, mixed speech, interpreters, exonyms/endonyms, foreign glosses, script localization and divine-name translation",
+    "Lydia/Sardis as a high-leverage multilingual laboratory: bilingual name translation, Lydian-Aramaic law, Sparda/Sfar/Sardis continuity, metrology, cult translation, and competing migration traditions"
   ],
   "active_invariants": [
     "Do not compare naked strings; compare typed transformations.",
@@ -137,7 +138,12 @@
     "Tell Fekherye OBJ-006 must be modeled with section-level bilingual directionality and internal divergence; global symmetric translation is too coarse.",
     "Tell Fekherye word-level phonological correspondences require re-audit because translation equivalence can preserve function while changing lexicalization.",
     "Yehimilk/KAI 4 is now a dated Phoenician waypoint in the Byblos title-tradition lane between Amarna-era Akkadian and later Phoenician witnesses.",
-    "Duplicate GlyphWalk exports are not independent witnesses and do not strengthen exact-sign relations."
+    "Duplicate GlyphWalk exports are not independent witnesses and do not strengthen exact-sign relations.",
+    "Nannas Bakivalis / Nannas Dionysikles is a same-artifact Lydian-Greek personal-name equivalence; Artimu/Artemis gives the parallel divine-name equivalence.",
+    "The Manes son of Kumlis stele at Sardis is a 394 BCE Lydian-Aramaic legal/funerary bilingual anchored by Artaxerxes II regnal dating.",
+    "Xanthus the Lydian preserves an ancient local dialect-continuum claim for Lydian/Torrhebian and a local toponymic memory of Sardis/Xuaris matching epichoric Sfar.",
+    "Lydia shows sovereign replacement without full administrative or cultural reset: Sardis remains the center under Persian Sparda and local Lydian personnel persist.",
+    "Lydian script ancestry and language ancestry are separate: Greek-derived alphabet, Anatolian Indo-European language."
   ],
   "active_packet": "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
   "primary_studies": [
@@ -163,7 +169,8 @@
     "studies/sumerian-akkadian-hurro-urartian-confidence-corridor-v0.1.md",
     "studies/epeios-wooden-horse-linguistic-craft-node-v0.1.md",
     "studies/troy-wilusa-multilingual-confidence-corridor-v0.1.md",
-    "studies/herodotus-linguistic-operators-v0.1.md"
+    "studies/herodotus-linguistic-operators-v0.1.md",
+    "studies/lydia-high-leverage-development-map-v0.1.md"
   ],
   "next_actions": [
     "Pre-register Byblos spatula-i holdout metrics before opening the blind sequence",
@@ -296,7 +303,13 @@
     "Re-audit OBJ-006 alignment edges by face, language, line range, section and directionality model",
     "Check Greenfield-Shaffer 1983 primary wording for the Aramaic-prototype claim before freezing directionality",
     "Insert exact KAI 4 bʿlt gbl sign sequence and line range into OBJ-001 chronology",
-    "Compare Amarna bēltu ša Gubla -> KAI 4 bʿlt gbl -> later Byblian royal title witnesses without collapsing title continuity into phonological identity"
+    "Compare Amarna bēltu ša Gubla -> KAI 4 bʿlt gbl -> later Byblian royal title witnesses without collapsing title continuity into phonological identity",
+    "Build Nannas Bakivalis/Dionysikles full same-artifact name-translation matrix",
+    "Build Manes Lydian-Aramaic bilingual clause alignment with Artaxerxes II regnal-date anchor",
+    "Register Xanthus Lydian fragments for dialect, toponym and migration-source conflicts",
+    "Expand Sfar/Sparda/Sardis same-referent matrix with exact dated witnesses",
+    "Build Baki/Dionysos and Artimu/Artemis cult-name translation graph",
+    "Build Lydo-Milesian to Persian metrological carrier graph"
   ],
   "calibration_progress": {
     "RN01 Memphis-Rosetta": "first_alignment_complete",
@@ -346,7 +359,8 @@
     "Troy-Wilusa-multilingual-confidence-corridor-v0.1": "source_locked_first_pass",
     "Herodotus-linguistic-operators-v0.1": "source_locked_first_pass",
     "Herodotus-1.56-ethnonym-rebinding": "source_locked_first_pass",
-    "Ancient-Script-Lattice-material-change-2026-09-25": "integrated_with_directionality_conflict_preserved"
+    "Ancient-Script-Lattice-material-change-2026-09-25": "integrated_with_directionality_conflict_preserved",
+    "Lydia-high-leverage-development-map-v0.1": "source_locked_first_pass"
   },
   "active_candidate_results": {
     "anchored": [
