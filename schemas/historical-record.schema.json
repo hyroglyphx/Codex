@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://miketatemath.org/schemas/historical-record.schema.json",
+  "title": "HistoricalRecord",
+  "description": "Shared evidence-spine record used by Nexus, inference, GlyphWalk, and the Transposition Atlas.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "witness",
+    "language",
+    "script",
+    "exact_form",
+    "status",
+    "confidence",
+    "provenance"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "witness": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "witness_id"
+      ],
+      "properties": {
+        "witness_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "object_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "line_or_region": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "layout": {
+          "type": [
+            "object",
+            "string",
+            "null"
+          ]
+        },
+        "orientation": {
+          "type": [
+            "string",
+            "number",
+            "null"
+          ]
+        },
+        "image_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ancestral_node": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "script": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "carrier": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "grapheme": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "exact_form": {
+      "type": "string"
+    },
+    "normalized_form": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reading": {
+      "type": [
+        "string",
+        "array",
+        "null"
+      ]
+    },
+    "phonology": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "morphology": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "semantic_vector": {
+      "type": [
+        "object",
+        "array",
+        "null"
+      ]
+    },
+    "operator": {
+      "type": [
+        "string",
+        "array",
+        "null"
+      ]
+    },
+    "chronology": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "geography": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "nexus": {
+      "type": [
+        "string",
+        "array",
+        "null"
+      ]
+    },
+    "contact": {
+      "type": [
+        "string",
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "relation_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        null,
+        "inheritance",
+        "borrowing",
+        "scribal_transport",
+        "translation",
+        "functional_equivalence",
+        "parallel_readout",
+        "carrier_transposition",
+        "phonological_transformation",
+        "morphological_transformation",
+        "numeric_projection",
+        "iconographic_continuity",
+        "ritual_transport",
+        "institutional_transport",
+        "structural_analogy",
+        "independent_convergence",
+        "semantic_back_projection",
+        "resemblance",
+        "unclassified"
+      ]
+    },
+    "transformation": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "admissibility": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "cost": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "basis": {
+          "type": [
+            "array",
+            "string",
+            "null"
+          ]
+        },
+        "boundary_policy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chronology_valid": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "geography_valid": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "confidence": {
+      "type": "object",
+      "required": [
+        "witness",
+        "reading",
+        "segmentation",
+        "phonology",
+        "semantics",
+        "chronology",
+        "relation"
+      ],
+      "properties": {
+        "witness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "reading": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "segmentation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "phonology": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "semantics": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "chronology": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "relation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "items": {},
+      "default": []
+    },
+    "counterevidence": {
+      "type": "array",
+      "items": {},
+      "default": []
+    },
+    "controls": {
+      "type": "array",
+      "items": {},
+      "default": []
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OBSERVED",
+        "CANDIDATE",
+        "TESTED",
+        "CORROBORATED",
+        "CANONICAL",
+        "FAILED",
+        "CONTRADICTED",
+        "SUPERSEDED",
+        "OMEGA_UNRESOLVED"
+      ]
+    },
+    "uncertainty_notes": {
+      "type": [
+        "string",
+        "array",
+        "null"
+      ]
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {}
+    },
+    "return_path": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    }
+  }
+}

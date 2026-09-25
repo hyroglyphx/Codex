@@ -1,0 +1,49 @@
+version: "0.1"
+date: "2026-09-25"
+id: HERODOTUS_LINGUISTIC_OPERATORS
+status: SOURCE_LOCKED_FIRST_PASS
+
+high_confidence_nodes:
+  - {passage: "1.57-58", mechanism: language_shift_and_population_incorporation, grade: A_plus}
+  - {passage: "5.58", mechanism: script_sound_form_relocalization, grade: A_plus}
+  - {passage: "2.154", mechanism: interpreter_institutionalization, grade: A_plus}
+  - {passage: "4.24", mechanism: chained_multilingual_trade, grade: A_plus}
+  - {passage: "4.108", mechanism: mixed_Greek_Scythian_language, grade: A_plus}
+  - {passage: "4.117", mechanism: intergenerational_L2_reshaping, grade: A_plus}
+  - {passage: "4.6", mechanism: endonym_exonym_split, grade: A_plus}
+  - {passage: "7.64", mechanism: imperial_macro_exonym, grade: A_plus}
+  - {passage: "8.135", mechanism: foreign_language_event_recognition, grade: A_plus}
+
+operators:
+  LANG-03: ETHNIC_INCORPORATION_WITH_LANGUAGE_SHIFT
+  ID-04: LANGUAGE_COMMUNITY_EXPANDS_BY_POPULATION_ACCESSION
+  ID-05: COMPOSITE_ETHNONYM_WITH_DIALECT_DIVERSITY
+  NAME-14: ENDONYM_EXONYM_SPLIT
+  LANG-04: CONTACT_MIXED_LANGUAGE
+  LANG-05: INTERGENERATIONAL_SECOND_LANGUAGE_RESHAPING
+  LEX-01: HERODOTEAN_FOREIGN_GLOSS
+  DIV-07: CROSS_CULT_DIVINE_EQUIVALENCE
+  TRN-11: INTERPRETER_INSTITUTIONALIZATION
+  TRN-12: CHAINED_MULTILINGUAL_TRADE
+  REC-03: FOREIGN_LANGUAGE_EVENT_RECOGNITION
+  LANG-06: ELITE_BILINGUAL_REGISTER_SWITCHING
+  SCR-03: SCRIPT_SOUND_FORM_RELOCALIZATION
+  REC-04: INTELLIGIBILITY_CLASSIFIER_SHIFT
+  LEX-02: ANCIENT_REPORTED_SEGMENTATION
+  NAME-15: MIGRATION_RULER_OBSERVER_RENAMING
+  PHON-02: ETHNONYMIC_ONOMASTIC_PHONOTACTIC_PROFILE
+
+foreign_glosses:
+  - {passage: "2.2", form: bekos, language: Phrygian, gloss: bread}
+  - {passage: "2.30", form: Asmakh, language: Egyptian_claim, gloss: "those at the king left hand"}
+  - {passage: "4.27", form: Arimaspi, language: Scythian_claim, segmentation: "arima + spou", gloss: one_eyed}
+  - {passage: "4.110", form: Oiorpata, language: Scythian_claim, segmentation: "oior + pata", gloss: man_killers}
+  - {passage: "4.155", form: Battus, language: Libyan_claim, gloss: king}
+
+firewalls:
+  - "reported ancient gloss != automatically correct historical etymology"
+  - "ethnonym != language"
+  - "shared cult equivalence != shared divine name ancestry"
+  - "language shift != population replacement"
+  - "script transfer != language transfer"
+  - "elite bilingualism != population-wide bilingualism"

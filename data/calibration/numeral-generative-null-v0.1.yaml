@@ -1,0 +1,148 @@
+dataset: numeral-generative-null
+version: 0.1.0
+updated: 2026-09-21
+status: ILLUSTRATIVE_GENERATIVE_SENSITIVITY
+matrix: data/calibration/numeral-1-10-source-locked-v0.2.yaml
+
+purpose: >
+  Move beyond conditional digit-position permutation and begin generating carrier
+  distributions through an explicit historical dependency graph. This is not a fitted
+  historical model. Parameters are swept deliberately because empirical inheritance,
+  borrowing and phonotactic rates have not yet been estimated.
+
+target_observations:
+  core:
+    nodes: [Proto-Semitic, Egyptian, Proto-Indo-European, Proto-Kartvelian, Basque, Sumerian, Hurrian]
+    observed_digit_7_hits: 5
+    observed_max_hits: 5
+  extended:
+    nodes: [Proto-Semitic, Egyptian, Proto-Indo-European, Proto-Kartvelian, Basque, Iberian, Etruscan, Sumerian, Hurrian]
+    observed_digit_7_hits: 7
+    observed_max_hits: 7
+
+graph:
+  latent_Afroasiatic:
+    children: [Proto-Semitic, Egyptian]
+    parameter: h_afro
+    meaning: "probability a carrier state at a digit is inherited/shared from the latent Afroasiatic state rather than independently redrawn"
+  Proto-Indo-European:
+    independent_source: true
+  Proto-Kartvelian:
+    contact_parent: Proto-Indo-European
+    parameter: c_ie_kart
+    note: "sensitivity edge; not a claim that every numeral is borrowed"
+  Basque:
+    independent_source: true
+  Iberian:
+    contact_parent: Basque
+    parameter: c_bas_iber
+    note: "dependency edge representing the Vasco-Iberian hypothesis in the numeral literature"
+  Etruscan:
+    contact_parent: Proto-Semitic
+    parameter: c_sem_etr
+    note: "sensitivity edge representing proposed Mediterranean/Phoenician influence"
+  Sumerian:
+    independent_source: true
+  Hurrian:
+    independent_source: true
+
+generation:
+  base_feature_rate_q:
+    definition: >
+      Probability that an independent historical source state has the frozen strict
+      sibilant-plus-labial feature at a given numeral position.
+    swept_values: [0.05, 0.10, 0.15, 0.20]
+    note: >
+      q is not yet empirically estimated from full phonotactic inventories.
+      The sweep tests whether the observed concentration remains uncommon under
+      increasingly permissive background rates.
+  h_afro:
+    fixed_for_v0_1: 0.70
+    note: "illustrative dependency strength only"
+  contact_parameters:
+    swept_values: [0.20, 0.50, 0.80]
+    application: >
+      If a contact edge fires at a numeral position, the child copies the parent's
+      carrier-state at that position; otherwise it draws from q.
+  digits:
+    count: 10
+    exchangeable_under_null: true
+    caveat: "Digit-specific lexical stability or borrowability is not yet modeled."
+
+simulation:
+  implementation: Monte_Carlo
+  draws_per_grid_cell: 50000
+  randomization_scope: internal_analysis
+  reproducibility_note: >
+    Version 0.1 records rounded empirical frequencies from the run. A later repository
+    implementation should freeze a deterministic seed and executable script.
+
+core_results:
+  description: "Probability of observing at least five carrier hits on digit 7, and probability any digit reaches five or more, in the 7-node core graph."
+  grid:
+    - {q: 0.05, c_ie_kart: 0.20, p_digit7_ge5: 0.00008, p_any_digit_ge5: 0.00046}
+    - {q: 0.05, c_ie_kart: 0.50, p_digit7_ge5: 0.00014, p_any_digit_ge5: 0.00110}
+    - {q: 0.05, c_ie_kart: 0.80, p_digit7_ge5: 0.00016, p_any_digit_ge5: 0.00134}
+    - {q: 0.10, c_ie_kart: 0.20, p_digit7_ge5: 0.00062, p_any_digit_ge5: 0.00772}
+    - {q: 0.10, c_ie_kart: 0.50, p_digit7_ge5: 0.00078, p_any_digit_ge5: 0.01174}
+    - {q: 0.10, c_ie_kart: 0.80, p_digit7_ge5: 0.00156, p_any_digit_ge5: 0.01674}
+    - {q: 0.15, c_ie_kart: 0.20, p_digit7_ge5: 0.00362, p_any_digit_ge5: 0.03386}
+    - {q: 0.15, c_ie_kart: 0.50, p_digit7_ge5: 0.00498, p_any_digit_ge5: 0.04584}
+    - {q: 0.15, c_ie_kart: 0.80, p_digit7_ge5: 0.00616, p_any_digit_ge5: 0.05770}
+    - {q: 0.20, c_ie_kart: 0.20, p_digit7_ge5: 0.00992, p_any_digit_ge5: 0.09642}
+    - {q: 0.20, c_ie_kart: 0.50, p_digit7_ge5: 0.01256, p_any_digit_ge5: 0.12012}
+    - {q: 0.20, c_ie_kart: 0.80, p_digit7_ge5: 0.01554, p_any_digit_ge5: 0.14168}
+  interpretation: >
+    In the core graph, a five-node concentration remains uncommon across low/moderate
+    q values but becomes much less surprising as the background carrier rate approaches
+    0.20. This demonstrates that phonotactic/base-rate estimation is now crucial.
+
+extended_results:
+  description: >
+    Probability of observing at least seven carrier hits at digit 7, and probability
+    any digit reaches seven or more, in the 9-node extended graph. Contact parameters
+    c_ie_kart, c_bas_iber and c_sem_etr are set to the same swept c within each row.
+  grid:
+    - {q: 0.05, c: 0.20, p_digit7_ge7: 0.00000, p_any_digit_ge7: 0.00002}
+    - {q: 0.05, c: 0.50, p_digit7_ge7: 0.00004, p_any_digit_ge7: 0.00010}
+    - {q: 0.05, c: 0.80, p_digit7_ge7: 0.00004, p_any_digit_ge7: 0.00046}
+    - {q: 0.10, c: 0.20, p_digit7_ge7: 0.00000, p_any_digit_ge7: 0.00056}
+    - {q: 0.10, c: 0.50, p_digit7_ge7: 0.00020, p_any_digit_ge7: 0.00182}
+    - {q: 0.10, c: 0.80, p_digit7_ge7: 0.00056, p_any_digit_ge7: 0.00520}
+    - {q: 0.15, c: 0.20, p_digit7_ge7: 0.00036, p_any_digit_ge7: 0.00368}
+    - {q: 0.15, c: 0.50, p_digit7_ge7: 0.00108, p_any_digit_ge7: 0.01046}
+    - {q: 0.15, c: 0.80, p_digit7_ge7: 0.00182, p_any_digit_ge7: 0.02038}
+  interpretation: >
+    The extended concentration also remains uncommon in this illustrative graph, but
+    the result cannot be treated as stronger evidence than the core graph because
+    Etruscan and Iberian numeral-value uncertainty is not yet simulated.
+
+what_this_model_adds:
+  - "Genealogical sharing can create correlated hits without independent innovation."
+  - "Borrowing/contact can transmit a carrier across families."
+  - "The same observed seven concentration can have very different evidentiary meaning depending on q and contact parameters."
+  - "Carrier enrichment should be evaluated against a historical process model, not only combinatorial overlap."
+
+what_this_model_does_not_yet_add:
+  - "empirical phonotactic feature rates for each language"
+  - "digit-specific borrowing/stability rates"
+  - "dated contact windows"
+  - "uncertain reconstructions sampled as probability distributions"
+  - "uncertain Iberian/Etruscan numeral assignments sampled probabilistically"
+  - "branch-specific sound change"
+  - "feature-selection prior or multiple-hypothesis correction"
+
+required_v0_2:
+  - "estimate q_i per node from phonological inventories and comparable lexical material"
+  - "replace one shared contact rate with dated edge-specific priors"
+  - "model reconstruction uncertainty by sampling alternative forms"
+  - "drop or probabilistically weight disputed numeral-value assignments"
+  - "freeze random seed and executable simulation"
+  - "run leave-one-node and leave-one-cluster-out diagnostics"
+  - "compare against preregistered alternative carrier families"
+
+current_status: >
+  The generative pilot does not establish a common origin or a publishable significance
+  level. It does show that the seven concentration survives a first explicit inheritance/contact
+  graph over a wide parameter range, while also revealing that background phonotactic rate q
+  is a dominant unresolved parameter.

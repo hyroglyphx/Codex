@@ -1,0 +1,92 @@
+version: "0.1"
+date: "2026-09-25"
+id: ATLAS_ATLANTES_ATLANTIS_PREPLATO
+status: SOURCE_LOCKED_FIRST_PASS
+
+nodes:
+  HOMERIC_ATLAS:
+    source: "Odyssey 1.52-54"
+    roles: [sea_depth_knowledge, cosmic_pillar_holder]
+    chronology: pre_Herodotus
+
+  HESIODIC_ATLAS:
+    source: "Theogony 517-520"
+    roles: [western_edge, heaven_support]
+    chronology: pre_Herodotus
+
+  HERODOTUS_ATLANTIS_SEA:
+    source: "Histories 1.203"
+    greek: "ἡ ἔξω στηλέων θάλασσα ἡ Ἀτλαντὶς καλεομένη"
+    classifier: thalassa
+    referent: sea_beyond_Pillars
+    confidence: A
+
+  HERODOTUS_ATLAS_MOUNTAIN:
+    source: "Histories 4.184"
+    roles: [mountain, pillar_of_heaven]
+    confidence: A
+
+  HERODOTUS_ATLANTES:
+    source: "Histories 4.184"
+    relation: named_from_Mount_Atlas
+    confidence: A
+
+  HERODOTUS_PILLARS_CORRIDOR:
+    sources: ["4.8","4.42","4.43","4.185","4.196"]
+    roles: [western_threshold, maritime_interface, trade_boundary]
+    confidence: A
+
+  PLATO_ATLANTIS_ISLAND:
+    source: "Timaeus 24e-25a"
+    greek: "τῇ Ἀτλαντίδι νήσῳ"
+    classifier: nesos
+    relation: same_Atlant_name_field_new_object_classifier
+    confidence: A
+
+morphology:
+  stem: "ATLANT-"
+  forms:
+    - "Ἄτλας"
+    - "Ἄτλαντος"
+    - "Ἄτλαντες"
+    - "Ἀτλαντίς"
+    - "Ἀτλαντικός"
+
+operators:
+  NAME-21: ATLANT_CLASSIFIER_REBINDING
+  TXT-03: CLASSIFIER_CONTROLS_ATLANTIS_REFERENT
+  TXT-04: MANUSCRIPT_ETHNONYM_CONFLATION_CONTROL
+  GEO-06: WESTERN_PILLAR_BOUNDARY_CORRIDOR
+  TXT-05: ATLANTIS_AS_GENEALOGICAL_CLASSIFIER
+  GEN-01: ATLANTID_GENEALOGICAL_SUPERNODE
+  GEN-02: ATLAS_TO_DARDANUS_TROJAN_BRANCH
+  GEN-03: ATLAS_TO_LACEDAEMON_SPARTAN_BRANCH
+  GEN-04: EPONYMIC_ANCESTOR_AS_ARCHIVAL_INDEX
+  GEO-07: ATLANTEAN_BOUNDS_AS_WESTERN_NAVIGATIONAL_LIMIT
+
+firewalls:
+  - "Atlantes != automatically Plato's Atlanteans"
+  - "Mount Atlas != automatically Plato's island location"
+  - "pre-Platonic Atlant- carrier != pre-Platonic island narrative"
+  - "pillar recurrence != demonstrated identity of cosmic and Heraclean pillars"
+
+  HELLANICUS_ATLANTIAS:
+    chronology: "5th century BCE; pre-Plato"
+    classifier: genealogical_work
+    relation: "Atlas-lineage organizing frame"
+    secure_descendants:
+      - "Taygete + Zeus -> Lacedaemon"
+      - "Maia + Zeus -> Hermes"
+      - "Electra + Zeus -> Dardanus"
+      - "Alcyone + Poseidon -> Hyrieus"
+      - "Sterope + Ares -> Oenomaus"
+      - "Celaeno + Poseidon -> Lycus"
+      - "Merope + Sisyphus -> Glaucus"
+    confidence: A
+
+  EURIPIDES_ATLANTEAN_BOUNDS:
+    source: "Hippolytus 3, 742-747, 1053"
+    chronology: "428 BCE"
+    classifiers: [western_boundary, navigational_limit]
+    relation: "Atlas/Hesperides/western sea boundary; LSJ equates Atlantean bounds with Pillars of Heracles"
+    confidence: A

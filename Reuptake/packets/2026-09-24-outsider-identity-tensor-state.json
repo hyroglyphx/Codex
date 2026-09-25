@@ -1,0 +1,47 @@
+{
+  "relay": "Codex Reuptake",
+  "date": "2026-09-24",
+  "event_id": "ORG-2026-09-24-OUTSIDER-IDENTITY-AUTHORITY-001",
+  "status": "ACTIVE_SYNTHESIS_SOURCE_LOCK_QUEUE",
+  "repository": "hyroglyphx/Codex",
+  "branch": "research/reconcile-state-2026-09-20",
+  "pull_request": 1,
+  "repo_to_chat": {
+    "recovered_existing_architecture": [
+      "PEL-01 already encodes ETHNONYM != EMIC_SELF_IDENTIFICATION.",
+      "Mythic/classifier supplement already carries OBSERVER, JURISDICTION, PHASE, RELATION, PERMISSIONS and DUTIES metadata.",
+      "Referential stratification already separates R0 named individual through R5 dynastic/institutional body.",
+      "Sumerian operator control already enforces HOLDER != OFFICE != FUNCTION and permits offices/titles to outlive holders.",
+      "QBL study already permits metathesis only as an independently licensed candidate transform.",
+      "Nexus transposition already contains CARRIER_ORBIT, PHASESHIFT, PARALLEL_READOUT and SEMANTIC_BACK_PROJECTION."
+    ]
+  },
+  "chat_to_repo": {
+    "new_extensions": [
+      "Observer-relative identity tensor with REFERENCE_FRAME and BOUNDARY_RELATION.",
+      "OUTSIDER_RELATIONAL_CLASSIFIER for across/beyond/frontier/edge naming.",
+      "DELEGATED_DOMAIN_HOLDER and DOMAIN_TITLE_VS_LABOR_TASK.",
+      "UTILITY_CLASS_EXTRACTION as a state-capacity transfer hypothesis.",
+      "SPEAKING_NAME_FUNCTION separating narrative semantics from historical etymology.",
+      "ORIGIN_ATTRIBUTION_NETWORK for recurrent Troy/Samothrace/Rome origin claims without exact-person dependency.",
+      "PERMUTATION_AWARE_CARRIER_WINDOW for BR-type inquiry under licensed transforms.",
+      "High-priority Kabeiroi/Cadmilus/Casmilus/Camillus transmission cluster."
+    ]
+  },
+  "files": [
+    "studies/outsider-identity-authority-liminality-v0.1.md",
+    "registries/outsider-identity-tensor-v0.1.yaml",
+    "Reuptake/packets/2026-09-24-outsider-identity-tensor-state.json",
+    "Reuptake/state/current.json",
+    "Reuptake/provenance/event-log.jsonl"
+  ],
+  "next_queue": [
+    "Source-lock Ebir-nari / Abar-Nahara.",
+    "Build Ivri speaker-context matrix.",
+    "Compare western and Caucasian Iberia on reference-frame/boundary function without ancestry assumptions.",
+    "Build Eumaeus domain-control and delegated-authority matrix.",
+    "Source-lock specialist deportation / craft-capacity witnesses.",
+    "Build speaking-name calibration and Samothrace-Troy-Rome origin-attribution graph.",
+    "Build BR carrier-window transform table with licensed and rejected permutations."
+  ]
+}

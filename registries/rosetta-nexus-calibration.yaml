@@ -1,0 +1,398 @@
+registry: rosetta-nexus-calibration
+version: 0.1.0
+updated: 2026-09-21
+status: ACTIVE_CALIBRATION
+
+purpose: >
+  Index ancient multilingual, multiscript, lexical, phonetic, and parallel-text witnesses
+  as calibration objects for crosswise transformation analysis. These witnesses are used
+  to learn how real historical representation changes behave before speculative relations
+  are promoted.
+
+parallax_levels:
+  PX0:
+    name: SAME_OCCURRENCE_MULTIROLE
+    definition: "One witnessed occurrence supports multiple declared readouts or sign roles."
+    examples: [Egyptian-polyvalent-sign, cuneiform-polyvalent-sign]
+  PX1:
+    name: SAME_OBJECT_SCRIPT_REGISTER
+    definition: "One physical object carries closely related content across different scripts/registers within the same linguistic-cultural system."
+    examples: [Rosetta-Egyptian-hieroglyphic-Demotic]
+  PX2:
+    name: SAME_OBJECT_CROSS_LANGUAGE
+    definition: "One physical object carries parallel or corresponding content in different languages."
+    examples: [Rosetta-Egyptian-Greek, Behistun, Tell-Fekheriye, Letoon]
+  PX3:
+    name: COLOCATED_OBJECT_SET
+    definition: "A deliberately associated object set carries parallel or near-parallel multilingual content."
+    examples: [Pyrgi-tablets]
+  PX4:
+    name: SAME_TEXT_EVENT_DISTRIBUTED_OBJECTS
+    definition: "Related copies or versions of one institutional text/event survive on different objects, locations, or script systems."
+    examples: [Egyptian-Hittite-treaty-tradition, Memphis-decree-copy-network]
+  PX5:
+    name: EXPLICIT_SCRIBAL_CROSSWALK
+    definition: "A lexical, sign, syllabic, or pronunciation table explicitly maps one representation to another."
+    examples: [Ebla-reading-glosses, Sumerian-Akkadian-lexical-lists, Ugaritic-KTU-5-14]
+  PX6:
+    name: ARCHIVAL_RELAY
+    definition: "A later copy, recension, translation, or administrative relay preserves a historically linked but non-colocated state."
+    examples: [Behistun-Aramaic-relay, later-lexical-traditions]
+  PX7:
+    name: STRUCTURAL_CONTROL
+    definition: "Crosswise comparison without demonstrated historical relay; used only as a null or operator control."
+    examples: [independent-multimodal-ritual-control]
+
+negative_crosswalk_state:
+  PX-N0:
+    name: NO_EXPLICIT_CROSSWALK
+    definition: "Target corpus has no secure bilingual, lexical, sign-value, or pronunciation crosswalk; decipherment must begin from internal structure and external priors."
+    examples: [Byblos-pseudo-hieroglyphic]
+
+decipherment_depth:
+  PX-D0:
+    name: KNOWN_SCRIPT_UNKNOWN_LANGUAGE
+    definition: "Script values are substantially readable, but the encoded language remains unidentified."
+  PX-D1:
+    name: LOGOGRAPHIC_SEMANTIC_ANCHORS
+    definition: "Known logograms or heterograms provide secure semantic anchors inside the unknown language."
+  PX-D2:
+    name: CANDIDATE_COGNATE_NETWORK
+    definition: "Candidate lexical correspondences are proposed across historically relevant languages."
+  PX-D3:
+    name: MORPHOSYNTACTIC_CONFIRMATION
+    definition: "Candidate readings cohere with recurring morphology and syntax."
+  PX-D4:
+    name: CORPUS_COVARIANCE
+    definition: "The hypothesis propagates across the corpus and supports language-family classification."
+
+parallax_rule: >
+  PX level is a transformation-distance descriptor, not a confidence ranking.
+  Evidence class, witness quality, chronology, and relation type remain separate.
+
+sieve_variables:
+  witness_identity:
+    - nexus_id
+    - object_id
+    - witness_date
+    - findspot
+    - provenance
+    - authority_or_institution
+  carrier_geometry:
+    - carrier_class
+    - material_substrate
+    - object_count
+    - colocation
+    - monument_or_archive_context
+    - spatial_layout
+    - direction_order
+    - damagedness
+    - completeness
+  representation:
+    - language_count
+    - languages
+    - script_count
+    - scripts
+    - register_count
+    - registers
+    - sign_role_inventory
+    - graphic_arity
+    - phonological_load
+    - root_visibility
+    - classifier_determinative_channel
+  alignment:
+    - parallax_level
+    - alignment_granularity
+    - crosswalk_explicitness
+    - parallelism_type
+    - same_referent
+    - same_proposition
+    - same_lexicalization
+    - translation_direction_known
+    - sequence_correspondence
+    - omission_expansion_reordering
+  anchors:
+    - names
+    - titles
+    - numerals
+    - dates
+    - divine_names
+    - place_names
+    - legal_formulae
+    - repeated_formulae
+    - rare_lexemes
+  transform:
+    - script_transform
+    - phonological_transform
+    - morphological_transform
+    - syntactic_transform
+    - semantic_transform
+    - register_transform
+    - institutional_transform
+  validation:
+    - crosswalk_degree
+    - effective_crosswalk_degree
+    - anchor_density
+    - crosswalk_depth
+    - decipherment_entropy
+    - value_assignment_entropy
+    - cycle_rank
+    - holdout_prediction_score
+    - covariance
+    - cycle_consistency
+    - divergence_rate
+    - residue
+    - conflict
+    - negative_control
+    - evidence_class
+    - calibration_weight
+    - ontology_claim_ceiling
+
+alignment_granularity:
+  G0: sign_or_grapheme
+  G1: phoneme_or_syllable
+  G2: lexeme_or_name
+  G3: phrase_or_formula
+  G4: clause_or_sentence
+  G5: proposition
+  G6: section
+  G7: document_or_event
+
+crosswalk_depth:
+  X0: no_explicit_crosswalk
+  X1: shared_context_or_proper_name
+  X2: proposition_parallel
+  X3: phrase_or_formula_parallel
+  X4: lexical_equation
+  X5: sign_value_or_pronunciation_equation
+
+parallelism_types:
+  - literal_or_near_literal
+  - functional_translation
+  - register_recasting
+  - paraphrase
+  - expansion
+  - compression
+  - legal_or_institutional_equivalence
+  - pronunciation_gloss
+  - lexical_equation
+  - sign_equation
+  - recension
+  - later_relay
+
+calibration_objects:
+  - id: RN01
+    name: Memphis-Rosetta
+    data_path: data/calibration/rosetta-memphis-first-alignment.yaml
+    carrier_class: stele_fragment
+    parallax_levels: [PX1, PX2]
+    languages: [Egyptian, Greek]
+    scripts: [Hieroglyphic, Demotic, Greek-alphabet]
+    alignment_granularity: [G2, G3, G4, G5, G6]
+    primary_use: "script/register and cross-language decree triangulation"
+    anchors: [royal_names, titles, dates, priestly_formulae]
+    status: calibration_anchor
+
+  - id: RN02
+    name: Behistun
+    data_path: data/calibration/behistun-first-alignment.yaml
+    carrier_class: monumental-rock-inscription
+    parallax_levels: [PX2, PX6]
+    languages: [Old-Persian, Elamite, Babylonian-Akkadian]
+    scripts: [Old-Persian-cuneiform, Elamite-cuneiform, Babylonian-cuneiform]
+    alignment_granularity: [G2, G3, G4, G5, G6]
+    primary_use: "imperial multilingual transformation and name/title calibration"
+    anchors: [royal_names, ethnonyms, titles, places, numerals, formulae]
+    status: calibration_anchor
+
+  - id: RN03
+    name: Tell-Fekheriye
+    data_path: data/calibration/tell-fekheriye-first-alignment.yaml
+    carrier_class: inscribed-statue
+    parallax_levels: [PX2]
+    languages: [Akkadian, Aramaic]
+    scripts: [cuneiform, Aramaic-alphabet]
+    alignment_granularity: [G2, G3, G4, G5]
+    primary_use: "Semitic bilingual morphology/syntax/semantic transport"
+    anchors: [names, titles, divine_names, dedicatory_formulae]
+    status: calibration_anchor
+
+  - id: RN04
+    name: Karatepe-Cinekoy
+    data_path: data/calibration/karatepe-cinekoy-first-alignment.yaml
+    carrier_class: monumental-inscription-complex
+    parallax_levels: [PX2, PX4]
+    languages: [Phoenician, Luwian]
+    scripts: [Phoenician-alphabet, Hieroglyphic-Luwian]
+    alignment_granularity: [G2, G3, G4, G5, G6]
+    primary_use: "cross-family, cross-script monumental comparison"
+    anchors: [royal_names, titles, places, divine_names, political_formulae]
+    status: calibration_anchor
+
+  - id: RN05
+    name: Letoon
+    carrier_class: stele
+    parallax_levels: [PX2]
+    languages: [Lycian, Greek, Aramaic]
+    scripts: [Lycian-alphabet, Greek-alphabet, Aramaic-alphabet]
+    alignment_granularity: [G2, G3, G4, G5, G6]
+    primary_use: "trilingual institutional/legal comparison"
+    anchors: [names, titles, legal_formulae, divine_names]
+    status: calibration_anchor
+
+  - id: RN06
+    name: Pyrgi
+    carrier_class: gold-tablet-set
+    parallax_levels: [PX3]
+    languages: [Etruscan, Phoenician]
+    scripts: [Etruscan-alphabet, Phoenician-alphabet]
+    alignment_granularity: [G2, G3, G5, G6]
+    primary_use: "co-deposited bilingual/near-parallel dedication control"
+    anchors: [names, titles, divine_names, dedicatory_formulae]
+    note: "Do not assume line-for-line translation; encode divergence explicitly."
+    status: calibration_anchor
+
+  - id: RN07
+    name: Ebla-sign-and-lexical-lists
+    data_path: data/calibration/ebla-sign-lexical-first-alignment.yaml
+    carrier_class: clay-tablets
+    parallax_levels: [PX5]
+    languages: [Sumerian, Eblaite-Semitic]
+    scripts: [cuneiform]
+    alignment_granularity: [G0, G1, G2]
+    primary_use: "early sign/readout and lexical-equation calibration"
+    anchors: [sign_values, lexical_equations, reading_glosses]
+    status: calibration_anchor
+
+  - id: RN08
+    name: Ugarit-KTU-5-14
+    data_path: data/calibration/ugarit-ktu-5-14-crosswalk.yaml
+    carrier_class: clay-tablet
+    parallax_levels: [PX5]
+    languages: [Ugaritic, Akkadian]
+    scripts: [Ugaritic-alphabetic-cuneiform, Akkadian-logo-syllabic-cuneiform]
+    alignment_granularity: [G0, G1]
+    primary_use: "consonant-to-syllabic pronunciation/readout crosswalk"
+    anchors: [letter_order, consonantal_values, syllabic_approximations]
+    status: calibration_anchor
+
+  - id: RN09
+    name: Sumerian-Akkadian-lexical-traditions
+    carrier_class: clay-tablets
+    parallax_levels: [PX5, PX6]
+    languages: [Sumerian, Akkadian]
+    scripts: [cuneiform]
+    alignment_granularity: [G0, G1, G2, G3]
+    primary_use: "carrier/readout, lexical-equation, and scribal-custody calibration"
+    anchors: [logograms, readings, lexical_equations, technical_terms]
+    status: calibration_anchor
+
+  - id: RN10
+    name: Egyptian-Hittite-treaty-tradition
+    data_path: data/calibration/egyptian-hittite-treaty-first-alignment.yaml
+    carrier_class: distributed-monumental-and-tablet-witnesses
+    parallax_levels: [PX4]
+    languages: [Egyptian, Akkadian]
+    scripts: [Egyptian-hieroglyphic, cuneiform]
+    alignment_granularity: [G3, G4, G5, G6, G7]
+    primary_use: "same diplomatic event/text across separate carriers and institutional settings"
+    anchors: [royal_names, divine_names, treaty_formulae, obligations, curses]
+    status: calibration_anchor
+
+  - id: RN11
+    name: Hittite-Decipherment-Corpus
+    data_path: studies/hittite-decipherment-crosswise-calibration.md
+    carrier_class: distributed-cuneiform-tablet-archive
+    parallax_levels: [PX6]
+    decipherment_depth: [PX-D0, PX-D1, PX-D2, PX-D3, PX-D4]
+    languages: [Hittite, Sumerian-logograms, Akkadian-heterograms]
+    scripts: [cuneiform]
+    alignment_granularity: [G0, G1, G2, G3, G4, G5]
+    primary_use: "known-script unknown-language decipherment covariance"
+    anchors: [NINDA-logogram, watar, ed-ezz, verbal-endings, recurring-morphology]
+    status: calibration_anchor
+
+  - id: RN12
+    name: Byblos-undeciphered-script
+    data_path: studies/byblos-script-undeciphered-negative-calibration.md
+    sequence_graph: data/calibration/byblos-sequence-graph-v0.1.json
+    tablet_d_validation: data/calibration/byblos-tablet-d-validation-v0.1.json
+    chart_observation: data/calibration/byblos-chart-observation-v0.1.yaml
+    carrier_class: bronze-and-stone-inscriptions
+    parallax_levels: [PX7]
+    negative_crosswalk_state: [PX-N0]
+    decipherment_depth: [PX-D0]
+    languages: [unknown]
+    scripts: [Byblos-pseudo-hieroglyphic]
+    alignment_granularity: [G0, G1]
+    primary_use: "negative decipherment control: small corpus, uncertain sign normalization, unknown language, no secure explicit crosswalk"
+    anchors: [sign-frequency, medium-distribution, repeated-sequences, positional-behavior]
+    status: negative_calibration_anchor
+
+  - id: RN13
+    name: Ugarit-multilingual-archive-hub
+    data_path: studies/multilingual-anchor-density-decipherment-entropy.md
+    cycle_graph: data/calibration/ugarit-multilingual-cycle-consistency-v0.1.yaml
+    cycle_residuals: data/calibration/ugarit-cycle-residuals-v0.1.yaml
+    positive_negative_experiment: studies/byblos-ugarit-positive-negative-decipherment-experiment.md
+    carrier_class: multilingual-clay-tablet-archive
+    parallax_levels: [PX2, PX5, PX6]
+    languages: [Ugaritic, Akkadian, Sumerian, Hurrian, Hittite, Luwian]
+    scripts: [Ugaritic-alphabetic-cuneiform, logo-syllabic-cuneiform, Hieroglyphic-Luwian]
+    alignment_granularity: [G0, G1, G2, G3, G4, G5]
+    primary_use: "high-degree multilingual crosswalk network and cycle-consistency calibration"
+    anchors: [lexical-equations, sign-readouts, bilingual-tablets, trilingual-dictionaries, quadrilingual-crosswalks]
+    status: calibration_hub
+
+  - id: RN14
+    name: Aphek-Antipatris-trilingual-lexicon
+    data_path: data/calibration/aphek-trilingual-source-lock-v0.1.yaml
+    carrier_class: lexical-tablet
+    parallax_levels: [PX5]
+    languages: [Sumerian, Akkadian, Canaanite]
+    scripts: [cuneiform]
+    alignment_granularity: [G1, G2]
+    primary_use: "compact lexical crosswalk linking Sumerian, Akkadian and Canaanite"
+    anchors: [lexical-equations, readouts]
+    status: bibliographically_source_locked_rows_pending
+
+processing_order:
+  - LOCK_WITNESS
+  - ASSIGN_PARALLAX_LEVEL
+  - INDEX_CARRIER_GEOMETRY
+  - ALIGN_ANCHORS
+  - ALIGN_BY_GRANULARITY
+  - TYPE_PARALLELISM
+  - MEASURE_TRANSFORMS
+  - TEST_COVARIANCE
+  - TEST_CYCLE_CONSISTENCY
+  - MEASURE_DIVERGENCE
+  - RECORD_RESIDUE
+  - APPLY_NEGATIVE_CONTROLS
+  - PROMOTE_OR_SURGERY
+
+governing_invariants:
+  - "same object does not imply literal translation"
+  - "same event does not imply same lexicalization"
+  - "same script does not imply same language"
+  - "same language does not imply same register"
+  - "co-location strengthens historical linkage but does not erase divergence"
+  - "explicit ancient crosswalk outranks retrospective resemblance for calibration"
+  - "parallax depth is not confidence"
+
+
+calibration_status:
+  RN01: first_alignment_complete
+  RN02: first_alignment_complete
+  RN03: first_alignment_complete
+  RN04: first_alignment_complete
+  RN05: queued
+  RN06: queued
+  RN07: first_alignment_complete
+  RN08: first_alignment_complete
+  RN09: queued
+  RN10: first_alignment_complete
+  RN11: first_alignment_complete
+  RN12: tablet_d_validation_complete_holdout_still_blind
+  RN13: row_residual_pass_complete
+  RN14: bibliographically_source_locked_rows_pending

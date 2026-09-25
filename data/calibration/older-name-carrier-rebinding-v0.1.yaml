@@ -1,0 +1,54 @@
+version: "0.1"
+date: "2026-09-24"
+id: OLDER_NAME_CARRIER_REBINDING
+status: FIRST_SOURCE_LOCK
+
+anchors:
+  CAMBYSES:
+    carrier_orbit:
+      Old_Persian: Kambujiya
+      Elamite: Kanbuziya
+      Babylonian: Kambuziya
+      Greek: Kambyses
+    etymology_status: disputed
+    controls:
+      - "carrier identity can be strong while lexical decomposition is weak"
+      - "Cambyses I / II demonstrate dynastic carrier reuse"
+    egyptian_reencoding:
+      source: Udjahorresnet
+      local_royal_name: Mesutire
+      transform: TRN-02
+      result: "same entity gains local sacral-office identity under changed jurisdiction"
+
+  DEUKALION:
+    mycenaean_form: de-u-ka-ri-jo
+    tablet: "PY An 654.12"
+    bronze_age_role: "officer in a military unit"
+    later_roles:
+      - flood_survivor
+      - king
+      - ancestor_of_Hellen
+      - Cretan_genealogical_name
+      - Trojan_warrior_name
+    transform: NAME-03
+    result: "name carrier predates surviving full mythic role and is not role-exclusive"
+    genealogy_compression:
+      path: [Deukalion,Hellen,Dorus_Xuthus_Aeolus,Dorians_Ionians_Achaeans_Aeolians]
+    phonetic_narrative_control:
+      example: "laas stone ~ laos people"
+
+operators:
+  NAME-02:
+    name: DYNASTIC_CARRIER_REUSE
+    rule: "same inherited royal name does not imply same entity or episode"
+  NAME-03:
+    name: PREEXISTING_NAME_TO_MYTHIC_ROLE_REBINDING
+    rule: "attested older personal name may later become concentrated in a mythic role"
+  TRN-02:
+    name: LOCAL_SOVEREIGNTY_RENAMING
+    path: [FOREIGN_RULER,LOCAL_OFFICE,LOCAL_SACRAL_TITULARY]
+
+negative_controls:
+  - "CAM/KAM surface overlap is not evidence of Cambyses-Camillus identity"
+  - "flood-compatible Deukalion etymology is not proven by the later flood story"
+  - "same name carrier does not imply same person"

@@ -1,0 +1,28 @@
+version: "0.1"
+date: "2026-09-23"
+id: NEXUS_TRANSPOSITION_RECOVERED_OPERATORS
+status: ADOPTED_LEGACY_RECOVERY
+protocol: docs/architecture/nexus-transposition-recovered-operators-v0.1.md
+operators:
+  CARRIER_ORBIT:
+    definition: "O(K)={K,tau_1(K),...,tau_n(K)} under frozen transformation grammar"
+  CARRIER_OPERATOR_COUPLING:
+    status: experimental_hypothesis
+    bidirectional_test: ["P(O|K)>P(O)","P(K|O)>P(K)"]
+  PHASESHIFT:
+    rule: "process identity may persist while lexical witnesses occupy different process positions"
+  PARALLEL_READOUT:
+    rule: "one carrier or semantic address may support multiple language-specific readouts"
+  SEMANTIC_BACK_PROJECTION:
+    rule: "later receiving-language interpretation is real reception data but not automatically earlier etymology"
+  HONORIFIC_TRANSPOSITION:
+    position_axes: [phonological,graphical,syntactic,semantic_rank]
+calibrations:
+  same_language_different_carrier: [Greek, Egyptian_Coptic, Luwian, Aramaic_Syriac, Elamite]
+  same_carrier_different_language: [Sumerogram_Akkadian,Hittite_heterogram,bilingual_lexical_list,multilingual_monument]
+bindings:
+  - linguistic_core
+  - asl_w4_3
+  - elamite_carrier_pivot
+  - structural_continuation_gate_dynamics
+  - rosetta_nexus_calibration

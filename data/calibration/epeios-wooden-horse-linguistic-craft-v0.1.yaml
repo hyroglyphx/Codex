@@ -1,0 +1,65 @@
+version: "0.1"
+date: "2026-09-25"
+id: EPEIOS_WOODEN_HORSE_LINGUISTIC_CRAFT
+status: SOURCE_LOCKED_FIRST_PASS
+
+anchors:
+  ODYSSEY_8:
+    text: "ἵππου κόσμον ... δουρατέου, τὸν Ἐπειὸς ἐποίησεν σὺν Ἀθήνῃ"
+    functions: [kosmos,poiesis,wooden_horse,Athena,Epeios]
+    operators: [CRAFT-01,NAME-CAND-15]
+
+  LINEAR_B:
+    horse: "i-qo = hikkwos / later hippos"
+    carpenter: "te-ko-to-ne = tektones"
+    operator: CRAFT-02
+
+  APOLLODORUS_5_14:
+    chain: [Odysseus_designs,Epeios_architekton,Ida_timber,hollow_horse]
+    operator: CRAFT-03
+
+  ILIAD_23:
+    Epeios: [excellent_boxer,lesser_warrior,skill_specialization]
+    operator: CRAFT-04
+
+  EURIPIDES_TROJAN_WOMEN:
+    terms: [mechanai_Pallados,engkumon_hippon,xunarmosas,bretas,krypton_dory]
+    operators: [OBJ-01,OBJ-02]
+
+  EPEIOI:
+    ethnonym: "Ἐπειοί"
+    personal_adjective: "Ἐπειός"
+    operator: NAME-CAND-16
+
+  PANOPEUS:
+    maker_cluster: [Epeios_wood,Prometheus_clay_local_tradition]
+    operator: GEO-CAND-01
+
+operators:
+  CRAFT-01:
+    name: KOSMOS_POIESIS_CRAFT_RELAY
+  CRAFT-02:
+    name: BRONZE_AGE_TEKTON_CONTINUITY
+  CRAFT-03:
+    name: DESIGN_IMPLEMENTATION_SPLIT
+  CRAFT-04:
+    name: SPECIALIZED_SKILL_OVER_GENERIC_HEROISM
+  NAME-CAND-15:
+    name: EPEIOS_EPOIESEN_PHONEMIC_FUNCTION_ATTRACTION
+    status: reception_not_etymology
+  NAME-CAND-16:
+    name: EPEIOI_EPEIOS_ETHNONYM_PERSON_REBINDING
+    status: explore_only
+  OBJ-01:
+    name: CONTAINER_TO_WOMB_RESEGMENTATION
+  OBJ-02:
+    name: OBJECT_CLASSIFIER_REBINDING
+  GEO-CAND-01:
+    name: PANOPEUS_MAKER_CLUSTER
+    status: later_local_reception
+
+firewalls:
+  - "Epeios son of Endymion != Epeios son of Panopeus"
+  - "Epeios epoiēsen wordplay != proven name etymology"
+  - "Linear B tekton/horse vocabulary != Linear B attestation of Epeios"
+  - "Panopeus Prometheus tradition is later local clustering, not origin proof"

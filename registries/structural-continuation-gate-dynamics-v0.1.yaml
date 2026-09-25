@@ -1,0 +1,30 @@
+
+structural_continuation_gate_dynamics:
+  version: 0.1.0
+  date: 2026-09-22
+  status: ACTIVE_EXPERIMENTAL
+  protocol: docs/architecture/structural-continuation-gate-dynamics-v0.1.md
+  continuation_operator: "Gamma(X)=(P,T,A,L,I,R)"
+  invariant_seed: "E(X)=(I_return,H_path,A_memory,O_orientation)"
+  pipeline: "gate -> route -> accumulation -> lift -> interference -> basin -> attractor -> return"
+  components:
+    gate_space: SY_231
+    directed_transports: 462
+    address: GFSB_13x21
+    contraction: Euler_phi
+    path_memory: Faulhaber_candidate
+    dynamics: RTC_candidate
+    orientation: noncommuting_operator_lift
+    spectral_test: graph_Laplacian
+    geometry_test: Voronoi_Delaunay
+    independent_control: Marduk_functional_graph
+  binding_nulls:
+    - "GA-14 S-S mod60 crest enrichment rejected"
+    - "GA-15 15/17 FF-set intersection not independently promoted"
+  unresolved:
+    - historical_Faulhaber_Fibonacci_generator
+    - RTC_Noniusmulti_definition
+    - RTC_Octochord_definition
+    - exact_Mills_Chladni_Zhang_coupling
+  benchmarks: [SCG-01,SCG-02,SCG-03,SCG-04,SCG-05,SCG-06,SCG-07,SCG-08,SCG-09,SCG-10]
+  hard_rule: "same return does not imply same path; cross-corpus invariant does not imply transmission"

@@ -1,0 +1,210 @@
+dataset: bruce-askew-operational-crosswalk
+version: 0.1.0
+updated: 2026-09-22
+status: SOURCE_CONSULTED_STRUCTURAL_CALIBRATION
+
+purpose: >
+  Encode procedural and hermeneutic lessons from the Bruce and Askew codices
+  without collapsing manuscript identity, referenced-work identity, ritual
+  prescription, and historical performance.
+
+sources:
+  - id: BRUCE_NASSCAL
+    url: https://www.nasscal.com/e-clavis-christian-apocrypha/books-of-jeu/
+    role: scholarly_overview
+  - id: BRUCE_SCHMIDT_MACDERMOT
+    url: https://www.gnosis.org/library/bookss.htm
+    role: edition_summary_and_manuscript_history
+  - id: BRUCE_FULL_TRANSLATION
+    url: https://thelostbooks.org/wp-content/uploads/2024/11/The-Books-of-Jeu-and-The-Untitled-Text-in-The-Bruce-Codex.pdf
+    role: translation_and_content_summary
+  - id: ASKEW_BRITISH_LIBRARY
+    url: https://searcharchives.bl.uk/
+    shelfmark: Add_MS_5114
+    role: manuscript_catalogue
+  - id: PISTIS_CANON
+    url: https://academic.oup.com/jts/article/73/2/649/6815670
+    role: scholarly_analysis_of_internal_scriptural_solutions
+  - id: LUNDHAUG_2023
+    url: https://journals.sagepub.com/doi/10.1177/09518207231152828
+    role: caution_on_identifying_Askew_referenced_Jeu_with_extant_Bruce_texts
+  - id: JOHNSTON_2015
+    url: https://poj.peeters-leuven.be/content.php?id=3132120&url=article
+    role: literary_proximity_between_Askew_Book_4_and_Bruce_Jeu
+  - id: EVANS_2012
+    url: https://era.ed.ac.uk/items/98432d44-2e2e-4134-8362-5a7f03fcba10
+    role: coherent_group_system_and_practice_hypothesis
+
+witnesses:
+  Bruce:
+    physical_witness: Bodleian_Bruce_96
+    language: Coptic
+    script: Coptic
+    material: papyrus
+    order_state: editorially_reconstructed
+    modern_title_issue: "Books of Jeu is a scholarly identification/title, not a secure manuscript-wide self-title"
+    practice_status: prescribed_and_narrated
+  Askew:
+    physical_witness: British_Library_Add_MS_5114
+    language: Coptic
+    script: Coptic
+    material: parchment
+    scribes: 2
+    divisions: multiple_books_or_units
+    modern_title_issue: "Pistis Sophia is conventional umbrella usage; internal divisions/titles must be preserved"
+    practice_status: narrated_prescribed_and_interpreted
+
+identity_hypotheses:
+  - id: BA-H01
+    proposition: "The extant Bruce texts are exactly the two Books of Jeu referenced in the Askew Codex."
+    status: disputed_candidate
+    support:
+      - thematic_and_systemic_proximity
+      - longstanding_scholarly_identification
+    counterweight:
+      - Askew_Enochic_provenance_not_confirmed_inside_Bruce_texts
+      - no_direct_manuscript_equation
+    claim_ceiling: C4
+  - id: BA-H02
+    proposition: "Bruce and Askew corpora belong to closely related literary/religious systems."
+    status: supported_scholarly_model
+    support:
+      - Johnston_literary_proximity
+      - Evans_system_practice_group_argument
+    claim_ceiling: C2_C3
+  - id: BA-H03
+    proposition: "One surviving corpus directly copied the other."
+    status: unresolved
+    claim_ceiling: C4
+
+procedural_states:
+  - id: BOJ-P01
+    corpus: Bruce_Jeu
+    state_address: treasury_or_rank
+    modalities:
+      graphic: seal_or_diagram
+      phonetic: name_formula_invocation
+      object: cipher_held_or_used
+      ritual: sealing_offering_baptism
+      spatial: veil_gate_treasury
+      ordinal: ordered_passage
+    recognition_agent: watcher_rank_or_archonic_gate
+    outcome: passage_to_next_state
+    ox_depth: OX5
+    evidence: textual_prescription
+    performance_status: not_independently_attested_by_this_text_alone
+
+  - id: BOJ-P02
+    corpus: Bruce_Jeu
+    state_address: baptisms
+    modalities:
+      - water
+      - fire
+      - Holy_Spirit
+      - bread_wine_offering
+      - incense
+      - sealing
+      - invocation
+    outcome: purification_and_authorization_in_text
+    ox_depth: OX5
+    evidence: textual_prescription
+
+  - id: ASK-P01
+    corpus: Askew_Pistis_Sophia
+    state_address: soul_bond_state
+    input_state: seals_and_bonds_from_rulers
+    operator: mystery_of_undoing
+    output_state: released_from_counterfeiting_spirit_and_destiny
+    ox_depth: OX5
+    evidence: narrated_doctrinal_procedure
+
+  - id: ASK-P02
+    corpus: Askew_Pistis_Sophia
+    state_address: postmortem_regional_passage
+    modalities:
+      - mystery
+      - seal
+      - apology
+      - praise
+      - region_order
+    recognition_agent: rulers_Virgin_of_Light_receivers
+    outcome: ordered_passage_or_reclassification
+    ox_depth: OX5
+    evidence: narrated_doctrinal_procedure
+
+hermeneutic_crosswalks:
+  - id: ASK-HX01
+    source_state: Pistis_Sophia_repentenace_or_praise
+    target_state: Psalm_or_Ode
+    mapping_role: declared_solution_interpretation
+    crosswalk_type: HERMENEUTIC_CROSSWALK
+    independence: internal_dependent
+    note: >
+      Strong evidence for the author's interpretive mapping, not an independent
+      witness to the narrated event.
+  - id: ASK-HX02
+    source_state: Jesus_saying
+    target_state: scriptural_prooftext
+    mapping_role: prophetic_or_authoritative_reframing
+    crosswalk_type: HERMENEUTIC_CROSSWALK
+    independence: internal_dependent
+
+witness_architecture:
+  - id: ASK-W01
+    represented_witnesses: [Philip, Thomas, Matthew]
+    role: designated_scribes_witnesses_inside_narrative
+    effective_manuscript_independence: 1
+    rule: "represented witness count != surviving independent witness count"
+
+new_variables:
+  - CODEX_ID
+  - TEXTUAL_WORK_ID
+  - INTERNAL_TITLE
+  - MODERN_TITLE
+  - TITLE_PROVENANCE
+  - REFERENCED_WORK_ID
+  - EXTANT_WORK_IDENTIFICATION_CONFIDENCE
+  - SCRIBE_ID
+  - QUIRE_ID
+  - ORDER_PROVENANCE
+  - PRACTICE_STATUS
+  - HERMENEUTIC_CROSSWALK
+  - CREDENTIAL_SCOPE
+  - CREDENTIAL_JURISDICTION
+  - CREDENTIAL_SEQUENCE
+  - RECOGNITION_AGENT
+  - FAILURE_MODE
+  - OX_DEPTH
+  - CR_EXTERNAL
+  - CR_INTERNAL
+  - SIGN_FUNCTION_CLASS
+
+operational_crosswalk_depth:
+  OX0: token_or_symbol_only
+  OX1: token_plus_named_role
+  OX2: token_plus_state_or_jurisdiction
+  OX3: token_plus_ordered_procedure
+  OX4: procedure_plus_recognition_or_verification
+  OX5: procedure_plus_declared_state_transition_or_result
+
+recursive_rules:
+  - "PHYSICAL CODEX != TEXTUAL WORK != MODERN TITLE"
+  - "REFERENCED WORK != EXTANT WITNESS"
+  - "PRESCRIPTIVE RITUAL != INDEPENDENTLY ATTESTED PERFORMANCE"
+  - "SAME TOKEN FORM != SAME CREDENTIAL FUNCTION without jurisdiction match"
+  - "RITUAL TOKEN SET != RITUAL PROCEDURE"
+  - "AUTHORIAL SELF-EXEGESIS != INDEPENDENT EXTERNAL CROSSWALK"
+  - "REPRESENTED WITNESS COUNT != EFFECTIVE INDEPENDENT WITNESS COUNT"
+  - "EDITORIAL ORDER must carry provenance"
+
+current_project_effects:
+  Byblos:
+    - "Add SIGN_FUNCTION_CLASS alternative before phonetic interpretation."
+    - "Do not assume recurrent node == grapheme."
+    - "Preserve inscription reconstruction/order provenance in every sequence graph."
+  Ugarit:
+    - "Split external cycle rank from internal/copy-family cycle rank."
+  Rosetta_Nexus:
+    - "Add crosswalk provenance: external parallel vs internal hermeneutic vs editorial reconstruction."
+  synchronous_state_harmonics:
+    - "Add credential jurisdiction and sequence order; synchronization is state-local, not universal."

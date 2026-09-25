@@ -1,0 +1,152 @@
+dataset: calibrator-scorecard
+version: 0.1.0
+updated: 2026-09-21
+status: FROZEN_EXPLORATORY
+weights: registries/calibrated-transform-weights-v0.1.yaml
+
+score_note: >
+  Alignment scores are heuristic bookkeeping values, not probabilities.
+  They quantify how useful each witness is as a calibration object at its declared
+  granularity. Domain weights show which kinds of transformation each calibrator
+  is allowed to teach most strongly.
+
+calibrators:
+  - id: RN01
+    name: Memphis-Rosetta
+    components:
+      witness_quality: 1.00
+      explicit_crosswalk: 0.90
+      semantic_address_match: 0.98
+      alignment_granularity_fit: 0.95
+      cross_witness_covariance: 0.90
+      chronology_control: 1.00
+      negative_control_survival: 0.90
+    alignment_score: 0.948
+    domain_weights:
+      script_register: 1.00
+      phonology: 0.35
+      morphology: 0.60
+      syntax: 0.75
+      semantics: 0.95
+      titulary_onomastics: 0.90
+      institutional_register: 1.00
+      temporal_sequence: 0.45
+      damage_model: 1.00
+    strongest_use: "same-decree script/register and semantic-address calibration"
+    main_limit: "upper hieroglyphic block is damaged; not ideal for fine phonological reconstruction"
+
+  - id: RN02
+    name: Behistun
+    components:
+      witness_quality: 1.00
+      explicit_crosswalk: 0.90
+      semantic_address_match: 0.95
+      alignment_granularity_fit: 0.90
+      cross_witness_covariance: 0.85
+      chronology_control: 0.95
+      negative_control_survival: 0.90
+    alignment_score: 0.925
+    domain_weights:
+      script_register: 0.85
+      phonology: 0.65
+      morphology: 0.75
+      syntax: 0.80
+      semantics: 0.90
+      titulary_onomastics: 1.00
+      institutional_register: 0.90
+      temporal_sequence: 1.00
+      audience_specific_expansion: 1.00
+    strongest_use: "temporal parallax, onomastic filtering, editorial divergence, discourse-frequency calibration"
+    main_limit: "versions are not a single simultaneous translation event"
+
+  - id: RN03
+    name: Tell-Fekheriye
+    components:
+      witness_quality: 1.00
+      explicit_crosswalk: 0.95
+      semantic_address_match: 0.95
+      alignment_granularity_fit: 0.95
+      cross_witness_covariance: 0.90
+      chronology_control: 0.95
+      negative_control_survival: 0.90
+    alignment_score: 0.949
+    domain_weights:
+      script_register: 0.85
+      phonology: 0.70
+      morphology: 0.90
+      syntax: 0.90
+      semantics: 0.95
+      titulary_onomastics: 0.90
+      legal_ritual_operator: 1.00
+      local_translation_direction: 0.90
+      internal_recension: 0.80
+    strongest_use: "phrase-level operator preservation under non-slavish lexical translation"
+    main_limit: "local translation direction remains a scholarly reconstruction rather than an inscriptional label"
+
+  - id: RN08
+    name: Ugarit-KTU-5-14
+    components:
+      witness_quality: 1.00
+      explicit_crosswalk: 1.00
+      semantic_address_match: 0.90
+      alignment_granularity_fit: 1.00
+      cross_witness_covariance: 0.80
+      chronology_control: 0.95
+      negative_control_survival: 0.90
+    alignment_score: 0.941
+    domain_weights:
+      script_register: 1.00
+      phonology: 1.00
+      morphology: 0.10
+      syntax: 0.05
+      semantics: 0.20
+      inventory_loss: 1.00
+      approximation_cost: 1.00
+      letter_order: 1.00
+    strongest_use: "explicit sign-to-syllabic pronunciation/readout calibration"
+    main_limit: "Akkadian syllabic rendering is lossy and does not encode every Ugaritic phonological distinction"
+
+  - id: RN07
+    name: Ebla-sign-and-lexical-lists
+    components:
+      witness_quality: 0.95
+      explicit_crosswalk: 0.95
+      semantic_address_match: 0.90
+      alignment_granularity_fit: 0.95
+      cross_witness_covariance: 0.85
+      chronology_control: 0.90
+      negative_control_survival: 0.90
+    alignment_score: 0.918
+    domain_weights:
+      sign_reading: 1.00
+      phonology: 0.75
+      morphology: 0.45
+      syntax: 0.10
+      semantics: 1.00
+      lexical_equation: 1.00
+      copy_covariance: 1.00
+      orthographic_variation: 0.95
+      lexical_variation: 0.95
+      redaction_sequence: 0.85
+    strongest_use: "sign/readout, lexical-equation and copy-to-copy divergence calibration"
+    main_limit: "a lexical equation aligns semantic address but does not by itself establish cognacy"
+
+aggregate_policy:
+  global_alignment_mean: 0.936
+  use: >
+    The mean is descriptive only. Candidate scoring does not average all calibrators blindly.
+    Each candidate draws only on calibrators relevant to its transform domains.
+  transform_routing:
+    phonological_approximation: [RN08, RN07, RN03]
+    lexical_semantic_equivalence: [RN07, RN03, RN01]
+    morphology_syntax: [RN03, RN02]
+    onomastic_transposition: [RN02, RN01, RN03]
+    script_register: [RN01, RN08, RN02]
+    temporal_editorial_parallax: [RN02, RN07]
+    damage_missingness: [RN01, RN08]
+    operator_preservation: [RN03, RN01, RN02]
+
+freeze_rule: >
+  Version 0.1 remains fixed while the first candidate family is tested.
+  Changes to weights require a new version and a reason trace; they may not be
+  tuned retroactively to rescue a favored candidate.

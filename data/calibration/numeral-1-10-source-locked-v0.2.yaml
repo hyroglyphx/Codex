@@ -1,0 +1,361 @@
+dataset: numeral-1-10-source-locked
+version: 0.2.0
+updated: 2026-09-21
+status: SOURCE_LOCKED_WITH_TYPED_UNCERTAINTY
+
+purpose: >
+  Extend the numeral carrier experiment from digits 3-10 to 1-10 and add
+  Proto-Kartvelian, Uralic branch controls, Hurrian, Etruscan, Basque and Iberian.
+  Every row is typed by reconstruction/attestation status and may be excluded
+  from statistical counting when the value assignment or ancestral level is insecure.
+
+feature_definition:
+  strict:
+    onset: "sibilant or affricated-sibilant class"
+    later_segment: "[p,b,f,φ,β,w]"
+  broad:
+    onset: "sibilant or coronal-sibilant class"
+    later_segment: "[p,b,f,φ,β,w,m]"
+  morphology_policy: >
+    Primary counting uses ROOT/STEM-NORMALIZED forms and excludes transparent
+    inflectional endings when these are independently identifiable.
+    Surface-form counts are retained only as a sensitivity analysis.
+  frozen_before_v0_2_counting: true
+
+sources:
+  proto_semitic:
+    url: https://onlinelibrary.wiley.com/doi/full/10.1111/1467-968x.70003
+    note: "Suchard 2026, Table 1 gives Proto-Semitic cardinal stems one-ten."
+  egyptian:
+    url: https://en.wikipedia.org/wiki/Egyptian_numerals
+    underlying_sources: [Callender-1975, Loprieno-1995]
+    note: "Used for the traditional Middle Egyptian transliterations; stem-normalized carrier excludes transparent gender/number endings where justified."
+  proto_indo_european:
+    url: https://lrc.la.utexas.edu/lex/master/1698
+    supplementary: https://en.wiktionary.org/wiki/Reconstruction:Proto-Indo-European/o%E1%B8%B1t%E1%B9%93w
+    note: "Standard PIE numeral reconstructions."
+  sumerian:
+    url: https://oracc.museum.upenn.edu/dcclt/signlists/Q000154.193.3
+    note: "ORACC lexical/sign-list evidence for numeral readings."
+  proto_kartvelian:
+    sources:
+      two: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/jor-
+      three: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/sam-
+      four: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/otxo-
+      five: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/xut-
+      six: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/eks%E2%82%81w-
+      seven: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/%C5%A1wid-
+      eight: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/arwa-
+      nine: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/c%E2%82%81xar-
+      ten: https://en.wiktionary.org/wiki/Reconstruction:Proto-Kartvelian/at-
+    underlying_references: [Klimov-1998, Fähnrich-Sarjveladze-2000, Fähnrich-2007]
+    note: >
+      One is not counted as a secure Common Kartvelian reconstruction in this matrix.
+      Six is explicitly analyzed in this literature stream as derived from PIE *sweks;
+      seven has uncertain deeper etymology and has been compared with both Semitic and PIE.
+  uralic:
+    url: https://uralonet.nytud.hu/
+    note: >
+      Uralonet/UEW does not support treating the project's old 'Proto-Uralic seven'
+      as one secure whole-family reconstruction. Finno-Permic and Ugric seven forms
+      are therefore represented as separate branch controls.
+  hurrian:
+    source: "Ilse Wegner, Introduction to the Hurrian Language"
+    web_reference: https://www.scribd.com/document/358381407/Wegner-I-Introduction-to-the-Hurrian-Language-2000-pdf
+    note: "Attested Hurrian cardinal-number table; some readings remain uncertain."
+  etruscan:
+    url: https://journals.phil.muni.cz/graeco-latina-brunensia/article/view/42413
+    supplementary: https://www.researchgate.net/publication/307735978_Etruscan_numerals
+    note: >
+      Modern scholarship summarizes the lower numerals, but value assignments remain
+      disputed in parts of the series, especially 4/6 and to a lesser extent 7-9.
+  basque:
+    url: https://www.buber.net/Basque/Euskara/Larry/WebSite/basque.sketch.php
+    source_author: R_L_Trask
+    note: "Attested Basque lower numerals."
+  iberian:
+    url: https://www.researchgate.net/publication/397762969_Los_numerales_ibericos_y_su_contribucion_a_la_reconstruccion_del_protovasco
+    note: >
+      Ferrer i Jané and Orduña 2025 identify a candidate Iberian numeral system
+      from internal combinatorics. Values are not treated as equivalent in certainty
+      to securely deciphered historical languages.
+
+nodes:
+  Proto-Semitic:
+    node_type: reconstructed_ancestor
+    family: Afroasiatic-Semitic
+    forms:
+      1: "*ʕist-ān-"
+      2: "*θn-"
+      3: "*ɬalāθ-"
+      4: "*ʔarbaʕ-"
+      5: "*χam(i)s-"
+      6: "*sidθ-"
+      7: "*t͡sabʕ- / *sabʕ-"
+      8: "*θamāniy-"
+      9: "*tisʕ-"
+      10: "*ʕaɬar-"
+    strict_hits_root_normalized: [7]
+    count_status: core
+
+  Egyptian:
+    node_type: historical_language
+    family: Afroasiatic-Egyptian
+    displayed_forms:
+      1: "wꜥ(w)"
+      2: "snwj"
+      3: "ḫmtw"
+      4: "jfdw"
+      5: "djw"
+      6: "sjsw / jsw"
+      7: "sfḫw"
+      8: "ḫmnw"
+      9: "psḏw"
+      10: "mḏw"
+    stem_normalization:
+      1: "wꜥ"
+      2: "sn"
+      3: "ḫmt"
+      4: "jfd"
+      5: "dj"
+      6: "sjs / js"
+      7: "sfḫ"
+      8: "ḫmn"
+      9: "psḏ"
+      10: "mḏ"
+    strict_hits_root_normalized: [7]
+    strict_hits_surface_sensitivity: [2,6,7]
+    note: >
+      Surface masculine -w creates extra apparent labials. The calibrated sieve
+      therefore counts the stem-normalized lane as primary. Seven remains a hit
+      because f is internal; six does not.
+    count_status: core
+
+  Proto-Indo-European:
+    node_type: reconstructed_ancestor
+    family: Indo-European
+    forms:
+      1: "*h₁óynos / *sem-type alternatives not used for target"
+      2: "*dwóh₁"
+      3: "*tréyes"
+      4: "*kʷetwóres"
+      5: "*pénkʷe"
+      6: "*swéḱs"
+      7: "*septḿ̥"
+      8: "*oḱtṓw"
+      9: "*h₁néwn̥"
+      10: "*déḱm̥"
+    strict_hits_root_normalized: [6,7]
+    count_status: core
+
+  Sumerian:
+    node_type: historical_language_isolate
+    family: isolate
+    forms:
+      1: "diš"
+      2: "min"
+      3: "eš / eš₅"
+      4: "limmu"
+      5: "ia"
+      6: "aš"
+      7: "imin / umun"
+      8: "ussu"
+      9: "ilimmu"
+      10: "u"
+    strict_hits_root_normalized: []
+    count_status: core_negative_control
+
+  Proto-Kartvelian:
+    node_type: reconstructed_ancestor
+    family: Kartvelian
+    forms:
+      1: null
+      2: "*jor-"
+      3: "*sam-"
+      4: "*otxo-"
+      5: "*xut-"
+      6: "*eks₁w-"
+      7: "*šwid-"
+      8: "*arwa-"
+      9: "*c₁xar- / *c₁xra-"
+      10: "*at-"
+    strict_hits_root_normalized: [7]
+    broad_hits_root_normalized: [3,7]
+    missing: [1]
+    contact_flags:
+      6: "literature cited in reconstruction treats as derived from PIE *sweks"
+      7: "deeper origin uncertain; compared with Semitic and PIE"
+    count_status: core_with_contact_dependency
+
+  Proto-Uralic:
+    node_type: reconstructed_ancestor
+    family: Uralic
+    forms:
+      1: "whole-family status debated; FU *ükte"
+      2: "whole-family status debated; FU *käktä"
+      3: "whole-family status debated; FU *kolme"
+      4: "whole-family status debated; FU *neljä"
+      5: "Uralic/FU *witte-type"
+      6: "branch reconstructions differ"
+      7: null
+      8: null
+      9: null
+      10: "branch reconstructions differ"
+    strict_hits_root_normalized: []
+    count_status: excluded_as_whole_family
+    note: >
+      No secure whole-family Proto-Uralic seven is counted. Older project labeling
+      'Proto-Uralic S...M' is corrected to a branch-level control.
+
+  Finno-Permic-seven-control:
+    node_type: reconstructed_branch
+    family: Uralic-Finno-Permic
+    forms:
+      7: "*śeŋćemä"
+    strict_hits_root_normalized: []
+    broad_hits_root_normalized: [7]
+    count_status: branch_control_only
+
+  Ugric-seven-control:
+    node_type: reconstructed_branch
+    family: Uralic-Ugric
+    forms:
+      7: "*säptə / *θäptə"
+    strict_hits_root_normalized: [7]
+    borrowing_flag: "Uralonet explicitly derives from Iranian *septəm"
+    count_status: contact_control_only
+
+  Hurrian:
+    node_type: historical_language
+    family: Hurro-Urartian
+    forms:
+      1: "ukki / ugV-?"
+      2: "in(i)"
+      3: "kig(e)"
+      4: "tumn(i)"
+      5: "nari(ja)"
+      6: "uncertain in source table"
+      7: "ind(i)"
+      8: "kir(i/a)?"
+      9: "tamr(i)"
+      10: "eman"
+    strict_hits_root_normalized: []
+    count_status: core_negative_control_with_missingness
+
+  Etruscan:
+    node_type: historical_language
+    family: Tyrsenian
+    forms:
+      1: "θu"
+      2: "zal"
+      3: "ci"
+      4: "śa / huθ (value disputed)"
+      5: "maχ"
+      6: "huθ / śa (value disputed)"
+      7: "śemφ"
+      8: "*cezp"
+      9: "nurφ"
+      10: "śar / alternative system questions remain"
+    strict_hits_root_normalized: [7]
+    uncertainty:
+      4_6: high
+      7_9_assignment: medium
+    count_status: extended_candidate
+
+  Basque:
+    node_type: attested_language
+    family: isolate
+    forms:
+      1: "bat"
+      2: "bi"
+      3: "hiru"
+      4: "lau"
+      5: "bost"
+      6: "sei"
+      7: "zazpi"
+      8: "zortzi"
+      9: "bederatzi"
+      10: "hamar"
+    strict_hits_root_normalized: [7]
+    count_status: core_external
+
+  Iberian:
+    node_type: partially_deciphered_candidate_system
+    family: unclassified
+    forms:
+      1: "ban"
+      2: "bi(n)"
+      3: "iŕur / ilu(n)"
+      4: "lau(r)"
+      5: "bors(te)"
+      6: "śei"
+      7: "sisbi"
+      8: "sorse"
+      9: null
+      10: "(a)baŕ"
+    strict_hits_root_normalized: [7]
+    missing: [9]
+    count_status: extended_candidate
+    note: "Use only in sensitivity analysis until value assignments are more broadly established."
+
+root_normalized_strict_counts:
+  core_high_confidence:
+    included_nodes: [Proto-Semitic, Egyptian, Proto-Indo-European, Sumerian, Proto-Kartvelian, Hurrian, Basque]
+    counts:
+      1: 0
+      2: 0
+      3: 0
+      4: 0
+      5: 0
+      6: 1
+      7: 5
+      8: 0
+      9: 0
+      10: 0
+  extended_with_candidate_values:
+    added_nodes: [Etruscan, Iberian]
+    counts:
+      1: 0
+      2: 0
+      3: 0
+      4: 0
+      5: 0
+      6: 1
+      7: 7
+      8: 0
+      9: 0
+      10: 0
+
+matched_feature_controls:
+  description: >
+    Exploratory controls use the same source-locked root-normalized strings and
+    hold the sibilant-onset condition fixed while changing the later segment class.
+  extended_matrix_counts:
+    strict_labial:
+      6: 1
+      7: 7
+    broad_labial:
+      3: 1
+      6: 1
+      7: 7
+    dorsal:
+      6: 1
+      7: 1
+    nasal:
+      2: 1
+      3: 1
+      7: 2
+    rhotic:
+      7: 0
+      8: 2
+      10: 1
+  note: >
+    These controls suggest the seven concentration is not reproduced by several
+    simple matched segment classes in this matrix. This remains exploratory because
+    feature classes were not preregistered and phonotactic base rates differ by language.
+
+corrections_from_v0_1:
+  - "Egyptian six loses strict-carrier status in the primary ROOT/STEM-normalized lane because the apparent final w belongs to the inflected surface form."
+  - "Proto-Uralic seven is no longer counted as a whole-family broad hit; Finno-Permic and Ugric controls are separated."
+  - "Ugric seven is explicitly flagged as Iranian-contact evidence, not an independent genealogical hit."
+  - "Etruscan and Iberian are moved to an extended-candidate sensitivity layer."

@@ -1,0 +1,60 @@
+registry: codex-witness-benchmarks
+version: 0.1.0
+updated: 2026-09-22
+status: ACTIVE
+
+governing_protocol: docs/architecture/codex-witness-protocol-v0.1.md
+
+benchmarks:
+  - id: CW-BRUCE
+    object: Bruce-Codex
+    test: plural_strata
+    source_status: needs_primary_witness_pack
+    promotion: blocked_pending_sources
+  - id: CW-ASKEW
+    object: Askew-Codex
+    test: plural_strata_and_recension
+    source_status: needs_primary_witness_pack
+    promotion: blocked_pending_sources
+  - id: CW-ROHONC
+    object: Rohonc-Codex
+    test: structure_before_semantics
+    source_status: needs_facsimile_and_transcription_pack
+    promotion: unresolved_Omega
+  - id: CW-BYBLOS
+    object: Byblos-script-corpus
+    test: sparse_script_holdout
+    source_status: existing_working_corpus
+    promotion: candidate_only
+  - id: CW-ESAGILA
+    object: Esagila-witness-field
+    test: text_to_geometry_and_spatial_address
+    source_status: partial_current_fixture
+    current_anchor: "GlyphWalk Marduk-apla-iddina fixture: bābili -> é-sag-íl -> bīt marduk"
+    promotion: expand_with_primary_editions_and_archaeological_plans
+  - id: CW-BORSIPPA
+    object: Borsippa-witness-field
+    test: restoration_genealogy
+    source_status: needs_primary_inscription_and_archaeology_pack
+    promotion: blocked_pending_sources
+  - id: CW-ENOCH-PILLARS
+    object: Enoch-Seth-Hermes-knowledge-preservation-traditions
+    test: carrier_change_and_custody
+    source_status: secondary_control_present_primary_witnesses_needed
+    promotion: structural_control_only
+
+invariants:
+  - "carrier != reading != interpretation"
+  - "claim != historical fact"
+  - "reconstruction must preserve its dependency chain"
+  - "Omega is a valid research state"
+  - "variant textual or structural states are transformations, not automatic errors"
+  - "prospective prediction outranks retrospective fit"
+
+next_actions:
+  - build primary witness packs for Bruce and Askew
+  - freeze Rohonc facsimile/transcription baseline before semantic hypotheses
+  - connect Byblos holdout protocol to CodexState
+  - expand Esagila from textual address to metrology/geometry witnesses
+  - build Borsippa restoration-state chronology from primary inscriptions and excavation records
+  - add carrier-custody edges for pillar/tablet/book preservation traditions with transmission class kept explicit

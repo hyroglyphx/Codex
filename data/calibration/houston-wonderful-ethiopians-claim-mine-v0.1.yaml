@@ -1,0 +1,77 @@
+version: "0.1"
+date: "2026-09-25"
+id: HOUSTON_WONDERFUL_ETHIOPIANS_CLAIM_MINE
+status: SOURCE_RECOVERY_PASS
+
+method:
+  - advocacy_claim
+  - source_recovery
+  - independent_witness_check
+  - typed_relation
+  - project_integration
+
+nodes:
+  MEMNON_CORRIDOR:
+    status: ATTESTED_MULTI_SOURCE
+    sources:
+      - "Herodotus 5.53-54: Sardis-Susa royal road; Memnonian palace"
+      - "Pausanias 10.31.7: Ethiopian king, comes from Susa/Choaspes to Troy; Phrygian route memory"
+      - "Strabo 15.3.2: Tithonus/Memnon foundation tradition; Memnonium; Susians=Cissians"
+      - "Diodorus 2.22: Ethiopians + Susianians under Memnon"
+    priority: A_plus
+
+  KARABEL_RECEPTION:
+    status: ATTESTED_PLUS_IDENTIFICATION
+    sources:
+      - "Herodotus 2.106"
+      - "Hawkins 1998 Karabel/Tarkasnawa"
+    sequence:
+      - "Anatolian royal monument"
+      - "Egyptian/Ethiopian visual classifier"
+      - "Memnon identification by some Greek observers"
+    phoneme_candidate: "Alantalli -> ALANT-"
+    priority: B_plus
+
+  ANSHAN_Achaemenid:
+    status: ATTESTED_WITH_ETYMOLOGICAL_CANDIDATE
+    older_layer: "Elamite Anshan/Anzan"
+    later_layer: "Achaemenid Parsa"
+    candidate_names: [Cispis, Kurus, Kambujiya]
+    priority: A
+
+  RED_SEA_CORRIDOR:
+    status: ARCHAEOLOGICAL_EPIGRAPHIC
+    nodes: [Saba, Marib, Yeha, Hawelti, DMT]
+    script: South_Arabian
+    linguistic_states: [Sabaean, local_Ethiopian_features]
+    titles: ["mukarrib of DMT", "mukarrib of DMT and Saba"]
+    priority: A
+
+  CISSIAN_COSSAEAN_KASSITE:
+    status: NAME_TRANSFER_PROBLEM
+    forms: [Kissioi, Kossaioi, Kassu]
+    region: [Susiana, Zagros, Babylonia]
+    priority: B
+
+  WILFORD_KUSA_ATALA:
+    status: SOURCE_HISTORY_CONTROL
+    classifiers:
+      Kusa_dvipa: terrestrial_division
+      Atala: lower_world_region
+    priority: C
+
+operators:
+  MEM-03: MEMNONIAN_SUSA_TROY_ROUTE_CORRIDOR
+  ID-07: ETHNONYM_GEOGRAPHIC_ORIGIN_SPLIT
+  GEO-09: MYTHIC_ROUTE_PRESERVED_AS_HALTING_PLACE_MEMORY
+  REC-08: FOREIGN_MONUMENT_RECLASSIFIED_THROUGH_MYTHIC_ETHNOGRAPHIC_SCHEMA
+  PHON-CAND-09: ALANT_ATLANT_ATALANT_COMPARISON_NODE
+  NAME-22: ELAMITE_SUBSTRATE_IN_EARLY_ACHAEMENID_NAMES
+  AUTH-17: ANSHAN_TO_PARSA_SOVEREIGN_REBINDING
+  LANG-08: IMPERIAL_LAYERING_OVER_ELAMITE_SUBSTRATE
+  SCR-05: SOUTH_ARABIAN_SCRIPT_LOCAL_LANGUAGE_REBINDING
+  TRN-19: RED_SEA_BIDIRECTIONAL_CONTACT_CORRIDOR
+  TITLE-02: MUKARRIB_CROSS_RED_SEA_TITLE_TRANSFER
+  NAME-23: NEIGHBOR_ETHNONYM_TRANSFER_OR_CONFLATION
+  GEN-05: GENEALOGICAL_ETHNOGRAPHIC_CROSSWALK
+  TXT-06: COSMOGRAPHIC_CLASSIFIER_CONFLATION_CONTROL

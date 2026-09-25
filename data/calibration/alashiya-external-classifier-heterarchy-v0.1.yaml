@@ -1,0 +1,68 @@
+version: "0.1"
+date: "2026-09-24"
+id: ALASHIYA_EXTERNAL_CLASSIFIER_HETERARCHY
+status: SOURCE_LOCKED_FIRST_PASS
+
+anchors:
+  MARI_MULTISCALE:
+    period: Middle_Bronze_Age
+    observation: "Alašiya appears under both city and land/country classification in the Mari dossier"
+    operator: OUT-10
+
+  PETROGRAPHY:
+    source: "Goren et al. 2003 AJA 107:233-255"
+    result: "official Alashiyan letters derive from southern Troodos margin"
+    candidates: [Kalavasos_Ayios_Dhimitrios,Alassa_Paliotaverna_Pano_Manadilaris]
+    operator: ADM-01
+
+  ALASSA_ALASHIYA:
+    status: high_priority_explore_only
+    basis: [same_island,same_southern_zone,phonemic_proximity,archaeological_relevance]
+    operator: NAME-CAND-12
+
+  AMARNA_ROYAL:
+    letters: [EA33,EA34,EA35,EA36,EA37,EA38,EA39]
+    diplomatic_relation: brother_to_Egyptian_king
+    copper_salience: high
+    operator: AUTH-07
+
+  AMARNA_GOVERNOR:
+    letter: EA40
+    type: governor_to_governor
+    operator: AUTH-08
+
+  PIDDURI:
+    source_family: Hittite
+    gloss: "high dignitary of Cyprus"
+    operator: AUTH-08
+
+  HURRIAN_ALLAI:
+    lexical_control: "allai = lady/mistress"
+    theonym_control: Allani
+    Alashiya_derivation: candidate_not_settled
+    operator: NAME-CAND-13
+
+operators:
+  OUT-10:
+    name: MULTISCALE_TOPONYMIC_CLASSIFIER
+  ADM-01:
+    name: SCRIBAL_SEAT_VS_POLITY_EXTENT
+  NAME-CAND-12:
+    name: ALASSA_ALASHIYA_LOCAL_CARRIER
+    status: explore_only
+  AUTH-07:
+    name: EXTERNAL_SOVEREIGNTY_COMPRESSION
+  AUTH-08:
+    name: DUAL_LEVEL_SOVEREIGNTY
+  SCR-01:
+    name: MULTILINGUAL_SCRIPT_ECOLOGY
+    status: testable_hypothesis
+  NAME-CAND-13:
+    name: ALLAI_ALASHIYA_DIVINE_LADY_ETIOLOGY
+    status: explore_only
+
+firewalls:
+  - "tablet clay source != automatic whole-polity capital"
+  - "external king-title != proof of unitary internal administration"
+  - "Akkadian diplomatic language != local vernacular"
+  - "Hurrian allai is lexical fact; Alashiya derivation remains candidate"

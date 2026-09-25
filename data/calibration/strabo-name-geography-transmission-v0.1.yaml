@@ -1,0 +1,184 @@
+version: "0.1"
+date: "2026-09-24"
+id: STRABO_NAME_GEOGRAPHY_TRANSMISSION
+status: FIRST_SOURCE_LOCKED_PASS
+
+anchors:
+  FOREIGN_NAME_ADAPTATION:
+    source: "Strabo 16.4"
+    examples:
+      - [Aramaeans, Arimaeans_Arimi]
+      - [Dareios, Darieces]
+      - [Parysatis, Pharziris]
+      - [Athara, Atargatis_Derceto]
+    operator: TRN-05
+
+  HELLI_SELLI:
+    source: "Strabo 7.7.10"
+    type: textual_variant_backprojection
+    controls: [Hellopia,Selleeis,geography,parallel_witnesses]
+    operator: TXT-01
+
+  FABRICATED_HOMERIC_TOPONYMS:
+    source: "Strabo 13.1.45"
+    examples: [Alizonium,Argyria]
+    operator: ADV-01
+
+  CAUCASUS_TRANSFER:
+    source: "Strabo 11.5.5"
+    path: [Colchian_Caucasus,prestige_myth,Indian_mountains]
+    operator: NAME-07
+
+  DUAL_IBERIA:
+    source: "Strabo 11.2.19"
+    ancient_explanation: "same name perhaps due gold mines in both countries"
+    operator: NAME-CAND-07
+    status: ancient_functional_etiology_not_historical_proof
+
+  DIOSCURIAS:
+    source: "Strabo 11.2.19"
+    tribes: 70
+    languages: many_distinct
+    macro_classifier: Caucasii
+    operator: OUT-06
+
+  SCEPTUCHOI:
+    source: "Strabo 11.2.13"
+    hierarchy: [king_or_tyrant,sceptuchos,people]
+    operator: AUTH-01
+
+  SCEPSIS_KINGS:
+    source: "Strabo 13.1.52"
+    sequence: [kingship,oligarchy,democracy]
+    persistence: [king_title,prerogatives]
+    operator: AUTH-06
+
+  CATAONIA:
+    source: "Strabo 12.1.2"
+    older_state: separate_tribal_classifier
+    strabo_state: no_visible_language_or_usage_difference
+    operator: ID-01
+
+operators:
+  TRN-05:
+    name: FOREIGN_NAME_RECEIVING_LANGUAGE_ADAPTATION
+  TXT-01:
+    name: GEOGRAPHIC_TEXTUAL_BACKPROJECTION
+  ADV-01:
+    name: ETYMOLOGICAL_GEOGRAPHY_FABRICATION_CONTROL
+  NAME-07:
+    name: PRESTIGE_TOPONYM_TRANSFER
+  NAME-CAND-07:
+    name: DUAL_IBERIA_FUNCTIONAL_ETIOLOGY
+    status: candidate
+  OUT-06:
+    name: MULTILINGUAL_MACRO_CLASSIFIER
+  AUTH-06:
+    name: TITLE_PERSISTENCE_AFTER_REGIME_CHANGE
+  ID-01:
+    name: CLASSIFIER_FOSSILIZATION_AFTER_CONVERGENCE
+  THRACIAN_BRIA:
+    source: "Strabo 7.6"
+    examples: [Menebria,Selybria,Poltyobria]
+    gloss: "bria = city in Thracian"
+    operator: MORPH-01
+
+  MESSAPIA_NATIVE_PARTITION:
+    source: "Strabo 6.3"
+    greek_macro_name: Messapia
+    native_partitions: [Salentini,Calabri,Apulia]
+    operator: OUT-07
+
+  SERIAL_LYCIAN_NAMES:
+    source: "Strabo 12.8"
+    forms: [Solymi,Milyae,Termilae,Lycians]
+    operator: NAME-08
+
+  CIBYRA_LANGUAGES:
+    source: "Strabo 13.4"
+    languages: [Pisidian,Solymian,Greek,Lydian]
+    homeland_note: "no trace of Lydian language in Lydia"
+    operator: LANG-01
+
+  MYSIAN_CONTACT_LANGUAGE:
+    source: "Strabo 12.8"
+    components: [Lydian,Phrygian]
+    operator: LANG-02
+
+  ADMINISTRATIVE_ERASURE:
+    source: "Strabo 12.4"
+    losses: [dialects,names]
+    trigger: repartition_under_successive_empires
+    operator: ID-02
+
+  ZANCLE_MESSENE_MAMERTINE:
+    source: "Strabo 6.2"
+    sequence: [Zancle,Messene,Mamertine_classifier]
+    extension: [people,wine]
+    operator: NAME-09
+
+  AGYLLA_CAERE:
+    source: "Strabo 5.2"
+    mechanism: "chaire greeting reinterpreted as omen/name"
+    operator: NAME-10
+
+  ASTYPALAEA_COS:
+    source: "Strabo 14.2"
+    path: [sedition,relocation,rename_to_island_name]
+    operator: NAME-11
+
+  PATRONAL_RENAMING:
+    source: "Strabo 12.4 and related"
+    examples:
+      - [Cius,Prusias]
+      - [Myrleia,Apameia]
+      - [Antigonia,Nicaea]
+    operator: NAME-12
+
+  ASIA_SCALE_SHIFT:
+    source: "Strabo 13.4"
+    path: [continent_name,Roman_province_name]
+    operator: OUT-08
+
+  TURDETANIAN_ROMANIZATION:
+    source: "Strabo 3.2.15"
+    path: [Roman_mode_of_life,ancestral_language_loss,Latin_status]
+    operator: ID-03
+
+  IONIA_BOUNDARY_PILLAR:
+    source: "Strabo 9.1.6"
+    faces:
+      - "This is Peloponnesus, not Ionia"
+      - "This is not Peloponnesus, but Ionia"
+    operator: OUT-09
+
+additional_operators:
+  MORPH-01:
+    name: EXPLICIT_FOREIGN_TOPONYM_SEGMENTATION
+  OUT-07:
+    name: EXONYM_ENDONYM_SCALE_MISMATCH
+  NAME-08:
+    name: SERIAL_ETHNONYM_REBINDING
+  LANG-01:
+    name: PERIPHERAL_LANGUAGE_RETENTION
+  LANG-02:
+    name: CONTACT_LANGUAGE_MIXTURE
+  ID-02:
+    name: ADMINISTRATIVE_REPARTITION_ERASURE
+  NAME-09:
+    name: POLITICAL_CLASSIFIER_CAPTURE
+  NAME-10:
+    name: NARRATIVE_PHONEMIC_RENAMING
+  NAME-11:
+    name: RELOCATION_MACROTOPONYM_ADOPTION
+  NAME-12:
+    name: SOVEREIGN_PATRONAL_RENAMING
+  OUT-08:
+    name: TOPONYM_SCALE_SHIFT
+  LANG-03:
+    name: ISOLATION_CONTACT_DIALECT_DIVERGENCE
+  ID-03:
+    name: LANGUAGE_LOSS_WITH_STATUS_RECLASSIFICATION
+  OUT-09:
+    name: BIDIRECTIONAL_BOUNDARY_INSCRIPTION
+

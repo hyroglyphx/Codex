@@ -1,0 +1,53 @@
+version: "0.1"
+date: "2026-09-24"
+id: SA_SAR_LIMINAL_CARRIER_CLUSTER
+status: ACTIVE_CANDIDATE_SOURCE_LOCKED_FIRST_PASS
+
+nodes:
+  SAMOTHRACE:
+    forms: [Samos,Samothrace,Saonnesus,Saon,Saos,Saoce,Saii]
+    source_status: C0_C1
+    functions: [height,flood_rescue,boundary_stones,Hellespont_passage,ritual_initiation,Dardanus_crossing]
+    phonemic_candidate:
+      carrier: SA
+      semantic_field: [safe,saved,height,aggregation]
+      status: strong_narrative_attraction_etymology_unresolved
+  SARDIS:
+    forms:
+      Lydian: [Sfard,sfari]
+      Old_Persian: [Sparda]
+      Hebrew: [Sepharad]
+      Greek: [Sardis]
+    source_status: C0_C1
+    operator: SA-CTRL-01
+    result: "Greek SAR can be receiving-language output from a more complex onset"
+  SARDINIA:
+    forms: [Sardus,Sardinia,Ichnussa]
+    source_status: C1_ANCIENT_ETIOLOGY
+    ancient_model: [CROSSING,LEADER,EPONYM,ISLAND_NAME]
+    native_old_name: unknown_in_Pausanias
+    shardana_comparison: unresolved
+  SAUROMATAE_SARMATAE:
+    forms: [Sauromatae,Sarmatae,Sarmatia]
+    source_status: C0_C1
+    boundary: Tanais
+    ancient_model: [CROSSING,MIXED_GROUP,NEW_SETTLEMENT,MIXED_LANGUAGE,PEOPLE_CLASSIFIER]
+    operator: SA-CTRL-02
+
+operators:
+  SA-CTRL-01:
+    name: RECEIVING_LANGUAGE_ONSET_SIMPLIFICATION
+    rule: "surface SA/SAR may be produced from a more complex source onset such as SF/SP"
+  SA-CTRL-02:
+    name: DIACHRONIC_EXONYM_COMPRESSION
+    rule: "same people-name may shift SAURO/SAR across time and transmission"
+  SA-CAND-01:
+    name: LIMINAL_CARRIER_ENRICHMENT
+    status: candidate
+    rule: "test whether SA/SAR carriers are enriched at passage, edge, crossing and reclassification nodes"
+
+negative_controls:
+  - "SA surface match does not prove one root"
+  - "Greek surface form does not prove source-language onset"
+  - "Sardus eponymy is ancient narrative evidence, not automatic historical etymology"
+  - "Shardana-Sardinia remains unresolved"

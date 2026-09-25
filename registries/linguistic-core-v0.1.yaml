@@ -1,0 +1,76 @@
+linguistic_core:
+  version: 0.1.0
+  date: 2026-09-22
+  status: CANONICAL_ARCHITECTURAL_CONSTRAINT
+  protocol: docs/architecture/linguistic-core-contract-v0.1.md
+  kernel_rule: "Do not compare words. Compare typed historical transformations and ask what survives them."
+  typed_state: "L=(carrier,grapheme,phonology,morphology,syntax,semantics,role,location,time,classifier,provenance)"
+  admissibility_channels: [phonology,grapheme,morphology,semantics,location,chronology,script_register,witness_provenance,culture_specific_numeric_value]
+  hard_separations:
+    - language_vs_script
+    - stem_vs_ending
+    - inheritance_vs_borrowing
+    - translation_vs_etymology
+    - syncretism_vs_ancestry
+    - graphic_similarity_vs_historical_linkage
+    - attested_vs_reconstructed
+    - ancestral_node_vs_modern_daughter_count
+  core_dependencies:
+    - registries/language-coverage-registry.yaml
+    - registries/translation-transposition-bridges.yaml
+    - registries/rosetta-nexus-calibration.yaml
+    - registries/adjacent-language-lattice.md
+    - docs/architecture/scriptural-textual-transmission-spine.md
+    - registries/decipherment-benchmark-cases-v0.1.yaml
+    - data/calibration/numeral-1-10-source-locked-v0.2.yaml
+    - data/calibration/numeral-hierarchical-null-v0.2.yaml
+  feeds: [Confluence,Relay_Kernel,Nexus,TCIM,Organon,Adversary,Invariant_Forge,Structural_Continuation]
+  promotion_rule: "typed transform + provenance + chronology + relevant linguistic controls + independent witness/null/holdout where available"
+
+  uptake_packets:
+    - docs/state/ancient-script-lattice-cross-chat-uptake-2026-09-22.md
+  adversarial_controls: [Carian,Kaminia,Sumerian_Akkadian,QBL,Tyrsenian,Linear_Elamite]
+  immediate_queue: [numeral_1_10_null_benchmark,source_lock_reconstructed_nodes,false_equivalence_control_suite]
+
+  flagship_calibrations:
+    elamite_carrier_pivot:
+      architecture: docs/architecture/elamite-linear-elamite-carrier-pivot-v0.1.md
+      registry: registries/elamite-carrier-pivot-v0.1.yaml
+      role: same_or_continuous_language_across_carrier_change
+      controls: [Sb17_alignment, direction_allography, internal_diachrony, evidential_firewall, Proto_Elamite_omega, Achaemenid_parallel_carriers]
+
+  asl_w4_3:
+    registry: registries/asl-w4.3-amendments.yaml
+    relation_vector: "R(A,B)=<F,P,M,S,G,T,X,C,V>"
+    dimensions_non_compensatory: true
+    carrier_readout_law: "CARRIER != READING != LANGUAGE != SEMANTIC_ADDRESS"
+    relation_not_genealogy: true
+    exact_source_form_immutable: true
+
+  legacy_recovery:
+    linguard_registry: registries/linguard-admissibility-recovery-v0.1.yaml
+    oriented_language_field_registry: registries/oriented-language-field-recovery-v0.1.yaml
+    language_lane_registry: registries/legacy-language-lane-recovery-v0.1.yaml
+    full_form_priority: true
+    open_segmentation_windows_are_not_roots: true
+    semantic_envelope_required: true
+    carrier_loss_recorded: true
+    referent_migration_typed: true
+    secondary_convergence_control: true
+    resegmentation_history_preserved: true
+    transport_loss_vector: [phonetic,morphological,semantic,pragmatic,orientation,provenance]
+    ariadne_trace_condition: "reversible claims retain enough ordered path information to reconstruct return"
+
+  recovered_operator_suites:
+    nexus_transposition:
+      registry: registries/nexus-transposition-recovered-operators-v0.1.yaml
+      operators: [CARRIER_ORBIT,PHASESHIFT,PARALLEL_READOUT,SEMANTIC_BACK_PROJECTION,HONORIFIC_TRANSPOSITION]
+    sumerian_operator_morphology:
+      registry: registries/sumerian-operator-morphology-control-v0.1.yaml
+      controls: [LUGAL,NAM_LUGAL,NAM,ME,ME_NAM_NUN_NA,INIM,MU,LU_INIM_MA,SI_SA]
+    pre_greek_firewall:
+      registry: registries/pre-greek-substrate-pelasgian-separation-control-v0.1.yaml
+      rule: "linguistic substrate, authorial ethnonym and population model remain separate evidence lanes"
+    distributed_holonomy:
+      registry: registries/distributed-holonomy-capability-ecology-v0.1.yaml
+      rule: "handoff, capability, route-topology and non-inverse return are tracked when linguistic custody is distributed"

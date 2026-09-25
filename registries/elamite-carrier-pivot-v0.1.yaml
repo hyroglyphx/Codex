@@ -1,0 +1,51 @@
+version: "0.1"
+date: "2026-09-22"
+id: ELAMITE_CARRIER_PIVOT
+status: CANONICAL_CALIBRATION_PROTOCOL
+programs: [Ancient_Script_Lattice, ECVR, TCIM, Linguistic_Core]
+flagship_role: same_or_continuous_language_under_carrier_pivot
+state_model: "O_C(L) = observable projection of linguistic state L through carrier C"
+carrier_pivot: "CP(C1,C2|L)"
+hard_separations:
+  - language_continuity_vs_script_continuity
+  - script_succession_vs_language_descent
+  - orientation_change_vs_linguistic_change
+  - internal_diachronic_support_vs_external_etymology
+  - administrative_continuity_vs_language_continuity
+  - geographic_succession_vs_proved_descent
+benchmarks:
+  ELAM-01: {name: Sb17_Rosetta_Control, legacy_id: ELAM-ROSETTA-CONTROL-001}
+  ELAM-02: {name: Direction_Allography_Control, operators: [REORIENT, ALLOGRAPH, ADDRESS, REGENERATE]}
+  ELAM-03: {name: Internal_Diachronic_Lexeme_Control, chain: "su2-h-te-r -> /sohter/ -> suhter~shuhter", firewall_external: true}
+  ELAM-04: {name: Linear_to_Cuneiform_Carrier_Pivot}
+  ELAM-05: {name: Diachronic_Cuneiform_Adaptation}
+  ELAM-06: {name: Achaemenid_Parallel_Carrier, channels: [Old_Persian, Elamite, Babylonian_Akkadian, Aramaic]}
+  ELAM-07: {name: Proto_Elamite_Omega_Control, status: OMEGA_UNRESOLVED}
+  ELAM-08: {name: Proto_Elamite_Generative_Operator_Experiment, status: HEUR_CANDIDATE}
+  ELAM-09: {name: External_Relationship_Firewall}
+  ELAM-10: {name: Carrier_Payload_Integration, peers: [Eblaite, Amorite, Kassite, Ugaritic, Aramaic]}
+evidential_firewall: "support(A->B) does not automatically support(B?C)"
+proto_elamite_rule: "structural comparison allowed; language/script descent not promoted without independent evidence"
+queue:
+  - rebuild_ELAM_ROSETTA_CONTROL_001_source_locked
+  - machine_readable_linear_elamite_recurrence_allography_direction
+  - source_lock_sohter_internal_chain
+  - linear_to_cuneiform_carrier_pivot_matrix
+  - achaemenid_elamite_aramaic_parallel_administration
+  - proto_elamite_structural_metrological_operator_tests
+  - external_relationship_retests_under_linguistic_core
+dependencies:
+  - registries/linguistic-core-v0.1.yaml
+  - docs/state/ancient-script-lattice-cross-chat-uptake-2026-09-22.md
+
+experiment_harness:
+  registry: registries/experiment-analysis-harness-v0.1.yaml
+  first_experiment: ELAM-CP-EXP-001
+  requirements:
+    - hypothesis_and_competitors
+    - source_locked_witnesses
+    - controls
+    - null_or_holdout
+    - result_interpretation_separation
+    - limitations_and_failures
+    - next_discriminating_test

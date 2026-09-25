@@ -1,0 +1,209 @@
+dataset: ebla-sign-lexical-first-alignment
+version: 0.1.0
+updated: 2026-09-21
+status: ACTIVE_CALIBRATION
+nexus_id: RN07
+corpus: Ebla-Palace-G-lexical-traditions
+period: Early-Dynastic-IIIb
+approximate_date: "24th-23rd centuries BCE"
+carrier: clay-tablets
+languages: [Sumerian, Eblaite-Semitic]
+script: cuneiform
+parallax_levels: [PX5, PX6]
+
+sources:
+  - id: DCCLT_SIGNLIST_BIB
+    type: scholarly_digital_corpus
+    url: https://oracc2.museum.upenn.edu/dcclt/signlists/bibliography/index.html
+    note: >
+      DCCLT identifies the mid-third-millennium Ebla sign list as the earliest
+      known cuneiform sign list with reading glosses; cites Archi 1987.
+  - id: DCCLT_EBLA_SIGNLIST
+    type: scholarly_digital_edition
+    url: https://oracc.museum.upenn.edu/dcclt/Q000038.98
+    note: "Ebla Sign List, Early Dynastic IIIb; sign/list entries with reading glosses."
+  - id: CDLI_BONECHI_2016
+    type: peer_reviewed_digital_article
+    url: https://cdli.earth/articles/cdlj/2016-2
+    note: >
+      Compares multiple sources/excerpts of the Ebla bilingual lexical list and
+      reconstructs their scribal/redactional relationships.
+  - id: DCCLT_EBLA_EXERCISE
+    type: scholarly_digital_edition
+    url: https://oracc.museum.upenn.edu/dcclt/ebla/P241016
+    note: "Example Early Dynastic IIIb local bilingual exercise."
+
+witness_geometry:
+  object_count: many
+  archive_context: Palace-G
+  crosswalk_explicitness: maximal
+  alignment_granularity: [G0, G1, G2]
+  local_tradition: true
+  calibration_modes:
+    - sign_to_reading_gloss
+    - Sumerian_entry_to_Semitic_equivalent
+    - parallel_copy_variant
+    - scribal_redaction_sequence
+
+sign_list_examples:
+  - id: ESL01
+    sign_or_value: "ŠITA(LAK503)"
+    reading_gloss: "ti-iš-da-num₂"
+    granularity: G0_to_G1
+    relation: sign_to_reading_gloss
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: ESL02
+    sign_or_value: "NAM₂"
+    reading_gloss: "u₃-mu-šum"
+    granularity: G0_to_G1
+    relation: sign_to_reading_gloss
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: ESL03
+    sign_or_value: "APIN"
+    reading_gloss: "en-ga-ru₁₂-um"
+    granularity: G0_to_G1
+    relation: sign_to_reading_gloss
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: ESL04
+    sign_or_value: "ŠE+NAM₂"
+    reading_gloss: "su-šum"
+    granularity: G0_to_G1
+    relation: sign_to_reading_gloss
+    evidence_class: C0
+    calibration_weight: maximal
+
+bilingual_lexical_examples:
+  - id: EBL01
+    ve: 118
+    sumerian: "nig₂-zaḫ₂"
+    semitic: "ma-zar₃-tum"
+    granularity: G2
+    relation: lexical_equation
+    source_distribution:
+      A: Sumerian_only
+      C: Sumerian
+      b: "Sumerian = Semitic"
+      a: "Sumerian = Semitic"
+    evidence_class: C0
+    calibration_weight: maximal
+    significance: "Same Sumerian lemma can acquire explicit Semitic equivalent in some witnesses but not others."
+
+  - id: EBL02
+    ve: 315
+    sumerian: "e₂-pap"
+    semitic_variants:
+      C: lacunose
+      b: "ar₃-ra-tum"
+      a: "ʾa₃-ra-tum"
+    granularity: G2
+    relation: lexical_equation_with_orthographic_variant
+    evidence_class: C0
+    calibration_weight: maximal
+    significance: "Excellent control for Semitic orthographic/readout variation across copies."
+
+  - id: EBL03
+    ve: 389
+    sumerian: "geštu₃"
+    semitic_variants:
+      C: "ḫa-zi-zu-um"
+      b: "ḫa-zi-zu₂"
+    granularity: G2
+    relation: lexical_equation_with_copy_variant
+    evidence_class: C0
+    calibration_weight: maximal
+    significance: >
+      High-value for the project's EAR -> UNDERSTANDING/WISDOM semantic lane:
+      the crosswalk is directly ancient and copy-comparable.
+
+  - id: EBL04
+    ve: 253
+    sumerian: "sag-kešda"
+    semitic: "ib₂-tum"
+    granularity: G2
+    relation: lexical_equation
+    evidence_class: C0
+    calibration_weight: high
+
+  - id: EBL05
+    ve: 629
+    sumerian: "a-nigin₂"
+    semitic_variants:
+      C: "du-lum"
+      b: "da-wu-lum"
+    granularity: G2
+    relation: lexical_equation_with_lexical_or_dialect_variant
+    evidence_class: C0
+    calibration_weight: maximal
+    significance: "Direct control for divergence among Semitic equivalents under a stable Sumerian address."
+
+  - id: EBL06
+    ve: 896
+    sumerian: "i₃-gu₇"
+    semitic_variants:
+      b: "a-gul-la-du"
+      a: "a-gu₂-lu-um"
+    granularity: G2
+    relation: lexical_equation_with_variant
+    evidence_class: C0
+    calibration_weight: high
+
+scribal_sequence_model:
+  status: scholarly_reconstruction
+  source: CDLI_BONECHI_2016
+  proposed_order:
+    - TM.75.G.1301
+    - TM.75.G.1302
+    - TM.75.G.10023+11301+
+  confidence: medium_to_high
+  note: >
+    Bonechi argues that the small bilingual sources belong to the formation
+    process of the larger bilingual list source. Preserve this as a reconstructed
+    scribal genealogy with explicit uncertainty, not as direct object identity.
+
+cross_copy_observations:
+  - id: EBLA_C1
+    status: attested_and_derived
+    statement: "The same Sumerian address can be untranslated in one source and explicitly translated in another."
+  - id: EBLA_C2
+    status: attested_and_derived
+    statement: "Semitic equivalents can vary orthographically or lexically across sources while the Sumerian anchor remains stable."
+  - id: EBLA_C3
+    status: derived
+    statement: "A lexical list can itself have a redactional history; crosswalk tables are not timeless dictionaries."
+  - id: EBLA_C4
+    status: derived
+    statement: "Copy-to-copy divergence provides a historical baseline for expected translation/readout variance."
+
+new_sieve_variables_triggered:
+  - source_copy_id
+  - lexical_entry_id
+  - anchor_language
+  - gloss_language
+  - translation_presence_absence
+  - orthographic_variant
+  - lexical_variant
+  - copy_sequence
+  - redaction_stage
+  - scribal_circle
+  - cross_copy_stability
+  - address_stability
+  - gloss_divergence
+
+calibration_rules:
+  - "Anchor stability and gloss stability are measured separately."
+  - "Absence of a gloss in one source is not automatically evidence of absence from the spoken lexicon."
+  - "Variant Semitic translations may represent orthography, dialect, lexical choice, or scribal history; type before collapsing."
+  - "The ancient crosswalk is the datum; modern semantic normalization is a second layer."
+
+next_pass:
+  - "Expand from selected VE entries to a larger stratified sample across semantic fields."
+  - "Separate orthographic, phonological and lexical divergence among sources A, C, a, b and A2."
+  - "Build copy-to-copy covariance scores using stable Sumerian anchors."
+  - "Compare Ebla geštu₃ = ḫa-zi-zu-um with later Mesopotamian EAR/WISDOM lexical fields without assuming whole-word descent."
+  - "Use the Ebla Sign List to train sign->reading uncertainty separately from bilingual lexeme->lexeme uncertainty."

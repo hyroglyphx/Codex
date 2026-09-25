@@ -1,0 +1,52 @@
+version: "0.1"
+date: "2026-09-24"
+id: EL_ELL_SEMITIC_GREEK_CARRIER
+status: EXPLORE_ONLY_SOURCE_LOCKED_CONTROLS
+
+semitic_control:
+  carrier: "ʾL / EL"
+  functions: [common_noun_god,divine_name_El,theophoric_name_element]
+  forms:
+    Ugaritic: ["ʾil","ʾIlu"]
+    Phoenician_Canaanite: ["ʾl"]
+    Hebrew: ["ʾēl"]
+    Akkadian: ["ilu(m)"]
+
+greek_reception_control:
+  source: "Philo of Byblos preserved by Eusebius"
+  mapping: ["Phoenician El","Greek literary El/Elus","Kronos functional equation"]
+  operator: TRN-06
+
+greek_candidate_orbit:
+  forms:
+    - "Ἕλλην / Hellēn"
+    - "Ἑλλάς / Hellas"
+    - "Ἑλένη / Helenē"
+    - "Helli / Selli textual lane"
+  stripped_carriers: [ELL,ELL,EL,ELL_SEL]
+
+licensed_transforms:
+  - "Semitic glottal onset ʾ may surface as vowel-initial EL in Greek literary reception"
+  - "Greek aspiration H may be lost under psilosis"
+
+unlicensed_or_unresolved:
+  - "EL -> ELL gemination as a general cross-language convention"
+  - "Semitic EL -> HELL historical derivation"
+  - "S/zero/H alternation as regular sound law"
+
+operators:
+  TRN-06:
+    name: SEMITIC_EL_TO_GREEK_DIVINE_READOUT
+    status: source_locked_positive_control
+
+  NAME-CAND-09:
+    name: SEMITIC_EL_GREEK_ELL_ATTRACTION
+    status: explore_only
+    question: "could inherited Greek HELL-/EL- carriers be semantically attracted or reinterpreted through a known Semitic EL divine/onomastic field?"
+
+promotion_requirements:
+  - same_referent_bilingual_forms
+  - archaic_contact_chronology
+  - aspiration_and_gemination_controls
+  - Greek_renderings_of_Semitic_El_names
+  - Semitic_renderings_of_Hellen_Hellas_if_extant

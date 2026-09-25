@@ -1,0 +1,124 @@
+dataset: kartvelian-colchis-transmission-cluster-v0.1
+date: 2026-09-23
+status: OBSERVED_CANDIDATE
+domain: historical-linguistics-epigraphy-translation
+study: studies/kartvelian-colchis-script-translation-transmission-v0.1.md
+
+governing_invariants:
+  - "spoken language != inscription language != script != semantic address"
+  - "foreign-language epigraphy in a Kartvelian region is an interface witness, not automatic evidence of language replacement"
+  - "comparative reconstruction must use regular correspondences, not naked string similarity"
+  - "same object + parallel languages does not imply mechanically literal translation"
+  - "script classification and language classification are independent coordinates"
+  - "earliest surviving inscription != date of alphabet invention"
+
+genealogical_nodes:
+  - {id: KART-PK, node: Proto-Kartvelian, status: reconstructed}
+  - {id: KART-SV, node: Svan, parent: Proto-Kartvelian, status: extant}
+  - {id: KART-KZ, node: Proto-Karto-Zan, parent: Proto-Kartvelian, status: reconstructed}
+  - {id: KART-GEO, node: Georgian, parent: Proto-Karto-Zan, status: extant}
+  - {id: KART-ZAN, node: Zan, parent: Proto-Karto-Zan, status: reconstructed_branch}
+  - {id: KART-MEG, node: Mingrelian, parent: Zan, status: extant}
+  - {id: KART-LAZ, node: Laz, parent: Zan, status: extant}
+
+historical_witnesses:
+  - id: KC01
+    object: first-millennium-BCE-Colchis-language-field
+    geography: eastern-Black-Sea-Colchis
+    observation: "Predominant speech plausibly South Caucasian/Kartvelian; likely forerunners of later Zan."
+    status: CANDIDATE
+    confidence: 0.82
+    caveat: "No directly attested continuous Colchian-language corpus; ethnic composition was not homogeneous."
+    source: "https://www.iranicaonline.org/articles/colchis/"
+
+  - id: KC02
+    object: Vani-Greek-epigraphic-interface
+    geography: Vani-western-Georgia-Colchis
+    observation: "Long Greek bronze inscription documented at a major Colchian center."
+    status: CORROBORATED
+    confidence: 0.95
+    relation: "epigraphic interface; not proof of local spoken language"
+    source: "https://lsa.umich.edu/kelsey/research/current-field-projects/vani--republic-of-georgia.html"
+
+  - id: KC03
+    object: Armazi-Serapeitis-bilingual
+    geography: Armazi-Mtskheta-Iberia-Kartli
+    date: "2nd century CE"
+    scripts_languages: [Greek, Aramaic-or-Aramaic-derived]
+    observation: "Same funerary object preserves parallel Greek and non-Greek text with unequal detail."
+    status: CORROBORATED
+    confidence: 0.95
+    classification_conflict:
+      Georgian_Encyclopedia: "Aramaic continuing State/Imperial Aramaic tradition"
+      Encyclopaedia_Iranica: "Greek and Middle Iranian tombstone; Iranian portion in unusual Aramaic-derived script"
+    rule: "preserve disagreement; do not collapse script and language"
+    sources:
+      - "https://georgianencyclopedia.ge/en/form_eng/240"
+      - "https://www.iranicaonline.org/articles/armazi-or-armaz-tsikhe-an-important-royal-city-of-georgia-iberia/"
+      - "https://doi.org/10.1017/S0035869X00098105"
+
+  - id: KC04
+    object: earliest-surviving-Georgian-epigraphy
+    date: "5th century CE"
+    anchors: [Bir-el-Qutt-430s, Urbnisi-5th-century, Bolnisi-Sioni-493-503]
+    script: Asomtavruli-Mrgvlovani
+    status: CORROBORATED
+    confidence: 0.93
+    rule: "surviving epigraphy date is not the same claim as alphabet invention date"
+    source: "https://manuscript.ge/wp-content/uploads/2021/10/Collection_SummerSchool_2021-2.pdf"
+
+  - id: KC05
+    object: early-Georgian-Christian-translation-strata
+    observation: "Primitive Georgian Christian literary strata show Syriac roots mediated mainly through Armenian channels, with early and later increasingly direct Greek influence."
+    status: CORROBORATED_CORPUS_LEVEL
+    confidence: 0.90
+    caveat: "translation base must still be established work-by-work and manuscript-by-manuscript"
+    source: "https://doi.org/10.1017/CHOL9780521860062.011"
+
+  - id: KC06
+    object: Iranian-Georgian-contact-layer
+    observation: "Georgian preserves Iranian loans from multiple chronological strata, with some direct and some Armenian-mediated paths."
+    status: CORROBORATED
+    confidence: 0.95
+    exemplar: "bidaxš / pitiakhsh administrative-title orbit"
+    source: "https://www.iranicaonline.org/articles/georgia-v/"
+
+three_witness_test:
+  witness_A: "comparative Kartvelian: Georgian + Mingrelian + Laz + Svan"
+  witness_B: "contemporary foreign transcription: Greek / Aramaic / Iranian / Armenian / Latin"
+  witness_C: "archaeological-geographical binding: person / office / river / settlement / tribe / cult / object / route"
+  promotion_rule: "A+B+C convergence outranks two-way alignment; isolated resemblance remains inadmissible"
+
+next_onomastic_queue:
+  - Colchis-Kolkhis-Qulha-Kulha
+  - Aia-Aea
+  - Phasis
+  - Kutais-Kutaia
+  - Aeetes
+  - Medea
+  - Absyrtos
+  - Dioscurias
+  - Moschi
+  - Tibareni
+  - Chalybes
+  - Heniochi
+  - Soanes
+
+comparison_lanes:
+  - Old-Georgian
+  - Proto-Karto-Zan
+  - Mingrelian
+  - Laz
+  - Svan
+  - Urartian
+  - Hurrian
+  - Armenian
+  - Iranian
+  - Anatolian
+  - Greek-transcription
+
+return_paths:
+  - studies/kartvelian-colchis-script-translation-transmission-v0.1.md
+  - registries/translation-transposition-bridges.yaml
+  - registries/language-coverage-registry.yaml
+  - Reuptake/provenance/event-log.jsonl
