@@ -698,3 +698,95 @@ ID-06 = ATTIC_PELASGIAN_IONIAN_BIFURCATION
 TRN-15 = ATTIC_TO_LEMNOS_HELLESPONT_DIASPORA_CORRIDOR
 NAME-CAND-19 = PLAK_REGIONAL_ONOMASTIC_RECURRENCE
 ```
+
+## 19. Croesus, Gyges, and fifth-generation Heraclid vengeance
+
+Herodotus frames Croesus' fall as the delayed settlement of a dynastic legitimacy debt.
+
+Sequence:
+
+```text
+Heraclid dynasty at Sardis
+-> Candaules = last Heraclid king
+-> Gyges (member of the royal guard) kills Candaules
+-> Gyges takes wife + kingship
+-> Delphi confirms Gyges as king
+-> same oracle announces Heraclid vengeance in Gyges' fifth generation
+-> Gyges -> Ardys -> Sadyattes -> Alyattes -> Croesus
+-> Sardis falls under Croesus
+```
+
+Herodotus 1.91 makes the logic explicit: Croesus pays for the offense of the ancestor who killed his Heraclid master and took a royal station that was not rightfully his.
+
+Important distinction:
+
+```text
+CROESUS = Mermnad
+not Heraclid
+
+but
+
+PUNISHMENT = vengeance owed to the Heraclidae
+for Gyges' seizure of their kingship
+```
+
+This is therefore not merely inherited personal guilt. It is **office-lineage debt**:
+
+```text
+UNLAWFUL TRANSFER OF SOVEREIGN OFFICE
+-> DYNASTIC SUCCESSION
+-> UNRESOLVED LEGITIMACY CLAIM
+-> DELAYED SETTLEMENT AT GENERATION N
+```
+
+Add:
+
+```text
+AUTH-09 = DYNASTIC_OFFICE_DEBT
+TIME-01 = GENERATIONAL_DELAYED_RECKONING
+LEG-01 = ORACULAR_LEGITIMATION_WITH_RESERVED_VENGEANCE
+```
+
+### 19.1 Oracle paradox
+
+Delphi both ratifies Gyges' rule and reserves future vengeance for the dispossessed Heraclidae.
+
+Thus:
+
+```text
+CURRENT LEGAL / SACRAL RECOGNITION
+!=
+ERASURE OF PRIOR WRONG
+```
+
+The office may be validly occupied in the present while the transition into that office still carries an unresolved moral or dynastic liability.
+
+### 19.2 Fifth-generation structure
+
+Herodotus' Mermnad sequence is:
+
+```text
+1 Gyges
+2 Ardys
+3 Sadyattes
+4 Alyattes
+5 Croesus
+```
+
+so Croesus is the fifth ruler-generation of the Mermnad line from Gyges in Herodotus' narrative framing.
+
+### 19.3 Heraclid layer
+
+Herodotus says the prior dynasty had ruled Lydia for twenty-two generations / 505 years, from Agron to Candaules, and traced itself to Heracles through Alcaeus.
+
+The fall of Croesus therefore closes a long temporal bracket:
+
+```text
+HERACLID ORACULAR KINGSHIP
+-> HERACLID DISPOSSESSION
+-> MERMNAD ORACULAR RATIFICATION
+-> FIVE-GENERATION DELAY
+-> HERACLID VENGEANCE FULFILLED
+```
+
+This is a powerful example of genealogy functioning as a temporal accounting system rather than merely biological pedigree.
