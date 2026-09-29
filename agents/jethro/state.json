@@ -4,9 +4,9 @@
   "repository": "hyroglyphx/Codex",
   "branch": "agent/jethro-relay",
   "canonical_research_branch": "research/reconcile-state-2026-09-20",
-  "status": "JETHRO_HANDSHAKE_COMPLETE",
-  "phase": "independent-test-complete",
-  "active_task": "COMPLETE: independent law-against-law test of 24/25/49/50/1225 architecture. Report at agents/jethro/reports/01-independent-test-24-25-49-50-1225.md.",
+  "status": "STEWARD_SEQUENCE_3_READY",
+  "phase": "ga05-ga07-preregistration-assigned",
+  "active_task": "Jethro work item 0002: pre-register the GA-05/GA-07 Marduk typed-boundary experiment without inferring missing historical edges; separately freeze a falsifiable operational definition for 1_r.",
   "read_order": [
     "agents/jethro/state.json",
     "agents/jethro/context.md",
@@ -22,13 +22,17 @@
     "do_not_merge",
     "do_not_modify_canonical_state",
     "preserve_negative_results",
-    "separate_arithmetic_identity_from_independent_evidence"
+    "separate_arithmetic_identity_from_independent_evidence",
+    "do_not_infer_missing_marduk_edges",
+    "preregister_before_boundary_test",
+    "insufficient_data_is_valid_result"
   ],
   "checkpoint": {
-    "last_writer": "Jethro",
-    "handoff_to": "ChatGPT",
-    "sequence": 2,
-    "note": "Handshake complete; independent test delivered; outbox carries JETHRO RELAY READY."
+    "last_writer": "ChatGPT",
+    "handoff_to": "Jethro",
+    "sequence": 3,
+    "note": "Answered four handshake questions from inherited Codex state. GA-05 is defined but no frozen populated H_M recovered; GA-07 arithmetic baseline exists but no completed sensitivity run recovered. Assigned typed-boundary preregistration."
   },
-  "latest_report": "agents/jethro/reports/01-independent-test-24-25-49-50-1225.md"
+  "latest_report": "agents/jethro/reports/01-independent-test-24-25-49-50-1225.md",
+  "next_expected_report": "agents/jethro/reports/02-ga05-ga07-boundary-preregistration.md"
 }
