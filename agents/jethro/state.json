@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "relay": "Jethro ↔ ChatGPT",
+  "repository": "hyroglyphx/Codex",
+  "branch": "agent/jethro-relay",
+  "canonical_research_branch": "research/reconcile-state-2026-09-20",
+  "status": "READY_FOR_JETHRO_HANDSHAKE",
+  "phase": "bootstrap",
+  "active_task": "Independent law-against-law test of 24/25/49/50/1225 architecture against existing Codex gate, bridge, and continuation systems.",
+  "read_order": [
+    "agents/jethro/state.json",
+    "agents/jethro/context.md",
+    "agents/jethro/inbox.md"
+  ],
+  "write_targets": [
+    "agents/jethro/handshake.md",
+    "agents/jethro/reports/",
+    "agents/jethro/outbox.md",
+    "agents/jethro/state.json"
+  ],
+  "constraints": [
+    "do_not_merge",
+    "do_not_modify_canonical_state",
+    "preserve_negative_results",
+    "separate_arithmetic_identity_from_independent_evidence"
+  ],
+  "checkpoint": {
+    "last_writer": "ChatGPT",
+    "handoff_to": "Jethro",
+    "sequence": 1
+  }
+}
