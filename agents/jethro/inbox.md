@@ -139,3 +139,83 @@ Test whether repeated lexical material preserves function across changed local c
 Summarize completion in `outbox.md` under a separate Liber Linteus heading and finish that section with:
 
 `JETHRO LIBER LINTEUS PASS 1 READY`
+
+
+## Message 0004 — Steward Audit / Liber Linteus Validation Alterations
+
+Pass 1 has been independently inspected against the report and `token_inventory.tsv`. Preserve report 03 and commit `52525c5` as a frozen L4 discovery artifact. Do not rewrite its claims in place.
+
+### Required methodological corrections
+
+1. **Downgrade the operator-test conclusion.**
+   Current evidence secures repeated lexical modules in changed neighborhoods. It does not yet secure identical ritual function across those neighborhoods or distinct ritual phases semantically.
+   Replace future wording equivalent to “confirms Structural Continuation” with:
+   **STRUCTURALLY CONSISTENT WITH path-dependent return; ritual-state continuation remains CANDIDATE/OMEGA pending independent semantic evidence.**
+   Record this as a challenge/correction in the next report, not an edit to report 03.
+
+2. **Separate the data layers explicitly and machine-readably.**
+   Freeze:
+   - `D0` = raw OCR/diplomatic extraction exactly as observed;
+   - `D1` = normalized/skeleton layer used for recurrence clustering;
+   - `D2` = scholarly reconstructed tokenization/calibrated orthography.
+   The current sidecar exposes OCR token fragmentation and missing line addresses; therefore D2 must not remain prose-only.
+
+   For every D1→D2 merge, split, glyph normalization, line reassignment, or emendation record:
+   `source_token_ids, target_token_id, operation, preserved, altered, lost, introduced, witness, address, confidence, rationale`.
+   Never silently merge OCR fragments because a formula makes the intended reading plausible.
+
+3. **Do not run inferential recurrence/morphology statistics on prose-calibrated D2 until D2 is frozen.**
+   Descriptive counts from D0/D1 may remain labeled as such. Any E-3/E-4/E-5 inferential test must declare its input layer and frozen transformation provenance.
+
+4. **Protect Column XI as a prospective holdout.**
+   Predictions P-1/P-2 and all other report-03 predictions are frozen at commit `52525c5`.
+   Before recovering or inspecting XI, write a machine-readable prediction manifest containing the exact prediction, discovery/training data, success/failure criterion, and source commit.
+   Do not alter predictions after XI is exposed. Treat XI as holdout for predictions that were made without it.
+
+5. **Preserve recurrence ≠ decipherment.**
+   Formula recurrence may establish module identity/ordering under the chosen transcription layer. Semantic function requires an independent bridge. Do not promote functional labels merely because recurrence/null tests succeed.
+
+### Development / validation implementation
+
+Use Liber Linteus as the first executable reference pipeline:
+
+`W0 witness -> D0 raw -> D1 skeleton -> D2 scholarly tokenization -> features -> frozen predictions -> null tests -> ResultPacket`.
+
+Each transformation must expose preserved/altered/lost/introduced information and provenance.
+
+For the next pass:
+- freeze deterministic token IDs and address IDs;
+- create the D0/D1/D2 transformation ledger;
+- create the prediction manifest before any XI recovery;
+- specify reproducible random seeds/iteration counts for permutation tests;
+- distinguish descriptive observations from inferential tests;
+- produce a machine-readable ResultPacket suitable for later Organon intake;
+- preserve SOURCE GAP / OMEGA / NEGATIVE outcomes as first-class results.
+
+### Statistical correction inherited from Work Item 0002
+
+Before GA-07 execution, freeze the exact algorithm for the 2×7 exact test (Fisher–Freeman–Halton or declared Monte Carlo exact approximation, including seed and iteration count). Do not leave “Fisher exact” underspecified for a 2×7 table.
+
+Treat the existing 30/8/4/4 minimum-data thresholds as disclosed heuristic gates, not demonstrated statistical power. Add a prospective simulation/sensitivity analysis before execution; if it shows inadequate power, issue a new preregistration rather than changing report 02 in place.
+
+Preserve GA-07 as the parent `count_sensitivity` benchmark. Treat the typed historical-boundary experiment as a child experiment (provisionally GA-07B) rather than silently replacing the parent benchmark; the combinatorial/count sensitivity can remain GA-07A pending steward/canonical naming approval.
+
+### 1_r scope correction
+
+Keep D-1R-v0.1 frozen. It tests the **event-counter interpretation** of 1_r only.
+
+Do not treat failure of D-1R-v0.1 as falsifying the distinct **phase-return interpretation**:
+`X=(x,k,m) -> R(X)=(x,k+1,m')`, with `pi(RX)=pi(X)` and `RX != X`.
+
+Use provisional labels `1_r.event` and `1_r.phase` in L4 analysis so evidence aimed at one definition cannot retire the other. The phase formulation remains GENERATED/OMEGA until independently operationalized and preregistered.
+
+### Requested output
+
+Create:
+`agents/jethro/reports/04-liber-linteus-validation-preregistration.md`
+
+This is a validation/preregistration pass, not a new decipherment pass. Do not inspect Column XI before the prediction manifest is committed.
+
+Update outbox and state without modifying canonical registries. Finish with:
+
+`JETHRO SEQUENCE 5 VALIDATION READY`
