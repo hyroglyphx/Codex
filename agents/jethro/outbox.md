@@ -288,3 +288,49 @@ Any future acquisition repeats the gate + blinding protocol.
 sequence unchanged at 5.
 
 **Push:** via GitHub API; recorded in the commit.
+
+---
+
+## 2026-09-29 ~18:45 CDT — Tabula Capuana preregistration freeze (user-directed lane)
+
+**JETHRO TC PREREGISTRATION READY** — user-directed independent-replication experiment:
+`LL_discovery → TC_independent_replication`. Separate from the XI holdout chain; the two
+do not bleed together (bleed controls in report 07 §4).
+
+**Report:** `agents/jethro/reports/07-tabula-capuana-preregistration.md`.
+**Manifest:** `data/tabula-capuana/tc_preregistration_manifest.json` (machine-readable).
+
+**Four frozen confirmatory tests** (no TC text ingested before this commit):
+- **TC-RI** — *-ri* as productive verbal/necessitive operator across LL+TC. Frozen
+  candidates {pepri, picasri, muluri, sacri, nunθeri}; operator signature = stem recurs
+  with ≥2 endings ∧ *-ri* form in ≥2 formula environments. SUCCESS ≥4/5, FAILURE ≤2/5.
+- **TC-TUL** — *tul(e)* calendrical/phase-addressing predicts positional freedom above
+  formula-bound vocabulary. Reuses E-4's 3-bin entropy definition; frozen reference set
+  {vacil, mulu, saca, leθamsul, savcnes}. SUCCESS if tul entropy > max(reference).
+- **TC-NUNΘ** — *nunθeri* (TC) vs *nunθen* (LL) as one operator family at the typed
+  transformation level (T1 morphological ≥2 endings; T2 same modal position; T3 shared
+  neighbor). SUCCESS iff T1∧T2∧T3.
+- **TC-MARCH** — frozen published parallel LL 3.15–17 ↔ TC §1.1–7 (*sauc-*/*vacl*,
+  March-context) tested BEFORE global search; distinctiveness ranked against all
+  LL-column × TC-section windows with 10,000 label permutations. SUCCESS iff both
+  directions p<0.05.
+
+**vacil branch:** H_A (libation/offering) vs H_B (discourse/temporal "then",
+Steinbauer/Rix) — both live, neither resolved. Report 03's "vinum as offering carrier
+(libation DERIVED)" re-labeled **DERIVED|H_A**; all vinum→offering inferences conditional.
+
+**Standing rules:** missingness not IID (block-structured permutation only; token-level
+IID shuffles prohibited); red rulings/diacritics recorded as structural flags, never
+stripped.
+
+**Pre-freeze knowledge statement** recorded (TC hypotheses from LL discovery + published
+scholarship per scope authority; operational criteria not tuned against the reviewed
+transcription).
+
+**Checkpoint:** `state.json` updated — user-directed TC lane; numbered sequence unchanged
+at 5.
+
+**Push:** via GitHub API; recorded in the commit (1cf3ce2).
+
+**Parallel lane:** Uranić 2019 inspection for a defensible XI witness/concordance is
+running separately; XI stays sealed unless it returns USABLE_XI_WITNESS.

@@ -4,9 +4,9 @@
   "repository": "hyroglyphx/Codex",
   "branch": "agent/jethro-relay",
   "canonical_research_branch": "research/reconcile-state-2026-09-20",
-  "status": "JETHRO_XI_HOLDOUT_UNSCORABLE",
-  "phase": "liber-linteus-xi-holdout-attempt-complete",
-  "active_task": "COMPLETE Message 0006 phase 1: blinded Column XI acquisition attempt → SOURCE_GAP / HOLDOUT_UNSCORABLE (15 candidates exhausted; modern XI text print-only). No D0/D1 produced; no scoring; P-1…P-8 FROZEN-UNTESTED. Blinding held (manifest never opened); 4 incidental exposures ledgered. Unblock requires print-edition procurement (human step).",
+  "status": "JETHRO_TC_PREREGISTRATION_READY",
+  "phase": "tabula-capuana-preregistration-frozen",
+  "active_task": "User-directed TC lane: preregistration frozen (report 07 + manifest, pushed 1cf3ce2). Four confirmatory tests TC-RI/TC-TUL/TC-NUNTH/TC-MARCH + vacil H_A/H_B branch; no TC text ingested yet. Next: TC corpus ingestion per frozen plan, then execution. Uranić 2019 XI-witness scout running in parallel; XI stays sealed unless USABLE_XI_WITNESS.",
   "read_order": [
     "agents/jethro/state.json",
     "agents/jethro/context.md",
@@ -31,9 +31,9 @@
     "last_writer": "Jethro",
     "handoff_to": "ChatGPT",
     "sequence": 5,
-    "note": "Message 0006 executed to SOURCE_GAP. Report 06 + XI sidecars (W0 provenance, contamination ledger, run manifest). Holdout open; predictions frozen."
+    "note": "JETHRO TC PREREGISTRATION READY (user-directed lane; numbered sequence unchanged at 5). Report 07 + TC manifest. XI holdout chain untouched (still sealed per report 06)."
   },
-  "latest_report": "agents/jethro/reports/06-liber-linteus-xi-holdout-attempt.md",
+  "latest_report": "agents/jethro/reports/07-tabula-capuana-preregistration.md",
   "next_expected_report": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
   "open_parallel_lane": {
     "id": "liber-linteus-pass-1",
@@ -41,6 +41,6 @@
     "expected": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
     "finish_marker": "JETHRO LIBER LINTEUS PASS 1 READY",
     "status": "complete",
-    "validation": "report 04 + prediction manifest committed pre-XI; XI holdout UNSCORABLE (report 06); predictions FROZEN-UNTESTED"
+    "validation": "report 04 + prediction manifest committed pre-XI; XI holdout UNSCORABLE (report 06); predictions FROZEN-UNTESTED; TC replication lane opened user-directed (report 07)"
   }
 }
