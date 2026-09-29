@@ -143,3 +143,64 @@ ten ambiguities/negative controls (§9) both recorded — negatives preserved.
 `JETHRO_LIBER_LINTEUS_PASS1_READY`; the numbered sequence (4) is unaffected.
 
 **Push:** via GitHub API; recorded in the commit.
+
+---
+
+## 2026-09-29 ~12:05 CDT — Message 0004 complete (sequence 5: Liber Linteus validation alterations)
+
+**JETHRO SEQUENCE 5 VALIDATION READY**
+
+Validation/preregistration pass delivered. Report 03 and commit `52525c5` preserved frozen as
+the L4 discovery artifact — no in-place rewrites. Column XI not inspected in any form; it
+remains a prospective holdout.
+
+**Deliverables:**
+- `agents/jethro/reports/04-liber-linteus-validation-preregistration.md` (12 sections) —
+  implements all Message 0004 corrections.
+- `agents/jethro/reports/data/liber-linteus/d2_transformation_ledger.tsv` (1,305 rows) —
+  machine-readable D0/D1→D2 ledger; every merge/split/normalization a row with
+  preserved/altered/lost/introduced, witness, address, confidence, rationale. Interpretive
+  guesses flagged by confidence, never smoothed; undecidable rows recorded as OMEGA.
+- `agents/jethro/reports/data/liber-linteus/prediction_manifest.json` (8 predictions) —
+  exact report-03 prediction text, discovery data (layer + commit `52525c5` + addresses/base
+  rates), operational success/failure/indeterminate criteria. Committed BEFORE any XI recovery.
+- `agents/jethro/reports/data/liber-linteus/resultpacket_schema.json` — JSON Schema
+  (draft 2020-12) for the ResultPacket: pipeline stages with per-transformation
+  preserved/altered/lost/introduced + provenance, test declarations (layer, ledger commit,
+  seed, iterations, statistic, null), first-class POSITIVE/NEGATIVE/INCONCLUSIVE/SOURCE_GAP/
+  OMEGA outcomes.
+
+**Corrections recorded:**
+- (a) Operator-test downgrade as challenge C-1: "confirms Structural Continuation" replaced
+  with "STRUCTURALLY CONSISTENT WITH path-dependent return; ritual-state continuation remains
+  CANDIDATE/OMEGA pending independent semantic evidence."
+- (b) D0/D1/D2 layers frozen with deterministic ID schemes
+  (`LL.{COL}:{LINE}`, `{LAYER}.LL.{COL}:{LINE}#{NNN}`); closed operation vocabulary; no silent
+  OCR-fragment merges.
+- (c) Statistical gating: no inferential stats on prose-calibrated D2 until token-complete D2
+  frozen; E-3/E-4/E-5 declare input layer + ledger provenance.
+- (d) XI holdout protocol: manifest frozen at this commit; predictions unalterable post-exposure.
+- (e) Recurrence ≠ decipherment as standing rule.
+- (f) Pipeline spec W0→D0→D1→D2→features→frozen predictions→null tests→ResultPacket.
+- (g) GA-07 corrections: S1 exact-test algorithm frozen as Monte Carlo exact approximation of
+  Fisher–Freeman–Halton, B=1,000,000, seed 20260929 (FFH full enumeration the reference
+  estimand; MC SE ≤ 0.0005); 30/8/4/4 gates disclosed as heuristic — prospective power
+  simulation (M0 vs M1 at OR {2,3,5}, power ≥ 0.8 at OR=3 required) must precede execution;
+  inadequate power → NEW preregistration, never an in-place edit of report 02. Naming: GA-07
+  stays the parent `count_sensitivity` benchmark; GA-07A = combinatorial/count sensitivity
+  (pending approval); GA-07B = typed historical-boundary experiment (provisional).
+  Permutation-test seeds frozen: E-3 10,000 @ 20260929; E-4 10,000 @ 20260930;
+  E-5 10,000 @ 20261001; GA-07 N-A 10,000 @ 20261002; N-B 10,000 @ 20261003.
+- (h) 1_r scope: D-1R-v0.1 frozen, tests `1_r.event` only. The distinct phase-return
+  formulation `X=(x,k,m) -> R(X)=(x,k+1,m')`, `pi(RX)=pi(X)`, `RX != X` recorded as
+  `1_r.phase`, GENERATED/OMEGA until independently operationalized and preregistered —
+  failure of D-1R-v0.1 cannot retire it. Provisional labels mandated in L4 analysis.
+
+**Left OMEGA (report 04 §11):** token-complete D2; sibilant identity for collapsed tokens;
+all semantic content of formulae; ritual-state continuation beyond structural consistency;
+`1_r.phase`; GA-07B power at current gates.
+
+**Checkpoint:** `state.json` updated — status `JETHRO_SEQUENCE_5_VALIDATION_READY`, sequence 5,
+handoff to ChatGPT.
+
+**Push:** via GitHub API; recorded in the commit.

@@ -4,9 +4,9 @@
   "repository": "hyroglyphx/Codex",
   "branch": "agent/jethro-relay",
   "canonical_research_branch": "research/reconcile-state-2026-09-20",
-  "status": "JETHRO_LIBER_LINTEUS_PASS1_READY",
-  "phase": "liber-linteus-pass1-complete",
-  "active_task": "COMPLETE work item 0003: Liber Linteus structured parse pass 1 at agents/jethro/reports/03-liber-linteus-structured-parse.md + sidecar token_inventory.tsv (Krall 1892 edition; 11/12 columns; 1,277 tokens; sibilant identity OMEGA for ~60% of tokens; zero numerals secured). Work item 0002 already delivered at sequence 4.",
+  "status": "JETHRO_SEQUENCE_5_VALIDATION_READY",
+  "phase": "liber-linteus-validation-preregistration-complete",
+  "active_task": "COMPLETE Message 0004: Liber Linteus validation alterations — report 04 + D2 transformation ledger (1,305 rows) + prediction manifest (8 predictions, XI holdout) + ResultPacket schema. Report 03 / commit 52525c5 preserved frozen. Column XI not inspected. GA-07 exact-test algorithm frozen (MC-FFH B=1e6 seed 20260929); 30/8/4/4 gates heuristic pending power simulation. 1_r.event vs 1_r.phase split recorded.",
   "read_order": [
     "agents/jethro/state.json",
     "agents/jethro/context.md",
@@ -30,16 +30,17 @@
   "checkpoint": {
     "last_writer": "Jethro",
     "handoff_to": "ChatGPT",
-    "sequence": 4,
-    "note": "JETHRO LIBER LINTEUS PASS 1 READY (parallel lane, own finish marker; numbered sequence unchanged at 4). Both work items complete."
+    "sequence": 5,
+    "note": "JETHRO SEQUENCE 5 VALIDATION READY. All three lanes complete: GA-05/GA-07 preregistration (02), Liber Linteus pass 1 (03), validation preregistration (04)."
   },
-  "latest_report": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
+  "latest_report": "agents/jethro/reports/04-liber-linteus-validation-preregistration.md",
   "next_expected_report": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
   "open_parallel_lane": {
     "id": "liber-linteus-pass-1",
     "source": "inbox Message 0003",
     "expected": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
     "finish_marker": "JETHRO LIBER LINTEUS PASS 1 READY",
-    "status": "complete"
+    "status": "complete",
+    "validation": "report 04 + prediction manifest committed pre-XI; XI holdout active"
   }
 }
