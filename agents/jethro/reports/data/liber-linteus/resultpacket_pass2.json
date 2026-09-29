@@ -1,0 +1,248 @@
+{
+ "packet_id": "LL-pass2-2026-09-29",
+ "produced_at": "2026-09-29",
+ "source_commit": "52525c5",
+ "ledger_ref": {
+  "commit": "8d9b933a29d553e5078f91e9e11b450a33b31014",
+  "path": "agents/jethro/reports/data/liber-linteus/d2_transformation_ledger.tsv",
+  "rows": 1305
+ },
+ "pipeline": [
+  {
+   "stage": "W0",
+   "operation": "witness identification: Krall 1892 editio princeps via Internet Archive scan",
+   "preserved": "edition-level facts (12 reconstructed columns, red/black ink, blank terminal at XII)",
+   "altered": "none",
+   "lost": "Column XI transcription in OCR; Krall Antiqua/cursive certainty layer in OCR",
+   "introduced": "none",
+   "provenance": {
+    "witness": "Krall 1892 (Internet Archive scan)",
+    "commit": "52525c5"
+   }
+  },
+  {
+   "stage": "D0",
+   "operation": "OCR/diplomatic extraction, verbatim (no correction)",
+   "preserved": "1,277 token strings exactly as observed",
+   "altered": "none",
+   "lost": "line addresses for 260 tokens (cols III, VIII, X); column V line 12 entirely absent",
+   "introduced": "7 xxxx-artifact rows (OCR garbage); 2 long junk lines (X:131, III:100 tokens)",
+   "provenance": {
+    "witness": "token_inventory.tsv raw column",
+    "commit": "52525c5"
+   }
+  },
+  {
+   "stage": "D1",
+   "operation": "skeleton normalization: ASCII case-fold + OCR-special mapping (&->T; ä/ö/ü/ß/§/$/Ä->S; ^ dropped)",
+   "preserved": "token order, line structure; 1,008/1,277 tokens verbatim",
+   "altered": "269 tokens via skeleton_normalize ledger rows (per-row char mappings; interpretive guesses flagged by confidence)",
+   "lost": "original glyph shapes for mapped characters (marked lost per ledger row)",
+   "introduced": "normalization convention (interpretive; never mistaken for observation)",
+   "provenance": {
+    "witness": "d2_transformation_ledger.tsv (1,277 D0->D1 rows)",
+    "commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   }
+  },
+  {
+   "stage": "D2",
+   "operation": "NOT EXECUTED this pass: D2 remains type-level calibration rows + OMEGA rows per report 04; no inferential statistics on D2",
+   "preserved": "28 D1->D2/OMEGA ledger rows frozen",
+   "altered": "none this pass",
+   "lost": "token-complete D2 (pending E-1 plate verification)",
+   "introduced": "none",
+   "provenance": {
+    "witness": "d2_transformation_ledger.tsv",
+    "commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   }
+  },
+  {
+   "stage": "features",
+   "operation": "descriptive censuses on D0/D1: unigram frequencies, verbatim n-grams (within lines), positional classes, co-occurrence windows, suffix-ending benchmark",
+   "preserved": "input-layer labels on every table/caption",
+   "altered": "none (no normalization beyond the layer)",
+   "lost": "none",
+   "introduced": "derived counts (features_pass2.tsv)",
+   "provenance": {
+    "witness": "features_pass2.tsv",
+    "commit": "618a40bcef1a751cad3dc4ede5af06033ef7e75b"
+   }
+  },
+  {
+   "stage": "predictions",
+   "operation": "frozen prediction manifest read-only; no manifest criterion applied (Column XI holdout sealed)",
+   "preserved": "8 predictions FROZEN-UNTESTED at source commit",
+   "altered": "none",
+   "lost": "none",
+   "introduced": "none",
+   "provenance": {
+    "witness": "prediction_manifest.json",
+    "commit": "52525c5"
+   }
+  },
+  {
+   "stage": "null_tests",
+   "operation": "E-3 and E-4 executed on D1 with frozen seeds/iterations/nulls; E-5 recorded INCONCLUSIVE (declared statistic saturates under declared null)",
+   "preserved": "frozen seeds (20260929/20260930/20261001), 10,000 iterations each, declared null models",
+   "altered": "E-4 comparison list fixed to report 03 section 3.1 ranks 2-11 (single-char OCR debris excluded; documented in report 05 section 2)",
+   "lost": "none",
+   "introduced": "p-values and test outcomes (report 05 section 4)",
+   "provenance": {
+    "witness": "report 05; analysis procedure section 8",
+    "commit": "618a40bcef1a751cad3dc4ede5af06033ef7e75b"
+   }
+  }
+ ],
+ "test_declarations": [
+  {
+   "test_id": "D-F1",
+   "input_kind": "descriptive",
+   "frozen_transform_provenance": {
+    "input_layer": "D1",
+    "ledger_commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   },
+   "statistic": "rank-frequency tables (top 40 types)",
+   "null_model": "none (descriptive)"
+  },
+  {
+   "test_id": "D-F2",
+   "input_kind": "descriptive",
+   "frozen_transform_provenance": {
+    "input_layer": "D1",
+    "ledger_commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   },
+   "statistic": "verbatim n-gram census within lines (n=2..12)",
+   "null_model": "none (descriptive)"
+  },
+  {
+   "test_id": "D-F3",
+   "input_kind": "descriptive",
+   "frozen_transform_provenance": {
+    "input_layer": "D1",
+    "ledger_commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   },
+   "statistic": "positional-class census {lone, initial, medial, final}",
+   "null_model": "none (descriptive)"
+  },
+  {
+   "test_id": "D-F4",
+   "input_kind": "descriptive",
+   "frozen_transform_provenance": {
+    "input_layer": "D1",
+    "ledger_commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   },
+   "statistic": "co-occurrence windows (+-3 tokens, same line): vinum x fler-/nun-; etnam neighbor-type diversity; 2-letter-ending productivity benchmark",
+   "null_model": "none (descriptive)"
+  },
+  {
+   "test_id": "E-3",
+   "input_kind": "inferential",
+   "frozen_transform_provenance": {
+    "input_layer": "D1",
+    "ledger_commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   },
+   "statistic": "T = max verbatim repeated n-gram length (n>=2, within lines, exact D1 equality); observed T=6",
+   "null_model": "token shuffle within columns, line breaks (line lengths) preserved; T_null recomputed per replicate over corpus-pooled within-line n-grams",
+   "seed": 20260929,
+   "iterations": 10000,
+   "alpha": 0.05
+  },
+  {
+   "test_id": "E-4",
+   "input_kind": "inferential",
+   "frozen_transform_provenance": {
+    "input_layer": "D1",
+    "ledger_commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   },
+   "statistic": "D = H(etnam) - mean(H(next-10)); H = Shannon entropy (bits) of token's distribution over position classes {lone, initial, medial, final}; next-10 = report 03 section 3.1 ranks 2-11 (vacl, vinum, tul, cepen, tei, enas, flere, cisum, acil, trin)",
+   "null_model": "global permutation of token positions (1,277 slots; line lengths preserved); one-sided: P(D_null >= D_obs)",
+   "seed": 20260930,
+   "iterations": 10000,
+   "alpha": 0.05
+  },
+  {
+   "test_id": "E-5",
+   "input_kind": "inferential",
+   "frozen_transform_provenance": {
+    "input_layer": "D1",
+    "ledger_commit": "8d9b933a29d553e5078f91e9e11b450a33b31014"
+   },
+   "statistic": "-ri type/token ratio on case-folded D1 skeletons with len>=3 ending in 'ri'; observed 22/38 = 0.5789",
+   "null_model": "random segmentation: per token occurrence, uniform random split over positions 1..len-1; pseudo-suffix = token[split:]; comparison functionals tried: (a) max type/token over pseudo-classes with >=5 tokens, (b) max over classes with >=20 tokens",
+   "seed": 20261001,
+   "iterations": 10000,
+   "alpha": 0.05
+  }
+ ],
+ "test_results": [
+  {
+   "test_id": "E-3",
+   "outcome": "POSITIVE",
+   "p_value": 0.0001,
+   "statistic_value": 6,
+   "effect": "0/10000 null replicates reached T>=6",
+   "interpretation": "Verbatim formulaic recurrence on D1 is highly non-random under within-column shuffling (detection pooled corpus-wide): longest D1 repeat 6-token VII litany frame (male·ceia·hia·etnam·ciz·vacl, VII:3=VII:5); F-B core cisum·pute·tul x5. Strengthens the structural claim (I-1/I-8) ONLY. No functional/semantic promotion (report 04 section 5). Note: the calibrated-layer 7 (F-B V:5=V:12) has no D1 counterpart -- V:12 absent from D1 (SOURCE GAP in D1).",
+   "layer_state": "DERIVED"
+  },
+  {
+   "test_id": "E-4",
+   "outcome": "NEGATIVE",
+   "p_value": 0.493951,
+   "statistic_value": 0.1518,
+   "effect": "4939/10000 null replicates >= D_obs",
+   "interpretation": "etnam positional entropy (0.919; 3 initial / 28 medial / 4 final) is NOT significantly higher than the next-10 frequent tokens' (tul 1.241, vacl 1.087, vinum 1.041 exceed it). I-4's positional-freedom claim is not distinguished from 'frequent word' by this measure. Descriptive residue: etnam does occupy all three edge classes and has 44 distinct neighbor types.",
+   "layer_state": "DERIVED"
+  },
+  {
+   "test_id": "E-5",
+   "outcome": "INCONCLUSIVE",
+   "p_value": null,
+   "statistic_value": 0.5789,
+   "effect": "null saturates: 10000/10000 replicates produce a pseudo-class with ratio >= 0.5789 under both functionals (a) and (b)",
+   "interpretation": "The declared statistic (type/token ratio) cannot discriminate morpheme productivity from chance aggregation under the declared random-segmentation null: uniform random splits invariably yield 1-char pseudo-suffix classes aggregating dozens of tokens across many distinct types (ratio 1.0 attainable). No substitute test run. Descriptive: -ri ranks #2/#3 of 178 two-letter endings (22 types/38 tokens); -ti (23/25) and -ic (20/26) are comparably productive, consistent with phonotactic generation of high productivity. A discriminating test needs a new preregistration.",
+   "layer_state": "OMEGA"
+  }
+ ],
+ "predictions_evaluated": [
+  {
+   "prediction_id": "P-1",
+   "outcome": "INCONCLUSIVE",
+   "criterion_applied": "Not applied -- Column XI holdout sealed per report 04 section 4; pass 2 executed no XI recovery/inspection and no pass-2 result triggers any manifest criterion."
+  },
+  {
+   "prediction_id": "P-2",
+   "outcome": "INCONCLUSIVE",
+   "criterion_applied": "Not applied -- Column XI holdout sealed per report 04 section 4; pass 2 executed no XI recovery/inspection and no pass-2 result triggers any manifest criterion."
+  },
+  {
+   "prediction_id": "P-3",
+   "outcome": "INCONCLUSIVE",
+   "criterion_applied": "Not applied -- Column XI holdout sealed per report 04 section 4; pass 2 executed no XI recovery/inspection and no pass-2 result triggers any manifest criterion."
+  },
+  {
+   "prediction_id": "P-4",
+   "outcome": "INCONCLUSIVE",
+   "criterion_applied": "Not applied -- Column XI holdout sealed per report 04 section 4; pass 2 executed no XI recovery/inspection and no pass-2 result triggers any manifest criterion."
+  },
+  {
+   "prediction_id": "P-5",
+   "outcome": "INCONCLUSIVE",
+   "criterion_applied": "Not applied -- Column XI holdout sealed per report 04 section 4; pass 2 executed no XI recovery/inspection and no pass-2 result triggers any manifest criterion."
+  },
+  {
+   "prediction_id": "P-6",
+   "outcome": "INCONCLUSIVE",
+   "criterion_applied": "Not applied -- Column XI holdout sealed per report 04 section 4; pass 2 executed no XI recovery/inspection and no pass-2 result triggers any manifest criterion."
+  },
+  {
+   "prediction_id": "P-7",
+   "outcome": "INCONCLUSIVE",
+   "criterion_applied": "Not applied -- Column XI holdout sealed per report 04 section 4; pass 2 executed no XI recovery/inspection and no pass-2 result triggers any manifest criterion."
+  },
+  {
+   "prediction_id": "P-8",
+   "outcome": "INCONCLUSIVE",
+   "criterion_applied": "Not applied -- Column XI holdout sealed per report 04 section 4; pass 2 executed no XI recovery/inspection and no pass-2 result triggers any manifest criterion."
+  }
+ ]
+}

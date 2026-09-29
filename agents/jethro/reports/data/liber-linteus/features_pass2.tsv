@@ -1,0 +1,174 @@
+table	layer	key	value
+unigram	D0	etnam	35
+unigram	D0	vacl	19
+unigram	D0	in	12
+unigram	D0	vinum	12
+unigram	D0	i	12
+unigram	D0	tul	11
+unigram	D0	e	11
+unigram	D0	cepen	10
+unigram	D0	tei	9
+unigram	D0	an	8
+unigram	D0	flere	8
+unigram	D0	cisum	8
+unigram	D0	acil	8
+unigram	D0	A	7
+unigram	D0	trin	7
+unigram	D0	pute	7
+unigram	D0	yi	7
+unigram	D0	fler	7
+unigram	D0	a	7
+unigram	D0	celi	7
+unigram	D0	enas	7
+unigram	D0	cletram	6
+unigram	D0	ara	6
+unigram	D0	var	6
+unigram	D0	aisna	6
+unigram	D0	ar	5
+unigram	D0	tesim	5
+unigram	D0	ceia	5
+unigram	D0	tiurim	5
+unigram	D0	repinec	5
+unigram	D0	spureri	5
+unigram	D0	ic	5
+unigram	D0	sacnicleri	5
+unigram	D0	ftesan	5
+unigram	D0	mlay	5
+unigram	D0	hia	5
+unigram	D0	ciz	5
+unigram	D0	enac	5
+unigram	D0	Ar	4
+unigram	D0	im	4
+unigram	D1	etnam	35
+unigram	D1	vacl	19
+unigram	D1	a	15
+unigram	D1	in	12
+unigram	D1	vinum	12
+unigram	D1	i	12
+unigram	D1	tul	11
+unigram	D1	e	11
+unigram	D1	cepen	10
+unigram	D1	tei	9
+unigram	D1	ar	9
+unigram	D1	enas	9
+unigram	D1	an	8
+unigram	D1	flere	8
+unigram	D1	cisum	8
+unigram	D1	acil	8
+unigram	D1	trin	7
+unigram	D1	pute	7
+unigram	D1	yi	7
+unigram	D1	fler	7
+unigram	D1	celi	7
+unigram	D1	cletram	6
+unigram	D1	ara	6
+unigram	D1	var	6
+unigram	D1	sacnicleri	6
+unigram	D1	aisna	6
+unigram	D1	tesim	5
+unigram	D1	ceia	5
+unigram	D1	tiurim	5
+unigram	D1	repinec	5
+unigram	D1	spureri	5
+unigram	D1	sin	5
+unigram	D1	ic	5
+unigram	D1	ftesan	5
+unigram	D1	mlay	5
+unigram	D1	hia	5
+unigram	D1	ciz	5
+unigram	D1	enac	5
+unigram	D1	yt	5
+unigram	D1	im	4
+bigram	D1	cisum + pute	7
+bigram	D1	tesim + etnam	5
+bigram	D1	pute + tul	5
+bigram	D1	trin + flere	4
+bigram	D1	ceia + hia	4
+bigram	D1	etnam + ciz	4
+bigram	D1	etnam + tesim	3
+bigram	D1	vacl + ara	3
+bigram	D1	tul + var	3
+bigram	D1	hia + etnam	3
+bigram	D1	ciz + vacl	3
+bigram	D1	male + ceia	3
+bigram	D1	etnam + celucn	3
+bigram	D1	svec + an	2
+bigram	D1	ar + a	2
+bigram	D1	a + a	2
+bigram	D1	nave + hetum	2
+bigram	D1	flere + in	2
+bigram	D1	rse + tinTi	2
+bigram	D1	tinTi + tiurim	2
+bigram	D1	tiurim + avils	2
+bigram	D1	zec + fler	2
+bigram	D1	hatec + repinec	2
+bigram	D1	meleri + sveleric	2
+bigram	D1	in + crapSti	2
+bigram	D1	yi + esviSc	2
+bigram	D1	cletram + srencve	2
+bigram	D1	eim + tul	2
+bigram	D1	ei + tul	2
+bigram	D1	ecn + zeri	2
+bigram	D1	spureri + med	2
+bigram	D1	enas + rayS	2
+bigram	D1	rayS + sud	2
+bigram	D1	var + celi	2
+bigram	D1	enas + sin	2
+bigram	D1	sin + eiser	2
+bigram	D1	acil + etnam	2
+bigram	D1	sucic + firin	2
+bigram	D1	ryt + ry	2
+bigram	D1	yt + ryi	2
+trigram	D1	cisum + pute + tul	5
+trigram	D1	etnam + tesim + etnam	3
+trigram	D1	ceia + hia + etnam	3
+trigram	D1	hia + etnam + ciz	3
+trigram	D1	etnam + ciz + vacl	3
+trigram	D1	male + ceia + hia	3
+trigram	D1	rse + tinTi + tiurim	2
+trigram	D1	enas + rayS + sud	2
+trigram	D1	tesim + etnam + celucn	2
+trigram	D1	xxxxxxxxxxxxxxxxxxxx + vemmi + spanza	1
+trigram	D1	xxxxxxxxxxxxxxxxx + velstreSc + wec	1
+trigram	D1	velstreSc + wec + an	1
+trigram	D1	xxxxxxxxxxxxxxxxxye + kxxxixmec + eSrse	1
+trigram	D1	ti + rim + avils	1
+trigram	D1	rim + avils + yiS	1
+trigram	D1	avils + yiS + cisitfm	1
+trigram	D1	yiS + cisitfm + pjute	1
+trigram	D1	cisitfm + pjute + tul	1
+trigram	D1	Ta + nmr + hattrih	1
+trigram	D1	nmr + hattrih + repin	1
+positional_class	D1	lone	0
+positional_class	D1	initial	149
+positional_class	D1	medial	979
+positional_class	D1	final	149
+line_stats	D1	n_lines	149
+line_stats	D1	n_tokens	1277
+line_stats	D1	rows_line_None	260
+line_stats	D1	xxxx_rows	7
+line_stats	D1	max_line_len	131
+suffix_ri_types	D1	caperi	2
+suffix_ri_types	D1	eluri	1
+suffix_ri_types	D1	eori	1
+suffix_ri_types	D1	epri	1
+suffix_ri_types	D1	eri	1
+suffix_ri_types	D1	ezeri	1
+suffix_ri_types	D1	flereri	1
+suffix_ri_types	D1	ftezeri	1
+suffix_ri_types	D1	ihri	1
+suffix_ri_types	D1	kpfureri	1
+suffix_ri_types	D1	meleri	2
+suffix_ri_types	D1	mexhumeri	1
+suffix_ri_types	D1	neri	2
+suffix_ri_types	D1	sacnicleri	7
+suffix_ri_types	D1	satri	1
+suffix_ri_types	D1	seri	1
+suffix_ri_types	D1	sjuzeri	1
+suffix_ri_types	D1	spetri	1
+suffix_ri_types	D1	spureri	5
+suffix_ri_types	D1	tucri	1
+suffix_ri_types	D1	yasri	1
+suffix_ri_types	D1	zeri	4
+vinum_window3	D1	n_vinum	12
+vinum_window3	D1	n_with_fler_or_nun	2

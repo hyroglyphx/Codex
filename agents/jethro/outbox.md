@@ -204,3 +204,52 @@ all semantic content of formulae; ritual-state continuation beyond structural co
 handoff to ChatGPT.
 
 **Push:** via GitHub API; recorded in the commit.
+
+---
+
+## 2026-09-29 ~14:45 CDT — Liber Linteus analysis pass 2 complete (user-directed)
+
+**JETHRO LIBER LINTEUS PASS 2 READY**
+
+Execution pass for the report-04 preregistration. Deliverables:
+- `agents/jethro/reports/05-liber-linteus-analysis-pass2.md` (8 sections)
+- `agents/jethro/reports/data/liber-linteus/resultpacket_pass2.json` (validates against
+  `resultpacket_schema.json` — independently re-verified at checkpoint)
+- `agents/jethro/reports/data/liber-linteus/features_pass2.tsv` (descriptive censuses,
+  layer-labeled)
+
+**Inferential results (all on D1, frozen seeds, declared nulls):**
+- **E-3 — POSITIVE (p = 0.0001).** Max verbatim repeat on D1 is 6 tokens
+  (`male·ceia·hia·etnam·ciz·vacl`, VII:3 = VII:5); 0/10,000 within-column shuffles reached it.
+  F-B core `cisum·pute·tul` repeats ×5. Licenses structural formulaicity only — no semantic
+  promotion. **Layer discrepancy preserved as a finding:** the preregistered "(7,4,4)" were
+  calibrated-layer values; on D1 the maximum is 6, because V:12 is entirely absent from D1
+  (SOURCE GAP in D1) — the headline 7-token verbatim match V:5=V:12 from report 03 does not
+  survive the skeleton layer. An E-3 null asymmetry found during audit was corrected
+  (corpus-pooled detection) with an identical result.
+- **E-4 — NEGATIVE (p = 0.494).** *etnam*'s positional entropy (0.919; 3 initial / 28 medial /
+  4 final) is not significantly higher than the next-10 frequent tokens' (tul 1.241, vacl 1.087,
+  vinum 1.041 exceed it). Report 03's I-4 positional-freedom claim is not distinguished from
+  "frequent word" by this measure. Negative preserved as a constraint; not re-run under a
+  different measure.
+- **E-5 — INCONCLUSIVE.** The declared type/token-ratio statistic saturates under the
+  random-segmentation null (10,000/10,000 replicates ≥ 0.5789 under both naive and
+  size-matched functionals — chance 1-char pseudo-suffixes aggregate dozens of tokens).
+  No substitute test run; a discriminating test needs a new preregistration. Descriptive:
+  `-ri` ranks #2/#3 of 178 two-letter endings (22 types/38 tokens), but `-ti` (23/25) and
+  `-ic` (20/26) are comparably productive — consistent with phonotaxis, not decisive.
+
+**Descriptive (D0/D1, layer-labeled):** D1 census 1,277 tokens / 798 types; V:2 carries an
+F-B core attestation (`cisum pute tul`) absent from report 03's table; `etnam·tesim·etnam`
+×3 frame; `vinum` strict D1 same-line window 2/12 (vs report 03's looser 5/12 — definition
+difference, recorded, not contradiction); *etnam* has 44 distinct neighbor types.
+
+**Governance:** Column XI untouched — all 8 manifest predictions remain FROZEN-UNTESTED, no
+criterion triggered. No D2 inferential statistics. Jubilees Message 0005 content unused
+(bias guard held). TCIM-C7 zero weight. Zero-numerals negative stands. Seeds frozen, no
+tuning. ATTESTED/RECONSTRUCTED/DERIVED/CANDIDATE/GENERATED/OMEGA kept distinct.
+
+**Checkpoint:** `state.json` updated — Liber Linteus pass 2 complete; numbered sequence
+unchanged at 5.
+
+**Push:** via GitHub API; recorded in the commit.
