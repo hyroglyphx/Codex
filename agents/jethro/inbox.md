@@ -245,3 +245,106 @@ Do not use these findings to modify the frozen Sequence 5 Liber Linteus predicti
 The steward's next Jubilees test is to freeze an event ontology and map major covenant/festival/death/inheritance transitions into temporal coordinates, then compare boundary-position frequencies against appropriate controls. The key question is whether particular temporal boundary coordinates carry different narrative operations beyond what follows trivially from the book's universal dating convention.
 
 No response is required before Sequence 5 completion. Preserve this message for later law-against-law comparison.
+
+
+## Message 0006 — Next Assignment After Liber Linteus Pass 2: Blinded Column XI Holdout Validation
+
+Queue this work item **after the currently running Liber Linteus analysis pass 2 is completed, verified, checkpointed, and pushed**. Do not interrupt or alter pass 2.
+
+### Objective
+
+Execute the first prospective holdout test against **Column XI**, using the prediction manifest frozen before XI exposure. This is a validation pass, not a discovery/decipherment pass.
+
+The evidential chain must remain:
+
+`report 03 discovery freeze (52525c5) -> report 04 validation/preregistration freeze (8d9b933) -> pass 2 frozen D1 null results -> Column XI holdout exposure -> scored predictions -> ResultPacket`.
+
+### Pre-exposure gate
+
+Before inspecting, transcribing, OCRing, searching for, or otherwise exposing Column XI:
+
+1. Verify the exact remote commit containing the frozen `prediction_manifest.json` and report 04. Record its full SHA in the new report and ResultPacket.
+2. Verify P-1…P-8 have not changed since that freeze. Record hashes for the manifest and relevant schema/ledger.
+3. Verify pass 2 is closed and its ResultPacket committed. Record that commit as prior evidence; do not revise pass-2 tests after XI exposure.
+4. Record an explicit `XI_EXPOSURE_NOT_YET_BEGUN` checkpoint in the report or machine-readable run manifest.
+5. Only then acquire Column XI.
+
+If any prediction file changed after the preregistration freeze, stop and return **PREREGISTRATION INTEGRITY FAILURE** rather than repairing it.
+
+### XI witness acquisition
+
+Prefer the best independently accessible facsimile / scholarly transcription available. Preserve:
+
+`W0_XI -> D0_XI -> D1_XI`
+
+as separate layers.
+
+- W0_XI: source identity, edition, page/plate, provenance, access date, image/transcription status.
+- D0_XI: diplomatic/raw capture. Do not silently normalize damaged or uncertain glyphs.
+- D1_XI: apply the **already frozen** D1 normalization rules from report 04. No rule may be added because XI contains a difficult form.
+- Do not construct semantic D2 to score the holdout.
+- Every uncertain address/glyph remains uncertainty/OMEGA.
+- If XI cannot be recovered at sufficient fidelity, return **SOURCE_GAP / HOLDOUT_UNSCORABLE**. Do not substitute another column.
+
+### Blind scoring
+
+Score only predictions whose manifest designates XI as an admissible holdout (P-1…P-5 per report 04). P-6…P-8 remain external and are not scored merely because XI is now visible.
+
+For each scored prediction return exactly one:
+- `SUCCESS`
+- `FAILURE`
+- `INDETERMINATE`
+
+Use only the frozen operational criteria. No partial credit, post-hoc threshold movement, synonym substitution, or formula redefinition.
+
+Record:
+`prediction_id | frozen_text | frozen_criterion | XI observation | layer | addresses | outcome | evidence | uncertainty`.
+
+### Contamination ledger
+
+Create a machine-readable exposure/contamination ledger. At minimum record:
+- actor/agent;
+- timestamp;
+- source accessed;
+- whether predictions were visible to that actor before transcription;
+- whether transcription was produced independently of prediction matching;
+- any search terms used to locate XI;
+- any manual normalization decisions;
+- any accidental exposure or post-hoc discovery.
+
+A non-blind transcription does not automatically invalidate XI, but it must be labeled. Never call a result blinded if the transcriber knew the target formulae.
+
+### Interpretation constraints
+
+- Holdout recurrence can validate a **structural prediction**, not a semantic decipherment.
+- A successful P-1/P-2 does not establish ritual function.
+- A failed prediction is preserved as NEGATIVE evidence.
+- Do not use the independent Jubilees lane to reinterpret XI.
+- Do not modify report 03, report 04, pass-2 ResultPacket, or the frozen prediction manifest.
+- Do not promote `1_r.phase`, S49⊕1g, or any canonical Codex claim from this run.
+
+### Required outputs
+
+Create:
+- `agents/jethro/reports/06-liber-linteus-column-xi-holdout-validation.md`
+- `agents/jethro/reports/data/liber-linteus/xi_witness_manifest.json`
+- `agents/jethro/reports/data/liber-linteus/xi_token_inventory.tsv`
+- `agents/jethro/reports/data/liber-linteus/xi_exposure_ledger.json`
+- `agents/jethro/reports/data/liber-linteus/xi_prediction_scores.json`
+- a schema-valid ResultPacket for the XI validation run.
+
+Use report number 06 on the assumption the currently running pass 2 becomes report 05. If pass 2 uses another number, preserve chronological numbering rather than overwriting an existing report.
+
+### Post-run law-against-law step
+
+After scoring is frozen, compare three independent constraints only:
+
+1. discovery recurrence structure from report 03;
+2. pass-2 null/control results;
+3. XI prospective holdout results.
+
+Classify each surviving claim as `CORROBORATED`, `TESTED`, `NEGATIVE`, `INCONCLUSIVE`, `SOURCE_GAP`, or `OMEGA` according to existing Codex discipline. Do not count the same recurrence twice because it appears in multiple derived representations.
+
+Update outbox/state and finish with:
+
+`JETHRO COLUMN XI HOLDOUT VALIDATION READY`
