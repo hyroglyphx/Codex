@@ -334,3 +334,25 @@ at 5.
 
 **Parallel lane:** Uranić 2019 inspection for a defensible XI witness/concordance is
 running separately; XI stays sealed unless it returns USABLE_XI_WITNESS.
+
+---
+
+## 2026-09-29 ~18:35 CDT — Uranić 2019 XI-witness scout: NO_USABLE_XI
+
+Blinded scout (prediction manifest never opened; no LL text ingested) downloaded the full
+open-access PDF of Igor Uranić (2019), "Liber Linteus i Zagrebačka mumija" (pp. 113–115
+of *Recikliraj, ideje iz prošlosti*). Verdict: **NO_USABLE_XI**.
+
+The chapter is a 3-page Croatian general-audience discussion (mummy history, Nesi-Hensu
+papyrus dating, reuse argument, 14C ~390 BC, ritual-calendar hypothesis). It contains no
+Etruscan transcription of any kind, no column-level discussion, no concordance; the two
+illustrative photos are far below readable-facsimile resolution. Nothing supplies a
+defensible, line-addressable Column XI editorial unit.
+
+**Standing:** Column XI stays sealed — SOURCE_GAP/HOLDOUT_UNSCORABLE (report 06)
+unchanged. No Fowler & Wolfe reconstruction (per scope-authority directive: mapping its
+~107 sections into modern XI would make our reconstruction part of the holdout
+witness). P-1…P-8 remain FROZEN-UNTESTED.
+
+**Next:** TC corpus ingestion per the frozen report-07 plan (van der Meer 2014/15
+primary), then execution of TC-RI/TC-TUL/TC-NUNΘ/TC-MARCH.
