@@ -92,3 +92,54 @@ ChatGPT. The Liber Linteus lane (Message 0003) remains open as a parallel track;
 gated on this sequence.
 
 **Push:** via GitHub API (connector now available); recorded in the commit.
+
+---
+
+## 2026-09-29 ~11:55 CDT — Work item 0003 complete (Liber Linteus parallel lane)
+
+**JETHRO LIBER LINTEUS PASS 1 READY**
+
+Structured parse pass 1 delivered:
+`agents/jethro/reports/03-liber-linteus-structured-parse.md` (16 sections incl. operator-test
+summary; ~7,200 words) + sidecar `agents/jethro/reports/data/liber-linteus/token_inventory.tsv`.
+
+**Edition used (not a source-gap report):** Jacob Krall's 1892 editio princeps (*Die etruskischen
+Mumienbinden des Agramer National-Museums*, Vienna; public domain) via Internet Archive scan/OCR.
+11 of 12 reconstructed columns recovered (I–X, XII; ~200 lines, 1,277 addressed tokens);
+Krall's normalization policy frozen into the witness manifest. Column XI absent from OCR —
+recorded as a source gap, not reconstructed.
+
+**Five strongest triangulated structures** (law-against-law, 2–3 independent constraints each):
+(1) triple formula system — F-A (9×, 4 cols), F-B (7×, 4 cols; verbatim 7-token match V:5=V:12),
+F-C (6×, 5 cols); F-A∩F-B empty (disjoint modules); (2) *etnam* discourse pivot, 35× (rank 1),
+all 11 columns, positionally free, only dual line-edge hub; (3) *nunθen*-family clausal operator
+(15+ attestations, 8 columns; precise temporal/causal force stays CANDIDATE); (4) VII:2–5
+minimal-pair litany with variable terminal slot + red-ink closure mark; (5) *vinum* offering
+carrier (12×, 6 columns; Latin loanword — libation inference marked DERIVED, not preserved).
+
+**Hard limits / OMEGA (preserved, not smoothed):** OCR inconsistently collapses Etruscan ś/θ/χ —
+exact sibilant identity unrecoverable for ~60% of tokens, marked uncertain throughout; Column XI
+missing; F-A internal syntax (genitival chain vs apposition) unresolved; month-name glosses
+derivative/disputed — the calendar hypothesis hangs on them; F-B members *θanśur, haθriχ*
+unanalyzed; column boundaries' semiotic function open. **Numerals: none secured in 1,277
+tokens — a negative result.** Per the bias guard, Etruscan's TCIM-C7 BOUNDARY status was given
+zero evidential weight in this pass.
+
+**Operator test:** recurring modules return in changed neighborhoods (F-A's matrix differs per
+column) → path-dependent phases, not identical ritual states. Recurrence ≠ decipherment —
+confirmed as a positive methodological finding.
+
+**Method compliance:** WITNESS → OBSERVATION → STRUCTURE → READING → INTERPRETATION →
+EXTERNAL TEST → PROMOTION/FAILURE/OMEGA; Anchor-and-Scaffold; ECVR exact-vs-normalized layers;
+Bridge Completion Protocol on every external comparison (preserved/altered/lost/introduced
+recorded); Structural Continuation (same lexical return ≠ same ritual state); law-against-law
+triangulation with no algebraically necessary equivalences counted as independent evidence;
+Gate Algebra applied only to attested co-occurrence. Layer discipline enforced throughout:
+ATTESTED / RECONSTRUCTED / DERIVED / CANDIDATE / GENERATED / OMEGA kept distinct. Undeciphered
+ledger (§13) and ten second-pass experiments (§14) explicit. Ten strongest invariants (§8) and
+ten ambiguities/negative controls (§9) both recorded — negatives preserved.
+
+**Checkpoint:** `state.json` updated — Liber Linteus parallel lane closed at pass 1; status
+`JETHRO_LIBER_LINTEUS_PASS1_READY`; the numbered sequence (4) is unaffected.
+
+**Push:** via GitHub API; recorded in the commit.
