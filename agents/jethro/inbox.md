@@ -84,3 +84,58 @@ Required output:
 Update `outbox.md` with the result and finish with:
 
 `JETHRO SEQUENCE 4 READY`
+
+
+## Message 0003 — Liber Linteus delegated research lane
+
+Open a parallel work item to parse the **Liber Linteus Zagrabiensis** using the standing Codex/ARGO methodology. Preserve Work Item 0002 separately.
+
+### Objective
+Treat the text first as a witness-bearing Etruscan ritual carrier, not as a solved semantic object. Build the parse through:
+WITNESS -> OBSERVATION -> STRUCTURE -> READING -> INTERPRETATION -> EXTERNAL TEST -> PROMOTION / FAILURE / OMEGA.
+
+### Method
+- Preserve carrier, transcription, normalization, reading, gloss, interpretation, and historical claim separately.
+- Use a line-addressable scholarly transcription/facsimile/corpus edition. Record edition, normalization policy, damage/restoration, column/line addressing, and provenance. If unavailable, return a source-gap report rather than reconstructing from memory.
+- Apply Anchor-and-Scaffold: secure anchors before interpretation; mechanism before symbolism.
+- Apply the ECVR / Carrier-Phoneme-Classifier layer: exact form and normalized form separately; candidate stems, suffixes, clitics, numerals, divine names, calendrical/ritual vocabulary, repeated formulae; preserve variants and uncertainty.
+- Apply Bridge Completion Protocol to every external comparison. Record preserved, altered, lost, and introduced information. Structural resemblance alone remains structural unless stronger evidence exists.
+- Apply Structural Continuation: same lexical return does not imply same ritual state. Test recurrence, interval, neighborhood, section boundary, route, and sequence.
+- Apply law-against-law triangulation: require two independent constraints for a candidate and seek a third where possible. Do not count algebraically necessary equivalences as independent evidence.
+- Use Gate Algebra only for attested co-occurrence/relations. Do not promote complete-graph possibility.
+- Preserve negative results and OMEGA. Use positional/frequency/permutation controls where useful. Recurrence is not decipherment.
+- Keep attested source material, scholarly reconstruction, Codex derivation, generated hypothesis, and OMEGA explicitly distinct.
+- Do not treat disputed Etruscan translations as settled and do not optimize for agreement with prior ARGO hypotheses.
+
+### First-pass output
+Create:
+`agents/jethro/reports/03-liber-linteus-structured-parse.md`
+
+Include:
+1. witness/edition manifest and frozen transcription rules;
+2. carrier map at finest reliable address;
+3. repeated-token/formula inventory;
+4. morphological segmentation with confidence/evidence state;
+5. candidate ritual/calendrical sequence map;
+6. source-supported divine-name, offering, action, temporal, numerical, and place carriers;
+7. recurrence/neighborhood graph from attested relations;
+8. ten strongest structural invariants;
+9. ten strongest ambiguities, negative controls, or OMEGA items;
+10. law-against-law triangulation of the strongest 3–5 structures/readings;
+11. typed comparisons with independent Etruscan witnesses;
+12. prediction ledger for recurrences in the Liber Linteus and external Etruscan material;
+13. explicit undeciphered/underdetermined ledger;
+14. recommended second-pass experiments.
+
+A machine-readable sidecar may be placed under `agents/jethro/reports/data/liber-linteus/`. Do not modify canonical registries.
+
+### Operator test
+Prioritize operator structure over surface resemblance:
+
+`carrier -> ritual position -> operation -> object/recipient -> temporal/address marker -> recurrence/return`
+
+Test whether repeated lexical material preserves function across changed local contexts, and whether apparent returns are identical states or path-dependent ritual phases.
+
+Summarize completion in `outbox.md` under a separate Liber Linteus heading and finish that section with:
+
+`JETHRO LIBER LINTEUS PASS 1 READY`
