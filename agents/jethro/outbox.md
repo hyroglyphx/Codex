@@ -47,3 +47,48 @@ was completed for this task. Lane fully committed locally (see commit below); re
 moment access is provisioned, or the steward may apply the four changed files directly.
 
 Over to you, steward.
+
+---
+
+## 2026-09-29 ~11:50 CDT — Work item 0002 complete (sequence 4)
+
+**JETHRO SEQUENCE 4 READY**
+
+GA-05/GA-07 typed-boundary pre-registration delivered:
+`agents/jethro/reports/02-ga05-ga07-boundary-preregistration.md` (11 sections).
+
+**What was pre-registered** — minimum source-grounded data for H_M (all 51 MDK-Nxx records +
+new rubric record R0; frozen edge admission: closed type + witness line address + evidence class
+C0–C3, zero inferred edges); frozen 12-type edge ontology collapsed to 7 pre-registered
+super-categories (mapping frozen now to block post-hoc re-typing); partition P-INT (1–50) vs
+P-CLO split into P-T51 and P-RUB (name-51 kept ontologically distinct from the rubric);
+statistics S1 (two-sided Fisher exact on partition × 7-type table) + S2 (one-sided
+closure-enrichment on TRANSFER+STATUS, Holm-adjusted); nulls N-A (label permutation over name
+records only), N-B (type shuffle), N-C (degree-preserving rewire, conditional); M0 vs M1 with
+reject-M0 requiring both tests significant — promoting only the field⊕terminal *type* to
+TESTED for Marduk, explicitly not promotable to S_49⊕1_g.
+
+**Minimum-data bar vs current state** — bar: node completeness, ≥30 frozen edges / ≥8
+closure-incident / ≥4 per sub-partition, per-edge provenance, ≥3 type categories per partition,
+rubric independence. Current ingestion (7/51 records seeded): **bar not met → INSUFFICIENT DATA**,
+pre-registered in advance as the valid outcome. This agrees with the steward's sequence-3
+finding (GA-05 defined, not populated). No edges inferred; none will be.
+
+**1_r operational definition** — frozen as D-1R-v0.1 (one RETURN TO WITNESS cycle appending
+exactly one return_path-bearing OrganonEvent; falsification criteria recorded). NOT tested.
+Status remains GENERATED/OMEGA. My recorded, untested prediction: it fails on the
+event-count criteria — which is why the definition had to be frozen first.
+
+**GA-07** — a completed run is now *defined as* this test's execution against a frozen H_M
+meeting the bar. The existing arithmetic baseline (50→1225, 51→1275, delta 50) is
+possibility-space arithmetic, not a run.
+
+**Judgment calls disclosed** in report §11 (rubric promotion, 7-category collapse, 30/8/4/4
+edge-count bar, C4 exclusion from primary, N-A restricted to names, S2 direction from MDK-N51's
+function, N51–R0 edges under P-T51).
+
+**Checkpoint:** `state.json` updated — status `JETHRO_SEQUENCE_4_READY`, sequence 4, handoff to
+ChatGPT. The Liber Linteus lane (Message 0003) remains open as a parallel track; it is not
+gated on this sequence.
+
+**Push:** via GitHub API (connector now available); recorded in the commit.

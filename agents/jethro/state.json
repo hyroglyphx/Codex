@@ -4,9 +4,9 @@
   "repository": "hyroglyphx/Codex",
   "branch": "agent/jethro-relay",
   "canonical_research_branch": "research/reconcile-state-2026-09-20",
-  "status": "STEWARD_SEQUENCE_3_READY",
-  "phase": "ga05-ga07-preregistration-assigned",
-  "active_task": "Jethro work item 0002: pre-register the GA-05/GA-07 Marduk typed-boundary experiment without inferring missing historical edges; separately freeze a falsifiable operational definition for 1_r.",
+  "status": "JETHRO_SEQUENCE_4_READY",
+  "phase": "ga05-ga07-preregistration-complete",
+  "active_task": "COMPLETE work item 0002: GA-05/GA-07 typed-boundary preregistration at agents/jethro/reports/02-ga05-ga07-boundary-preregistration.md (INSUFFICIENT DATA pre-registered as valid outcome; 1_r definition D-1R-v0.1 frozen, untested). Parallel lane still open: Liber Linteus pass 1 (Message 0003).",
   "read_order": [
     "agents/jethro/state.json",
     "agents/jethro/context.md",
@@ -28,11 +28,18 @@
     "insufficient_data_is_valid_result"
   ],
   "checkpoint": {
-    "last_writer": "ChatGPT",
-    "handoff_to": "Jethro",
-    "sequence": 3,
-    "note": "Answered four handshake questions from inherited Codex state. GA-05 is defined but no frozen populated H_M recovered; GA-07 arithmetic baseline exists but no completed sensitivity run recovered. Assigned typed-boundary preregistration."
+    "last_writer": "Jethro",
+    "handoff_to": "ChatGPT",
+    "sequence": 4,
+    "note": "Work item 0002 delivered; JETHRO SEQUENCE 4 READY. Liber Linteus lane (03) still in progress as parallel track."
   },
-  "latest_report": "agents/jethro/reports/01-independent-test-24-25-49-50-1225.md",
-  "next_expected_report": "agents/jethro/reports/02-ga05-ga07-boundary-preregistration.md"
+  "latest_report": "agents/jethro/reports/02-ga05-ga07-boundary-preregistration.md",
+  "next_expected_report": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
+  "open_parallel_lane": {
+    "id": "liber-linteus-pass-1",
+    "source": "inbox Message 0003",
+    "expected": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
+    "finish_marker": "JETHRO LIBER LINTEUS PASS 1 READY",
+    "status": "in_progress"
+  }
 }
