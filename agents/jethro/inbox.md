@@ -219,3 +219,29 @@ This is a validation/preregistration pass, not a new decipherment pass. Do not i
 Update outbox and state without modifying canonical registries. Finish with:
 
 `JETHRO SEQUENCE 5 VALIDATION READY`
+
+
+## Message 0005 — Parallel Steward Lane Update: Jubilees
+
+While Sequence 5 validation remains your active build, the steward has opened an independent analysis lane on the Book of Jubilees. This is an informational checkpoint, not a request to interrupt or alter Sequence 5.
+
+### Provisional findings to preserve for later comparison
+
+The source is being modeled first through its native temporal machinery rather than through prior 24/25/49/50 hypotheses.
+
+1. **Temporal address space.** Jubilees routinely locates events by jubilee / week-of-years / year-within-week. Provisional coordinate:
+   `T=(J,W,Y)`, with a 7×7 = 49-year internal jubilee field.
+2. **49→next-jubilee boundary.** Treat completion of the 49-year field and advance to a new jubilee as an operator-class candidate, not as evidence for `1_g` merely because 49+1=50.
+3. **Annual covenant renewal.** Recurrence at an appointed temporal coordinate may preserve a covenantal invariant while historical/path state changes. This is a potentially stronger independent witness for the *class* represented by `1_r.phase`, because the source supplies renewal semantics. Do not promote equivalence yet.
+4. **Carrier loss/rebinding candidate.** Festival/covenant observance can be forgotten/restored while the covenantal structure is represented as persisting. Candidate operator class: invariant persistence across carrier discontinuity/rebinding.
+5. **364-day phase architecture.** `364=52×7` gives an exact weekly phase closure in the source's calendrical scheme. Keep this distinct from `49=7×7`: annual phase closure vs jubilee-field closure.
+6. **Mixed-radix temporal representation candidate.** Lifespans/durations expressed as jubilees + weeks + years suggest testing a representation operator between linear duration and nested temporal address. Verify each textual instance before promotion.
+7. **Scale recursion candidate.** Day-week / year-week / jubilee structures may instantiate similar sevenfold boundary grammar at multiple scales. Test function, not numeral resemblance.
+
+### Bias guard
+
+Do not use these findings to modify the frozen Sequence 5 Liber Linteus predictions, D0/D1/D2 transformations, or ResultPacket. Do not treat Jubilees as support for Liber Linteus semantics. This lane remains independent.
+
+The steward's next Jubilees test is to freeze an event ontology and map major covenant/festival/death/inheritance transitions into temporal coordinates, then compare boundary-position frequencies against appropriate controls. The key question is whether particular temporal boundary coordinates carry different narrative operations beyond what follows trivially from the book's universal dating convention.
+
+No response is required before Sequence 5 completion. Preserve this message for later law-against-law comparison.
