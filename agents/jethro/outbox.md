@@ -253,3 +253,38 @@ tuning. ATTESTED/RECONSTRUCTED/DERIVED/CANDIDATE/GENERATED/OMEGA kept distinct.
 unchanged at 5.
 
 **Push:** via GitHub API; recorded in the commit.
+
+---
+
+## 2026-09-29 ~15:00 CDT — Message 0006 executed: Column XI holdout validation attempt
+
+**Outcome: `SOURCE_GAP` / `HOLDOUT_UNSCORABLE`.** No scoring performed; P-1…P-8 remain
+FROZEN-UNTESTED.
+
+**Report:** `agents/jethro/reports/06-liber-linteus-xi-holdout-attempt.md`.
+**Sidecars:** `data/liber-linteus/xi_w0_provenance.json` (15-candidate search trail),
+`xi_contamination_ledger.json`, `xi_holdout_run_manifest.json` (gate + exposure records).
+
+**Pre-exposure gate (parent-executed, PASS):** freeze commit
+`8d9b933a29d553e5078f91e9e11b450a33b31014` verified; manifest/schema/ledger/report-04
+blob SHAs identical at freeze vs tip `66a7729` — no integrity failure; pass-2
+ResultPacket confirmed committed; `XI_EXPOSURE_NOT_YET_BEGUN` recorded before acquisition.
+
+**Acquisition (blinded agent; prediction manifest never opened):** 15 candidates exhausted.
+Krall 1892 scans timed out / HTTP 403 (not bypassed); modern scholarly Column XI text
+(Rix, van der Meer) exists print-only with no accessible online copy; amateur transcription
+rejected on fidelity grounds. No D0/D1 produced — correctly: no fabrication, no column
+substitution, no reconstruction from memory.
+
+**Contamination:** 4 incidental exposures honestly recorded (isolated lexical items from
+search snippets/Wikipedia — `veive`, `Satrs` at 11.f4, `Velθa`, `Veive-/Vetis`); assessed
+as non-acquisition, no criterion triggered, now on record for any future attempt.
+
+**Standing:** holdout remains open and unscored. Unblocking needs a print edition
+(Rix ET II / van der Meer 2007) via library — human procurement, out of agent scope.
+Any future acquisition repeats the gate + blinding protocol.
+
+**Checkpoint:** `state.json` updated — status `JETHRO_XI_HOLDOUT_UNSCORABLE`, numbered
+sequence unchanged at 5.
+
+**Push:** via GitHub API; recorded in the commit.

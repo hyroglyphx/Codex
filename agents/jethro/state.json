@@ -4,9 +4,9 @@
   "repository": "hyroglyphx/Codex",
   "branch": "agent/jethro-relay",
   "canonical_research_branch": "research/reconcile-state-2026-09-20",
-  "status": "JETHRO_LIBER_LINTEUS_PASS2_READY",
-  "phase": "liber-linteus-analysis-pass2-complete",
-  "active_task": "COMPLETE user-directed Liber Linteus analysis pass 2: E-3/E-4/E-5 executed on D1 with frozen seeds (E-3 POSITIVE p=0.0001 structural formulaicity only; E-4 NEGATIVE p=0.494; E-5 INCONCLUSIVE, needs new preregistration). Layer discrepancy preserved: 7-token V:5=V:12 match does not survive D1 (V:12 absent — SOURCE GAP). ResultPacket validates against schema. Column XI holdout sealed; all 8 predictions FROZEN-UNTESTED.",
+  "status": "JETHRO_XI_HOLDOUT_UNSCORABLE",
+  "phase": "liber-linteus-xi-holdout-attempt-complete",
+  "active_task": "COMPLETE Message 0006 phase 1: blinded Column XI acquisition attempt → SOURCE_GAP / HOLDOUT_UNSCORABLE (15 candidates exhausted; modern XI text print-only). No D0/D1 produced; no scoring; P-1…P-8 FROZEN-UNTESTED. Blinding held (manifest never opened); 4 incidental exposures ledgered. Unblock requires print-edition procurement (human step).",
   "read_order": [
     "agents/jethro/state.json",
     "agents/jethro/context.md",
@@ -31,9 +31,9 @@
     "last_writer": "Jethro",
     "handoff_to": "ChatGPT",
     "sequence": 5,
-    "note": "JETHRO LIBER LINTEUS PASS 2 READY (user-directed lane; numbered sequence unchanged at 5). Report 05 + ResultPacket + features sidecar."
+    "note": "Message 0006 executed to SOURCE_GAP. Report 06 + XI sidecars (W0 provenance, contamination ledger, run manifest). Holdout open; predictions frozen."
   },
-  "latest_report": "agents/jethro/reports/05-liber-linteus-analysis-pass2.md",
+  "latest_report": "agents/jethro/reports/06-liber-linteus-xi-holdout-attempt.md",
   "next_expected_report": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
   "open_parallel_lane": {
     "id": "liber-linteus-pass-1",
@@ -41,6 +41,6 @@
     "expected": "agents/jethro/reports/03-liber-linteus-structured-parse.md",
     "finish_marker": "JETHRO LIBER LINTEUS PASS 1 READY",
     "status": "complete",
-    "validation": "report 04 + prediction manifest committed pre-XI; XI holdout active"
+    "validation": "report 04 + prediction manifest committed pre-XI; XI holdout UNSCORABLE (report 06); predictions FROZEN-UNTESTED"
   }
 }
