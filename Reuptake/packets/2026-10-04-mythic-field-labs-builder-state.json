@@ -1,0 +1,45 @@
+{
+  "relay": "Codex Reuptake",
+  "date": "2026-10-04",
+  "event_id": "BLD-2026-10-04-MYTHIC-FIELD-LABS-001",
+  "status": "BUILDER_CANDIDATE_ACTIVE",
+  "repository": "hyroglyphx/Codex",
+  "base_branch": "research/reconcile-state-2026-09-20",
+  "builder_branch": "builder/mythic-field-labs-v0.1",
+  "object": "Mythic Field Labs product family",
+  "source_basis": [
+    "Theseus Cycle Math-Language-Logic Omnibus",
+    "Twelve Labors of Heracles Math-Language-Logic Omnibus",
+    "Argonautica Math-Language-Logic Complete Voyage Omnibus",
+    "Odyssey corpus/reference layer",
+    "Nexus/ECVR typed transformation method",
+    "ARGO vessel-as-institution / recoverable transmission principle"
+  ],
+  "product_grammar": "SOURCE -> ENCOUNTER -> OPERATOR -> MODEL -> EXPERIMENT -> ADVERSARY -> ROSETTA -> TRANSFER -> RETURN",
+  "founding_four": {
+    "THESEUS-001": {"public_encounters": 12, "role": "flagship/reference implementation"},
+    "HERACLES-001": {"public_encounters": 12, "role": "operator literacy under constraint"},
+    "ARGO-001": {"public_encounters": 12, "role": "distributed intelligence and vessel"},
+    "ODYSSEY-001": {"public_encounters": 12, "role": "return, recognition, identity transformation"}
+  },
+  "commercial_hypothesis": {
+    "problem": "No sales or donations means the broken transition in the visitor-to-supporter path is not yet identified.",
+    "objective": "Find a non-zero repeatable closed loop before expanding inventory.",
+    "state_path": "unaware -> curious -> engaged -> returning -> first transaction -> repeat support -> advocate",
+    "separate_events": ["purchase", "donation"],
+    "first_validation": "free encounter -> second meaningful action -> product intent -> completed transaction -> return"
+  },
+  "authority": "L1 user direction + L4 Builder/commercial hypotheses; source-derived operator structures retain their own authority labels",
+  "maturity": "CANDIDATE",
+  "files": [
+    "docs/products/mythic-field-labs-v0.1.md",
+    "Reuptake/packets/2026-10-04-mythic-field-labs-builder-state.json"
+  ],
+  "next_queue": [
+    "Build THESEUS-001 source map against the complete 23-operator reference cycle.",
+    "Specify the 12 public encounters with source, operator, invariant, learner action, adversary and return path.",
+    "Build the free Theseus mini-lab before the full paid edition.",
+    "Define event instrumentation for engagement, sampler, product intent, checkout, purchase, donation and return.",
+    "Run first conversion experiment before expanding Tier B."
+  ]
+}
