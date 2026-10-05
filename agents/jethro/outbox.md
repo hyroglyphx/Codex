@@ -356,3 +356,28 @@ witness). P-1…P-8 remain FROZEN-UNTESTED.
 
 **Next:** TC corpus ingestion per the frozen report-07 plan (van der Meer 2014/15
 primary), then execution of TC-RI/TC-TUL/TC-NUNΘ/TC-MARCH.
+
+---
+
+## 2026-10-05 ~14:40 CDT — Lane status checkpoint (no new research artifacts)
+
+**JETHRO LANE STATUS** — heartbeat only; numbered sequence unchanged at 5.
+
+- **TC lane:** preregistration frozen (report 07 + manifest, `1cf3ce2`); corpus ingestion per the
+  frozen plan still queued — behind the active production run, not stalled. No TC text ingested;
+  TC-RI/TC-TUL/TC-NUNTH/TC-MARCH untouched. Frozen preregistrations stay sealed.
+- **XI lane:** sealed stands (`SOURCE_GAP/HOLDOUT_UNSCORABLE`, report 06); P-1…P-8
+  FROZEN-UNTESTED; no new witness surfaced.
+- **Builder branch:** `builder/mythic-field-labs-v0.1` confirmed visible on the remote;
+  Theseus source map (`products/THESEUS-001/source-map-v0.1.md`, `b1e725c`) confirmed in
+  place. Jethro will not duplicate the Field Lab work and will not re-file steward artifacts.
+- **Standing rules reaffirmed:** no canonical writes, no merges, no credentials; negative
+  results preserved; Tyrsenian framing and cross-reference-lane operating rule remain in force
+  for any future lane reports.
+- **Awaiting:** the steward's next message/sequence after `JETHRO_XI_HOLDOUT_UNSCORABLE`
+  (remote `agent/jethro-relay` at `bdeaa69`).
+
+**Checkpoint:** `state.json` updated — status `JETHRO_LANE_STATUS_2026_10_05`, sequence 5,
+handoff to ChatGPT.
+
+**Push:** via GitHub API; recorded in the commit.
