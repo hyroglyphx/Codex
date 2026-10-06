@@ -1,0 +1,43 @@
+version: HLTG-LANG-0.1
+principle: "A language is a multidimensional node, not a single slot in a tree."
+fields: [id, name, genealogy, nexus, methodology, evidence_state, notes]
+languages:
+  - {id: SUM, name: Sumerian, genealogy: ISOLATE, nexus: [MESOPOTAMIA], methodology: [ISOLATE_CONTROL, CUNEIFORM_SOURCE, CONTACT, NEGATIVE_CONTROL], evidence_state: E5}
+  - {id: AKK, name: Akkadian, genealogy: AFROASIATIC/SEMITIC/EAST_SEMITIC, nexus: [MESOPOTAMIA, LEVANT, ANATOLIA], methodology: [CUNEIFORM_ADAPTATION, DIPLOMATIC_LINGUA_FRANCA], evidence_state: E5}
+  - {id: BAB, name: Babylonian, genealogy: AKKADIAN_VARIETY, nexus: [MESOPOTAMIA], methodology: [DIALECT_REGISTER, SCRIBAL_CORPUS], evidence_state: E5}
+  - {id: ELA, name: Elamite, genealogy: UNCLASSIFIED, nexus: [ELAM, MESOPOTAMIA, IRAN], methodology: [ISOLATE_CONTROL, BIGRAPHIC_ANCHOR], evidence_state: E4}
+  - {id: EBL, name: Eblaite, genealogy: SEMITIC_CONTESTED_SUBGROUP, nexus: [SYRIA, MESOPOTAMIA], methodology: [EARLY_SEMITIC, CUNEIFORM_INTERFACE], evidence_state: E4}
+  - {id: AMR, name: Amorite, genealogy: NORTHWEST_SEMITIC, nexus: [LEVANT, MESOPOTAMIA], methodology: [ONOMASTIC_RECONSTRUCTION, SPARSE_CORPUS], evidence_state: E3}
+  - {id: UGA, name: Ugaritic, genealogy: NORTHWEST_SEMITIC, nexus: [LEVANT, CYPRUS], methodology: [ALPHABETIC_CUNEIFORM_BRIDGE], evidence_state: E5}
+  - {id: PHN, name: Phoenician, genealogy: NORTHWEST_SEMITIC/CANAANITE, nexus: [LEVANT, CYPRUS, MEDITERRANEAN], methodology: [MARITIME_TRANSMISSION, ALPHABETIC_CARRIER], evidence_state: E5}
+  - {id: HEB, name: Hebrew, genealogy: NORTHWEST_SEMITIC/CANAANITE, nexus: [LEVANT], methodology: [ROOT_MORPHOLOGY, DIACHRONY, NUMERIC_PROJECTION], evidence_state: E5}
+  - {id: ARA, name: Aramaic, genealogy: NORTHWEST_SEMITIC, nexus: [LEVANT, MESOPOTAMIA, IRAN], methodology: [LONG_DURATION_CONTROL, TRANSMISSION], evidence_state: E5}
+  - {id: EGY, name: Egyptian, genealogy: AFROASIATIC/EGYPTIAN, nexus: [EGYPT, LEVANT, CYPRUS], methodology: [CLASSIFIER_CONTROL, CONSONANTAL_RECONSTRUCTION], evidence_state: E5}
+  - {id: HIT, name: Hittite, genealogy: INDO_EUROPEAN/ANATOLIAN, nexus: [ANATOLIA], methodology: [EARLY_IE_CONTROL, CUNEIFORM_CONTACT], evidence_state: E5}
+  - {id: PAL, name: Palaic, genealogy: INDO_EUROPEAN/ANATOLIAN, nexus: [ANATOLIA], methodology: [SIBLING_BRANCH, SPARSE_CORPUS], evidence_state: E3}
+  - {id: LUW, name: Luwian, genealogy: INDO_EUROPEAN/ANATOLIAN/LUWIC, nexus: [ANATOLIA, CYPRUS], methodology: [LUWIC_CONTROL, SCRIPT_DUALITY, CONTACT], evidence_state: E5}
+  - {id: LYC, name: Lycian, genealogy: INDO_EUROPEAN/ANATOLIAN/LUWIC, nexus: [ANATOLIA], methodology: [LUWIC_COMPARISON], evidence_state: E4}
+  - {id: MIL, name: Milyan, genealogy: INDO_EUROPEAN/ANATOLIAN/LUWIC, nexus: [ANATOLIA], methodology: [INTERNAL_LUWIC_COMPARISON, SPARSE_CORPUS], evidence_state: E3}
+  - {id: CAR, name: Carian, genealogy: INDO_EUROPEAN/ANATOLIAN/LUWIC, nexus: [ANATOLIA, AEGEAN], methodology: [GREEK_CONTACT, SCRIPT_DECIPHERMENT], evidence_state: E4}
+  - {id: LYD, name: Lydian, genealogy: INDO_EUROPEAN/ANATOLIAN, nexus: [ANATOLIA], methodology: [ANATOLIAN_COMPARISON], evidence_state: E4}
+  - {id: PIS, name: Pisidian, genealogy: INDO_EUROPEAN/ANATOLIAN_PROBABLE, nexus: [ANATOLIA], methodology: [SPARSE_CORPUS], evidence_state: E2}
+  - {id: SID, name: Sidetic, genealogy: UNRESOLVED_ANATOLIAN_REGION, nexus: [ANATOLIA], methodology: [SPARSE_CORPUS, DECIPHERMENT_TARGET], evidence_state: E2}
+  - {id: KAL, name: Kalasma, genealogy: INDO_EUROPEAN/ANATOLIAN, nexus: [ANATOLIA], methodology: [CLASSIFICATION_TARGET, SPARSE_CORPUS], evidence_state: E2}
+  - {id: ISA, name: Isaurian, genealogy: UNRESOLVED, nexus: [ANATOLIA], methodology: [SOUTHERN_FRONTIER, SPARSE_CORPUS], evidence_state: E1}
+  - {id: HAT, name: Hattic, genealogy: UNCLASSIFIED_NON_IE, nexus: [ANATOLIA], methodology: [SUBSTRATE_CONTROL, ISOLATE_CONTROL], evidence_state: E3}
+  - {id: HUR, name: Hurrian, genealogy: HURRO_URARTIAN, nexus: [ANATOLIA, MESOPOTAMIA, LEVANT], methodology: [NON_IE_CONTROL, CONTACT], evidence_state: E4}
+  - {id: URA, name: Urartian, genealogy: HURRO_URARTIAN, nexus: [ANATOLIA, ARMENIAN_HIGHLANDS], methodology: [HURRIAN_COMPARISON], evidence_state: E4}
+  - {id: PHR, name: Phrygian, genealogy: INDO_EUROPEAN, nexus: [ANATOLIA, AEGEAN], methodology: [NON_ANATOLIAN_IE_CONTROL, GREEK_CONTACT], evidence_state: E4}
+  - {id: GAL, name: Galatian, genealogy: INDO_EUROPEAN/CELTIC, nexus: [ANATOLIA], methodology: [LATE_MIGRATION_CONTACT], evidence_state: E2}
+  - {id: MYC, name: Mycenaean_Greek, genealogy: INDO_EUROPEAN/HELLENIC/GREEK, nexus: [AEGEAN, CYPRUS], methodology: [LINEAR_B_CALIBRATION, CARRIER_LOSS_MODEL], evidence_state: E5}
+  - {id: GRK, name: Greek, genealogy: INDO_EUROPEAN/HELLENIC, nexus: [AEGEAN, CYPRUS, MEDITERRANEAN], methodology: [DIACHRONIC_CONTROL, DIALECT_TRIANGULATION], evidence_state: E5}
+  - {id: CYP-GR, name: Cypriot_Greek, genealogy: INDO_EUROPEAN/HELLENIC/GREEK, nexus: [CYPRUS, AEGEAN], methodology: [SYLLABARY_CALIBRATION, DIALECT_CONTROL, BILINGUAL_CONTROL], evidence_state: E5}
+  - {id: ETE, name: Eteocypriot, genealogy: UNCLASSIFIED, nexus: [CYPRUS], methodology: [UNKNOWN_LANGUAGE, KNOWN_SCRIPT_VALUES, BILINGUAL_ANCHOR, SUBSTRATE_CANDIDATE, CONTACT_ZONE], evidence_state: E2}
+  - {id: CYP-SUB, name: Bronze_Age_Cypriot_Substrate, genealogy: UNKNOWN, nexus: [CYPRUS], methodology: [LATENT_HYPOTHESIS_NODE], evidence_state: E0}
+  - {id: OPR, name: Old_Persian, genealogy: INDO_EUROPEAN/INDO_IRANIAN/IRANIAN, nexus: [IRAN, MESOPOTAMIA], methodology: [IMPERIAL_MULTILINGUAL_CONTROL], evidence_state: E5}
+  - {id: SAN, name: Sanskrit, genealogy: INDO_EUROPEAN/INDO_IRANIAN/INDO_ARYAN, nexus: [SOUTH_ASIA], methodology: [MORPHOLOGICAL_CONTROL, ROSETTA_TRIANGULATION], evidence_state: E5}
+  - {id: HIN, name: Hindi, genealogy: INDO_EUROPEAN/INDO_IRANIAN/INDO_ARYAN, nexus: [SOUTH_ASIA], methodology: [DOWNSTREAM_DIACHRONIC_CONTROL], evidence_state: E5}
+  - {id: TAM, name: Tamil, genealogy: DRAVIDIAN/SOUTHERN_DRAVIDIAN, nexus: [SOUTH_ASIA], methodology: [NON_IE_CONTROL, DIACHRONIC_CONTROL], evidence_state: E5}
+  - {id: IBR, name: Iberian, genealogy: UNCLASSIFIED, nexus: [PALEOHISPANIA], methodology: [KNOWN_SCRIPT_PARTIAL_LANGUAGE, DECIPHERMENT_TARGET], evidence_state: E2}
+  - {id: TAR, name: Tartessian_Southwestern, genealogy: UNRESOLVED, nexus: [PALEOHISPANIA], methodology: [SCRIPT_LANGUAGE_DISCRIMINATION, DECIPHERMENT_TARGET], evidence_state: E1}
+  - {id: BSQ, name: Basque, genealogy: ISOLATE, nexus: [WESTERN_EUROPE], methodology: [LIVING_ISOLATE_CONTROL, IBERIAN_NEGATIVE_CONTROL], evidence_state: E5}
