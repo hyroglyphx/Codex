@@ -1,0 +1,36 @@
+artifact_id: ART-AMATHUS-ICS196
+name: Amathus_Eteocypriot_Greek_Bilingual
+aliases: [ICS_196, EC_1]
+object:
+  class: MONUMENT
+  material: black_marble
+  condition: lost_after_1914_photographic_witness_survives
+provenance:
+  ancient_context: Amathus
+  discovery_context: reported_from_Amathus_then_seen_in_Limassol_antiquities_trade
+chronology:
+  date_from: -332
+  date_to: -300
+  dating_basis: HISTORICAL
+linguistic:
+  languages: [ETE, GRK]
+  scripts: [CYPRIOT_SYLLABARY, GREEK_ALPHABET]
+  decipherment_status: [ETEOCYPRIOT_UNCLASSIFIED, GREEK_READABLE]
+  direction: [ETEOCYPRIOT_RETROGRADE_RTL, GREEK_LTR]
+genre: [HONORIFIC, DEDICATION]
+text_layers:
+  ETE_L2: "a-na-ma-to-ri-u-mi-e-sa-i-mu-ku-la-i-la-sa-na-a-ri-si-to-no-se-a-ra-to-va-na-ka-so-ko-o-se-ke-ra-ke-re-tu-lo-se-ta-ka-na-o-mu-so-ti-a-lo-ka-i-li-po-ti"
+  GREEK_L3: "he polis he Amathousion Aristona Aristonaktos eupatriden"
+anchors:
+  - {type: PERSONAL_NAME, greek: Ariston, eteocypriot_candidate: a-ri-si-to-no-se, confidence: HIGH_AS_NAME_ALIGNMENT}
+  - {type: PATRONYMIC, greek: Aristonaktos, eteocypriot_candidate: a-ra-to-va-na-ka-so, confidence: TESTING}
+relation:
+  bilingual_class: MESSAGE_EQUIVALENT_PROBABLE
+  warning: "Do not assume word-for-word equivalence; use Greek as semantic/event anchor and test Eteocypriot segmentation independently."
+status:
+  evidence_level: E2
+  claim_state: TESTING
+sources:
+  - "Philippa M. Steele, A Linguistic History of Ancient Cyprus, concordance EC 1 / ICS 196"
+  - "Ernst Sittig 1914 publication; object now lost"
+method_tests: [NAME_ALIGNMENT, MORPHOLOGICAL_RECURRENCE, WORD_BOUNDARY_TEST, GREEK_SEMANTIC_ANCHOR, HOLDOUT_REGENERATION]
