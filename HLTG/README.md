@@ -30,3 +30,13 @@ Crypto-Scribe is the inference/validation layer; HLTG is the canonical knowledge
 Every claim should preserve chronology, geography, carrier/script, provenance, source dependencies, confidence/status, supporting evidence, contradictions, and alternatives. Multiple publications derived from one witness do not count as independent evidence.
 
 Uncertainty is data: `UNKNOWN`, `UNCLASSIFIED`, `CONTESTED`, `HYPOTHESIS`, `REJECTED`, and `INSUFFICIENT_EVIDENCE` are valid states.
+
+## Cross-project benchmark architecture
+
+The historical corpus now feeds a reusable validation suite rather than a collection of isolated comparisons. See `benchmarks/HISTORICAL_REINFORCEMENT.md` for CYP-NEXUS, ELAM-NEXUS, FORMULA-NEXUS, CARRIER-NEXUS, TCIM-NUMERAL, document-grammar, topology/spatial, bilingual-control, and legacy-adversarial families.
+
+Standing inference order:
+
+`ADMISSIBILITY -> SCORING -> INFERENCE -> PROMOTION`
+
+A witness that lacks the prerequisite feature space is `UNSCORABLE`, not negative evidence. Holdout regeneration outranks retrospective fit; nulls, contradictions, bounded results, and rejected hypotheses remain first-class data.
