@@ -1,0 +1,45 @@
+collection_id: CORPUS-CYPRO-MINOAN-SEED
+name: Cypro_Minoan_Enkomi_Kalavassos_Seed
+status: UNDECIPHERED_CORPUS
+corpus_context:
+  approximate_known_inscriptions: 200
+  span: Late_Bronze_Age_to_possible_early_Iron_Age
+  principal_concentration: Enkomi
+  external_findspots: [Ras_Shamra_Ugarit]
+  bilingual_available: false
+  rule: "No language identification is promoted from script similarity alone."
+artifacts:
+  - artifact_id: ART-ENKOMI-CYLINDER-1967
+    site: Enkomi
+    object_class: CYLINDER
+    material: clay
+    script: CYPRO_MINOAN
+    sign_count_status: EDITION_DEPENDENT_VERIFY
+    topology: CYLINDRICAL_CONTINUOUS
+    role: LONG_TEXT_DISTRIBUTIONAL_BENCHMARK
+    tests: [SIGN_FREQUENCY, POSITIONAL_DISTRIBUTION, RECURRENCE, WORD_BOUNDARY_MODELS, CHIRALITY, TOPOLOGY]
+  - artifact_id: ART-KALAVASSOS-CYLINDER-GROUP
+    site: Kalavassos_Ayios_Dhimitrios
+    object_class: CYLINDER_GROUP
+    material: clay
+    script: CYPRO_MINOAN
+    chronology: LC_II_C_APPROX_1275_1225_BCE
+    role: WITHIN_GENRE_REPLICATION_CONTROL
+    tests: [CROSS_DOCUMENT_RECURRENCE, FORMULA_DETECTION, ADMINISTRATIVE_HYPOTHESIS, DEPENDENCY_CONTROL]
+  - artifact_id: ART-ENKOMI-BALL-GROUP
+    site: Enkomi
+    object_class: INSCRIBED_CLAY_BALL_GROUP
+    material: clay
+    script: CYPRO_MINOAN
+    role: SHORT_TEXT_DISTRIBUTIONAL_CONTROL
+    source_examples: [Louvre_CK109a, Louvre_CK109b, Louvre_CK109d, Louvre_CK109e]
+    tests: [SHORT_FORMULA_CLUSTERING, SIGN_POSITION, OBJECT_FUNCTION, CROSS_REFERENCE_TEST]
+method:
+  known_carrier_comparator: CYPRIOT_SYLLABARY
+  prohibited_shortcut: "Do not directly assign later Cypriot syllabic phonetic values to Cypro-Minoan signs without independent support."
+  preferred_pipeline: "OBJECT_CLASS -> TOPOLOGY -> SIGN_INVENTORY -> POSITION -> RECURRENCE -> SEGMENTATION -> FUNCTION -> CONTACT_FILTER -> LANGUAGE_HYPOTHESES"
+sources:
+  - "Nicolle Hirschfeld, Cypro-Minoan, Oxford Handbook of the Bronze Age Aegean"
+  - "Jean-Pierre Olivier, Edition holistique des textes chypro-minoens (2007)"
+  - "Silvia Ferrara, Cypro-Minoan Inscriptions (2013)"
+  - "Louvre collections: Enkomi inscribed clay balls"
