@@ -1,0 +1,27 @@
+id: CYP-NEXUS
+name: Cyprus Nexus
+principle: "Separate language ancestry, script ancestry, contact, substrate, and political replacement."
+layers:
+  CYP-0: {name: Bronze_Age_Substrate, nodes: [CYP-SUB]}
+  CYP-1: {name: Script_Carrier, nodes: [LINEAR_A_RELATED, CYPRO_MINOAN, CYPRIOT_SYLLABARY]}
+  CYP-2: {name: Aegean_Greek, nodes: [MYC, CYP-GR, GRK]}
+  CYP-3: {name: Anatolian_Interface, nodes: [LUW, HIT, CAR, LYC]}
+  CYP-4: {name: Levantine_Interface, nodes: [UGA, PHN, AKK]}
+  CYP-5: {name: Egyptian_Mesopotamian_Interface, nodes: [EGY, AKK]}
+core_unknown:
+  source: CYP-SUB
+  target: ETE
+  relation: CONT?
+  status: TESTING
+  tests: [SIGN_DISTRIBUTION, PHONOTACTICS, MORPHOLOGICAL_RECURRENCE, WORD_BOUNDARIES, ONOMASTICS, BILINGUAL_ANCHORS, CHRONOLOGY, CONTACT_FILTERING, HOLDOUT_REGENERATION]
+calibration:
+  known_language: CYP-GR
+  carrier: CYPRIOT_SYLLABARY
+  purpose: "Infer carrier behavior from known Greek without treating Eteocypriot as Greek."
+contact_axes:
+  - [EGYPT, LEVANT, CYPRUS, AEGEAN]
+  - [ANATOLIA, CYPRUS, LEVANT]
+rules:
+  - "Script continuity does not imply language continuity."
+  - "Readable signs do not imply understood language."
+  - "Bilingual equivalence must distinguish message-equivalent, event-equivalent, and colocated-non-equivalent texts."
