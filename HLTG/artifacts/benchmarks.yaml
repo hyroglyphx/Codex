@@ -1,0 +1,74 @@
+version: HLTG-BENCH-0.1
+artifacts:
+  - artifact_id: ART-SUSA-SB17
+    name: Table_of_the_Lion_Sb17
+    object: {class: OTHER, material: limestone, writing_method: incised, condition: preserved_with_unreadable_signs}
+    provenance: {findspot: Susa_acropolis, present_location: Louvre, museum_id: Sb_17, excavation_context: excavated_1903, confidence: HIGH}
+    chronology: {date_from: -2120, date_to: -2100, dating_basis: HISTORICAL}
+    linguistic:
+      languages: [AKK, ELA]
+      scripts: [CUNEIFORM, LINEAR_ELAMITE]
+      direction: [RTL_LINEAR_ELAMITE]
+      decipherment_status: PARTLY_DECIPHERED_BIGRAPHIC
+    genre: [ROYAL_INSCRIPTION]
+    functions: [TITULARY, DEDICATORY]
+    topology: MIXED
+    anchors: [INSUSINAK, PUZUR_SUSINAK, SUSA, ROYAL_TITLE, PATRONYMIC_MATERIAL]
+    text_layers:
+      L2_example: "su2-h-te-r i-n-su-si-na-k-ki-r"
+      L3_candidates: [sohter, suhter, shuhter, su-uh-ter]
+    benchmark_role: [BIGRAPHIC_ANCHOR, NORMALIZATION_LADDER, RELATIONAL_PROXIMITY_WITHOUT_PROMOTED_ETYMOLOGY]
+    status: {evidence_level: E4, disputed_fields: [FULL_TRANSLATION, SOME_SIGN_VALUES]}
+
+  - artifact_id: ART-PEL-LIVESTOCK-CTRL
+    name: Proto_Elamite_Livestock_Account_Control
+    object: {class: TABLET, material: clay, writing_method: impressed_and_incised, condition: source_object_identifier_pending}
+    provenance: {findspot: UNKNOWN, present_location: UNKNOWN, museum_id: UNKNOWN, excavation_context: UNKNOWN, confidence: PENDING_SOURCE_RECOVERY}
+    chronology: {date_from: null, date_to: null, dating_basis: UNKNOWN}
+    linguistic:
+      languages: [UNKNOWN]
+      scripts: [PROTO_ELAMITE]
+      direction: [UNKNOWN]
+      decipherment_status: UNDECIPHERED
+    genre: [ADMINISTRATIVE]
+    functions: [ACCOUNTING, LIVESTOCK_RECORD]
+    content_domains: [NUMERALS, QUANTITIES, ANIMAL_ICONOGRAPHY]
+    benchmark_result:
+      administrative_cattle_account_model_share: 0.613
+      livestock_species_unresolved_model_share: 0.379
+      symbolic_or_narrative_model_share: 0.008
+      interpretation: "Function and document grammar are more recoverable than language or pronunciation."
+    benchmark_role: [FUNCTION_BEFORE_LANGUAGE, DOCUMENT_GRAMMAR, NEGATIVE_TRANSLATION_CONTROL]
+    status: {evidence_level: E1, disputed_fields: [SPECIES, LANGUAGE, PHONETIC_VALUES, EXACT_CATALOGUE_ID]}
+
+  - artifact_id: ART-YBC-7289
+    name: YBC_7289
+    object: {class: TABLET, material: clay, writing_method: cuneiform_and_geometric_inscription, condition: moderate_damage}
+    provenance: {findspot: UNKNOWN_IN_CURRENT_MIGRATION, present_location: Yale_Babylonian_Collection, museum_id: YBC_7289, excavation_context: UNKNOWN, confidence: MEDIUM}
+    chronology: {date_from: null, date_to: null, dating_basis: PALEOGRAPHIC}
+    linguistic:
+      languages: [BAB]
+      scripts: [CUNEIFORM]
+      direction: [LOCAL_CUNEIFORM]
+      decipherment_status: DECIPHERED_NUMERIC_GEOMETRIC
+    genre: [MATHEMATICAL, SCHOOL]
+    functions: [MATHEMATICAL_INSTRUCTION]
+    topology: GEOMETRIC
+    spatial_semantics:
+      rule: "VALUE + LOCATION + GEOMETRIC_ROLE = INTERPRETATION"
+      square_side: "30"
+      diagonal_factor: "1;24,51,10"
+      result: "42;25,35"
+      interpretation: "sqrt(2) approximation confirmed"
+    benchmark_role: [SPATIAL_SYNTAX, TYPED_NUMBER, GEOMETRIC_DOCUMENT_GRAMMAR]
+    status: {evidence_level: E5, disputed_fields: [PRODUCTION_METHOD_OF_APPROXIMATION]}
+
+bilingual_controls:
+  - {artifact_id: ART-CIPPI-MELQART, name: Cippi_of_Melqart, relation_class: MESSAGE_EQUIVALENT, benchmark_role: POSITIVE_BILINGUAL_CONTROL, ingestion_status: METADATA_PENDING}
+  - {artifact_id: ART-PYRGI, name: Pyrgi_Tablets, relation_class: EVENT_EQUIVALENT, benchmark_role: PARTIAL_EQUIVALENCE_CONTROL, ingestion_status: METADATA_PENDING}
+  - {artifact_id: ART-TABNIT, name: Tabnit_Sarcophagus, relation_class: COLOCATED_NON_EQUIVALENT, benchmark_role: NEGATIVE_BILINGUAL_CONTROL, ingestion_status: METADATA_PENDING}
+
+rules:
+  - "same physical object or location != same message"
+  - "unknown catalogue fields remain UNKNOWN/PENDING rather than being inferred"
+  - "benchmark model shares are conditional scores, not archaeological probabilities"

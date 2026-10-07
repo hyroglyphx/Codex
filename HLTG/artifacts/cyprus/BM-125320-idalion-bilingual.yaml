@@ -1,0 +1,32 @@
+artifact_id: ART-IDALION-BM125320
+name: Idalion_Phoenician_Cypriot_Bilingual
+aliases: [Idalion_Bilingual, KAI_38, CIS_I_89, BM_125320]
+object:
+  class: MONUMENT
+  material: stone
+provenance:
+  findspot: Idalion_Dali_Cyprus
+  excavation: Robert_Hamilton_Lang_1869
+  present_location: British_Museum_London
+  museum_id: BM_125320
+chronology:
+  date_from: -388
+  date_to: -388
+  dating_basis: INTERNAL
+linguistic:
+  languages: [PHN, CYP-GR]
+  scripts: [PHOENICIAN_ALPHABET, CYPRIOT_SYLLABARY]
+  decipherment_status: [READABLE, READABLE]
+genre: [DEDICATION]
+functions: [DECIPHERMENT_CALIBRATION, CROSS_SCRIPT_ALIGNMENT]
+anchors:
+  - {type: REGNAL_DATE, phoenician: "year four of king Milkyaton", role: CHRONOLOGICAL_ANCHOR}
+  - {type: DIVINE_NAME, phoenician: "Reshep Mikal", role: CULTIC_ANCHOR}
+  - {type: DEDICATORY_FORMULA, role: MESSAGE_ALIGNMENT}
+relation:
+  bilingual_class: MESSAGE_EQUIVALENT
+  historical_role: "Major key in decipherment of the Cypriot syllabary."
+status:
+  evidence_level: E5
+  claim_state: SUPPORTED
+method_tests: [CROSS_SCRIPT_NAME_ALIGNMENT, SYLLABARY_VALUE_CALIBRATION, MESSAGE_EQUIVALENCE, HOLDOUT_REGENERATION]
