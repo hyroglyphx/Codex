@@ -1,0 +1,86 @@
+registry: generative-gate-algebra
+version: 0.1.0
+updated: 2026-09-22
+status: ACTIVE_EXPERIMENTAL
+protocol: docs/architecture/generative-gate-algebra-v0.1.md
+
+benchmarks:
+  - {id: GA-01, object: SY-231, test: enumeration_partition}
+  - {id: GA-02, object: SY-directed, test: reversal_orbits}
+  - {id: GA-03, object: Z22, test: modular_operator_scan}
+  - {id: GA-04, object: coherence-gates, test: frozen_parameter_replication}
+  - {id: GA-05, object: MDK, test: sparse_historical_graph}
+  - {id: GA-06, object: MDK-functions, test: latent_basis_recovery}
+  - {id: GA-07, object: MDK-50-51, test: count_sensitivity}
+  - {id: GA-08, object: cross-corpus, test: invariant_comparison}
+  - {id: GA-09, object: geometry, test: null_model_challenge}
+  - {id: GA-10, object: predictions, test: prospective_holdout}
+
+sy231:
+  basis: 22
+  unordered_gates: 231
+  directed_moves: 462
+  classes: {mothers: 3, doubles: 7, simples: 12}
+  edge_partition:
+    mother_mother: 3
+    mother_double: 21
+    mother_simple: 36
+    double_double: 21
+    double_simple: 84
+    simple_simple: 66
+
+marduk:
+  literary_basis_count: 50
+  literary_pair_space: 1225
+  transmitted_candidate_count: 51
+  transmitted_pair_space: 1275
+  delta_edges: 50
+  rule: "historical graph is sparse; complete graph is possibility space only"
+  ingestion: registries/marduk-fifty-names-ingestion-v0.1.yaml
+
+coherence_gate_experiment:
+  status: candidate_reconstruction_from_prior_work
+  modulus: 60
+  crest_residues: [0,27,54]
+  totient_downstream_nodes: [18,6,2,1]
+  secondary_overlay: Faulhaber-Fibonacci
+  requirement: "freeze exact numeric maps and residue generator before replication"
+
+evidence_states: [POTENTIAL,ATTESTED,DERIVED,PREDICTED,CORROBORATED,CONTRADICTED,REJECTED,OMEGA]
+
+next_actions:
+  - complete line-addressable Marduk name ingestion
+  - create SY-231 machine-readable gate enumeration
+  - recover/freeze exact prior G(w) and Faulhaber-Fibonacci definitions
+  - implement Z22 operator/orbit scan
+  - build name-function incidence matrix
+  - pre-register first cross-witness predictions
+  - run geometry null models only after historical graph freeze
+
+
+artifact_adapter:
+  protocol: docs/architecture/gate-algebra-gfsb-faulhaber-rtc-adapter-v0.1.md
+  status: ACTIVE_RECONSTRUCTION
+  recovered:
+    g_of_w_role: "sum under frozen native numeric adapter"
+    fibonacci_map: "pi_F(a,b)=13a+21b"
+    fibonacci_kernel: "(21,-13)"
+    torus_period: 273
+    ordered_phasor: true
+    spectral_operator: "A=I+S; S^4=I"
+    glyphic_carrier: true
+  partial:
+    faulhaber_fibonacci_residue_generator: OMEGA
+    rtc_noniusmulti_exact_definition: OMEGA
+    rtc_octochord_exact_definition: OMEGA
+    rtc_mills_chladni_zhang_exact_coupling: OMEGA
+  added_benchmarks: [GA-11,GA-12,GA-13,GA-14,GA-15,GA-16,GA-17,GA-18]
+
+
+structural_continuation_extension:
+  protocol: docs/architecture/structural-continuation-gate-dynamics-v0.1.md
+  registry: registries/structural-continuation-gate-dynamics-v0.1.yaml
+  operator: "Gamma(X)=(P,T,A,L,I,R)"
+  invariant_seed: "E(X)=(I_return,H_path,A_memory,O_orientation)"
+  benchmarks: [SCG-01,SCG-02,SCG-03,SCG-04,SCG-05,SCG-06,SCG-07,SCG-08,SCG-09,SCG-10]
+  rule: "same attractor is weaker than same route; test path memory and return invariants separately"

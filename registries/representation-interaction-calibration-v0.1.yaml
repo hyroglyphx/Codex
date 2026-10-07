@@ -1,0 +1,44 @@
+representation_interaction_calibration:
+  version: 0.1.0
+  date: 2026-09-22
+  status: ACTIVE_EXPERIMENTAL
+  protocol: docs/architecture/representation-interaction-calibration-v0.1.md
+  core_rules:
+    - "notational alienness != operational alienness"
+    - "representation invariance != composition invariance"
+    - "surface classifier != operational substrate"
+    - "classifier continuity != provenance proof"
+  state_extension: "X=(carrier,surface,operator,state,path,composition,interaction_residual,invariant,provenance)"
+  operators:
+    - REPRESENTATION_CHANGE
+    - BASIS_CHANGE
+    - COMPOSITION
+    - INTERACTION_RESIDUAL
+    - PREPARATION_TRANSFORM
+    - TIMING_CONTEXT_TRANSFORM
+    - CLASSIFIER_MIGRATION
+  positive_controls:
+    mesopotamian_math:
+      benchmarks: [MESO-MATH-01,MESO-MATH-02,MESO-MATH-03,MESO-MATH-04,MESO-MATH-05,MESO-MATH-06]
+      purpose: "recover formal operation/invariant from unfamiliar carrier and notation"
+    bar_hebraeus_diet:
+      benchmarks: [BH-DIET-01,BH-DIET-02,BH-DIET-03,BH-DIET-04,BH-DIET-05]
+      purpose: "recover composition/interaction logic from humorous and medical-dietetic prose"
+  calibrates:
+    - DEE-09_label_blind_adversarial_test
+    - Structural_Continuation
+    - Codex_Witness_Protocol
+    - TCIM
+    - Organon
+    - Invariant_Forge
+  promotion: "declared operator + recoverable invariant/residual + provenance + relevant control/holdout"
+
+  olf_recovery_binding:
+    registry: registries/oriented-language-field-recovery-v0.1.yaml
+    nuisance_gate_before_fusion: true
+    late_fusion_required_for_cross_view_models: true
+    transport_loss_vector: [phonetic,morphological,semantic,pragmatic,orientation,provenance]
+    return_defect: "H_Gamma(W)=Delta(W,Gamma(W))"
+    path_divergence: "P(Gamma1,Gamma2|W)=Delta(Gamma1(W),Gamma2(W))"
+    semantic_curvature: "K(A,B|W)=Delta(B(A(W)),A(B(W)))"
+    bridge_to_interaction_residual: "noncommutativity is a path/order-sensitive interaction residual"

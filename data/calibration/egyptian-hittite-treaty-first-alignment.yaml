@@ -1,0 +1,190 @@
+dataset: egyptian-hittite-treaty-first-alignment
+version: 0.1.0
+updated: 2026-09-22
+status: ACTIVE_CALIBRATION
+nexus_id: RN10
+event: "Treaty between Ramesses II of Egypt and Hattusili III of Hatti"
+date: "Year 21 of Ramesses II, conventionally ca. 1259/1258 BCE"
+carrier_class: distributed_monumental_and_tablet_witnesses
+parallax_levels: [PX4]
+languages: [Egyptian, Akkadian]
+scripts: [Egyptian-hieroglyphic, cuneiform]
+
+sources:
+  - id: ISAC_ROAD_TO_KADESH
+    type: scholarly_monograph
+    url: https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/saoc42.pdf
+    note: "Publishes/discusses the Egyptian hieroglyphic version and its relation to the Akkadian treaty tradition."
+  - id: ISAC_BURDEN_OF_EGYPT
+    type: scholarly_synthesis
+    url: https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/burden.pdf
+    note: "Notes preservation of both hieroglyphic and cuneiform versions and differing diplomatic self-presentation."
+  - id: UNESCO_HATTUSA_ARCHIVE
+    type: archival_context
+    url: https://www.unesco.org/fr/memory-world/hittite-cuneiform-tablets-bogazkoy
+    note: "Hattusa/Bogazkoy archive includes treaty tablets."
+
+witness_geometry:
+  same_physical_object: false
+  same_diplomatic_event: true
+  object_types:
+    egyptian: monumental_hieroglyphic_copies
+    hittite_archive: clay_tablet_copies
+  colocation: false
+  distributed_copy_status: true
+  primary_alignment_granularity: [G3, G4, G5, G6, G7]
+
+alignment_rows:
+  - id: EHT01
+    anchor: peace_and_brotherhood
+    granularity: G5
+    egyptian:
+      content: "Treaty establishes enduring peace/brotherhood between Ramesses II and Hattusili III and their lands."
+    akkadian:
+      content: "Parallel diplomatic compact establishes peace and reciprocal alliance between the two great kings."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - diplomatic_formula_mapping
+      - royal_register_recasting
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: EHT02
+    anchor: mutual_nonaggression
+    granularity: G5
+    egyptian:
+      content: "Neither ruler is to attack the other's land."
+    akkadian:
+      content: "Parallel nonaggression obligation."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - legal_equivalence
+      - reciprocal_clause_mapping
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: EHT03
+    anchor: mutual_assistance
+    granularity: G5
+    egyptian:
+      content: "Reciprocal military/support obligations are expressed in Egyptian royal/legal idiom."
+    akkadian:
+      content: "Parallel reciprocal assistance obligations occur in the international diplomatic register."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - alliance_formula_mapping
+      - institutional_register_recasting
+    evidence_class: C0
+    calibration_weight: very_high
+
+  - id: EHT04
+    anchor: fugitives_and_extradition
+    granularity: G5
+    egyptian:
+      content: "Return of fugitives/refugees is regulated, including treatment upon return."
+    akkadian:
+      content: "Parallel extradition/return clauses occur."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - legal_formula_mapping
+      - person_status_recasting
+    evidence_class: C0
+    calibration_weight: very_high
+
+  - id: EHT05
+    anchor: divine_witnesses_and_oath
+    granularity: G6
+    egyptian:
+      content: "Treaty is guaranteed through divine witness/oath language naturalized to Egyptian monumental presentation."
+    akkadian:
+      content: "The international treaty tradition invokes divine witnesses and sanctions in cuneiform diplomatic form."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - divine_witness_mapping
+      - oath_register_recasting
+    evidence_class: C0_C1
+    calibration_weight: high
+
+  - id: EHT06
+    anchor: initiative_and_diplomatic_dignity
+    granularity: G7
+    egyptian:
+      content: "Egyptian presentation frames Hattusili as sending envoys/appealing for peace, preserving Ramesside prestige."
+    akkadian:
+      content: "The Hittite-side tradition can frame Ramesses as initiating or proposing peace."
+    same_referent: true
+    same_proposition: false
+    same_lexicalization: false
+    transform:
+      - audience_specific_reframing
+      - royal_prestige_recasting
+      - historiographic_perspective_shift
+    evidence_class: C1
+    calibration_weight: maximal
+    significance: >
+      Same diplomatic settlement can preserve the legal kernel while each side
+      recasts initiative in a prestige-preserving way.
+
+  - id: EHT07
+    anchor: translation_and_copy_chain
+    granularity: G7
+    egyptian:
+      content: "Egyptian monumental version presents a translated/localized treaty state."
+    akkadian:
+      content: "Akkadian functions as the international diplomatic written medium in the Hittite archive."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - mode_script_transposition
+      - legal_translation
+      - monumentalization
+      - archival_custody
+    evidence_class: C1
+    calibration_weight: very_high
+    note: >
+      Scholarly reconstruction of original-language direction is complex;
+      preserve translation-direction uncertainty rather than forcing a single
+      simple original->copy chain.
+
+derived_observations:
+  - id: EHT_D1
+    status: derived
+    statement: "Same diplomatic event can be distributed across different materials, scripts, languages and institutions without losing the legal kernel."
+  - id: EHT_D2
+    status: attested_and_derived
+    statement: "Prestige framing can diverge while reciprocal legal obligations remain aligned."
+  - id: EHT_D3
+    status: derived
+    statement: "PX4 distributed witnesses are not weaker merely because they are not on one physical object; provenance and treaty architecture can bind them."
+  - id: EHT_D4
+    status: derived
+    statement: "Legal/operator covariance can exceed lexical or historiographic covariance."
+
+new_sieve_variables_triggered:
+  - diplomatic_event_id
+  - copy_location
+  - carrier_institution
+  - legal_kernel
+  - prestige_frame
+  - initiative_claim
+  - reciprocity_symmetry
+  - monumentalization
+  - archival_custody
+  - translation_direction_uncertainty
+
+next_pass:
+  - "Attach clause-level Egyptian/Akkadian line references from critical editions."
+  - "Score reciprocal clauses for symmetry versus local expansion."
+  - "Map divine witness lists by pantheon/localization rather than flattening names."
+  - "Compare diplomatic initiative framing against Behistun audience-specific expansion."

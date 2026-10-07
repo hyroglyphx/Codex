@@ -1,0 +1,224 @@
+dataset: karatepe-cinekoy-first-alignment
+version: 0.1.0
+updated: 2026-09-22
+status: ACTIVE_CALIBRATION
+nexus_id: RN04
+region: Iron_Age_Cilicia
+languages: [Phoenician, Hieroglyphic_Luwian]
+scripts: [Phoenician_alphabet, Anatolian_hieroglyphs]
+parallax_levels: [PX2, PX3, PX4]
+
+sources:
+  - id: DEAPS_KARATEPE
+    url: https://deaps.osu.edu/text_objects/11466
+    role: >
+      Current digital Phoenician edition/metadata for KAI 26; notes three
+      exemplars and minor wording/grammar differences among surviving copies.
+  - id: YAKUBOVICH_2008
+    url: https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/yakubovich_diss_2008.pdf
+    role: >
+      Specialist linguistic discussion with directly aligned Luwian/Phoenician
+      passages, including House of Muksa/Mopsos and Tarhunt/Baal.
+  - id: PAYNE_OIS2
+    url: https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/OIS2.pdf
+    role: >
+      Specialist multilingual-inscription discussion of Karatepe and Çineköy
+      in their Cilician sociolinguistic setting.
+  - id: HITTITE_MONUMENTS_KARATEPE
+    url: https://hittitemonuments.com/karatepe/
+    role: >
+      Accessible monument/transliteration context and Luwian translation based
+      on specialist scholarship.
+  - id: CINEKOY_SECONDARY_CONTROL
+    url: https://en.wikipedia.org/wiki/%C3%87inek%C3%B6y_inscription
+    role: >
+      Orientation only for the well-known Assyria/Syria correspondence; claims
+      requiring publication-grade use must be tied to Tekoğlu/Lemaire/Rollinger
+      or later critical editions.
+
+witness_geometry:
+  Karatepe:
+    object_type: monumental_gate_and_statue_inscriptions
+    exemplars:
+      Phoenician: 3
+      Luwian: 2
+    note: >
+      Copies/exemplars vary slightly; they form a local recensional family,
+      not independent votes.
+  Cinekoy:
+    object_type: statue_base_bilingual
+    relation_to_Karatepe: same_regional_dynastic_network
+    note: "Earlier or contemporary regional control associated with Awariku/Warikas."
+
+alignment_rows:
+  - id: KC01
+    anchor: ruler_identity_Azatiwada
+    granularity: G2
+    phoenician:
+      content: "ʾztwd / Azatiwada identity carrier"
+    luwian:
+      content: "Azatiwatas/Azatiwada corresponding ruler identity"
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: transliterated_name_correspondence
+    transform:
+      - onomastic_transposition
+      - script_transposition
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: KC02
+    anchor: house_of_Mopsos_Muksa
+    granularity: G3
+    phoenician:
+      form: "bt mpš"
+      content: "House of Mopsos"
+    luwian:
+      form: "mu-ka-sa-sá-há-ʾ DOMUS-ní-í"
+      content: "house of Muksa"
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - onomastic_transposition
+      - dynastic_formula_mapping
+      - consonant_correspondence_observation
+    evidence_class: C0
+    calibration_weight: maximal
+    significance: >
+      Direct bilingual anchor between Phoenician mpš and Luwian Muksa,
+      historically important for the Mopsos/Muksa identity problem.
+
+  - id: KC03
+    anchor: divine_grace_formula
+    granularity: G4
+    phoenician:
+      form: "b-ʿbr bʿl w-ʾlm"
+      content: "by the grace/help of Baal and the gods"
+    luwian:
+      form: "(DEUS)TONITRUS... DEUS..."
+      content: "by Tarhunt/Tarhunzas and the gods"
+    same_referent: functional_equivalence
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - divine_name_equivalence
+      - cultic_register_mapping
+      - local_pantheon_recasting
+    evidence_class: C0_C1
+    calibration_weight: maximal
+    significance: >
+      Strong control for divine-equivalence translation: same operator and
+      ritual-political function without lexical identity.
+
+  - id: KC04
+    anchor: Adanawa_Danunian_population
+    granularity: G2_G5
+    phoenician:
+      content: "dnnym / Danunians and ʾdn-type place/population designations"
+    luwian:
+      content: "Adanawa / Adanawean polity"
+    same_referent: broadly_corresponding_regional_population_polity
+    same_proposition: contextual
+    same_lexicalization: false
+    transform:
+      - ethnonym_toponym_transposition
+      - referential_stratification
+    evidence_class: C1
+    calibration_weight: high
+    caveat: >
+      Whether Danuna/Danunians and Adanawa have the same ultimate etymological
+      base remains debated; bilingual referential correspondence must not be
+      turned automatically into etymological identity.
+
+  - id: KC05
+    anchor: founder_and_city
+    granularity: G5
+    phoenician:
+      content: "Azatiwada presents his building/founding and protection of the settlement."
+    luwian:
+      content: "Parallel account of Azatiwada establishing/fortifying Azatiwataya and benefiting Adanawa."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - royal_foundation_formula_mapping
+      - urban_political_register_recasting
+    evidence_class: C1
+    calibration_weight: high
+
+  - id: KC06
+    anchor: copy_variation_within_Karatepe
+    granularity: G6_G7
+    phoenician:
+      content: "Three exemplars survive with slight grammatical/wording differences."
+    luwian:
+      content: "Multiple Luwian monumental placements preserve the same overall inscriptional program."
+    same_referent: true
+    same_proposition: mostly
+    same_lexicalization: variable
+    transform:
+      - local_recensional_variation
+      - monumental_copying
+    evidence_class: C0_C1
+    calibration_weight: high
+    significance: >
+      Same-site copies provide a dependency-controlled micro-recension family,
+      useful for distinguishing copy variation from cross-language translation.
+
+  - id: KC07
+    anchor: Cinekoy_Assyria_correspondence
+    granularity: G2_G5
+    phoenician:
+      content: "ʾŠR / ʾŠRYM identifies Assur/Assyrians."
+    luwian:
+      content: "SU-RA/i forms refer to Assyria in the corresponding clauses."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - exonym_transposition
+      - cross_language_toponym_mapping
+    evidence_class: C1
+    calibration_weight: high
+    caveat: >
+      This is a regional control from Çineköy, not a Karatepe row. The
+      Syria/Assyria historical-etymology implications should be handled through
+      specialist publication rather than the bilingual correspondence alone.
+
+translation_direction:
+  Karatepe:
+    status: scholarly_hypothesis
+    common_model: Phoenician_source_to_Luwian_translation
+    rule: >
+      Preserve directionality as a model, not as a property forced by the mere
+      existence of the bilingual. Compare grammatical calques and local
+      divergences before promotion.
+
+derived_observations:
+  - id: KC_D1
+    statement: "A bilingual can align dynastic identity across radically different scripts while preserving different phonological shapes."
+  - id: KC_D2
+    statement: "Divine-name equivalence is functional/cultural translation, not cognacy."
+  - id: KC_D3
+    statement: "Bilingual referential equivalence between ethnonym/toponym fields does not automatically settle etymology."
+  - id: KC_D4
+    statement: "Multiple same-site exemplars provide a copy-variance baseline before cross-language divergence is measured."
+  - id: KC_D5
+    statement: "Karatepe and Çineköy together form a regional bilingual network around the same dynastic/political ecology."
+
+new_sieve_variables:
+  - copy_exemplar_id
+  - same_site_recensional_variance
+  - dynastic_name_crosswalk
+  - divine_name_functional_equivalence
+  - ethnonym_toponym_referential_equivalence
+  - etymology_claim_ceiling
+  - regional_bilingual_network
+  - translation_direction_model
+
+next_pass:
+  - "Ingest clause-by-clause Phoenician and Luwian aligned critical text."
+  - "Measure A/B/C Karatepe exemplar divergence before merging the copies."
+  - "Add Çineköy through a specialist critical edition, especially Awariku, Hiyawa/Danunians and Assyria clauses."
+  - "Compare Mopsos/Muksa crosswalk with broader exonym/endonym transmission rules."

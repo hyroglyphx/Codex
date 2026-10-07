@@ -1,0 +1,82 @@
+version: "0.1"
+date: "2026-09-24"
+id: ALASHIYA_SPELLING_DETERMINATIVE_MATRIX
+status: SOURCE_LOCKED_FIRST_PASS
+
+rows:
+  - source: Mari
+    date: "18th c BCE"
+    forms: ["a-la-si-um","a-la-s[u-u]m","a-la-ši-ia","a-la-šu-ú","a-la-ši-i","URU.KI a-la-ši-ia"]
+    classifier: [unmarked,URU_KI]
+    function: copper_source_and_place
+
+  - source: Babylonia
+    date: "ca 1745/4 BCE"
+    forms: ["a-la-ši-im"]
+    classifier: unmarked_genitive
+
+  - source: Amarna
+    date: "14th c BCE"
+    forms: ["LUGAL KUR a-la-ši-ia"]
+    classifier: KUR
+    function: royal_diplomatic_country
+
+  - source: EA39_cross_script
+    date: "14th c BCE"
+    forms: ["A-la-ši-ia","ʾirs3 / Alas(i)a"]
+    classifier: same_artifact_cross_script
+    operator: TRN-09
+
+  - source: Ugarit
+    date: "14th-13th c BCE"
+    forms: ["ʾalṯy","a-la-ši-a","a-la-ši-ia","IRI a-la-ši-ia","a-la-ši-ya"]
+    classifier: [unmarked,IRI]
+
+  - source: Hittite
+    date: "15th-13th c BCE"
+    forms: ["KUR a-la-ši-ia","KUR.URU A-la-ši-ia","LUGAL KUR.URU A-la-ši-ia"]
+    classifier: [KUR,KUR_URU]
+
+  - source: Egyptian_secure
+    forms: ["ʾirs3 / Alas(i)a"]
+    confidence: same_artifact_anchor_via_EA39
+
+  - source: Egyptian_disputed
+    forms: ["ʾisy / Asiya"]
+    confidence: disputed_equation_with_Alashiya
+
+  - source: Linear_B_Knossos
+    forms: ["a-ra-si-jo / possible Alasios"]
+    classifier: personal_or_ethnic_form
+    confidence: candidate
+
+  - source: Tamassos_Phrangissa
+    date: "4th c BCE"
+    forms: ["Alasiōtas","ʾlhyts"]
+    classifier: divine_epithet
+    operator: NAME-CAND-14
+
+operators:
+  DET-01:
+    name: DETERMINATIVE_NONISOMORPHISM
+    rule: "URU/KUR/KUR.URU do not map one-to-one onto constitutional scale"
+  TRN-09:
+    name: SAME_ARTIFACT_CROSS_SCRIPT_TOPONYM
+    anchor: "EA39 Akkadian Alašiya <-> Egyptian ʾirs3"
+  PHON-CAND-01:
+    name: ALASHIYA_MEDIAL_CORONAL_MAPPING
+    status: explore_only
+    values: [Akkadian_Š,Ugaritic_Ṯ,Egyptian_S_like,Mycenaean_S_candidate]
+  NAME-CAND-14:
+    name: ALASHIYA_ALASIOTAS_LOCAL_PERSISTENCE
+    status: explore_only
+
+carrier_window:
+  schematic: "A-L-A-{Š/Ṯ/S}-I-Y-A"
+  stable_coordinates: [initial_A_or_glottal,L,medial_coronal,possible_Y_glide]
+
+firewalls:
+  - "determinative != constitution"
+  - "Egyptian ʾirs3 != Egyptian ʾisy by default"
+  - "Linear B a-ra-si-jo remains candidate not anchor"
+  - "Classical Alasiōtas does not by itself prove uninterrupted Bronze Age continuity"

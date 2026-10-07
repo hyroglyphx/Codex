@@ -1,0 +1,145 @@
+dataset: gilgamesh-identity-parallax
+version: 0.1.0
+updated: 2026-09-22
+status: ACTIVE_CALIBRATION
+
+purpose: >
+  Compare Gilgamesh identity survival across cuneiform, Qumran and Greco-Roman
+  witnesses without flattening name, role, classifier, episode set or transmission route.
+
+sources:
+  - id: GILGAMESH_MULTILINGUAL
+    path: studies/gilgamesh-multilingual-nexus.md
+  - id: BEYOND_CUNEIFORM
+    path: studies/gilgamesh-beyond-cuneiform-transmission-node.md
+  - id: EDMONDS_2026
+    url: https://www.uni-muenster.de/imperia/md/content/altoriental/edmonds_gilgames_beyond_cuneiform_postprint.pdf
+    note: "Bottom-up extra-cuneiform Gilgamesh microhistory and proposed Levantine alphabetic transmission."
+  - id: BOOK_OF_GIANTS_CRITICAL
+    url: https://edoc.ub.uni-muenchen.de/36601/1/Marro_Inaki.pdf
+    note: "Critical edition contextualizing Gilgamesh in 4Q530/4Q531."
+  - id: AELIAN_12_21
+    url: https://penelope.uchicago.edu/thayer/l/roman/texts/Aelian/de_Natura_Animalium/12%2A.html
+
+identity_tensor_fields:
+  - name_form
+  - entity_identity
+  - kingship_role
+  - strength_role
+  - dream_role
+  - ontological_classifier
+  - moral_classifier
+  - episode_set
+  - companion_network
+  - receiving_tradition
+  - transmission_route
+  - witness_date
+  - confidence
+
+witnesses:
+  - id: GIP01
+    witness: cuneiform_Gilgamesh
+    name_form: Gilgameš/Bilgames-tradition
+    entity_identity: Mesopotamian_hero_king
+    kingship_role: strong
+    strength_role: strong
+    dream_role: strong
+    ontological_classifier: heroic_royal
+    moral_classifier: mixed_heroic
+    episode_set:
+      - Enkidu_companionship
+      - Huwawa_Humbaba
+      - Bull_of_Heaven
+      - Enkidu_death
+      - mortality_quest
+      - flood_wisdom_reception
+    companion_network:
+      - Enkidu
+      - Humbaba_Huwawa
+      - Utnapishtim
+      - Ishtar_Inanna
+    receiving_tradition: Mesopotamian_cuneiform
+    transmission_route: direct_cuneiform_witnesses
+    confidence: high
+
+  - id: GIP02
+    witness: Qumran_Book_of_Giants
+    name_form: glgmš_glgmšš
+    entity_identity: Gilgamesh_identity_carrier
+    kingship_role: not_primary
+    strength_role: strong_or_networked
+    dream_role: present_in_giant_dream_discourse
+    ontological_classifier: giant_Watcher_offspring_world
+    moral_classifier: doomed_judgment_context
+    episode_set:
+      - giant_deliberation
+      - dream_vision
+      - judgment
+    companion_network:
+      - Ohyah
+      - Hahyah
+      - Mahaway
+      - Hohabes_Humbaba_like_name
+    receiving_tradition: Aramaic_Enochic_Book_of_Giants
+    transmission_route: >
+      Extra-cuneiform West-Semitic/Levantine route is plausible; direct dependence
+      on the Standard Babylonian Epic is not required.
+    confidence: high_for_name_and_classifier; medium_for_specific_network_derivation
+
+  - id: GIP03
+    witness: Aelian_Gilgamos
+    name_form: Gilgamos
+    entity_identity: Babylonian_king
+    kingship_role: strong
+    strength_role: not_primary
+    dream_role: absent_in_episode
+    ontological_classifier: royal_human_legendary
+    moral_classifier: neutral_legendary
+    episode_set:
+      - succession_prophecy
+      - daughter_confinement
+      - secret_pregnancy
+      - infant_exposure_from_height
+      - eagle_rescue
+      - garden_deposition
+      - gardener_upbringing
+      - kingship
+    companion_network:
+      - predecessor_king_Sacchoros_or_Seuechoros_form
+      - eagle
+      - gardener
+    receiving_tradition: Greco_Roman_Aelian
+    transmission_route: extra_cuneiform_Greek_reception
+    confidence: high_for_attested_episode; low_to_medium_for_earlier_route
+
+crosswise_invariants:
+  name_continuity:
+    GIP01_GIP02: strong
+    GIP01_GIP03: strong
+  kingship_continuity:
+    GIP01_GIP03: strong
+    GIP01_GIP02: weak
+  dream_operator:
+    GIP01_GIP02: moderate_to_strong
+    GIP01_GIP03: absent
+  Humbaba_network:
+    GIP01_GIP02: candidate_supported
+    GIP01_GIP03: absent
+  exposed_child_episode:
+    GIP01_GIP03: rebound_not_cuneiform_episode
+  classifier_continuity:
+    GIP01_GIP02: low
+    GIP01_GIP03: moderate
+
+derived_rules:
+  - "Name continuity can survive major classifier change."
+  - "Narrative episode continuity can fail while identity continuity survives."
+  - "Relational network survival is stronger evidence than isolated name survival."
+  - "A famous identity can acquire a mobile episode bundle absent from the surviving canonical recension."
+  - "Extra-cuneiform survival should be modeled as branching routes, not one mandatory Standard-Babylonian chain."
+
+next_tests:
+  - "Add Ugaritic/Levantine alphabetic Gilgamesh witness states cited by Edmonds."
+  - "Encode Humbaba/Hobabish spelling and network evidence separately from Gilgamesh."
+  - "Compare dream-role covariance between cuneiform and Book of Giants without assuming scene identity."
+  - "Link Aelian episode to exposed-royal-infant operator matrix."

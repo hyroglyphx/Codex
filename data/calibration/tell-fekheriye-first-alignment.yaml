@@ -1,0 +1,281 @@
+dataset: tell-fekheriye-first-alignment
+version: 0.1.0
+updated: 2026-09-21
+status: ACTIVE_CALIBRATION
+nexus_id: RN03
+object: Hadad-yith-i-bilingual-statue
+date: "9th century BCE; exact dating remains debated"
+carrier: basalt-statue
+languages: [Akkadian-Assyrian, Old-Aramaic]
+scripts: [cuneiform, Aramaic-alphabet]
+parallax_levels: [PX2]
+
+sources:
+  - id: FALES_1983
+    type: peer_reviewed_article
+    url: https://www.persee.fr/doc/syria_0039-7946_1983_num_60_3_6816
+    note: >
+      Establishes the 38-line cuneiform and 23-line alphabetic texts and the
+      immediately visible phrase-by-phrase correspondence of the bilingual.
+  - id: GREENFIELD_SHAFFER_1983
+    type: peer_reviewed_article
+    url: https://www.cambridge.org/core/journals/iraq/article/abs/notes-on-the-akkadianaramaic-bilingual-statue-from-tell-fekherye/06CFBA6086CD124490B9F42B4868C93D
+    note: "Revised normalized Akkadian/Aramaic phrase alignment and translation."
+  - id: CAL_BIB
+    type: scholarly_bibliography
+    url: https://cal.huc.edu/getbibsigla.php?myauthor=Fakhariyah
+    note: "Bibliographic control for the inscription's philological literature."
+  - id: FEKHERYE_PROJECT_BIB
+    type: excavation_project_bibliography
+    url: https://www.geschkult.fu-berlin.de/e/vaa/forschung/projekte_abgeschlossen/fecheriye/Literatur/index.html
+    note: "Research bibliography for the Tell Fekheriye project."
+  - id: SECONDARY_ARAMAIC_PROTOTYPE_2026
+    type: secondary_summary_with_scholarly_citation
+    note: >
+      Project-library witness states that the bilingual text is most likely based on
+      an Aramaic prototype, citing Greenfield and Shaffer (1983). This directionality
+      claim must be checked against the primary article before promotion to canonical.
+      The same witness notes 38 Akkadian lines on the front, 23 Aramaic lines on the
+      back, close correspondence in the opening, and greater divergence in the second half.
+
+witness_geometry:
+  cuneiform_lines: 38
+  aramaic_lines: 23
+  object_count: 1
+  colocation: same_statue
+  spatial_distribution:
+    Akkadian: front_of_tunic
+    Aramaic: back_of_tunic
+  crosswalk_explicitness: parallel_phrase_level
+  primary_alignment_granularity: [G2, G3, G4, G5]
+
+alignment_rows:
+  - id: TF01
+    anchor: dedicatory_statue_identity
+    granularity: G3
+    akkadian:
+      content: "Dedication/inscription of Adad-it'i / Hadad-yith'i to the storm-god Hadad."
+    aramaic:
+      content: "Statue of Hadda-yith'i set up before Hadad of Sikani."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - personal_name_transposition
+      - divine_name_transposition
+      - dedicatory_formula_mapping
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: TF02
+    anchor: divine_water_abundance_epithets
+    granularity: G5
+    akkadian:
+      content: "Hadad is characterized through control of heavenly/earthly waters, rivers, fertility and abundance."
+    aramaic:
+      content: "Parallel epithet sequence presents Hadad as regulator/giver of waters, pasture, abundance and river fertility."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - epithet_translation
+      - hydrological_semantic_mapping
+      - formulaic_recasting
+    evidence_class: C0
+    calibration_weight: very_high
+
+  - id: TF03
+    anchor: donor_titles_and_lineage
+    granularity: G3
+    akkadian:
+      content: "Adad-it'i identified through rulership and patronymic/title formulae."
+    aramaic:
+      content: "Hadda-yith'i identified as king/ruler of Guzana and son of Shash-nuri / Shesh-nuri in corresponding formulae."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - anthroponym_transposition
+      - title_mapping
+      - kinship_formula_mapping
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: TF04
+    anchor: life_longevity_house_progeny_people
+    granularity: G5
+    akkadian:
+      content: "The votive purpose requests life, long days/years and welfare for house, offspring and people."
+    aramaic:
+      content: "Parallel welfare sequence for life, length of days/years, house, progeny and people."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - blessing_formula_mapping
+      - semantic_parallelism
+    evidence_class: C0
+    calibration_weight: very_high
+
+  - id: TF05
+    anchor: prayer_hearing_acceptance
+    granularity: G4
+    akkadian:
+      content: "The divine response includes hearing/receiving the petitioner's prayer or utterance."
+    aramaic:
+      content: "The prayer is to be heard and the words of his mouth accepted."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - embodied_idiom_transposition
+      - hear_accept_semantic_pair
+    evidence_class: C0
+    calibration_weight: very_high
+    note: "High-value lane for later root/operator work around hearing, reception and acceptance."
+
+  - id: TF06
+    anchor: preserve_or_replace_name
+    granularity: G5
+    akkadian:
+      content: "Future handling of the statue/name is regulated; alteration/replacement triggers a curse."
+    aramaic:
+      content: "A later mover is to re-erect the statue and retain the donor's name; one who removes the name and substitutes his own is cursed."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - legal_custody_formula
+      - name_preservation_operator
+      - contextual_translation
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: TF07
+    anchor: contextual_not_slavish_translation
+    granularity: G2
+    akkadian:
+      content: "Akkadian verb in the name-destruction clause carries the nuance 'alter/change'."
+    aramaic:
+      content: "The corresponding Aramaic verb carries a more specific contextual value 'remove/efface'."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - semantic_narrowing
+      - contextual_translation
+    evidence_class: C1
+    calibration_weight: maximal
+    significance: >
+      Direct control showing that phrase-level equivalence can preserve the legal operator
+      while shifting lexical semantic range.
+
+  - id: TF08
+    anchor: second_inscription_statue_renewal
+    granularity: G5
+    akkadian:
+      content: "A second compositional section presents a renewed or improved statue and renewed dedication."
+    aramaic:
+      content: "The statue is described as made better than the earlier one and erected before Hadad."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - recension_or_reinscription
+      - comparative_formula_mapping
+    evidence_class: C1
+    calibration_weight: high
+
+  - id: TF09
+    anchor: temple_offering_refusal_curse
+    granularity: G5
+    akkadian:
+      content: "Curse sequence denies divine acceptance of offerings from the offender."
+    aramaic:
+      content: "Hadad and Shuwala shall not accept bread and water from the offender's hand."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - curse_formula_mapping
+      - ritual_offering_vocabulary_recasting
+    evidence_class: C1
+    calibration_weight: high
+
+  - id: TF10
+    anchor: maximum_effort_minimal_result_curses
+    granularity: G5
+    akkadian:
+      content: "Agricultural/fertility curse field in the second section."
+    aramaic:
+      content: "Sow without harvest; thousand measures yield one paris; one hundred ewes/cows/women nourish one dependent without satiating it."
+    same_referent: partial
+    same_proposition: partial
+    same_lexicalization: false
+    transform:
+      - quantitative_curse_expansion
+      - parallelism_repatterning
+      - audience_or_register_adaptation
+    evidence_class: C1
+    calibration_weight: high
+    note: "Useful divergence control: same curse logic can be re-expressed with different lexical and numerical detail."
+
+directionality_model:
+  status: competing_scholarly_models_not_frozen_fact
+  invariant:
+    - "Akkadian and Aramaic are phrase-level parallel versions on one artifact."
+    - "The opening is more closely corresponding than the second half."
+    - "Translation equivalence must be segmented by section and must not be promoted to etymological equivalence."
+  models:
+    aramaic_prototype:
+      claim: "Aramaic prototype -> Akkadian rendering"
+      support: "secondary project witness citing Greenfield and Shaffer (1983)"
+      confidence: candidate_pending_primary_source_check
+    double_bilingualism:
+      claim:
+        section_1: "Akkadian -> Aramaic"
+        section_2: "Aramaic -> Akkadian"
+      support: "Fales 1983 and existing project model"
+      confidence: medium
+    assyrian_priority:
+      claim: "Assyrian/Akkadian textual priority -> Aramaic translation"
+      support: "reported in contemporary review literature"
+      confidence: candidate
+  rule: >
+    Do not collapse these models into one object-level arrow. Directionality is a
+    section-level variable until the source-language question is resolved from the
+    primary philological literature.
+
+derived_observations:
+  - id: TF_D1
+    status: attested_and_derived
+    statement: "The bilingual is aligned phrase-by-phrase but not word-for-word."
+  - id: TF_D2
+    status: derived
+    statement: "Translation direction may change across sections of the same object."
+  - id: TF_D3
+    status: derived
+    statement: "Legal/ritual operators can remain invariant while lexical semantic range shifts."
+  - id: TF_D4
+    status: derived
+    statement: "One same-object bilingual can contain internal recension boundaries."
+
+new_sieve_variables_triggered:
+  - section_id
+  - local_translation_direction
+  - compositional_model
+  - lexical_range_shift
+  - operator_preservation
+  - phrase_alignment_density
+  - internal_recension_boundary
+  - face_language_line_range
+  - directionality_claim_source
+
+next_pass:
+  - "Attach exact Akkadian and Aramaic line/phrase numbering from Greenfield-Shaffer or the editio princeps."
+  - "Quantify phrase-alignment density by section."
+  - "Score lexical narrowing/expansion separately from syntactic reorder."
+  - "Run hear/accept, name-preservation and curse operators through Semitic root lanes."
+  - "Build a high-correspondence vs divergent section map before deriving word-level phonological relations."
+  - "Attach face + language + exact line range + reconstruction source to every alignment edge."
+  - "Re-check every OBJ-006 word-level phonological relation for translation-derived false equivalence."

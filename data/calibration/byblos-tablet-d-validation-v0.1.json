@@ -1,0 +1,186 @@
+{
+  "dataset": "byblos-tablet-d-validation",
+  "version": "0.1.0",
+  "updated": "2026-09-22",
+  "status": "FROZEN_RULE_VALIDATION_COMPLETE",
+  "training_model": "data/calibration/byblos-sequence-graph-v0.1.json",
+  "validation_witness": "tablet d",
+  "blind_holdout_status": "spatula i remains uninspected for model tuning",
+  "source": {
+    "transcription_url": "https://wikipedia.bennettdavid.com/content/wikipedia_en_top_maxi_2026-06/Byblos_syllabary",
+    "trace_note": "Public Dunand-code transcription credited there to Hugo Cartwright 2026 and ultimately dependent on Dunand/Martin sign classification.",
+    "specialist_status_url": "https://mnamon.sns.it/index.php?id=3&lang=en&page=Scrittura",
+    "publication_caution": "Machine transcription must be checked against facsimile/critical sign editions before publication-grade inference."
+  },
+  "frozen_rule_note": "Scored against v0.1 exactly: catalogue codes are distinct nodes; no allograph collapsing; unresolved markers omitted rather than assigned values; no phonetic assumptions added.",
+  "transcription_discrepancy": {
+    "explicit_coded_tokens_in_validation_transcription": 460,
+    "secondary_description_character_count": 459,
+    "older_secondary_description_character_count": 461,
+    "action": "preserve discrepancy; do not silently reconcile"
+  },
+  "validation_metrics": {
+    "lines": 41,
+    "observed_catalogue_nodes": 66,
+    "training_nodes_reappearing": 42,
+    "novel_validation_nodes": 24,
+    "node_type_coverage": 0.636364,
+    "coded_tokens_with_training_node": 349,
+    "coded_token_coverage": 0.758696,
+    "validation_directed_bigram_occurrences": 419,
+    "bigram_occurrences_seen_in_training": 78,
+    "bigram_occurrence_coverage": 0.186158,
+    "validation_unique_bigram_edges": 302,
+    "unique_edges_seen_in_training": 47,
+    "unique_edge_coverage": 0.155629,
+    "common_node_frequency_spearman_rho": 0.460539,
+    "common_node_frequency_spearman_p_descriptive": 0.002147,
+    "note": "The Spearman p-value is descriptive only; independence assumptions for sign counts are not met."
+  },
+  "frozen_predictions": [
+    {
+      "id": "BY-P01",
+      "prediction": "E22 should retain unusual boundary behavior outside tablet c if its training enrichment is structural.",
+      "training": "E22 appears six times; five are line-final.",
+      "validation": "E22 appears twice, at line 39 position 8/12 and line 40 position 3/11; neither is line-final.",
+      "result": "FAILED",
+      "consequence": "Do not promote E22 as a general boundary marker. At most it is tablet-c-specific/context-conditioned until another witness supports boundary use."
+    },
+    {
+      "id": "BY-P02",
+      "prediction": "The 12-sign tablet-c repeated sequence may recur as a reusable formula outside training.",
+      "sequence": [
+        "E1",
+        "G8",
+        "D1",
+        "B9",
+        "B3",
+        "D3",
+        "A3",
+        "G13",
+        "B11",
+        "A10",
+        "G17",
+        "E22"
+      ],
+      "validation_count": 0,
+      "result": "NOT_SUPPORTED",
+      "consequence": "Treat as an internal tablet-c formula, not a corpus-wide refrain."
+    },
+    {
+      "id": "BY-P03",
+      "prediction": "G13→B11→A10, the strongest tablet-c trigram, may recur outside training if it is corpus-wide formulaic.",
+      "validation_count": 0,
+      "result": "NOT_SUPPORTED",
+      "consequence": "Treat as tablet-c-local unless recovered elsewhere."
+    },
+    {
+      "id": "BY-P04",
+      "prediction": "E23→B8→E10 may recur outside training.",
+      "training_count": 3,
+      "validation_count": 2,
+      "validation_locations": [
+        "line 17",
+        "line 30"
+      ],
+      "result": "SUPPORTED",
+      "consequence": "Promote as a cross-tablet sequence candidate, still without semantic or phonetic interpretation."
+    },
+    {
+      "id": "BY-P05",
+      "prediction": "E7 should remain a broad high-frequency/high-adjacency node if its training centrality reflects a common structural function.",
+      "training_frequency": 19,
+      "validation_frequency": 32,
+      "training_rank": 1,
+      "validation_rank": 1,
+      "training_distinct_successors": 15,
+      "validation_distinct_successors": 20,
+      "result": "SUPPORTED",
+      "consequence": "E7 is now a cross-tablet high-centrality sign candidate. Function remains unknown."
+    }
+  ],
+  "novel_validation_nodes": [
+    "A12",
+    "A20",
+    "A4",
+    "A6",
+    "A9",
+    "B10",
+    "B12",
+    "B13",
+    "B5",
+    "B7",
+    "C2",
+    "D6",
+    "D7",
+    "D9",
+    "E11",
+    "E3",
+    "E9",
+    "F4",
+    "F6",
+    "G1",
+    "G5",
+    "G7",
+    "H1",
+    "H6"
+  ],
+  "top_validation_frequencies": [
+    {
+      "sign": "E7",
+      "count": 32
+    },
+    {
+      "sign": "E8",
+      "count": 26
+    },
+    {
+      "sign": "G3",
+      "count": 20
+    },
+    {
+      "sign": "E6",
+      "count": 19
+    },
+    {
+      "sign": "D2",
+      "count": 16
+    },
+    {
+      "sign": "G8",
+      "count": 16
+    },
+    {
+      "sign": "D3",
+      "count": 15
+    },
+    {
+      "sign": "F5",
+      "count": 15
+    },
+    {
+      "sign": "B5",
+      "count": 15
+    },
+    {
+      "sign": "G6",
+      "count": 14
+    },
+    {
+      "sign": "G17",
+      "count": 14
+    }
+  ],
+  "interpretation": [
+    "Tablet d partially validates sign-frequency centrality but not tablet-c-specific boundary/formula hypotheses.",
+    "The low exact-edge carryover is compatible with different formulaic content and/or unresolved allography; it does not license new sign values.",
+    "A failed frozen prediction is retained as evidence and narrows the model rather than being redefined away.",
+    "Spatula i remains the blind holdout; v0.1 rules must stay frozen until it is opened."
+  ],
+  "next_before_holdout": [
+    "Compute line-length-preserving shuffled nulls for tablet c and tablet d formula recurrence.",
+    "Test medium/allograph candidate clusters without using spatula i.",
+    "Freeze a v0.2 gap-aware graph only after v0.1 holdout is completed, so the original validation remains auditable.",
+    "Pre-register holdout metrics: node coverage, edge coverage, E7 centrality, E23-B8-E10 recurrence, and any allograph-cluster predictions."
+  ]
+}

@@ -1,0 +1,199 @@
+dataset: rosetta-memphis-first-alignment
+version: 0.1.0
+updated: 2026-09-21
+status: ACTIVE_CALIBRATION
+nexus_id: RN01
+object: British-Museum-EA24
+date: 196-BCE
+carrier: granodiorite-stele-fragment
+languages: [Egyptian, Greek]
+scripts: [Hieroglyphic, Demotic, Greek-alphabet]
+parallax_levels: [PX1, PX2]
+source_status:
+  hieroglyphic: "surviving upper block is heavily incomplete; early decree material is largely lost"
+  demotic: "substantial continuous witness"
+  greek: "substantial continuous witness"
+sources:
+  - id: BM_EA24
+    type: museum_record
+    url: https://www.britishmuseum.org/collection/object/Y_EA24
+    note: "Object metadata; 196 BCE; three text blocks; priestly decree concerning Ptolemy V."
+  - id: BM_ROSETTA_OVERVIEW
+    type: museum_explanation
+    url: https://www.britishmuseum.org/blog/everything-you-ever-wanted-know-about-rosetta-stone
+    note: "Decree context, copy-network context, script functions."
+  - id: ATTALUS_GREEK
+    type: parallel_translation
+    url: https://www.attalus.org/egypt/rosettastone.html
+    note: "Greek section translation with line correspondence cues."
+  - id: ATTALUS_EGYPTIAN
+    type: parallel_translation
+    url: https://www.attalus.org/egypt/rosettastone1.html
+    note: "Hieroglyphic and Demotic translations; highlights missing hieroglyphic first half."
+
+alignment_rows:
+  - id: RM01
+    anchor: date_and_royal_titulary
+    granularity: G3
+    hieroglyphic:
+      status: missing_or_insufficient
+      note: "First half of hieroglyphic version is lost."
+    demotic:
+      content: "Year 9; Xandikos day 4 = Egyptian second month of Peret day 18; Ptolemy is styled living forever, beloved of Ptah, Manifest God, with extended Egyptian royal titulary."
+    greek:
+      content: "Year 9; Xandikos 4 = 18 Mekhir; Ptolemy is styled living forever, beloved of Ptah, Epiphanes Eucharistos, with Greek-rendered royal/divine titulary."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - calendrical_equivalence
+      - titulary_recasting
+      - divine_equivalence
+    notable_crosswalks:
+      - "Greek Hephaistos corresponds to Egyptian Ptah/Ptah-Tenen in the translated titulary."
+      - "Greek Sun/Helios corresponds to Egyptian Re/Pre."
+      - "Greek Zeus corresponds to Egyptian Amun in the translated titulary."
+    evidence_class: C0
+    calibration_weight: high
+    residue: "Hieroglyphic early witness unavailable on the surviving stone."
+
+  - id: RM02
+    anchor: priestly_assembly_and_memphis
+    granularity: G5
+    hieroglyphic:
+      status: missing_or_insufficient
+    demotic:
+      content: "Priestly orders and temple scribes assemble at Memphis for the reception/succession of Ptolemy's kingship and issue the decree."
+    greek:
+      content: "Priestly orders from temples throughout the land assemble at Memphis for Ptolemy's assumption of kingship and declare the decree."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - institutional_title_mapping
+      - ritual_register_recasting
+    evidence_class: C0
+    calibration_weight: high
+
+  - id: RM03
+    anchor: royal_benefactions
+    granularity: G5
+    hieroglyphic:
+      status: partial_late_section_only
+    demotic:
+      content: "The king benefits temples and subjects, remits or reduces taxes and arrears, releases prisoners, preserves temple revenues and restores cult institutions."
+    greek:
+      content: "Parallel benefaction sequence: temple gifts, tax remissions, debt relief, releases, preserved endowments, and restoration of religious institutions."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - fiscal_vocabulary_recasting
+      - legal_administrative_recasting
+      - selective_expansion_compression
+    evidence_class: C0
+    calibration_weight: high
+    residue: "Clause order and specific administrative wording should be aligned line-by-line in the next pass."
+
+  - id: RM04
+    anchor: cult_image_epithet_defender_of_egypt
+    granularity: G2
+    hieroglyphic:
+      content: "Cult statue name rendered as Ptolemy protector/defender of Egypt."
+      status: surviving
+    demotic:
+      content: "Cult image name rendered as Ptolemy who protected the Bright Land / preserved Egypt."
+    greek:
+      content: "Cult image name rendered as Ptolemy, defender of Egypt."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - epithet_translation
+      - semantic_equivalence
+      - local_toponymic_or_cosmographic_recasting
+    evidence_class: C0
+    calibration_weight: very_high
+    note: "Excellent example of shared semantic address without word-for-word identity."
+
+  - id: RM05
+    anchor: cult_service_and_procession
+    granularity: G5
+    hieroglyphic:
+      content: "Statues are served three times daily; a royal shrine joins processions with local gods."
+      status: surviving_partial
+    demotic:
+      content: "Three-times-daily service, sacred objects, shrine installation and procession with other divine shrines."
+    greek:
+      content: "Three-times-daily homage, sacred garments, shrine installation, procession with other shrines."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - ritual_vocabulary_recasting
+      - object_term_mapping
+    evidence_class: C0
+    calibration_weight: high
+
+  - id: RM06
+    anchor: recurring_festivals_and_priestly_title
+    granularity: G5
+    hieroglyphic:
+      content: "Annual festival/procedural material survives in the lower hieroglyphic portion."
+      status: surviving_partial
+    demotic:
+      content: "Annual and monthly rites; priests add the king's cult title to their priestly titles and inscribe the priesthood on documents and rings."
+    greek:
+      content: "Annual/monthly cult observances; priestly title added to formal documents and rings."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - institutional_register_mapping
+      - formulaic_compression_expansion
+    evidence_class: C0
+    calibration_weight: high
+
+  - id: RM07
+    anchor: publication_instruction
+    granularity: G5
+    hieroglyphic:
+      content: "Decree to be placed on hard stone in the script of the words of god, script of documents, and letters of the Aegeans, in temples of three ranks beside the king's statue."
+      status: surviving
+    demotic:
+      content: "Decree to be written on hard stone in sacred writing, document writing, and Greek writing, set in first-, second-, and third-class temples beside the king's statue."
+    greek:
+      content: "Decree to be inscribed on hard stone in sacred, native, and Greek characters and set up in temples of the first three ranks beside the royal image."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - meta_script_description
+      - register_naming
+      - institutional_distribution_formula
+    evidence_class: C0
+    calibration_weight: maximal
+    significance: >
+      The decree itself explicitly declares the three representation channels.
+      This is a self-describing Rosetta Nexus anchor.
+
+derived_observations:
+  - id: ROSETTA_D1
+    status: derived
+    statement: "Line number is not an alignment unit; align by anchors, clauses and propositions."
+  - id: ROSETTA_D2
+    status: derived
+    statement: "Divine and royal titulary demonstrates semantic equivalence with culturally specific lexicalization."
+  - id: ROSETTA_D3
+    status: derived
+    statement: "The strongest surviving three-way alignment is the final publication instruction."
+  - id: ROSETTA_D4
+    status: derived
+    statement: "Damage is itself a sieve variable: absence in one block must not be treated as semantic omission."
+
+next_pass:
+  - "Attach exact Greek line ranges and Demotic line ranges to each row."
+  - "Add surviving hieroglyphic line spans where available."
+  - "Count anchor density for names, titles, dates, numerals, cult terms and institutional formulae."
+  - "Measure omission/expansion/reordering per aligned proposition."
+  - "Compare Rosetta with sibling Memphis Decree copies as a PX4 distributed-copy test."

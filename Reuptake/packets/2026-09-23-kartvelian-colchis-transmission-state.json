@@ -1,0 +1,48 @@
+{
+  "packet_id": "KARTVELIAN-COLCHIS-TRANSMISSION-2026-09-23",
+  "date": "2026-09-23",
+  "status": "OBSERVED_CANDIDATE",
+  "repository": "hyroglyphx/Codex",
+  "branch": "research/reconcile-state-2026-09-20",
+  "study": "studies/kartvelian-colchis-script-translation-transmission-v0.1.md",
+  "dataset": "data/calibration/kartvelian-colchis-transmission-cluster-v0.1.yaml",
+  "evidence_spine": [
+    "WITNESS",
+    "TYPE",
+    "ADMIT",
+    "TEST",
+    "EXPLAIN",
+    "RETURN"
+  ],
+  "preserved_invariants": [
+    "spoken language != inscription language != script != semantic address",
+    "comparative reconstruction requires regular correspondences",
+    "parallel inscription does not guarantee literal translation",
+    "earliest surviving epigraphy does not date alphabet invention"
+  ],
+  "admitted_findings": [
+    "Kartvelian family expanded into Georgian, Svan, Mingrelian, Laz with Zan as Mingrelian+Laz branch.",
+    "Colchis is promoted from distant-control status to an active probable Kartvelian/pre-Zan historical language field.",
+    "Vani Greek epigraphy is registered as a foreign written interface in a Colchian center.",
+    "Armazi Greek/non-Greek bilingual is registered as a same-object parallel-readout control; disagreement over Aramaic vs Middle-Iranian language classification is preserved.",
+    "Fifth-century surviving Georgian epigraphy and early Syro-Armenian/Greek translation strata are added as transmission anchors.",
+    "Iranian administrative and lexical borrowing into Georgian is registered with direct-vs-Armenian-mediation as an itemwise test."
+  ],
+  "unresolved": [
+    "No direct written Colchian-language corpus has been established.",
+    "Specific Colchian onomastic etymologies remain unpromoted pending three-witness tests.",
+    "Qulha/Kulha -> Kolkhis/Colchis relation requires a separate source-locked onomastic packet."
+  ],
+  "next_queue": [
+    "Build Colchian onomastic witness table.",
+    "Source-lock Qulha/Kulha attestations and Greek Kolkhis forms.",
+    "Run comparative Kartvelian correspondence tests on Phasis, Kutais/Kutaia, Aeetes, Medea, Absyrtos, and ethnonyms.",
+    "Add Armazi title/name rows with Greek and Aramaic/Aramaic-derived exact forms."
+  ],
+  "return_path": [
+    "studies/kartvelian-colchis-script-translation-transmission-v0.1.md",
+    "data/calibration/kartvelian-colchis-transmission-cluster-v0.1.yaml",
+    "registries/translation-transposition-bridges.yaml",
+    "registries/language-coverage-registry.yaml"
+  ]
+}

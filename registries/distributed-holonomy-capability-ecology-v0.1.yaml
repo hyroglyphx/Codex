@@ -1,0 +1,32 @@
+version: "0.1"
+date: "2026-09-23"
+id: DISTRIBUTED_HOLONOMY_CAPABILITY_ECOLOGY
+status: ADOPTED_LEGACY_ARCHITECTURE
+source: Oriented_Language_Field_Volume_XVI
+protocol: docs/architecture/distributed-holonomy-capability-ecology-v0.1.md
+state: "E_t=(Carrier,Capability,Graph,Info,Legitimacy,Residue,Memory,Mission)"
+system_holonomy: [carrier,capability,route,information,legitimacy,residue,memory,completion]
+handoff_defect: [role_loss,tacit_memory_loss,coordination_cost,authority_shift,observer_recalibration]
+route_update: "G_{t+1}=Phi(G_t,passage_t,residue_t,learned_information_t)"
+noninverse_return: "Gamma_home != inverse(Gamma_out)"
+completion_not_restoration: true
+certificate_not_remedy: true
+role_context: [observer,jurisdiction,time,relation,permissions,duties]
+bindings:
+  - oriented_language_field_recovery
+  - structural_continuation_gate_dynamics
+  - experiment_analysis_harness
+  - linguistic_core
+  - mythic_genealogical_classifier_transport
+  - representation_interaction_calibration
+failure_codes:
+  - AR-CARRIER-PASSIVE
+  - AR-ROSTER-EQUIV
+  - AR-HANDOFF-FLAT
+  - AR-ROUTE-STATIC
+  - AR-RETURN-INVERSE
+  - AR-COMPLETE-SCALAR
+  - AR-CERT-REMEDY
+  - AR-ROLE-INTRINSIC
+  - AR-RESIDUE-ERASED
+  - AR-ARCHIVE-UNCORRECTABLE

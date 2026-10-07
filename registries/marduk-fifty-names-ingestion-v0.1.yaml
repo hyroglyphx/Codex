@@ -1,0 +1,117 @@
+registry: marduk-fifty-names-ingestion
+version: 0.1.0
+updated: 2026-09-22
+status: ACTIVE_PARTIAL_INGESTION
+parent: registries/marduk-identity-laboratory-v0.1.yaml
+scope: "Enuma Elish VI 121-166 through VII 1-144"
+method: "one record per transmitted name; preserve sequence, line address, explanation/destiny, witness, parallels, uncertainty, and identity operator"
+
+controls:
+  literary_label: "Fifty Names"
+  transmitted_count_note: "Modern scholarship notes a sequence of fifty-one names while the composition explicitly closes with the rubric 'Fifty'. Do not normalize the discrepancy away."
+  terminal_control:
+    name_number: 51
+    name: Ea
+    tablet: VII
+    lines: "140-142"
+    function: "control of Ea's rites and decrees"
+  closure:
+    tablet: VII
+    lines: "143-149"
+    role: "Fifty rubric, transmission instruction, Marduk as Enlil of the gods"
+
+records:
+  - id: MDK-N01
+    name: Marduk
+    status: seed_record
+    phase: birth_name
+    note: "Birth name precedes the climactic name-list architecture; retained as identity anchor."
+  - id: MDK-N02
+    name: Lugaldimmerankia
+    status: seed_record
+    phase: royal_name
+    function: "king/lordship over the gods of heaven and earth"
+  - id: MDK-N03
+    name: Asalluhi
+    status: seed_record
+    phase: additional_name
+    operator: IDENTIFY_ASPECT
+    note: "Critical Enki/Ea-lineage bridge; compare god-list traditions and counter-witnesses that distinguish Asalluhi and Marduk."
+  - id: MDK-VII-ASARE
+    name: ASARE
+    tablet: VII
+    lines: "1-2"
+    transliteration_anchor: "dASAR.RE"
+    function: "bestower of arable land; creator of barley/flax; vegetation"
+    source_control: "ORACC STT 1,010"
+  - id: MDK-VII-ASARALIM
+    name: ASARALIM
+    tablet: VII
+    lines: "3-4"
+    transliteration_anchor: "dASAR.ALIM"
+    function: "supreme counsel; attended by the gods"
+    source_control: "ORACC STT 1,010"
+  - id: MDK-VII-ASARALIMNUNA
+    name: ASARALIMNUNA
+    tablet: VII
+    lines: "5+"
+    transliteration_anchor: "dASAR.ALIM.NUN.NA"
+    function: "reverently greeted; light of the begetter"
+    source_control: "ORACC STT 1,010"
+  - id: MDK-N51
+    name: Ea
+    tablet: VII
+    lines: "140-142"
+    status: terminal_record
+    operator: NAME_AS
+    function: "control the sum of Ea's rites; administer Ea's decrees"
+    significance: "Explicitly exposes the 50/51 counting problem; preserve rather than harmonize."
+
+parallel_witness_program:
+  - id: PW-GODLIST
+    object: "three-column explanatory god list discussed by Andrea Seri"
+    test: "compare name explanations against Enuma Elish"
+    status: queued
+  - id: PW-ANANUM
+    object: "An = Anum"
+    test: "name-order and Asalluhi/Marduk linkage"
+    status: queued
+  - id: PW-MANUSCRIPTS
+    object: "individual Tablet VII witnesses such as STT 1,010"
+    test: "variant readings, breaks, sequence, provenance"
+    status: active
+
+schema:
+  required_fields:
+    - id
+    - sequence_or_line_address
+    - name_form
+    - witness
+    - reading_status
+    - function_or_destiny
+    - operator
+    - provenance
+    - confidence
+  optional_fields:
+    - prior_deity_relation
+    - god_list_parallel
+    - commentary_parallel
+    - spatial_relation
+    - numerical_status
+    - variant
+    - counter_witness
+    - prediction
+
+promotion_rules:
+  - "Do not infer a global deity equation from a name or epithet."
+  - "Do not silently force the literary Fifty rubric to equal the transmitted record count."
+  - "Broken or missing name records remain Omega."
+  - "God-list/commentary parallels are independent edges, not automatic proof of original composition."
+  - "Each functional interpretation must retain its line-addressable witness."
+
+next_pass:
+  - "Populate every recoverable VI-VII name as MDK-Nxx."
+  - "Attach ORACC manuscript witnesses where available."
+  - "Align Lambert line numbering with individual manuscript line addresses."
+  - "Interleave explanatory god-list parallels."
+  - "Compute function clusters only after ingestion is complete."

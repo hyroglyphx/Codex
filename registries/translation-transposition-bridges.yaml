@@ -1,0 +1,285 @@
+registry: translation-transposition-bridges
+version: 0.1.0
+updated: 2026-09-23
+status: LIVING
+
+bridge_types:
+  B1: DIRECT_TRANSLATION
+  B2: PARALLEL_WITNESS
+  B3: RECENSION_RECOMPOSITION
+  B4: READOUT_TRANSPOSITION
+  B5: MODE_SCRIPT_TRANSPOSITION
+  B6: LEXICAL_CALQUE_BORROWING
+  B7: FUNCTION_OPERATOR_TRANSPOSITION
+  B8: INSTITUTIONAL_LITURGICAL_CUSTODY
+  B9: SUBSTRATE_RESIDUE
+  B10: DIALECT_GENEALOGICAL_TRANSPOSITION
+  B11: STRUCTURAL_CONTROL
+  B12: CONTACT_RESTRUCTURING_CREOLIZATION
+  B13: SUPPRESSIVE_IMPORTED_LANGUAGE_SHIFT
+  B14: GLOSS_TRANSLATION_SCAFFOLD
+  B15: EXONYM_ONOMASTIC_TRANSPOSITION
+  B16: HISTORIOGRAPHIC_RETROJECTION
+  B17: ORAL_FORMULAIC_MULTIFORM
+  B18: PROSODIC_METRICAL_TRANSPOSITION
+  B19: RECAPITULATIVE_REWRITE
+  B20: REFERENTIAL_STRATIFICATION_TRANSPOSITION
+  B21: DOXOGRAPHIC_SOURCE_RELAY
+  B22: POLEMICAL_GENEALOGY_RECODING
+  B23: CROSS_LANGUAGE_ETYMOLOGICAL_REANALYSIS
+  B24: EMBODIED_IDIOM_TRANSPOSITION
+  B25: SEMITIC_ROOT_OPERATOR_ORBIT
+  B26: ARITY_COMPRESSION_TRANSPOSITION
+  B27: MULTIMODAL_STATE_SYNCHRONIZATION
+  B28: CLASSIFIER_TRANSFER
+  B29: ONOMASTIC_EPISODIC_REBINDING
+  B30: DECIPHERMENT_COVARIANCE
+
+edges:
+  # Mesopotamian foundations
+  - {id: E001, source: Sumerian, target: Akkadian, type: B4, class: C0, status: connected, note: "documented logographic/readout and scribal custody"}
+  - {id: E002, source: Sumerian-Gilgamesh-stories, target: Akkadian-Gilgamesh-tradition, type: B3, class: C1, status: connected, note: "literary recomposition rather than simple translation"}
+  - {id: E003, source: Old-Babylonian-Gilgamesh, target: Standard-Babylonian-Gilgamesh, type: B3, class: C1, status: connected, note: "recensional/editorial synthesis"}
+  - {id: E004, source: Atrahasis-flood-tradition, target: Gilgamesh-Tablet-XI-flood, type: B3, class: C1, status: connected, note: "related Akkadian flood tradition / literary reuse"}
+  - {id: E005, source: Atrahasis-Gilgamesh-flood-operators, target: Genesis-6-9, type: B7, class: C3, status: connected_shared_matrix, note: "ANE flood operator correspondence; not encoded as direct translation"}
+  - {id: E006, source: Enuma-Elish-ordering-operators, target: Genesis-1, type: B7, class: C3, status: connected_shared_matrix, note: "creation/order comparison; direct dependence not assumed"}
+
+  # Biblical textual relay
+  - {id: E010, source: Hebrew-biblical-traditions, target: Septuagint-Greek, type: B1, class: C0, status: connected, note: "direct ancient translation tradition; source Vorlage may differ by book"}
+  - {id: E011, source: Hebrew-biblical-traditions, target: Targumic-Aramaic, type: B1, class: C0, status: connected, note: "translation plus interpretive expansion"}
+  - {id: E012, source: Hebrew-Aramaic-biblical-traditions, target: Peshitta-Syriac, type: B1, class: C0, status: connected}
+  - {id: E013, source: Hebrew-Greek-biblical-traditions, target: Vulgate-Latin, type: B1, class: C0, status: connected}
+  - {id: E014, source: Hebrew-biblical-traditions, target: Aquila-Greek, type: B1, class: C0, status: connected, note: "revisional/literalizing Greek witness"}
+  - {id: E015, source: Hebrew-scriptural-corpus, target: later-Jewish-liturgical-custody, type: B8, class: C1, status: connected}
+  - {id: E016, source: Greek-scriptural-corpus, target: later-Christian-liturgical-custody, type: B8, class: C1, status: connected}
+  - {id: E017, source: Syriac-scriptural-corpus, target: later-Syriac-liturgical-custody, type: B8, class: C1, status: connected}
+  - {id: E018, source: Latin-Vulgate, target: later-European-vernacular-bible-traditions, type: B1, class: C1, status: expandable, note: "many daughter translation paths; populate per-language rather than flatten"}
+
+  # Historical multilingual anchors
+  - {id: E020, source: Sumerian, target: Eblaite-Semitic, type: B4, class: C0, status: connected, nexus: Ebla}
+  - {id: E021, source: Akkadian, target: Amorite-Hurrian-contact, type: B6, class: C1, status: connected, nexus: Mari}
+  - {id: E022, source: Ugaritic, target: Akkadian-Sumerian-Hurrian, type: B2, class: C0, status: connected, nexus: Ugarit}
+  - {id: E023, source: Egyptian-court, target: Diplomatic-Akkadian-Levantine, type: B2, class: C0, status: connected, nexus: Amarna}
+  - {id: E024, source: Hittite-Luwian-Hurrian, target: Akkadian-Sumerian-scribal-conventions, type: B4, class: C0, status: connected, nexus: Hattusa}
+  - {id: E025, source: Akkadian-Phoenician-Egyptian, target: titles-names-institutions, type: B6, class: C1, status: connected, nexus: Byblos}
+  - {id: E026, source: Old-Persian, target: Elamite-Babylonian, type: B2, class: C0, status: connected, nexus: Behistun}
+  - {id: E027, source: Behistun-imperial-content, target: Aramaic-transmission, type: B8, class: C1, status: connected}
+  - {id: E028, source: Egyptian-hieroglyphic, target: Demotic-Greek, type: B2, class: C0, status: connected, nexus: Rosetta-Memphis}
+  - {id: E029, source: Phoenician, target: Hieroglyphic-Luwian, type: B2, class: C0, status: connected, nexus: Karatepe-Cinekoy}
+  - {id: E030, source: Phoenician, target: Etruscan, type: B2, class: C0, status: connected, nexus: Pyrgi}
+  - {id: E031, source: Lycian, target: Greek-Aramaic, type: B2, class: C0, status: connected, nexus: Letoon}
+
+  # Secure genealogical / script transpositions
+  - {id: E040, source: Hurrian, target: Urartian, type: B10, class: C1, status: connected}
+  - {id: E041, source: Hattic-ritual-material, target: Hittite-archives, type: B8, class: C1, status: connected}
+  - {id: E042, source: Hurrian-ritual-mythic-material, target: Hittite-archives, type: B8, class: C1, status: connected}
+  - {id: E043, source: Luwian-cuneiform, target: Hieroglyphic-Luwian, type: B5, class: C1, status: connected}
+  - {id: E044, source: Mycenaean-Greek, target: later-Greek, type: B10, class: C1, status: connected}
+  - {id: E045, source: Greek-syllabic-carriers, target: alphabetic-Greek, type: B5, class: C1, status: connected}
+  - {id: E046, source: Egyptian, target: Coptic, type: B10, class: C1, status: connected}
+  - {id: E047, source: Etruscan, target: Lemnian, type: B10, class: C1, status: connected}
+  - {id: E048, source: Common-Tyrsenian, target: Raetic, type: B10, class: C1, status: connected}
+
+  # Contact / substrate
+  - {id: E050, source: Hurro-Urartian, target: Armenian, type: B9, class: C2, status: active, note: "loan/substrate candidates must be itemized individually"}
+  - {id: E051, source: Phoenician-alphabetic-tradition, target: Greek-alphabet, type: B5, class: C1, status: connected}
+  - {id: E052, source: Greek-alphabet, target: Etruscan-Italic-alphabetic-traditions, type: B5, class: C1, status: connected}
+  - {id: E053, source: Roman-Latin-administration, target: Suebian-Gallaecian-polity, type: B8, class: C1, status: active, note: "institutional custody; not a direct language descent edge"}
+
+  # Distant operator controls
+  - {id: E060, source: Vedic-creation-order-operators, target: Mesopotamian-Biblical-creation-operators, type: B11, class: C4, status: structural_control, note: "no direct transmission encoded"}
+  - {id: E061, source: Vedic-ritual-transformation, target: Near-Eastern-ritual-operator-field, type: B11, class: C4, status: structural_control}
+  - {id: E062, source: Sumerian-EGAL, target: Egyptian-great-house, type: B11, class: C4, status: structural_control, note: "independent semantic construction control"}
+
+  # World-language / later-language closure
+  - {id: E070, source: Tagalog-module, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed, note: "64 recovered forms; glosses remain unreviewed translation records"}
+  - {id: E071, source: Tagalog, target: Austronesian-family-lane, type: B10, class: C1, status: connected_family}
+  - {id: E072, source: Farsi-Persian-module, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E073, source: Farsi-Persian, target: Iranian-umbrella, type: B10, class: C1, status: connected_family}
+  - {id: E074, source: Tamil-module, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E075, source: Tamil, target: Dravidian-control-lane, type: B10, class: C1, status: connected_family}
+  - {id: E076, source: Yoruba-module, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E077, source: Swahili-controls, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E078, source: Zulu-controls, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E079, source: Haitian-Creole-controls, target: English-gloss-scaffold, type: B14, class: C5, status: connected_unreviewed}
+  - {id: E080, source: French-contact-field, target: Haitian-Creole, type: B12, class: C2, status: connected_contact, note: "creole identity remains distinct; lexical ancestry does not collapse grammar"}
+  - {id: E081, source: Hindi-controls, target: Sanskrit-Indo-Aryan-lane, type: B10, class: C1, status: connected_family}
+  - {id: E082, source: Turkish-controls, target: Persian-Arabic-contact-field, type: B6, class: C2, status: connected_contact}
+  - {id: E083, source: Japanese-controls, target: world-structural-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E084, source: Korean-controls, target: world-structural-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E085, source: Chinese-controls, target: Yijing-Chinese-symbolic-lane, type: B11, class: C4, status: connected_control}
+  - {id: E086, source: Vietnamese-controls, target: world-structural-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E087, source: Indonesian-controls, target: Austronesian-family-lane, type: B10, class: C1, status: connected_family}
+  - {id: E088, source: Irish-controls, target: Celtic-lane, type: B10, class: C1, status: connected_family}
+  - {id: E089, source: Welsh-controls, target: Brittonic-Celtic-lane, type: B10, class: C1, status: connected_family}
+  - {id: E090, source: Scottish-Gaelic-controls, target: Goidelic-Celtic-lane, type: B10, class: C1, status: connected_family, note: "source label repaired provisionally from 'Scottish'"}
+  - {id: E091, source: Romanian-controls, target: Latin-Romance-lane, type: B10, class: C1, status: connected_family}
+  - {id: E092, source: Yiddish-controls, target: Germanic-language-lane, type: B10, class: C1, status: connected_family}
+  - {id: E093, source: Hebrew-derived-script, target: Yiddish-writing, type: B5, class: C1, status: connected_script, note: "script continuity does not imply Hebrew language identity"}
+  - {id: E094, source: Esperanto-controls, target: constructed-language-ring, type: B11, class: C4, status: connected_constructed}
+  - {id: E095, source: Hawaiian-controls, target: Austronesian-family-lane, type: B10, class: C1, status: connected_family}
+  - {id: E096, source: Navajo-controls, target: world-structural-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E097, source: Old-English-Wyrd-card, target: Germanic-language-lane, type: B10, class: C1, status: connected_family}
+  - {id: E098, source: German-Sehnsucht-card, target: Germanic-language-lane, type: B10, class: C1, status: connected_family}
+  - {id: E099, source: Nahuatl-Nepantla-card, target: operator-atlas, type: B11, class: C4, status: connected_operator}
+  - {id: E100, source: Quechua-Yanantin-card, target: operator-atlas, type: B11, class: C4, status: connected_operator}
+  - {id: E101, source: Hawaiian-Kuleana-card, target: operator-atlas, type: B11, class: C4, status: connected_operator}
+  - {id: E102, source: Swahili-Harambee-card, target: operator-atlas, type: B11, class: C4, status: connected_operator}
+  - {id: E103, source: Yijing-state-graph, target: combinatorial-control-ring, type: B11, class: C4, status: connected_structural}
+  - {id: E104, source: Elder-Futhark-inventory, target: Germanic-script-control, type: B5, class: C2, status: connected_script_control}
+  - {id: E105, source: Esoperanto, target: ECVR-transposition-experiment, type: B11, class: C4, status: connected_constructed}
+  - {id: E106, source: LinguaDanka, target: recovery-queue, type: B14, class: C5, status: named_gap, note: "no records admitted until exact dictionary is recovered"}
+
+  # Social language-shift / suppression / import model
+  - {id: E110, source: local-vernacular, target: institutional-prestige-language, type: B13, class: C2, status: generic_operator, note: "used only when a specific historical case documents imposed/imported shift"}
+  - {id: E111, source: dominant-language-contact, target: substrate-residue, type: B9, class: C2, status: generic_operator}
+
+  # Closure edges for previously queued ancient/boundary nodes
+  - {id: E120, source: Old-North-Arabian, target: Semitic-Arabian-lane, type: B10, class: C1, status: connected_family, note: "exact witness packs still required per corpus"}
+  - {id: E121, source: Ancient-South-Arabian, target: Semitic-Arabian-lane, type: B10, class: C1, status: connected_family}
+  - {id: E122, source: Palaic, target: Anatolian-IE-lane, type: B10, class: C1, status: connected_family}
+  - {id: E123, source: Sidetic, target: Anatolian-contact-field, type: B11, class: C4, status: connected_boundary, note: "contact/structural connection only until classification/witness detail is expanded"}
+  - {id: E124, source: Lydian, target: Anatolian-IE-lane, type: B10, class: C1, status: connected_family}
+  - {id: E125, source: Carian, target: Anatolian-IE-lane, type: B10, class: C1, status: connected_family}
+  - {id: E126, source: Phrygian, target: Indo-European-Greek-Anatolian-contact-field, type: B10, class: C1, status: connected_family}
+  - {id: E127, source: Meroitic, target: Egyptian-Nile-contact-field, type: B11, class: C4, status: connected_boundary}
+  - {id: E128, source: Eteocypriot, target: Cyprus-Greek-bilingual-field, type: B2, class: C2, status: connected_boundary}
+  - {id: E129, source: Iberian, target: Western-Mediterranean-Phoenician-Greek-Latin-contact, type: B6, class: C2, status: connected_contact}
+  - {id: E130, source: Proto-Kartvelian-Georgian, target: Caucasus-external-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E131, source: Proto-Uralic-Finnic, target: distant-genealogical-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E132, source: Tamil-Dravidian, target: deep-typological-control-ring, type: B11, class: C4, status: connected_control}
+  - {id: E133, source: Suebi-Suebian, target: Latin-Roman-administrative-field, type: B8, class: C1, status: connected_historical}
+  - {id: E134, source: later-European-vernaculars, target: Latin-Greek-scriptural-relay, type: B1, class: C1, status: connected_translation_halo}
+  - {id: E135, source: Libyco-Berber, target: Berber-Afroasiatic-lane, type: B10, class: C1, status: connected_family}
+  - {id: E136, source: Thracian-Dacian-Paeonian, target: Balkan-IE-contact-control, type: B11, class: C4, status: connected_control, note: "grouped only as a control field; no shared close subgroup implied"}
+  - {id: E137, source: Proto-Northeast-Caucasian-hypothesis, target: Hurro-Urartian-deep-relation-test, type: B11, class: C5, status: connected_candidate, note: "hypothesis edge only; not family promotion"}
+
+  # Xenophon / Cyropaedia Greek transposition layer
+  - {id: E140, source: Old-Persian-Kurus, target: Greek-Kyros, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E141, source: Old-Persian-Kambujiya, target: Greek-Kambyses, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E142, source: Babylonian-Ishtumegu, target: Greek-Astyages, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E143, source: Old-Iranian-Huvaxshtra, target: Greek-Cyaxares, type: B15, class: C1, status: connected_name_orbit, note: "name equivalence secure; Xenophon's post-Astyages person identification is not"}
+  - {id: E144, source: Old-Persian-Bardiya, target: Xenophon-Tanaoxares, type: B15, class: C2, status: connected_identity_variant}
+  - {id: E145, source: Old-Persian-Gaubaruva, target: Greek-Gobryas, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E146, source: Old-Persian-Vishtaspa, target: Greek-Hystaspes, type: B15, class: C1, status: connected_name_orbit}
+  - {id: E147, source: Persian-ethnonym, target: Perseus-genealogy-in-Cyropaedia, type: B16, class: C4, status: connected_mythic_recode, note: "Greek etiological naturalization, not etymology"}
+  - {id: E148, source: late-Achaemenid-observed-practice, target: Cyrus-era-narrative, type: B16, class: C3, status: connected_retrojection, note: "applies to 'even to this day' institutional/cultural descriptions"}
+  - {id: E149, source: Iranian-satrapal-office, target: Greek-satrapes-satrapeia, type: B15, class: C1, status: connected_title_translation}
+  - {id: E150, source: Iranian-decimal-command, target: Greek-chiliarchos, type: B15, class: C2, status: connected_title_equivalence}
+
+  # Homeric transmission and translation layer
+  - {id: E160, source: Mycenaean-Arcado-Cypriot-residuals, target: Homeric-poetic-Greek, type: B10, class: C2, status: connected_dialectal_layer, note: "residual archaic/dialectal forms inside a composite poetic language; not a direct document-to-document translation"}
+  - {id: E161, source: Aeolic-poetic-layer, target: Homeric-poetic-Greek, type: B10, class: C2, status: connected_dialectal_layer}
+  - {id: E162, source: Ionic-poetic-layer, target: Homeric-poetic-Greek, type: B10, class: C1, status: connected_dominant_layer}
+  - {id: E163, source: early-Homeric-performance-tradition, target: Hellenistic-papyrus-witnesses, type: B3, class: C2, status: connected_multiform}
+  - {id: E164, source: Hellenistic-Homeric-variants, target: Alexandrian-editions, type: B3, class: C1, status: connected_editorial_standardization}
+  - {id: E165, source: Alexandrian-Homeric-scholarship, target: Venetus-A-scholia, type: B8, class: C1, status: connected_scholarly_custody}
+  - {id: E166, source: Odyssey-Greek, target: Livius-Andronicus-Odusia-Latin, type: B1, class: C1, status: connected_early_translation}
+  - {id: E167, source: Iliad-Greek, target: Ilias-Latina, type: B3, class: C1, status: connected_epitome, note: "Latin epitome/adaptation, not line-for-line translation"}
+  - {id: E168, source: Homeric-Trojan-cycle, target: Cypria-Aethiopis-Little-Iliad-Iliou-Persis-Nostoi-Telegony, type: B3, class: C2, status: connected_parallel_epic, note: "parallel/adjacent Greek epic traditions; most survive fragmentarily"}
+  - {id: E169, source: Hittite-Wilusa-Ahhiyawa-Alaksandu-records, target: Homeric-Troy-Achaean-Alexandros-field, type: B11, class: C3, status: connected_historical_matrix, note: "historical/onomastic comparison; not textual dependence"}
+  # Meter / cadence / recursive-rewrite layer
+  - {id: E180, source: Homeric-dactylic-hexameter, target: Latin-Odusia-meter, type: B18, class: C1, status: connected_meter_shift, note: "quantitative Greek hexameter transposed into Latin Saturnian; semantic and rhythmic preservation must be scored separately"}
+  - {id: E181, source: Homeric-dactylic-hexameter, target: later-Latin-hexameter-Homeric-reception, type: B18, class: C1, status: connected_meter_retention}
+  - {id: E182, source: Hebrew-biblical-poetic-cadence, target: Septuagint-Greek, type: B18, class: C2, status: connected_prosodic_test, note: "test cadence/parallelism preservation without presuming Hebrew quantitative meter"}
+  - {id: E183, source: Hebrew-biblical-poetic-cadence, target: Targumic-Aramaic, type: B18, class: C2, status: connected_prosodic_test}
+  - {id: E184, source: Hebrew-biblical-poetic-cadence, target: Vulgate-Latin, type: B18, class: C2, status: connected_prosodic_test}
+  - {id: E185, source: Genesis-Exodus-base-narrative, target: Jubilees-Little-Genesis, type: B19, class: C1, status: connected_rewritten_scripture, note: "rewritten/expanded narrative with calendrical and legal reorganization"}
+  - {id: E186, source: Pentateuchal-narrative-law, target: Deuteronomy-recapitulation, type: B19, class: C1, status: connected_recovenant_recapitulation, note: "recapitulation/renewal, not literal restart of Genesis"}
+  - {id: E187, source: Genesis-genealogical-and-creation-resets, target: scriptural-recurrence-operator, type: B19, class: C3, status: connected_structural_recurrence}
+  - {id: E188, source: Homeric-formulaic-repetition, target: scriptural-formulaic-recurrence, type: B11, class: C4, status: connected_structural_control, note: "compare pacing/formula recurrence without asserting common metrical system"}
+
+  # Gilgamesh multilingual nexus
+  - {id: E190, source: Sumerian-Gilgamesh-compositions, target: Old-Babylonian-Akkadian-Gilgamesh, type: B3, class: C1, status: connected_recomposition}
+  - {id: E191, source: Old-Babylonian-Gilgamesh, target: Standard-Babylonian-Gilgamesh, type: B3, class: C1, status: connected_recension}
+  - {id: E192, source: Akkadian-Gilgamesh, target: Hittite-Gilgamesh, type: B1, class: C1, status: connected_adaptation, note: "target-language version is adaptive; exact source-state may vary"}
+  - {id: E193, source: Akkadian-Hurrian-Gilgamesh-traditions, target: Hurrian-Gilgamesh-fragments, type: B1, class: C2, status: connected_fragmentary_rendering}
+  - {id: E194, source: Akkadian-Gilgamesh, target: Ugarit-Emar-Megiddo-Hattusa-Akkadian-witnesses, type: B8, class: C1, status: connected_scribal_circulation}
+  - {id: E195, source: Sumerian-Huwawa, target: Akkadian-Humbaba, type: B15, class: C1, status: connected_name_episode_orbit}
+  - {id: E196, source: Sumerian-Ziusudra, target: Akkadian-Utnapishtim, type: B15, class: C1, status: connected_flood_hero_equivalence}
+  - {id: E197, source: Atrahasis-flood, target: Gilgamesh-XI-flood, type: B3, class: C1, status: connected_literary_reuse}
+  - {id: E198, source: Mesopotamian-flood-tradition, target: Genesis-6-9, type: B7, class: C3, status: connected_shared_historical_matrix}
+  - {id: E199, source: Ziusudra-Utnapishtim-flood-tradition, target: Berossus-Xisouthros, type: B15, class: C2, status: connected_Greek_recasting}
+  - {id: E200, source: Gilgamesh-operator-field, target: Homeric-operator-field, type: B11, class: C4, status: connected_structural_control, note: "individual parallels debated; no blanket direct-translation claim"}
+  # Transform anchor matrix
+  - {id: E210, source: Sumerian-Gilgamesh-Enkidu-Netherworld, target: Akkadian-Gilgamesh-Tablet-XII, type: B1, class: C0, status: anchor_A2_translation, note: "translation/adaptation of latter part; strongest Sumerian→Akkadian Gilgamesh anchor"}
+  - {id: E211, source: Hurrian-Song-of-Release, target: Hittite-Song-of-Release, type: B1, class: C0, status: anchor_A1_bilingual, note: "side-by-side bilingual; translation strategies directly measurable"}
+  - {id: E212, source: Hurrian-Song-of-Emergence, target: Hittite-Kumarbi-Song-of-Emergence, type: B1, class: C1, status: anchor_A2_adaptation}
+  - {id: E213, source: Hurro-Hittite-Succession-Myth, target: Hesiod-Theogony, type: B7, class: C3, status: anchor_A4_historical_matrix}
+  - {id: E214, source: Instruction-of-Amenemope, target: Proverbs-22-17-24-22, type: B7, class: C2, status: anchor_A4_wisdom_dependence}
+  - {id: E215, source: Esarhaddon-Succession-Treaty, target: Deuteronomy-28, type: B7, class: C2, status: anchor_A4_treaty_curse_transposition}
+  - {id: E216, source: Hebrew-Jubilees, target: Greek-Jubilees-to-Ethiopic-Jubilees, type: B1, class: C1, status: anchor_translation_chain}
+  - {id: E217, source: Aramaic-Enoch, target: Greek-Ethiopic-Enoch, type: B1, class: C1, status: anchor_translation_chain}
+  - {id: E218, source: Elephantine-Aramaic-Ahiqar, target: later-Syriac-Armenian-Arabic-Ahiqar, type: B3, class: C2, status: anchor_long_recension_chain}
+  - {id: E219, source: Sumerian-Ballad-of-Early-Rulers, target: Emar-Ugarit-Sumerian-Akkadian-recensions, type: B1, class: C1, status: anchor_bilingual_wisdom_transmission}
+  # Referential stratification / representative compression
+  - {id: E220, source: Xenophon-Tigranes, target: Xenophon-Armenians, type: B20, class: C0, status: anchor_internal_stratification, note: "named prince → Tigranes and his men → Armenians within the same narrative sequence"}
+  - {id: E221, source: Jacob-Israel-person, target: Israel-people-polity, type: B20, class: C0, status: anchor_eponymic_stratification}
+  - {id: E222, source: Esau, target: Edom-people-land, type: B20, class: C0, status: anchor_eponymic_stratification}
+  - {id: E223, source: Judah-person, target: Judah-tribe-kingdom, type: B20, class: C0, status: anchor_eponymic_stratification}
+  - {id: E224, source: Homeric-leaders, target: Homeric-contingents-ethnonyms, type: B20, class: C1, status: anchor_epic_representative_shift}
+  - {id: E225, source: Achaemenid-ruler-country-address, target: Xenophon-ruler-people-address, type: B20, class: C2, status: comparative_stratification_test}
+  # Philosophumena / heresiological relay
+  - {id: E230, source: Hebrew-nahash-serpent, target: Greek-Naas-Naasseni, type: B23, class: C2, status: contact_reanalysis_anchor, note: "Greek-mediated group-name explanation; freeze Hebrew and Greek forms separately"}
+  - {id: E231, source: Greek-Naas, target: Greek-naos-temple, type: B23, class: C4, status: false_etymology_anchor, note: "ancient phono-semantic/theological reanalysis, not historical Greek etymology"}
+  - {id: E232, source: Naassene-source-material, target: Refutation-Book-V-report, type: B21, class: C2, status: embedded_source_relay, note: "quotation/paraphrase and polemical frame must be separated"}
+  - {id: E233, source: Presocratic-source-traditions, target: Refutation-doxography, type: B21, class: C1, status: doxographic_relay}
+  - {id: E234, source: Greek-philosophical-schools, target: Refutation-heresy-genealogies, type: B22, class: C4, status: authorial_derivation_claim, note: "historical dependence requires independent support"}
+  - {id: E235, source: founder-teacher, target: later-school-heresiological-category, type: B20, class: C2, status: intellectual_scope_shift, note: "founder doctrine must not be inferred automatically from later followers"}
+  - {id: E236, source: Greek-Hebrew-ritual-registers, target: Refutation-Book-IV-magical-report, type: B21, class: C3, status: multilingual_ritual_witness, note: "author's 'as if Hebrew' label is not proof of valid Hebrew"}
+  # Q-B-L carrier orbit
+  - {id: E250, source: Proto-West-Semitic-qbl-face, target: West-Semitic-qbl-receive, type: B25, class: C1, status: semantic_derivation_anchor}
+  - {id: E251, source: West-Semitic-qbl-receive, target: Hebrew-qabbalah-reception-tradition, type: B25, class: C0, status: lexical_semantic_anchor}
+  - {id: E252, source: Proto-Semitic-qbl-face, target: Akkadian-qablu-battle, type: B25, class: C2, status: marginal_East-Semitic_survival, note: "plausible face-to-face → confrontation → battle"}
+  - {id: E253, source: Akkadian-qablu-middle-waist, target: West-Semitic-qbl-receive, type: B25, class: C4, status: formal_carrier_only, note: "homonym/phonological overlap; direct etymological identity unestablished"}
+  - {id: E254, source: Arabic-qbl-face-before-qibla, target: Arabic-qbl-receive-accept, type: B25, class: C0, status: internal_semantic_orbit}
+  # Arity / compression and multimodal synchronization
+  - {id: E260, source: Egyptian-sign-role-spectrum, target: arity-compression-sieve, type: B26, class: C0, status: internal_script_calibration, note: "logographic/uniliteral/biliteral/triliteral roles are indexed separately from root genealogy"}
+  - {id: E261, source: Sumerian-logographic-carriers, target: Akkadian-language-readouts, type: B26, class: C0, status: representational_decompression_anchor, note: "carrier/readout relation; not a claim of lexical ancestry"}
+  - {id: E262, source: Semitic-biradical-candidate-kernels, target: Semitic-triradical-expansions, type: B26, class: C4, status: candidate_root_enlargement, note: "test lexeme-by-lexeme; no universal biradical stage assumed"}
+  - {id: E263, source: Indo-Iranian-root-enlargement-controls, target: arity-compression-sieve, type: B11, class: C2, status: comparative_mechanism_control, note: "independent control for compact-root plus consonantal-extension mechanisms"}
+  - {id: E270, source: Books-of-Jeu-credential-system, target: Chaldaean-symbola-synthemata, type: B27, class: C4, status: structural_control, note: "name/seal/token/ascent architecture compared without asserting direct genealogy"}
+  - {id: E271, source: Hekhalot-gate-credentials, target: Books-of-Jeu-credential-system, type: B27, class: C4, status: structural_control, note: "gatekeeper/name/seal comparison; transmission path remains open"}
+  - {id: E272, source: Egyptian-gate-name-knowledge, target: late-antique-ascent-credential-systems, type: B27, class: C4, status: structural_control, note: "multimodal threshold architecture only; direct descent not encoded"}
+
+  # Gilgamesh beyond cuneiform / classifier and episode rebinding
+  - {id: E280, source: Mesopotamian-Gilgamesh-identity, target: Qumran-Book-of-Giants-Gilgamesh, type: B28, class: C1, status: connected_classifier_transfer, note: "identity carrier survives while heroic king is reclassified inside the giant/Watchers framework"}
+  - {id: E281, source: Mesopotamian-Gilgamesh-dream-strength-network, target: Qumran-Book-of-Giants-dream-judgment-network, type: B7, class: C2, status: connected_functional_residue, note: "dream/strength/judgment residues; direct dependence on Standard Babylonian recension not required"}
+  - {id: E282, source: Gilgamesh-identity, target: Aelian-Gilgamos-royal-infant-narrative, type: B29, class: C2, status: connected_narrative_rebinding, note: "name and Babylonian kingship survive while exposure/eagle/gardener episode is rebound"}
+  - {id: E283, source: Humbaba-Huwawa-network, target: Qumran-Hobabish-like-network, type: B15, class: C2, status: connected_onomastic_candidate, note: "network-level survival candidate; keep distinct from proven direct textual descent"}
+
+  # Hittite decipherment / known-script unknown-language calibration
+  - {id: E290, source: Sumerian-NINDA-logogram, target: Hittite-sentence-semantic-anchor, type: B30, class: C0, status: decipherment_anchor, note: "known logographic semantic address inside an unknown-language sentence"}
+  - {id: E291, source: Hittite-ed-ezz-watar-forms, target: Indo-European-cognate-network, type: B30, class: C1, status: decipherment_covariance, note: "lexical resemblance becomes admissible only with morphology, syntax, and corpus-wide propagation"}
+  - {id: E292, source: known-cuneiform-script, target: Hittite-language-readout, type: B30, class: C0, status: carrier_readout_separation, note: "script was readable before the language was identified"}
+
+
+  # Kartvelian / Colchis genealogy, epigraphy and translation expansion
+  - {id: E300, source: Proto-Kartvelian, target: Svan, type: B10, class: C1, status: connected_family, note: "genealogical daughter relation; chronology remains model-dependent"}
+  - {id: E301, source: Proto-Karto-Zan, target: Georgian, type: B10, class: C1, status: connected_family}
+  - {id: E302, source: Proto-Karto-Zan, target: Zan, type: B10, class: C1, status: connected_family}
+  - {id: E303, source: Zan, target: Mingrelian-Laz, type: B10, class: C1, status: connected_family, note: "Mingrelian and Laz are the extant Zan daughters"}
+  - {id: E304, source: probable-Colchian-Kartvelian-Zan-substrate, target: Greek-Colchian-epigraphic-interface, type: B11, class: C3, status: candidate_interface, note: "co-presence model only; Greek inscription language does not identify the local spoken substrate"}
+  - {id: E305, source: Armazi-Greek-text, target: Armazi-Aramaic-Aramaic-derived-text, type: B2, class: C0, status: connected_same_object_parallel, note: "parallel funerary witness with unequal detail; non-Greek language classification disagreement preserved"}
+  - {id: E306, source: Imperial-Aramaic-writing-tradition, target: Armazian-Aramaic-script, type: B5, class: C1, status: connected_script_variant, note: "script genealogy does not by itself settle whether every Armazian text is Aramaic or Iranian in language"}
+  - {id: E307, source: Iranian-administrative-lexical-layer, target: Georgian, type: B6, class: C1, status: connected_contact, note: "direct and Armenian-mediated borrowings must be separated item by item; bidaxsh/pitiakhsh is a calibration orbit"}
+  - {id: E308, source: Syriac-Christian-literary-roots, target: early-Georgian-Christian-literature, type: B8, class: C2, status: connected_mediated, note: "often mediated through Armenian; not a claim that every Georgian text derives from Syriac"}
+  - {id: E309, source: Armenian-Christian-literary-mediation, target: early-Georgian-Christian-literature, type: B1, class: C1, status: connected_translation_mediation, note: "translation base remains text-specific"}
+  - {id: E310, source: Greek-Christian-textual-tradition, target: Georgian-Christian-literature, type: B1, class: C1, status: connected_translation_family, note: "direct Greek influence grows early and becomes increasingly important; evaluate per text/manuscript"}
+
+  - {node: Old-North-Arabian, target_bridge: "Aramaic/Nabataean + Arabian epigraphy", preferred_types: [B2,B6,B10], status: connected_needs_witness_pack}
+  - {node: Ancient-South-Arabian, target_bridge: "Northwest-Semitic/Ethiosemitic/Red-Sea trade", preferred_types: [B6,B10], status: connected_needs_witness_pack}
+  - {node: Palaic, target_bridge: "Hittite/Luwian Anatolian comparison", preferred_types: [B10], status: connected_needs_morphology_pack}
+  - {node: Sidetic, target_bridge: "Greek/Anatolian contact inscriptions", preferred_types: [B2,B6], status: connected_needs_witness_pack}
+  - {node: Lydian, target_bridge: "Anatolian + Greek contact", preferred_types: [B10,B6], status: connected_partial}
+  - {node: Carian, target_bridge: "Greek/Anatolian bilingual-decipherment history", preferred_types: [B2,B5], status: connected_partial}
+  - {node: Phrygian, target_bridge: "Greek/Anatolian/Balkan contact", preferred_types: [B6,B10], status: connected_partial}
+  - {node: Meroitic, target_bridge: "Egyptian/Nile script-contact field", preferred_types: [B5,B11], status: connected_boundary}
+  - {node: Eteocypriot, target_bridge: "Greek/Cypriot bilingual environment", preferred_types: [B2,B5,B11], status: connected_boundary}
+  - {node: Iberian, target_bridge: "Phoenician/Greek/Latin western contact", preferred_types: [B2,B6,B11], status: connected_boundary}
+  - {node: Kartvelian, target_bridge: "Colchis/Iberia genealogical, epigraphic, Iranian-contact and translation field", preferred_types: [B1,B2,B5,B6,B9,B10,B11,B15], status: connected_active_study}
+  - {node: Proto-Uralic-Finnic, target_bridge: "genealogical/distant numeral control", preferred_types: [B10,B11], status: connected_control}
+  - {node: Tamil-Dravidian, target_bridge: "deep typological/ritual-language control", preferred_types: [B11], status: connected_control}
+  - {node: Suebi-Suebian, target_bridge: "Latin + later Germanic/Romance textual and onomastic evidence", preferred_types: [B6,B8,B9,B10], status: connected_needs_linguistic_witnesses}
+  - {node: later-European-vernaculars, target_bridge: "Vulgate/Greek/scriptural translation halo", preferred_types: [B1,B8,B9,B10,B12,B13], status: connected_expand_per_language}
+  - {node: LinguaDanka, target_bridge: "exact recovered dictionary only", preferred_types: [B14], status: blocked_missing_source}

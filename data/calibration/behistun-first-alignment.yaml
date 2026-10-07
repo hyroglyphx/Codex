@@ -1,0 +1,244 @@
+dataset: behistun-first-alignment
+version: 0.1.0
+updated: 2026-09-21
+status: ACTIVE_CALIBRATION
+nexus_id: RN02
+object: Behistun-monument-DB
+date_range: ca-520-to-518-BCE
+carrier: monumental-rock-inscription-and-relief
+languages: [Old-Persian, Elamite, Babylonian-Akkadian]
+scripts: [Old-Persian-cuneiform, Elamite-cuneiform, Babylonian-cuneiform]
+parallax_levels: [PX2, PX4, PX6]
+
+sources:
+  - id: IRANICA_BISOTUN_III
+    type: scholarly_reference
+    url: https://www.iranicaonline.org/articles/bisotun-iii/
+    note: "Monument genesis, version order, version comparison, dissemination, textual divergences."
+  - id: CDLI_ELAMITE_I
+    type: primary_text_edition
+    url: https://cdli.earth/articles/cdlb/2017-3
+    note: "New edition of Elamite column I with transliteration and translation."
+  - id: POLYGLOTTA_DB
+    type: aligned_parallel_text
+    url: https://www2.hf.uio.no/polyglotta/index.php?cid=931692&page=fulltext
+    note: "Old Persian, Elamite and Akkadian parallel display."
+  - id: LIVIUS_DB_OP
+    type: old_persian_transliteration_translation
+    url: https://www.livius.org/sources/content/behistun-persian-text/behistun-t-01/
+    note: "Old Persian transliteration and English rendering for column I."
+
+composition_history:
+  sequence:
+    - stage: 1
+      state: Elamite-first
+      note: "Iranica reports the first main version as Elamite."
+    - stage: 2
+      state: Babylonian-added
+      note: "Babylonian version added soon after the Elamite version."
+    - stage: 3
+      state: Old-Persian-added-and-edited
+      note: "Old Persian added later; it represents a translated/edited definitive state and includes material not present identically in the earlier versions."
+    - stage: 4
+      state: Elamite-relocated-recopied
+      note: "Expansion of the relief required the original Elamite inscription to be abandoned and recopied elsewhere on the monument."
+    - stage: 5
+      state: distributed-copies-and-translations
+      note: "Copies circulated; Babylonian fragments and an Aramaic translation survive outside Behistun."
+  implication: >
+    Behistun is not a timeless three-column equivalence table. It is a diachronically
+    layered multilingual publication process and should be modeled with temporal parallax.
+
+alignment_rows:
+  - id: BI01
+    anchor: royal_titulary
+    granularity: G3
+    old_persian:
+      transliteration: "adam Dārayavauš xšāyaθiya vazạrka xšāyaθiya xšāyaθiyānām xšāyaθiya Pārsaiy xšāyaθiya dahạyūnām"
+      content: "Darius identifies himself as great king, king of kings, king in Persia, king of countries."
+    elamite:
+      content: "Parallel titulary: Darius, great king, king of kings, king in Persia, king of nations."
+    babylonian:
+      content: "Parallel royal-title complex is present, but title ordering and grammatical packaging differ."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - royal_title_mapping
+      - word_order_recasting
+      - language_specific_grammatical_packaging
+    evidence_class: C0
+    calibration_weight: maximal
+    note: "This is a high-confidence three-language anchor."
+
+  - id: BI02
+    anchor: genealogy
+    granularity: G5
+    old_persian:
+      content: "Hystaspes -> Arsames -> Ariaramnes -> Teispes -> Achaemenes."
+    elamite:
+      content: "Same genealogical chain and father-son sequence."
+    babylonian:
+      content: "Same genealogical chain and father-son sequence."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - kinship_syntax_mapping
+      - anthroponym_transposition
+    evidence_class: C0
+    calibration_weight: maximal
+    anchors: [Hystaspes, Arsames, Ariaramnes, Teispes, Achaemenes]
+
+  - id: BI03
+    anchor: achaemenid_dynastic_claim
+    granularity: G5
+    old_persian:
+      content: "The family is called Achaemenid; from long ago it is noble and royal."
+    elamite:
+      content: "Parallel claim of Achaemenid family identity, antiquity, nobility and kingship."
+    babylonian:
+      content: "Parallel dynastic claim."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - dynastic_formula_mapping
+      - abstract_status_vocabulary_recasting
+    evidence_class: C0
+    calibration_weight: high
+
+  - id: BI04
+    anchor: eight_before_ninth
+    granularity: G5
+    old_persian:
+      content: "Eight of Darius's family were kings before him; he is the ninth; nine in succession were kings."
+    elamite:
+      content: "Eight earlier kings; Darius holds the ninth kingship; succession emphasized."
+    babylonian:
+      content: "Same numerical/dynastic proposition with language-specific wording."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - numeral_anchor_preservation
+      - succession_formula_mapping
+    evidence_class: C0
+    calibration_weight: maximal
+    anchors: [8, 9]
+
+  - id: BI05
+    anchor: ahuramazda_grants_kingship
+    granularity: G5
+    old_persian:
+      content: "By the favor of Ahuramazda Darius is king; Ahuramazda bestowed the kingdom."
+    elamite:
+      content: "By the intercession/favor of Ahuramazda Darius exercises kingship; Ahuramazda gives kingship."
+    babylonian:
+      content: "Parallel proposition: Darius is king under Ahuramazda's protection/favor and receives kingship from the god."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - divine_name_transposition
+      - causation_or_favor_formula_mapping
+      - kingship_lexicon_mapping
+    evidence_class: C0
+    calibration_weight: maximal
+
+  - id: BI06
+    anchor: formula_says_darius_the_king
+    granularity: G3
+    old_persian:
+      content: "The text repeatedly segments discourse with a formula equivalent to 'Darius the king says'."
+    elamite:
+      content: "Equivalent segmentation formula occurs, but less frequently than in Old Persian."
+    babylonian:
+      content: "Equivalent segmentation formula occurs, but less frequently than in Old Persian."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - discourse_segmentation
+      - formula_frequency_shift
+    evidence_class: C1
+    calibration_weight: very_high
+    residue: >
+      Iranica notes Old Persian has substantially more paragraph-initial repetitions than
+      Elamite and Babylonian. This is a measurable discourse-level divergence, not noise.
+
+  - id: BI07
+    anchor: casualty_and_capture_counts
+    granularity: G5
+    old_persian:
+      content: "Narrative of revolts and suppression without all numerical casualty details preserved in the Babylonian/Aramaic tradition."
+    elamite:
+      content: "Does not uniformly match the Babylonian/Aramaic numerical elaboration."
+    babylonian:
+      content: "Contains additional numbers of enemies killed or captured in places where the other versions differ."
+    same_referent: true
+    same_proposition: partial
+    same_lexicalization: false
+    transform:
+      - audience_specific_expansion
+      - quantitative_detail_insertion
+    evidence_class: C1
+    calibration_weight: high
+    significance: "Strong control against assuming trilingual witnesses are line-for-line equivalents."
+
+  - id: BI08
+    anchor: geographic_and_name_forms
+    granularity: G2
+    old_persian:
+      content: "Iranian names and province names appear in Old Persian forms."
+    elamite:
+      content: "Many Iranian names track Old Persian more closely in dialectological form."
+    babylonian:
+      content: "Babylonian name forms often pattern with the later Aramaic translation rather than with Old Persian special developments."
+    same_referent: true
+    same_proposition: true
+    same_lexicalization: false
+    transform:
+      - onomastic_transposition
+      - dialect_filtering
+      - scribal_language_adaptation
+    evidence_class: C1
+    calibration_weight: very_high
+    significance: >
+      This row is ideal for training exonym/endonym and intermediary-language transformations.
+
+derived_observations:
+  - id: BEH_D1
+    status: attested_and_derived
+    statement: "The three main versions were produced in stages rather than simultaneously."
+  - id: BEH_D2
+    status: derived
+    statement: "Translation direction and editorial revision are separate sieve variables."
+  - id: BEH_D3
+    status: attested_and_derived
+    statement: "Paragraph/formula frequency diverges by version even when event structure remains aligned."
+  - id: BEH_D4
+    status: attested_and_derived
+    statement: "Babylonian contains audience-specific additions and numerical detail; parallel witness does not mean lexical identity."
+  - id: BEH_D5
+    status: derived
+    statement: "Behistun supplies both spatial parallax and temporal parallax on one monument."
+
+new_sieve_variables_triggered:
+  - composition_stage
+  - version_sequence
+  - translation_direction
+  - editorial_revision
+  - formula_frequency
+  - audience_specific_expansion
+  - name_form_dialect_filter
+  - copy_network
+  - distributed_copy_status
+  - temporal_parallax
+
+next_pass:
+  - "Extend paragraph-by-paragraph alignment through the province list and Gaumata narrative."
+  - "Normalize Old Persian, Elamite and Babylonian anthroponym/ethnonym forms into typed name orbits."
+  - "Quantify formula frequency by version."
+  - "Map the Babylonian casualty-number expansions against Old Persian/Elamite omissions."
+  - "Add the Elephantine Aramaic version as PX6 archival relay."

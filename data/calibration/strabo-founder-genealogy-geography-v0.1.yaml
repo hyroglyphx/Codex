@@ -1,0 +1,87 @@
+version: "0.1"
+date: "2026-09-24"
+id: STRABO_FOUNDER_GENEALOGY_GEOGRAPHY
+status: SOURCE_LOCKED_FIRST_PASS
+
+core_model:
+  path: [PERSON,POLITICAL_OR_SETTLEMENT_ACT,PEOPLE_CLASSIFIER,TERRITORY,COLONIAL_OR_SCALE_EXPORT]
+
+cases:
+  ION:
+    source: "Strabo 8.7.1"
+    path: [Ion,military_victory,political_authority,four_tribes_and_occupations,Ionians,Ionia,colonial_export_to_Asia]
+    operator: MG-05
+
+  DORUS:
+    source: "Strabo 8.7.1"
+    path: [Dorus,aggregation_at_Parnassus,Dorians]
+    operator: MG-05
+
+  ACHAEUS:
+    source: "Strabo 8.7.1"
+    path: [Achaeus,Lacedaemon,Achaeans,Achaea]
+    operator: MG-05
+
+  AEGIALEIA_IONIA_ACHAEA:
+    source: "Strabo 8.7.1"
+    sequence: [Aegialeia,Ionia,Achaea]
+    operator: MG-06
+
+  HELLEN_SCALE:
+    sources: ["Strabo 8.6.6","Strabo 9.5.6"]
+    sequence: [local_Hellenes_Hellas,general_Hellenes,Panhellenes]
+    operator: MG-07
+
+  THESSALY_OVERLAY:
+    source: "Strabo 9.5"
+    names: [Pyrrhaea,Haemonia,Hellas,Thessaly,Nessonis]
+    eponyms: [Pyrrha,Haemon,Hellen,Thessalus,Nesson]
+    operator: MG-08
+
+  PELASGIANS_DANAANS:
+    source: "Strabo 8.6.9 quoting Euripides"
+    path: [Pelasgians,political_renaming,Danaans,broader_Greek_classifier]
+    operator: MG-09
+
+  AETOLUS_AETOLIA:
+    source: "Strabo 8.3.33 following Ephorus"
+    path: [Aetolus,Aetolia,metropolitan_unification]
+    operator: MG-05
+
+  LYCUS_LYCIANS:
+    source: "Strabo 12.8.5"
+    prior_labels: [Solymi,Milyae,Termilae]
+    new_label: Lycians
+    operator: MG-05
+    adversarial_note: "Homeric distinctions are preserved against later identity collapse"
+
+  LATINUS_AENEAS_LATINI:
+    source: "Strabo 5.3"
+    path: [Latinus,death,Aeneas_successor,mixed_subjects,Latini]
+    operator: MG-10
+
+operators:
+  MG-05:
+    name: EPONYMIC_CLASSIFIER_CASCADE
+    path: [PERSON,POLITICAL_SETTLEMENT_ACT,PEOPLE_OR_TERRITORY_CLASSIFIER]
+  MG-06:
+    name: TERRITORY_CLASSIFIER_SUCCESSION
+    rule: "same land may carry successive population-linked names"
+  MG-07:
+    name: LOCAL_TO_PANETHNIC_SCALE_EXPANSION
+    path: [LOCAL_CLASSIFIER,REGIONAL_CLASSIFIER,PANETHNIC_CLASSIFIER]
+  MG-08:
+    name: SUCCESSIVE_EPONYMIC_OVERWRITE
+    rule: "same geography may accumulate competing eponymic names across narrative phases"
+  MG-09:
+    name: POLITICAL_ETHNONYM_IMPOSITION
+    path: [AUTHORITY,RENAMING_RULE,NEW_COLLECTIVE_CLASSIFIER]
+  MG-10:
+    name: INHERITED_COMPOSITE_ETHNONYM
+    path: [PREDECESSOR_EPONYM,SUCCESSOR_RULE,MIXED_SUBJECTS,INHERITED_COLLECTIVE_NAME]
+
+controls:
+  - "genealogical branch != fixed linguistic branch"
+  - "eponymic story != demonstrated literal descent"
+  - "same territory != stable ethnonym"
+  - "later identity collapse must preserve earlier source distinctions"

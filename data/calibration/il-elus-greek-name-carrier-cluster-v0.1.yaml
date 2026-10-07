@@ -1,0 +1,56 @@
+version: "0.1"
+date: "2026-09-24"
+id: IL_ELUS_GREEK_NAME_CARRIER_CLUSTER
+status: SOURCE_LOCKED_FIRST_PASS
+
+direct_semitic_greek_reception:
+  PHILO_CLUSTER:
+    source: "Philo of Byblos preserved by Eusebius, Praeparatio Evangelica 1"
+    forms:
+      - [Elioun, "Most High"]
+      - [Elus, Kronos]
+      - [Eloim, "allies of Elus"]
+      - [Belus, "Zeus Belus"]
+    operators: [TRN-07, TRN-08]
+
+native_carriers:
+  ILUS_ILIUM:
+    forms: ["Ἶλος","Ἴλιον","Ἴλιος"]
+    source_control: "Strabo 13: Ilium named from Ilus"
+    candidate: NAME-CAND-10
+
+  ELEUSIS:
+    form: "Ἐλευσίς"
+    sacred_context: [Demeter, Kore, mysteries]
+    greek_reception_field: "ἔλευσις = coming/arrival"
+    historical_etymology: unresolved
+
+greek_internal_controls:
+  HELIOS:
+    form: "ἥλιος"
+    variants: ["ἠέλιος","ἀέλιος","ἅλιος","ἀβέλιος"]
+    established_family: Indo_European
+    role: negative_control_against_EL_surface_overreach
+
+  SELENE:
+    form: "σελήνη"
+    semantic_field: [moon, moon_goddess, light_glow]
+    internal_relation: "σέλας"
+    candidate: NAME-CAND-11
+
+operators:
+  TRN-07:
+    name: SEMITIC_THEONYM_GREEK_CLUSTER_RECEPTION
+  TRN-08:
+    name: SEMITIC_DIVINE_NAME_GREEK_NOMINALIZATION
+  NAME-CAND-10:
+    name: ELUS_ILUS_CARRIER_PROXIMITY
+    status: explore_only
+  NAME-CAND-11:
+    name: EL_SEL_HEL_LIGHT_DIVINE_ATTRACTION
+    status: explore_only
+
+controls:
+  - "EL sequence plus divine meaning does not prove Semitic origin"
+  - "direct imported divine names must be separated from inherited Greek/Anatolian names"
+  - "phonemic attraction and historical derivation are separate questions"

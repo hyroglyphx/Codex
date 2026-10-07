@@ -1,0 +1,26 @@
+version: "0.1"
+date: "2026-09-23"
+id: PRE_GREEK_SUBSTRATE_PELASGIAN_SEPARATION
+status: SOURCE_ASSISTED_CONTROL
+protocol: docs/architecture/pre-greek-substrate-pelasgian-separation-control-v0.1.md
+firewall: "PRE_GREEK_SUBSTRATE != PELASGIAN_AUTHORIAL_CLASSIFIER != POPULATION_IDENTITY"
+evidence_lanes:
+  - lexical_form
+  - toponymic_form
+  - morphological_pattern
+  - script_language_state
+  - authorial_ethnonym
+  - archaeological_population_model
+  - geography
+  - chronology
+  - provenance
+toponymic_patterns_registered_as_hypothesis_lanes:
+  - "-ssa/-nda"
+  - "-ssos/-nthos"
+negative_control: Pelasgos_pelargos_folk_etymology
+bindings:
+  - mythic_genealogical_classifier_transport
+  - linguistic_core
+  - ancient_script_lattice_uptake
+  - tyrsenian_controls
+promotion_rule: "no confidence transfer across substrate/classifier/population layers without typed evidence"

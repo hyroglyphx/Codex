@@ -1,0 +1,220 @@
+dataset: numeral-hierarchical-null
+version: 0.2.0
+updated: 2026-09-21
+status: EXPLORATORY_HIERARCHICAL_SENSITIVITY
+matrix: data/calibration/numeral-1-10-source-locked-v0.2.yaml
+
+target_feature:
+  name: strict_C7
+  definition: "sibilant/affricated-sibilant onset followed later by [p,b,f,φ,β,w]"
+  representation_lane: root_or_stem_normalized
+  digits: [1,2,3,4,5,6,7,8,9,10]
+
+observed_core:
+  node_hits:
+    Proto-Semitic: [7]
+    Egyptian: [7]
+    Proto-Indo-European: [6,7]
+    Proto-Kartvelian: [7]
+    Basque: [7]
+    Sumerian: []
+    Hurrian: []
+  digit_counts:
+    6: 1
+    7: 5
+  note: "Zero-hit rows remain important negative controls but vanish from a conditional fixed-hit-count permutation."
+
+observed_extended:
+  add:
+    Etruscan: [7]
+    Iberian: [7]
+  digit_counts:
+    6: 1
+    7: 7
+
+conditional_null_definition: >
+  For each counted row or dependency-cluster, preserve its observed number of
+  strict-feature hits across digits 1-10 and randomly assign those hits to digit
+  positions uniformly without replacement within that row/cluster. Then compare
+  the observed maximum concentration with the exact distribution.
+  This is a conditional positional null, not a full phonotactic-generative model.
+
+scenarios:
+  S0_core_rows_independent:
+    units:
+      - {id: PS, hit_count: 1}
+      - {id: Egyptian, hit_count: 1}
+      - {id: PIE, hit_count: 2}
+      - {id: Proto-Kartvelian, hit_count: 1}
+      - {id: Basque, hit_count: 1}
+    observed_max: 5
+    observed_digit: 7
+    exact_configuration_count: 450000
+    p_any_digit_reaches_observed_max: 0.0002
+    interpretation: >
+      Useful only as a naive upper-resolution reference. It treats genealogy and
+      contact-linked histories as independent when they are not.
+
+  S0_extended_rows_independent:
+    units:
+      - {id: PS, hit_count: 1}
+      - {id: Egyptian, hit_count: 1}
+      - {id: PIE, hit_count: 2}
+      - {id: Proto-Kartvelian, hit_count: 1}
+      - {id: Basque, hit_count: 1}
+      - {id: Etruscan, hit_count: 1}
+      - {id: Iberian, hit_count: 1}
+    observed_max: 7
+    observed_digit: 7
+    exact_configuration_count: 45000000
+    p_any_digit_reaches_observed_max: 0.000002
+    interpretation: >
+      Strong-looking but methodologically anti-conservative because Etruscan and
+      Iberian value assignments are less secure and several nodes are historically dependent.
+
+  S1_genealogy_contact_clustered:
+    cluster_logic:
+      A_AFROASIATIC:
+        members: [Proto-Semitic, Egyptian]
+        union_hits: [7]
+        hit_count: 1
+        rationale: "shared deeper Afroasiatic ancestry; do not count as fully independent"
+      B_IE_KARTVELIAN_CONTACT:
+        members: [Proto-Indo-European, Proto-Kartvelian]
+        union_hits: [6,7]
+        hit_count: 2
+        rationale: >
+          Proto-Kartvelian six is explicitly treated in cited literature as PIE-derived;
+          seven has uncertain comparisons to PIE/Semitic, so cluster as a conservative dependency.
+      C_BASQUE_IBERIAN:
+        members: [Basque, Iberian]
+        union_hits: [7]
+        hit_count: 1
+        rationale: >
+          Iberian numeral work explicitly compares the system with Proto-Basque;
+          grouping them avoids treating the candidate relation as independent evidence.
+      D_ETRUSCAN:
+        members: [Etruscan]
+        union_hits: [7]
+        hit_count: 1
+        rationale: "kept separate in this scenario"
+    observed_max: 4
+    observed_digit: 7
+    exact_configuration_count: 45000
+    p_prespecified_digit_reaches_all_four_clusters: 0.0002
+    p_any_digit_reaches_observed_max: 0.002
+    interpretation: >
+      Seven remains unusually concentrated after a first dependency collapse.
+
+  S2_mediterranean_contact_sensitive:
+    cluster_logic:
+      A_AFROASIATIC_ETRUSCAN:
+        members: [Proto-Semitic, Egyptian, Etruscan]
+        union_hits: [7]
+        hit_count: 1
+        rationale: >
+          Sensitivity-only collapse reflecting published proposals of Phoenician/Punic
+          areal influence on Etruscan numerals. This does not assert that Etruscan seven
+          is specifically a Semitic loan.
+      B_IE_KARTVELIAN_CONTACT:
+        members: [Proto-Indo-European, Proto-Kartvelian]
+        union_hits: [6,7]
+        hit_count: 2
+      C_BASQUE_IBERIAN:
+        members: [Basque, Iberian]
+        union_hits: [7]
+        hit_count: 1
+    observed_max: 3
+    observed_digit: 7
+    exact_configuration_count: 4500
+    p_prespecified_digit_reaches_all_three_clusters: 0.002
+    p_any_digit_reaches_observed_max: 0.02
+    interpretation: >
+      Seven remains suggestive under a more conservative Mediterranean/contact collapse,
+      but the strength is much lower than the naive row-independent model.
+
+  S3_maximal_western_contact_collapse:
+    cluster_logic:
+      A_WESTERN_MEDITERRANEAN_AREAL:
+        members: [Proto-Semitic, Egyptian, Etruscan, Basque, Iberian]
+        union_hits: [7]
+        hit_count: 1
+        rationale: >
+          Deliberately over-conservative bounding model. It does not claim these nodes
+          form one historical transmission chain; it asks what happens if their seven
+          hits are treated as one effective areal observation.
+      B_IE_KARTVELIAN_CONTACT:
+        members: [Proto-Indo-European, Proto-Kartvelian]
+        union_hits: [6,7]
+        hit_count: 2
+    observed_max: 2
+    observed_digit: 7
+    exact_configuration_count: 450
+    p_prespecified_digit_overlap: 0.02
+    p_any_digit_reaches_observed_max: 0.20
+    interpretation: >
+      Under a maximal dependency collapse, the enrichment no longer looks unusual.
+      This demonstrates that the historical-independence model is now the dominant uncertainty.
+
+morphology_sensitivity:
+  Egyptian:
+    surface_lane:
+      apparent_hits: [2,6,7]
+      reason: "surface masculine forms introduce w"
+    root_normalized_lane:
+      hits: [7]
+      reason: "transparent endings removed before feature test"
+    consequence: >
+      The old six competitor weakens substantially under morphology-aware normalization.
+      Seven survives because its internal f remains part of the stem.
+
+uralic_correction:
+  old_project_state: "Proto-Uralic seven treated as broad S...M feature"
+  revised_state: >
+    Not admitted as a whole-family Proto-Uralic hit. Finno-Permic *śeŋćemä is broad-only;
+    Ugric *säptə is a strict-form control but is explicitly treated by Uralonet as Iranian-derived.
+  consequence: "Uralic evidence becomes a contact calibration, not an independent seven hit."
+
+matched_feature_bias_controls:
+  matrix_scope: "extended source-locked matrix"
+  target:
+    strict_labial:
+      counts: {6: 1, 7: 7}
+  alternatives:
+    broad_labial:
+      counts: {3: 1, 6: 1, 7: 7}
+    dorsal:
+      counts: {6: 1, 7: 1}
+    nasal:
+      counts: {2: 1, 3: 1, 7: 2}
+    rhotic:
+      counts: {8: 2, 10: 1}
+  interpretation: >
+    None of these simple matched later-segment classes recreates the seven concentration.
+    This is encouraging but not a valid multiple-feature significance correction because
+    the candidate feature family was not preregistered and the classes have unequal base rates.
+
+next_hierarchical_model:
+  unit: "typed historical node with explicit dependency graph"
+  required_components:
+    - genealogy_tree
+    - directed_contact_edges
+    - borrowing_probability_by_digit_and_period
+    - reconstruction_uncertainty
+    - value_assignment_uncertainty
+    - phonotactic_inventory_base_rate
+    - feature_selection_prior
+    - missing_data_model
+  desired_output:
+    - posterior_or_simulated_distribution_of_digit_enrichment
+    - leave_one_cluster_out_sensitivity
+    - contact_edge_ablation
+    - morphology_lane_ablation
+    - matched_feature_family_correction
+
+current_conclusion: >
+  After extending to 1-10 and correcting morphology and Uralic genealogy, seven remains
+  the strongest strict-carrier concentration in the source-locked matrix. However,
+  apparent significance varies from very strong under naive row independence to weak
+  under maximal areal collapse. The next decisive object is therefore not another list
+  of daughter-language matches but a historically explicit dependency model.

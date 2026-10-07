@@ -1,0 +1,93 @@
+version: "0.1"
+date: "2026-09-24"
+id: CONFIDENCE_WEIGHTED_CARRIER_LATTICE
+status: ADOPTED_EXPERIMENTAL
+
+confidence_channels: [WIT,REF,PHON,GRAPH,MORPH,SEM,CHRON,GEO,TRANS]
+bands:
+  A: [0.90,1.00]
+  B: [0.75,0.89]
+  C: [0.55,0.74]
+  D: [0.35,0.54]
+  E: [0.00,0.34]
+  OMEGA: unknown
+
+dense_nodes:
+  ALASHIYA:
+    density: very_high
+    anchor_edges:
+      EA39_Akkadian_Egyptian: {relation: SAME_REFERENT_CROSS_SCRIPT, score: 0.97, band: A}
+      Ugaritic_Akkadian_Hittite: {relation: SAME_REFERENT_CROSS_SCRIPT, score: 0.89, band: B}
+      Alassa_candidate: {relation: LOCAL_PERSISTENCE, score: 0.50, band: D}
+      Alasiotas_candidate: {relation: LOCAL_PERSISTENCE, score: 0.64, band: C}
+
+  EL_IL:
+    density: very_high
+    anchor_edges:
+      Semitic_EL_family: {relation: LEXICAL_COGNATE, score: 0.95, band: A}
+      Phoenician_El_Greek_Elus: {relation: DIRECT_RECEPTION, score: 0.91, band: A}
+      Bel_Baal_Greek_Belos: {relation: DIRECT_RECEPTION, score: 0.92, band: A}
+      Elus_Ilus: {relation: RECEPTION_ATTRACTION, score: 0.44, band: D}
+      Semitic_El_Hellen: {relation: ETYMOLOGY_CANDIDATE, score: 0.24, band: E}
+
+  BR_CROSSING:
+    density: high
+    anchor_edges:
+      Semitic_abar_eber_eberu: {relation: LEXICAL_COGNATE, score: 0.95, band: A}
+      Eber_Nari: {relation: EXPLICIT_GEOGRAPHIC_SEMANTICS, score: 0.98, band: A}
+      BR_Iberia_functional: {relation: RECEPTION_FUNCTION, score: 0.50, band: D}
+      BR_Iberia_etymology: {relation: ETYMOLOGY_CANDIDATE, score: 0.25, band: E}
+      BR_BAL_operator: {relation: SEMANTIC_OPERATOR_PARALLEL, score: 0.65, band: C}
+
+  LADY_MISTRESS:
+    density: high_semantic
+    forms: [Sumerian_NIN,Akkadian_belet,Hurrian_allai,Mycenaean_Potnia]
+    semantic_operator_score: 0.94
+    band: A
+    etymological_unity: "not_proposed"
+
+  SARDIS:
+    density: high
+    forms: [Lydian_Sfard,Old_Persian_Sparda,Hebrew_Sepharad,Greek_Sardis]
+    same_referent_score: 0.90
+    band: A
+
+  MICRO_NEI_KA:
+    density: calibration
+    edges:
+      Neilos_Nilus: {score: 0.98, band: A}
+      Kanobos_Kanopos_Canopus: {score: 0.98, band: A}
+
+  HELLI_SELLI:
+    density: medium
+    relation: TEXTUAL_GEOGRAPHIC_CONTROL
+    score: 0.78
+    band: B
+
+  NEILEIDAI_THELIDAI:
+    density: medium
+    relation: ONOMASTIC_CANDIDATE
+    score: 0.50
+    band: D
+
+  SA_SAR:
+    density: medium
+    controls:
+      Sardis_crosswalk: A
+      Sauromatae_Sarmatae: B
+      Samothrace_Saon_Saos: C
+      universal_SA_SAR_root: OMEGA
+
+  SEMITIC_NUMERAL_TWO:
+    density: high_calibration
+    relation: LAWFUL_BRANCH_DIVERGENCE
+    score: 0.92
+    band: A
+    negative_control: "Turoyo tre=2 vs Albanian tre=3"
+
+queued_nodes:
+  - Dilmun_Tilmun
+  - Magan_Makkan
+  - Anshan_Anzan
+  - Shushun_Shushen_Shushin
+  - Nina_Ninua

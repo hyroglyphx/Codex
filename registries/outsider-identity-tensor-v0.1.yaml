@@ -1,0 +1,88 @@
+version: "0.1"
+date: "2026-09-24"
+id: OUTSIDER_IDENTITY_TENSOR
+status: ACTIVE_SYNTHESIS_SOURCE_LOCK_QUEUE
+study: studies/outsider-identity-authority-liminality-v0.1.md
+
+identity_tensor:
+  notation: "I(x,s,t)"
+  axes:
+    - ENDONYM
+    - EXONYM
+    - LANGUAGE
+    - CULT
+    - POLITY
+    - ALLEGIANCE
+    - JURISDICTION
+    - LEGAL_STATUS
+    - MOBILITY
+    - OFFICE
+    - KINSHIP_NARRATIVE
+    - NETWORK
+    - NARRATIVE_FUNCTION
+    - REFERENCE_FRAME
+    - BOUNDARY_RELATION
+  rule: "a projection of identity is not the complete identity state"
+
+operators:
+  OUT-01:
+    name: OUTSIDER_RELATIONAL_CLASSIFIER
+    path: [CENTER,BOUNDARY,OTHER_SIDE_OR_EDGE,REGIONAL_LABEL,ADMINISTRATIVE_OR_ETHNIC_CLASSIFIER]
+  OUT-02:
+    name: BOUNDARY_RELATION
+    states: [this_side,crossing,other_side,frontier,corridor,coast,upland,island,outer_edge,imperial_beyond]
+  AUTH-01:
+    name: DELEGATED_DOMAIN_HOLDER
+    path: [SOVEREIGN_OR_INSTITUTION,DELEGATED_AGENT,ENTRUSTED_INSTRUMENT_OR_DOMAIN,EXECUTION_OF_AUTHORITY]
+  AUTH-02:
+    name: DOMAIN_TITLE_VS_LABOR_TASK
+    fields: [TITLE,OFFICE,MANAGED_DOMAIN,SUBORDINATES,MANUAL_TASK,OWNER,DELEGATING_AUTHORITY]
+  CAP-01:
+    name: UTILITY_CLASS_EXTRACTION
+    path: [CONQUEST,SPECIALIST_REMOVAL_OR_RELOCATION,SOURCE_CAPACITY_LOSS,RECEIVER_CAPACITY_GAIN]
+  NAME-01:
+    name: SPEAKING_NAME_FUNCTION
+    fields: [NAME_FORM,SOURCE_GLOSS,NARRATIVE_FUNCTION,GEOGRAPHIC_OR_INSTITUTIONAL_ROLE]
+  ORIG-01:
+    name: ORIGIN_ATTRIBUTION_NETWORK
+    edge_fields: [source_author,source_date,origin_node,carrier_person_or_group,destination,function,confidence]
+  CAR-01:
+    name: PERMUTATION_AWARE_CARRIER_WINDOW
+    allowed_only_when_licensed: [phonological_loss,script_accommodation,vocalic_insertion_or_prosthesis,local_metathesis]
+    rule: "carrier similarity does not auto-promote cognacy"
+
+integration:
+  referential_stratification:
+    formula: "IDENTITY_STATE=(R_LEVEL,K_CLASSIFIER,I_TENSOR)"
+    registry: registries/referential-stratification.yaml
+  mythic_classifier_transport:
+    registry: registries/mythic-genealogical-classifier-transport-v0.1.yaml
+  sumerian_holder_office_control:
+    protocol: docs/architecture/sumerian-operator-morphology-control-v0.1.md
+    rule: "HOLDER != OFFICE != FUNCTION"
+  qbl_metathesis_control:
+    study: studies/qbl-carrier-reception-confrontation.md
+    rule: "metathesis is a candidate transform only if independently licensed"
+  nexus_carrier_orbit:
+    registry: registries/nexus-transposition-recovered-operators-v0.1.yaml
+
+priority_source_locks:
+  - Ebir_nari_Abar_Nahara_observer_relative_geography
+  - Ivri_speaker_context_matrix
+  - western_and_Caucasian_Iberia_boundary_reference_comparison
+  - Eumaeus_domain_authority_matrix
+  - sceptre_holder_reins_holder_camillus_comparison
+  - Assyrian_Babylonian_specialist_deportation_matrix
+  - Astyanax_Odysseus_Calypso_speaking_name_calibration
+  - Samothrace_Troy_Rome_origin_attribution_graph
+  - BR_carrier_window_transform_table
+  - Kabeiroi_Cadmilus_Casmilus_Camillus_transmission_cluster
+
+negative_controls:
+  - outsider_label_not_ancestry
+  - boundary_semantics_not_etymology
+  - title_similarity_not_identical_office
+  - speaking_name_not_historical_etymology
+  - origin_attribution_not_literal_single_migration
+  - unlicensed_permutation_not_cognacy
+  - specialist_removal_not_universal_decline_explanation

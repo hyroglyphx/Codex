@@ -1,0 +1,93 @@
+version: "0.1"
+date: "2026-09-24"
+id: OUTSIDER_IDENTITY_SOURCE_LOCK
+status: FIRST_SOURCE_LOCK_COMPLETE
+
+anchors:
+  EBER_NARI:
+    class: C0_OBSERVED
+    forms: ["e-ber ID2","e-bir ID2","e-bir-ma ID2","ebēr nāri","Eber-nari","Abar-Nahara"]
+    semantic_address: "Across/Beyond the River; west of Euphrates from Mesopotamian imperial reference frame"
+    operator: OUT-01
+    result: "relational geography can harden into administrative territorial name"
+  IVRI_CONTEXT:
+    class: C1_SOURCE_PATTERN
+    contexts:
+      - Abram_ha-Ivri
+      - Joseph_Hebrew_man_in_Egyptian_household
+      - land_of_the_Hebrews_in_Joseph_speech
+      - Pharaoh_daughter_Hebrew_child
+      - God_of_the_Hebrews_to_Pharaoh
+      - Philistine_camp_of_the_Hebrews
+      - Jonah_Ivri_anokhi_to_foreign_sailors
+    result: "high intergroup-boundary salience; not exclusive outsider exonym"
+  DISTANCE_CLASSIFIER:
+    class: C0_OBSERVED
+    witness: "Dionysius Roman Antiquities 1.29"
+    pattern: [DISTANCE,LOWER_ETHNOGRAPHIC_RESOLUTION,MACRO_CLASSIFIER]
+    examples: [Trojans_Phrygians,Latins_Umbrians_Ausonians_as_Tyrrhenians,Rome_as_Tyrrhenian]
+  EUMAEUS_DOMAIN:
+    class: C0_OBSERVED
+    operator: AUTH-02
+    evidence: [managed_royal_substance,built_estate_enclosure,large_breeding_stock,subordinate_herdsmen,dispatch_to_palace,leader_of_men]
+    result: "herd-title can coexist with delegated estate management"
+  PHILOETIUS_DOMAIN:
+    class: C0_OBSERVED
+    operator: AUTH-02
+    evidence: [appointed_over_cattle,herd_growth,in_charge_of_cattle,leader_of_men]
+  SPECIALIST_DEPORTATION:
+    class: C0_OBSERVED
+    operator: CAP-01
+    witnesses:
+      - "II Kings 24:14-16: commanders/warriors + artisans/smiths deported"
+      - "SAA 15 280: carpenters/potters collected to direct deportee work at Dur-Sharrukin"
+      - "Plato Republic 421d-e: loss of tools/requirements degrades craft and training"
+  SAMOTHRACE_TROY_ROME:
+    class: C0_C1_TRANSMISSION_CLAIM
+    operator: ORIG-01
+    carriers: [people,sacred_objects,ritual_knowledge]
+    route: [Samothrace,Dardania,Troy,Aeneas,Italy,Rome]
+    witness: "Dionysius Roman Antiquities 1.68-69"
+  CASMILUS_CAMILLUS:
+    class: C0_ANCIENT_COMPARISON
+    evidence: "Varro: camilla=administra; Casmilus Samothracian divine minister of Great Gods"
+    deep_etymology: unresolved
+  BR_CARRIER:
+    class: C0_ORTHOGRAPHIC_READOUT
+    evidence: ["e-ber","e-bir","e-bir-ma"]
+    licenses: [vowel_readout_variation]
+    does_not_license: [arbitrary_consonant_metathesis]
+
+new_operator:
+  OUT-03:
+    name: DISTANCE_RESOLUTION_COMPRESSION
+    path: [GEOGRAPHIC_DISTANCE,LOWER_CLASSIFICATION_RESOLUTION,MACRO_EXONYM]
+
+promotion_notes:
+  - "OUT-01 promoted to source-locked positive control."
+  - "AUTH-02 promoted to Homeric positive control."
+  - "CAP-01 has first cross-corpus source-lock pair."
+  - "ORIG-01 now separates human, sacred-object, and ritual-knowledge carriers."
+  NUMA_OFFICE_TRANSLATION:
+    class: C0_OBSERVED_ANCIENT_CROSSWALK
+    witness: "Plutarch Numa 7"
+    mappings:
+      - "piloi / reported pilamenai -> flamines (Plutarch's ancient etymological model)"
+      - "Camillus -> Hermes by diakonia/service"
+      - "Romulus -> Quirinus cult classifier -> Flamen Quirinalis office"
+    ancient_parallel:
+      - "Varro: flamen from woolen filum binding the head"
+      - "Dionysius: flamines rendered as stephanephoroi / crown-wearers"
+      - "Macrobius: Etruscans call Mercury Camillus = praeminister deorum"
+      - "Servius: Mercury in Etruscan Camillus ~ minister deorum"
+    result: "same institutional address can be translated by regalia, function, or cult relation"
+    operators: [AUTH-03,TRN-01]
+
+additional_operators:
+  AUTH-03:
+    name: REGALIA_TO_OFFICE_CLASSIFIER
+    path: [RITUAL_REGALIA,VISIBLE_AUTHORITY_MARKER,OFFICE_TITLE]
+  TRN-01:
+    name: FUNCTIONAL_OFFICE_TRANSLATION
+    rule: "cross-language equivalence may preserve office/function while surface name changes"
+

@@ -1,0 +1,191 @@
+dataset: ugarit-multilingual-cycle-consistency
+version: 0.1.0
+updated: 2026-09-22
+status: SOURCE_LOCKED_FIRST_GRAPH
+nexus_id: RN13
+
+purpose: >
+  Represent Ugarit as a multilingual archive graph rather than a single bilingual
+  object. The graph tests whether independent scribal routes converge on compatible
+  Ugaritic phonological, lexical and semantic states.
+
+sources:
+  - id: SBL_GRAMMAR_UGARITIC
+    url: https://www.sbl-site.org/wp-content/uploads/2024/11/9781628374513_txt.pdf
+    role: >
+      Specialist grammar stating that nine languages are attested at Ugarit,
+      that polyglot vocabularies were part of scribal education, and that eight
+      copies of a Sumerian-Akkadian-Hurrian-Ugaritic vocabulary survive.
+  - id: MNAMON_UGARITIC
+    url: https://mnamon.sns.it/index.php?id=30&lang=en&page=Scrittura
+    role: >
+      Specialist script overview; KTU 5.14 maps Ugaritic consonants to Akkadian
+      syllabic signs intended to render pronunciation.
+  - id: CDLI_RS_20_149
+    url: https://cdli.earth/artifacts/332946
+    role: >
+      Digital transliteration of a quadrilingual lexical witness, including
+      Akkadian, Hurrian and syllabically written Ugaritic columns.
+  - id: USC_UGARITIC_TEXTS
+    url: https://dornsife.usc.edu/wsrp-temp/wp-content/uploads/sites/155/2023/05/Ugaritic-Texts.pdf
+    role: >
+      Identifies KTU 5.14 / RS 19.159 as a scribal exercise with Ugaritic alphabet
+      plus syllabic/phonetic equivalents.
+  - id: USER_MULTILINGUAL_SURVEY
+    role: contextual_inventory
+    note: >
+      The supplied survey lists Ugarit bilinguals involving Akkadian-Hittite,
+      Akkadian-Hieroglyphic Luwian, Sumerian-Akkadian, Ugaritic-Akkadian,
+      plus trilingual and quadrilingual lexical/literary combinations.
+
+graph_nodes:
+  SUM_SYL:
+    language: Sumerian
+    script: logo_syllabic_cuneiform
+    role: lexical_source_column
+  AKK_SYL:
+    language: Akkadian
+    script: logo_syllabic_cuneiform
+    role: lexical_equivalent_and_pronunciation_scaffold
+  HUR_SYL:
+    language: Hurrian
+    script: syllabic_cuneiform
+    role: lexical_equivalent
+  UGA_SYL:
+    language: Ugaritic
+    script: syllabic_cuneiform
+    role: fully_vocalized_lexical_column
+  UGA_ALPHA:
+    language: Ugaritic
+    script: alphabetic_cuneiform
+    role: native_consonantal_text_state
+  HUR_ALPHA:
+    language: Hurrian
+    script: Ugaritic_alphabetic_cuneiform
+    role: cross_script_control
+
+edges:
+  - id: UG-E01
+    source: SUM_SYL
+    target: AKK_SYL
+    type: lexical_equation
+    granularity: G2
+    crosswalk_depth: X4
+    evidence: explicit_ancient
+  - id: UG-E02
+    source: AKK_SYL
+    target: HUR_SYL
+    type: lexical_equation
+    granularity: G2
+    crosswalk_depth: X4
+    evidence: explicit_ancient
+  - id: UG-E03
+    source: HUR_SYL
+    target: UGA_SYL
+    type: lexical_equation
+    granularity: G2
+    crosswalk_depth: X4
+    evidence: explicit_ancient
+  - id: UG-E04
+    source: UGA_ALPHA
+    target: AKK_SYL
+    type: sign_pronunciation_approximation
+    witness: KTU_5_14_RS_19_159
+    granularity: G0_G1
+    crosswalk_depth: X5
+    evidence: explicit_ancient
+  - id: UG-E05
+    source: UGA_SYL
+    target: UGA_ALPHA
+    type: same_language_cross_script
+    granularity: G1_G2
+    crosswalk_depth: X4
+    evidence: specialist_reconstruction_from_syllabic_and_alphabetic_attestations
+  - id: UG-E06
+    source: HUR_SYL
+    target: HUR_ALPHA
+    type: same_language_cross_script
+    granularity: G1_G3
+    crosswalk_depth: X2_X4
+    evidence: archive_attested
+  - id: UG-E07
+    source: AKK_SYL
+    target: UGA_ALPHA
+    type: bilingual_archive_contact
+    granularity: G2_G5
+    crosswalk_depth: X2_X4
+    evidence: archive_attested
+
+copy_covariance:
+  quadrilingual_vocabulary_family:
+    reported_copy_count: 8
+    languages: [Sumerian, Akkadian, Hurrian, Ugaritic]
+    writing_mode: syllabic_cuneiform
+    use: >
+      Compare lexical-row survival, spelling variation, omissions and damage across
+      copies before treating any one tablet as the complete lexical state.
+    rule: "eight copies are one scribal tradition with internal covariance, not eight independent language-family witnesses"
+
+anchored_cycle_examples:
+  - id: UG-CYC01
+    name: bunušu_man_cycle
+    level: lexical_semantic_cross_script
+    path:
+      - "alphabetic Ugaritic bnš"
+      - "syllabic Ugaritic bu-nu-šu"
+      - "Akkadian a-mi-lu in RS 20.149 lexical row"
+      - "semantic address MAN"
+      - "alphabetic Ugaritic bnš"
+    support:
+      - "CDLI RS 20.149 preserves a-mi-lu = Hurrian tar-šu-wa-an-ni = Ugaritic bu-nu-šu in repeated lexical rows."
+      - "Specialist Ugaritic grammars pair alphabetic bnš with syllabic bu-nu-šu and gloss it as man."
+    expected_residual: >
+      Ugaritic alphabetic writing suppresses vowels that syllabic Ugaritic makes visible;
+      semantic equivalence with Akkadian is not phonetic identity.
+    status: anchored_cycle
+
+  - id: UG-CYC02
+    name: alphabet_to_syllabic_to_lexicon_cycle
+    level: sign_to_lexeme_multiscale
+    path:
+      - "UGA_ALPHA sign inventory"
+      - "KTU 5.14 Akkadian syllabic pronunciation approximations"
+      - "UGA_SYL fully vocalized forms in polyglot vocabularies"
+      - "UGA_ALPHA lexical spellings in alphabetic corpus"
+    status: structural_cycle
+    caveat: >
+      This is a cross-granularity consistency cycle, not a claim that KTU 5.14
+      directly spells every lexical item in the quadrilingual vocabularies.
+
+  - id: UG-CYC03
+    name: semantic_quadrilateral
+    level: lexical_equivalence
+    path: [SUM_SYL, AKK_SYL, HUR_SYL, UGA_SYL]
+    status: ancient_crosswalk_family
+    test: >
+      For rows surviving across multiple vocabulary copies, pairwise mappings should
+      close around the four-language loop without requiring incompatible semantic states.
+
+cycle_metrics:
+  - closure_success
+  - damaged_edge_count
+  - lexical_semantic_residual
+  - phonological_approximation_residual
+  - copy_to_copy_variance
+  - script_loss_or_gain
+  - dependency_corrected_edge_count
+
+frozen_invariants:
+  - "same language can be written in more than one script state"
+  - "same cuneiform medium can encode alphabetic and syllabic systems"
+  - "lexical equivalence does not imply cognacy"
+  - "fully vocalized syllabic Ugaritic is a calibration bridge to consonantal alphabetic Ugaritic"
+  - "polyglot copies form a covariance family, not independent votes"
+  - "cycle consistency is strongest when paths traverse genuinely different representation modes"
+
+next_pass:
+  - "Source-lock several additional quadrilingual rows from CDLI and Huehnergard."
+  - "Compute row-by-row closure residuals across all accessible quadrilingual copies."
+  - "Compare alphabetic versus syllabic Ugaritic spellings for the same lexemes."
+  - "Use KTU 5.14 only for sound-class constraints actually preserved on the fragment."
+  - "Add Hittite/Luwian archive edges only where object-level correspondences are source-locked."

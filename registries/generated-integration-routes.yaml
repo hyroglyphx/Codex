@@ -1,0 +1,79 @@
+registry_status: GENERATED
+checkpoint: 2026-09-20
+warning: >
+  These twelve routes are a new integration map. They are not claimed to be
+  the missing original "12 proofs / 7 domains / 20+ fusions" enumeration.
+
+routes:
+  - id: R01
+    name: ECVR-to-IER
+    source_chain: ECVR
+    transform: culture-aware representation normalization
+    target: IER
+    invariant_focus: chronology-script-phonology-semantics coherence
+  - id: R02
+    name: Numeral-Carrier-to-Adversary
+    source_chain: numeral-seven carrier
+    transform: positive/partial/negative control matrix
+    target: Adversary
+    invariant_focus: strict carrier survival under controls
+  - id: R03
+    name: RNCE-to-Return
+    source_chain: RNCE / NOTC
+    transform: reversible carrier and operator transport
+    target: ARGO return loop
+    invariant_focus: reconstructibility
+  - id: R04
+    name: ARGO-to-Relay
+    source_chain: ARGO NAVIS / OLF / HPOF
+    transform: bounded traversal state plus route/orientation/jurisdiction
+    target: Relay Kernel
+    invariant_focus: carrier identity across traversal
+  - id: R05
+    name: RSHE-to-Nexus
+    source_chain: RSHE
+    transform: recursive symbolic-harmonic representation bridge
+    target: Nexus
+    invariant_focus: cross-representation structural persistence
+  - id: R06
+    name: Council-to-Ablation
+    source_chain: Human Thought Perspectives Sieve
+    transform: parser-specific interpretation and removal tests
+    target: Council
+    invariant_focus: conclusions robust to perspective removal
+  - id: R07
+    name: GHAT-to-ClaimGraph
+    source_chain: GHAT-OIP / IAST
+    transform: operator graph with implied-assumption detection
+    target: Claim graph
+    invariant_focus: dependency transparency
+  - id: R08
+    name: AutoProof-to-Validation
+    source_chain: AutoProof Forge / MTCC
+    transform: definition lock, lemmas, counterexamples, proof/test grading
+    target: Validation layer
+    invariant_focus: derivational closure
+  - id: R09
+    name: Reuptake-to-Confluence
+    source_chain: Reuptake / cross-chat continuity
+    transform: source-state recovery with provenance labels
+    target: Confluence
+    invariant_focus: historical state continuity
+  - id: R10
+    name: IER-to-Organon
+    source_chain: Invariant Ecology Registry
+    transform: normalized object ecology into admissible experiment choice
+    target: Organon
+    invariant_focus: operation/invariant fit
+  - id: R11
+    name: Organon-to-Builder
+    source_chain: Organon
+    transform: bounded WorkPacket
+    target: Builder
+    invariant_focus: instruction fidelity
+  - id: R12
+    name: Builder-to-Relay
+    source_chain: Builder
+    transform: ResultPacket with preserved/altered/lost/introduced fields
+    target: Relay Kernel
+    invariant_focus: return-path closure

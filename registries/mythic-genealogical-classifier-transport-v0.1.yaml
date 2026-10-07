@@ -1,0 +1,99 @@
+version: "0.1"
+date: "2026-09-23"
+id: MYTHIC_GENEALOGICAL_CLASSIFIER_TRANSPORT
+status: ADOPTED_PROJECT_SUPPLEMENT
+parent: ASL-W4.3
+protocol: docs/architecture/asl-w4.3a-mythic-genealogical-classifier-transport.md
+operators:
+  PHOR-01:
+    name: CIVIC_AGGREGATION
+    path: [DISPERSED_HOUSEHOLDS,GATHER,COMMUNITY,LAW,TECHNOLOGY_FIRE,POLITICAL_ORDER]
+  PHOR-02:
+    name: SPEECH_FRAGMENTATION_TO_LOCAL_ORDER
+    path: [COMMON_ORDER,SPEECH_DIFFERENTIATION,SOCIAL_POLITICAL_DIFFERENTIATION,LOCAL_REAGGREGATION,LAW_KINGSHIP]
+  PHOR-03:
+    name: GEO_GENEALOGICAL_COMPRESSION
+    path: [GEOGRAPHIC_FEATURE,PERSONIFICATION,KINSHIP,FOUNDER_RULER,TERRITORIAL_IDENTITY]
+  PHOR-04:
+    name: RELATIONAL_ROLE_PERMUTATION
+    rule: "stable entity identity does not require fixed kinship graph"
+  PHOR-05:
+    name: POLITICAL_PARTITION_TO_TERRITORIAL_LINEAGE
+    path: [PRIOR_POLITICAL_UNITY,SUCCESSION_PARTITION,GENEALOGICAL_BRANCH,TERRITORIALIZATION]
+  PEL-01:
+    name: AUTHORIAL_CLASSIFIER_LAW
+    rule: "ETHNONYM != EMIC_SELF_IDENTIFICATION"
+  PEL-02:
+    name: FOLK_ETYMOLOGY_FALSE_POSITIVE
+    path: [PHONETIC_RESEMBLANCE,SEMANTIC_STORY,HISTORICAL_NARRATIVE]
+  PEL-03:
+    name: COMPOSITE_ETHNONYM
+    rule: "joint ancient classification does not auto-promote identity, language, ancestry, or migration"
+  PEL-04:
+    name: RETROACTIVE_SPATIAL_UNIFICATION
+    rule: "place-memory preservation != demonstrated historical polity"
+classifier_provenance_fields:
+  - classifier_author
+  - classifier_date
+  - classifier_audience
+  - classifier_purpose
+  - emic_or_etic
+  - referent_location
+  - referent_period
+  - source_provenance
+mythic_relation_metadata:
+  - CLASSIFIER_PROVENANCE
+  - KINSHIP_EDGE_PROVENANCE
+  - NARRATIVE_PHASE
+  - PLACE_ADDRESS
+  - POLITICAL_ROLE
+  - EMIC_ETIC_STATE
+negative_controls:
+  - Pelasgos_pelargos_folk_etymology
+  - Pelasgian_authorial_classifier
+  - retrospective_territorial_unification
+  - kinship_permutation
+experiments: [MG-01,MG-02,MG-03,MG-04,CL-01,CL-02,CL-03,CL-04]
+governing_rules:
+  - "mythic genealogy is evidence for a culture's model of relation before literal descent"
+  - "ethnonym recurrence is evidence for classifier continuity before population continuity"
+
+substrate_classifier_extension:
+  PEL-05:
+    name: SUBSTRATE_CLASSIFIER_FIREWALL
+    rule: "PRE_GREEK_SUBSTRATE != PELASGIAN_AUTHORIAL_CLASSIFIER != POPULATION_IDENTITY"
+  PEL-06:
+    name: TOPONYMIC_MORPHOLOGY_SEPARATION
+    rule: "toponymic morphology does not auto-promote ethnonym, population, migration, or single-language identity"
+  control: registries/pre-greek-substrate-pelasgian-separation-control-v0.1.yaml
+  role_metadata: [OBSERVER,JURISDICTION,PHASE,RELATION,PERMISSIONS,DUTIES]
+  MG-05:
+    name: EPONYMIC_CLASSIFIER_CASCADE
+    path: [PERSON,POLITICAL_SETTLEMENT_ACT,PEOPLE_OR_TERRITORY_CLASSIFIER,OPTIONAL_COLONIAL_EXPORT]
+    controls: [Dorus_Dorians,Achaeus_Achaeans_Achaea,Ion_Ionians_Ionia,Aetolus_Aetolia,Lycus_Lycians]
+  MG-06:
+    name: TERRITORY_CLASSIFIER_SUCCESSION
+    rule: "same land may carry successive population-linked names"
+    control: [Aegialeia,Ionia,Achaea]
+  MG-07:
+    name: LOCAL_TO_PANETHNIC_SCALE_EXPANSION
+    path: [LOCAL_CLASSIFIER,REGIONAL_CLASSIFIER,PANETHNIC_CLASSIFIER]
+    control: [Hellas_Hellenes,Panhellenes]
+  MG-08:
+    name: SUCCESSIVE_EPONYMIC_OVERWRITE
+    rule: "same geography may accumulate competing eponymic names across narrative or political phases"
+    control: [Pyrrhaea,Haemonia,Hellas,Thessaly,Nessonis]
+  MG-09:
+    name: POLITICAL_ETHNONYM_IMPOSITION
+    path: [AUTHORITY,RENAMING_RULE,NEW_COLLECTIVE_CLASSIFIER]
+    control: Pelasgians_to_Danaans
+  MG-10:
+    name: INHERITED_COMPOSITE_ETHNONYM
+    path: [PREDECESSOR_EPONYM,SUCCESSOR_RULE,MIXED_SUBJECTS,INHERITED_COLLECTIVE_NAME]
+    control: Latinus_Aeneas_Latini
+
+strabo_founder_geography_extension:
+  study: studies/strabo-founder-genealogy-geography-v0.1.md
+  data: data/calibration/strabo-founder-genealogy-geography-v0.1.yaml
+  firewall: "GENEALOGICAL_BRANCH != FIXED_LINGUISTIC_BRANCH"
+

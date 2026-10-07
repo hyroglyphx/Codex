@@ -1,0 +1,214 @@
+dataset: bruce-askew-protocol-crosswalk
+version: 0.1.0
+updated: 2026-09-22
+status: SOURCE_LOCKED_FIRST_PASS
+nexus_id: RN15
+
+purpose: >
+  Use the Bruce Codex / Books of Jeu and the Askew Codex / Pistis Sophia as a
+  cross-codex calibration for multimodal ritual credentials, external protocol
+  pointers, hermeneutic crosswalks, and later reweighting of inherited ritual manuals.
+
+sources:
+  - id: NASSCAL_BOOKS_OF_JEU
+    url: https://www.nasscal.com/e-clavis-christian-apocrypha/books-of-jeu/
+    role: >
+      Specialist overview: Bruce 96 is the only direct witness of the Books of Jeu;
+      the surviving codex is fourth/fifth century; the texts describe aeons/treasuries,
+      seals, ciphers, formulas and diagrams used in ascent.
+  - id: NASSCAL_PISTIS_SOPHIA
+    url: https://www.nasscal.com/e-clavis-christian-apocrypha/pistis-sophia/
+    role: >
+      Specialist overview: Pistis Sophia survives only in the Askew Codex in Sahidic
+      Coptic and is a post-resurrection revelatory dialogue.
+  - id: EVANS_2012
+    url: https://era.ed.ac.uk/items/98432d44-2e2e-4134-8362-5a7f03fcba10
+    role: >
+      Comparative scholarly study arguing for a coherent related ritual/theological
+      tradition across the Books of Jeu and Pistis Sophia while preserving development
+      and textual differences.
+  - id: EVANS_DIAGRAMS
+    url: https://era.ed.ac.uk/bitstream/handle/1842/9438/Evans2012.pdf
+    role: >
+      Specialist analysis: diagrams occur in the Books of Jeu; Pistis Sophia lacks the
+      diagrams themselves but presumes knowledge of types/ciphers/seals in passages
+      such as 2PS 247 and 3PS 289-291.
+  - id: JOHNSTON_2015
+    url: https://poj.peeters-leuven.be/content.php?id=3132120&url=article
+    role: >
+      Literary parallels between Pistis Sophia Book Four and the Books of Jeu,
+      supporting close cross-codex comparison while leaving exact compositional
+      relationship open.
+  - id: JTS_CANON_2022
+    url: https://academic.oup.com/jts/article/73/2/649/6815670
+    role: >
+      Scholarly analysis of Pistis Sophia Books 1-3: disciples answer Pistis Sophia's
+      repentances/praises with Psalms or Odes presented as their interpretation/solution.
+  - id: SCHMIDT_MACDERMOT
+    url: https://brill.com/display/book/edcoll/9789004438866/BP000002.pdf
+    role: "Critical-edition tradition for the Books of Jeu / Bruce Codex."
+  - id: EVANS_HANDBOOKS
+    url: https://books.google.com/books/about/The_Books_of_Jeu_and_the_Pistis_Sophia_a.html?id=pcZWCgAAQBAJ
+    role: >
+      Monograph organizing the related corpus into baptism/ascent guides, moral living,
+      and myths, and treating the texts as ritual handbooks rather than loose curiosities.
+
+witnesses:
+  - id: BA-W1
+    name: Bruce_Codex_Books_of_Jeu
+    shelfmark: "Oxford, Bodleian Library, MS Bruce 96"
+    surviving_language: Sahidic_Coptic
+    underlying_language: "Greek composition/translation commonly proposed; exact compositional history remains debated"
+    witness_state: damaged_incomplete
+    distinctive_modalities:
+      - spoken_names
+      - graphic_seals
+      - ciphers_numbers
+      - diagrams_types_characters
+      - ritual_actions
+      - repeated_recitations
+      - spatial_treasuries_aeons_gates
+      - authorization_passage
+    note: >
+      The conventional title "Books of Jeu" is not itself the surviving manuscript
+      title of both works; the identification is linked to Pistis Sophia's references
+      to "two Books of Jeu" and Schmidt's scholarly identification.
+
+  - id: BA-W2
+    name: Askew_Codex_Pistis_Sophia
+    surviving_language: Sahidic_Coptic
+    witness_state: largely_complete_with_lacunae_and_internal_divisions
+    distinctive_modalities:
+      - revelatory_dialogue
+      - mysteries_and_baptismal_discourse
+      - textual_references_to_Books_of_Jeu
+      - references_to_types_ciphers_seals
+      - scriptural_solution_crosswalks
+      - moral_and_soteriological_reweighting
+    note: >
+      The Askew witness does not reproduce the Bruce diagrams, yet scholarly analysis
+      shows that parts of Pistis Sophia still presuppose knowledge of types, ciphers and seals.
+
+cross_codex_relations:
+  - id: BA01
+    source: Askew_Pistis_Sophia
+    target: Bruce_Books_of_Jeu
+    crosswalk_kind: metatextual_protocol_pointer
+    granularity: G7
+    evidence_class: C1
+    status: source_locked
+    observation: >
+      Pistis Sophia refers to "two Books of Jeu"; this later textual pointer is the basis
+      for the conventional identification of the Bruce works, though exact identity/order
+      remains a scholarly question.
+    lesson: "A later witness can identify or point to an external protocol corpus without reproducing it."
+
+  - id: BA02
+    source: Bruce_explicit_diagram_seal_cipher_system
+    target: Askew_references_to_types_ciphers_seals
+    crosswalk_kind: modality_externalization
+    granularity: G3_G6
+    evidence_class: C1
+    status: source_locked
+    observation: >
+      The Bruce works visibly carry diagrams, seals and ciphers; Pistis Sophia passages
+      can presuppose this apparatus textually without drawing it.
+    lesson: "VISIBLE_MODALITY != PRESUPPOSED_MODALITY."
+
+  - id: BA03
+    source: Bruce_treasury_ascent_instruction
+    target: gate_specific_authorization_state
+    crosswalk_kind: multimodal_credential_bundle
+    granularity: G3_G5
+    evidence_class: C0_C1
+    status: source_locked
+    credential_tuple:
+      P: "uttered seal-name / additional divine name"
+      G: "seal or character"
+      N: "cipher / number"
+      R: "sealing oneself, holding cipher, orientation/ritual action"
+      T: "ordered repetition and sequence"
+      L: "specific treasury/aeon/gate"
+      I: "authorized identity/passage state"
+    lesson: >
+      The historical texts explicitly bind multiple modalities to one local passage
+      condition; the Nexus term "synchronization" is a modern structural description,
+      not an ancient technical term.
+
+  - id: BA04
+    source: "2 Pistis Sophia treatment of Books of Jeu"
+    target: "3 Pistis Sophia treatment of Books of Jeu"
+    crosswalk_kind: ritual_schema_reweighting
+    granularity: G6_G7
+    evidence_class: C1
+    status: source_locked
+    observation: >
+      Evans notes a difference in tone: 2PS can describe some remaining mysteries in
+      the two Books of Jeu as inferior/unneeded for the disciples, while 3PS presents
+      the Books' mysteries as necessary even for the righteous.
+    lesson: >
+      A tradition can preserve the same referenced protocol while changing its
+      authority/necessity weight across textual strata.
+
+  - id: BA05
+    source: Pistis_Sophia_repentance_or_praise
+    target: Psalm_or_Ode_solution
+    crosswalk_kind: hermeneutic_crosswalk
+    granularity: G5_G6
+    evidence_class: C0
+    status: explicit_textual_alignment
+    observation: >
+      In Books 1-2, disciples cite Psalms or Odes as the "solution"/interpretation
+      of Pistis Sophia's repentances and praises.
+    examples:
+      - "Repentance/praise 1 -> Psalm 68"
+      - "Repentance/praise 2 -> Psalm 70"
+      - "Further cycles use additional Psalms and Odes"
+    lesson: >
+      Ancient crosswalks can be interpretive rather than translational: one discourse
+      is explicitly mapped onto another as its solution.
+
+  - id: BA06
+    source: physical_Bruce_Codex
+    target: Woide_and_later_editorial_reconstruction
+    crosswalk_kind: witness_proxy_relay
+    granularity: G7
+    evidence_class: C1
+    status: source_history_control
+    observation: >
+      The Bruce manuscript suffered disorder and deterioration; early transcription
+      and later editorial reconstruction preserve information not safely reducible to
+      the present physical leaf order.
+    lesson: "MANUSCRIPT_STATE != ORIGINAL_TEXT_ORDER; derivative witness history must be typed."
+
+new_variables:
+  - crosswalk_kind
+  - protocol_pointer
+  - visible_modality
+  - presupposed_modality
+  - externalized_modality
+  - credential_tuple
+  - protocol_authority_weight
+  - ritual_necessity_weight
+  - hermeneutic_solution_source
+  - witness_proxy
+  - codex_order_confidence
+  - work_title_source
+  - diagram_presence
+  - diagram_presupposition
+
+derived_rules:
+  - "Crosswalk depth and crosswalk kind are orthogonal."
+  - "Absence of a modality in one witness is not evidence of absence from the wider protocol when another source explicitly presupposes it."
+  - "The inverse does not hold: one may not invent a missing modality without a textual/material pointer."
+  - "A ritual credential is a typed tuple, not a single password."
+  - "Protocol survival does not imply stable protocol authority."
+  - "Hermeneutic alignment is not translation, but it is still an explicit ancient crosswalk."
+  - "Codex adjacency/order and composition order must be separated."
+
+next_pass:
+  - "Encode several Bruce treasury/baptism credential tuples at occurrence level."
+  - "Encode the full Pistis Sophia repentance->Psalm/Ode solution graph."
+  - "Compare 2PS and 3PS protocol-authority weights passage by passage."
+  - "Apply VISIBLE_MODALITY/PRESUPPOSED_MODALITY distinction to other incomplete ritual corpora."
+  - "Use the Bruce/Askew pair as a positive control when deciding whether an absent graphical/ritual layer can be inferred from a textual pointer."

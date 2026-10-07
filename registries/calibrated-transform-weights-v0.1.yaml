@@ -1,0 +1,111 @@
+registry: calibrated-transform-weights
+version: 0.1.0
+updated: 2026-09-21
+status: FROZEN_EXPLORATORY
+scope: historical-linguistic-crosswise-analysis
+
+purpose: >
+  Freeze the first scoring grammar learned from the Rosetta Nexus calibration family.
+  These values are heuristic analysis weights, not probabilities and not statistical
+  estimates of cognacy. They are used to force explicit bookkeeping and comparable
+  treatment across candidate relations.
+
+principles:
+  - "Alignment support and historical-relation support are separate scores."
+  - "A secure translation/equation does not imply cognacy."
+  - "A strong surface carrier does not imply historical relation."
+  - "Explicit ancient crosswalks receive more calibration weight than retrospective resemblance."
+  - "Native morphology can veto an attractive stripped form."
+  - "Genealogically related daughter languages do not count as independent witnesses."
+  - "Contact and chronology change historical-relation cost but do not alone establish descent."
+  - "Scores never override evidence class, relation type, or explicit counterevidence."
+
+alignment_score:
+  symbol: A
+  meaning: >
+    How securely two witnessed representations are aligned to the same or corresponding
+    semantic/referential state at the declared granularity.
+  weights:
+    witness_quality: 0.20
+    explicit_crosswalk: 0.20
+    semantic_address_match: 0.18
+    alignment_granularity_fit: 0.12
+    cross_witness_covariance: 0.15
+    chronology_control: 0.08
+    negative_control_survival: 0.07
+  formula: >
+    A = 0.20W + 0.20X + 0.18S + 0.12G + 0.15C + 0.08T + 0.07N
+  note: "Each component is normalized 0..1."
+
+historical_relation_score:
+  symbol: H
+  meaning: >
+    How well the evidence supports inheritance, borrowing, root relation, or another
+    historical lexical connection, as opposed to mere alignment or resemblance.
+  weights:
+    phonological_admissibility: 0.22
+    morphological_admissibility: 0.22
+    chronology: 0.14
+    contact_or_genealogical_path: 0.14
+    semantic_continuity: 0.10
+    independent_witness_support: 0.10
+    negative_control_survival: 0.08
+  formula: >
+    H = 0.22P + 0.22M + 0.14T + 0.14C + 0.10S + 0.10I + 0.08N
+  note: "Each component is normalized 0..1."
+
+interpretive_bands:
+  anchored: ">= 0.80"
+  supported: "0.65 .. 0.79"
+  candidate: "0.50 .. 0.64"
+  weak: "0.35 .. 0.49"
+  control_or_rejected_for_claim: "< 0.35"
+
+hard_ceilings:
+  - id: HC1
+    trigger: "surface match requires arbitrary onset/medial/final stripping with no native morphological license"
+    historical_relation_ceiling: 0.34
+  - id: HC2
+    trigger: "unrelated families + no contact path + no regular correspondence set"
+    historical_relation_ceiling: 0.29
+  - id: HC3
+    trigger: "native etymology or explicit specialist source contradicts the proposed direct cognacy"
+    historical_relation_ceiling: 0.29
+  - id: HC4
+    trigger: "candidate biconsonantal kernel lacks attested morphology or recurrent extension behavior"
+    historical_relation_ceiling: 0.49
+  - id: HC5
+    trigger: "cross-family feature-enrichment claim has not yet been tested against a frozen null matrix"
+    historical_relation_ceiling: 0.49
+  - id: HC6
+    trigger: "parallel witness is translation/equivalence only"
+    action: "report A; do not infer H unless an independent historical relation is being tested"
+
+calibration_lessons:
+  Rosetta:
+    - "same proposition can preserve semantic address while titles/divine names are culturally recast"
+    - "damage is not omission"
+  Behistun:
+    - "parallel versions can differ by composition stage, discourse formula frequency, and audience-specific detail"
+    - "translation direction/editorial sequence are independent variables"
+  Tell_Fekheriye:
+    - "phrase-level alignment can be strong while lexical semantic range shifts"
+    - "operator preservation and word identity are separate"
+  KTU_5_14:
+    - "explicit crosswalk can be maximally secure while target phonetic precision remains lossy"
+    - "source/target inventory limits must be modeled"
+  Ebla:
+    - "stable lexical address can coexist with gloss absence, spelling variation, or alternate lexical choices across copies"
+    - "copy covariance is evidence, not noise"
+
+required_output_fields:
+  - relation_id
+  - relation_type
+  - alignment_score
+  - historical_relation_score
+  - hard_ceiling_applied
+  - evidence_class
+  - status
+  - strongest_support
+  - strongest_counterweight
+  - next_discriminating_test

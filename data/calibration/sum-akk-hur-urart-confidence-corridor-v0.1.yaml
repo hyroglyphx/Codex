@@ -1,0 +1,61 @@
+version: "0.1"
+date: "2026-09-25"
+id: SUM_AKK_HUR_URART_CONFIDENCE_CORRIDOR
+status: EDGE_TYPED_FIRST_PASS
+
+edges:
+  SUMERIAN_TO_AKKADIAN:
+    relation: [script_adaptation,lexical_crosswalk,heterogram_continuity]
+    confidence: A
+    anchors: ["LUGAL=šarrum","bilingual lexical lists","Sumerograms in Akkadian"]
+
+  AKKADIAN_TO_URARTIAN:
+    relation: [script_transmission,royal_formula_transfer,institutional_register]
+    confidence: A
+    anchors: [Sarduri_I_Assyrian_phase,Kal_e_Shin_bilingual,Ispuini_Menua_Urartian_shift]
+
+  HURRIAN_TO_URARTIAN:
+    relation: genetic
+    confidence: A
+    anchors: [shared_morphology,Old_Hurrian_proximity,phonological_correspondences]
+
+  AKKADIAN_TO_HURRIAN:
+    relation: [loan_contact,cultic_vocabulary,scribal_mediation]
+    confidence: B
+    anchors: ["ḫasīsu -> ḫazizi candidate","Akkadian-mediated Sumerian cultural vocabulary"]
+
+candidate_probes:
+  SHU_HAND:
+    forms:
+      Sumerian: "šu"
+      Hurrian: "šu-ni / su-ni"
+      Urartian: "su-"
+    relation: formal_semantic_match
+    confidence: C
+    ancestry_status: unproven
+
+  COME:
+    forms:
+      Sumerian: "ŋen"
+      Hurrian: "un-"
+      Urartian: "nun-"
+    relation: formal_semantic_match
+    confidence: D_C
+    note: "Hurrian-Urartian internal relationship unclear"
+
+  METALWORKER:
+    forms:
+      Hurrian: "tabiri"
+      Sumerian: "tibira/tabira"
+    relation: early_contact_candidate
+    confidence: C
+
+carrier_controls:
+  Urartian_logograms: [LUGAL,MAN,KUR,URU,DINGIR,ID]
+  Urartian_native: [ebani,patari,pili,nun]
+
+firewalls:
+  - "transmission corridor != genetic macrofamily"
+  - "Sumerian-Hurrian lexical resemblance cannot outrank bilingual/script evidence"
+  - "Akkadian mediation must be tested before direct Sumerian-Hurrian borrowing"
+  - "Hurrian-Urartian genetic relation is secure; external genetic relation is not"

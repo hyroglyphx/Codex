@@ -1,0 +1,162 @@
+dataset: ugarit-cycle-residuals
+version: 0.1.0
+updated: 2026-09-22
+status: SOURCE_LOCKED_FIRST_RESIDUAL_PASS
+parent_graph: data/calibration/ugarit-multilingual-cycle-consistency-v0.1.yaml
+
+purpose: >
+  Freeze row-level closure outcomes for source-locked Ugarit multilingual lexical
+  material. Residuals are typed rather than forced into a single numeric score.
+
+sources:
+  - id: CDLI_RS20_149
+    url: https://cdli.earth/artifacts/332946
+    role: "direct digital transliteration of RS 20.149 / Ugaritica V 130"
+  - id: SIVAN_GRAMMAR
+    url: https://e-learning.tsu.ge/pluginfile.php/5816/mod_resource/content/0/Sivan_AGrammarOfTheUgariticLanguage.pdf
+    role: "specialist Ugaritic grammar; alphabetic/syllabic equivalences including ʾat = at-ta"
+  - id: HUEHNERGARD_INTRO
+    url: https://www.scribd.com/document/694411564/An-Introduction-to-Ugaritic-John-Huehnergard
+    role: "specialist grammar/vocabulary; bnš /bunūšu/ 'man', syllabic bu-nu-šu"
+  - id: SCHNIEDEWIND_HUNT_PRIMER
+    url: https://theswissbay.ch/pdf/Books/Linguistics/Mega%20linguistics%20pack/Afro-Asiatic/Semitic/Ugaritic%2C%20A%20Primer%20on%20%28Schniedewind%20%26%20Hunt%29.pdf
+    role: "specialist primer; confirms ʾat [at-ta] and syllabic-vocalization controls"
+  - id: SCRIBAL_TOOLS_SKIN
+    url: https://dokumen.pub/scribal-tools-in-ancient-israel-a-study-of-biblical-hebrew-terms-for-writing-materials-and-implements-9781646021055.html
+    role: "secondary specialist synthesis citing Huehnergard for Ugaritic [ú?]-ru /ʿōru/ 'skin'"
+
+residual_dimensions:
+  semantic: [closed, partial, unresolved, conflicting]
+  phonological: [exact_or_near_exact, compatible, lossy, unresolved]
+  script: [closed, partial, unresolved]
+  damage: [none, minor, major]
+  dependency: [independent_edge, same_scribal_family, unknown]
+
+rows:
+  - id: UG-R02
+    source_locus: "RS 20.149 ii 2'"
+    sumerian: "LUM"
+    akkadian: "qa-an-nu-nu"
+    hurrian: "he2-isz-la-e"
+    ugaritic_syllabic: "qu-un-na#?-[nu?]"
+    ugaritic_alphabetic: null
+    residual:
+      semantic: unresolved
+      phonological: unresolved
+      script: partial
+      damage: major
+      dependency: same_scribal_family
+    status: source_locked_not_scored
+    note: "Preserve as damaged row; no semantic closure forced."
+
+  - id: UG-R03
+    source_locus: "RS 20.149 ii 3'"
+    sumerian: "ZU"
+    akkadian: "szi-i-ru"
+    hurrian: "u2-zi"
+    ugaritic_syllabic: "szi-i-ru"
+    ugaritic_alphabetic: null
+    residual:
+      semantic: unresolved
+      phonological: exact_or_near_exact
+      script: partial
+      damage: minor
+      dependency: same_scribal_family
+    status: exact_akkadian_ugaritic_syllabic_form_observed
+    note: >
+      Exact/near-exact syllabic equality is recorded as a cross-language lexical
+      phenomenon; borrowing, shared technical vocabulary, or other explanation
+      remains open until semantics and alphabetic correspondence are source-locked.
+
+  - id: UG-R04
+    source_locus: "RS 20.149 ii 4'"
+    sumerian: "ZA"
+    akkadian: "at-ta"
+    hurrian: "szi-ni-|GUDxKUR|#?"
+    ugaritic_syllabic: "at-ta"
+    ugaritic_alphabetic: "ʾat"
+    gloss: "you (2ms)"
+    residual:
+      semantic: closed
+      phonological: exact_or_near_exact
+      script: closed
+      damage: minor
+      dependency: independent_edge
+    closure_path:
+      - "Ugaritic alphabetic ʾat"
+      - "specialist grammar vocalization /ʾatta/"
+      - "RS 20.149 syllabic Ugaritic at-ta"
+      - "return to alphabetic ʾat"
+    status: anchored_same_language_cross_script_cycle
+    significance: >
+      Demonstrates that alphabetic consonantal compression and syllabic
+      vocalization can close on the same Ugaritic grammatical state.
+
+  - id: UG-R05
+    source_locus: "RS 20.149 ii 5'"
+    sumerian: "ZA"
+    akkadian: "a-mi-lu"
+    hurrian: "tar-szu#-wa-an-ni#"
+    ugaritic_syllabic: "bu-nu-szu"
+    ugaritic_alphabetic: "bnš"
+    gloss: "man / person"
+    residual:
+      semantic: closed
+      phonological: compatible
+      script: closed
+      damage: minor
+      dependency: independent_edge
+    closure_path:
+      - "Ugaritic alphabetic bnš"
+      - "specialist vocalization /bunūšu/"
+      - "RS 20.149 syllabic Ugaritic bu-nu-šu"
+      - "Akkadian a-mi-lu semantic equation"
+      - "semantic address MAN"
+      - "return to Ugaritic bnš"
+    status: anchored_lexical_semantic_cycle
+    significance: >
+      Strong multiscale cycle: consonantal Ugaritic -> vocalized Ugaritic ->
+      Akkadian lexical equivalent -> semantic address -> consonantal Ugaritic.
+
+  - id: UG-R06
+    source_locus: "RS 20.149 ii 6'"
+    sumerian: "SU"
+    akkadian: "ma-asz-ku"
+    hurrian: "asz-he2"
+    ugaritic_syllabic: "u2#?-ru"
+    ugaritic_alphabetic: "ʿr"
+    gloss: "skin / hide"
+    residual:
+      semantic: closed
+      phonological: compatible
+      script: closed
+      damage: minor
+      dependency: independent_edge
+    closure_path:
+      - "Ugaritic alphabetic ʿr"
+      - "specialist vocalization /ʿōru/"
+      - "RS 20.149 syllabic Ugaritic [ú?]-ru"
+      - "Akkadian mašku semantic equation"
+      - "semantic address SKIN/HIDE"
+      - "return to Ugaritic ʿr"
+    status: anchored_lexical_semantic_cycle
+    caveat: >
+      The initial syllabic sign is damaged/uncertain in RS 20.149. Closure is
+      semantic and cross-script, not an assertion of exact sign preservation.
+
+summary:
+  anchored_cycles: [UG-R04, UG-R05, UG-R06]
+  partial_or_unresolved: [UG-R02, UG-R03]
+  key_result: >
+    Three adjacent rows now close through independently documented Ugaritic
+    alphabetic/syllabic states or semantic lexical equations, while damaged and
+    unresolved rows remain explicitly open.
+  calibration_lesson: >
+    Cycle consistency does not require every edge to preserve the same kind of
+    information. Sound, script and semantics may supply complementary constraints.
+
+next_pass:
+  - "Add corresponding rows from other copies of the same quadrilingual vocabulary."
+  - "Measure copy-to-copy orthographic/damage residuals before treating copies as independent."
+  - "Add more same-language alphabetic/syllabic pairs such as ʾank/a-na-ku, bʿl/ba-a-lu, mlk/ma-al-ku, ksp/kas-pu."
+  - "Compute cycle closure rates by information type: phonological, semantic, morphological, and script."
