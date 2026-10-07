@@ -1,0 +1,68 @@
+version: HLTG-ART-0.1
+artifact:
+  required: [artifact_id, name, object, provenance, chronology, linguistic, witnesses, status]
+  fields:
+    artifact_id: "ART-<collection-or-site>-<identifier>"
+    name: string
+    object:
+      class: [TABLET, STELE, OSTRACON, PAPYRUS, SEAL, CYLINDER, PRISM, CONE, VESSEL, MONUMENT, WALL, COIN, WEIGHT, TAG, MANUSCRIPT, GRAFFITO, OTHER, UNKNOWN]
+      material: string
+      writing_method: string
+      condition: string
+    provenance:
+      findspot: string
+      present_location: string
+      museum_id: string
+      excavation_context: string
+      confidence: string
+    chronology:
+      date_from: string
+      date_to: string
+      dating_basis: [ARCHAEOLOGICAL, PALEOGRAPHIC, HISTORICAL, INTERNAL, SCIENTIFIC, UNKNOWN]
+    linguistic:
+      languages: []
+      scripts: []
+      direction: []
+      decipherment_status: string
+    genre: []
+    functions: []
+    content_domains: []
+    witnesses: []
+    topology: [LINEAR, TABULAR, RADIAL, CONCENTRIC, SPIRAL, NETWORK, GEOMETRIC, MIXED, UNKNOWN]
+    status:
+      evidence_level: string
+      disputed_fields: []
+
+address_model:
+  grammar: "ARTIFACT.SURFACE.REGION.LINE.TOKEN.SIGN"
+  examples:
+    - "ART-SB17.FRONT.MAIN.L03.T04.S02"
+    - "ART-YBC7289.OBVERSE.GEOMETRIC_FIGURE.DIAGONAL"
+  rule: "Use only dimensions applicable to the object; never invent missing segmentation."
+
+text_layers:
+  L0: FACSIMILE_VISUAL
+  L1: SIGN_TRANSCRIPTION
+  L2: TRANSLITERATION
+  L3: NORMALIZATION
+  L4: TRANSLATION
+  L5: ANALYSIS
+  rule: "Never overwrite an earlier layer with a later inference."
+
+witness:
+  fields: [witness_id, artifact_id, type, creator, date, source, derived_from, independence_group, rights, notes]
+  types: [PHOTO, SCAN_3D, HAND_COPY, RUBBING, DRAWING, EDITION, TRANSCRIPTION, TRANSLITERATION, NORMALIZATION, TRANSLATION]
+  rule: "Derived witnesses share an independence_group and cannot count as independent evidence without justification."
+
+observation:
+  fields: [observation_id, artifact_id, address, observer, type, value, confidence, witness_ids, interpretation, created_at]
+  rule: "Observation may be recorded with interpretation=null. Competing interpretations must not delete the observation."
+
+claim_state: [OPEN, TESTING, SUPPORTED, WEAKENED, REJECTED, CONTESTED, INSUFFICIENT_EVIDENCE]
+evidence_state:
+  E0: UNKNOWN_UNDECIPHERED
+  E1: SIGN_SYSTEM_PARTLY_UNDERSTOOD
+  E2: READOUT_CONSTRAINTS_AVAILABLE
+  E3: LANGUAGE_PARTLY_INTERPRETABLE
+  E4: SUBSTANTIALLY_UNDERSTOOD
+  E5: DEEP_CORPUS_MATURE_HISTORICAL_GRAMMAR
