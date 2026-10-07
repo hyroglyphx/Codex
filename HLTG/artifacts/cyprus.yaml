@@ -1,0 +1,65 @@
+version: CYP-ART-0.1
+artifacts:
+  - artifact_id: ART-CYP-ENKOMI-AM2336
+    name: Enkomi_Cypro_Minoan_Tablet_AM2336
+    object: {class: TABLET, material: terracotta_brown, writing_method: incised, condition: catalogued}
+    provenance:
+      findspot: Enkomi_Cyprus
+      present_location: Musee_du_Louvre_Departement_des_Antiquites_orientales
+      museum_id: "AM 2336 / Enk. 53 5"
+      excavation_context: discovered_1953
+      confidence: HIGH
+    chronology: {date_from: -1230, date_to: -1050, dating_basis: ARCHAEOLOGICAL}
+    linguistic:
+      languages: [UNKNOWN]
+      scripts: [CYPRO_MINOAN]
+      direction: [UNRESOLVED_IN_RECORD]
+      decipherment_status: UNDECIPHERED
+    dimensions_cm: {height: 8.0, length: 12.1}
+    genre: [UNKNOWN]
+    functions: [UNKNOWN]
+    nexus: [CYPRUS, AEGEAN, LEVANT]
+    benchmark_role: [UNKNOWN_LANGUAGE_UNKNOWN_SCRIPT_VALUES, CARRIER_ANALYSIS, SIGN_DISTRIBUTION]
+    sources:
+      - {type: MUSEUM_CATALOGUE, institution: Louvre, url: "https://collections.louvre.fr/en/ark:/53355/cl010131738", accessed: "2026-10-06"}
+      - {type: CORPUS_REFERENCE, citation: "Ferrara 2013, Cypro-Minoan inscriptions, no. 209"}
+      - {type: CORPUS_REFERENCE, citation: "Olivier 2007, Edition holistique des textes chypro-minoens, no. 209"}
+    status: {evidence_level: E1, disputed_fields: [LANGUAGE, SIGN_VALUES, FUNCTION]}
+
+  - artifact_id: ART-CYP-IDALION-ICS217
+    name: Idalion_Bronze_Tablet_ICS217
+    object: {class: TABLET, material: bronze, writing_method: incised, condition: excellent}
+    provenance:
+      findspot: Idalion_Dali_west_acropolis_sanctuary_of_Athena
+      present_location: Bibliotheque_nationale_de_France_Cabinet_des_Medailles
+      museum_id: "Bronzes 2297"
+      excavation_context: discovered_before_1850s
+      confidence: HIGH
+    chronology: {date_from: null, date_to: null, dating_basis: HISTORICAL}
+    linguistic:
+      languages: [CYP-GR]
+      scripts: [CYPRIOT_SYLLABARY]
+      direction: [DOCUMENTED_IN_SOURCE_TEXT]
+      decipherment_status: DECIPHERED
+    dimensions_cm: {height: 21.4, width: 14.0, thickness_mm: "4-6"}
+    surfaces:
+      A: {lines: 16}
+      B: {lines: "source_record_requires_completion"}
+    genre: [LEGAL, CONTRACT]
+    functions: [CIVIC_CONTRACT, MEDICAL_COMPENSATION, HISTORICAL_RECORD]
+    content_domains: [KING, CITY, PHYSICIANS, BATTLE, COMPENSATION]
+    benchmark_role: [CYPRIOT_SYLLABARY_CALIBRATION, KNOWN_LANGUAGE_CARRIER_MODEL, WORD_SEPARATOR_CONTROL]
+    source_note: "The text concerns an agreement between the king/city of Idalion and physicians commissioned to treat battle-wounded soldiers."
+    sources:
+      - {type: SCHOLARLY_CORPUS, institution: Kyprios_Character_NHRF, id: ICS_217, url: "https://kyprioscharacter.eie.gr/en/scientific-texts/details/inscriptions/tablet-of-idalion-ics-217", accessed: "2026-10-06"}
+    status: {evidence_level: E5, disputed_fields: []}
+
+planned_controls:
+  - artifact_id: ART-CYP-AMATHUS-BILINGUAL
+    role: ETEOCYPRIOT_GREEK_BILINGUAL_ANCHOR
+    ingestion_status: SOURCE_VERIFICATION_REQUIRED
+  - artifact_id: ART-CYP-IDALION-PHN-SYL-ICS220
+    role: PHOENICIAN_CYPRIOT_SYLLABIC_BISCRIPT_CONTROL
+    ingestion_status: SOURCE_VERIFICATION_REQUIRED
+
+methodological_note: "AM2336 and ICS217 deliberately form opposite calibration poles: undeciphered Bronze Age carrier versus deciphered first-millennium Cypriot syllabary writing known Greek. Carrier behavior learned from ICS217 must not be projected onto AM2336 without an explicit typed transformation."

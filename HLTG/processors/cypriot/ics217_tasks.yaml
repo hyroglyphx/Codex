@@ -1,0 +1,31 @@
+id: CYP-CAL-ICS217-01
+artifact: ART-CYP-IDALION-ICS217
+input: HLTG/texts/ICS217/syllabic-transliteration.tsv
+purpose: learn observable Cypriot-syllabary carrier behavior from known Arcadocypriot Greek before applying structural operators to Eteocypriot
+rules:
+  - preserve published separators as observations, not universal word-boundary truth
+  - tokenize syllabic groups and individual CV signs separately
+  - retain ga? uncertainty as uncertainty
+  - keep numeral strings typed as NUMBER_CANDIDATE, not phonetic signs
+  - do not use semantic translation during blind carrier tests
+experiments:
+  - id: CYP-CAL-01A
+    name: sign_frequency
+    output: sign counts by side, line, position, and group
+  - id: CYP-CAL-01B
+    name: boundary_profile
+    output: initial/final sign distributions and group-length distribution
+  - id: CYP-CAL-01C
+    name: recurrent_formulae
+    masks: [personal_names, known_translation]
+    output: repeated ngrams and line-spanning formula candidates
+  - id: CYP-CAL-01D
+    name: greek_inverse_control
+    privileged_fields: [L2_SYLLABIC, L3_ALPHABETIC_GREEK]
+    output: explicit carrier-loss transformations with costs
+  - id: CYP-CAL-01E
+    name: holdout
+    method: hide selected groups and rank reconstructions from carrier model plus local context
+promotion_gate:
+  require: [reproducible_transform_trace, chronology_ok, no_hidden_semantic_equivalence, holdout_score]
+  forbid: [surface_similarity_only, ancestry_inference_from_script]

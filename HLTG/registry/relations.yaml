@@ -1,0 +1,22 @@
+version: HLTG-REL-0.1
+relations:
+  GEN: genealogical_inheritance
+  SCR: script_transmission
+  BOR: lexical_or_structural_borrowing
+  CONTACT: documented_contact
+  AREAL: areal_convergence
+  SUB: substrate_influence
+  CALQUE: semantic_or_structural_calque
+  MIGRATION: population_or_scribal_movement
+  REPLACEMENT: language_or_register_replacement
+  CONT: demonstrated_continuity
+  CONT?: continuity_hypothesis
+  FUNC: functional_parallel
+  PHON: phonetic_proximity
+  SEM: semantic_proximity
+  STRUCT: structural_parallel
+  UNCERTAIN: unresolved_relation
+  REJECTED: tested_and_rejected_relation
+edge_fields: [edge_id, source, target, type, date_range, geography, invariant, loss, gain, cost, evidence, contradictions, dependencies, confidence, status, provenance]
+independence_rule: "Count ancestral/transmission nodes and independent witnesses, not modern daughters or derivative publications, when testing recurrence."
+negative_knowledge_rule: "Rejected relationships remain addressable records with reason and evidence."

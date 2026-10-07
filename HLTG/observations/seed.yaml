@@ -1,0 +1,56 @@
+version: HLTG-OBS-0.1
+observations:
+  - observation_id: OBS-SB17-0001
+    artifact_id: ART-SUSA-SB17
+    address: ART-SUSA-SB17.LINEAR_ELAMITE.SEQ01
+    observer: LEGACY_CORPUS_MIGRATION
+    type: SIGN_SEQUENCE
+    value: "su2-h-te-r i-n-su-si-na-k-ki-r"
+    confidence: HIGH
+    interpretation: "Contains proposed divine-name anchor Insusinak; full semantic translation is not implied."
+    state: MIGRATED
+
+  - observation_id: OBS-PEL-0001
+    artifact_id: ART-PEL-LIVESTOCK-CTRL
+    address: ART-PEL-LIVESTOCK-CTRL.REGISTERS
+    observer: ANCIENT_SCRIPT_LATTICE
+    type: DOCUMENT_GRAMMAR
+    value: "organized registers + repeated numerical groups + animal imagery"
+    confidence: HIGH
+    interpretation: "Administrative/livestock function outranks narrative interpretation; species and language unresolved."
+    state: MIGRATED
+
+  - observation_id: OBS-YBC7289-0001
+    artifact_id: ART-YBC-7289
+    address: ART-YBC-7289.OBVERSE.GEOMETRIC_FIGURE.DIAGONAL
+    observer: LEGACY_TCIM
+    type: SPATIAL_SEMANTICS
+    value: "1;24,51,10"
+    confidence: HIGH
+    interpretation: "Its location on the diagonal is part of its referent; value cannot be detached from geometric role."
+    state: MIGRATED
+
+  - observation_id: OBS-CYP-AM2336-0001
+    artifact_id: ART-CYP-ENKOMI-AM2336
+    address: ART-CYP-ENKOMI-AM2336
+    observer: LOUVRE_CATALOGUE_INGEST
+    type: CARRIER_METADATA
+    value: "terracotta tablet, Enkomi, Cypro-Minoan, 8 x 12.1 cm, Late Cypriot III"
+    confidence: HIGH
+    interpretation: null
+    state: SOURCE_BACKED
+
+  - observation_id: OBS-CYP-ICS217-0001
+    artifact_id: ART-CYP-IDALION-ICS217
+    address: ART-CYP-IDALION-ICS217.SIDE_A.L01
+    observer: KYPRIOS_CHARACTER_INGEST
+    type: TRANSLITERATION_AVAILABLE
+    value: "Known Greek encoded in Cypriot syllabary; continuous text uses vertical separators."
+    confidence: HIGH
+    interpretation: "Suitable positive calibration for carrier-loss and syllabic rendering rules."
+    state: SOURCE_BACKED
+
+rules:
+  - "Observers append observations; they do not overwrite canonical artifact facts."
+  - "Every interpretation can be contradicted independently of the underlying observation."
+  - "Source-backed and migrated observations remain distinguishable."
