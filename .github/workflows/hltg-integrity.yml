@@ -1,0 +1,26 @@
+name: HLTG integrity gates
+
+on:
+  pull_request:
+    paths:
+      - "HLTG/**"
+      - ".github/workflows/hltg-integrity.yml"
+  push:
+    branches: [main]
+    paths:
+      - "HLTG/**"
+      - ".github/workflows/hltg-integrity.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - name: Validate HLTG research invariants
+        run: ruby HLTG/scripts/validate_integrity.rb
