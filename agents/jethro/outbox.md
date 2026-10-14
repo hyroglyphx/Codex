@@ -381,3 +381,164 @@ primary), then execution of TC-RI/TC-TUL/TC-NUNΘ/TC-MARCH.
 handoff to ChatGPT.
 
 **Push:** via GitHub API; recorded in the commit.
+
+---
+
+## HLTG CYP-NEXUS HANDOFF — MUSE-CYP-PASS-001 (2026-10-06, user-commissioned parallel lane)
+
+The user commissioned a parallel HLTG/Crypto-Scribe lane (CYP-NEXUS sign-level analysis)
+on branch `hltg-cyprus-artifact-registry-v0.1`, coordinating via GitHub Issue #3.
+Jethro executed the prioritized first pass (ICS 217 blind -> freeze -> Greek reveal ->
+carrier model). Result is committed LOCALLY (credential-free; no push by Jethro):
+
+- Local branch: `muse-cyp-pass-001` (worktree `~/workspace/hltg-cyp-nexus`), parent `6044559`
+- Commit: `854ffe9` "MUSE-CYP-PASS-001: ICS 217 blind analysis + Greek calibration + carrier-loss model"
+- Deliverables: `HLTG/packets/cyprus-nexus-text-comparison/MUSE-CYP-PASS-001.md` (report)
+  + `MUSE-CYP-PASS-001.json` (machine-readable return structure) + analysis scripts/results.
+
+Headline findings: EXP-CYP-01 blind analysis frozen (v2, numeral-typing correction);
+87.3% sign-level forward-model match on Greek reveal; `|` separators are editorial phrase
+groups (31% multi-word), not word boundaries; new article-liaison hypothesis
+(to-no/to-ni/ta-na, TESTING, single-tablet); ICS-196 ETE_L2 witness assessed INADEQUATE
+for boundary analysis (54-sign stream, no lines/separators/damage); EXP-CYP-04 prep only.
+Full contradictions, null results, and best-next-evidence in the packet.
+
+**Steward action requested:** relay commit `854ffe9` onto `hltg-cyprus-artifact-registry-v0.1`
+(or open it as a PR) and reference the packet from Issue #3. Jethro cannot push or comment
+(credential-free lane); the TC/XI relay lane is unaffected and remains at sequence 5.
+
+## 2026-10-06 ~15:55 CDT — MUSE-CYP-PASS-002 complete (CYP-NEXUS lane)
+
+**PASS-002 DELIVERED — commit `b753709` on local branch `muse-cyp-pass-001`** (credential-free; awaiting steward relay to `hltg-cyprus-artifact-registry-v0.1` / Issue #3). PASS-001 stays frozen at `854ffe9` (packaged unaltered with manifest + SHA256).
+
+**Return contract:** `HLTG/packets/cyprus-nexus-pass-002/pass-002-return-contract.json` (all L fields populated).
+
+Stream results:
+- **A+B:** PASS-001 packaged (16 files, manifest, ENVIRONMENT, REPRODUCE). All six claims reproduced exactly: ka-se=16; formula 4x; Onasil- alternations; 0→4/1→153/2→63/3→6/4→1; 70/227=30.8%; 815/934=87.26%. Two immaterial discrepancies recorded (stale prose parenthetical; 223 vs 227 = numeral-only groups).
+- **C:** Segmentation ontology DOCUMENT→LINE→EDITORIAL_GROUP→CANDIDATE_WORD→SYLLABIC_SIGN. Load-bearing change: rename TOKEN→EDITORIAL_GROUP in the address grammar; CANDIDATE_WORD as standoff spans only.
+- **D:** ICS 217 lines 29–31 RECOVERED from Georgiadou 2015 (kyprioscharacter.eie.gr), per-sign sourced. 10 discrepancies in 1–28, ZERO sign-value differences. New Greek-context attestation of sign type `so`.
+- **E:** HYP-CYP-ARTICLE-N-001 refined to clitic-final -ν: 12/12 liaison before vowels, 14/15 dropped before consonants, 11/11 lexical -ne fixed. External confirmation from Idalion bilingual BM 125320. Zero contradictions found (honest). Status stays TESTING (single-site Idalion, ~470–388 BCE).
+- **F–J:** ICS 196 witness recovered (Masson via Palaima 2005 + Sittig 1914 photo, public domain). Repo yaml had 4 errors incl. hard `va→wa`. ICS196-BLIND-v1 built (52 certain + 2 uncertain signs, 11 groups, 2 lines). 4 deterministic negative controls. EXP-CYP-02 15-feature battery run + frozen as MUSE-CYP-PASS-002-FREEZE. **Stopped before Greek reveal.** Honest null: no recurrence in the Eteocypriot corpus (all hapax); alternation detector shown non-discriminative via controls.
+
+**ready_for_pass_003: TRUE (conditional)** — conditions: verify 4 disputed ICS 196 sign values against Masson/IG XV before reveal; run reveal as sensitivity analysis over variants; blind null stands (alignment of blind-observed distributions only).
+
+**Standing user constraint (new):** NO Eteocypriot language-family comparison (Basque, Luwian, Hurrian, Semitic, Anatolian…) until PASS-003's controlled semantic anchors. Morphology from internal structure first.
+
+Best next evidence: Masson ICS pp. 206–209 / IG XV 1.1 n° 7 for the 4 disputed signs; sourced Cherokee/Vai control excerpt; non-Idalion article+vowel contexts.
+
+## 2026-10-06 ~16:10 CDT — MUSE-CYP-PASS-003 complete (CYP-NEXUS lane)
+
+**PASS-003 DELIVERED — commit `0a849c3` on local branch `muse-cyp-pass-001`** (credential-free; awaiting steward relay). Return contract: `HLTG/packets/cyprus-nexus-pass-003/pass-003-return-contract.json`.
+
+- **§1+§2:** 4 disputed signs resolved (tu-to MEDIUM, ti MEDIUM-HIGH, na-?-? UNKNOWN SECURE, Masson boundaries MEDIUM); `va` retained as rejected. No BLIND-v1 regeneration, no blind result changed. Pre-reveal freeze hashed; holdout opened with hash verification (untampered).
+- **§3:** Bilingual classification PARTIAL_EQUIVALENCE (MEDIUM) — same artifact YES, same event PROBABLE, same proposition UNVERIFIED, same syntax NO.
+- **§4–6:** Greek semantic graph (5 slots, no overt verb). Strongest alignment H1: E1g5 `a-ri-si-to-no-se` = HONOREE/NAME ↔ Ἀρίστωνα (MEDIUM). Four claim-types kept distinct; genealogical evidence explicitly NONE. H2 LOW-MEDIUM, H3 LOW, H5 (-se accusative) contradicted by 3-vs-2 counts.
+- **§7:** Retrograde retained; circularity acknowledged and broken by physical evidence.
+- **§9:** Stem/tail detector RETIRED (non-discriminative); admission rule recorded as standing.
+- **§10:** HYP-CYP-CLITIC-N-001 preserved, firewalled in the Greek carrier lane.
+- **§11:** Model C (partial overlap) wins 4 > B 3 > D 2 >> A −6 — the "full translation" reading decisively rejected under parsimony.
+- **§12:** H1 beats every counterfactual materially (0/2000 random strings reach 4-sign match; unique locus; direction-dependent; boundary-robust). E-classification: mostly E1–E3; one E4-minimal (`a-ri-si-to-` renders /arist-/, n=1); zero E5.
+
+**ready_for_pass_004: TRUE** — narrow by design: exactly one portable constraint survived. Per the directive, family comparison stays prohibited; PASS-004 must regenerate the H1-minimal constraint out-of-sample on additional Eteocypriot inscriptions first. Best next evidence: direct Masson/IG XV access for the 4 signs; more Eteocypriot texts; sourced Cherokee/Vai control.
+
+## 2026-10-06 ~18:40 CDT — MUSE-CYP-PASS-004 complete (CYP-NEXUS lane)
+
+**PASS-004 DELIVERED — commit on local branch `muse-cyp-pass-001`** (credential-free; awaiting steward relay). Return contract: `HLTG/packets/cyprus-nexus-pass-004/pass-004-return-contract.json`.
+
+- **Procurement:** Perdrizet↔ICS mapping SETTLED = ICS 195 (dossier's "194 or 195" was wrong; 195 = Louvre AM 799a = IG XV 1.1 n°6). IG XV 1.1 online UNVERIFIED. 4 full texts (195 Masson+Perna, 194, 192/193 frozen at Meister-1911) + 2 partial, all with stratum metadata. 5 clean failures recorded.
+- **Regeneration:** 195 NO-HIT — `ri`/`si` completely unattested in both strata (structural bound, not search failure). 192/193 at frozen 1911 readings NO-HIT — independence stratum clean. ICS 190 UNTESTABLE (4 signs, no context). Counterfactual nulls degenerate (0/2000 — shuffling can't invent absent signs); the inventory bound is the discriminating result.
+- **Constraint stays n=1.** ready_for_pass_005: FALSE — the gate worked as designed; family-comparison space stays CLOSED. Non-regeneration is informative per the user's standing posture.
+- Best next evidence: any Eteocypriot text containing `ri`+`si` (necessary condition); Masson 1988 supplement; IG XV 1.1 when procurable; direct Masson pp. 206–209 for the 4 disputed 196 signs.
+
+## 2026-10-06 ~18:55 CDT — Gate closed: benchmark suite + parked Eteocypriot (CYP-NEXUS)
+
+**Commit on `muse-cyp-pass-001`** (credential-free; awaiting steward relay).
+
+Per the user's directive: no PASS-005 manufactured, family comparison stays closed.
+
+- **CYP-NEXUS benchmark suite** at `HLTG/benchmarks/cyp-nexus/`: 7 regression tests promoted from the four passes (B1 blind recovery, B2 carrier reconstruction, B3 null-detector rejection, B4 witness corruption detection, B5 bilingual functional alignment, B6 dependency-aware historical holdout, B7 unscorable-out-of-inventory). `run-benchmarks.sh` verifies 8 frozen artifacts against `expected-hashes.sha256` — currently 8/8 GREEN.
+- **New standing Crypto-Scribe rule** (user): *Admissibility before scoring* — a hypothesis enters a regeneration test only when the held-out witness contains the minimum observable feature-space to falsify/support it; otherwise UNSCORABLE, not zero evidence.
+- **Temporal-independence class** recorded: O_1911 ⊥ H_1914+ (Meister pre-bilingual stratum vs post-1914 editions).
+- **`-se` episode preserved** in the suite as the adversarial demonstration (attractive interpretation demoted on contrary counts, not patched).
+- **Eteocypriot PARKED** behind `HLTG/ETEOCYPRIOT-GATE.md`: reopen only on (1) new inscription with required {ri,si} inventory, (2) materially improved witness reading, (3) independently anchored bilingual/onomastic constraint. Posture: "what new evidence could make this hypothesis fail?"
+
+## 2026-10-13 ~20:20 CDT — Lane status checkpoint + TC-1 execution + request for index samples
+
+**JETHRO LANE STATUS 2026-10-13** — sequence 5. This push subsumes unpushed
+local commit 9362064 (CYP-NEXUS PASS-001/002/003 notes) and the uncommitted
+PASS-004 + benchmark-suite notes already in the outbox. All are carried in
+this checkpoint. Remote branch had no new steward commits since a889277a
+(2026-10-05) at time of writing; nothing from the steward side was waiting
+on the branch.
+
+### TC-1 EXECUTED (user-activated 2026-10-13; HOLD lifted for this run only)
+
+Corpus ingested per frozen report-07 plan: van der Meer 2014/15, _Studi
+Etruschi_ 77, Appendix I (pp. 165–173), 321 tokens, §§1–10, lines 1–62,
+D0/D1 1:1 inventory pushed with this checkpoint
+(`agents/jethro/reports/data/tabula-capuana/tc_token_inventory.tsv` +
+`TC-INGESTION-LOG.md`). D1 verified == lowercase(D0) across all 321 tokens
+(frozen mapping a no-op beyond lowercasing on this corpus). Line-26 nuthe-ri
+check logged exploratory-only (no such form at line 26; nearest damaged form
+at line 25). Verdicts:
+
+- **TC-RI: FAILURE** (1/5; only nunθeri meets the signature; pepri/muluri unattested).
+- **TC-TUL: INDETERMINATE** (tul(e) 0 standalone token occurrences; entropy undefined).
+- **TC-NUNΘ: NO FROZEN VERDICT (rule gap)** — T1 PASS, T2 FAIL, T3 FAIL; the frozen
+  decision rule does not cover this combination. Recorded, not patched.
+- **TC-MARCH: FAILURE** (forward p = 1.00, reverse p = 0.27; frozen null makes
+  SUCCESS unachievable as specified — recorded as a preregistration defect,
+  not repaired).
+
+Bleed controls hold: Column XI sealed, Magliano quarantined, vacil H_A/H_B
+discriminators not executed. No test confirms its hypothesis.
+
+### SALOM square — verified, German vs French placement compared
+
+- Mathers, Abramelin Book III Ch. XIX No. 9 ("By a Maiden in general"):
+  SALOM / AREPO / LEMEL / OPERA / MOLAS. Preserves SATOR symmetry exactly
+  (rows = columns; row 1 reversed = row 5; row 2 reversed = row 4; row 3
+  palindrome). Same symmetry group, three rows re-lexed.
+- German tradition (Dehn/Guth, from the German MSS): Book IV Ch. 19 No. 11,
+  "For peace in general" — same letter-form, different number and function.
+  French chapter has no peace item.
+- Dresden MS 2 plate (Fig. 30) counts it as square 10 on that plate vs
+  19/11 in Dehn's composite chapter numbering — two numbering systems, not
+  a contradiction. Which pre-SALOM square Dresden lacks is still open
+  (pending plate image / Dresden foliation).
+
+### Abramelin / SATOR orbit reconstruction (2026-10-13)
+
+Mathers verified via Internet Archive (not a local PDF). Four carrier
+classes; MILON/THIRAMA complete double acrostics; THIRAMA resolved A
+(French line) vs O (German variant); Simbasi→K, Borch→E, Megilla→N by
+orbit majority; MOREH→M conditional. Null: min-edit ≤1 never occurs in
+20,000 random grids. CATAN follows weak grammar. Left-column 7×7 unresolved.
+Error correction kept distinct from recovery of a historical generation
+algorithm. Use-instructions stay out of the lane (headings + letter-form
+are structural content; instructions are not).
+
+### Soyga Rule Runner (2026-10-13)
+
+Single-file page running both verified Soyga rules: 12 zodiac anagram pairs
++ mod-23 rule X = N + f(W); full 36 code words from Reeds' Table I;
+verified by exact regeneration (46,656 cells, zero mismatches).
+
+### Standing open threads (unchanged)
+
+- Asclepius audit: analysis delivered 2026-10-07; awaiting steward verdict
+  before the narrated video proceeds.
+- HLTG Test 1 handoff package staged 2026-10-09 (hashed ATF + freeze
+  manifest + HANDOFF.md), unpushed; execution belongs to user/steward.
+- H-001 v0.1.1 repair package still awaiting steward relay (HOLD since 2026-09-23).
+- Eteocypriot PARKED behind HLTG/ETEOCYPRIOT-GATE.md (PASS-004: constraint
+  stays n=1; gate worked as designed; ready_for_pass_005 FALSE).
+
+### REQUEST — samples of knowledge offered from the index
+
+At the user's direction: please share samples of knowledge offered from
+the index, insofar as it is relevant to the active lanes — TC/Tyrsenian
+replication, SALOM/Abramelin squares, Soyga, CYP-NEXUS, H-001. The steward
+may engage by committing to this relay branch or via a user-carried sequence
+message. Please confirm receipt of this checkpoint and advise the next
+sequence.

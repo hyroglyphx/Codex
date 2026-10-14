@@ -4,9 +4,9 @@
   "repository": "hyroglyphx/Codex",
   "branch": "agent/jethro-relay",
   "canonical_research_branch": "research/reconcile-state-2026-09-20",
-  "status": "JETHRO_LANE_STATUS_2026_10_05",
+  "status": "JETHRO_LANE_STATUS_2026_10_13",
   "phase": "lane-status-checkpoint",
-  "active_task": "2026-10-05 status checkpoint: TC preregistration frozen (report 07), ingestion queued behind production; XI sealed (report 06), P-1..P-8 FROZEN-UNTESTED; builder/mythic-field-labs-v0.1 visible, Theseus source map b1e725c confirmed, no duplication. Awaiting steward's next sequence after JETHRO_XI_HOLDOUT_UNSCORABLE.",
+  "active_task": "2026-10-13 status checkpoint: TC-1 EXECUTED (TC-RI FAILURE, TC-TUL INDETERMINATE, TC-NUNTH rule gap, TC-MARCH FAILURE); SALOM verified Mathers XIX.9 + German Dehn IV.19.11 peace placement; Abramelin orbit reconstruction; Soyga Rule Runner; CYP-NEXUS PASS-004 + benchmark suite + gate closed. XI sealed, Magliano quarantined. Requested: steward samples of knowledge offered from the index, relevant to active lanes. Awaiting steward's next sequence.",
   "read_order": [
     "agents/jethro/state.json",
     "agents/jethro/context.md",
@@ -31,7 +31,7 @@
     "last_writer": "Jethro",
     "handoff_to": "ChatGPT",
     "sequence": 5,
-    "note": "Lane status 2026-10-05: no new research artifacts; TC queued, XI sealed, builder branch acknowledged."
+    "note": "Lane status 2026-10-13: TC-1 executed (verdicts in outbox); SALOM verified + German/French compared; CYP-NEXUS PASS-004 + benchmarks; requested steward index samples. Subsumes unpushed local 9362064."
   },
   "latest_report": "agents/jethro/reports/07-tabula-capuana-preregistration.md",
   "next_expected_report": "agents/jethro/reports/03-liber-linteus-structured-parse.md",

@@ -1,0 +1,643 @@
+token_id	address_id	layer	raw	d1	section	line	idx_in_line	structural_flags	missing_flag	provenance
+D0.TC.§1:1#001	TC.§1:1	D0	[..30-40..]		1	1	1	section_line;damage_start	absent	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:1#001	TC.§1:1	D1		[..30-40..]	1	1	1	section_line;damage_start	absent	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:1#002	TC.§1:1	D0	vacil		1	1	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:1#002	TC.§1:1	D1		vacil	1	1	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:1#003	TC.§1:1	D0	suχu		1	1	3	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:1#003	TC.§1:1	D1		suχu	1	1	3	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:1#004	TC.§1:1	D0	[..7-8..]		1	1	4	section_line;damage_start	absent	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:1#004	TC.§1:1	D1		[..7-8..]	1	1	4	section_line;damage_start	absent	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:2#001	TC.§1:2	D0	ai		1	2	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:2#001	TC.§1:2	D1		ai	1	2	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:2#002	TC.§1:2	D0	sa[v]cnes		1	2	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:2#002	TC.§1:2	D1		sa[v]cnes	1	2	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:2#003	TC.§1:2	D0	sa		1	2	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:2#003	TC.§1:2	D1		sa	1	2	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:2#004	TC.§1:2	D0	tiria		1	2	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:2#004	TC.§1:2	D1		tiria	1	2	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:2#005	TC.§1:2	D0	saχ		1	2	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:2#005	TC.§1:2	D1		saχ	1	2	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:2#006	TC.§1:2	D0	[..30-32..]		1	2	6	damage_start	absent	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:2#006	TC.§1:2	D1		[..30-32..]	1	2	6	damage_start	absent	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:3#001	TC.§1:3	D0	[..18-20..nunθ?]eri		1	3	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:3#001	TC.§1:3	D1		[..18-20..nunθ?]eri	1	3	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:3#002	TC.§1:3	D0	θuθcu		1	3	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:3#002	TC.§1:3	D1		θuθcu	1	3	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:3#003	TC.§1:3	D0	vacil		1	3	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:3#003	TC.§1:3	D1		vacil	1	3	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:3#004	TC.§1:3	D0	śipir		1	3	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:3#004	TC.§1:3	D1		śipir	1	3	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:3#005	TC.§1:3	D0	śurileθamsul		1	3	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:3#005	TC.§1:3	D1		śurileθamsul	1	3	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#001	TC.§1:4	D0	ci		1	4	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#001	TC.§1:4	D1		ci	1	4	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#002	TC.§1:4	D0	tartiria		1	4	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#002	TC.§1:4	D1		tartiria	1	4	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#003	TC.§1:4	D0	cim		1	4	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#003	TC.§1:4	D1		cim	1	4	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#004	TC.§1:4	D0	cleva		1	4	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#004	TC.§1:4	D1		cleva	1	4	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#005	TC.§1:4	D0	acasri		1	4	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#005	TC.§1:4	D1		acasri	1	4	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#006	TC.§1:4	D0	halχtei		1	4	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#006	TC.§1:4	D1		halχtei	1	4	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#007	TC.§1:4	D0	vacil		1	4	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#007	TC.§1:4	D1		vacil	1	4	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#008	TC.§1:4	D0	icei		1	4	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#008	TC.§1:4	D1		icei	1	4	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#009	TC.§1:4	D0	śuni		1	4	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#009	TC.§1:4	D1		śuni	1	4	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:4#010	TC.§1:4	D0	savlasie[s?..5-7..]		1	4	10	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:4#010	TC.§1:4	D1		savlasie[s?..5-7..]	1	4	10	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#001	TC.§1:5	D0	m[ul]u		1	5	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#001	TC.§1:5	D1		m[ul]u	1	5	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#002	TC.§1:5	D0	rizile		1	5	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#002	TC.§1:5	D1		rizile	1	5	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#003	TC.§1:5	D0	picasri		1	5	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#003	TC.§1:5	D1		picasri	1	5	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#004	TC.§1:5	D0	savlasieis		1	5	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#004	TC.§1:5	D1		savlasieis	1	5	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#005	TC.§1:5	D0	vacil		1	5	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#005	TC.§1:5	D1		vacil	1	5	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#006	TC.§1:5	D0	lunaśie		1	5	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#006	TC.§1:5	D1		lunaśie	1	5	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#007	TC.§1:5	D0	faca		1	5	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#007	TC.§1:5	D1		faca	1	5	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#008	TC.§1:5	D0	iχnac		1	5	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#008	TC.§1:5	D1		iχnac	1	5	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:5#009	TC.§1:5	D0	fulinuśnes		1	5	9	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:5#009	TC.§1:5	D1		fulinuśnes	1	5	9	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#001	TC.§1:6	D0	vacil		1	6	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#001	TC.§1:6	D1		vacil	1	6	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#002	TC.§1:6	D0	savcnes		1	6	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#002	TC.§1:6	D1		savcnes	1	6	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#003	TC.§1:6	D0	itna		1	6	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#003	TC.§1:6	D1		itna	1	6	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#004	TC.§1:6	D0	mulu		1	6	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#004	TC.§1:6	D1		mulu	1	6	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#005	TC.§1:6	D0	rizile		1	6	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#005	TC.§1:6	D1		rizile	1	6	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#006	TC.§1:6	D0	picasri		1	6	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#006	TC.§1:6	D1		picasri	1	6	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#007	TC.§1:6	D0	iane		1	6	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#007	TC.§1:6	D1		iane	1	6	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#008	TC.§1:6	D0	vacil		1	6	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#008	TC.§1:6	D1		vacil	1	6	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:6#009	TC.§1:6	D0	l[e]θamsul		1	6	9	damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:6#009	TC.§1:6	D1		l[e]θamsul	1	6	9	damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:7#001	TC.§1:7	D0	scuvune		1	7	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:7#001	TC.§1:7	D1		scuvune	1	7	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:7#002	TC.§1:7	D0	marzac		1	7	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:7#002	TC.§1:7	D1		marzac	1	7	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§1:7#003	TC.§1:7	D0	saca		1	7	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§1:7#003	TC.§1:7	D1		saca	1	7	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:8#001	TC.§2:8	D0	iśveitule		2	8	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:8#001	TC.§2:8	D1		iśveitule	2	8	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:8#002	TC.§2:8	D0	ilucve		2	8	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:8#002	TC.§2:8	D1		ilucve	2	8	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:8#003	TC.§2:8	D0	apirase		2	8	3	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:8#003	TC.§2:8	D1		apirase	2	8	3	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:8#004	TC.§2:8	D0	leθamsul		2	8	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:8#004	TC.§2:8	D1		leθamsul	2	8	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:8#005	TC.§2:8	D0	ilucu		2	8	5	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:8#005	TC.§2:8	D1		ilucu	2	8	5	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:8#006	TC.§2:8	D0	cuiesχu		2	8	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:8#006	TC.§2:8	D1		cuiesχu	2	8	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:8#007	TC.§2:8	D0	perpri		2	8	7	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:8#007	TC.§2:8	D1		perpri	2	8	7	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#001	TC.§2:9	D0	cipen		2	9	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#001	TC.§2:9	D1		cipen	2	9	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#002	TC.§2:9	D0	apires		2	9	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#002	TC.§2:9	D1		apires	2	9	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#003	TC.§2:9	D0	racvanies		2	9	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#003	TC.§2:9	D1		racvanies	2	9	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#004	TC.§2:9	D0	huθ		2	9	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#004	TC.§2:9	D1		huθ	2	9	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#005	TC.§2:9	D0	zusle		2	9	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#005	TC.§2:9	D1		zusle	2	9	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#006	TC.§2:9	D0	riθnaitultei		2	9	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#006	TC.§2:9	D1		riθnaitultei	2	9	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#007	TC.§2:9	D0	snuza		2	9	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#007	TC.§2:9	D1		snuza	2	9	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#008	TC.§2:9	D0	inte		2	9	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#008	TC.§2:9	D1		inte	2	9	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#009	TC.§2:9	D0	hamaiθi		2	9	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#009	TC.§2:9	D1		hamaiθi	2	9	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#010	TC.§2:9	D0	cuveis		2	9	10		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#010	TC.§2:9	D1		cuveis	2	9	10		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#011	TC.§2:9	D0	caθnis		2	9	11		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#011	TC.§2:9	D1		caθnis	2	9	11		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:9#012	TC.§2:9	D0	f[a]nir[i]		2	9	12	damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:9#012	TC.§2:9	D1		f[a]nir[i]	2	9	12	damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#001	TC.§2:10	D0	marza		2	10	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#001	TC.§2:10	D1		marza	2	10	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#002	TC.§2:10	D0	inte		2	10	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#002	TC.§2:10	D1		inte	2	10	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#003	TC.§2:10	D0	hamaiθi		2	10	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#003	TC.§2:10	D1		hamaiθi	2	10	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#004	TC.§2:10	D0	ital		2	10	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#004	TC.§2:10	D1		ital	2	10	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#005	TC.§2:10	D0	sacri		2	10	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#005	TC.§2:10	D1		sacri	2	10	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#006	TC.§2:10	D0	utus		2	10	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#006	TC.§2:10	D1		utus	2	10	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#007	TC.§2:10	D0	ecunzai		2	10	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#007	TC.§2:10	D1		ecunzai	2	10	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#008	TC.§2:10	D0	iti		2	10	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#008	TC.§2:10	D1		iti	2	10	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#009	TC.§2:10	D0	alχu		2	10	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#009	TC.§2:10	D1		alχu	2	10	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#010	TC.§2:10	D0	scuvse		2	10	10		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#010	TC.§2:10	D1		scuvse	2	10	10		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:10#011	TC.§2:10	D0	riθnaitultei		2	10	11	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:10#011	TC.§2:10	D1		riθnaitultei	2	10	11	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#001	TC.§2:11	D0	ci		2	11	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#001	TC.§2:11	D1		ci	2	11	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#002	TC.§2:11	D0	zusle		2	11	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#002	TC.§2:11	D1		zusle	2	11	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#003	TC.§2:11	D0	acun		2	11	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#003	TC.§2:11	D1		acun	2	11	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#004	TC.§2:11	D0	siricima		2	11	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#004	TC.§2:11	D1		siricima	2	11	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#005	TC.§2:11	D0	nunθeri		2	11	5	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#005	TC.§2:11	D1		nunθeri	2	11	5	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#006	TC.§2:11	D0	eθ		2	11	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#006	TC.§2:11	D1		eθ	2	11	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#007	TC.§2:11	D0	iśuma		2	11	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#007	TC.§2:11	D1		iśuma	2	11	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#008	TC.§2:11	D0	zuslevai		2	11	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#008	TC.§2:11	D1		zuslevai	2	11	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#009	TC.§2:11	D0	apire		2	11	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#009	TC.§2:11	D1		apire	2	11	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:11#010	TC.§2:11	D0	nunθeri		2	11	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:11#010	TC.§2:11	D1		nunθeri	2	11	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#001	TC.§2:12	D0	avθleθ		2	12	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#001	TC.§2:12	D1		avθleθ	2	12	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#002	TC.§2:12	D0	aium		2	12	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#002	TC.§2:12	D1		aium	2	12	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#003	TC.§2:12	D0	vacil		2	12	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#003	TC.§2:12	D1		vacil	2	12	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#004	TC.§2:12	D0	ia		2	12	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#004	TC.§2:12	D1		ia	2	12	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#005	TC.§2:12	D0	leθamsul		2	12	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#005	TC.§2:12	D1		leθamsul	2	12	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#006	TC.§2:12	D0	nunθeri		2	12	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#006	TC.§2:12	D1		nunθeri	2	12	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#007	TC.§2:12	D0	vacil		2	12	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#007	TC.§2:12	D1		vacil	2	12	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#008	TC.§2:12	D0	ia		2	12	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#008	TC.§2:12	D1		ia	2	12	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#009	TC.§2:12	D0	riθnaita		2	12	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#009	TC.§2:12	D1		riθnaita	2	12	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#010	TC.§2:12	D0	eθ		2	12	10		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#010	TC.§2:12	D1		eθ	2	12	10		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:12#011	TC.§2:12	D0	aθeneica		2	12	11	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:12#011	TC.§2:12	D1		aθeneica	2	12	11	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#001	TC.§2:13	D0	perpri		2	13	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#001	TC.§2:13	D1		perpri	2	13	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#002	TC.§2:13	D0	celutule		2	13	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#002	TC.§2:13	D1		celutule	2	13	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#003	TC.§2:13	D0	apirase		2	13	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#003	TC.§2:13	D1		apirase	2	13	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#004	TC.§2:13	D0	unialθi		2	13	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#004	TC.§2:13	D1		unialθi	2	13	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#005	TC.§2:13	D0	turza		2	13	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#005	TC.§2:13	D1		turza	2	13	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#006	TC.§2:13	D0	esχaθce		2	13	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#006	TC.§2:13	D1		esχaθce	2	13	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#007	TC.§2:13	D0	ei		2	13	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#007	TC.§2:13	D1		ei	2	13	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#008	TC.§2:13	D0	iśum		2	13	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#008	TC.§2:13	D1		iśum	2	13	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#009	TC.§2:13	D0	unialθ		2	13	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#009	TC.§2:13	D1		unialθ	2	13	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:13#010	TC.§2:13	D0	ara		2	13	10		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:13#010	TC.§2:13	D1		ara	2	13	10		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#001	TC.§2:14	D0	epnicei		2	14	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#001	TC.§2:14	D1		epnicei	2	14	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#002	TC.§2:14	D0	nunθcu		2	14	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#002	TC.§2:14	D1		nunθcu	2	14	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#003	TC.§2:14	D0	ciiei		2	14	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#003	TC.§2:14	D1		ciiei	2	14	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#004	TC.§2:14	D0	turzai		2	14	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#004	TC.§2:14	D1		turzai	2	14	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#005	TC.§2:14	D0	riθ[nai]ta		2	14	5	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#005	TC.§2:14	D1		riθ[nai]ta	2	14	5	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#006	TC.§2:14	D0	eiti		2	14	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#006	TC.§2:14	D1		eiti	2	14	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#007	TC.§2:14	D0	ia		2	14	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#007	TC.§2:14	D1		ia	2	14	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#008	TC.§2:14	D0	halχ		2	14	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#008	TC.§2:14	D1		halχ	2	14	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#009	TC.§2:14	D0	apertule		2	14	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#009	TC.§2:14	D1		apertule	2	14	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#010	TC.§2:14	D0	aφes		2	14	10		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#010	TC.§2:14	D1		aφes	2	14	10		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#011	TC.§2:14	D0	ilucu		2	14	11		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#011	TC.§2:14	D1		ilucu	2	14	11		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#012	TC.§2:14	D0	vacil		2	14	12		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#012	TC.§2:14	D1		vacil	2	14	12		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:14#013	TC.§2:14	D0	zuχne		2	14	13	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:14#013	TC.§2:14	D1		zuχne	2	14	13	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#001	TC.§2:15	D0	elfa		2	15	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#001	TC.§2:15	D1		elfa	2	15	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#002	TC.§2:15	D0	riθnaitultrais		2	15	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#002	TC.§2:15	D1		riθnaitultrais	2	15	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#003	TC.§2:15	D0	vanec		2	15	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#003	TC.§2:15	D1		vanec	2	15	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#004	TC.§2:15	D0	calus		2	15	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#004	TC.§2:15	D1		calus	2	15	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#005	TC.§2:15	D0	zusleva		2	15	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#005	TC.§2:15	D1		zusleva	2	15	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#006	TC.§2:15	D0	atu[..]ne		2	15	6	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#006	TC.§2:15	D1		atu[..]ne	2	15	6	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#007	TC.§2:15	D0	inpa		2	15	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#007	TC.§2:15	D1		inpa	2	15	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#008	TC.§2:15	D0	vinaiθ		2	15	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#008	TC.§2:15	D1		vinaiθ	2	15	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#009	TC.§2:15	D0	acas		2	15	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#009	TC.§2:15	D1		acas	2	15	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:15#010	TC.§2:15	D0	aφes		2	15	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:15#010	TC.§2:15	D1		aφes	2	15	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#001	TC.§2:16	D0	ci		2	16	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#001	TC.§2:16	D1		ci	2	16	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#002	TC.§2:16	D0	tartiria		2	16	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#002	TC.§2:16	D1		tartiria	2	16	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#003	TC.§2:16	D0	ci		2	16	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#003	TC.§2:16	D1		ci	2	16	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#004	TC.§2:16	D0	turza		2	16	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#004	TC.§2:16	D1		turza	2	16	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#005	TC.§2:16	D0	riθnaitula		2	16	5	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#005	TC.§2:16	D1		riθnaitula	2	16	5	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#006	TC.§2:16	D0	snenaziulastra		2	16	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#006	TC.§2:16	D1		snenaziulastra	2	16	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#007	TC.§2:16	D0	vaiuser		2	16	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#007	TC.§2:16	D1		vaiuser	2	16	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#008	TC.§2:16	D0	hivus		2	16	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#008	TC.§2:16	D1		hivus	2	16	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#009	TC.§2:16	D0	niθusc		2	16	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#009	TC.§2:16	D1		niθusc	2	16	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:16#010	TC.§2:16	D0	riθnaitula		2	16	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:16#010	TC.§2:16	D1		riθnaitula	2	16	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:17#001	TC.§2:17	D0	hivustra		2	17	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:17#001	TC.§2:17	D1		hivustra	2	17	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:17#002	TC.§2:17	D0	vaiuser		2	17	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:17#002	TC.§2:17	D1		vaiuser	2	17	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§2:17#003	TC.§2:17	D0	sne[na]ziulas		2	17	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§2:17#003	TC.§2:17	D1		sne[na]ziulas	2	17	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:18#001	TC.§3:18	D0	iśveitule		3	18	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:18#001	TC.§3:18	D1		iśveitule	3	18	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:18#002	TC.§3:18	D0	ilucve		3	18	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:18#002	TC.§3:18	D1		ilucve	3	18	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:18#003	TC.§3:18	D0	anp[ili]e		3	18	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:18#003	TC.§3:18	D1		anp[ili]e	3	18	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:18#004	TC.§3:18	D0	laruns		3	18	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:18#004	TC.§3:18	D1		laruns	3	18	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:18#005	TC.§3:18	D0	ilucu		3	18	5	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:18#005	TC.§3:18	D1		ilucu	3	18	5	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:18#006	TC.§3:18	D0	huχ		3	18	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:18#006	TC.§3:18	D1		huχ	3	18	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#001	TC.§3:19	D0	śanti		3	19	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#001	TC.§3:19	D1		śanti	3	19	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#002	TC.§3:19	D0	huriṛ		3	19	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#002	TC.§3:19	D1		huriṛ	3	19	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#003	TC.§3:19	D0	alχu		3	19	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#003	TC.§3:19	D1		alχu	3	19	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#004	TC.§3:19	D0	esχaθ		3	19	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#004	TC.§3:19	D1		esχaθ	3	19	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#005	TC.§3:19	D0	canulis		3	19	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#005	TC.§3:19	D1		canulis	3	19	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#006	TC.§3:19	D0	mulu		3	19	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#006	TC.§3:19	D1		mulu	3	19	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#007	TC.§3:19	D0	rizile		3	19	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#007	TC.§3:19	D1		rizile	3	19	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#008	TC.§3:19	D0	zizri		3	19	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#008	TC.§3:19	D1		zizri	3	19	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#009	TC.§3:19	D0	inpa		3	19	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#009	TC.§3:19	D1		inpa	3	19	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#010	TC.§3:19	D0	[..]an		3	19	10	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#010	TC.§3:19	D1		[..]an	3	19	10	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#011	TC.§3:19	D0	acasri		3	19	11		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#011	TC.§3:19	D1		acasri	3	19	11		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#012	TC.§3:19	D0	tiniantule		3	19	12		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#012	TC.§3:19	D1		tiniantule	3	19	12		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#013	TC.§3:19	D0	leθamsul		3	19	13		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#013	TC.§3:19	D1		leθamsul	3	19	13		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#014	TC.§3:19	D0	ilucu		3	19	14		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#014	TC.§3:19	D1		ilucu	3	19	14		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#015	TC.§3:19	D0	perpri		3	19	15		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#015	TC.§3:19	D1		perpri	3	19	15		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#016	TC.§3:19	D0	śanti		3	19	16		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#016	TC.§3:19	D1		śanti	3	19	16		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:19#017	TC.§3:19	D0	arvusta		3	19	17	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:19#017	TC.§3:19	D1		arvusta	3	19	17	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:20#001	TC.§3:20	D0	aius		3	20	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:20#001	TC.§3:20	D1		aius	3	20	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§3:20#002	TC.§3:20	D0	nunθeri		3	20	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§3:20#002	TC.§3:20	D1		nunθeri	3	20	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#001	TC.§4:21	D0	acalve		4	21	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#001	TC.§4:21	D1		acalve	4	21	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#002	TC.§4:21	D0	apertule		4	21	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#002	TC.§4:21	D1		apertule	4	21	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#003	TC.§4:21	D0	saiuzie		4	21	3	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#003	TC.§4:21	D1		saiuzie	4	21	3	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#004	TC.§4:21	D0	leθamsul		4	21	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#004	TC.§4:21	D1		leθamsul	4	21	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#005	TC.§4:21	D0	ilucu		4	21	5	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#005	TC.§4:21	D1		ilucu	4	21	5	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#006	TC.§4:21	D0	perpri		4	21	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#006	TC.§4:21	D1		perpri	4	21	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#007	TC.§4:21	D0	śanti		4	21	7	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#007	TC.§4:21	D1		śanti	4	21	7	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#008	TC.§4:21	D0	ma(c)vilutule		4	21	8	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#008	TC.§4:21	D1		ma(c)vilutule	4	21	8	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:21#009	TC.§4:21	D0	itir		4	21	9	section_line;damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:21#009	TC.§4:21	D1		itir	4	21	9	section_line;damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#001	TC.§4:22	D0	śver		4	22	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#001	TC.§4:22	D1		śver	4	22	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#002	TC.§4:22	D0	falal[...]		4	22	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#002	TC.§4:22	D1		falal[...]	4	22	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#003	TC.§4:22	D0	husilitule		4	22	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#003	TC.§4:22	D1		husilitule	4	22	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#004	TC.§4:22	D0	velθur		4	22	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#004	TC.§4:22	D1		velθur	4	22	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#005	TC.§4:22	D0	t[….]sc		4	22	5	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#005	TC.§4:22	D1		t[….]sc	4	22	5	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#006	TC.§4:22	D0	lavtun		4	22	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#006	TC.§4:22	D1		lavtun	4	22	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#007	TC.§4:22	D0	icni		4	22	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#007	TC.§4:22	D1		icni	4	22	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#008	TC.§4:22	D0	seri		4	22	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#008	TC.§4:22	D1		seri	4	22	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#009	TC.§4:22	D0	turza		4	22	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#009	TC.§4:22	D1		turza	4	22	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#010	TC.§4:22	D0	esχaθce		4	22	10		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#010	TC.§4:22	D1		esχaθce	4	22	10		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:22#011	TC.§4:22	D0	pacusnaśie		4	22	11	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:22#011	TC.§4:22	D1		pacusnaśie	4	22	11	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#001	TC.§4:23	D0	θanurari		4	23	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#001	TC.§4:23	D1		θanurari	4	23	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#002	TC.§4:23	D0	turza		4	23	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#002	TC.§4:23	D1		turza	4	23	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#003	TC.§4:23	D0	esχa[θce]		4	23	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#003	TC.§4:23	D1		esχa[θce]	4	23	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#004	TC.§4:23	D0	nis[c]		4	23	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#004	TC.§4:23	D1		nis[c]	4	23	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#005	TC.§4:23	D0	[l]avtun		4	23	5	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#005	TC.§4:23	D1		[l]avtun	4	23	5	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#006	TC.§4:23	D0	icni		4	23	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#006	TC.§4:23	D1		icni	4	23	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#007	TC.§4:23	D0	zusle		4	23	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#007	TC.§4:23	D1		zusle	4	23	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#008	TC.§4:23	D0	[ś]ilaciiul		4	23	8	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#008	TC.§4:23	D1		[ś]ilaciiul	4	23	8	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#009	TC.§4:23	D0	eses		4	23	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#009	TC.§4:23	D1		eses	4	23	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:23#010	TC.§4:23	D0	salχei		4	23	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:23#010	TC.§4:23	D1		salχei	4	23	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#001	TC.§4:24	D0	calaieic		4	24	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#001	TC.§4:24	D1		calaieic	4	24	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#002	TC.§4:24	D0	len[..]ai		4	24	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#002	TC.§4:24	D1		len[..]ai	4	24	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#003	TC.§4:24	D0	stizaitei		4	24	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#003	TC.§4:24	D1		stizaitei	4	24	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#004	TC.§4:24	D0	z[a]l		4	24	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#004	TC.§4:24	D1		z[a]l	4	24	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#005	TC.§4:24	D0	rapa		4	24	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#005	TC.§4:24	D1		rapa	4	24	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#006	TC.§4:24	D0	z[al…7.]		4	24	6	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#006	TC.§4:24	D1		z[al…7.]	4	24	6	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#007	TC.§4:24	D0	niiac		4	24	7		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#007	TC.§4:24	D1		niiac	4	24	7		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#008	TC.§4:24	D0	[l]avtun		4	24	8	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#008	TC.§4:24	D1		[l]avtun	4	24	8	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#009	TC.§4:24	D0	icni		4	24	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#009	TC.§4:24	D1		icni	4	24	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#010	TC.§4:24	D0	seril		4	24	10		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#010	TC.§4:24	D1		seril	4	24	10		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#011	TC.§4:24	D0	turza		4	24	11		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#011	TC.§4:24	D1		turza	4	24	11		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:24#012	TC.§4:24	D0	esχaθce		4	24	12	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:24#012	TC.§4:24	D1		esχaθce	4	24	12	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#001	TC.§4:25	D0	laχuθ		4	25	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#001	TC.§4:25	D1		laχuθ	4	25	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#002	TC.§4:25	D0	nunθe[ri?...]		4	25	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#002	TC.§4:25	D1		nunθe[ri?...]	4	25	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#003	TC.§4:25	D0	ei[tu]		4	25	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#003	TC.§4:25	D1		ei[tu]	4	25	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#004	TC.§4:25	D0	acasri		4	25	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#004	TC.§4:25	D1		acasri	4	25	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#005	TC.§4:25	D0	laχθ		4	25	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#005	TC.§4:25	D1		laχθ	4	25	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#006	TC.§4:25	D0	turzais		4	25	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#006	TC.§4:25	D1		turzais	4	25	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#007	TC.§4:25	D0	esχa[θce]		4	25	7	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#007	TC.§4:25	D1		esχa[θce]	4	25	7	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#008	TC.§4:25	D0	ecl..]θ[u]		4	25	8	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#008	TC.§4:25	D1		ecl..]θ[u]	4	25	8	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#009	TC.§4:25	D0	acas		4	25	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#009	TC.§4:25	D1		acas	4	25	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#010	TC.§4:25	D0	eθ		4	25	10		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#010	TC.§4:25	D1		eθ	4	25	10		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:25#011	TC.§4:25	D0	zusleva		4	25	11		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:25#011	TC.§4:25	D1		zusleva	4	25	11		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#001	TC.§4:26	D0	stizaitei		4	26	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#001	TC.§4:26	D1		stizaitei	4	26	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#002	TC.§4:26	D0	acasri		4	26	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#002	TC.§4:26	D1		acasri	4	26	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#003	TC.§4:26	D0	pacus[naśi]eθu[r]		4	26	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#003	TC.§4:26	D1		pacus[naśi]eθu[r]	4	26	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#004	TC.§4:26	D0	laθiumia[i		4	26	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#004	TC.§4:26	D1		laθiumia[i	4	26	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#005	TC.§4:26	D0	zusle]i		4	26	5	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#005	TC.§4:26	D1		zusle]i	4	26	5	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#006	TC.§4:26	D0	[ś]iχaiei		4	26	6	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#006	TC.§4:26	D1		[ś]iχaiei	4	26	6	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#007	TC.§4:26	D0	t[ar]tiriiai		4	26	7	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#007	TC.§4:26	D1		t[ar]tiriiai	4	26	7	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#008	TC.§4:26	D0	fanusei		4	26	8		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#008	TC.§4:26	D1		fanusei	4	26	8		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#009	TC.§4:26	D0	pepθiai		4	26	9		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#009	TC.§4:26	D1		pepθiai	4	26	9		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:26#010	TC.§4:26	D0	ratu		4	26	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:26#010	TC.§4:26	D1		ratu	4	26	10	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:27#001	TC.§4:27	D0	ceχiniaitei		4	27	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:27#001	TC.§4:27	D1		ceχiniaitei	4	27	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:27#002	TC.§4:27	D0	turza		4	27	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:27#002	TC.§4:27	D1		turza	4	27	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:27#003	TC.§4:27	D0	esχaθce		4	27	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:27#003	TC.§4:27	D1		esχaθce	4	27	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§4:27#004	TC.§4:27	D0	eθ[..7-8..]		4	27	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§4:27#004	TC.§4:27	D1		eθ[..7-8..]	4	27	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#001	TC.§5:28	D0	parθumi		5	28	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#001	TC.§5:28	D1		parθumi	5	28	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#002	TC.§5:28	D0	ilucve		5	28	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#002	TC.§5:28	D1		ilucve	5	28	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#003	TC.§5:28	D0	iśveitule		5	28	3	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#003	TC.§5:28	D1		iśveitule	5	28	3	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#004	TC.§5:28	D0	tinunus		5	28	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#004	TC.§5:28	D1		tinunus	5	28	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#005	TC.§5:28	D0	seθumsal		5	28	5	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#005	TC.§5:28	D1		seθumsal	5	28	5	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#006	TC.§5:28	D0	ilucu		5	28	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#006	TC.§5:28	D1		ilucu	5	28	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#007	TC.§5:28	D0	perpri		5	28	7	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#007	TC.§5:28	D1		perpri	5	28	7	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#008	TC.§5:28	D0	cipen		5	28	8	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#008	TC.§5:28	D1		cipen	5	28	8	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#009	TC.§5:28	D0	tartiria		5	28	9	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#009	TC.§5:28	D1		tartiria	5	28	9	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#010	TC.§5:28	D0	vaci		5	28	10	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#010	TC.§5:28	D1		vaci	5	28	10	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:28#011	TC.§5:28	D0	fulinuśn[es or -al-------]		5	28	11	section_line;damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:28#011	TC.§5:28	D1		fulinuśn[es or -al-------]	5	28	11	section_line;damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:30#001	TC.§5:30	D0	?]etula		5	30	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:30#001	TC.§5:30	D1		?]etula	5	30	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:30#002	TC.§5:30	D0	natinusnal		5	30	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:30#002	TC.§5:30	D1		natinusnal	5	30	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:30#003	TC.§5:30	D0	ilucu		5	30	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:30#003	TC.§5:30	D1		ilucu	5	30	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:30#004	TC.§5:30	D0	ituna		5	30	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:30#004	TC.§5:30	D1		ituna	5	30	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:30#005	TC.§5:30	D0	fulinuśnai		5	30	5		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:30#005	TC.§5:30	D1		fulinuśnai	5	30	5		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:30#006	TC.§5:30	D0	θenunt		5	30	6		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:30#006	TC.§5:30	D1		θenunt	5	30	6		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§5:30#007	TC.§5:30	D0	eθu[….?]		5	30	7	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§5:30#007	TC.§5:30	D1		eθu[….?]	5	30	7	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:31#001	TC.§6:31	D0	macvilutule		6	31	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:31#001	TC.§6:31	D1		macvilutule	6	31	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:31#002	TC.§6:31	D0	papui[....]se		6	31	2	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:31#002	TC.§6:31	D1		papui[....]se	6	31	2	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:31#003	TC.§6:31	D0	ilu[cve…]θasχra		6	31	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:31#003	TC.§6:31	D1		ilu[cve…]θasχra	6	31	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:31#004	TC.§6:31	D0	turza		6	31	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:31#004	TC.§6:31	D1		turza	6	31	4	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:31#005	TC.§6:31	D0	esχa[θ….]e[s]		6	31	5	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:31#005	TC.§6:31	D1		esχa[θ….]e[s]	6	31	5	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:31#006	TC.§6:31	D0	rapa		6	31	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:31#006	TC.§6:31	D1		rapa	6	31	6	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:32#001	TC.§6:32	D0	fu[..20-22..]um		6	32	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:32#001	TC.§6:32	D1		fu[..20-22..]um	6	32	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:32#002	TC.§6:32	D0	hu[..23-25..]niśersi		6	32	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:32#002	TC.§6:32	D1		hu[..23-25..]niśersi	6	32	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:32#003	TC.§6:32	D0	hefina		6	32	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:32#003	TC.§6:32	D1		hefina	6	32	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:32#004	TC.§6:32	D0	papa		6	32	4		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:32#004	TC.§6:32	D1		papa	6	32	4		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:33#001	TC.§6:33	D0	riza		6	33	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:33#001	TC.§6:33	D1		riza	6	33	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:33#002	TC.§6:33	D0	papaθi[..28-30..]turza		6	33	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:33#002	TC.§6:33	D1		papaθi[..28-30..]turza	6	33	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:33#003	TC.§6:33	D0	esχaθce		6	33	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:33#003	TC.§6:33	D1		esχaθce	6	33	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:33#004	TC.§6:33	D0	[..17-19..]ice		6	33	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:33#004	TC.§6:33	D1		[..17-19..]ice	6	33	4	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:34#001	TC.§6:34	D0	tal[..43-45..]sal		6	34	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:34#001	TC.§6:34	D1		tal[..43-45..]sal	6	34	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:34#002	TC.§6:34	D0	iχ		6	34	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:34#002	TC.§6:34	D1		iχ	6	34	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:34#003	TC.§6:34	D0	raχuθ		6	34	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:34#003	TC.§6:34	D1		raχuθ	6	34	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:34#004	TC.§6:34	D0	tarχuθ		6	34	4	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:34#004	TC.§6:34	D1		tarχuθ	6	34	4	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:35#001	TC.§6:35	D0	cisasin		6	35	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:35#001	TC.§6:35	D1		cisasin	6	35	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§6:35#002	TC.§6:35	D0	ezia[---?]		6	35	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§6:35#002	TC.§6:35	D1		ezia[---?]	6	35	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:36#001	TC.§7:36	D0	zal		7	36	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:36#001	TC.§7:36	D1		zal	7	36	1	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:36#002	TC.§7:36	D0	θirie		7	36	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:36#002	TC.§7:36	D1		θirie	7	36	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:36#003	TC.§7:36	D0	i[..54-56..]		7	36	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:36#003	TC.§7:36	D1		i[..54-56..]	7	36	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:36#004	TC.§7:36	D0	tart[iria		7	36	4	section_line;damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:36#004	TC.§7:36	D1		tart[iria	7	36	4	section_line;damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:37#001	TC.§7:37	D0	..47-49..]eras		7	37	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:37#001	TC.§7:37	D1		..47-49..]eras	7	37	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:37#002	TC.§7:37	D0	cerura		7	37	2	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:37#002	TC.§7:37	D1		cerura	7	37	2	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:38#001	TC.§7:38	D0	zaru		7	38	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:38#001	TC.§7:38	D1		zaru	7	38	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:38#002	TC.§7:38	D0	fan[iri..56-58..]		7	38	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:38#002	TC.§7:38	D1		fan[iri..56-58..]	7	38	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§7:39#001	TC.§7:39	D0	[..63-65..]l		7	39	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§7:39#001	TC.§7:39	D1		[..63-65..]l	7	39	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§8:40#001	TC.§8:40	D0	iśveit[ule		8	40	1	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§8:40#001	TC.§8:40	D1		iśveit[ule	8	40	1	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§8:40#002	TC.§8:40	D0	ilucve		8	40	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§8:40#002	TC.§8:40	D1		ilucve	8	40	2	section_line	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§8:40#003	TC.§8:40	D0	[..45-47..]hanaχ		8	40	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§8:40#003	TC.§8:40	D1		[..45-47..]hanaχ	8	40	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§8:41#001	TC.§8:41	D0	ha[..58-60..]ia		8	41	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§8:41#001	TC.§8:41	D1		ha[..58-60..]ia	8	41	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:42#001	TC.§9:42	D0	apertu[le...........53-55..]prinera		9	42	1	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:42#001	TC.§9:42	D1		apertu[le...........53-55..]prinera	9	42	1	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:43#001	TC.§9:43	D0	[..61-63..]e		9	43	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:43#001	TC.§9:43	D1		[..61-63..]e	9	43	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:44#001	TC.§9:44	D0	nitul[..58-60..]faniri		9	44	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:44#001	TC.§9:44	D1		nitul[..58-60..]faniri	9	44	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:45#001	TC.§9:45	D0	riia[..54-58..]prai		9	45	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:45#001	TC.§9:45	D1		riia[..54-58..]prai	9	45	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:45#002	TC.§9:45	D0	riia		9	45	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:45#002	TC.§9:45	D1		riia	9	45	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:45#003	TC.§9:45	D0	[……..]prai		9	45	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:45#003	TC.§9:45	D1		[……..]prai	9	45	3	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:46#001	TC.§9:46	D0	[-----]l		9	46	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:46#001	TC.§9:46	D1		[-----]l	9	46	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:47#001	TC.§9:47	D0	vaci[l..58-60......nunθ?]eri		9	47	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:47#001	TC.§9:47	D1		vaci[l..58-60......nunθ?]eri	9	47	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:48#001	TC.§9:48	D0	nei[..58-60..]		9	48	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:48#001	TC.§9:48	D1		nei[..58-60..]	9	48	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:48#002	TC.§9:48	D0	riθnaitult[ei		9	48	2	damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:48#002	TC.§9:48	D1		riθnaitult[ei	9	48	2	damage_start;damage_end	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:49#001	TC.§9:49	D0	..47-49..sver..		9	49	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:49#001	TC.§9:49	D1		..47-49..sver..	9	49	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:49#002	TC.§9:49	D0	snen?]aθ		9	49	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:49#002	TC.§9:49	D1		snen?]aθ	9	49	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:50#001	TC.§9:50	D0	[..58-60...........macvil]utule		9	50	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:50#001	TC.§9:50	D1		[..58-60...........macvil]utule	9	50	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:51#001	TC.§9:51	D0	esχ[aθ(ce?)…56-58......]eχi		9	51	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:51#001	TC.§9:51	D1		esχ[aθ(ce?)…56-58......]eχi	9	51	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:52#001	TC.§9:52	D0	[..62-64..is?]uma		9	52	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:52#001	TC.§9:52	D1		[..62-64..is?]uma	9	52	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:53#001	TC.§9:53	D0	χei[..58-60..]latavs		9	53	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:53#001	TC.§9:53	D1		χei[..58-60..]latavs	9	53	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:54#001	TC.§9:54	D0	[a..53-55..]etei		9	54	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:54#001	TC.§9:54	D1		[a..53-55..]etei	9	54	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§9:55#001	TC.§9:55	D0	clisut[…]uin[-----]		9	55	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§9:55#001	TC.§9:55	D1		clisut[…]uin[-----]	9	55	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:56#001	TC.§10:56	D0	iśve[itule		10	56	1	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:56#001	TC.§10:56	D1		iśve[itule	10	56	1	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:56#002	TC.§10:56	D0	..50-52..		10	56	2	section_line;damage_start	absent	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:56#002	TC.§10:56	D1		..50-52..	10	56	2	section_line;damage_start	absent	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:56#003	TC.§10:56	D0	V?]elθritec		10	56	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:56#003	TC.§10:56	D1		v?]elθritec	10	56	3	section_line;damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:56#004	TC.§10:56	D0	θamcu		10	56	4	section_line;damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:56#004	TC.§10:56	D1		θamcu	10	56	4	section_line;damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:57#001	TC.§10:57	D0	iti[.]tin[..52-54..]		10	57	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:57#001	TC.§10:57	D1		iti[.]tin[..52-54..]	10	57	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:57#002	TC.§10:57	D0	esχaθ		10	57	2	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:57#002	TC.§10:57	D1		esχaθ	10	57	2	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:58#001	TC.§10:58	D0	[..48-50..]us		10	58	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:58#001	TC.§10:58	D1		[..48-50..]us	10	58	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:58#002	TC.§10:58	D0	acas		10	58	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:58#002	TC.§10:58	D1		acas	10	58	2		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:58#003	TC.§10:58	D0	celutu		10	58	3		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:58#003	TC.§10:58	D1		celutu	10	58	3		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:59#001	TC.§10:59	D0	apertule		10	59	1		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:59#001	TC.§10:59	D1		apertule	10	59	1		legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:59#002	TC.§10:59	D0	[..54-56..]ale		10	59	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:59#002	TC.§10:59	D1		[..54-56..]ale	10	59	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:60#001	TC.§10:60	D0	ce[..57-59..]		10	60	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:60#001	TC.§10:60	D1		ce[..57-59..]	10	60	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:60#002	TC.§10:60	D0	asχanisc		10	60	2	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:60#002	TC.§10:60	D1		asχanisc	10	60	2	damage_end	legible	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:61#001	TC.§10:61	D0	lavtunui[s...39-41..]		10	61	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:61#001	TC.§10:61	D1		lavtunui[s...39-41..]	10	61	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:61#002	TC.§10:61	D0	ziχun[..]		10	61	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:61#002	TC.§10:61	D1		ziχun[..]	10	61	2	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:62#001	TC.§10:62	D0	[...?...can?]ulis		10	62	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:62#001	TC.§10:62	D1		[...?...can?]ulis	10	62	1	damage_start	damaged	W0_TC:van der Meer 2014/15:App.I
+D0.TC.§10:62#002	TC.§10:62	D0	ziχunce		10	62	2		legible	W0_TC:van der Meer 2014/15:App.I
+D1.TC.§10:62#002	TC.§10:62	D1		ziχunce	10	62	2		legible	W0_TC:van der Meer 2014/15:App.I
