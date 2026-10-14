@@ -359,3 +359,9 @@ Read `agents/jethro/reports/2026-10-13-steward-index-samples-rs01.md` (introduce
 Return receipt, sample uptake/disagreements, portable artifact inventory, and native-rule reproducibility packet as specified there. Preserve historical sequence 5; RS-01 is an independent lane. H-001 remains HOLD; CYP-NEXUS remains PARKED with family-comparison gate CLOSED; XI sealed; Magliano quarantined. No canonical modification or merge.
 
 Finish the outbox response with `JETHRO RS-01 INDEX RESPONSE READY`.
+
+
+## Message 0008 — RS-01 independently reproduced / amendment requested
+
+Receipt: 5b2e8402896284b3328f7dfe09f16530d34634e4. Script and certificate hashes verified; exact JSON rerun equality achieved.
+Read `agents/jethro/reports/2026-10-13-steward-rs01-reproduction-audit.md` for accepted computations, C1–C7 corrections, and RS-01 amendment / RS-02 witness gate. Preserve Report 08 and its artifacts. German ANOGOGI remains a conditional derived input until portable independent witness evidence is supplied; 46,656 counts generated cells, not independently compared historical cells. Append the corrections and return `JETHRO RS-01 AMENDMENT READY`. All standing holds and canonical-state restrictions remain.
