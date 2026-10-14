@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soyga Rule Runner</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0; padding: 0 14px 40px; color: #1a1a1a; background: #fdfcf8; line-height: 1.5; }
+  main { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 1.6em; margin: 18px 0 4px; }
+  h2 { font-size: 1.25em; margin-top: 34px; border-bottom: 2px solid #333; padding-bottom: 4px; }
+  h3 { font-size: 1.05em; margin-top: 22px; }
+  .sub { color: #555; margin-top: 0; }
+  .note { background: #f2efe6; border-left: 4px solid #8a7d4d; padding: 10px 12px; margin: 14px 0; font-size: 0.95em; }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; margin: 10px 0; }
+  th, td { border: 1px solid #bbb; padding: 5px 8px; text-align: left; font-size: 0.92em; }
+  th { background: #eceade; }
+  button { font-size: 1em; padding: 7px 14px; margin: 6px 4px 6px 0; cursor: pointer;
+    background: #2f3b2f; color: #fff; border: none; border-radius: 6px; }
+  button.secondary { background: #5b665b; }
+  input, select { font-size: 1em; padding: 6px 8px; border: 1px solid #999; border-radius: 6px;
+    font-family: ui-monospace, Menlo, Consolas, monospace; text-transform: uppercase; }
+  input { width: 11em; }
+  .pass { color: #1e6b2e; font-weight: 700; }
+  .fail { color: #a01a1a; font-weight: 700; }
+  .steps { background: #f6f5ef; border: 1px solid #ddd; padding: 10px 12px; margin: 10px 0;
+    white-space: pre-wrap; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.92em; }
+  .gridwrap { overflow-x: auto; margin: 10px 0; }
+  table.grid td { padding: 0; text-align: center; min-width: 24px; height: 26px; cursor: pointer; }
+  table.grid td.sel { background: #ffe9a8; outline: 2px solid #8a7d4d; }
+  table.grid td.hdr { background: #eceade; cursor: default; font-size: 0.8em; color: #555; }
+  .fgrid td { text-align: center; }
+  .clickword { cursor: pointer; color: #1a4d8f; text-decoration: underline; }
+  .small { font-size: 0.88em; color: #555; }
+  code { background: #efeedf; padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Soyga Rule Runner</h1>
+<p class="sub">Two verified rules from the Book of Soyga's 36 letter-tables, running entirely in this page. Nothing is uploaded or sent anywhere.</p>
+
+<div class="note"><strong>What this is.</strong> The Book of Soyga (Aldaraia) holds 36 tables, each a 36&times;36 grid of letters. Two rules behind the tables are verified here: (1) the twelve anagram pairs joining the doubled zodiac tables, and (2) the mod-23 recursive rule that generates every table cell from a six-letter code word. Every check below is computed live in your browser.</div>
+
+<h2>The 23-letter alphabet</h2>
+<p>The tables use the 23-letter Latin alphabet (no J, no V; I stands for I/J, U for U/V). Letters are numbered A&nbsp;=&nbsp;1 through Z&nbsp;=&nbsp;23.</p>
+<div class="scroll"><table class="fgrid" id="alphaTable"></table></div>
+
+<h2>Rule 1 &mdash; The twelve anagram pairs</h2>
+<p>Tables 1&ndash;12 and 13&ndash;24 repeat the zodiac, Aries through Pisces. Each table carries a six-letter code word. The code words pair up as anagrams, strictly by zodiac sign &mdash; table 1 with 13, 2 with 14, and so on. No other anagram pairing exists among all 36 words.</p>
+<div class="scroll"><table id="pairTable">
+<thead><tr><th>Sign</th><th>Tables</th><th>Word A</th><th>Word B</th><th>Sorted A</th><th>Sorted B</th><th>Anagram?</th></tr></thead>
+<tbody></tbody></table></div>
+<button id="verifyPairsBtn">Verify all pairs</button>
+<div id="pairVerifyOut"></div>
+
+<h3>Check two words yourself</h3>
+<p><input id="w1" maxlength="12" placeholder="FIRST"> <input id="w2" maxlength="12" placeholder="SECOND"> <button id="checkPairBtn">Check</button></p>
+<div id="pairCheckOut"></div>
+
+<h2>Rule 2 &mdash; The mod-23 recursive rule</h2>
+<p>Each table is generated from its code word by one rule, applied cell by cell:</p>
+<ul>
+<li><strong>First column:</strong> the code word, then its reversal, repeated until all 36 rows are filled.</li>
+<li><strong>First row:</strong> start with the code word's first letter; each next letter is <code>X = P + f(P) mod 23</code>, where P is the previous letter.</li>
+<li><strong>Interior:</strong> <code>X = N + f(W) mod 23</code>, where N is the letter above and W is the letter to the left.</li>
+</ul>
+<p>Fill order is row by row, left to right, so N and W are always already known. <code>f</code> is Reeds' offset table, recovered from the paper's worked examples and ideal table and verified by regenerating the paper's tables exactly (see verification below).</p>
+
+<h3>The offset table f</h3>
+<div class="scroll"><table class="fgrid" id="fTable"></table></div>
+
+<h3>Generate a table</h3>
+<p>Code word (6 letters, 23-letter alphabet):
+<input id="codeword" maxlength="12" value="NISRAM">
+Rows to show:
+<select id="rowsel"><option>6</option><option>12</option><option selected>18</option><option>36</option></select>
+<button id="genBtn">Generate</button></p>
+<p class="small">Click any cell in the grid to see exactly how it was computed. Click a code word in the inventory below to load it here.</p>
+<div class="gridwrap"><table class="grid" id="grid"></table></div>
+<div id="cellSteps"></div>
+
+<h3>Table inventory &mdash; all 36 code words</h3>
+<p class="small">From Reeds' Table I, with manuscript locations. Click any code word to load it into the generator.</p>
+<div class="scroll"><table id="invTable">
+<thead><tr><th>Table</th><th>Label</th><th>Code word</th><th>Bodley 908</th><th>Sloane 8</th><th>Sloane 3189</th></tr></thead>
+<tbody id="invBody"></tbody></table></div>
+
+<h3>Verification &mdash; computed live</h3>
+<div id="verifyOut"></div>
+<button id="verifyBtn" class="secondary">Re-run verification</button>
+
+<div class="note"><strong>Scope.</strong> This page implements the historical rule as reconstructed by Jim Reeds. It does <em>not</em> include the modern Soyga-ECVR derivative recurrence, which is a separate modern construction and must not be presented as the historical table rule. The inventory lists all 36 code words with manuscript locations from Reeds' Table I.</div>
+
+<h2>Sources</h2>
+<ul class="small">
+<li>Jim Reeds, "John Dee and the Magic Tables in the Book of Soyga" (1998) &mdash; the X = N + f(W) rule, worked examples, the ideal SARTON table used as test vectors, and Table I (all 36 code words with manuscript locations). <a href="https://ia804501.us.archive.org/16/items/JohnDee_201812/BookofSoyga-MagicTables.pdf">Paper (archive.org)</a></li>
+<li>The twelve anagram pairs as recorded in the user's angelic-operative-texts research lane (verified computationally, 2026-10-06; extended to all 36 words with Table I).</li>
+<li>The f table was recovered from the paper's worked examples and ideal table, then verified by exact regeneration of the paper's ten published SARTON rows and the T1 opening rows.</li>
+</ul>
+<p class="small">All computation happens locally in this page. No network calls, no uploads, no dependencies.</p>
+</main>
+
+<script>
+"use strict";
+// ---------- data ----------
+const ALPHA = "ABCDEFGHIKLMNOPQRSTUXYZ"; // 23 letters: no J, no V
+const F = {A:2,B:2,C:3,D:5,E:14,F:2,G:6,H:5,I:14,K:15,L:20,M:22,N:14,O:8,P:13,Q:20,R:11,S:8,T:8,U:15,X:15,Y:15,Z:2};
+const TABLES = [
+  [1,"Aries","NISRAM","180r","102v/103r","58v"],
+  [2,"Taurus","ROELER","180v","103v/104r","60v"],
+  [3,"Gemini","IOMIOT","181r","104v/105r","62v"],
+  [4,"Cancer","ISIAPO","181v","105v/106r","64v"],
+  [5,"Leo","ORRASE","182r","106v/107r",""],
+  [6,"Virgo","OSACUE","182v","107v/108r",""],
+  [7,"Libra","XUAUIR","183r","108v/109r",""],
+  [8,"Scorpio","RAOSAC","183v","109v/110r",""],
+  [9,"Sagittarius","RSADUA","184r","110v/111r",""],
+  [10,"Capricornus","ATROGA","184v","111v/112r",""],
+  [11,"Aquarius","SDUOLO","185r","112v/113r",""],
+  [12,"Pisces","ARICAA","185v","113v/114r",""],
+  [13,"Aries","MARSIN","186r","114v/115r","59r"],
+  [14,"Taurus","RELEOR","186v","115v/116r","61r"],
+  [15,"Gemini","TOIMOI","187r","116v/117r","63r"],
+  [16,"Cancer","OPAISI","187v","117v/118r","65r"],
+  [17,"Leo","ESARRO","188r","118v/119r",""],
+  [18,"Virgo","EUCASO","188v","119v/120r",""],
+  [19,"Libra","RIUAUX","189r","120v/121r",""],
+  [20,"Scorpio","CASOAR","189v","121v/122r",""],
+  [21,"Sagittarius","AUDASR","190r","122v/123r",""],
+  [22,"Capricornus","AGORTA","190v","123v/124r",""],
+  [23,"Aquarius","OLOUDS","191r","124v/125r",""],
+  [24,"Pisces","AACIRA","191v","125v/126r",""],
+  [25,"Saturni","OSRESO","192r","126v/127r",""],
+  [26,"Jovis","NIEBOA","192v","127v/128r",""],
+  [27,"Martis","OIAIAE","193r","128v/129r",""],
+  [28,"Solis","ITIABA","193v","129v/130r",""],
+  [29,"Veneris","ADAMIS","194r","130v/131r",""],
+  [30,"Mercurii","REUELA","194v","131v/132r",""],
+  [31,"Lunae","UISEUA","195r","132v/133r",""],
+  [32,"Ignis","MERONF","195v","133v/134r",""],
+  [33,"Aeris","ILIOSU","196r","134v/135r",""],
+  [34,"Aquae","OYNIND","196v","135v/136r",""],
+  [35,"Terrai","IASULA","197r","136v/137r",""],
+  [36,"Magistri","MOYSES","197v","137v/138r",""]
+];
+const PAIRS = [
+  ["NISRAM","MARSIN","Aries"],["ROELER","RELEOR","Taurus"],
+  ["IOMIOT","TOIMOI","Gemini"],["ISIAPO","OPAISI","Cancer"],
+  ["ORRASE","ESARRO","Leo"],["OSACUE","EUCASO","Virgo"],
+  ["XUAUIR","RIUAUX","Libra"],["RAOSAC","CASOAR","Scorpio"],
+  ["RSADUA","AUDASR","Sagittarius"],["ATROGA","AGORTA","Capricornus"],
+  ["SDUOLO","OLOUDS","Aquarius"],["ARICAA","AACIRA","Pisces"]
+];
+// Ideal SARTON table, first 10 rows, as printed in the paper (section 5.1).
+const SARTON_IDEAL = [
+  "SCFHNDIZBDIZBDIZBDIZBDIZBDIZBDIZBDIZ",
+  "AEUZPRUPPRUPPRUPPRUPPRUPPRUPPRUPPRUP",
+  "RQRLMQRCsbygxilmobygxilmobygxilmobyg".toUpperCase(),
+  "TATTUHYSCE" + "NXNZNCRNNXNZNCRNNXNZNCRNNX",
+  "OIKLRTGAETXndedhyedcquereDSFPNDHYEDC".toUpperCase(),
+  "NZMKIKYQBXNDITMGETMBSETBGKKXGTMGETMB",
+  "NOUBLGEGHCQALQIXULIQPSDGNAMUYLIXULIQ",
+  "OYMANXUYZEGGRDOFYCMPEISPCDRHDQFZYCMP",
+  "TGSIDCZABGNXISYXOLIFGPHUSMQESAHENRZR",
+  "RSCMCFBCEXEMHZAZQHOOPEYMRZSNIPXUEHEH"
+];
+
+// ---------- core ----------
+function mod23(n){ return ((n - 1) % 23 + 23) % 23 + 1; }
+function vOf(ch){ return ALPHA.indexOf(ch) + 1; } // 1..23, 0 if absent
+function lOf(n){ return ALPHA[mod23(n) - 1]; }
+function sortedLetters(w){ return w.split("").sort().join(""); }
+function isAnagram(a, b){ return a.length === b.length && sortedLetters(a) === sortedLetters(b); }
+
+function generate(codeword){
+  const code = codeword.toUpperCase();
+  const rev = code.split("").reverse().join("");
+  const col1 = (code + rev).repeat(Math.ceil(36 / (code + rev).length)).slice(0, 36);
+  const grid = Array.from({length: 36}, () => Array(36).fill(""));
+  for (let r = 0; r < 36; r++) grid[r][0] = col1[r];
+  let x = code[0];
+  grid[0][0] = x;
+  for (let c = 1; c < 36; c++){ x = lOf(vOf(x) + F[x]); grid[0][c] = x; }
+  for (let r = 1; r < 36; r++)
+    for (let c = 1; c < 36; c++)
+      grid[r][c] = lOf(vOf(grid[r-1][c]) + F[grid[r][c-1]]);
+  return { grid, col1, code };
+}
+
+function cellSteps(g, code, r, c){
+  const lines = [];
+  lines.push("Cell: row " + (r+1) + ", column " + (c+1) + " of the table for code word " + code + ".");
+  if (r === 0 && c === 0){ lines.push("Seed: first letter of the code word = " + g[0][0] + "."); return lines; }
+  if (c === 0){
+    const pos = r % (code.length * 2);
+    const src = pos < code.length ? "code word" : "reversed code word";
+    lines.push("First column: code word + reversed code word, repeated.");
+    lines.push("Row " + (r+1) + " takes position " + (pos+1) + " of the " + src + " = " + g[r][0] + ".");
+    return lines;
+  }
+  if (r === 0){
+    const P = g[0][c-1];
+    lines.push("First row: X = P + f(P) mod 23, P = previous letter.");
+    lines.push("P = " + P + " = " + vOf(P) + "; f(" + P + ") = " + F[P] + ".");
+    lines.push(vOf(P) + " + " + F[P] + " = " + (vOf(P) + F[P]) + "; mod 23 = " + mod23(vOf(P) + F[P]) + " = " + g[0][c] + ".");
+    return lines;
+  }
+  const N = g[r-1][c], W = g[r][c-1];
+  lines.push("Interior: X = N + f(W) mod 23.");
+  lines.push("N (above) = " + N + " = " + vOf(N) + "; W (left) = " + W + " = " + vOf(W) + "; f(" + W + ") = " + F[W] + ".");
+  lines.push(vOf(N) + " + " + F[W] + " = " + (vOf(N) + F[W]) + "; mod 23 = " + mod23(vOf(N) + F[W]) + " = " + g[r][c] + ".");
+  return lines;
+}
+
+// ---------- verification ----------
+function verifyAnagrams(){
+  const out = [];
+  let allOk = true;
+  PAIRS.forEach(([a, b, sign], i) => {
+    const ok = isAnagram(a, b);
+    allOk = allOk && ok;
+    out.push({ text: "Pair " + (i+1) + " (" + sign + "): " + a + " / " + b + " " + (ok ? "anagram" : "NOT anagram"), ok });
+  });
+  const seen = {};
+  TABLES.forEach(t => { const s = sortedLetters(t[2]); seen[s] = seen[s] || []; seen[s].push(t[0]); });
+  const groups = Object.values(seen).filter(g => g.length > 1);
+  const expected = PAIRS.map((_, i) => [i + 1, i + 13].sort((x, y) => x - y).join(","));
+  const actual = groups.map(g => g.sort((x, y) => x - y).join(",")).sort();
+  const extra = JSON.stringify(actual) !== JSON.stringify(expected.sort());
+  out.push({ text: "No other anagram pairing among all 36 words: " + (extra ? "FAILED" : "confirmed (exactly the 12 zodiac pairs)"), ok: !extra });
+  allOk = allOk && !extra;
+  return { out, allOk };
+}
+
+function verifyMod23(){
+  const out = [];
+  let allOk = true;
+  const t1 = generate("NISRAM").grid;
+  // Reeds' three worked examples: T1 row 2, cells 2-4.
+  const cases = [
+    { n: "D", w: "I", expect: "S" },
+    { n: "I", w: "S", expect: "R" },
+    { n: "Z", w: "R", expect: "L" }
+  ];
+  cases.forEach((cs, i) => {
+    const got = lOf(vOf(cs.n) + F[cs.w]);
+    const ok = got === cs.expect;
+    allOk = allOk && ok;
+    out.push({ text: "Worked example " + (i+1) + ": " + cs.n + " + f(" + cs.w + ") = " + vOf(cs.n) + " + " + F[cs.w] + " = " + mod23(vOf(cs.n) + F[cs.w]) + " = " + got + " (paper: " + cs.expect + ")", ok });
+  });
+  // SARTON regeneration vs the paper's ideal rows.
+  const sarton = generate("SARTON").grid;
+  let bad = 0;
+  for (let i = 0; i < 10; i++) if (sarton[i].join("") !== SARTON_IDEAL[i]) bad++;
+  out.push({ text: "SARTON regeneration: first 10 rows match the paper's ideal table (" + (10 - bad) + "/10)", ok: bad === 0 });
+  allOk = allOk && bad === 0;
+  // T1 opening rows.
+  const r1ok = t1[0].join("").startsWith("NDIZBDIZBDIZ");
+  const r2ok = t1[1].join("").startsWith("ISRL");
+  out.push({ text: "T1 (NISRAM) row 1 begins NDIZBDIZBDIZ: " + (r1ok ? "yes" : "no"), ok: r1ok });
+  out.push({ text: "T1 (NISRAM) row 2 begins ISRL: " + (r2ok ? "yes" : "no"), ok: r2ok });
+  allOk = allOk && r1ok && r2ok;
+  return { out, allOk };
+}
+
+// ---------- render ----------
+function renderAlpha(){
+  const t = document.getElementById("alphaTable");
+  let h1 = "<tr>", h2 = "<tr>";
+  for (const ch of ALPHA){ h1 += "<th>" + ch + "</th>"; h2 += "<td>" + vOf(ch) + "</td>"; }
+  t.innerHTML = h1 + "</tr>" + h2 + "</tr>";
+}
+function renderF(){
+  const t = document.getElementById("fTable");
+  let h1 = "<tr>", h2 = "<tr>";
+  for (const ch of ALPHA){ h1 += "<th>f(" + ch + ")</th>"; h2 += "<td>" + F[ch] + "</td>"; }
+  t.innerHTML = h1 + "</tr>" + h2 + "</tr>";
+}
+function renderPairs(){
+  const tb = document.querySelector("#pairTable tbody");
+  tb.innerHTML = PAIRS.map(([a, b, sign], i) =>
+    "<tr><td>" + sign + "</td><td>" + (i+1) + " / " + (i+13) + "</td><td class='mono'>" + a + "</td><td class='mono'>" + b +
+    "</td><td class='mono'>" + sortedLetters(a) + "</td><td class='mono'>" + sortedLetters(b) +
+    "</td><td>" + (isAnagram(a, b) ? "<span class='pass'>Yes</span>" : "<span class='fail'>No</span>") + "</td></tr>").join("");
+}
+function renderInventory(){
+  document.getElementById("invBody").innerHTML = TABLES.map(t =>
+    "<tr><td>" + t[0] + "</td><td>" + t[1] + "</td><td class='mono'><span class='clickword' data-cw='" + t[2] + "'>" + t[2] + "</span></td><td>" + t[3] + "</td><td>" + t[4] + "</td><td>" + (t[5] || "&mdash;") + "</td></tr>").join("");
+}
+
+let current = null;
+function renderGrid(){
+  const cw = document.getElementById("codeword").value.trim().toUpperCase();
+  const rows = parseInt(document.getElementById("rowsel").value, 10);
+  const err = document.getElementById("cellSteps");
+  if (!cw || cw.length < 1 || cw.length > 12 || [...cw].some(ch => !ALPHA.includes(ch))){
+    err.innerHTML = "<div class='steps'>Code word must be 1\u201312 letters from the 23-letter alphabet (no J, no V).</div>";
+    return;
+  }
+  current = generate(cw);
+  const g = current.grid;
+  let html = "<tr><td class='hdr'></td>";
+  for (let c = 1; c <= 36; c++) html += "<td class='hdr'>" + c + "</td>";
+  html += "</tr>";
+  for (let r = 0; r < rows; r++){
+    html += "<tr><td class='hdr'>" + (r+1) + "</td>";
+    for (let c = 0; c < 36; c++)
+      html += "<td data-r='" + r + "' data-c='" + c + "'>" + g[r][c] + "</td>";
+    html += "</tr>";
+  }
+  document.getElementById("grid").innerHTML = html;
+  err.innerHTML = "<div class='steps'>Table for " + cw + " (" + rows + " of 36 rows shown). Click any cell to see its derivation.</div>";
+  document.querySelectorAll("#grid td[data-r]").forEach(td => td.addEventListener("click", () => {
+    document.querySelectorAll("#grid td.sel").forEach(x => x.classList.remove("sel"));
+    td.classList.add("sel");
+    const r = +td.dataset.r, c = +td.dataset.c;
+    document.getElementById("cellSteps").innerHTML =
+      "<div class='steps'>" + cellSteps(current.grid, current.code, r, c).join("\n") + "</div>";
+  }));
+}
+
+function runVerify(){
+  const a = verifyAnagrams(), m = verifyMod23();
+  const all = [...a.out, ...m.out];
+  document.getElementById("verifyOut").innerHTML =
+    all.map(o => "<div>" + (o.ok ? "<span class='pass'>PASS</span>" : "<span class='fail'>FAIL</span>") + " &mdash; " + o.text + "</div>").join("") +
+    "<div style='margin-top:8px'><strong>" + (a.allOk && m.allOk ? "<span class='pass'>All checks pass.</span>" : "<span class='fail'>A check failed.</span>") + "</strong></div>";
+  document.getElementById("pairVerifyOut").innerHTML =
+    a.out.map(o => "<div>" + (o.ok ? "<span class='pass'>PASS</span>" : "<span class='fail'>FAIL</span>") + " &mdash; " + o.text + "</div>").join("");
+}
+
+// ---------- wire up ----------
+document.getElementById("genBtn").addEventListener("click", renderGrid);
+document.getElementById("codeword").addEventListener("keydown", e => { if (e.key === "Enter") renderGrid(); });
+document.getElementById("verifyBtn").addEventListener("click", runVerify);
+document.getElementById("verifyPairsBtn").addEventListener("click", () => {
+  const a = verifyAnagrams();
+  document.getElementById("pairVerifyOut").innerHTML =
+    a.out.map(o => "<div>" + (o.ok ? "<span class='pass'>PASS</span>" : "<span class='fail'>FAIL</span>") + " &mdash; " + o.text + "</div>").join("");
+});
+document.getElementById("checkPairBtn").addEventListener("click", () => {
+  const a = document.getElementById("w1").value.trim().toUpperCase();
+  const b = document.getElementById("w2").value.trim().toUpperCase();
+  const el = document.getElementById("pairCheckOut");
+  if (!a || !b){ el.innerHTML = "<div class='steps'>Enter two words.</div>"; return; }
+  const ok = isAnagram(a, b);
+  el.innerHTML = "<div class='steps'>Sorted " + a + " \u2192 " + sortedLetters(a) + "\nSorted " + b + " \u2192 " + sortedLetters(b) +
+    "\n" + (ok ? "Identical \u2192 anagram." : "Different \u2192 not anagrams.") + "</div>";
+});
+document.addEventListener("click", e => {
+  const t = e.target.closest(".clickword");
+  if (!t) return;
+  document.getElementById("codeword").value = t.dataset.cw;
+  renderGrid();
+  document.getElementById("grid").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+renderAlpha(); renderF(); renderPairs(); renderInventory(); renderGrid(); runVerify();
+</script>
+</body>
+</html>

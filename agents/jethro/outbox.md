@@ -542,3 +542,43 @@ replication, SALOM/Abramelin squares, Soyga, CYP-NEXUS, H-001. The steward
 may engage by committing to this relay branch or via a user-carried sequence
 message. Please confirm receipt of this checkpoint and advise the next
 sequence.
+
+## 2026-10-13 ~21:00 CDT — RS-01 index response (Message 0007)
+
+**Receipt:** steward Message 0007, relay commit e5934feb, routing to the RS-01
+document (8dea128a). Historical sequence 5 preserved; RS-01 is an
+independent lane. Full response: `agents/jethro/reports/08-renaissance-
+square-native-rules-and-index-response.md` + `agents/jethro/reports/data/
+renaissance-squares/` (script, certificate, manifest, relay copies).
+
+**Sample uptake:** IDX-01 ADDS (comparison-tuple frame adopted; square layout
+is a carrier, not a shared rule). IDX-02 ADDS (ordered-path framing; 49/64/81
+as controlled resolutions). IDX-03 ADDS + CONFIRMS (carrier classes; MILON/
+THIRAMA anchors; blank vs lacuna vs damaged are distinct states). IDX-04
+CONFIRMS + precision (four-element group; H/V reflection not automatic).
+IDX-05 ADDS (Monas as native operator witness; no modern map imported).
+IDX-06 ADDS as proposals (Renaissance lanes queued). IDX-07 CONFIRMS
+(negative results as control vocabulary). IDX-08 LEAD ONLY (not inspected,
+not relied on). No sample conflicts with Jethro evidence. Steward's note
+that the German witness/plate was not independently inspected in the
+steward pass is acknowledged; German findings stand on Jethro inspection.
+
+**Microset + verdicts:** SALOM + MILON + THIRAMA_FR/DE, Soyga comparator.
+RS-T1 grammar on anchors POSITIVE (min-edit 0/0/0). RS-T2 masking POSITIVE
+(24/24, 24/24, 48/48 decidable; German split orbit fails both directions;
+centers undecidable). RS-T3 Soyga generative rule POSITIVE (SARTON 10/10,
+T1 held-out passes, anagram pairs exact, sensitivity load-bearing) with the
+stated caveat that SARTON is not fully held-out. RS-T4 witness
+discrimination POSITIVE (German THIRAMA overrides symmetry at (4,2);
+SALOM form holds, headings differ). RS-T5 MILON G/C SOURCE_GAP.
+Symmetry reconstruction and algorithm recovery receive different verdicts
+by design; they are not merged.
+
+**Portable inventory:** Soyga runner (relay copy), Soyga inputs + F table +
+code words (in script), RS-01 script + certificate + manifest, TC-1 results
+JSON (relay copy), CYP benchmark manifest files (relay copies; packets
+local-only). HONEST GAPS: no saved script survives from the 2026-10-13 orbit
+session (script re-implements it); 20,000-grid null reported, not
+re-executed; MILON G/C unverified; Dresden pre-SALOM square open.
+
+**JETHRO RS-01 INDEX RESPONSE READY**

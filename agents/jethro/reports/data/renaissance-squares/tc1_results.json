@@ -1,0 +1,270 @@
+{
+  "tc_tokens": {
+    "total": 321,
+    "certain": 241,
+    "gap": 4
+  },
+  "tc_ri": {
+    "table": [
+      {
+        "candidate": "pepri",
+        "stem": "pep",
+        "endings": {
+          "θiai": 1
+        },
+        "sig_i": false,
+        "occurrences": 0,
+        "sections": [],
+        "neighbor_sets": 0,
+        "sig_ii": false,
+        "met": false
+      },
+      {
+        "candidate": "picasri",
+        "stem": "picas",
+        "endings": {
+          "ri": 2
+        },
+        "sig_i": false,
+        "occurrences": 2,
+        "sections": [
+          1
+        ],
+        "neighbor_sets": 2,
+        "sig_ii": true,
+        "met": false
+      },
+      {
+        "candidate": "muluri",
+        "stem": "mulu",
+        "endings": {
+          "": 2
+        },
+        "sig_i": false,
+        "occurrences": 0,
+        "sections": [],
+        "neighbor_sets": 0,
+        "sig_ii": false,
+        "met": false
+      },
+      {
+        "candidate": "sacri",
+        "stem": "sac",
+        "endings": {
+          "a": 1,
+          "ri": 1,
+          "nicleri": 6,
+          "nicla": 2,
+          "ntfn": 1,
+          "nisa": 1
+        },
+        "sig_i": true,
+        "occurrences": 1,
+        "sections": [
+          2
+        ],
+        "neighbor_sets": 1,
+        "sig_ii": false,
+        "met": false
+      },
+      {
+        "candidate": "nunθeri",
+        "stem": "nunθ",
+        "endings": {
+          "eri": 4,
+          "cu": 1
+        },
+        "sig_i": true,
+        "occurrences": 4,
+        "sections": [
+          2,
+          3
+        ],
+        "neighbor_sets": 4,
+        "sig_ii": true,
+        "met": true
+      }
+    ],
+    "met": 1,
+    "verdict": "FAILURE"
+  },
+  "tc_tul": {
+    "tul_occurrences": 0,
+    "reference": {
+      "vacil": {
+        "H": 1.4355205042826666,
+        "n": 9,
+        "bins": {
+          "1": 2,
+          "2": 5,
+          "3": 2
+        }
+      },
+      "mulu": {
+        "H": 1.0,
+        "n": 2,
+        "bins": {
+          "3": 1,
+          "2": 1
+        }
+      },
+      "saca": {
+        "H": 0.0,
+        "n": 1,
+        "bins": {
+          "3": 1
+        }
+      },
+      "leθamsul": {
+        "H": 1.0,
+        "n": 4,
+        "bins": {
+          "1": 2,
+          "2": 2
+        }
+      },
+      "savcnes": {
+        "H": 0.0,
+        "n": 1,
+        "bins": {
+          "3": 1
+        }
+      }
+    },
+    "max_ref": 1.4355205042826666,
+    "median_ref": 1.0,
+    "verdict": "INDETERMINATE"
+  },
+  "tc_nunth": {
+    "T1": true,
+    "T1_endings": {
+      "eri": 4,
+      "cu": 1
+    },
+    "T2": false,
+    "LL_bins": {
+      "3": 2
+    },
+    "LL_modal": 3,
+    "TC_bins": {
+      "1": 2,
+      "2": 1,
+      "3": 1
+    },
+    "TC_modal": 1,
+    "T3": false,
+    "LL_neighbors": [
+      "ftesan",
+      "mlay",
+      "twviti",
+      "vacl"
+    ],
+    "TC_neighbors": [
+      "aius",
+      "apire",
+      "avθleθ",
+      "eθ",
+      "leθamsul",
+      "siricima",
+      "vacil"
+    ],
+    "shared": [],
+    "verdict": "NO FROZEN VERDICT (rule gap: T1 PASS, T2 FAIL, T3 FAIL not covered)"
+  },
+  "tc_march": {
+    "W_LL": [
+      "vacl",
+      "an",
+      "ścanince",
+      "saucsaθ",
+      "persin",
+      "cletram",
+      "śrenχve",
+      "iχ",
+      "ścanince",
+      "ciz",
+      "vacl",
+      "ara"
+    ],
+    "forward": {
+      "1": 0.0,
+      "2": 0.08333333333333333,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.08333333333333333,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0
+    },
+    "forward_rank": 3,
+    "reverse": {
+      "I": 0.0,
+      "II": 0.0,
+      "III": 0.021739130434782608,
+      "IV": 0.0,
+      "V": 0.0,
+      "VI": 0.0,
+      "VII": 0.021739130434782608,
+      "VIII": 0.0,
+      "IX": 0.0,
+      "X": 0.021739130434782608,
+      "XII": 0.0
+    },
+    "reverse_rank": 1,
+    "p_forward": 1.0,
+    "p_reverse": 0.2699,
+    "seeds": {
+      "forward": 20261013,
+      "reverse": 20261014
+    },
+    "verdict": "FAILURE",
+    "sensitivity_certain_only": {
+      "forward": {
+        "1": 0.0,
+        "2": 0.08333333333333333,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.09090909090909091,
+        "7": 0.0,
+        "8": 0.0,
+        "9": 0.0,
+        "10": 0.0
+      },
+      "forward_rank": 3,
+      "reverse": {
+        "I": 0.0,
+        "II": 0.0,
+        "III": 0.02631578947368421,
+        "IV": 0.0,
+        "V": 0.0,
+        "VI": 0.0,
+        "VII": 0.02631578947368421,
+        "VIII": 0.0,
+        "IX": 0.0,
+        "X": 0.02631578947368421,
+        "XII": 0.0
+      },
+      "reverse_rank": 1,
+      "p_forward": 1.0,
+      "p_reverse": 0.2699
+    }
+  },
+  "notes": [
+    "D0 = diplomatic transcription of van der Meer 2014/15 Appendix I (Studi Etruschi 77, pp. 165-173), which is 'mainly based on Cristofani 1995, 57-58 but here without syllabic and word interpuncts' and 'split up into syntagms'. That re-presentation is preserved, not undone.",
+    "Line numbers are the appendix's superscript line-start markers. A word split across a line break is one token, assigned to the line where it starts (SPAN set).",
+    "Standalone numbers in the OCR layer that match the article's PDF pagination (17-26) are page numbers, NOT TC line numbers; they are excluded. The '20' before 'niiac' (§4) is article p. 169, not TC line 20.",
+    "§1 L4 'savlasie[s?..5-7..]': closing bracket not visible in the OCR layer; recorded as printed, bracket left open as observed.",
+    "§1 L5 'm[ul]u': OCR shows 'm5ul]u' (superscript 5 = line marker; '[' lost). Bracket restored from the paired ']'; form = mulu, RECONSTRUCTED letters.",
+    "§3 L19: OCR repeats the line number '19' (margin duplication). L19 = 17 tokens as listed.",
+    "§4 L23 'nis[c l]avtun' split into 'nis[c]' + '[l]avtun' (two whitespace units in the original layout).",
+    "§5 L29: no complete tokens; the only content is the continuation of the L28 spanning token. Recorded as zero tokens, missingness noted.",
+    "§5 L28 'fulinuśn[es or -al-------]': one word position with internal spaces in the editorial notation; kept as one token.",
+    "§8 L40 '[..45-47..]hanaχ': OCR shows '..45-47..]hana41χ' (opening bracket not visible); bracket paired editorially, noted.",
+    "§9 L46: OCR shows '[-----]l, ?' — the trailing '?' is unresolvable OCR noise, not counted as a token.",
+    "No red-ink rulings are marked in this witness (TC is incised terracotta, not inked). Structural flags used: section_line (scribed divider between sections) and damage markers. The schema's red_ruling/diacritic flags are supported but empty for this witness.",
+    "Line-26 exploratory check (see verdict report): W0 line 26 (stizaitei, acasri, ...) contains NO nunθ-/nuthe- form. Nearest is damaged 'nunθe[ri?...]' at line 25. Exploratory only; excluded from all confirmatory verdicts."
+  ]
+}
