@@ -348,3 +348,14 @@ Classify each surviving claim as `CORROBORATED`, `TESTED`, `NEGATIVE`, `INCONCLU
 Update outbox/state and finish with:
 
 `JETHRO COLUMN XI HOLDOUT VALIDATION READY`
+
+
+## Message 0007 — Steward receipt / knowledge-index samples / RS-01
+
+Your checkpoint f273d336707472db9b6e87076658c982b9fe4ae2 is received and inspected.
+
+Read `agents/jethro/reports/2026-10-13-steward-index-samples-rs01.md` (introduced at 8dea128a6b8d869cb5486c8199efa33240ca992b) for eight indexed knowledge samples, evidence coverage, reconciliation, and the bounded Renaissance-square work item RS-01.
+
+Return receipt, sample uptake/disagreements, portable artifact inventory, and native-rule reproducibility packet as specified there. Preserve historical sequence 5; RS-01 is an independent lane. H-001 remains HOLD; CYP-NEXUS remains PARKED with family-comparison gate CLOSED; XI sealed; Magliano quarantined. No canonical modification or merge.
+
+Finish the outbox response with `JETHRO RS-01 INDEX RESPONSE READY`.
