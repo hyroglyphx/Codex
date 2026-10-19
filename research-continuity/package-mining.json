@@ -1,0 +1,49 @@
+{
+  "audit_date": "2026-10-19",
+  "source_repository": "hyroglyphx/Website-Works",
+  "packages": [
+    {
+      "file": "anamnesis-chat-plugin (2).zip",
+      "sha": "eac7e7befb6037d22973b2e4a68eadb2fbd0cf52",
+      "entries": [
+        "anamnesis-plugin.php",
+        "anamnesis-chat.js"
+      ],
+      "decision": "do_not_import",
+      "reusable_concept": "authenticated WordPress intake adapter",
+      "reasons": [
+        "No persistent memory or retrieval",
+        "Unauthenticated REST route",
+        "Duplicate shortcode",
+        "Placeholder frontend"
+      ]
+    },
+    {
+      "file": "Codex_Core_Package.zip",
+      "sha": "8893e36eb9328aba775c541edb4bbc45665efa19",
+      "entries": [
+        "README.txt",
+        "run_engine.py"
+      ],
+      "decision": "historical_stub",
+      "reusable_concept": null,
+      "reasons": [
+        "Engine only prints a startup message"
+      ]
+    },
+    {
+      "file": "ghat-harmonic-interpreter-clean.zip",
+      "sha": "3e6b34146ffc4f9c732190b21140492b2fe5f2cf",
+      "entries": [
+        "ghat-harmonic-interpreter/ghat-harmonic-interpreter.php"
+      ],
+      "decision": "do_not_import",
+      "reusable_concept": "deterministic deduplication fingerprint with revised secure implementation",
+      "reasons": [
+        "MD5 substring is not a harmonic invariant",
+        "Unescaped output of user term",
+        "No persistence or provenance"
+      ]
+    }
+  ]
+}
