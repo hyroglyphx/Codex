@@ -1,0 +1,118 @@
+{
+  "id": "ATLANTIS-ANALOGY-DOSSIER-2026-10",
+  "title": "Atlantis — Spatial Lattice, Transmission Relay, and Civilizational Counterform",
+  "type": "multi_source_research_dossier",
+  "source_status": "partially_recovered_not_single_omnibus",
+  "witnesses": [
+    {
+      "type": "personal_library_docx",
+      "title": "Thinkers Field Guide 02 Plato",
+      "library_file_id": "libfile_2dafe5d27a348191b6dd10d38279accc",
+      "status": "inspected"
+    },
+    {
+      "type": "personal_library_image",
+      "title": "Plato’s Critias: Atlantis Compression Card",
+      "library_file_id": "libfile_fe14ec643cac8191838a9cb8754a61be",
+      "status": "search_indexed_not_full_visual_review"
+    },
+    {
+      "type": "prior_research_context",
+      "title": "Atlantis geometry and calendrical analogy discussions",
+      "status": "recovered_summary_not_original_full_document"
+    },
+    {
+      "type": "ancient_primary_texts",
+      "title": "Plato, Timaeus and Critias",
+      "status": "named_historical_anchor_not_primary_text_collated"
+    }
+  ],
+  "core": {
+    "scope": "Structural and mathematical reconstruction of the organizational grammar in Plato's Atlantis account, not proof of historical Atlantis.",
+    "operator_chain": [
+      "radial hierarchy",
+      "projection",
+      "partition",
+      "transport",
+      "governance"
+    ],
+    "spatial_components": [
+      "center",
+      "concentric rings",
+      "land-sea alternation",
+      "canal spine",
+      "plain/grid",
+      "flow and circulation",
+      "jurisdiction"
+    ],
+    "transmission_chain": [
+      "Egyptian priestly archive (as narrated)",
+      "Solon's unfinished account",
+      "Plato's unfinished Timaeus/Critias"
+    ],
+    "semantic_issue": "Critias reports translation of names by meaning from Egyptian to Greek; test as narrative relay, not independent evidence of actual archive transmission.",
+    "civilizational_model": [
+      "ordered foundation",
+      "abundance",
+      "loss of governing proportion",
+      "expansion",
+      "technical power without corresponding ethical restraint",
+      "collapse/judgment"
+    ],
+    "mathematical_comparisons": [
+      {
+        "expression": "3000:2000 = 3:2",
+        "type": "textual_measure_ratio_as_recalled",
+        "verification": "recheck Plato passages"
+      },
+      {
+        "expression": "30×20 outer cells; 29×19 interior = 551",
+        "type": "analyst_grid_construction",
+        "verification": "derived construction; not a direct ancient claim"
+      },
+      {
+        "expression": "19×28=532; 19×29=551",
+        "type": "cross_domain_calendar_spatial_analogy",
+        "verification": "arithmetic true; proposed correspondence unvalidated"
+      },
+      {
+        "expression": "2 land rings + 3 sea rings",
+        "type": "source-derived_geometry_as_recalled",
+        "verification": "collate Critias text"
+      }
+    ],
+    "cross_domain_analogies": [
+      "2 Enoch: vertical hierarchy measured",
+      "Paschal cycles: time measured",
+      "Atlantis: civilization measured",
+      "Vitruvius: body/building measured"
+    ],
+    "epistemic_controls": [
+      "Keep Platonic textual measurements separate from derived discretizations.",
+      "Do not turn structural resonance into proof of historical transmission.",
+      "Separate source text, geometry, model, and hypothesis.",
+      "Preserve incomplete/unfinished relay as a property of the account.",
+      "Require independent primary-text checking before canonical promotion."
+    ]
+  },
+  "comparative_bridges": [
+    {
+      "to": "THESEUS-IDENTITY-CYCLE-001",
+      "relation": "civic legitimacy, founding memory, and continuity"
+    },
+    {
+      "to": "ARGONAUTICA-EXPEDITION-CYCLE-001",
+      "relation": "route/flow networks, jurisdiction, and distributed memory"
+    },
+    {
+      "to": "HERACLES-OPERATOR-CYCLE-001",
+      "relation": "lawful operation, constraints, and system failure"
+    }
+  ],
+  "next_research_tasks": [
+    "Locate a definitive original Atlantis study if one exists.",
+    "Collate Critias measurement passages and distinguish reported from constructed quantities.",
+    "Recover Atlantis analogy diagrams and source-specific proofs.",
+    "Test spatial/calendar analogy with negative controls."
+  ]
+}
