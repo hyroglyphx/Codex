@@ -65,6 +65,15 @@
       "ingestion_status": "excerpt_only",
       "locator": "personal Library: The_Twelve_Labors_of_Heracles_Math_Language_Logic_Omnibus(1).docx",
       "notes": "141-page working omnibus; original front matter, full twelve-labor contents, system map, carryover chain and first chapter opening inspected. Private source bytes not copied to public GitHub. Full-document ingestion outstanding."
+    },
+    {
+      "id": "SRC-ARGONAUTICA-OMNIBUS-JUL26",
+      "title": "THE ARGONAUTICA — Mathematics, Language, and Logic: The Complete Voyage Omnibus",
+      "date": "2026-07",
+      "access": "library_reference",
+      "ingestion_status": "excerpt_only",
+      "locator": "personal Library: The_Argonautica_Math_Language_Logic_Complete_Voyage_Omnibus(4).docx",
+      "notes": "195-page six-part omnibus, 26 narrative nodes plus six atlas chapters; front matter, full chapter list and core expedition model inspected. Part VI companion (33 pages) separately checked. Private bytes not copied to public repository."
     }
   ]
 }
