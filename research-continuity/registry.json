@@ -173,6 +173,27 @@
         "HHIF-001"
       ],
       "summary": "Typed coordinate or wrapper, not fundamental transformation operator."
+    },
+    {
+      "id": "THESEUS-IDENTITY-CYCLE-001",
+      "name": "Theseus Cycle identity curriculum",
+      "kind": "framework",
+      "status": "specified",
+      "sources": [
+        "SRC-THESEUS-OMNIBUS-JUL26"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "23-episode source-indexed curriculum: lineage→token→road→labyrinth→signal→polity→oath→judgment→exile→ship; identity I(t)=(M,F,P,R,H,A,L); REF/FORM/ANA/HEUR; four-witness Rosetta protocol and bounded transport C=(T,I,R,B).",
+      "aliases": [
+        "Theseus omnibus",
+        "Ship of Theseus",
+        "myth-to-operator omnibus"
+      ],
+      "source_index": "research-continuity/theseus-omnibus.json",
+      "relay_related_event_ids": [],
+      "relay_relation_note": "No direct event link established in the 45-event Relay subset; absence of link does not mean absence of prior work."
     }
   ]
 }
