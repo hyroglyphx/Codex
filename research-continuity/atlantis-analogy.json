@@ -25,16 +25,23 @@
       "type": "ancient_primary_texts",
       "title": "Plato, Timaeus and Critias",
       "status": "named_historical_anchor_not_primary_text_collated"
+    },
+    {
+      "type": "personal_library_docx",
+      "title": "Session Synthesis: Recursive Centers, Witnesses, and Continuation",
+      "library_file_id": "libfile_4a56e1a937dc819194fcca25cfb7cc9e",
+      "status": "exact_passage_verified",
+      "locator": "page 24, numbered statements 112–115"
     }
   ],
   "core": {
     "scope": "Structural and mathematical reconstruction of the organizational grammar in Plato's Atlantis account, not proof of historical Atlantis.",
     "operator_chain": [
-      "radial hierarchy",
+      "radial symmetry",
       "projection",
-      "partition",
-      "transport",
-      "governance"
+      "discretization",
+      "flow",
+      "lived territory"
     ],
     "spatial_components": [
       "center",
@@ -63,22 +70,30 @@
       {
         "expression": "3000:2000 = 3:2",
         "type": "textual_measure_ratio_as_recalled",
-        "verification": "recheck Plato passages"
+        "verification": "recheck Plato passages",
+        "source_status": "unrecovered_original_derivation",
+        "promotion": "blocked_pending_original_calculation_and_independent_control"
       },
       {
         "expression": "30×20 outer cells; 29×19 interior = 551",
         "type": "analyst_grid_construction",
-        "verification": "derived construction; not a direct ancient claim"
+        "verification": "derived construction; not a direct ancient claim",
+        "source_status": "unrecovered_original_derivation",
+        "promotion": "blocked_pending_original_calculation_and_independent_control"
       },
       {
         "expression": "19×28=532; 19×29=551",
         "type": "cross_domain_calendar_spatial_analogy",
-        "verification": "arithmetic true; proposed correspondence unvalidated"
+        "verification": "arithmetic true; proposed correspondence unvalidated",
+        "source_status": "unrecovered_original_derivation",
+        "promotion": "blocked_pending_original_calculation_and_independent_control"
       },
       {
         "expression": "2 land rings + 3 sea rings",
         "type": "source-derived_geometry_as_recalled",
-        "verification": "collate Critias text"
+        "verification": "collate Critias text",
+        "source_status": "unrecovered_original_derivation",
+        "promotion": "blocked_pending_original_calculation_and_independent_control"
       }
     ],
     "cross_domain_analogies": [
@@ -92,8 +107,11 @@
       "Do not turn structural resonance into proof of historical transmission.",
       "Separate source text, geometry, model, and hypothesis.",
       "Preserve incomplete/unfinished relay as a property of the account.",
-      "Require independent primary-text checking before canonical promotion."
-    ]
+      "Require independent primary-text checking before canonical promotion.",
+      "Source statement 112 explicitly restricts diagrams to operator-diagram status, not archaeological evidence."
+    ],
+    "transformation_axis": "The canal spine is a transform axis between radial and linear order (Session Synthesis, p. 24, item 114).",
+    "testable_output": "The map is judged partly by the territory its operators actually produce (Session Synthesis, p. 24, item 115)."
   },
   "comparative_bridges": [
     {
@@ -113,6 +131,7 @@
     "Locate a definitive original Atlantis study if one exists.",
     "Collate Critias measurement passages and distinguish reported from constructed quantities.",
     "Recover Atlantis analogy diagrams and source-specific proofs.",
-    "Test spatial/calendar analogy with negative controls."
+    "Test spatial/calendar analogy with negative controls.",
+    "Reconstruct explicit projection/discretization functions with declared domains, conservation laws and failure controls."
   ]
 }
