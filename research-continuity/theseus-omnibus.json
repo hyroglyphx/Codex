@@ -1,0 +1,275 @@
+{
+  "id": "THESEUS-OMNIBUS-2026-07",
+  "title": "THE THESEUS CYCLE — Mathematics, Language, and Logic: Tokens, Paths, Labyrinths, and the Architecture of Civic Identity",
+  "author": "Mike Tate",
+  "edition": "Universal Operator Codex | Complete Omnibus | July 2026",
+  "source": {
+    "type": "personal_library_docx",
+    "filename": "The_Theseus_Cycle_Math_Language_Logic_Omnibus(4)(4).docx",
+    "library_file_id": "libfile_b6dac965fd7c81918ccfd5f3a2807285",
+    "source_status": "indexed_excerpt_read",
+    "pages_reported": 73,
+    "visibility": "private_not_committed"
+  },
+  "interpretation_codes": [
+    "REF",
+    "FORM",
+    "ANA",
+    "HEUR"
+  ],
+  "core": {
+    "thesis": "The Theseus cycle is an identity curriculum.",
+    "identity_state": {
+      "formula": "I(t)=(M,F,P,R,H,A,L)",
+      "coordinates": [
+        "material",
+        "function",
+        "provenance",
+        "relations",
+        "history/memory",
+        "agency",
+        "legitimacy"
+      ]
+    },
+    "transport": {
+      "formula": "C=(T,I,R,B)",
+      "coordinates": [
+        "transport map",
+        "preserved invariant",
+        "surviving residue",
+        "stopping boundary"
+      ]
+    },
+    "cycle": [
+      "lineage",
+      "token",
+      "road",
+      "labyrinth",
+      "signal",
+      "polity",
+      "oath",
+      "judgment",
+      "exile",
+      "ship"
+    ],
+    "rosetta_witnesses": [
+      "mythic carrier",
+      "mathematical form",
+      "language",
+      "logic"
+    ],
+    "completion_rule": [
+      "object type",
+      "operator",
+      "invariant",
+      "path residue",
+      "recognition condition",
+      "analogy boundary"
+    ],
+    "seven_interrogatives": [
+      "Who",
+      "What",
+      "Which",
+      "How",
+      "Why",
+      "When",
+      "Where"
+    ]
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "id": "THES-01",
+      "title": "Aegeus, Aethra, and the Concealed Lineage",
+      "operator_lesson": "delayed identity",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 2,
+      "id": "THES-02",
+      "title": "The Sword and Sandals Beneath the Stone",
+      "operator_lesson": "embodied authentication",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 3,
+      "id": "THES-03",
+      "title": "The Choice of the Dangerous Road",
+      "operator_lesson": "route selection as public proof",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 4,
+      "id": "THES-04",
+      "title": "Periphetes and the Inherited Club",
+      "operator_lesson": "capability capture",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 5,
+      "id": "THES-05",
+      "title": "Sinis and the Bent Pines",
+      "operator_lesson": "stored-energy reversal",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 6,
+      "id": "THES-06",
+      "title": "The Crommyonian Sow",
+      "operator_lesson": "category-sensitive response",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 7,
+      "id": "THES-07",
+      "title": "Sciron and the Cliff",
+      "operator_lesson": "edge asymmetry",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 8,
+      "id": "THES-08",
+      "title": "Cercyon and the Rule-Bound Contest",
+      "operator_lesson": "contest-domain control",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 9,
+      "id": "THES-09",
+      "title": "Procrustes and Destructive Normalization",
+      "operator_lesson": "destructive normalization",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 10,
+      "id": "THES-10",
+      "title": "Medea, Recognition, and the Poisoned Cup",
+      "operator_lesson": "adversarial recognition",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 11,
+      "id": "THES-11",
+      "title": "The Marathonian Bull and Hecale",
+      "operator_lesson": "recurrent-liability capture",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 12,
+      "id": "THES-12",
+      "title": "The Athenian Tribute",
+      "operator_lesson": "periodic extraction",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 13,
+      "id": "THES-13",
+      "title": "Ariadne's Thread and the Labyrinth",
+      "operator_lesson": "external path memory",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 14,
+      "id": "THES-14",
+      "title": "The Minotaur and Hidden Institutional Residue",
+      "operator_lesson": "hidden institutional residue",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 15,
+      "id": "THES-15",
+      "title": "Ariadne and Broken Reciprocity",
+      "operator_lesson": "broken reciprocity",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 16,
+      "id": "THES-16",
+      "title": "The Black Sail and the Death of Aegeus",
+      "operator_lesson": "state-report failure",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 17,
+      "id": "THES-17",
+      "title": "Theseus as King and the Synoecism of Attica",
+      "operator_lesson": "federated unification",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 18,
+      "id": "THES-18",
+      "title": "The Round Civic Vessel",
+      "operator_lesson": "institutional embodiment",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 19,
+      "id": "THES-19",
+      "title": "Pirithous and the Friendship Oath",
+      "operator_lesson": "mutual-capability coupling",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 20,
+      "id": "THES-20",
+      "title": "The Descent for Persephone",
+      "operator_lesson": "oath capture and domain violation",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 21,
+      "id": "THES-21",
+      "title": "Phaedra, Hippolytus, and Corrupted Testimony",
+      "operator_lesson": "irreversible judgment under asymmetric evidence",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 22,
+      "id": "THES-22",
+      "title": "Exile, Scyros, and the Death of Theseus",
+      "operator_lesson": "founder-system separation",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 23,
+      "id": "THES-23",
+      "title": "The Ship of Theseus",
+      "operator_lesson": "multi-channel continuity",
+      "status": "source_indexed_not_independently_tested"
+    }
+  ],
+  "ancient_witnesses": [
+    "Plutarch, Life of Theseus",
+    "Pseudo-Apollodorus",
+    "Diodorus",
+    "Thucydides",
+    "Plato, Phaedo",
+    "Euripides, Hippolytus",
+    "Pausanias"
+  ],
+  "comparative_bridges": [
+    {
+      "to": "Heracles Labors",
+      "relation": "operator selection curriculum",
+      "status": "source_stated"
+    },
+    {
+      "to": "Argonautica",
+      "relation": "distributed expedition intelligence",
+      "status": "source_stated"
+    },
+    {
+      "to": "Odyssey",
+      "relation": "architecture of return",
+      "status": "comparative_context_not_full_chapter_mapping"
+    }
+  ],
+  "constraints": [
+    "Formal mathematics is a modern reconstruction, not an ancient mathematical attribution.",
+    "Preserve mythic source variants.",
+    "Distinguish strict etymology from reception resonance.",
+    "Do not treat analogy as historical transmission.",
+    "The chapter sequence is developmental, not a claim of a universal ancient order."
+  ]
+}
