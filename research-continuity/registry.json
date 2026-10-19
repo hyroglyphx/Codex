@@ -75,7 +75,13 @@
       "dependencies": [
         "HHIF-001"
       ],
-      "summary": "Proposed explicit ECVR/ILR/TCIM operator; implementation and independent tests not registered."
+      "summary": "Proposed explicit ECVR/ILR/TCIM operator; implementation and independent tests not registered.",
+      "relay_related_event_ids": [
+        "ORG-2026-09-25-CUNEIFORM-SLOT-CORRIDOR-001",
+        "ORG-2026-09-25-HITTITE-HETEROGRAM-REPLICATION-001",
+        "ORG-2026-09-25-HITTITE-SCREENSHOT-AUDIT-III"
+      ],
+      "relay_relation_note": "Verified keyword/content-related Relay events; no claim that these events originally define or validate this exact RCK operator ID."
     },
     {
       "id": "ECVR-SOUNDLAW-001",
