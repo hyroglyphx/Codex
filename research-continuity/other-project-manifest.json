@@ -1,0 +1,37 @@
+{
+  "review_date": "2026-10-19",
+  "repositories": [
+    {
+      "name": "hyroglyphx/Website-Works",
+      "visibility": "private",
+      "files": [
+        {
+          "path": "Codex_Core_Package.zip",
+          "status": "identified_not_inspected",
+          "candidate_use": "possible canonical package components"
+        },
+        {
+          "path": "anamnesis-chat-plugin (2).zip",
+          "status": "identified_not_inspected",
+          "candidate_use": "possible conversation intake adapter"
+        },
+        {
+          "path": "ghat-harmonic-interpreter-clean.zip",
+          "status": "identified_not_inspected",
+          "candidate_use": "possible operator execution adapter"
+        }
+      ]
+    },
+    {
+      "name": "hyroglyphx/Codex",
+      "visibility": "public",
+      "verified_contracts": [
+        "docs/architecture/research-platform.md",
+        "docs/protocols/invariant-ecology-registry.md",
+        "docs/state/2026-09-20-reconciled-research-state.md",
+        "Reuptake/state/current.json",
+        "Reuptake/provenance/event-log.jsonl"
+      ]
+    }
+  ]
+}
