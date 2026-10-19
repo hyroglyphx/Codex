@@ -74,6 +74,15 @@
       "ingestion_status": "excerpt_only",
       "locator": "personal Library: The_Argonautica_Math_Language_Logic_Complete_Voyage_Omnibus(4).docx",
       "notes": "195-page six-part omnibus, 26 narrative nodes plus six atlas chapters; front matter, full chapter list and core expedition model inspected. Part VI companion (33 pages) separately checked. Private bytes not copied to public repository."
+    },
+    {
+      "id": "SRC-ATLANTIS-ANALOGY-COMPOSITE",
+      "title": "Atlantis analogy — Plato field guide, Critias compression card, and earlier geometry/relay analyses",
+      "date": "2026",
+      "access": "library_reference_and_prior_research_context",
+      "ingestion_status": "excerpt_only",
+      "locator": "personal Library: Thinkers_Field_Guide_02_Plato.docx; Plato’s Critias: Atlantis Compression Card.png; prior Atlantis research",
+      "notes": "Composite provenance; no definitive Atlantis omnibus located. Textual measures and analyst constructions distinguished in atlantis-analogy.json."
     }
   ]
 }
