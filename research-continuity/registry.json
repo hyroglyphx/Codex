@@ -1,0 +1,172 @@
+{
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "HHIF-001",
+      "name": "Historical Harmonic Invariant Field",
+      "kind": "framework",
+      "status": "specified",
+      "sources": [
+        "SRC-HHIF-CHAT"
+      ],
+      "dependencies": [],
+      "summary": "Cross-representation invariant reconstruction under admissible transformations."
+    },
+    {
+      "id": "TRT-01",
+      "name": "Tetractys Ratio Transport",
+      "kind": "operator",
+      "status": "specified",
+      "sources": [
+        "SRC-HHIF-CHAT"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Telescoping multiplicative transport invariant."
+    },
+    {
+      "id": "TEC-02",
+      "name": "Tri-Modal Emblematic Coherence",
+      "kind": "framework",
+      "status": "proposed",
+      "sources": [
+        "SRC-HHIF-CHAT"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Compare image, music and text channels with independent controls."
+    },
+    {
+      "id": "ABR-SYM-001",
+      "name": "Abramelin symmetry orbit reconstruction",
+      "kind": "protocol",
+      "status": "specified",
+      "sources": [
+        "SRC-ABRAMELIN-OCT"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Classify square carrier, compute transpose and half-turn orbit violations and minimum edits; manuscript witness remains authoritative."
+    },
+    {
+      "id": "ECVR-READSET-001",
+      "name": "READSET",
+      "kind": "operator",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Proposed explicit ECVR/ILR/TCIM operator; implementation and independent tests not registered."
+    },
+    {
+      "id": "ECVR-HETEROGRAM-001",
+      "name": "HETEROGRAM",
+      "kind": "operator",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Proposed explicit ECVR/ILR/TCIM operator; implementation and independent tests not registered."
+    },
+    {
+      "id": "ECVR-SOUNDLAW-001",
+      "name": "SOUNDLAW",
+      "kind": "operator",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Proposed explicit ECVR/ILR/TCIM operator; implementation and independent tests not registered."
+    },
+    {
+      "id": "ECVR-METROLOGY-001",
+      "name": "METROLOGY",
+      "kind": "operator",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Proposed explicit ECVR/ILR/TCIM operator; implementation and independent tests not registered."
+    },
+    {
+      "id": "ECVR-FEATURE_SPREAD-001",
+      "name": "FEATURE_SPREAD",
+      "kind": "operator",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Proposed explicit ECVR/ILR/TCIM operator; implementation and independent tests not registered."
+    },
+    {
+      "id": "ECVR-TEMPLATE-001",
+      "name": "TEMPLATE",
+      "kind": "operator",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Proposed explicit ECVR/ILR/TCIM operator; implementation and independent tests not registered."
+    },
+    {
+      "id": "ECVR-DOCTYPE-001",
+      "name": "DOCTYPE",
+      "kind": "coordinate",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Typed coordinate or wrapper, not fundamental transformation operator."
+    },
+    {
+      "id": "ECVR-WITNESS_CLASS-001",
+      "name": "WITNESS_CLASS",
+      "kind": "coordinate",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Typed coordinate or wrapper, not fundamental transformation operator."
+    },
+    {
+      "id": "ECVR-EXEGESIS_MODE-001",
+      "name": "EXEGESIS_MODE",
+      "kind": "coordinate",
+      "status": "specified",
+      "sources": [
+        "SRC-ECVR-SEP"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Typed coordinate or wrapper, not fundamental transformation operator."
+    }
+  ]
+}
