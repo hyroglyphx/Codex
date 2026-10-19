@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0",
+  "universe_status": "unknown",
+  "coverage_percentage": null,
+  "sources": [
+    {
+      "id": "SRC-HHIF-CHAT",
+      "title": "Esoteric Mathematical Corpus: New Insights and Synthesis",
+      "date": null,
+      "access": "user_excerpt",
+      "ingestion_status": "excerpt_only",
+      "locator": null,
+      "notes": "User supplied excerpt in current conversation; full original chat not ingested."
+    },
+    {
+      "id": "SRC-ECVR-SEP",
+      "title": "ECVR Ancient-Language Operator Audit — Comparative-Linguistic Delta",
+      "date": "2026-09",
+      "access": "user_excerpt",
+      "ingestion_status": "excerpt_only",
+      "locator": null,
+      "notes": "User supplied audit; underlying ILR toolset docx not ingested."
+    },
+    {
+      "id": "SRC-ABRAMELIN-OCT",
+      "title": "Jesthro Abramelin symmetry and reconstruction discussion",
+      "date": "2026-10",
+      "access": "user_excerpt",
+      "ingestion_status": "excerpt_only",
+      "locator": null,
+      "notes": "User supplied passage; original conversation and manuscripts not indexed."
+    },
+    {
+      "id": "SRC-PSI-JUL",
+      "title": "PSI/WPS current-state assessment (July 24)",
+      "date": "2026-07-24",
+      "access": "library_reference",
+      "ingestion_status": "metadata_only",
+      "locator": null,
+      "notes": "Numerical baseline described in conversation; primary file not ingested here."
+    },
+    {
+      "id": "SRC-PSI-OCT",
+      "title": "HHIF-integrated October PSI reassessment",
+      "date": "2026-10-19",
+      "access": "user_excerpt",
+      "ingestion_status": "excerpt_only",
+      "locator": null,
+      "notes": "Analyst estimate, not observed score."
+    }
+  ]
+}
