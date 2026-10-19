@@ -60,8 +60,13 @@ def snapshot():
         declared = construct.get("relay_event_ids", [])
         found = [key for key in declared if key in index]
         missing = [key for key in declared if key not in index]
+        related_declared = construct.get("relay_related_event_ids", [])
+        related_found = [key for key in related_declared if key in index]
+        related_missing = [key for key in related_declared if key not in index]
         result.append({"construct_id": construct["id"], "linked_events": found,
-                       "unresolved_event_ids": missing, "link_status": "linked" if found else "unlinked"})
+                       "related_events": related_found, "unresolved_related_ids": related_missing,
+                       "unresolved_event_ids": missing, "link_status": "linked" if found else "unlinked",
+                       "relation_status": "related_not_identity" if related_found else "no_related_events"})
     return {"event_count": len(events), "unique_event_count": len(index),
             "source_count": len(sources), "construct_count": len(registry),
             "construct_links": result, "coverage_status": "unknown",
