@@ -56,6 +56,15 @@
       "ingestion_status": "excerpt_only",
       "locator": "personal Library: The_Theseus_Cycle_Math_Language_Logic_Omnibus(4)(4).docx",
       "notes": "73-page Library DOCX; verified front matter, full 23-chapter contents, and opening chapter excerpts. Private source bytes not copied to public GitHub; chapter index in theseus-omnibus.json. Full-document ingestion remains outstanding."
+    },
+    {
+      "id": "SRC-HERACLES-OMNIBUS-JUL26",
+      "title": "THE TWELVE LABORS OF HERACLES — Mathematics, Language, and Logic: A Myth-to-Operator Omnibus",
+      "date": "2026-07",
+      "access": "library_reference",
+      "ingestion_status": "excerpt_only",
+      "locator": "personal Library: The_Twelve_Labors_of_Heracles_Math_Language_Logic_Omnibus(1).docx",
+      "notes": "141-page working omnibus; original front matter, full twelve-labor contents, system map, carryover chain and first chapter opening inspected. Private source bytes not copied to public GitHub. Full-document ingestion outstanding."
     }
   ]
 }
