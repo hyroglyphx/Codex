@@ -1,0 +1,171 @@
+{
+  "id": "HERACLES-OMNIBUS-2026-07",
+  "title": "THE TWELVE LABORS OF HERACLES — Mathematics, Language, and Logic: A Myth-to-Operator Omnibus",
+  "author": "Mike Tate",
+  "edition": "Universal Operator Codex | Working Omnibus | July 2026",
+  "source": {
+    "type": "personal_library_docx",
+    "filename": "The_Twelve_Labors_of_Heracles_Math_Language_Logic_Omnibus(1).docx",
+    "library_file_id": "libfile_6fafd9c3f8cc819189daeeb4e841aca2",
+    "source_status": "indexed_excerpt_read",
+    "pages_reported": 141,
+    "visibility": "private_not_committed"
+  },
+  "interpretation_codes": [
+    "REF",
+    "FORM",
+    "ANA",
+    "HEUR"
+  ],
+  "core": {
+    "thesis": "The twelve labors are an escalating curriculum in operator selection, coupling, constraint, transport, and certification.",
+    "operator_grammar": [
+      "diagnose system",
+      "identify inadmissible operation",
+      "change field or operator",
+      "preserve invariant",
+      "produce certificate",
+      "restore coherent state"
+    ],
+    "labor_state": {
+      "formula": "L_i=(S_i,O_i,C_i,I_i,R_i,P_i)",
+      "coordinates": [
+        "state space",
+        "available operators",
+        "constraints",
+        "invariants",
+        "residues/side effects",
+        "proof/presentation condition"
+      ]
+    },
+    "operator_arc": [
+      "diagnosis",
+      "recursion",
+      "constraint",
+      "control",
+      "infrastructure",
+      "observability",
+      "provenance",
+      "feedback",
+      "authorization",
+      "distributed transport",
+      "delegation",
+      "boundary mastery"
+    ],
+    "four_witnesses": [
+      "mythic carrier",
+      "mathematical form",
+      "language",
+      "logic"
+    ],
+    "completion": "Local closure at a declared scale, retaining a mismatch ledger and separating historical reference, formalization, analogy, and heuristic.",
+    "carryover": [
+      "Lion skin becomes protective equipment for Cerberus descent",
+      "Hydra poison is a dangerous downstream residue",
+      "Hind and boar live-capture logic recurs in bull, mares, and Cerberus",
+      "Stables environmental redesign reappears in birds and cattle",
+      "Belt credential transfer reappears as delegation and rollback in apples",
+      "Cattle distributed transport precedes burden continuity and cross-domain return"
+    ]
+  },
+  "labors": [
+    {
+      "number": 1,
+      "id": "HERC-01",
+      "title": "Nemean Lion",
+      "operator_lesson": "Type-check method; constrain field; convert obstruction into equipment",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 2,
+      "id": "HERC-02",
+      "title": "Lernaean Hydra",
+      "operator_lesson": "Couple deletion to closure; separate regenerative nodes and irreducible kernels",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 3,
+      "id": "HERC-03",
+      "title": "Ceryneian Hind",
+      "operator_lesson": "Preserve capture, noninjury, sacred custody, proof, and return",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 4,
+      "id": "HERC-04",
+      "title": "Erymanthian Boar",
+      "operator_lesson": "Use terrain and timing to bring momentum into live-capture basin",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 5,
+      "id": "HERC-05",
+      "title": "Augean Stables",
+      "operator_lesson": "Replace local carrying with flow and boundary redesign",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 6,
+      "id": "HERC-06",
+      "title": "Stymphalian Birds",
+      "operator_lesson": "Make hidden state observable before selective precision",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 7,
+      "id": "HERC-07",
+      "title": "Cretan Bull",
+      "operator_lesson": "Preserve provenance, reject substitution, track exported liability",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 8,
+      "id": "HERC-08",
+      "title": "Mares of Diomedes",
+      "operator_lesson": "Interrupt cultivated feedback; separate restraint from stabilization",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 9,
+      "id": "HERC-09",
+      "title": "Belt of Hippolyta",
+      "operator_lesson": "Protect authorization and common knowledge from adversarial corruption",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 10,
+      "id": "HERC-10",
+      "title": "Cattle of Geryon",
+      "operator_lesson": "Preserve coherence and membership through distributed transport",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 11,
+      "id": "HERC-11",
+      "title": "Apples of the Hesperides",
+      "operator_lesson": "Delegate burden, preserve rollback and restoration",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 12,
+      "id": "HERC-12",
+      "title": "Cerberus",
+      "operator_lesson": "Cross a typed boundary lawfully without destroying guardian function",
+      "status": "source_indexed_not_independently_tested"
+    }
+  ],
+  "comparative_bridges": [
+    {
+      "to": "THESEUS-IDENTITY-CYCLE-001",
+      "relation": "Heracles operator-selection curriculum complements Theseus identity and recognition curriculum",
+      "status": "source_supported_cross_comparison"
+    }
+  ],
+  "constraints": [
+    "Ancient sources are carriers, not claimed authors of modern mathematical formalism.",
+    "Preserve variant witnesses and historical source provenance.",
+    "Do not equate local formal closure with global proof.",
+    "Distinguish possession from legitimate custody and capture from stabilization.",
+    "Keep private original document outside public repository."
+  ]
+}
