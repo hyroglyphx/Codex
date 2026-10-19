@@ -47,6 +47,15 @@
       "ingestion_status": "excerpt_only",
       "locator": null,
       "notes": "Analyst estimate, not observed score."
+    },
+    {
+      "id": "SRC-THESEUS-OMNIBUS-JUL26",
+      "title": "THE THESEUS CYCLE — Mathematics, Language, and Logic: Tokens, Paths, Labyrinths, and the Architecture of Civic Identity",
+      "date": "2026-07",
+      "access": "library_reference",
+      "ingestion_status": "excerpt_only",
+      "locator": "personal Library: The_Theseus_Cycle_Math_Language_Logic_Omnibus(4)(4).docx",
+      "notes": "73-page Library DOCX; verified front matter, full 23-chapter contents, and opening chapter excerpts. Private source bytes not copied to public GitHub; chapter index in theseus-omnibus.json. Full-document ingestion remains outstanding."
     }
   ]
 }
