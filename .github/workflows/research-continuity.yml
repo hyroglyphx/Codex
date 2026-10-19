@@ -1,0 +1,25 @@
+name: Research Continuity Checks
+on:
+  push:
+    paths:
+      - 'research-continuity/**'
+      - 'Reuptake/provenance/event-log.jsonl'
+  pull_request:
+    paths:
+      - 'research-continuity/**'
+      - 'Reuptake/provenance/event-log.jsonl'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate RCK registry and assessment arithmetic
+        run: python research-continuity/continuity.py validate
+      - name: Verify Relay bridge and historical event IDs
+        run: python research-continuity/relay_bridge.py check
+      - name: Run regression tests
+        run: python -m unittest discover -s research-continuity -p 'test_*.py' -v
