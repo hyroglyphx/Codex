@@ -1,0 +1,387 @@
+{
+  "id": "ARGONAUTICA-OMNIBUS-2026-07",
+  "title": "THE ARGONAUTICA — Mathematics, Language, and Logic: The Complete Voyage Omnibus",
+  "author": "Mike Tate",
+  "edition": "Universal Operator Codex | Complete Six-Part Edition | July 2026",
+  "source": {
+    "type": "personal_library_docx",
+    "filename": "The_Argonautica_Math_Language_Logic_Complete_Voyage_Omnibus(4).docx",
+    "library_file_id": "libfile_1d070ee2e7a08191a54fa565ffd4ac10",
+    "source_status": "indexed_excerpt_read",
+    "pages_reported": 195,
+    "visibility": "private_not_committed"
+  },
+  "companion": {
+    "filename": "The_Argonautica_Math_Language_Logic_Part_VI.docx",
+    "library_file_id": "libfile_a0155740520481919ace778146f514da",
+    "pages_reported": 33
+  },
+  "interpretation_codes": [
+    "REF",
+    "FORM",
+    "ANA",
+    "HEUR"
+  ],
+  "thesis": "The Argonautica is a distributed expedition system: vessel, crew, route, information, legitimacy, obligation, residue, and memory change together; the Fleece is only one output.",
+  "core": {
+    "compact_state": {
+      "formula": "A=(V,C,G,F,M,Λ)",
+      "coordinates": [
+        "vessel",
+        "crew",
+        "route graph",
+        "field conditions",
+        "mission invariant",
+        "accumulated memory/residue"
+      ]
+    },
+    "expedition_state": {
+      "formula": "X_t=(p_t,V_t,C_t,I_t,R_t,L_t,ρ_t,μ_t)",
+      "coordinates": [
+        "position and route node",
+        "vessel integrity and admissible domain",
+        "crew membership and capabilities",
+        "information/prophecy/procedure",
+        "material resources",
+        "legitimacy and political/legal status",
+        "moral and causal residue",
+        "distributed memory"
+      ]
+    },
+    "atlas": {
+      "formula": "Atlas=(Nodes,Edges,Capabilities,Memory,Operators,Language,Regeneration)",
+      "narrative_nodes": 26,
+      "atlas_chapters": 6
+    },
+    "reading_rule": "Assess state change, preserved relation, surviving residue, and later dependencies rather than local mission success alone.",
+    "anti_retrojection": "Modern mathematical representations are declared reconstructions, not ancient formulations."
+  },
+  "parts": [
+    {
+      "number": 1,
+      "title": "Mission, Vessel, and Distributed Intelligence",
+      "chapter_range": [
+        1,
+        5
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Outbound Route and Threshold Learning",
+      "chapter_range": [
+        6,
+        11
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Colchis and the Adversarial Contract",
+      "chapter_range": [
+        12,
+        16
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Return, Residue, and the Cost of Acquisition",
+      "chapter_range": [
+        17,
+        21
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Aftermath, Succession, and the Failed Restoration",
+      "chapter_range": [
+        22,
+        26
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Operator Atlas, Memory Architecture, and Regeneration Engine",
+      "chapter_range": [
+        27,
+        32
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "id": "ARGO-01",
+      "title": "The One-Sandaled Heir",
+      "part": 1,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 2,
+      "id": "ARGO-02",
+      "title": "Pelias and the Indirect Elimination Operator",
+      "part": 1,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 3,
+      "id": "ARGO-03",
+      "title": "Building the Argo",
+      "part": 1,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 4,
+      "id": "ARGO-04",
+      "title": "The Crew Catalogue as Capability Matrix",
+      "part": 1,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 5,
+      "id": "ARGO-05",
+      "title": "Launch, Sacrifice and Orphic Synchronization",
+      "part": 1,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 6,
+      "id": "ARGO-06",
+      "title": "Lemnos: Local Equilibrium Versus Mission Drift",
+      "part": 2,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 7,
+      "id": "ARGO-07",
+      "title": "Cyzicus: State Aliasing and Friendly-Fire Recursion",
+      "part": 2,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 8,
+      "id": "ARGO-08",
+      "title": "Hylas and the Loss of Heracles",
+      "part": 2,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 9,
+      "id": "ARGO-09",
+      "title": "Amycus and Polydeuces: Coercive Protocol and Representative Combat",
+      "part": 2,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 10,
+      "id": "ARGO-10",
+      "title": "Phineus and the Harpies: Channel Restoration and Bounded Counsel",
+      "part": 2,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 11,
+      "id": "ARGO-11",
+      "title": "The Symplegades: Probe, Timing, Commitment, and Topological Change",
+      "part": 2,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 12,
+      "id": "ARGO-12",
+      "title": "Aeetes and the Impossible Assignment",
+      "part": 3,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 13,
+      "id": "ARGO-13",
+      "title": "Medea and the Transfer of Operational Knowledge",
+      "part": 3,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 14,
+      "id": "ARGO-14",
+      "title": "The Fire-Breathing Bulls",
+      "part": 3,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 15,
+      "id": "ARGO-15",
+      "title": "The Dragon's Teeth and the Earthborn Army",
+      "part": 3,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 16,
+      "id": "ARGO-16",
+      "title": "The Sleepless Serpent and the Golden Fleece",
+      "part": 3,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 17,
+      "id": "ARGO-17",
+      "title": "Apsyrtus and the Pursuit Break",
+      "part": 4,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 18,
+      "id": "ARGO-18",
+      "title": "Circe and Purification",
+      "part": 4,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 19,
+      "id": "ARGO-19",
+      "title": "Orpheus, the Sirens, and Guided Passage",
+      "part": 4,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 20,
+      "id": "ARGO-20",
+      "title": "Phaeacia, Arete, and Jurisdiction",
+      "part": 4,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 21,
+      "id": "ARGO-21",
+      "title": "Libya, Talos, and the Final Reorientation",
+      "part": 4,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 22,
+      "id": "ARGO-22",
+      "title": "Pagasae, Iolcus, and Artifact Delivery",
+      "part": 5,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 23,
+      "id": "ARGO-23",
+      "title": "Aeson and the Renewal Problem",
+      "part": 5,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 24,
+      "id": "ARGO-24",
+      "title": "Pelias and the Peliades",
+      "part": 5,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 25,
+      "id": "ARGO-25",
+      "title": "Acastus, Succession, and Funeral Memory",
+      "part": 5,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 26,
+      "id": "ARGO-26",
+      "title": "Corinth and the Deferred Contract",
+      "part": 5,
+      "kind": "narrative_node",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 27,
+      "id": "ARGO-27",
+      "title": "Crew Capability Ecology",
+      "part": 6,
+      "kind": "atlas_chapter",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 28,
+      "id": "ARGO-28",
+      "title": "Route-State Topology",
+      "part": 6,
+      "kind": "atlas_chapter",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 29,
+      "id": "ARGO-29",
+      "title": "Argo Memory Architecture",
+      "part": 6,
+      "kind": "atlas_chapter",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 30,
+      "id": "ARGO-30",
+      "title": "Operator Genealogy and Cross-Part Carryover",
+      "part": 6,
+      "kind": "atlas_chapter",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 31,
+      "id": "ARGO-31",
+      "title": "Language Atlas and Semantic State Change",
+      "part": 6,
+      "kind": "atlas_chapter",
+      "status": "source_indexed_not_independently_tested"
+    },
+    {
+      "number": 32,
+      "id": "ARGO-32",
+      "title": "The Argonautica Regeneration Engine",
+      "part": 6,
+      "kind": "atlas_chapter",
+      "status": "source_indexed_not_independently_tested"
+    }
+  ],
+  "comparative_bridges": [
+    {
+      "to": "HERACLES-OPERATOR-CYCLE-001",
+      "relation": "Serial operator selection becomes distributed expedition capability",
+      "status": "source_stated"
+    },
+    {
+      "to": "THESEUS-IDENTITY-CYCLE-001",
+      "relation": "Ship, crew, memory and legitimacy provide comparative identity-continuity cases",
+      "status": "comparative_structural_mapping"
+    }
+  ],
+  "constraints": [
+    "Preserve six-volume architecture and local variant gates.",
+    "Return is not necessarily inverse departure.",
+    "Artifact delivery is not identical with restored legitimacy.",
+    "Atlas views must remain traceable to typed narrative nodes.",
+    "No inferred ancient knowledge of modern graph or control theory.",
+    "Keep private original source outside public repository."
+  ]
+}
