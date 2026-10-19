@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "assessments": [
+    {
+      "id": "PSI-2026-07-24-CENTRAL",
+      "date": "2026-07-24",
+      "type": "scenario",
+      "rubric": "PSI-S/WPS-C v3",
+      "psi_s": 77.95,
+      "wps_c": 278.6483,
+      "components": {
+        "SC": 0.82,
+        "RI": 0.78,
+        "CC": 0.88,
+        "MR": 0.75,
+        "HR": 0.65
+      },
+      "evidence": {
+        "es": 0.75,
+        "er": 0.55,
+        "eh": 0.45,
+        "ep": 0.65,
+        "delta_entropy": 0.05
+      },
+      "coverage_status": "unknown",
+      "source_ids": [
+        "SRC-PSI-JUL"
+      ],
+      "notes": "Historical modeled central scenario, not observed comprehensive corpus state."
+    },
+    {
+      "id": "PSI-2026-10-19-EST",
+      "date": "2026-10-19",
+      "type": "analyst_estimate",
+      "rubric": "PSI-S/WPS-C v3",
+      "psi_s": 85.15,
+      "wps_c": null,
+      "components": {
+        "SC": 0.89,
+        "RI": 0.87,
+        "CC": 0.92,
+        "MR": 0.82,
+        "HR": 0.74
+      },
+      "evidence": {
+        "es": 0.8,
+        "er": 0.58,
+        "eh": 0.45,
+        "ep": 0.75,
+        "delta_entropy": 0.045
+      },
+      "coverage_status": "unknown",
+      "source_ids": [
+        "SRC-PSI-OCT"
+      ],
+      "notes": "Judgment-based estimate with incomplete corpus coverage; WPS-C to be recomputed by validator, earlier reported value not treated as verified."
+    }
+  ]
+}
