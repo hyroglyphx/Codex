@@ -1,0 +1,117 @@
+{
+  "id": "LATE-ANTIQUE-GEOGRAPHY-ARTES-001",
+  "title": "Marcian of Heraclea and Martianus Capella — Geographic and Liberal-Arts Transmission",
+  "scope": "Independent historical corpus layer; Atlantis is an optional comparison, not organizing topic.",
+  "figures": [
+    {
+      "name": "Marcian of Heraclea",
+      "aliases": [
+        "Marcianus Heracleota"
+      ],
+      "approximate_period": "late antique; dating debated",
+      "primary_work": "Periplus of the Outer Sea (Periplus Maris Exteri)",
+      "other_attributed_work": "Epitome of Menippus' Periplus of the Inner Sea",
+      "historical_carrier": "Greek periplus, coastal geography and compilation",
+      "operators": [
+        "ordered coastal itinerary",
+        "distance measurement in stadia",
+        "route segmentation",
+        "geographical compilation and epitome",
+        "coastline as sequential address space"
+      ],
+      "modern_formalization": {
+        "type": "directed route graph",
+        "representation": "G=(V,E,w), where w denotes source-specific itinerary distances when explicitly attested",
+        "invariants_to_test": [
+          "ordered adjacency",
+          "unit-consistent distance",
+          "landmark provenance",
+          "route orientation"
+        ],
+        "losses": [
+          "interior topology",
+          "areal shape",
+          "variable travel conditions"
+        ]
+      },
+      "controls": [
+        "Do not equate itinerary distance with straight-line distance.",
+        "Verify manuscripts/edition before citing precise figures.",
+        "No Atlantis attestation claimed."
+      ],
+      "source_status": "historical_bibliographic_anchor_not_primary_text_fully_read"
+    },
+    {
+      "name": "Martianus Capella",
+      "aliases": [
+        "Marcianus Capella (variant/misidentification to check)"
+      ],
+      "approximate_period": "fifth century CE, debated",
+      "primary_work": "De nuptiis Philologiae et Mercurii",
+      "relevant_books": [
+        "Book VI: Geometry",
+        "Book VII: Arithmetic",
+        "Book VIII: Astronomy",
+        "Book IX: Harmony"
+      ],
+      "historical_carrier": "Latin allegorical encyclopedic presentation of seven liberal arts",
+      "operators": [
+        "personified disciplinary transmission",
+        "geometry–geography interface",
+        "numerical classification",
+        "astronomical/cosmological description",
+        "harmonic relation",
+        "curriculum sequencing and knowledge compression"
+      ],
+      "modern_formalization": {
+        "type": "typed interdisciplinary translation",
+        "representation": "T: disciplinary claim -> allegorical presentation -> recoverable technical content",
+        "invariants_to_test": [
+          "definition preservation",
+          "unit and category integrity",
+          "mathematical relations",
+          "source attribution"
+        ],
+        "losses": [
+          "technical detail compressed by allegory",
+          "authorial selection and inherited errors"
+        ]
+      },
+      "controls": [
+        "Treat allegory as pedagogy, not mathematical proof.",
+        "Separate ancient technical content from modern formalizations.",
+        "Verify passage numbering against an edition before precision citation."
+      ],
+      "source_status": "historical_bibliographic_anchor_not_primary_text_fully_read"
+    }
+  ],
+  "comparative_operator": "Compare itinerary/metric representation with curriculum/disciplinary representation as two distinct encoding channels; require independent textual controls before declaring correspondence.",
+  "bridges": [
+    {
+      "to": "ARGONAUTICA-EXPEDITION-CYCLE-001",
+      "relation": "navigation, routes, and distributed knowledge",
+      "status": "analogy"
+    },
+    {
+      "to": "ATLANTIS-SPATIAL-RELAY-001",
+      "relation": "optional comparison of measured geography and geometry",
+      "status": "optional_analogy"
+    },
+    {
+      "to": "MTCC-v1",
+      "relation": "representation→operation→invariant→residue",
+      "status": "conceptual_alignment"
+    }
+  ],
+  "primary_research_tasks": [
+    "Recover a reliable Greek text/translation and commentary for Marcian's Periplus and its Menippus epitome.",
+    "Recover a critical edition/translation of Martianus Capella's De nuptiis, especially books VI–IX.",
+    "Build passage-level operator ledger, citations and adversarial controls.",
+    "Compare with Strabo, Ptolemy, Pliny, Vitruvius and ancient mathematical geography only after primary witness checks."
+  ],
+  "provenance": {
+    "source_type": "external_historical_bibliographic_identification_and_analyst_framework",
+    "status": "provisional_primary_text_pending",
+    "private_documents_published": false
+  }
+}
