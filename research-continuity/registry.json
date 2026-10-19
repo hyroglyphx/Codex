@@ -215,6 +215,29 @@
       "source_index": "research-continuity/heracles-omnibus.json",
       "relay_related_event_ids": [],
       "relay_relation_note": "No canonical event identity link established."
+    },
+    {
+      "id": "ARGONAUTICA-EXPEDITION-CYCLE-001",
+      "name": "Argonautica distributed expedition and regeneration atlas",
+      "kind": "framework",
+      "status": "specified",
+      "sources": [
+        "SRC-ARGONAUTICA-OMNIBUS-JUL26"
+      ],
+      "dependencies": [
+        "HHIF-001",
+        "HERACLES-OPERATOR-CYCLE-001"
+      ],
+      "summary": "Six-part complete voyage, 32 chapters: 26 narrative nodes plus six atlas chapters. X_t=(p,V,C,I,R,L,ρ,μ) tracks route, vessel, crew, information, resources, legitimacy, residue, memory. Atlas=(Nodes,Edges,Capabilities,Memory,Operators,Language,Regeneration).",
+      "aliases": [
+        "Jason omnibus",
+        "Argonautica omnibus",
+        "Complete Voyage Omnibus",
+        "Argo operator atlas"
+      ],
+      "source_index": "research-continuity/argonautica-omnibus.json",
+      "relay_related_event_ids": [],
+      "relay_relation_note": "No explicit Relay event identity link established; source-derived index is not independent validation."
     }
   ]
 }
