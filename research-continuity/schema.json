@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RCK record",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/source"
+    },
+    {
+      "$ref": "#/$defs/construct"
+    },
+    {
+      "$ref": "#/$defs/assessment"
+    }
+  ],
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "access",
+        "ingestion_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "access": {
+          "enum": [
+            "user_excerpt",
+            "repository",
+            "library_reference",
+            "unknown"
+          ]
+        },
+        "ingestion_status": {
+          "enum": [
+            "excerpt_only",
+            "metadata_only",
+            "full_indexed",
+            "not_ingested"
+          ]
+        },
+        "locator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "construct": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "status",
+        "sources",
+        "dependencies"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "framework",
+            "operator",
+            "coordinate",
+            "protocol",
+            "experiment"
+          ]
+        },
+        "status": {
+          "enum": [
+            "proposed",
+            "specified",
+            "implemented",
+            "tested",
+            "validated",
+            "revised",
+            "superseded",
+            "rejected"
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "type": "string"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "required": [
+        "id",
+        "date",
+        "type",
+        "rubric",
+        "coverage_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "scenario",
+            "analyst_estimate",
+            "observed"
+          ]
+        },
+        "rubric": {
+          "type": "string"
+        },
+        "psi_s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "wps_c": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "components": {
+          "type": "object"
+        },
+        "evidence": {
+          "type": "object"
+        },
+        "coverage_status": {
+          "enum": [
+            "unknown",
+            "partial",
+            "known"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
