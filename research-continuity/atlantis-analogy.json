@@ -132,6 +132,33 @@
     "Collate Critias measurement passages and distinguish reported from constructed quantities.",
     "Recover Atlantis analogy diagrams and source-specific proofs.",
     "Test spatial/calendar analogy with negative controls.",
-    "Reconstruct explicit projection/discretization functions with declared domains, conservation laws and failure controls."
+    "Reconstruct explicit projection/discretization functions with declared domains, conservation laws and failure controls.",
+    "Compare Marcian's stadia-based periplus route encoding against Plato's Atlantis spatial measurements without conflating itinerary and area.",
+    "Examine Martianus Capella De nuptiis VI.567–721 for geometry/chorography vocabulary and possible transformation operators.",
+    "Search for direct Atlantis references in Marcian and Martianus before elevating either to an Atlantis transmission witness."
+  ],
+  "historical_candidate_witnesses": [
+    {
+      "name": "Marcian of Heraclea",
+      "work": "Periplus of the Outer Sea",
+      "period": "early fifth century CE",
+      "relevance": "coastal itinerary and distances in stadia as geographic-to-route representation",
+      "status": "historically_verified_comparative_candidate_not_atlantis_attestation",
+      "reference": "https://topostext.org/work/918"
+    },
+    {
+      "name": "Martianus Capella",
+      "work": "De nuptiis Philologiae et Mercurii, book VI (De geometria)",
+      "period": "late antiquity",
+      "relevance": "geometry/geography/chorography as an instructional transformation",
+      "status": "historically_verified_comparative_candidate_not_atlantis_attestation",
+      "reference": "https://bmcr.brynmawr.edu/2008/2008.09.07"
+    },
+    {
+      "name": "Marcion of Sinope",
+      "work": "theological corpus largely known through polemical witnesses",
+      "relevance": "no supported direct connection to Atlantis geometry",
+      "status": "negative_control"
+    }
   ]
 }
