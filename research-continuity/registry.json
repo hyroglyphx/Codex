@@ -194,6 +194,27 @@
       "source_index": "research-continuity/theseus-omnibus.json",
       "relay_related_event_ids": [],
       "relay_relation_note": "No direct event link established in the 45-event Relay subset; absence of link does not mean absence of prior work."
+    },
+    {
+      "id": "HERACLES-OPERATOR-CYCLE-001",
+      "name": "Twelve Labors of Heracles operator-selection curriculum",
+      "kind": "framework",
+      "status": "specified",
+      "sources": [
+        "SRC-HERACLES-OMNIBUS-JUL26"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Twelve-labor recursive operator curriculum; L_i=(S_i,O_i,C_i,I_i,R_i,P_i); four witnesses REF/FORM/ANA/HEUR; diagnosis→recursion→constraint→control→infrastructure→observability→provenance→feedback→authorization→distributed transport→delegation→boundary mastery.",
+      "aliases": [
+        "Hercules omnibus",
+        "Heracles omnibus",
+        "Twelve Labors"
+      ],
+      "source_index": "research-continuity/heracles-omnibus.json",
+      "relay_related_event_ids": [],
+      "relay_relation_note": "No canonical event identity link established."
     }
   ]
 }
