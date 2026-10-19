@@ -238,6 +238,28 @@
       "source_index": "research-continuity/argonautica-omnibus.json",
       "relay_related_event_ids": [],
       "relay_relation_note": "No explicit Relay event identity link established; source-derived index is not independent validation."
+    },
+    {
+      "id": "ATLANTIS-SPATIAL-RELAY-001",
+      "name": "Atlantis spatial lattice and transmission relay analogy",
+      "kind": "framework",
+      "status": "specified",
+      "sources": [
+        "SRC-ATLANTIS-ANALOGY-COMPOSITE"
+      ],
+      "dependencies": [
+        "HHIF-001"
+      ],
+      "summary": "Composite Atlantis research: radial hierarchy→projection→partition→transport→governance; narrated Egyptian→Solon→Plato relay; spatial lattice/canal grid; civilizational measure and ethical collapse. Structural model, not historical existence claim.",
+      "aliases": [
+        "Atlantis analogy",
+        "Atlantis lattice",
+        "Critias geometry",
+        "Atlantis civic counterform"
+      ],
+      "source_index": "research-continuity/atlantis-analogy.json",
+      "relay_related_event_ids": [],
+      "relay_relation_note": "No explicit Relay identity link established; multiple original witnesses still require collation."
     }
   ]
 }
