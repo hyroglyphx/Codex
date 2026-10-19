@@ -260,6 +260,30 @@
       "source_index": "research-continuity/atlantis-analogy.json",
       "relay_related_event_ids": [],
       "relay_relation_note": "No explicit Relay identity link established; multiple original witnesses still require collation."
+    },
+    {
+      "id": "MARCIAN-PERIPLUS-001",
+      "name": "Marcian of Heraclea: measured coastal itinerary",
+      "kind": "framework",
+      "status": "provisional",
+      "sources": [],
+      "dependencies": [],
+      "summary": "Independent late-antique historical corpus entry. Primary-text collation pending; see research-continuity/marcian-capella-corpus.json.",
+      "aliases": [],
+      "source_index": "research-continuity/marcian-capella-corpus.json",
+      "relay_related_event_ids": []
+    },
+    {
+      "id": "CAPELLA-ARTES-001",
+      "name": "Martianus Capella: mathematical liberal arts",
+      "kind": "framework",
+      "status": "provisional",
+      "sources": [],
+      "dependencies": [],
+      "summary": "Independent late-antique historical corpus entry. Primary-text collation pending; see research-continuity/marcian-capella-corpus.json.",
+      "aliases": [],
+      "source_index": "research-continuity/marcian-capella-corpus.json",
+      "relay_related_event_ids": []
     }
   ]
 }
