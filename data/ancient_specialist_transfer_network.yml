@@ -1,0 +1,155 @@
+version: "0.1"
+status: candidate
+title: Ancient Specialist-Transfer and Translation-Junction Network
+
+integrity:
+  similarity_is_transmission: false
+  network_path_is_transfer_proof: false
+  myth_is_demographic_evidence: false
+  preserve_failed_predictions: true
+  require_typed_edges: true
+  preferred_promotion_witnesses: 3
+
+node_classes:
+  - PORT
+  - COURT
+  - ORACLE_SANCTUARY
+  - MILITARY_SETTLEMENT
+  - INTERPRETER_NODE
+  - MARKET
+  - MIGRATION_ORIGIN
+  - MIGRATION_DESTINATION
+  - FRONTIER_INTERFACE
+
+relation_types:
+  - LANGUAGE_AFFINITY
+  - ALLIANCE
+  - GUEST_FRIENDSHIP
+  - RECIPROCAL_AID
+  - SUBJECTION
+  - TRIBUTE
+  - WAR
+  - DYNASTIC_MARRIAGE
+  - DIPLOMATIC_MEDIATION
+  - SANCTUARY_PARTICIPATION
+  - ORACLE_CONSULTATION
+  - OMEN_INTERPRETATION
+  - INFORMATION_TRANSFER
+  - PERSONNEL_RELOCATION
+  - SPECIALIST_RELOCATION
+  - POPULATION_FISSION
+  - SETTLEMENT
+  - TRADE
+  - PATRONAGE
+  - MYTHIC_ITINERARY
+  - CLAIMED_ANCESTRY
+
+seed_nodes:
+  - id: NAUCRATIS
+    classes: [PORT, MARKET, ORACLE_SANCTUARY, INTERPRETER_NODE]
+    status: ATTESTED
+  - id: MILETUS
+    classes: [PORT, MARKET]
+    status: ATTESTED
+  - id: PHOCAEA
+    classes: [PORT, MIGRATION_ORIGIN]
+    status: ATTESTED
+  - id: ERYTHRAE
+    classes: [PORT]
+    status: ATTESTED
+  - id: CHIOS
+    classes: [PORT, MARKET]
+    status: ATTESTED
+  - id: SARDIS_LYDIA
+    classes: [COURT]
+    status: ATTESTED
+  - id: TELMESSOS
+    classes: [ORACLE_SANCTUARY]
+    status: CANDIDATE
+    note: Geographic and institutional identification must remain source-specific.
+  - id: DELPHI
+    classes: [ORACLE_SANCTUARY]
+    status: ATTESTED
+  - id: COLCHIS
+    classes: [FRONTIER_INTERFACE]
+    status: ATTESTED
+  - id: PHASIS
+    classes: [PORT, MARKET, FRONTIER_INTERFACE]
+    status: CANDIDATE
+  - id: TARTESSUS
+    classes: [FRONTIER_INTERFACE]
+    status: ATTESTED
+
+seed_edges:
+  - from: PHOCAEA
+    to: ERYTHRAE
+    type: LANGUAGE_AFFINITY
+    status: ATTESTED
+    source: "Herodotus 1.142"
+  - from: PHOCAEA
+    to: NAUCRATIS
+    type: SANCTUARY_PARTICIPATION
+    status: ATTESTED
+    source: "Herodotus 2.178"
+  - from: CHIOS
+    to: NAUCRATIS
+    type: SANCTUARY_PARTICIPATION
+    status: ATTESTED
+    source: "Herodotus 2.178"
+  - from: MILETUS
+    to: CHIOS
+    type: RECIPROCAL_AID
+    status: ATTESTED
+    source: "Herodotus 1.18"
+  - from: MILETUS
+    to: SARDIS_LYDIA
+    type: ALLIANCE
+    status: ATTESTED
+    source: "Herodotus 1.22"
+    note: War precedes guest-friendship and alliance; encode temporal states separately in expanded record.
+  - from: TELMESSOS
+    to: SARDIS_LYDIA
+    type: OMEN_INTERPRETATION
+    status: ATTESTED
+    source: "Herodotus 1.78"
+  - from: PHOCAEA
+    to: TARTESSUS
+    type: PATRONAGE
+    status: ATTESTED
+    source: "Herodotus 1.163"
+  - from: PHOCAEA
+    to: PHOCAEA
+    type: POPULATION_FISSION
+    status: ATTESTED
+    source: "Herodotus 1.164-165"
+    note: Expanded model must distinguish evacuees, returnees, and continuing migrants.
+  - from: DELPHI
+    to: PHOCAEA
+    type: ORACLE_CONSULTATION
+    status: CANDIDATE
+    note: Encode exact source and migration episode before promotion.
+  - from: COLCHIS
+    to: PHOCAEA
+    type: TRADE
+    status: REJECTED
+    note: Deliberate null placeholder; no direct relation is asserted merely because both occupy the wider network.
+
+corridors:
+  - id: EGYPT_IONIA_COLCHIS
+    status: CANDIDATE
+    path: [NAUCRATIS, MILETUS, PHASIS, COLCHIS]
+    claim: "Transport topology to test; not a demonstrated single lineage."
+  - id: PHOCAEA_WEST
+    status: DERIVED
+    path: [PHOCAEA, TARTESSUS]
+    claim: "Seed only; central Mediterranean waypoints require source-addressed expansion."
+
+promotion_tests:
+  - procedural_constraint
+  - historical_contact
+  - chronological_admissibility
+  - independent_witnesses
+  - lexical_or_technical_constraint
+  - institutional_carrier
+  - holdout_behavior
+  - null_comparison
