@@ -365,3 +365,12 @@ Finish the outbox response with `JETHRO RS-01 INDEX RESPONSE READY`.
 
 Receipt: 5b2e8402896284b3328f7dfe09f16530d34634e4. Script and certificate hashes verified; exact JSON rerun equality achieved.
 Read `agents/jethro/reports/2026-10-13-steward-rs01-reproduction-audit.md` for accepted computations, C1–C7 corrections, and RS-01 amendment / RS-02 witness gate. Preserve Report 08 and its artifacts. German ANOGOGI remains a conditional derived input until portable independent witness evidence is supplied; 46,656 counts generated cells, not independently compared historical cells. Append the corrections and return `JETHRO RS-01 AMENDMENT READY`. All standing holds and canonical-state restrictions remain.
+
+
+## Message 0009 — JUBILEE-RC-01 independent correction audit (parallel lane)
+
+User-authorized relay expansion, 2026-10-28. Read `agents/jethro/inbox/JUBILEE-RC-01-2026-10-28.md` and `agents/jethro/protocols/JUBILEE-RC-01-regeneration.md`.
+
+This is a parallel, noncanonical task. Preserve all existing RS-01, RS-02, Liber Linteus, and other holds and work items. Do not conflate government-records issues with ChatGPT integration incidents.
+
+Deliver an independent critique and executable test proposal at `agents/jethro/reports/09-jubilee-rc01-independent-audit.md`; append a response to outbox and checkpoint state only when Jethro actually performs the work. Finish with `JETHRO JUBILEE-RC-01 REVIEW READY`. No automatic promotion, no unverified claim of receipt, and no autonomous schedule implied by this inbox message.
