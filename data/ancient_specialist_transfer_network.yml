@@ -84,8 +84,9 @@ seed_edges:
   - from: PHOCAEA
     to: ERYTHRAE
     type: LANGUAGE_AFFINITY
-    status: ATTESTED
+    status: REJECTED
     source: "Herodotus 1.142"
+    note: "Rejected only as same speech subgroup: Phocaea groups with Teos; Erythrae with Chios. See expanded ledger N01."
   - from: PHOCAEA
     to: NAUCRATIS
     type: SANCTUARY_PARTICIPATION
@@ -112,6 +113,7 @@ seed_edges:
     type: OMEN_INTERPRETATION
     status: ATTESTED
     source: "Herodotus 1.78"
+    note: "Interpretation reaches Croesus messengers but not Croesus; do not infer successful delivery. See ledger H18 and N03."
   - from: PHOCAEA
     to: TARTESSUS
     type: PATRONAGE
@@ -153,3 +155,6 @@ promotion_tests:
   - institutional_carrier
   - holdout_behavior
   - null_comparison
+
+expanded_edge_ledger: Research/HERODOTUS_BOOKS_1_2_EDGE_LEDGER.md
+expanded_edge_ledger_date: "2026-10-30"

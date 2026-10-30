@@ -194,7 +194,7 @@ Examples requiring source-addressed records include:
 - Lydia <-> Media: peace settlement mediated by Cilician and Babylonian actors and reinforced by dynastic marriage.
 - Croesus / Lydia <-> Sparta: friendship and alliance.
 - Croesus / Lydia <-> Egypt and Babylon: external alliance relationships in the Persian-war context.
-- Phocaea <-> Erythrae: speech/dialect affinity, not automatically political affinity.
+- Phocaea <-> Teos: shared speech group in Herodotus 1.142; Chios <-> Erythrae form another. The former Phocaea–Erythrae same-group seed is rejected.
 - Phocaea <-> Naucratis/Hellenion: institutional sanctuary participation.
 - Phocaea <-> Tartessus: elite friendship/patronage tradition.
 - Phocaean migration -> oracle interpretation -> western settlement: decision-routing edge.
@@ -243,3 +243,7 @@ A candidate transfer relation should not be promoted merely because two nodes ar
 ## Core question
 
 > When the people, language, ruler, sanctuary, and deity change, what part of the interpretive or technical procedure survives?
+
+## Source-addressed first pass (2026-10-30)
+
+See [Herodotus Books 1–2 edge ledger](HERODOTUS_BOOKS_1_2_EDGE_LEDGER.md) for 18 typed records, four negative controls, explicit chronology/provenance/uncertainty, and one material-witness target. ATTESTED there means attested in the text, not independent historical confirmation. The network remains candidate.
