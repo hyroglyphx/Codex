@@ -247,3 +247,7 @@ A candidate transfer relation should not be promoted merely because two nodes ar
 ## Source-addressed first pass (2026-10-30)
 
 See [Herodotus Books 1–2 edge ledger](HERODOTUS_BOOKS_1_2_EDGE_LEDGER.md) for 18 typed records, four negative controls, explicit chronology/provenance/uncertainty, and one material-witness target. ATTESTED there means attested in the text, not independent historical confirmation. The network remains candidate.
+
+## Medieval comparative source check (2026-10-30)
+
+The [Athinganoi abjuration source check](ATHINGANOI_ABJURATION_SOURCE_CHECK.md) preserves exact Greek names, the corrected PG 106 locator, dating limits, and an astral procedure for comparison. It is a bounded medieval witness, not evidence of a Herodotean-to-Roma transmission chain. Proposed Indic etymologies and the Athinganoi–Roma identity bridge remain candidates.
