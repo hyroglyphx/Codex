@@ -1,0 +1,151 @@
+{
+  "id": "ATHINGANOI_ABJURATION_SOURCE_CHECK_001",
+  "version": "0.1",
+  "date": "2026-10-30",
+  "status": "BOUNDED",
+  "parent": "Research/ANCIENT_SPECIALIST_TRANSFER_NETWORK.md",
+  "scope": "Medieval comparative witness; not an ancient-to-medieval transmission edge.",
+  "sources": {
+    "PG106": {
+      "type": "printed_primary_text",
+      "title": "Formula abjurationis Athinganorum",
+      "edition": "J.-P. Migne, Patrologia Graeca 106",
+      "locator": "cols. 1333–1336; name clause col. 1333, section D",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Patrologia_Graeca_Vol._106.pdf#page=701",
+      "inspection": "Printed Greek and parallel Latin visually inspected; PDF pages 701–702 (one-based). Manuscripts not collated.",
+      "status": "OBSERVED"
+    },
+    "STARR1936": {
+      "type": "secondary_study",
+      "author": "Joshua Starr",
+      "title": "An Eastern Christian Sect: The Athinganoi",
+      "publication": "Harvard Theological Review 29 (1936), 93–106",
+      "locator": "pp. 98–100, notes 20, 22, 28",
+      "url": "https://www.friendsofsabbath.org/Further_Research/History%20of%20the%20Sabbatarian%20Movement/Miscellaneous/The%20Athinganoi%20by%20J%20Starr.pdf",
+      "inspection": "Relevant scanned pages read, with OCR used for navigation.",
+      "status": "OBSERVED"
+    },
+    "FICKER1906": {
+      "type": "edition_target",
+      "author": "Gerhard Ficker",
+      "title": "Eine Sammlung von Abschwörungsformeln",
+      "publication": "Zeitschrift für Kirchengeschichte 27 (1906)",
+      "locator": "pp. 450–452, as cited by Starr note 22",
+      "inspection": "Bibliographic target only; text and apparatus not inspected.",
+      "status": "CANDIDATE"
+    }
+  },
+  "names": [
+    {
+      "printed": "Σωροὺ",
+      "transliteration": "Sōrou",
+      "source": "PG106",
+      "reading_status": "OBSERVED",
+      "candidate": "Indic solar comparisons Sūrya / sūra",
+      "relation_class": "SE",
+      "grade": "D",
+      "grade_scope": "Proposed etymology only; not the observed printed spelling.",
+      "uncertainty": "Full-form sound correspondence and donor pathway unresolved."
+    },
+    {
+      "printed": "Σοχὰν",
+      "transliteration": "Sochan",
+      "source": "PG106",
+      "reading_status": "OBSERVED",
+      "candidate": "Transcript's proposed burning/parching vocabulary",
+      "relation_class": "SE",
+      "grade": "D",
+      "grade_scope": "Proposed etymology only; not the observed printed spelling.",
+      "uncertainty": "Preserve Greek chi and final nu; no Sanskrit derivation validated."
+    },
+    {
+      "printed": "Ἀρχὲ",
+      "transliteration": "Arche",
+      "source": "PG106",
+      "reading_status": "OBSERVED",
+      "candidate": "Greek ἀρχή as a comparison, alongside non-Greek alternatives",
+      "relation_class": "SE",
+      "grade": "D",
+      "grade_scope": "Proposed etymology only; not the observed printed spelling.",
+      "uncertainty": "Printed final epsilon differs from eta in ἀρχή; spelling alone neither establishes nor excludes a relation."
+    }
+  ],
+  "claims": [
+    {
+      "id": "A01",
+      "status": "OBSERVED",
+      "claim": "The inspected edition prints Σωροὺ, Σοχὰν, Ἀρχὲ.",
+      "source": "PG106",
+      "uncertainty": "Edition-level reading; manuscript variants and accent history uncollated."
+    },
+    {
+      "id": "A02",
+      "status": "OBSERVED",
+      "claim": "The formula alleges invocation of named powers, lunar interrogation, and assignment of human names to opposing stars.",
+      "source": "PG106",
+      "uncertainty": "Attested accusation in a renunciation formula, not independent observation of ritual practice."
+    },
+    {
+      "id": "A03",
+      "status": "OBSERVED",
+      "claim": "The formula combines Melchisedekites, Theodotians and Athinganoi and contains Melchizedek-related doctrine.",
+      "source": "PG106",
+      "uncertainty": "Editorial/theological grouping does not prove that three historical communities shared all listed practices."
+    },
+    {
+      "id": "A04",
+      "status": "BOUNDED",
+      "claim": "Ninth-century composition is a scholarly dating estimate, not a date supplied by this printed passage.",
+      "source": "STARR1936",
+      "uncertainty": "Starr reports unresolved dating and a mistaken Methodios attribution associated with a scribal rubric."
+    },
+    {
+      "id": "A05",
+      "status": "CANDIDATE",
+      "claim": "Earlier Athinganoi and later Roma might be linked by population continuity.",
+      "source": "STARR1936",
+      "uncertainty": "No independent identity bridge supplied by the formula; competing hypothesis is transfer of a label."
+    },
+    {
+      "id": "A06",
+      "status": "REJECTED",
+      "claim": "This passage by itself identifies the three names as the sun, fire and lightning gods of ancestral Roma.",
+      "source": "PG106",
+      "uncertainty": "Rejected as an inference from this witness, not a claim that every possible Indic connection is disproved."
+    }
+  ],
+  "corrections": [
+    {
+      "old": "PG 106, cols. 1033–1036",
+      "new": "PG 106, cols. 1333–1336",
+      "basis": "Starr note 20 gives the former locator; visual inspection of Migne establishes the latter."
+    },
+    {
+      "old": "Soru, San, Ar",
+      "new": "Σωροὺ / Sōrou; Σοχὰν / Sochan; Ἀρχὲ / Arche",
+      "basis": "Transcript forms must not replace full edition readings."
+    },
+    {
+      "old": "Joseph Starr",
+      "new": "Joshua Starr",
+      "basis": "Correct author identification; prior conversational first name was wrong."
+    }
+  ],
+  "dependencies": {
+    "translation_and_greek_are_independent_witnesses": false,
+    "formula_and_companion_tract_independent": null,
+    "manuscript_collation_complete": false,
+    "indic_etymologies_validated": false,
+    "roma_identification_established": false,
+    "egypt_telmessos_athinganoi_transfer_established": false
+  },
+  "next_witness": {
+    "source": "FICKER1906",
+    "tasks": [
+      "Recover the companion tract and edition introduction/apparatus.",
+      "Compare the full name sequence and clause order with Migne.",
+      "Record manuscript identifiers, dates and variants if supplied; preserve absence of apparatus.",
+      "Test literary dependence before counting repeated names or procedures as independent evidence."
+    ]
+  }
+}
