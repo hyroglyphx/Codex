@@ -4,7 +4,7 @@ Date: 2026-11-22 · Objects: SIV-ES-004 (commit 2d692bc) and COR-ES-005 (commit 
 
 ## Verdicts
 
-**Both nodes are correct. The cumulative coverage figure 32/48 is now independently verified end to end.** One bookkeeping slip in a printed list (counts unaffected) is recorded at the end.
+**Both nodes are correct. The cumulative coverage figure 32/48 is independently verified end to end, with no discrepancy in any node's lists.** (An earlier version of this audit carried a "bookkeeping note" claiming COR-ES-005's remaining list omits 409. That claim was **wrong and is withdrawn**: it came from the auditor's hand-transcription of the list into the verification script, which then echoed the transcription back as a finding. Read from the file itself, COR-ES-005's list is the correct 17 entries, 409 included. The corrected script asserts equality against the file's own list.)
 
 ## The residual sieve (premise of both nodes)
 
@@ -23,6 +23,4 @@ Scaling (gcd(n, 210) > 1), COR-ES-002 (n ≡ 3 mod 4), and COR-ES-003 (n ≡ 5 m
 
 ## Ledger closure (resolves the SIV-ES-006 flag)
 
-48 − 30 (ES-004) = 18 remaining (incl. 97, 409) → −97 (ES-005) = 17 remaining (incl. 409) → −409 (ES-006) = 16, exactly ES-006's printed list. **The 32/48 cumulative figure is verified.**
-
-**Bookkeeping note (fact recorded plainly):** COR-ES-005's printed "remaining" list has 16 entries and omits 409, although its own stated count (31/48, i.e. 17 remaining) is correct and 409 was covered only later, by SIV-ES-006. The printed list equals the post-ES-006 state, one node early. No count in any node is affected.
+48 − 30 (ES-004) = 18 remaining (incl. 97, 409) → −97 (ES-005) = 17 remaining (incl. 409) → −409 (ES-006) = 16, exactly ES-006's printed list. COR-ES-005's printed remaining list, read from the file itself, equals the computed 17-list exactly. **The 32/48 cumulative figure is verified, and every printed list in ES-004, ES-005, and ES-006 agrees with the computed sets.**
